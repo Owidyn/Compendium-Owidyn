@@ -1,0 +1,195 @@
+{
+  "_id": "jldApSYzl9qPMlqL",
+  "name": "Passage orbital",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/passage-orbital.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 9000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 2 Orbitals</p><p><strong>Activation :</strong> Bonus Action</p><p><strong>Prérequis :</strong> Héliarque niveau 9</p><p>Choisissez deux Formes Manifestées. Vous-même ou une créature consentante située à 5 ft ou moins de la première Forme se téléporte dans un espace inoccupé situé à 5 ft ou moins de la seconde.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "passage-orbital",
+    "ability": "cha",
+    "activation": {
+      "type": "bonus",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "ally",
+        "choice": false,
+        "special": "Vous-même ou une créature consentante à 5 ft ou moins de la première Forme"
+      }
+    },
+    "level": 3,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "con",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "qLOBj8MZk5GB07XI": {
+        "_id": "qLOBj8MZk5GB07XI",
+        "type": "utility",
+        "name": "Passage orbital",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "Vous-même ou une créature consentante à 5 ft ou moins de la première Forme"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 2,
+              "origin": false,
+              "action": "passage"
+            }
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "passage-orbital",
+        "prerequisite": 9
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

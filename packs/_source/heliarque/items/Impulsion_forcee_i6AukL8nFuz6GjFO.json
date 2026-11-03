@@ -1,0 +1,225 @@
+{
+  "_id": "i6AukL8nFuz6GjFO",
+  "name": "Impulsion forcée",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/impulsion-forcee.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 1000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 1 Orbital</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Origine :</strong> oui</p><p>Choisissez une créature située à 30 ft ou moins de l'Origine. Une créature non consentante effectue un Strength Saving Throw contre votre DD de Fusion. En cas d'échec, elle subit <strong>1 Dé de Fusion de Force damage</strong> et vous la déplacez jusqu'à <strong>15 ft dans une direction de votre choix</strong>.</p><p>Une créature consentante est déplacée sans Saving Throw et sans subir de dégâts.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "impulsion-forcee",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 1,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "evo",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "vcGCgkw1t9uufEFT": {
+        "_id": "vcGCgkw1t9uufEFT",
+        "type": "save",
+        "name": "Impulsion forcée",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 1,
+              "origin": true,
+              "move": {
+                "mode": "free",
+                "distance": "15",
+                "subject": "targets",
+                "save": true
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "impulsion-forcee",
+        "prerequisite": 1
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

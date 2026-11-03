@@ -1,0 +1,40 @@
+# Publication du module à chaque Release GitHub.
+# Le tag de la Release donne la version (2.2.0 ou v2.2.0) : elle est écrite dans module.json avec l'adresse du zip,
+# puis module.json et compendium-owidyn.zip sont joints à la Release. Foundry lit ces deux fichiers pour proposer la mise à jour.
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version et adresse du zip dans module.json
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          VERSION="${TAG#v}"
+          jq --arg version "$VERSION" \
+             --arg download "https://github.com/$REPO/releases/download/$TAG/compendium-owidyn.zip" \
+             '.version = $version | .download = $download' module.json > module.tmp
+          mv module.tmp module.json
+
+      - name: Archive du module
+        run: |
+          zip -r compendium-owidyn.zip module.json README.md assets image packs reference scripts styles templates \
+            -x "packs/_source/*" "packs/*/LOCK" "packs/*/LOG" "packs/*/LOG.old"
+
+      - name: Fichiers joints à la Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            compendium-owidyn.zip

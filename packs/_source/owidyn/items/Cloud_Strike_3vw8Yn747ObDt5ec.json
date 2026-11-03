@@ -1,0 +1,200 @@
+{
+  "type": "feat",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793646899628,
+    "modifiedTime": 1793646899628,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "name": "Cloud Strike",
+  "_id": "3vw8Yn747ObDt5ec",
+  "img": "icons/magic/air/weather-clouds.webp",
+  "folder": "xVcdXx4FzB5OcV7N",
+  "sort": 100000,
+  "effects": [
+    {
+      "name": "Cloud Strike",
+      "img": "icons/magic/air/weather-clouds.webp",
+      "_id": "RY4fQA2ZkNkLsOhi",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The creature that made this Cloud Strike is Invisible to you until the start of its next turn or until immediately after it makes an attack roll or casts a spell.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793646899628,
+        "modifiedTime": 1793646899628,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "Bigby Presents: Glory of the Giants",
+      "page": "19"
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Strike of the Giants",
+    "activities": {
+      "HH4JStjVPHSD9eGE": {
+        "type": "save",
+        "name": "Cloud Strike",
+        "_id": "HH4JStjVPHSD9eGE",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "RY4fQA2ZkNkLsOhi",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "full"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @prof + max(@abilities.str.mod, @abilities.con.mod)"
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "advancement": {},
+    "crewed": false,
+    "description": {
+      "value": "<p>The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become &amp;Reference[Invisible] to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.</p><p>Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with this effect. The saving throw DC equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><section class=\"secret\" id=\"secret-BNouNENe77uy7IjH\"><p><strong>Foundry Note</strong></p><p>Use the activity after a hit: it spends a use and rolls the extra damage and the saving throw. On a failed save, the target gets the <em>Cloud Strike</em> effect as a reminder that it can't see you; it ends at the start of your next turn. End it sooner by hand if you attack or cast a spell. The once-per-turn limit is not tracked.</p></section>",
+      "chat": ""
+    },
+    "identifier": "strike-of-the-giants-cloud"
+  }
+}

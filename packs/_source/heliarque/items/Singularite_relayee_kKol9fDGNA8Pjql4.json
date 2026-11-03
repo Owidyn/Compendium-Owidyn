@@ -1,0 +1,305 @@
+{
+  "_id": "kKol9fDGNA8Pjql4",
+  "name": "Singularité relayée",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/singularite-relayee.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 9000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 3 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Prérequis :</strong> Héliarque niveau 9</p><p>Choisissez une de vos Formes Manifestées. Chaque créature de votre choix située à 15 ft ou moins de cette Forme effectue un Strength Saving Throw contre votre DD de Fusion.</p><p>En cas d'échec, elle subit <strong>3 Dés de Fusion de Force damage</strong> et est attirée jusqu'à <strong>15 ft vers la Forme</strong>. En cas de réussite, elle subit la moitié des dégâts et n'est pas déplacée.</p><p>Si la Forme choisie est une Ancre, une créature qui échoue voit également sa Speed devenir 0 jusqu'au début de votre prochain tour.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "singularite-relayee",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": true,
+        "special": ""
+      }
+    },
+    "level": 3,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "evo",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "QtJoSK9GqJcYoN9s": {
+        "_id": "QtJoSK9GqJcYoN9s",
+        "type": "save",
+        "name": "Singularité relayée",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "IGyJLTV66HkpcY9O",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": true,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 3,
+              "origin": false,
+              "targeting": {
+                "kind": "formRadius",
+                "radius": 15,
+                "disposition": "any"
+              },
+              "move": {
+                "mode": "toward",
+                "distance": "15",
+                "from": "chosenForm",
+                "subject": "targets",
+                "save": true
+              },
+              "anchorEffect": "singularite-relayee:stopped"
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "3@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "IGyJLTV66HkpcY9O",
+      "name": "Singularité relayée — Ancre",
+      "img": "modules/compendium-owidyn/assets/heliarque/compression-gravitationnelle.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Sa Speed devient 0 et elle ne peut pas effectuer de Reactions jusqu'au début du prochain tour de l'Héliarque.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "singularite-relayee:stopped"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "singularite-relayee",
+        "prerequisite": 9
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

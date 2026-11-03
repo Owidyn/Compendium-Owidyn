@@ -1,0 +1,107 @@
+{
+  "id": "compendium-owidyn",
+  "title": "Compendium Owidyn",
+  "description": "Contenu homebrew d'Owidyn pour D&D5e : classes Cartomancien (Deck du Parieur) et Héliarque (Soothing Star) avec leurs automatisations, La Voie de l'Aiguille, espèces, dons, historiques, équipement et bestiaire.",
+  "version": "2.1.0",
+  "url": "https://github.com/Owidyn/Compendium-Owidyn",
+  "manifest": "https://github.com/Owidyn/Compendium-Owidyn/releases/latest/download/module.json",
+  "download": "https://github.com/Owidyn/Compendium-Owidyn/releases/download/2.1.0/compendium-owidyn.zip",
+  "bugs": "https://github.com/Owidyn/Compendium-Owidyn/issues",
+  "compatibility": {
+    "minimum": "14.367",
+    "verified": "14.369"
+  },
+  "authors": [
+    {
+      "name": "Owidyn",
+      "discord": "Owidyn",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.0.6",
+          "verified": "6.0.6"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/owidyn.mjs"
+  ],
+  "styles": [
+    "styles/heliarque.css",
+    "styles/cartomancien.css"
+  ],
+  "socket": true,
+  "packs": [
+    {
+      "name": "compendium-owidyn",
+      "label": "Compendium Owidyn",
+      "path": "packs/compendium-owidyn",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "formes-orbitales",
+      "label": "Héliarque — Formes orbitales",
+      "path": "packs/formes-orbitales",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "journaux",
+      "label": "Owidyn — Journaux",
+      "path": "packs/journaux",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "bestiaire",
+      "label": "Owidyn — Bestiaire",
+      "path": "packs/bestiaire",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Owidyn",
+      "sorting": "m",
+      "color": "#3b2a07",
+      "packs": ["compendium-owidyn", "formes-orbitales", "journaux", "bestiaire"]
+    }
+  ],
+  "flags": {
+    "canUpload": true,
+    "dnd5e": {
+      "spellLists": [
+        "Compendium.compendium-owidyn.journaux.JournalEntry.CrtmJournal00001.JournalEntryPage.CrtmSpellList001"
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "_id": "pw01JogbbTGqYA0N",
+  "name": "Égide vectorielle",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/egide-vectorielle.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 1000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 1 Orbital</p><p><strong>Activation :</strong> Reaction</p><p>Lorsqu'une créature située à 15 ft ou moins de vous ou de l'une de vos Formes subit des dégâts, choisissez une de vos Formes située à 30 ft ou moins de cette créature, ou choisissez-vous vous-même. Réduisez les dégâts de <strong>2 Dés de Fusion + votre modificateur de Charisma</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "egide-vectorielle",
+    "ability": "cha",
+    "activation": {
+      "type": "reaction",
+      "value": null,
+      "condition": "Une créature à 15 ft ou moins de vous ou d'une Forme subit des dégâts"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 1,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "abj",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "bbzV4VWkvEvhpGlK": {
+        "_id": "bbzV4VWkvEvhpGlK",
+        "type": "utility",
+        "name": "Égide vectorielle",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "Une créature à 15 ft ou moins de vous ou d'une Forme subit des dégâts",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 1,
+              "origin": false,
+              "reduction": true
+            }
+          }
+        },
+        "roll": {
+          "formula": "2@scale.heliarque.fusion.die + @abilities.cha.mod",
+          "name": "Réduction des dégâts",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "egide-vectorielle",
+        "prerequisite": 1
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

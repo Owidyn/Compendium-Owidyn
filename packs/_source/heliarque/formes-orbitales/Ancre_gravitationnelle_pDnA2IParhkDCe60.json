@@ -1,0 +1,1180 @@
+{
+  "_id": "pDnA2IParhkDCe60",
+  "name": "Ancre gravitationnelle",
+  "type": "npc",
+  "img": "modules/compendium-owidyn/assets/heliarque/anchor.svg",
+  "folder": null,
+  "sort": 400,
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "temp": null,
+        "tempmax": null,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 0,
+        "fly": 0,
+        "swim": 0,
+        "climb": 0,
+        "burrow": 0,
+        "hover": true,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "custom",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Forme orbitale"
+      },
+      "cr": 0,
+      "alignment": "",
+      "biography": {
+        "value": "<p>Noyau de matière extrêmement dense dont le Champ gravitationnel ralentit les créatures hostiles. Connue à partir du niveau 2.</p><table><thead><tr><th>Niveau</th><th>Champ gravitationnel</th><th>Traction</th><th>Singularité</th></tr></thead><tbody><tr><td>2–6</td><td>10 ft</td><td>10 ft</td><td>2 DF</td></tr><tr><td>7–12</td><td>15 ft</td><td>15 ft</td><td>3 DF</td></tr><tr><td>13–16</td><td>20 ft</td><td>20 ft</td><td>4 DF</td></tr><tr><td>17–20</td><td>25 ft</td><td>25 ft</td><td>5 DF</td></tr></tbody></table><p><strong>Niveau 7 :</strong> Fronde gravitationnelle. <strong>Niveau 13 :</strong> Gravité vectorielle. <strong>Soothing Star 6 :</strong> Stabilité.</p>",
+        "public": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comprend les ordres de son Héliarque"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Ancre gravitationnelle",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 0.5,
+    "height": 0.5,
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayName": 20,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "texture": {
+      "src": "modules/compendium-owidyn/assets/heliarque/anchor.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "visionMode": "basic"
+    },
+    "flags": {
+      "compendium-owidyn": {
+        "heliarque": {
+          "form": "ancre"
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "Oew8GrAtd62uWzhF",
+      "name": "Rappel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+      "folder": null,
+      "sort": 100000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque.</em> La Forme disparaît et son Orbital retourne dans la Réserve. L'Orbital conserve ses Hit Points actuels : il reviendra avec eux à sa prochaine Manifestation. Rappeler une Forme ne restaure aucun Hit Point.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-rappel",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "J3I2UocXW5ZXtZhj": {
+            "_id": "J3I2UocXW5ZXtZhj",
+            "type": "utility",
+            "name": "Rappel",
+            "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme disparaît ; son Orbital retourne dans la Réserve."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "recall"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-rappel",
+            "form": "ancre",
+            "kind": "recall"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "WuiSBKWzG84C0gKC",
+      "name": "Changer de forme",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+      "folder": null,
+      "sort": 200000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque — Reconfiguration.</em> Transformez cette Forme en une autre Forme que l'Héliarque connaît. Elle conserve ses Hit Points actuels, jusqu'au Hit Point Maximum de sa nouvelle Forme, et reste au même endroit.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-changer-de-forme",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "KvCdeIP6woLyv2qQ": {
+            "_id": "KvCdeIP6woLyv2qQ",
+            "type": "utility",
+            "name": "Changer de forme",
+            "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme devient une autre Forme connue et conserve ses Hit Points."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "reconfigure"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-changer-de-forme",
+            "form": "ancre",
+            "kind": "reconfigure"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "lELt4U64LEzIS6X2",
+      "name": "Intégrité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/anchor.svg",
+      "folder": null,
+      "sort": 300000,
+      "system": {
+        "description": {
+          "value": "<p>Cette Forme est un objet magique, immunisée aux Poison et Psychic damage. Elle agit pendant le tour de son Héliarque et utilise ses actions ; elle n'a pas d'initiative propre.</p><p><strong>Commande.</strong> Une même Forme ne peut utiliser sa Commande qu'une seule fois par tour, sauf aptitude contraire.</p><p><strong>Orbital.</strong> Cette Forme est portée par l'un des Orbitals de l'Héliarque, qui conserve ses Hit Points lorsqu'il est rappelé ou change de forme.</p><p><strong>Destruction.</strong> À 0 Hit Points, la Forme est détruite sans pouvoir utiliser sa Rupture. <em>Règle de table :</em> son Orbital reste indisponible jusqu'au prochain Long Rest de l'Héliarque.</p><p><strong>Repos.</strong> Lorsque l'Héliarque termine un Short ou Long Rest, l'Orbital récupère tous ses Hit Points, sauf s'il a été détruit : il attend alors le Long Rest.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-integrite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-integrite",
+            "form": "ancre",
+            "kind": "trait"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "0YesdEK1b3P1GhSr",
+      "name": "Présence — Champ gravitationnel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/anchor.svg",
+      "folder": null,
+      "sort": 400000,
+      "system": {
+        "description": {
+          "value": "<p>La zone autour de l'Ancre (rayon du Champ gravitationnel) est Difficult Terrain pour les créatures hostiles. Les alliés ne sont pas affectés. Plusieurs Champs gravitationnels ne cumulent pas leurs effets. <em>(Zone créée automatiquement autour du pion.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-champ",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-champ",
+            "form": "ancre",
+            "kind": "presence"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "2FoFYNzzFvjBYAtx",
+      "name": "Traction",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/singularite-relayee.svg",
+      "folder": null,
+      "sort": 500000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Commande.</em> Choisissez une créature située dans le Champ gravitationnel. Une créature consentante peut choisir d'échouer automatiquement. Une créature non consentante effectue un Strength Saving Throw contre le DD de Fusion. En cas d'échec, elle subit <strong>1 Dé de Fusion de Force damage</strong> et vous la déplacez jusqu'à la distance de Traction, directement vers l'Ancre ou directement à l'opposé de celle-ci.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-traction",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Commande",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "T5v04AllD5xWPNuh": {
+            "_id": "T5v04AllD5xWPNuh",
+            "type": "save",
+            "name": "Traction",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "@summoner.scale.heliarque.champ",
+              "units": "ft",
+              "special": "Dans le Champ gravitationnel",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "command",
+                  "move": {
+                    "mode": "traction",
+                    "distance": "@summoner.scale.heliarque.traction",
+                    "from": "this",
+                    "subject": "targets",
+                    "save": true
+                  }
+                }
+              }
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "8 + @summoner.abilities.cha.mod + @summoner.attributes.prof"
+              }
+            },
+            "damage": {
+              "onSave": "none",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1@summoner.scale.heliarque.fusion.die"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-traction",
+            "form": "ancre",
+            "kind": "command"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "fKSVKZgkismSfsJg",
+      "name": "Fronde gravitationnelle",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/evolution-orbitale.svg",
+      "folder": null,
+      "sort": 600000,
+      "system": {
+        "description": {
+          "value": "<p><em>Évolution orbitale (niveau 7).</em> Traction n'est plus limitée à un mouvement directement vers ou directement à l'opposé de l'Ancre. Vous pouvez déplacer la cible le long d'une trajectoire courbe autour de l'Ancre, jusqu'à la distance normale de Traction. La cible doit rester dans le Champ gravitationnel pendant ce déplacement. Une créature consentante déplacée ainsi ne provoque pas d'Opportunity Attacks.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-fronde",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-fronde",
+            "form": "ancre",
+            "kind": "upgrade",
+            "requires": {
+              "level": 7
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "ZBO3HTUal8y5FFKO",
+      "name": "Gravité vectorielle",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transcendance-des-formes.svg",
+      "folder": null,
+      "sort": 700000,
+      "system": {
+        "description": {
+          "value": "<p><em>Transcendance des Formes (niveau 13).</em> Traction peut désormais déplacer sa cible dans <strong>n'importe quelle direction</strong>, y compris verticalement. Une créature déplacée verticalement peut rester suspendue jusqu'au début du prochain tour de l'Héliarque avant de tomber normalement.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-gravite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-gravite",
+            "form": "ancre",
+            "kind": "upgrade",
+            "requires": {
+              "level": 13
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "nc54I3GM4OAB2KrD",
+      "name": "Singularité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/horizon-evenementiel.svg",
+      "folder": null,
+      "sort": 800000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Rupture.</em> Détruisez l'Ancre. Chaque créature de votre choix située dans son Champ gravitationnel effectue un Strength Saving Throw. En cas d'échec, elle subit des Force damage et est attirée jusqu'à la distance actuelle de Traction vers l'ancienne position de l'Ancre. En cas de réussite, elle subit la moitié de ces dégâts et n'est pas déplacée.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-singularite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Rupture",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "8Ok0Emz3XpkMbY2M": {
+            "_id": "8Ok0Emz3XpkMbY2M",
+            "type": "save",
+            "name": "Singularité",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "creature",
+                "choice": true,
+                "special": "Dans le Champ gravitationnel"
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "rupture",
+                  "targeting": {
+                    "kind": "self",
+                    "radius": "field",
+                    "disposition": "any"
+                  },
+                  "move": {
+                    "mode": "toward",
+                    "distance": "@summoner.scale.heliarque.traction",
+                    "from": "this",
+                    "subject": "targets",
+                    "save": true
+                  }
+                }
+              }
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "8 + @summoner.abilities.cha.mod + @summoner.attributes.prof"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "(@summoner.scale.heliarque.singularite)@summoner.scale.heliarque.fusion.die"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-singularite",
+            "form": "ancre",
+            "kind": "rupture"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "FNulRTbFItZZWLUP",
+      "name": "Présence apaisante — Stabilité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/presences-apaisantes.svg",
+      "folder": null,
+      "sort": 900000,
+      "system": {
+        "description": {
+          "value": "<p><em>Soothing Star (niveau 6).</em> Les créatures alliées situées dans le Champ gravitationnel ont Advantage aux Saving Throws contre Charmed, Frightened et les effets qui devraient les déplacer contre leur volonté. <em>(Effet indicatif appliqué automatiquement.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "ancre-stabilite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "ancre-stabilite",
+            "form": "ancre",
+            "kind": "presence",
+            "requires": {
+              "subclass": "soothing-star",
+              "level": 6
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "form": "ancre"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

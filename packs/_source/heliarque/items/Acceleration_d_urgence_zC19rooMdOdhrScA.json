@@ -1,0 +1,200 @@
+{
+  "_id": "zC19rooMdOdhrScA",
+  "name": "Accélération d'urgence",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/acceleration-d-urgence.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 5000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 2 Orbitals</p><p><strong>Activation :</strong> Reaction</p><p><strong>Prérequis :</strong> Héliarque niveau 5</p><p>Lorsqu'une créature que vous voyez commence son tour, choisissez vous-même ou une créature consentante située à 15 ft ou moins de vous ou de l'une de vos Formes.</p><p>La cible peut immédiatement se déplacer jusqu'à la moitié de sa Speed sans provoquer d'Opportunity Attacks. Si la cible porte l'un de vos Halos, elle peut à la place se déplacer jusqu'à sa <strong>Speed entière</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "acceleration-d-urgence",
+    "ability": "cha",
+    "activation": {
+      "type": "reaction",
+      "value": null,
+      "condition": "Lorsqu'une créature que vous voyez commence son tour"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "ally",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 2,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "trs",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "VLYKo5LRmJk09AtM": {
+        "_id": "VLYKo5LRmJk09AtM",
+        "type": "utility",
+        "name": "Accélération d'urgence",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "Lorsqu'une créature que vous voyez commence son tour",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 2,
+              "origin": false,
+              "move": {
+                "mode": "free",
+                "distance": "speed",
+                "subject": "targets",
+                "haloBonus": true
+              }
+            }
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "acceleration-d-urgence",
+        "prerequisite": 5
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "_id": "gNcjWO2sPS1ltFrm",
+  "name": "Orbitals",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/orbitals.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 1000,
+  "system": {
+    "description": {
+      "value": "<p>Votre noyau produit des unités condensées de matière stellaire appelées <strong>Orbitals</strong>. Ce compteur affiche les Orbitals de votre <strong>Réserve</strong>.</p><p>Votre nombre maximum d'Orbitals est égal à <strong>votre niveau de Héliarque + votre Proficiency Bonus + votre modificateur de Charisma</strong>, avec un minimum de 4.</p><h5>États d'un Orbital</h5><ul><li><strong>Réserve.</strong> L'Orbital demeure contenu dans votre noyau. Il peut alimenter une Technique stellaire ou être Manifesté sous une Forme orbitale.</li><li><strong>Manifesté.</strong> L'Orbital possède une Forme physique et n'est plus disponible pour payer le coût d'une Technique.</li><li><strong>Dépensé.</strong> L'Orbital a été consumé. Il ne peut plus être utilisé jusqu'à ce que vous le récupériez.</li></ul><h5>Récupération</h5><p>Lorsque vous terminez un Short Rest, lancez votre Dé de Fusion et ajoutez votre Proficiency Bonus au résultat. Vous récupérez jusqu'à ce nombre d'Orbitals Dépensés. Lorsque vous terminez un Long Rest, vous récupérez tous vos Orbitals Dépensés.</p><p><strong>Règle de table.</strong> L'Orbital d'une Forme <strong>détruite</strong> (0 Hit Points, Rupture, Combustion de secours ou sacrifice) ne peut être récupéré qu'à la fin d'un Long Rest. Les Orbitals encore Manifestés ne sont jamais récupérés par un repos.</p><h5>Dé de Fusion</h5><p>Votre Dé de Fusion représente l'intensité des réactions produites par votre noyau. Sa taille est indiquée dans la table du Héliarque.</p><p><strong>DD de Fusion</strong> = 8 + votre modificateur de Charisma + votre Proficiency Bonus.</p><p><strong>Modificateur d'attaque de Fusion</strong> = votre modificateur de Charisma + votre Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "orbitals",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 1",
+    "prerequisites": {
+      "level": 1,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "max(4, @classes.heliarque.levels + @prof + @abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "sr",
+          "type": "formula",
+          "formula": "@scale.heliarque.fusion + @prof"
+        }
+      ]
+    },
+    "activities": {},
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "orbitals"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

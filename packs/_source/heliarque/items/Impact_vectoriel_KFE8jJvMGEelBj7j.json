@@ -1,0 +1,230 @@
+{
+  "_id": "KFE8jJvMGEelBj7j",
+  "name": "Impact vectoriel",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/impact-vectoriel.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 1000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 1 Orbital</p><p><strong>Activation :</strong> aucune Action</p><p>Une fois par tour, lorsque vous touchez une créature avec une attaque avec une arme, choisissez une Forme Manifestée que vous percevez à 60 ft ou moins de la cible.</p><p>L'attaque inflige <strong>1 Dé de Fusion de Fire ou Force damage supplémentaire</strong>, puis vous pouvez déplacer la cible jusqu'à <strong>10 ft directement vers cette Forme ou directement à l'opposé d'elle</strong> si elle est Large ou plus petite. Une créature non consentante peut effectuer un Strength Saving Throw contre votre DD de Fusion pour empêcher ce déplacement.</p><p><em>Les dégâts s'appliquent quel que soit le résultat du jet ; le jet ne sert qu'à résister au déplacement.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "impact-vectoriel",
+    "ability": "cha",
+    "activation": {
+      "type": "special",
+      "value": null,
+      "condition": "Une fois par tour, lorsque vous touchez une créature avec une attaque avec une arme"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 1,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "evo",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "O2wEKpxtCmMHJ6vV": {
+        "_id": "O2wEKpxtCmMHJ6vV",
+        "type": "save",
+        "name": "Impact vectoriel",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Une fois par tour, lorsque vous touchez une créature avec une attaque avec une arme",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 1,
+              "origin": false,
+              "once": "turn",
+              "move": {
+                "mode": "line",
+                "distance": "10",
+                "from": "form",
+                "subject": "targets",
+                "save": true,
+                "maxSize": "lg",
+                "formRange": 60
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "full",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire",
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "impact-vectoriel",
+        "prerequisite": 1
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

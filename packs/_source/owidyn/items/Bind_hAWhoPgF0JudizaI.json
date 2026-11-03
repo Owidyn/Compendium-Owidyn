@@ -1,0 +1,151 @@
+{
+  "name": "Bind",
+  "type": "feat",
+  "img": "icons/magic/life/cross-worn-green.webp",
+  "system": {
+    "activities": {
+      "NBGjPYsu7iCZ75W7": {
+        "type": "heal",
+        "name": "Bind",
+        "_id": "NBGjPYsu7iCZ75W7",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "Compendium.dnd5e.classes24.Item.phbmnkMonksFocus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "healing": {
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "2@scale.monk.die + @abilities.wis.mod"
+          },
+          "modifiers": [],
+          "scaling": {
+            "number": 1
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Avec une Bonus Action, vous pouvez dépenser 2 Focus Points pour resserrer votre soie autour de vos blessures.</p><p>Vous récupérez des HP égaux à deux jets de votre Martial Arts die + votre Wisdom modifier.</p>",
+      "chat": ""
+    },
+    "identifier": "bind",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Owidyn2024",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "La Voie de l’Aiguille 3",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [],
+  "folder": "XyryqlzOYhvtKPeY",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511295855,
+    "modifiedTime": 1793660000000,
+    "lastModifiedBy": "ppJzl6mDRBw2GO6v",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "hAWhoPgF0JudizaI",
+  "sort": 100000
+}

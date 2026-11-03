@@ -1,0 +1,21 @@
+.cartomancien-manager { min-width: 720px; }
+.cartomancien-manager-body { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.cartomancien-summary { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--color-border-light-primary); padding-bottom: 8px; }
+.cartomancien-warning { padding: 8px 10px; border: 1px solid var(--color-border-highlight); border-radius: 5px; }
+.cartomancien-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.cartomancien-actions button { flex: 1 1 180px; }
+.cartomancien-columns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; min-width: 0; }
+.cartomancien-column { min-width: 0; border: 1px solid var(--color-border-light-primary); border-radius: 6px; padding: 8px; }
+.cartomancien-column h3 { margin: 0 0 8px; display: flex; justify-content: space-between; gap: 8px; }
+.cartomancien-column h3 span { font-size: 0.8em; font-weight: 400; opacity: 0.8; }
+.cartomancien-list { display: flex; flex-direction: column; gap: 6px; max-height: 430px; overflow-y: auto; }
+.cartomancien-card { display: flex; align-items: center; gap: 8px; border: 1px solid var(--color-border-light-primary); border-radius: 5px; padding: 7px; }
+.cartomancien-card.drawn { opacity: 0.55; }
+.cartomancien-card-main { flex: 1; min-width: 0; }
+.cartomancien-card-main strong, .cartomancien-card-main small, .cartomancien-spell { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cartomancien-card-main small { opacity: 0.75; }
+.cartomancien-spell { margin-top: 3px; font-style: italic; }
+.cartomancien-card button { flex: 0 0 auto; }
+.cartomancien-empty, .cartomancien-note { opacity: 0.75; font-style: italic; }
+.cartomancien-note { border-top: 1px solid var(--color-border-light-primary); padding-top: 8px; }
+@media (max-width: 900px) { .cartomancien-columns { grid-template-columns: 1fr; } .cartomancien-manager { min-width: 520px; } }

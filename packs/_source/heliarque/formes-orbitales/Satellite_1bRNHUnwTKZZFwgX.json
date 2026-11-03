@@ -1,0 +1,1491 @@
+{
+  "_id": "1bRNHUnwTKZZFwgX",
+  "name": "Satellite",
+  "type": "npc",
+  "img": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+  "folder": null,
+  "sort": 100,
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "temp": null,
+        "tempmax": null,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 0,
+        "fly": 0,
+        "swim": 0,
+        "climb": 0,
+        "burrow": 0,
+        "hover": true,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "custom",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Forme orbitale"
+      },
+      "cr": 0,
+      "alignment": "",
+      "biography": {
+        "value": "<p>Manifestation Tiny capable de flotter indépendamment autour du champ de bataille. Connue dès le niveau 1. CA, Hit Points, Fly Speed et dégâts dépendent du niveau de l'Héliarque qui l'a manifestée.</p><table><thead><tr><th>Niveau</th><th>Fly Speed</th><th>Canon stellaire</th><th>Portée</th><th>Projectile terminal</th><th>Repousse</th></tr></thead><tbody><tr><td>1–6</td><td>30 ft</td><td>2 DF + CHA</td><td>60 ft</td><td>4 DF + CHA</td><td>15 ft</td></tr><tr><td>7–12</td><td>50 ft</td><td>3 DF + CHA</td><td>90 ft</td><td>5 DF + CHA</td><td>20 ft</td></tr><tr><td>13–16</td><td>60 ft</td><td>4 DF + CHA</td><td>120 ft</td><td>6 DF + CHA</td><td>25 ft</td></tr><tr><td>17–20</td><td>80 ft</td><td>5 DF + CHA</td><td>150 ft</td><td>7 DF + CHA</td><td>30 ft</td></tr></tbody></table><p><strong>Niveau 7 :</strong> Verrouillage spectral. <strong>Niveau 13 :</strong> Tir vectoriel. <strong>Soothing Star 6 :</strong> Étoile guide.</p>",
+        "public": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comprend les ordres de son Héliarque"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Satellite",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 0.5,
+    "height": 0.5,
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayName": 20,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "texture": {
+      "src": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "visionMode": "basic"
+    },
+    "flags": {
+      "compendium-owidyn": {
+        "heliarque": {
+          "form": "satellite"
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "8Yo0PT1OLnFE51Kv",
+      "name": "Rappel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+      "folder": null,
+      "sort": 100000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque.</em> La Forme disparaît et son Orbital retourne dans la Réserve. L'Orbital conserve ses Hit Points actuels : il reviendra avec eux à sa prochaine Manifestation. Rappeler une Forme ne restaure aucun Hit Point.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-rappel",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "nBK151jei1VbsHN6": {
+            "_id": "nBK151jei1VbsHN6",
+            "type": "utility",
+            "name": "Rappel",
+            "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme disparaît ; son Orbital retourne dans la Réserve."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "recall"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-rappel",
+            "form": "satellite",
+            "kind": "recall"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "2uE6ItB8ZZ7sCiKU",
+      "name": "Changer de forme",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+      "folder": null,
+      "sort": 200000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque — Reconfiguration.</em> Transformez cette Forme en une autre Forme que l'Héliarque connaît. Elle conserve ses Hit Points actuels, jusqu'au Hit Point Maximum de sa nouvelle Forme, et reste au même endroit.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-changer-de-forme",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "HysAga8HlHssT8pl": {
+            "_id": "HysAga8HlHssT8pl",
+            "type": "utility",
+            "name": "Changer de forme",
+            "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme devient une autre Forme connue et conserve ses Hit Points."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "reconfigure"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-changer-de-forme",
+            "form": "satellite",
+            "kind": "reconfigure"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "ZE0KGjC24c6lFc1S",
+      "name": "Intégrité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+      "folder": null,
+      "sort": 300000,
+      "system": {
+        "description": {
+          "value": "<p>Cette Forme est un objet magique, immunisée aux Poison et Psychic damage. Elle agit pendant le tour de son Héliarque et utilise ses actions ; elle n'a pas d'initiative propre.</p><p><strong>Commande.</strong> Une même Forme ne peut utiliser sa Commande qu'une seule fois par tour, sauf aptitude contraire.</p><p><strong>Orbital.</strong> Cette Forme est portée par l'un des Orbitals de l'Héliarque, qui conserve ses Hit Points lorsqu'il est rappelé ou change de forme.</p><p><strong>Destruction.</strong> À 0 Hit Points, la Forme est détruite sans pouvoir utiliser sa Rupture. <em>Règle de table :</em> son Orbital reste indisponible jusqu'au prochain Long Rest de l'Héliarque.</p><p><strong>Repos.</strong> Lorsque l'Héliarque termine un Short ou Long Rest, l'Orbital récupère tous ses Hit Points, sauf s'il a été détruit : il attend alors le Long Rest.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-integrite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-integrite",
+            "form": "satellite",
+            "kind": "trait"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "fH8okw8GgWIOcpgv",
+      "name": "Présence — Relais orbital",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+      "folder": null,
+      "sort": 400000,
+      "system": {
+        "description": {
+          "value": "<p>Le Satellite possède Hover et la Fly Speed indiquée dans sa table d'évolution. Il peut rester jusqu'à 120 ft de son Héliarque (300 ft avec Matrice supérieure). L'Héliarque voit et entend depuis son espace comme s'il s'y trouvait. Le Satellite peut servir d'Origine aux Techniques.</p><p>Par une Bonus Action, l'Héliarque peut déplacer un de ses Satellites jusqu'à sa Fly Speed.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-relais",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "b2ncKpIFNTCGaKLB": {
+            "_id": "b2ncKpIFNTCGaKLB",
+            "type": "utility",
+            "name": "Déplacer le Satellite",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "move": {
+                    "mode": "free",
+                    "distance": "@summoner.scale.heliarque.vol",
+                    "subject": "this",
+                    "action": "fly"
+                  }
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-relais",
+            "form": "satellite",
+            "kind": "presence"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "QHAOTQ5AqwewhIMe",
+      "name": "Canon stellaire",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/impact-vectoriel.svg",
+      "folder": null,
+      "sort": 500000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Commande.</em> Vous pouvez déplacer le Satellite jusqu'à sa Fly Speed avant ou après cette attaque. Effectuez un Ranged Fusion Attack depuis son espace contre une créature située à portée. En cas de réussite, la cible subit des Fire ou Force damage, à votre choix.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-canon",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Commande",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "QKRpsvru3PqdVHU8": {
+            "_id": "QKRpsvru3PqdVHU8",
+            "type": "attack",
+            "name": "Canon stellaire",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "@summoner.scale.heliarque.portee",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "command"
+                }
+              }
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "@summoner.abilities.cha.mod + @summoner.attributes.prof",
+              "critical": {
+                "threshold": null
+              },
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "spell"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "fire",
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "(@summoner.scale.heliarque.canon)@summoner.scale.heliarque.fusion.die + @summoner.abilities.cha.mod"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-canon",
+            "form": "satellite",
+            "kind": "command"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "UX02QKU9cOUymeen",
+      "name": "Projectile terminal",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/vecteur-de-collision.svg",
+      "folder": null,
+      "sort": 600000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Rupture.</em> Projetez le Satellite jusqu'à 60 ft en ligne droite. Effectuez un Ranged Fusion Attack contre une créature située sur cette trajectoire. En cas de réussite, elle subit des Force damage et est repoussée dans la direction suivie par le Satellite. Le Satellite devient Dépensé après l'attaque, qu'elle touche ou non.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-projectile",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Rupture",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "4fu0XQrWFmvmclvl": {
+            "_id": "4fu0XQrWFmvmclvl",
+            "type": "attack",
+            "name": "Projectile terminal",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "60",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "line",
+                "size": "60",
+                "width": "5",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "rupture",
+                  "move": {
+                    "mode": "away",
+                    "distance": "@summoner.scale.heliarque.recul",
+                    "from": "this",
+                    "subject": "targets",
+                    "attack": true
+                  }
+                }
+              }
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "@summoner.abilities.cha.mod + @summoner.attributes.prof",
+              "critical": {
+                "threshold": null
+              },
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "spell"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "(@summoner.scale.heliarque.projectile)@summoner.scale.heliarque.fusion.die + @summoner.abilities.cha.mod"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-projectile",
+            "form": "satellite",
+            "kind": "rupture"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "zlNpZ7mTpspIAdEe",
+      "name": "Verrouillage spectral",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/evolution-orbitale.svg",
+      "folder": null,
+      "sort": 700000,
+      "system": {
+        "description": {
+          "value": "<p><em>Évolution orbitale (niveau 7).</em> Lorsqu'un Canon stellaire touche une créature, celle-ci est <strong>verrouillée</strong> jusqu'au début du prochain tour de l'Héliarque. Tant qu'au moins un Satellite peut la percevoir, elle ne peut pas être Hidden vis-à-vis de l'Héliarque, son Invisible ne lui accorde aucun bénéfice contre ses Fusion Attacks et elle ne bénéficie pas de Half Cover ou Three-Quarters Cover contre ses Fusion Attacks. Cette aptitude ne permet pas de percevoir une créature derrière Total Cover.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-verrouillage",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "EeLAIFtVjQyJnAfn": {
+            "_id": "EeLAIFtVjQyJnAfn",
+            "type": "utility",
+            "name": "Verrouiller la cible",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Lorsqu'un Canon stellaire touche une créature",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [
+              {
+                "_id": "DVJ2nndatJfO7d7k",
+                "onSave": false
+              }
+            ],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "lock"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [
+        {
+          "_id": "DVJ2nndatJfO7d7k",
+          "name": "Verrouillage spectral",
+          "img": "modules/compendium-owidyn/assets/heliarque/evolution-orbitale.svg",
+          "type": "base",
+          "system": {
+            "changes": []
+          },
+          "disabled": false,
+          "duration": {
+            "value": 1,
+            "units": "rounds",
+            "expiry": "sourceStart",
+            "expired": false
+          },
+          "description": "<p>Verrouillée : ne peut pas être Hidden vis-à-vis de l'Héliarque ; Invisible et Half/Three-Quarters Cover sans effet contre ses Fusion Attacks, tant qu'un Satellite la perçoit.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "compendium-owidyn": {
+              "heliarque": {
+                "key": "satellite:verrouille"
+              }
+            }
+          },
+          "start": null,
+          "showIcon": 1
+        }
+      ],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-verrouillage",
+            "form": "satellite",
+            "kind": "upgrade",
+            "requires": {
+              "level": 7
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "AjplC2mD3H85JKuc",
+      "name": "Tir vectoriel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transcendance-des-formes.svg",
+      "folder": null,
+      "sort": 800000,
+      "system": {
+        "description": {
+          "value": "<p><em>Transcendance des Formes (niveau 13).</em> Lorsqu'un Canon stellaire touche une créature, vous pouvez déplacer celle-ci jusqu'à <strong>10 ft dans une direction de votre choix</strong>.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-tir-vectoriel",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "6Sx9hhIFcQEVSJJn": {
+            "_id": "6Sx9hhIFcQEVSJJn",
+            "type": "utility",
+            "name": "Tir vectoriel",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Lorsqu'un Canon stellaire touche une créature",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "move": {
+                    "mode": "free",
+                    "distance": "10",
+                    "subject": "targets"
+                  }
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-tir-vectoriel",
+            "form": "satellite",
+            "kind": "upgrade",
+            "requires": {
+              "level": 13
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "JBZO0TltKKJLmy35",
+      "name": "Présence apaisante — Étoile guide",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/presences-apaisantes.svg",
+      "folder": null,
+      "sort": 900000,
+      "system": {
+        "description": {
+          "value": "<p><em>Soothing Star (niveau 6).</em> Les créatures alliées situées à 10 ft ou moins du Satellite ont Advantage aux Wisdom (Perception) checks et ne peuvent pas être Surprised tant qu'elles peuvent percevoir le Satellite.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "Héliarque"
+        },
+        "identifier": "satellite-etoile-guide",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "satellite-etoile-guide",
+            "form": "satellite",
+            "kind": "presence",
+            "requires": {
+              "subclass": "soothing-star",
+              "level": 6
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "form": "satellite"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

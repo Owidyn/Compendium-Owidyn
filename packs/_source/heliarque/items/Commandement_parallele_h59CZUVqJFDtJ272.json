@@ -1,0 +1,158 @@
+{
+  "_id": "h59CZUVqJFDtJ272",
+  "name": "Commandement parallèle",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/commandement-parallele.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 11000,
+  "system": {
+    "description": {
+      "value": "<p>Votre esprit peut commander plusieurs manifestations simultanément. Une fois pendant chacun de vos tours, après avoir utilisé une Technique stellaire ou la Commande d'une Forme, vous pouvez dépenser <strong>2 Orbitals</strong>. Choisissez une autre Forme Manifestée qui n'a pas encore utilisé sa Commande pendant ce tour. Elle utilise immédiatement sa Commande sans utiliser d'Action supplémentaire.</p><p><strong>Combustion supérieure.</strong> Une Forme sacrifiée grâce à Combustion de secours compte désormais comme <strong>3 Orbitals</strong> pour payer le coût de la Technique. Tout excédent est perdu.</p><p><strong>Fusion supérieure.</strong> Votre Dé de Fusion devient un <strong>d10</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "commandement-parallele",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 11",
+    "prerequisites": {
+      "level": 11,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "I1YR4BCS5dht94cr": {
+        "_id": "I1YR4BCS5dht94cr",
+        "type": "utility",
+        "name": "Commandement parallèle",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Après une Technique stellaire ou la Commande d'une Forme",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "parallel"
+            }
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "commandement-parallele"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

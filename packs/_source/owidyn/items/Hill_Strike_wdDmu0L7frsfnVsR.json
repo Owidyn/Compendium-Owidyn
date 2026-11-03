@@ -1,0 +1,204 @@
+{
+  "type": "feat",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793646899628,
+    "modifiedTime": 1793646899628,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "name": "Hill Strike",
+  "_id": "wdDmu0L7frsfnVsR",
+  "img": "icons/magic/earth/barrier-stone-brown-green.webp",
+  "folder": "xVcdXx4FzB5OcV7N",
+  "sort": 400000,
+  "effects": [
+    {
+      "name": "Hill Strike",
+      "img": "icons/magic/earth/barrier-stone-brown-green.webp",
+      "_id": "o8pHvvhZpmCyqaK3",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Knocked Prone by a Hill Strike.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "prone"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793646899628,
+        "modifiedTime": 1793646899628,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "Bigby Presents: Glory of the Giants",
+      "page": "19"
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Strike of the Giants",
+    "activities": {
+      "Aye91jJ1VYCqubaL": {
+        "type": "save",
+        "name": "Hill Strike",
+        "_id": "Aye91jJ1VYCqubaL",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "o8pHvvhZpmCyqaK3",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "full"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @prof + max(@abilities.str.mod, @abilities.con.mod)"
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "advancement": {},
+    "crewed": false,
+    "description": {
+      "value": "<p>The target takes an extra 1d6 damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p><p>Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with this effect. The saving throw DC equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><section class=\"secret\" id=\"secret-n6Lx8N5Y4v1nRhXQ\"><p><strong>Foundry Note</strong></p><p>Use the activity after a hit: it spends a use and rolls the extra damage and the saving throw. Choose the weapon's damage type when rolling the damage. On a failed save, the target gets the <em>Hill Strike</em> effect, which gives it the Prone condition. The once-per-turn limit is not tracked.</p></section>",
+      "chat": ""
+    },
+    "identifier": "strike-of-the-giants-hill"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Familiar Friend",
+  "type": "feat",
+  "_id": "az44pZCPz6PYU23k",
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Faithful Companion.</strong> You always have the @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} spell prepared. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat). You can cast it once without a spell slot or Material components, and you regain the ability to cast it in this way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p><p><strong>Fortified Familiar.</strong> When you cast the Find Familiar spell, your familiar's Hit Point maximum and current Hit Points are increased by an amount equal to twice your character level.</p><p><strong>Helpful Friend.</strong> When you make an ability check using a skill in which you have proficiency while your familiar is within 5 feet of you, you gain &amp;Reference[Advantage] on the check. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-AhAx1VldWlXrUkMc\"><p><strong>Foundry Note</strong></p><p>Find Familiar is granted by the feat, with its free casting per Long Rest; the spellcasting ability is chosen during advancement. The Material components of the free casting are not removed automatically.</p><p>Fortified Familiar is automated: the familiar summoned with Find Familiar gets the extra Hit Points.</p><p>Helpful Friend tracks its uses: use the activity, then roll the check with Advantage.</p></section>",
+      "chat": ""
+    },
+    "source": { "custom": "", "rules": "2024", "revision": 1, "license": "", "book": "Arcana Unleashed", "page": "" },
+    "uses": { "max": "@prof", "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }] },
+    "type": { "value": "feat", "subtype": "origin" },
+    "prerequisites": { "level": null, "repeatable": false, "items": [] },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "Ywa8Goyc7RS8QPe0": {
+        "type": "utility",
+        "name": "Helpful Friend",
+        "_id": "Ywa8Goyc7RS8QPe0",
+        "sort": 0,
+        "activation": { "type": "special", "value": null, "override": false, "condition": "Skill check with proficiency, familiar within 5 feet" },
+        "consumption": {
+          "scaling": { "allowed": false, "max": "" },
+          "spellSlot": true,
+          "targets": [{ "type": "itemUses", "value": "1", "target": "", "scaling": {} }]
+        },
+        "description": { "chatFlavor": "Advantage on this skill check." },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "range": { "override": false, "units": "self", "special": "" },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "", "size": "", "count": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" }
+      }
+    },
+    "enchant": {},
+    "identifier": "familiar-friend",
+    "advancement": {
+      "HqGz6Fh8XEUEQeB2": {
+        "_id": "HqGz6Fh8XEUEQeB2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [{ "uuid": "Compendium.dnd5e.spells24.Item.phbsplFindFamili", "optional": false, "sort": 0 }],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": ["int", "wis", "cha"],
+            "method": "spell",
+            "prepared": 2,
+            "uses": { "max": "1", "per": "lr", "requireSlot": false }
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Faithful Companion",
+        "hint": "Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell."
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": { "default": 0 },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793646288040,
+    "modifiedTime": 1793646288040,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

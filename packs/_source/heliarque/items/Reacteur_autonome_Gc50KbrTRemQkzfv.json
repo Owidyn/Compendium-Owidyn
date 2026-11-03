@@ -1,0 +1,257 @@
+{
+  "_id": "Gc50KbrTRemQkzfv",
+  "name": "Réacteur autonome",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/reacteur-autonome.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 17000,
+  "system": {
+    "description": {
+      "value": "<p>Votre noyau génère de la matière stellaire pendant le combat. Après avoir lancé Initiative, au début de chacun de vos tours, vous récupérez <strong>2 Orbitals Dépensés</strong> dans votre Réserve. Cette récupération ne fonctionne pas en dehors d'un combat et ne peut jamais vous faire dépasser votre maximum d'Orbitals.</p><p><strong>Surplus critique.</strong> Si Réacteur autonome ne peut pas récupérer ses 2 Orbitals parce que moins de 2 de vos Orbitals sont Dépensés, choisissez un bénéfice pour chaque Orbital qui n'a pas pu être récupéré :</p><ul><li>une Forme récupère <strong>1 Dé de Fusion + votre modificateur de Charisma Hit Points</strong> ;</li><li>ou la prochaine fois avant la fin de ce tour qu'une de vos aptitudes de Héliarque inflige des dégâts, elle inflige <strong>1 Dé de Fusion supplémentaire</strong>.</li></ul><p><em>La récupération est automatique au début de votre tour ; le module propose le Surplus critique dans la discussion.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "reacteur-autonome",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 17",
+    "prerequisites": {
+      "level": 17,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a8oiQWnDAfLi97Mu": {
+        "_id": "a8oiQWnDAfLi97Mu",
+        "type": "heal",
+        "name": "Surplus critique — Réparation",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Orbital non récupéré par Réacteur autonome",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "spec",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Une de vos Formes"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1@scale.heliarque.fusion.die + @abilities.cha.mod"
+          },
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "8jIf5yygxjh5HUSt": {
+        "_id": "8jIf5yygxjh5HUSt",
+        "type": "damage",
+        "name": "Surplus critique — Intensification",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Orbital non récupéré par Réacteur autonome ; avant la fin de ce tour",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire",
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "reacteur-autonome"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

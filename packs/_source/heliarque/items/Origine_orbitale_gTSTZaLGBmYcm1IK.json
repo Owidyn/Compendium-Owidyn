@@ -1,0 +1,95 @@
+{
+  "_id": "gTSTZaLGBmYcm1IK",
+  "name": "Origine orbitale",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 1002,
+  "system": {
+    "description": {
+      "value": "<p><em>Passif permanent.</em></p><p>Certaines Techniques portent la mention <strong>Origine : oui</strong>. Lorsqu'une Technique possède cette mention, vous pouvez choisir comme Origine :</p><ul><li>votre propre espace ;</li><li>l'espace de l'un de vos Satellites Manifestés.</li></ul><p>Toutes les portées, lignes, cônes et zones de la Technique sont alors calculés depuis cette Origine. Une autre Forme ne devient pas une Origine à moins qu'une aptitude ne l'indique explicitement.</p><p><em>Au lancement d'une Technique avec Origine, le module vous demande de choisir l'Origine lorsque vous avez au moins un Satellite Manifesté.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "origine-orbitale",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 1",
+    "prerequisites": {
+      "level": 1,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "il5HXewH33H2bn6s",
+      "name": "Origine orbitale",
+      "img": "modules/compendium-owidyn/assets/heliarque/satellite.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Les Techniques et aptitudes portant la mention <strong>Origine : oui</strong> peuvent partir de votre espace ou de celui de l'un de vos Satellites Manifestés.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "origine-orbitale:passif"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "origine-orbitale"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "name": "Clawline",
+  "type": "feat",
+  "img": "icons/creatures/webs/web-thin-flat-yellow.webp",
+  "system": {
+    "activities": {
+      "2AFp7BUjnhVDJmNw": {
+        "type": "utility",
+        "name": "Clawline",
+        "_id": "2AFp7BUjnhVDJmNw",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "value": "@scale.voie-de-l-aiguille.clawline",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "space",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "SkVtaBwfdLHs9Uly": {
+        "_id": "SkVtaBwfdLHs9Uly",
+        "type": "utility",
+        "name": "Traction",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "Votre Lame-aiguille est ancrée par Clawline",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Vous vous déplacez en ligne droite jusqu’à 5 ft du point d’ancrage, sans dépenser de Speed ni provoquer d’Opportunity Attacks."
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Avec une Action, vous projetez votre Lame-aiguille vers une surface solide que vous voyez à [[lookup @scale.voie-de-l-aiguille.clawline]]{40} ft ou moins. Si la surface peut supporter votre poids, l’aiguille s’y fixe.</p><p>Avec une Bonus Action, vous pouvez vous déplacer en ligne droite jusqu’à un espace inoccupé situé à 5 ft ou moins du point d’ancrage. Ce déplacement ne dépense pas votre Speed et ne provoque pas d’Opportunity Attacks. Votre Lame-aiguille revient ensuite dans votre main.</p><section class=\"secret\" id=\"secret-6cjpfxsREJjjp8hL\"><p><strong>Foundry Note</strong></p><p>La portée passe à 80 ft au niveau 11 (Silksoar). Le déplacement de la traction se fait à la main.</p></section>",
+      "chat": ""
+    },
+    "identifier": "clawline",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Owidyn2024",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "La Voie de l’Aiguille 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "XyryqlzOYhvtKPeY",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511303156,
+    "modifiedTime": 1793660000000,
+    "lastModifiedBy": "ppJzl6mDRBw2GO6v",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "8QTrriptjvihKTi4",
+  "sort": 150000
+}

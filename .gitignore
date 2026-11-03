@@ -1,0 +1,10 @@
+# Dépendances de développement (npm install)
+node_modules/
+
+# Fichiers de travail des compendiums LevelDB, recréés par Foundry (les .ldb, .log, CURRENT et MANIFEST sont les données)
+packs/**/LOCK
+packs/**/LOG
+packs/**/LOG.old
+
+# Archive construite par la GitHub Action de publication
+compendium-owidyn.zip

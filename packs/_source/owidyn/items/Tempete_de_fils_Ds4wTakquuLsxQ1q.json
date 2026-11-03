@@ -1,0 +1,287 @@
+{
+  "name": "Tempête de fils",
+  "type": "feat",
+  "img": "icons/creatures/webs/web-spider-glowing-purple.webp",
+  "system": {
+    "activities": {
+      "XEweZExYj03ZTGnN": {
+        "type": "save",
+        "name": "Tempête de fils (10 ft)",
+        "_id": "XEweZExYj03ZTGnN",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "Compendium.dnd5e.classes24.Item.phbmnkMonksFocus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "radius",
+            "size": "10",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": true,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "4@scale.monk.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "slashing"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        }
+      },
+      "NvusGITCnZGD0nKu": {
+        "type": "save",
+        "name": "Tempête de fils (20 ft)",
+        "_id": "NvusGITCnZGD0nKu",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Vous renoncez à votre Bonus Action du tour"
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "Compendium.dnd5e.classes24.Item.phbmnkMonksFocus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "radius",
+            "size": "20",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": true,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "4@scale.monk.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "slashing"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Avec une Magic Action, vous pouvez dépenser 2 Focus Points pour faire tournoyer votre Lame-aiguille et ses fils autour de vous.</p><p>Chaque créature de votre choix dans une Emanation de 10 ft doit effectuer un Constitution Saving Throw.</p><p><strong>Échec.</strong> La créature subit des dégâts tranchants égaux à quatre jets de votre Martial Arts die.</p><p><strong>Réussite.</strong> Elle subit la moitié de ces dégâts.</p><p>Vous pouvez renoncer à votre Bonus Action du tour pour augmenter l’Emanation à 20 ft.</p><section class=\"secret\" id=\"secret-h7gQd3etVYtekUuU\"><p><strong>Foundry Note</strong></p><p>Deux activités : Emanation de 10 ft, ou de 20 ft en renonçant à votre Bonus Action.</p></section>",
+      "chat": ""
+    },
+    "identifier": "tempete-de-fils",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Owidyn2024",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "La Voie de l’Aiguille 3",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [],
+  "folder": "XyryqlzOYhvtKPeY",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511342747,
+    "modifiedTime": 1793660000000,
+    "lastModifiedBy": "ppJzl6mDRBw2GO6v",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Ds4wTakquuLsxQ1q",
+  "sort": 137500
+}

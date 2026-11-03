@@ -1,0 +1,231 @@
+{
+  "_id": "2IxJ9uCBXPNhH7VF",
+  "name": "Onde de résonance",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/onde-de-resonance.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 5000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 2 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Prérequis :</strong> Héliarque niveau 5</p><p>Choisissez une de vos Formes Manifestées. Chaque créature hostile située à <strong>10 ft ou moins de cette Forme</strong> effectue un Strength Saving Throw contre votre DD de Fusion.</p><p>En cas d'échec, elle subit <strong>2 Dés de Fusion de Force damage</strong> et est repoussée jusqu'à <strong>15 ft directement à l'opposé de la Forme</strong>. En cas de réussite, elle subit la moitié des dégâts et n'est pas déplacée.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "onde-de-resonance",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "",
+        "type": "enemy",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 2,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "evo",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "zy6V4K3EAifHu5P4": {
+        "_id": "zy6V4K3EAifHu5P4",
+        "type": "save",
+        "name": "Onde de résonance",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 2,
+              "origin": false,
+              "targeting": {
+                "kind": "formRadius",
+                "radius": 10,
+                "disposition": "hostile"
+              },
+              "move": {
+                "mode": "away",
+                "distance": "15",
+                "from": "chosenForm",
+                "subject": "targets",
+                "save": true
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "2@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "onde-de-resonance",
+        "prerequisite": 5
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,81 @@
+<div class="cartomancien-manager-body">
+  <header class="cartomancien-summary">
+    <div><strong>{{actorName}}</strong> — Cartomancien niveau {{level}}</div>
+    <div>PB +{{pb}} · Main {{handCount}}/{{pb}} · Changements de sort disponibles : {{replacementCredits}}</div>
+  </header>
+
+  {{#unless initialized}}
+  <div class="cartomancien-warning">
+    Le deck n'est pas encore initialisé pour ce personnage.
+  </div>
+  {{/unless}}
+
+  <div class="cartomancien-actions">
+    <button type="button" data-action="sync"><i class="fa-solid fa-arrows-rotate"></i> Initialiser / Synchroniser</button>
+    <button type="button" data-action="draw" {{#unless canDraw}}disabled{{/unless}}><i class="fa-solid fa-hand"></i> Piocher 1 carte</button>
+    <button type="button" data-action="longRest" {{#unless initialized}}disabled{{/unless}}><i class="fa-solid fa-moon"></i> Long Rest</button>
+    <button type="button" data-action="cantrips">Choisir les sorts mineurs</button>
+  </div>
+
+  {{#if restPending}}<div class="cartomancien-warning">Repos terminé : la main reste à renouveler. <button type="button" data-action="resumeRest">Renouveler la main</button></div>{{/if}}
+  {{#if redrawPending}}<div class="cartomancien-warning">Recomposition en cours : remets trois cartes dans le deck. <button type="button" data-action="resumeRedraw">Terminer la recomposition</button></div>{{/if}}
+  {{#if jackpotPending}}<div class="cartomancien-warning">Jackpot : {{jackpotPending}} sort(s) restant(s). <button type="button" data-action="resumeJackpot">Reprendre le Jackpot</button></div>{{/if}}
+
+  <section class="cartomancien-columns">
+    <div class="cartomancien-column">
+      <h3>Deck <span>{{deckAvailable}} disponibles / {{deckTotal}}</span></h3>
+      <div class="cartomancien-list">
+        {{#each deckCards}}
+        <article class="cartomancien-card {{#if drawn}}drawn{{/if}}">
+          <div class="cartomancien-card-main">
+            <strong>{{name}}</strong>
+            <small>Sort niv. {{spellLevel}}</small>
+            <div class="cartomancien-spell">{{spellName}}</div>
+          </div>
+          <button type="button" data-action="assign" data-arcana="{{index}}">{{#if hasSpell}}Changer{{else}}Lier un sort{{/if}}</button>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="cartomancien-column cartomancien-hand-column">
+      <h3>Main <span>{{handCount}} carte(s)</span></h3>
+      <div class="cartomancien-list">
+        {{#if mysteryCard}}
+        <article class="cartomancien-card in-hand">
+          <div class="cartomancien-card-main"><strong>Carte Mystère</strong><small>HIT THE JACKPOT · Série de 7 : {{jackpotStreak}}/3</small></div>
+          <button type="button" data-action="jackpot">Jouer</button>
+        </article>
+        {{/if}}
+        {{#each handCards}}
+        <article class="cartomancien-card in-hand">
+          <div class="cartomancien-card-main">
+            <strong>{{name}}</strong>
+            <small>Sort niv. {{spellLevel}}</small>
+            {{#if coupEclat}}<small>Coup d'éclat : prochain sort au niveau 9</small>{{/if}}
+            <div class="cartomancien-spell">{{spellName}}</div>
+          </div>
+          <button type="button" data-action="cast" data-card-id="{{id}}" {{#unless hasSpell}}disabled{{/unless}}><i class="fa-solid fa-wand-magic-sparkles"></i> Lancer</button>
+        </article>
+        {{else}}
+        <p class="cartomancien-empty">Main vide.</p>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="cartomancien-column">
+      <h3>Défausse <span>{{discardCount}} carte(s)</span></h3>
+      <div class="cartomancien-list">
+        {{#if discardCount}}
+        <p class="cartomancien-empty">Le contenu de la défausse est volontairement masqué. Tu sais seulement qu'elle contient {{discardCount}} carte(s).</p>
+        {{else}}
+        <p class="cartomancien-empty">Défausse vide.</p>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+
+  <footer class="cartomancien-note">
+    Chaque carte représente un sort préparé. En la jouant, tu peux choisir parmi tous tes sorts préparés de son niveau. L'influx est proposé au lancement ; Le Monde peut lancer tout sort préparé au niveau 9 à partir du niveau 20.
+  </footer>
+</div>

@@ -1,0 +1,282 @@
+{
+  "_id": "8GsDPOF69GZdSylz",
+  "name": "Compression gravitationnelle",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/compression-gravitationnelle.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 1000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 2 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Origine :</strong> oui</p><p>Choisissez une créature située à 30 ft ou moins de l'Origine. Elle effectue un Strength Saving Throw contre votre DD de Fusion. En cas d'échec, jusqu'au début de votre prochain tour :</p><ul><li>sa Speed devient 0 ;</li><li>elle ne peut pas effectuer de Reactions.</li></ul><p>Si la cible se trouve dans le Champ gravitationnel d'une de vos Ancres lorsqu'elle échoue, vous pouvez également la déplacer jusqu'à <strong>5 ft vers cette Ancre</strong> avant que sa Speed ne devienne 0.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "compression-gravitationnelle",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 1,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "trs",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "eUBA1Q5ZV3uwU9La": {
+        "_id": "eUBA1Q5ZV3uwU9La",
+        "type": "save",
+        "name": "Compression gravitationnelle",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "DmHlU1WWHylDsL2p",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 2,
+              "origin": true,
+              "move": {
+                "mode": "toward",
+                "distance": "5",
+                "from": "anchorField",
+                "subject": "targets",
+                "save": true,
+                "optional": true
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "DmHlU1WWHylDsL2p",
+      "name": "Compression gravitationnelle",
+      "img": "modules/compendium-owidyn/assets/heliarque/compression-gravitationnelle.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Sa Speed devient 0 et elle ne peut pas effectuer de Reactions jusqu'au début du prochain tour de l'Héliarque.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "compression-gravitationnelle:stopped"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "compression-gravitationnelle",
+        "prerequisite": 1
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

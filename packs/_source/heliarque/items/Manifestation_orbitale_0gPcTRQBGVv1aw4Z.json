@@ -1,0 +1,257 @@
+{
+  "_id": "0gPcTRQBGVv1aw4Z",
+  "name": "Manifestation orbitale",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/invocation-orbitale.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 1 Orbital</p><p><strong>Origine :</strong> oui</p><p><strong>Formes simultanées :</strong> [[lookup @scale.heliarque.formes]]</p><p>Les Formes orbitales sont les manifestations physiques de vos Orbitals. Par une Bonus Action, choisissez un Orbital de votre Réserve et manifestez-le sous une Forme que vous connaissez, dans un espace valide situé à 30 ft ou moins de vous.</p><p>Vous connaissez le <strong>Satellite</strong> et le <strong>Bastion</strong> au niveau 1, puis le <strong>Halo</strong> et l'<strong>Ancre gravitationnelle</strong> au niveau 2.</p><h5>Formes simultanées</h5><p>Chaque point de la colonne <strong>Formes</strong> de la table du Héliarque (2 au niveau 1, 3 au niveau 5, 4 au niveau 9, 5 au niveau 13 et 6 au niveau 17) est un <strong>Orbital</strong> : une entité persistante, avec ses propres Hit Points, qui peut prendre n'importe laquelle des Formes que vous connaissez. Le module crée ces Orbitals dans le dossier d'acteurs <strong>Héliarque — Orbitals</strong>.</p><ul><li><strong>Manifestation.</strong> Un Orbital libre apparaît sous la Forme choisie. S'ils n'ont pas tous les mêmes Hit Points, vous choisissez lequel.</li><li><strong>Rappel.</strong> L'Orbital disparaît et redevient libre ; il <strong>conserve ses Hit Points</strong>.</li><li><strong>Changer de forme.</strong> Le même Orbital prend une autre Forme sur place et conserve ses Hit Points.</li><li><strong>Short ou Long Rest.</strong> Chaque Orbital qui n'est pas détruit récupère tous ses Hit Points.</li></ul><p>Les utilisations de ce sort affichent les Orbitals encore libres. Lorsqu'aucun n'est libre, Manifestation orbitale est refusée.</p><p><strong>Règle de table.</strong> Un Orbital détruit (0 Hit Points, Rupture, Combustion de secours ou sacrifice) reste indisponible jusqu'à la fin de votre prochain Long Rest, qui lui rend aussi ses Hit Points.</p><p>Chaque Forme possède une <strong>Présence</strong> (effet passif tant qu'elle demeure Manifestée), une <strong>Commande</strong> (fonction active) et une <strong>Rupture</strong> (utilisation exceptionnelle qui détruit volontairement la Forme). Ces aptitudes, ainsi que <strong>Rappel</strong> et <strong>Changer de forme</strong>, se trouvent sur la fiche de la Forme et évoluent avec votre niveau.</p><h5>Intégrité</h5><p>Une Forme est un objet magique. Sauf indication contraire, elle possède :</p><ul><li><strong>Armor Class.</strong> 13 + votre modificateur de Charisma + votre Proficiency Bonus / 2 (arrondi à l'inférieur). Le Bastion a une base de 16.</li><li><strong>Hit Point Maximum.</strong> 5 + quatre fois votre niveau de Héliarque + votre modificateur de Charisma.</li></ul><p>Une Forme est immunisée aux Poison et Psychic damage. Lorsqu'une Forme tombe à 0 Hit Points, elle est détruite et son Orbital devient Dépensé ; une Forme détruite de cette manière ne peut pas utiliser sa Rupture.</p><p><strong>Règle de table.</strong> Une Forme détruite (0 Hit Points, Rupture, Combustion de secours ou sacrifice) ne rend son Orbital qu'à la fin de votre prochain Long Rest.</p><p>Lorsque vous terminez un Short ou Long Rest, chaque Orbital qui n'est pas détruit récupère tous ses Hit Points.</p><h5>Commandes</h5><p>Une Commande nécessite normalement votre <strong>Magic Action</strong>. Sauf indication contraire, une même Forme ne peut utiliser sa Commande qu'<strong>une seule fois par tour</strong>. Toutes les Formes agissent pendant votre tour et utilisent vos actions : elles n'ont pas d'initiative propre.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "manifestation-orbitale",
+    "ability": "cha",
+    "activation": {
+      "type": "bonus",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "spec",
+      "special": "Jusqu'au Rappel ou à la destruction de la Forme"
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "space",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 0,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "con",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "@scale.heliarque.formes",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "WUDcfwoPsHcAmfah": {
+        "_id": "WUDcfwoPsHcAmfah",
+        "type": "summon",
+        "name": "Manifestation",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "spec",
+          "special": "Jusqu'au Rappel ou à la destruction de la Forme",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "space",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "manifest"
+            }
+          }
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "ability": "cha",
+          "proficiency": false,
+          "attacks": false,
+          "saves": false,
+          "disposition": true
+        },
+        "profiles": [
+          {
+            "_id": "p3rVm3q5V4lyK1Bh",
+            "name": "Satellite",
+            "uuid": "Compendium.compendium-owidyn.formes-orbitales.Actor.1bRNHUnwTKZZFwgX",
+            "count": "1",
+            "cr": "",
+            "types": [],
+            "level": {
+              "min": 1,
+              "max": null
+            }
+          },
+          {
+            "_id": "ez42PUyoa2GJHAmZ",
+            "name": "Bastion",
+            "uuid": "Compendium.compendium-owidyn.formes-orbitales.Actor.PLpggoSjtVUZ8NV7",
+            "count": "1",
+            "cr": "",
+            "types": [],
+            "level": {
+              "min": 1,
+              "max": null
+            }
+          },
+          {
+            "_id": "fu4ckJNt1YviVnI9",
+            "name": "Halo",
+            "uuid": "Compendium.compendium-owidyn.formes-orbitales.Actor.l13Qe9004tCTlkv7",
+            "count": "1",
+            "cr": "",
+            "types": [],
+            "level": {
+              "min": 2,
+              "max": null
+            }
+          },
+          {
+            "_id": "Y8y6BYFfVMMnQrCx",
+            "name": "Ancre gravitationnelle",
+            "uuid": "Compendium.compendium-owidyn.formes-orbitales.Actor.pDnA2IParhkDCe60",
+            "count": "1",
+            "cr": "",
+            "types": [],
+            "level": {
+              "min": 2,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "mode": "",
+          "prompt": true
+        },
+        "tempHP": ""
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "manifestation-orbitale"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

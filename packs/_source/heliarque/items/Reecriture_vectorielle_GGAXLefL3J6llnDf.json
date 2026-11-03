@@ -1,0 +1,226 @@
+{
+  "_id": "GGAXLefL3J6llnDf",
+  "name": "Réécriture vectorielle",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/reecriture-vectorielle.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 17000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 5 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Prérequis :</strong> Héliarque niveau 17</p><p>Choisissez jusqu'à un nombre de créatures égal à votre modificateur de Charisma. Chaque cible doit se trouver à 30 ft ou moins d'au moins une de vos Formes.</p><p>Une créature non consentante effectue un Strength Saving Throw contre votre DD de Fusion. En cas d'échec, elle subit <strong>4 Dés de Fusion de Force damage</strong>, puis vous la déplacez jusqu'à <strong>30 ft</strong> vers un espace inoccupé situé à 30 ft ou moins d'une autre de vos Formes. En cas de réussite, elle subit la moitié des dégâts et n'est pas déplacée.</p><p>Une créature consentante peut être déplacée sans effectuer de Saving Throw et sans subir de dégâts.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "reecriture-vectorielle",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "@abilities.cha.mod",
+        "type": "creature",
+        "choice": false,
+        "special": "À 30 ft ou moins d'au moins une de vos Formes"
+      }
+    },
+    "level": 5,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "trs",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ohY59dBJyktU3X5e": {
+        "_id": "ohY59dBJyktU3X5e",
+        "type": "save",
+        "name": "Réécriture vectorielle",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "@abilities.cha.mod",
+            "type": "creature",
+            "choice": false,
+            "special": "À 30 ft ou moins d'au moins une de vos Formes"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 5,
+              "origin": false,
+              "move": {
+                "mode": "free",
+                "distance": "30",
+                "subject": "targets",
+                "save": true,
+                "nearForm": 30
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "4@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "reecriture-vectorielle",
+        "prerequisite": 17
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "_id": "Z2ji9AHwgrhdWShP",
+  "name": "État de Supernova",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/etat-de-supernova.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 20000,
+  "system": {
+    "description": {
+      "value": "<p>Par une Bonus Action, vous ouvrez totalement votre noyau et entrez dans votre <strong>État de Supernova</strong> pendant 1 minute. Une fois cette aptitude utilisée, vous devez terminer un Long Rest avant de pouvoir l'utiliser de nouveau.</p><p>Lorsque vous entrez dans cet état :</p><ul><li>récupérez tous vos Orbitals Dépensés ;</li><li>toutes vos Formes récupèrent tous leurs Hit Points ;</li><li>vous pouvez immédiatement Manifester ou Reconfigurer gratuitement des Formes jusqu'à votre maximum.</li></ul><p>Pendant cet état, vous gagnez les bénéfices suivants.</p><p><strong>Réaction autosuffisante.</strong> La première Technique utilisée pendant chacun de vos tours coûte <strong>1 Orbital de moins</strong>, jusqu'à un minimum de 0.</p><p><strong>Orchestration totale.</strong> Une fois pendant chacun de vos tours, après avoir utilisé une Technique ou une Commande, chacune de vos autres Formes Manifestées qui n'a pas encore utilisé sa Commande pendant ce tour peut immédiatement l'utiliser sans Action supplémentaire. Orchestration totale remplace la limitation de Synchronisation orbitale, mais ne permet toujours pas à une même Forme d'utiliser plusieurs fois sa Commande pendant ce tour.</p><p><strong>Stabilisation absolue.</strong> Au début de chacun de vos tours, chaque Forme Manifestée récupère <strong>1 Dé de Fusion + votre modificateur de Charisma Hit Points</strong>.</p><p><strong>Surproduction.</strong> Au début de chacun de vos tours, après Réacteur autonome, récupérez <strong>2 Orbitals Dépensés supplémentaires</strong>.</p><p><strong>Règle de table.</strong> Les Orbitals des Formes détruites restent indisponibles jusqu'au Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "etat-de-supernova",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 20",
+    "prerequisites": {
+      "level": 20,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "5tRFrcUS21elQA7q": {
+        "_id": "5tRFrcUS21elQA7q",
+        "type": "utility",
+        "name": "État de Supernova",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "EbBQ9qYnqYqmEJYl",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "supernova"
+            }
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "EbBQ9qYnqYqmEJYl",
+      "name": "État de Supernova",
+      "img": "modules/compendium-owidyn/assets/heliarque/etat-de-supernova.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "description": "<p>Réaction autosuffisante, Orchestration totale, Stabilisation absolue et Surproduction.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "etat-de-supernova:etat"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "etat-de-supernova"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

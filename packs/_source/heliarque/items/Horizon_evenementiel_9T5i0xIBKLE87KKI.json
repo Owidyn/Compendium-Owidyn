@@ -1,0 +1,415 @@
+{
+  "_id": "9T5i0xIBKLE87KKI",
+  "name": "Horizon événementiel",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/horizon-evenementiel.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 13000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 4 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Origine :</strong> oui</p><p><strong>Prérequis :</strong> Héliarque niveau 13</p><p>Choisissez un point situé à 90 ft ou moins de l'Origine. Une zone de gravité extrême de 20 ft de rayon apparaît jusqu'au début de votre prochain tour. La zone est Difficult Terrain pour les créatures hostiles.</p><p>Lorsqu'une créature hostile entre dans la zone pour la première fois pendant un tour ou y commence son tour, elle effectue un Strength Saving Throw contre votre DD de Fusion. En cas d'échec, sa Speed devient 0 et elle ne peut pas effectuer de Reactions jusqu'au début de son prochain tour.</p><p>Si vous centrez Horizon événementiel sur une de vos Ancres, son rayon devient <strong>le rayon actuel du Champ gravitationnel de l'Ancre + 10 ft</strong> et une créature qui échoue subit également <strong>2 Dés de Fusion de Force damage</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "horizon-evenementiel",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "round",
+      "special": ""
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "radius",
+        "size": "20",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "",
+        "type": "enemy",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 4,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "trs",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "LZczfaBmYYWY2L0h": {
+        "_id": "LZczfaBmYYWY2L0h",
+        "type": "save",
+        "name": "Horizon événementiel",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "4",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "round",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9tpHTCmjhwSzkXJk",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "90",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "radius",
+            "size": "20",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 4,
+              "origin": true,
+              "zone": {
+                "difficult": true
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "juOuUvexeK6kUlut": {
+        "_id": "juOuUvexeK6kUlut",
+        "type": "save",
+        "name": "Horizon événementiel — sur une Ancre",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "4",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "round",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9tpHTCmjhwSzkXJk",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "90",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 4,
+              "origin": true,
+              "zone": {
+                "difficult": true,
+                "onAnchor": true
+              },
+              "targeting": {
+                "kind": "formRadius",
+                "radius": "field+10",
+                "disposition": "hostile",
+                "forms": [
+                  "ancre"
+                ]
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "2@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "9tpHTCmjhwSzkXJk",
+      "name": "Horizon événementiel",
+      "img": "modules/compendium-owidyn/assets/heliarque/compression-gravitationnelle.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "value": "0",
+            "type": "override",
+            "phase": "final",
+            "priority": 50
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Sa Speed devient 0 et elle ne peut pas effectuer de Reactions jusqu'au début du prochain tour de l'Héliarque.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "horizon-evenementiel:stopped"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "horizon-evenementiel",
+        "prerequisite": 13
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

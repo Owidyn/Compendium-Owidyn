@@ -1,0 +1,98 @@
+{
+  "name": "Lumière de plasma",
+  "type": "feat",
+  "_id": "uPAIaUQjUUGzRDSO",
+  "img": "icons/magic/light/beam-rays-orange.webp",
+  "folder": "pBAihpSMeDUsrfQ7",
+  "sort": 350000,
+  "system": {
+    "description": {
+      "value": "<p>Votre corps de plasma incandescent émet une &amp;Reference[Bright Light] dans une Emanation de 20 ft, puis une &amp;Reference[Dim Light] sur 20 ft supplémentaires.</p><p>Vous pouvez supprimer ou restaurer cette lumière sans Action.</p><section class=\"secret\" id=\"secret-UT7UVs3Kp161pwuQ\"><p><strong>Foundry Note</strong></p><p>La lumière est un effet sur le jeton, actif par défaut. Utilisez l'aptitude pour l'éteindre ou la rallumer.</p></section>",
+      "chat": ""
+    },
+    "source": { "custom": "", "rules": "2024", "revision": 1, "license": "", "book": "Owidyn2024", "page": "" },
+    "uses": { "max": "", "spent": 0, "recovery": [] },
+    "type": { "value": "race", "subtype": "" },
+    "prerequisites": { "level": null, "repeatable": false, "items": [] },
+    "properties": [],
+    "requirements": "Primordian (Salamander)",
+    "activities": {
+      "pp4SzCEdoG2iDRQ2": {
+        "type": "utility",
+        "name": "Allumer / éteindre",
+        "_id": "pp4SzCEdoG2iDRQ2",
+        "sort": 0,
+        "activation": { "type": "special", "value": null, "override": false, "condition": "Sans Action" },
+        "consumption": { "scaling": { "allowed": false, "max": "" }, "spellSlot": true, "targets": [] },
+        "description": { "chatFlavor": "" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "range": { "override": false, "units": "self", "special": "" },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "", "size": "", "count": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" }
+      }
+    },
+    "enchant": {},
+    "identifier": "lumiere-de-plasma",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Lumière de plasma",
+      "img": "icons/magic/light/beam-rays-orange.webp",
+      "_id": "olVuRgGtfgeIgEKo",
+      "type": "base",
+      "system": {
+        "changes": [
+          { "key": "token.light.bright", "value": 20, "priority": null, "type": "upgrade", "phase": "initial", "_id": "6NaeNPsVJTnMiOS8" },
+          { "key": "token.light.dim", "value": 40, "priority": null, "type": "upgrade", "phase": "initial", "_id": "7q1wZA6p9dkUESCE" },
+          { "key": "token.light.color", "value": "#ff7a1f", "priority": null, "type": "override", "phase": "initial", "_id": "FVLoGbgJef7rKs26" },
+          { "key": "token.light.animation.type", "value": "torch", "priority": null, "type": "override", "phase": "initial", "_id": "78NCHMiQ544cGFBf" }
+        ]
+      },
+      "disabled": false,
+      "duration": { "value": null, "units": "seconds", "expiry": null, "expired": false },
+      "description": "<p>Bright Light 20 ft, Dim Light 20 ft supplémentaires.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793645724397,
+        "modifiedTime": 1793645724397,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": { "default": 0 },
+  "flags": { "compendium-owidyn": { "toggleEffect": "olVuRgGtfgeIgEKo", "formePrimordiale": true } },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793645724397,
+    "modifiedTime": 1793645724397,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

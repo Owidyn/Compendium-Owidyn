@@ -1,0 +1,232 @@
+{
+  "_id": "uJTgrms2SSYzlAj6",
+  "name": "Rail orbital",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/rail-orbital.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 13000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 4 Orbitals</p><p><strong>Activation :</strong> Magic Action</p><p><strong>Prérequis :</strong> Héliarque niveau 13</p><p>Choisissez une succession de deux à quatre points parmi votre espace et les espaces de vos Formes Manifestées. Tracez une ligne de 5 ft de largeur reliant ces points dans l'ordre choisi. Chaque segment doit mesurer 60 ft ou moins et la longueur totale de la trajectoire ne peut pas dépasser <strong>120 ft</strong>.</p><p>Chaque créature dans cette trajectoire effectue un Dexterity Saving Throw contre votre DD de Fusion. En cas d'échec, elle subit <strong>6 Dés de Fusion de Fire ou Force damage</strong>, à votre choix. En cas de réussite, elle subit la moitié. Une même créature ne peut être affectée qu'une seule fois par Rail orbital.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "rail-orbital",
+    "ability": "cha",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 4,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "evo",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ZRUFCsYEjWKJqbJa": {
+        "_id": "ZRUFCsYEjWKJqbJa",
+        "type": "save",
+        "name": "Rail orbital",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "4",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 4,
+              "origin": false,
+              "targeting": {
+                "kind": "path",
+                "points": [
+                  2,
+                  4
+                ],
+                "segment": 60,
+                "total": 120,
+                "width": 5,
+                "includeSelf": true,
+                "excludeForms": false
+              }
+            }
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire",
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "6@scale.heliarque.fusion.die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "rail-orbital",
+        "prerequisite": 13
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

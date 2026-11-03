@@ -1,0 +1,195 @@
+{
+  "_id": "KS30s4rklun5h0e3",
+  "name": "Dérivation structurelle",
+  "type": "spell",
+  "img": "modules/compendium-owidyn/assets/heliarque/derivation-structurelle.svg",
+  "folder": "hYgTiDZoKZos83tO",
+  "sort": 13000,
+  "system": {
+    "description": {
+      "value": "<p><strong>Coût :</strong> 3 Orbitals</p><p><strong>Activation :</strong> Reaction</p><p><strong>Prérequis :</strong> Héliarque niveau 13</p><p>Lorsqu'une créature située à 15 ft ou moins d'une de vos Formes subit des dégâts, choisissez une de vos Formes située à 15 ft ou moins de cette créature. Lancez <strong>4 Dés de Fusion + votre modificateur de Charisma</strong>.</p><p>Réduisez les dégâts subis par la créature d'un montant pouvant aller jusqu'au résultat obtenu. La Forme choisie subit le même montant de dégâts que celui effectivement prévenu. Ces dégâts infligés à la Forme ne peuvent pas être réduits ou redirigés. Si la Forme tombe à 0 Hit Points de cette manière, elle est détruite normalement et ne peut pas déclencher sa Rupture.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "derivation-structurelle",
+    "ability": "cha",
+    "activation": {
+      "type": "reaction",
+      "value": null,
+      "condition": "Une créature à 15 ft ou moins d'une de vos Formes subit des dégâts"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst",
+      "special": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": true,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "level": 4,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "technique",
+    "prepared": 0,
+    "properties": [],
+    "school": "abj",
+    "sourceItem": "class:heliarque",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "xSWEVoH7ZxSIvSzD": {
+        "_id": "xSWEVoH7ZxSIvSzD",
+        "type": "utility",
+        "name": "Dérivation structurelle",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "Une créature à 15 ft ou moins d'une de vos Formes subit des dégâts",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "feat:orbitals",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "technique": true,
+              "cost": 3,
+              "origin": false,
+              "action": "derivation"
+            }
+          }
+        },
+        "roll": {
+          "formula": "4@scale.heliarque.fusion.die + @abilities.cha.mod",
+          "name": "Dégâts prévenus",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "derivation-structurelle",
+        "prerequisite": 13
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "_id": "MqgaH6PWYRnNuMyY",
+  "name": "Matrice orbitale",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/matrice-orbitale.svg",
+  "folder": "yOymQkBGXdyHQa0I",
+  "sort": 9000,
+  "system": {
+    "description": {
+      "value": "<p>Vous apprenez à déplacer vos manifestations comme les éléments d'une seule constellation.</p><p><strong>Constellation mobile.</strong> Une fois pendant chacun de vos tours, immédiatement après avoir utilisé une Commande, utilisé une Technique, Manifesté une Forme ou déclenché une Rupture, choisissez jusqu'à <strong>deux Formes Manifestées</strong>. Déplacez chacune d'elles jusqu'à <strong>15 ft</strong> sans utiliser d'Action. Ce déplacement ne déclenche pas leurs Commandes. Un Halo déplace son porteur avec lui si celui-ci est consentant. Un Bastion ou une Ancre peut flotter pendant ce déplacement, mais doit normalement terminer son déplacement sur une surface capable de le soutenir.</p><p><strong>Reconfiguration fluide.</strong> L'une des Formes déplacées par Constellation mobile peut être Reconfigurée à la fin de son déplacement sans utiliser de Bonus Action.</p><p><strong>Matrice supérieure.</strong> À partir du niveau 13, la distance de Constellation mobile devient <strong>30 ft</strong> et vos Formes peuvent rester jusqu'à <strong>300 ft</strong> de vous.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "Héliarque"
+    },
+    "identifier": "matrice-orbitale",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 9",
+    "prerequisites": {
+      "level": 9,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "msPh9RneF8Dp3rlb": {
+        "_id": "msPh9RneF8Dp3rlb",
+        "type": "utility",
+        "name": "Constellation mobile",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Immédiatement après une Commande, une Technique, une Manifestation ou une Rupture",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "constellation"
+            }
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "matrice-orbitale"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "type": "feat",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793646899628,
+    "modifiedTime": 1793646899628,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "name": "Stone Strike",
+  "_id": "VrGvoMDoR4YIiXPG",
+  "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+  "folder": "xVcdXx4FzB5OcV7N",
+  "sort": 500000,
+  "effects": [],
+  "system": {
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "Bigby Presents: Glory of the Giants",
+      "page": "19"
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Strike of the Giants",
+    "activities": {
+      "3pL9t7A4fnQ2Fpjf": {
+        "type": "save",
+        "name": "Stone Strike",
+        "_id": "3pL9t7A4fnQ2Fpjf",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "full"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @prof + max(@abilities.str.mod, @abilities.con.mod)"
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "advancement": {},
+    "crewed": false,
+    "description": {
+      "value": "<p>The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line.</p><p>Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with this effect. The saving throw DC equals 8 + your proficiency bonus + your Strength or Constitution modifier. You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><section class=\"secret\" id=\"secret-1ONGlGDg6Jr69PRc\"><p><strong>Foundry Note</strong></p><p>Use the activity after a hit: it spends a use and rolls the extra damage and the saving throw. The push is not automated: move the target's token 10 feet away from you. The once-per-turn limit is not tracked.</p></section>",
+      "chat": ""
+    },
+    "identifier": "strike-of-the-giants-stone"
+  }
+}

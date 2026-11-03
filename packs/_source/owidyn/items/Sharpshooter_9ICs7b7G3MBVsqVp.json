@@ -1,0 +1,54 @@
+{
+  "name": "Sharpshooter",
+  "type": "feat",
+  "_id": "9ICs7b7G3MBVsqVp",
+  "img": "icons/skills/ranged/target-bullseye-archer-orange.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 50000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity score by 1, to a maximum of 20.</p><p><strong>Bypass Cover.</strong> Your ranged attacks with weapons ignore &amp;Reference[halfcover]{Half Cover} and &amp;Reference[threequarterscover]{Three-Quarters Cover}.</p><p><strong>Firing in Melee.</strong> Being within 5 feet of an enemy doesn't impose &amp;Reference[Disadvantage] on your attack rolls with Ranged weapons.</p><p><strong>Long Shots.</strong> Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p><section class=\"secret\" id=\"secret-GDBgU2wAw8SV1kZH\"><p><strong>Foundry Note</strong></p><p>The Ability Score Increase is applied by the feat's advancement. Ignoring cover, firing in melee and long shots are not automated.</p></section>",
+      "chat": ""
+    },
+    "source": { "custom": "", "rules": "2024", "revision": 1, "license": "", "book": "", "page": "" },
+    "uses": { "max": "", "spent": 0, "recovery": [] },
+    "type": { "value": "feat", "subtype": "general" },
+    "prerequisites": { "level": 4, "repeatable": false, "items": [] },
+    "properties": [],
+    "requirements": "Dexterity 13+",
+    "activities": {},
+    "enchant": {},
+    "identifier": "sharpshooter",
+    "advancement": {
+      "2J8Nfq8FK2VCFUEX": {
+        "_id": "2J8Nfq8FK2VCFUEX",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": { "str": 0, "dex": 1, "con": 0, "int": 0, "wis": 0, "cha": 0 },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "hint": ""
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": { "default": 0 },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793647763275,
+    "modifiedTime": 1793647763275,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
