@@ -199,7 +199,7 @@ export function baseItem(key, type, name, { img, description = '', system = {}, 
     _id: id(`item:${key}`), name, type, img, folder, sort,
     system: {
       description: { value: html(description), chat: '' },
-      source: { custom: '', rules: '2024', revision: 1, license: '', book: 'Héliarque' },
+      source: { custom: '', rules: '2024', revision: 1, license: '', book: 'OSC' },
       identifier: key,
       ...system
     },

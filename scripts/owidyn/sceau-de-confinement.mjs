@@ -3,19 +3,21 @@
  * A character with the feat is sealed while its Armure de Confinement Runique is equipped: its Forme Primordiale
  * (items flagged formePrimordiale) is suppressed, i.e. their effects stop applying and their activities can't be used.
  * Rupture du Sceau unequips the armor and starts the "Sceau rompu" timer; Retour dans l'armure equips it again.
+ * Several armors may share the identifier (test versions): the one worn counts, and the timer remembers which was left.
  */
 const MODULE_ID = 'compendium-owidyn';
 const FEAT = 'sceau-de-confinement';
 const ARMOR = 'armure-de-confinement-runique';
 const TIMER = 'sceauRompu';
 
-const armorOf = actor => actor?.items.find(i => i.system.identifier === ARMOR);
+const armorsOf = actor => actor?.items.filter(i => i.system.identifier === ARMOR) ?? [];
+const wornArmorOf = actor => armorsOf(actor).find(i => i.system.equipped);
 const isForme = item => !!item?.getFlag(MODULE_ID, 'formePrimordiale');
 const stepOf = activity => activity.flags?.[MODULE_ID]?.sceau;
 
 function isSealed(actor) {
   if (!actor?.items.some(i => i.system.identifier === FEAT)) return false;
-  return !!armorOf(actor)?.system.equipped;
+  return !!wornArmorOf(actor);
 }
 
 Hooks.once('setup', () => {
@@ -41,16 +43,16 @@ Hooks.on('dnd5e.preUseActivity', activity => {
   }
   const step = stepOf(activity);
   if (!step) return;
-  const armor = armorOf(actor);
-  if (!armor) {
+  if (!armorsOf(actor).length) {
     ui.notifications.warn('Aucune Armure de Confinement Runique dans votre inventaire.');
     return false;
   }
-  if ((step === 'rupture') && !armor.system.equipped) {
+  const worn = wornArmorOf(actor);
+  if ((step === 'rupture') && !worn) {
     ui.notifications.warn('Vous êtes déjà hors de votre Armure de Confinement Runique.');
     return false;
   }
-  if ((step === 'retour') && armor.system.equipped) {
+  if ((step === 'retour') && worn) {
     ui.notifications.warn('Vous êtes déjà dans votre Armure de Confinement Runique.');
     return false;
   }
@@ -59,12 +61,15 @@ Hooks.on('dnd5e.preUseActivity', activity => {
 Hooks.on('dnd5e.postUseActivity', async activity => {
   const step = stepOf(activity);
   const actor = activity.actor;
-  const armor = armorOf(actor);
-  if (!step || !armor) return;
+  const armors = armorsOf(actor);
+  if (!step || !armors.length) return;
   if (step === 'retour') {
-    await armor.update({ 'system.equipped': true });
+    const left = actor.effects.find(e => e.getFlag(MODULE_ID, TIMER))?.getFlag(MODULE_ID, TIMER);
+    await (armors.find(i => i.id === left) ?? armors[0]).update({ 'system.equipped': true });
     return;
   }
+  const armor = wornArmorOf(actor);
+  if (!armor) return;
   await armor.update({ 'system.equipped': false });
   const minutes = Math.max(1, actor.system.abilities.con.mod + actor.system.attributes.prof);
   await actor.createEmbeddedDocuments('ActiveEffect', [{
@@ -74,7 +79,7 @@ Hooks.on('dnd5e.postUseActivity', async activity => {
     duration: { value: minutes, units: 'minutes' },
     description: `<p>Vous êtes libéré de votre Armure de Confinement Runique pour ${minutes} minute${minutes > 1 ? 's' : ''}. `
       + 'Au-delà, vous gagnez 1 niveau d\'Exhaustion à la fin de chaque minute supplémentaire passée hors de votre armure.</p>',
-    flags: { [MODULE_ID]: { [TIMER]: true } }
+    flags: { [MODULE_ID]: { [TIMER]: armor.id } }
   }]);
 });
 

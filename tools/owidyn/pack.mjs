@@ -17,14 +17,21 @@ export function parseArgs(argv) {
   };
 }
 
+/** LevelDB collection of each document type, and the embedded collections stored under their own keys. */
+const COLLECTIONS = {
+  Item: { collection: 'items', embedded: ['effects'] },
+  Actor: { collection: 'actors', embedded: ['items', 'effects', 'items.effects'] },
+  JournalEntry: { collection: 'journal', embedded: ['pages', 'categories'] }
+};
+
 /** The compendium of module.json with that name, with the LevelDB collection of its documents. */
 export function packConfig(name) {
   const config = JSON.parse(readFileSync(path('module.json'), 'utf8')).packs.find(p => p.name === name);
-  if (!config) {
-    console.error(`Compendium inconnu : ${name} (voir module.json).`);
+  if (!config || !COLLECTIONS[config.type]) {
+    console.error(config ? `Type de compendium non géré : ${config.type}.` : `Compendium inconnu : ${name} (voir module.json).`);
     process.exit(1);
   }
-  return { ...config, collection: config.type === 'Actor' ? 'actors' : 'items' };
+  return { ...config, ...COLLECTIONS[config.type] };
 }
 
 /** Open the pack first: if Foundry holds it, stop before anything is modified. */
@@ -41,6 +48,5 @@ export async function openPack(name) {
   return db;
 }
 
-/** Key prefixes of the documents embedded in the document `id` of that collection. */
-export const embeddedPrefixes = (collection, id) => (collection === 'items' ? [`!items.effects!${id}.`]
-  : [`!actors.items!${id}.`, `!actors.effects!${id}.`, `!actors.items.effects!${id}.`]);
+/** Key prefixes of the documents embedded in the document `id` of that compendium. */
+export const embeddedPrefixes = ({ collection, embedded }, id) => embedded.map(e => `!${collection}.${e}!${id}.`);

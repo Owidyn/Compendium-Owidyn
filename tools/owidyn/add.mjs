@@ -2,8 +2,9 @@
  * Add or replace hand-written Owidyn documents in one of the module's compendiums.
  *   node tools/owidyn/add.mjs [--pack <compendium>] <fichier.json|dossier>...          → writes the given documents
  *   node tools/owidyn/add.mjs --check [--pack <compendium>] <fichier.json|dossier>...  → validation only
- * --pack defaults to compendium-owidyn. Sources live in packs/_source/owidyn/<items|bestiaire>/: one JSON file per
- * folder, item or actor, with its embedded documents inline (an item's effects; an actor's items and effects).
+ * --pack defaults to compendium-owidyn. Sources live in packs/_source/owidyn/<items|bestiaire|journaux>/: one JSON file
+ * per folder, item, actor or journal entry, with its embedded documents inline (an item's effects; an actor's items and
+ * effects; a journal entry's pages).
  * Only the documents passed are written: the rest of the pack, including edits made in Foundry, is left untouched.
  * Foundry must not have a world open that uses this module while the LevelDB pack is written.
  */
@@ -11,7 +12,8 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { embeddedPrefixes, openPack, packConfig, parseArgs, path } from './pack.mjs';
 
 const { check: checkOnly, pack: PACK, inputs } = parseArgs(process.argv.slice(2));
-const { type: packType, collection } = packConfig(PACK);
+const config = packConfig(PACK);
+const { type: packType, collection } = config;
 
 const files = inputs.flatMap(a => statSync(a).isDirectory()
   ? readdirSync(a).filter(f => f.endsWith('.json')).map(f => `${a.replace(/[\\/]$/, '')}/${f}`)
@@ -82,6 +84,14 @@ function entries(doc) {
   if (collection === 'items') {
     return [...(doc.effects ?? []).map(e => [`!items.effects!${doc._id}.${e._id}`, e]), [`!items!${doc._id}`, { ...doc, effects: effectIds(doc) }]];
   }
+  if (collection === 'journal') {
+    const pages = doc.pages ?? [], categories = doc.categories ?? [];
+    return [
+      ...pages.map(p => [`!journal.pages!${doc._id}.${p._id}`, p]),
+      ...categories.map(c => [`!journal.categories!${doc._id}.${c._id}`, c]),
+      [`!journal!${doc._id}`, { ...doc, pages: pages.map(p => p._id), categories: categories.map(c => c._id) }]
+    ];
+  }
   const out = [];
   for (const item of doc.items) {
     const key = `${doc._id}.${item._id}`;
@@ -98,7 +108,7 @@ const ops = [];
 for (const doc of docs) {
   const written = entries(doc);
   const keep = new Set(written.map(([key]) => key));
-  const prefixes = isFolder(doc) ? [] : embeddedPrefixes(collection, doc._id);
+  const prefixes = isFolder(doc) ? [] : embeddedPrefixes(config, doc._id);
   for (const key of existing.keys()) {
     if (prefixes.some(p => key.startsWith(p)) && !keep.has(key)) ops.push({ type: 'del', key });
   }
@@ -109,5 +119,5 @@ await db.compactRange('\x00', '\xff');
 await db.close();
 for (const doc of docs) {
   const status = existing.has(`!${isFolder(doc) ? 'folders' : collection}!${doc._id}`) ? 'remplacé' : 'ajouté';
-  console.log(`${status} : ${isFolder(doc) ? 'dossier' : doc.type} « ${doc.name} »`);
+  console.log(`${status} : ${isFolder(doc) ? 'dossier' : doc.type ?? packType} « ${doc.name} »`);
 }

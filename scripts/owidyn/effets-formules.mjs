@@ -1,10 +1,11 @@
 /**
  * Effets à formule.
- * Two Active Effect change types whose value is a formula, evaluated with the actor's data as it was when the effect
- * phase began (e.g. "2 * max(1, floor((@abilities.dex.value - 10) / 2))"), then added to or overriding the target:
+ * Two Active Effect change types whose value is a formula evaluated with the actor's data, then added to or overriding
+ * the target (e.g. "2 * max(1, floor((@abilities.dex.value - 10) / 2))"):
  *   owidyn-formula-add       → like "add"
  *   owidyn-formula-override  → like "override"
- * Core change types only substitute @ references, they do not evaluate the result (Armure de Confinement Runique).
+ * The data already includes the changes of lower priority: the Armure de Confinement Runique overrides Dexterity at
+ * priority 60, after its Strength formula has read it.
  */
 const TYPES = {
   'owidyn-formula-add': { mode: 'add', label: 'Ajouter (formule)', defaultPriority: 20 },

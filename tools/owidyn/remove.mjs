@@ -9,7 +9,8 @@ import { readdirSync, rmSync } from 'node:fs';
 import { embeddedPrefixes, openPack, packConfig, parseArgs, path } from './pack.mjs';
 
 const { check, pack, inputs: ids } = parseArgs(process.argv.slice(2));
-const { collection } = packConfig(pack);
+const config = packConfig(pack);
+const { collection } = config;
 if (!ids.length) {
   console.error('Usage : node tools/owidyn/remove.mjs [--check] [--pack <compendium>] <id>...');
   process.exit(1);
@@ -55,9 +56,9 @@ const ops = [];
 for (const { id, key, isFolder } of removed) {
   ops.push({ type: 'del', key });
   if (isFolder) continue;
-  for (const k of existing.keys()) if (embeddedPrefixes(collection, id).some(p => k.startsWith(p))) ops.push({ type: 'del', key: k });
+  for (const k of existing.keys()) if (embeddedPrefixes(config, id).some(p => k.startsWith(p))) ops.push({ type: 'del', key: k });
 }
-const label = ({ doc, isFolder }) => `${isFolder ? 'dossier' : doc.type} « ${doc.name} »`;
+const label = ({ doc, isFolder }) => `${isFolder ? 'dossier' : doc.type ?? config.type} « ${doc.name} »`;
 if (check) {
   await db.close();
   console.log(`À supprimer de ${pack} (${ops.length} entrée(s), ${files.length} source(s)) :\n- ${removed.map(label).join('\n- ')}`);

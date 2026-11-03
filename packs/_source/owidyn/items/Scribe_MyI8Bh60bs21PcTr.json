@@ -1,0 +1,222 @@
+{
+  "name": "Scribe",
+  "type": "background",
+  "img": "icons/tools/scribal/ink-quill-red.webp",
+  "system": {
+    "advancement": {
+      "90oTNTLXexlxCWoD": {
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 3,
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "cha"
+          ],
+          "recommendation": null,
+          "max": null
+        },
+        "_id": "90oTNTLXexlxCWoD",
+        "flags": {},
+        "level": 0,
+        "hint": "Your background allows you to increase your Dexterity, Intelligence, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20.",
+        "value": {},
+        "name": "",
+        "title": "Background Ability Score Improvement"
+      },
+      "MX2uVub40DWNqTQZ": {
+        "type": "Trait",
+        "name": "Background Proficiencies",
+        "_id": "MX2uVub40DWNqTQZ",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:inv",
+            "skills:prc",
+            "tool:art:calligrapher"
+          ],
+          "mode": "default"
+        },
+        "flags": {},
+        "level": 0,
+        "hint": "Your background grants you proficiency in Investigation and Perception. It also grants you proficiency in Calligrapher's Supplies.",
+        "value": {},
+        "title": "Background Proficiencies"
+      },
+      "BQjtIGab2oFt7w29": {
+        "type": "Trait",
+        "name": "Choose Languages",
+        "configuration": {
+          "grants": [
+            "languages:standard:common"
+          ],
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "mode": "default"
+        },
+        "_id": "BQjtIGab2oFt7w29",
+        "flags": {},
+        "level": 0,
+        "hint": "You know Common plus two languages of your choice.",
+        "value": {},
+        "title": "Choose Languages"
+      },
+      "6KzQ1xES2vT4iQBr": {
+        "type": "ItemGrant",
+        "name": "Background Feat",
+        "_id": "6KzQ1xES2vT4iQBr",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftSkilled0000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "flags": {},
+        "value": {},
+        "level": 0,
+        "hint": "Your background grants you the Skilled feat.",
+        "title": "Background Feat"
+      }
+    },
+    "description": {
+      "value": "<p>You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistakes to the documents you copy and create.</p><p><strong>Ability Scores:</strong> Dexterity, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled}</p><p><strong>Skill Proficiencies:</strong> Investigation and Perception</p><p><strong>Tool Proficiency:</strong> Calligrapher's Supplies</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher’s Supplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (12 sheets), 23 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "scribe",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC"
+    },
+    "startingEquipment": [
+      {
+        "requiresProficiency": false,
+        "_id": "khD4nGX20BAdsBKC",
+        "type": "OR",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "LjmmrBpNct7Vmm9L",
+        "type": "AND",
+        "group": "khD4nGX20BAdsBKC",
+        "sort": 200000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "rGUXooEuvjisgL8Z",
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCalligraph",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 400000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "c3UAQG9K6Hfjb9He",
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 500000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "1Auft6f06FSVDNcF",
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 600000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "H7gUwh8jfljBQ3vd",
+        "type": "linked",
+        "count": 3,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 700000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "0J9HFRj62YGddH6v",
+        "type": "linked",
+        "count": 12,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagParchment00",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 800000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "eaFrGpFrenDwpnkV",
+        "type": "currency",
+        "count": 23,
+        "key": "gp",
+        "group": "LjmmrBpNct7Vmm9L",
+        "sort": 900000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "24rWujoPezVlEhGp",
+        "type": "AND",
+        "group": "khD4nGX20BAdsBKC",
+        "sort": 300000
+      },
+      {
+        "requiresProficiency": false,
+        "_id": "kxq7lNaZGuFRK869",
+        "type": "currency",
+        "count": 50,
+        "key": "gp",
+        "group": "24rWujoPezVlEhGp",
+        "sort": 1000000
+      }
+    ],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": "n264u1taQCwy9pR0",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793712000000,
+    "modifiedTime": 1793712000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "MyI8Bh60bs21PcTr",
+  "sort": 200000
+}
