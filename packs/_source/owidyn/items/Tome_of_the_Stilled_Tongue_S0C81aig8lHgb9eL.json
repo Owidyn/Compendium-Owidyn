@@ -1,0 +1,170 @@
+{
+  "_id": "S0C81aig8lHgb9eL",
+  "name": "Tome of the Stilled Tongue",
+  "type": "equipment",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "sort": 13800000,
+  "system": {
+    "activities": {
+      "79lAA4y7LYMRBF1l": {
+        "type": "utility",
+        "_id": "79lAA4y7LYMRBF1l",
+        "sort": 0,
+        "name": "Stilled Tongue",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Legendary (Requires Attunement by a Wizard)</em></p><p>A shriveled tongue is pinned to the front cover of this book. Five of these tomes exist, and no one knows which is the original. The tongue on the first <em>Tome of the Stilled Tongue</em> belonged to a treacherous former servant of the lich Vecna; the tongues on the four copies came from other spellcasters who crossed Vecna. The first few pages of each tome are covered in indecipherable scrawls, and the rest are blank.</p><p>While attuned to this item, you can use it as a spellbook and as an @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}. In addition, while holding the tome, you can take a Bonus Action to cast a spell written in it without expending a spell slot or using any Verbal or Somatic components. Once used, this property can’t be used again until the next dawn.</p><p>Only you can remove the tongue from the book’s cover. If you do, all the spells written in the book are erased forever.</p><p>Vecna watches anyone who uses this tome and can write cryptic messages in it, which usually fade once they have been read.</p><section class=\"secret\" id=\"secret-EMMjceGQOf8xoMDx\"><p><strong>Foundry Note</strong></p><p><em>Stilled Tongue</em> compte l’utilisation du jour : lancez le sort choisi sans emplacement depuis vos sorts.</p></section>",
+      "chat": ""
+    },
+    "identifier": "tome-of-the-stilled-tongue",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc",
+      "foc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

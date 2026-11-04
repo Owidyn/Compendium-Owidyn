@@ -1,0 +1,219 @@
+{
+  "_id": "LoLLTsgh5y8OPO5g",
+  "name": "Hat of Vermin",
+  "type": "equipment",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/equipment/head/hat-bowler.webp",
+  "sort": 5700000,
+  "system": {
+    "activities": {
+      "Qr2DHo885p1DagJc": {
+        "type": "summon",
+        "_id": "Qr2DHo885p1DagJc",
+        "sort": 0,
+        "name": "Summon Vermin",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "O6e0obtq3l7ylw0f",
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBat00000000000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "kbjYm4KxKQLvGgo7",
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmFrog0000000000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "JIXAJZVqD2jp9WEl",
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmRat00000000000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "3"
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Common</em></p><p>This hat has 3 charges. While holding it, you can take a Magic action to expend 1 charge and summon your choice of a @UUID[Compendium.dnd5e.actors24.Actor.mmBat00000000000]{Bat}, a @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{Frog}, or a @UUID[Compendium.dnd5e.actors24.Actor.mmRat00000000000]{Rat}. The creature magically appears in the hat and tries to get away from you as fast as it can. It is Indifferent toward you and other creatures and isn’t under your control: it behaves like an ordinary creature of its kind and disappears after 1 hour or when it drops to 0 Hit Points. The hat regains all expended charges daily at dawn.</p><section class=\"secret\" id=\"secret-ab6mNIWl1m3IMWoB\"><p><strong>Foundry Note</strong></p><p>L’activité <em>Summon Vermin</em> place la créature choisie, qui n’obéit pas à son invocateur : le MJ la joue.</p></section>",
+      "chat": ""
+    },
+    "identifier": "hat-of-vermin",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

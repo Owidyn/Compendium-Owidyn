@@ -1,0 +1,367 @@
+{
+  "_id": "ZGLhHuUoqIEdOSbW",
+  "name": "Arcanist's Bestiary",
+  "type": "equipment",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/sundries/books/book-embossed-jewel-silver-green.webp",
+  "sort": 600000,
+  "system": {
+    "activities": {
+      "36kfRjn8uwhfrOGo": {
+        "type": "cast",
+        "_id": "36kfRjn8uwhfrOGo",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplCharmMonst",
+          "challenge": {
+            "attack": null,
+            "save": 15,
+            "override": true
+          },
+          "level": 4,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>Hundreds of pages of illustrations, tables, and diagrams about all sorts of monsters fill this magical tome.</p><p><strong>Charm Monster.</strong> While holding the book, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplCharmMonst]{Charm Monster} (save DC 15) from it. A target that isn’t a Humanoid has Disadvantage on its saving throw against this spell. Once you cast the spell this way, you can’t do so again until the next dawn.</p><p><strong>Extensive Knowledge.</strong> When you attune to the book, you gain proficiency in one of the following skills of your choice: Arcana, History, Nature, or Religion. Whenever you finish a Long Rest, you can change your choice. If your Attunement to the book ends, you lose this proficiency.</p><p><strong>Monster Primer.</strong> While carrying the book, whenever you take the Study action to make an Intelligence (Arcana) check to recall information about an Aberration, a Construct, an Elemental, a Fey, or a Monstrosity you can see, a successful check also tells you whether that creature has any Immunities, Resistances, or Vulnerabilities, and if so, what they are.</p><section class=\"secret\" id=\"secret-G3zDiIJ9C9YdE1M0\"><p><strong>Foundry Note</strong></p><p>Activez dans l’onglet Effets l’effet <em>Extensive Knowledge</em> de la compétence choisie (un seul à la fois). Le Désavantage d’une cible non humanoïde contre <em>Charm Monster</em> est à appliquer à la main.</p></section>",
+      "chat": ""
+    },
+    "identifier": "arcanists-bestiary",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Extensive Knowledge (Arcana)",
+      "img": "icons/sundries/books/book-embossed-jewel-silver-green.webp",
+      "_id": "HaBmefuiNdNPUniA",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.arc.value",
+            "value": 1,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "WLPhn4ZKRid6y5v7"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Extensive Knowledge (History)",
+      "img": "icons/sundries/books/book-embossed-jewel-silver-green.webp",
+      "_id": "b392kdCXXUjBlGEi",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.his.value",
+            "value": 1,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "HroBzIKLkDN4oWjA"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Extensive Knowledge (Nature)",
+      "img": "icons/sundries/books/book-embossed-jewel-silver-green.webp",
+      "_id": "SL0PANR80N38GZre",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.nat.value",
+            "value": 1,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "XZEZBqoXAkjDSenG"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Extensive Knowledge (Religion)",
+      "img": "icons/sundries/books/book-embossed-jewel-silver-green.webp",
+      "_id": "yRUY39UNbHUdQwQ4",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.rel.value",
+            "value": 1,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "xTtEpQAdWrgbBUHl"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

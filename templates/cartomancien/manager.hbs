@@ -12,6 +12,7 @@
 
   <div class="cartomancien-actions">
     <button type="button" data-action="sync"><i class="fa-solid fa-arrows-rotate"></i> Initialiser / Synchroniser</button>
+    <button type="button" data-action="reset" {{#unless initialized}}disabled{{/unless}}><i class="fa-solid fa-rotate-left"></i> Réinitialiser le deck</button>
     <button type="button" data-action="draw" {{#unless canDraw}}disabled{{/unless}}><i class="fa-solid fa-hand"></i> Piocher 1 carte</button>
     <button type="button" data-action="longRest" {{#unless initialized}}disabled{{/unless}}><i class="fa-solid fa-moon"></i> Long Rest</button>
     <button type="button" data-action="cantrips">Choisir les sorts mineurs</button>
@@ -76,6 +77,6 @@
   </section>
 
   <footer class="cartomancien-note">
-    Chaque carte représente un sort préparé. En la jouant, tu peux choisir parmi tous tes sorts préparés de son niveau. L'influx est proposé au lancement ; Le Monde peut lancer tout sort préparé au niveau 9 à partir du niveau 20.
+    Chaque carte représente un sort préparé. Seuls les sorts de la Spell List du Cartomancien déjà présents sur la fiche peuvent lui être liés. En la jouant, tu peux choisir parmi tous tes sorts préparés de son niveau. L'influx est proposé au lancement ; Le Monde peut lancer tout sort préparé au niveau 9 à partir du niveau 20.
   </footer>
 </div>

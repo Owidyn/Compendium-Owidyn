@@ -1,0 +1,157 @@
+{
+  "_id": "uJEbxkPHHKcKku13",
+  "name": "Mechanical Wonder (Flying)",
+  "type": "equipment",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/commodities/tech/cog-gear-steel-glass.webp",
+  "sort": 8800000,
+  "system": {
+    "activities": {
+      "CxFGqKd6fiRblD38": {
+        "type": "utility",
+        "_id": "CxFGqKd6fiRblD38",
+        "sort": 0,
+        "name": "Wind",
+        "img": "",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Common</em></p><p>A <em>Mechanical Wonder</em> is a semi-autonomous object filled with magical power. Wonders come in many sizes and shapes, depending on what they were built to do.</p><p>A wonder lies dormant until it is activated. To activate it, you wind it with the handheld key made for that wonder alone. Winding takes 1 minute, during which you must take the Utilize action on each of your turns. Once wound, the wonder stays active for the duration given in its description.</p><p><strong>Flying Wonder.</strong> An activated flying wonder uses the Flying Wonder stat block. The wonder is an ally to you and your allies. In combat, it shares your Initiative count but takes its turn immediately after yours. It obeys your verbal commands (no action required by you); if you give none, it takes the Dodge action and uses its movement to stay out of danger. The wonder is destroyed if it drops to 0 Hit Points.</p><section class=\"secret\" id=\"secret-NF5jo0CHWJ9HFwcC\"><p><strong>Foundry Note</strong></p><p>Le profil <em>Flying Wonder</em> (Heroes of Faerûn) n’existe pas dans dnd5e : créez la créature à partir du livre si vous l’avez.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mechanical-wonder-flying",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

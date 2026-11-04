@@ -1,0 +1,251 @@
+{
+  "_id": "CMS2SojjVGA9FfDI",
+  "name": "Necklace of the Beastly Familiar (Zircon)",
+  "type": "equipment",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/equipment/neck/Necklace-simple-jewel-purple.webp",
+  "sort": 9900000,
+  "system": {
+    "activities": {
+      "IP83r3AflzH2ugcd": {
+        "type": "cast",
+        "_id": "IP83r3AflzH2ugcd",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplFindFamili",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": 1,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "sMVl4jQrosOvlBuZ": {
+        "type": "utility",
+        "_id": "sMVl4jQrosOvlBuZ",
+        "sort": 0,
+        "name": "Beast Transformation",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "60",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Rare (Requires Attunement by a Spellcaster)</em></p><p>This jeweled necklace comes with a matching charm for your familiar to wear. Many such necklaces exist, each set with a different gemstone; this one is set with zircon.</p><p><strong>Familiar.</strong> While wearing this necklace, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} from it. Once the necklace has been used to cast this spell, it can’t be used to cast it again until the next dawn.</p><p><strong>Beast Transformation.</strong> While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace, and your familiar shape-shifts into a @UUID[Compendium.dnd5e.actors24.Actor.mmHippopotamus00]{Hippopotamus} for 10 minutes.</p><p>While transformed, the familiar’s stat block is replaced by that of the Beast form, but it keeps its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment it wears or carries doesn’t change size or shape to match the new form, and any equipment the Beast form can’t wear or carry falls to the ground.</p><p>Your familiar gains Temporary Hit Points equal to the Hit Points of the Beast form. Any of these Temporary Hit Points that remain vanish when the transformation ends, and the transformation ends early if the familiar has no Temporary Hit Points left.</p><table><thead><tr><th>Gemstone</th><th>Rarity</th><th>Beast</th></tr></thead><tbody><tr><td>Azurite</td><td>Uncommon</td><td>Giant Octopus</td></tr><tr><td>Chrysoprase</td><td>Rare</td><td>Giant Scorpion</td></tr><tr><td>Zircon</td><td>Rare</td><td>Hippopotamus</td></tr><tr><td>Topaz</td><td>Very Rare</td><td>Mammoth</td></tr><tr><td>Fire Opal</td><td>Legendary</td><td>Tyrannosaurus Rex</td></tr></tbody></table><section class=\"secret\" id=\"secret-TaFYke39ZzST1No5\"><p><strong>Foundry Note</strong></p><p>Pour <em>Beast Transformation</em>, transformez le familier en déposant le Hippopotamus lié ci-dessus sur sa fiche (garder ses points de vie et son type), puis donnez-lui en points de vie temporaires les points de vie de la bête.</p></section>",
+      "chat": ""
+    },
+    "identifier": "necklace-of-the-beastly-familiar-zircon",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

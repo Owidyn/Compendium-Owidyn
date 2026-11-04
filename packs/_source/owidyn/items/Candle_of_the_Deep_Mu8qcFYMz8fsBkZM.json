@@ -1,0 +1,233 @@
+{
+  "_id": "Mu8qcFYMz8fsBkZM",
+  "name": "Candle of the Deep",
+  "type": "consumable",
+  "folder": "tarBozw1FTSDJqkF",
+  "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+  "sort": 1800000,
+  "system": {
+    "activities": {
+      "dEFSnpj4MW54Xu2m": {
+        "type": "utility",
+        "_id": "dEFSnpj4MW54Xu2m",
+        "sort": 0,
+        "name": "Light or Snuff",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "",
+      "autoDestroy": false
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Common</em></p><p>Water can’t put out the flame of this candle, which keeps burning when submerged. Otherwise, it sheds light and heat like an ordinary @UUID[Compendium.dnd5e.equipment24.Item.phbagCandle00000]{Candle}.</p><section class=\"secret\" id=\"secret-wKE3XN7yCUVbW0Cf\"><p><strong>Foundry Note</strong></p><p>La flamme est une lumière sur le jeton (5 pieds de lumière vive, 5 de plus de lumière faible), éteinte par défaut. Bougie équipée, l’activité <em>Light or Snuff</em> l’allume ou l’éteint. Comme une bougie ordinaire, elle brûle 1 heure : supprimez-la ensuite.</p></section>",
+      "chat": ""
+    },
+    "identifier": "candle-of-the-deep",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "Candle Flame",
+      "img": "icons/sundries/lights/candle-pillar-lit-yellow.webp",
+      "_id": "Lost4o7RfrRntmfm",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.bright",
+            "value": 5,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "BCpiUw27Ee00GFV2"
+          },
+          {
+            "key": "token.light.dim",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "Dxg7LAEVYbHeLUf6"
+          },
+          {
+            "key": "token.light.color",
+            "value": "#ff9329",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "f8wev3pwHdXfDF9k"
+          },
+          {
+            "key": "token.light.animation.type",
+            "value": "torch",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "bvAA3lj72XYbzWVT"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The candle is lit: it sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet, even underwater.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "toggleEffect": "Lost4o7RfrRntmfm"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

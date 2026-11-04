@@ -62,13 +62,15 @@ const normalize = (value = "") => String(value)
   .toLowerCase()
   .trim();
 
+function isCartomancerClass(item) {
+  if (item?.type !== "class") return false;
+  const id = normalize(item.system?.identifier ?? "");
+  const name = normalize(item.name);
+  return id === "cartomancien" || id === "cartomancer" || name === "cartomancien" || name === "le cartomancien" || name === "cartomancer" || name === "the cartomancer";
+}
+
 function getCartomancerClass(actor) {
-  return actor.items.find(item => {
-    if (item.type !== "class") return false;
-    const id = normalize(item.system?.identifier ?? "");
-    const name = normalize(item.name);
-    return id === "cartomancien" || id === "cartomancer" || name === "cartomancien" || name === "le cartomancien" || name === "cartomancer" || name === "the cartomancer";
-  });
+  return actor.items.find(isCartomancerClass);
 }
 
 function getCartomancerLevel(actor) {
@@ -157,13 +159,17 @@ async function ensureStacks(actor) {
   return { deck, hand, discard };
 }
 
-async function getStacks(actor) {
+function stacksOf(actor) {
   const ids = actor.getFlag(MODULE_ID, "cartomancien.stacks") ?? {};
   return {
     deck: ids.deckId ? game.cards.get(ids.deckId) : null,
     hand: ids.handId ? game.cards.get(ids.handId) : null,
     discard: ids.discardId ? game.cards.get(ids.discardId) : null
   };
+}
+
+async function getStacks(actor) {
+  return stacksOf(actor);
 }
 
 async function syncCardImages(stacks) {
@@ -204,7 +210,12 @@ function makeCardData(def, actor) {
   };
 }
 
-async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = false } = {}) {
+/**
+ * Bind a spell to a deck card: only a spell of the Cartomancien Spell List already on the character sheet, of the card's
+ * exact level, can be chosen. Returns "none" when the sheet has no such spell left for the card (`quiet` skips the
+ * warning, for the synchronization to give a single one).
+ */
+async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = false, quiet = false } = {}) {
   if (!actor.isOwner) return false;
   const def = getCardDef(arcanaIndex);
   const sourceCard = getSourceCard(deck, arcanaIndex);
@@ -215,33 +226,21 @@ async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = fa
     ui.notifications.warn("Aucun changement de sort disponible pour ce niveau de Cartomancien.");
     return false;
   }
-  const currentSpell = currentUuid ? await fromUuid(currentUuid) : null;
-  const { available, missing } = await getAvailableCartomancienSpellSources(def.spellLevel, { actor });
   // Each card records one preparation slot, not an exclusive spell restriction.
   const preparedElsewhere = new Set(deck.cards.filter(c => c.id !== sourceCard.id)
-    .map(c => c.getFlag(MODULE_ID, "cartomancien.spellUuid")).filter(Boolean));
-  for (let i = available.length - 1; i >= 0; i--) {
-    const candidate = await fromUuid(available[i].uuid);
-    if (candidate && [...preparedElsewhere].some(uuid => {
-      const prepared = fromUuidSync(uuid);
-      return prepared && normalize(prepared.name) === normalize(candidate.name);
-    })) available.splice(i, 1);
-  }
+    .map(c => c.getFlag(MODULE_ID, "cartomancien.spellUuid")).filter(Boolean)
+    .map(uuid => fromUuidSync(uuid)?.name).filter(Boolean).map(normalize));
+  const available = getActorSpells(actor, def.spellLevel).filter(spell => !preparedElsewhere.has(normalize(spell.name)));
 
   if (!available.length) {
-    ui.notifications.warn(`Aucun sort utilisable de niveau ${def.spellLevel} de la liste du Cartomancien n'est disponible dans tes compendiums.`);
-    return false;
+    if (!quiet) ui.notifications.warn(`Aucun sort de niveau ${def.spellLevel} de la liste du Cartomancien n'est disponible sur la fiche : ajoute-le d'abord à la fiche du personnage.`);
+    return "none";
   }
 
-  const currentKey = currentSpell ? normalize(currentSpell.name) : "";
   const options = available.map(s => {
-    const selected = currentKey && normalize(s.name) === currentKey ? "selected" : "";
-    const suffix = s.owned ? " — sur la fiche" : " — compendium";
-    return `<option value="${s.uuid}" ${selected}>${foundry.utils.escapeHTML(s.name + suffix)}</option>`;
+    const selected = s.uuid === currentUuid ? "selected" : "";
+    return `<option value="${s.uuid}" ${selected}>${foundry.utils.escapeHTML(s.name)}</option>`;
   }).join("");
-  const missingNote = missing.length
-    ? `<p class="hint"><strong>${missing.length}</strong> sort(s) de la liste ne sont pas disponibles comme Spell Item dans les compendiums actuellement activés.</p>`
-    : "";
 
   const result = await foundry.applications.api.DialogV2.input({
     window: { title: `${cardLabel(def)} — choisir le sort` },
@@ -250,30 +249,15 @@ async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = fa
         <label>Sort de Cartomancien niveau ${def.spellLevel}</label>
         <select name="spellUuid">${options}</select>
       </div>
-      <p>La carte ne peut recevoir qu'un sort de la <strong>Spell List du Cartomancien</strong> et exactement de son niveau.</p>
-      <p>Si le sort vient d'un compendium, il sera automatiquement ajouté à la fiche du personnage.</p>
-      ${missingNote}`,
+      <p>La carte ne peut recevoir qu'un sort de la <strong>Spell List du Cartomancien</strong>, exactement de son niveau, déjà présent sur la fiche du personnage.</p>
+      <p class="hint">Pour en proposer d'autres, ajoute-les d'abord à la fiche depuis la Spell List du Cartomancien.</p>`,
     ok: { label: "Lier ce sort" },
     rejectClose: false,
     modal: true
   });
 
-  const selectedUuid = result?.spellUuid;
-  if (!selectedUuid) return false;
-  let spell = await fromUuid(selectedUuid);
-  if (!spell || spell.type !== "spell" || Number(spell.system?.level ?? 0) !== def.spellLevel
-      || !isCartomancienSpell(spell.name, def.spellLevel)) {
-    ui.notifications.error("Le sort choisi n'est pas valide pour cette carte.");
-    return false;
-  }
-
-  if (spell.parent?.id !== actor.id) {
-    spell = await importSpellToActor(actor, selectedUuid);
-    if (!spell) {
-      ui.notifications.error("Impossible d'ajouter ce sort à la fiche du personnage.");
-      return false;
-    }
-  }
+  const spell = available.find(s => s.uuid === result?.spellUuid);
+  if (!spell) return false;
 
   if (consumeCredit && currentUuid && currentUuid !== spell.uuid) {
     const credits = Number(actor.getFlag(MODULE_ID, "cartomancien.replacementCredits") ?? 0);
@@ -289,7 +273,8 @@ async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = fa
   return true;
 }
 
-const syncActor = withActorLock(async function (actor, { promptAssignments = true } = {}) {
+/** Bring the deck in line with the class level; `quiet` skips the summary notice (the reset gives its own). */
+async function synchronize(actor, { promptAssignments = true, quiet = false } = {}) {
   if (!actor.isOwner) return ui.notifications.warn("Tu dois contrôler ce personnage pour synchroniser son deck.");
   const level = getCartomancerLevel(actor);
   if (!level) {
@@ -338,10 +323,14 @@ const syncActor = withActorLock(async function (actor, { promptAssignments = tru
   });
 
   if (promptAssignments) {
+    // Spell levels of the cards left unbound because the sheet has no spell of the list to give them
+    const unbound = new Set();
     for (const card of [...stacks.deck.cards].filter(c => !c.getFlag(MODULE_ID, "cartomancien.spellUuid"))) {
       const index = getArcanaIndex(card);
-      await chooseSpellForCard(actor, stacks.deck, index, { consumeCredit: false });
+      const result = await chooseSpellForCard(actor, stacks.deck, index, { consumeCredit: false, quiet: true });
+      if (result === "none") unbound.add(getCardDef(index).spellLevel);
     }
+    if (unbound.size) ui.notifications.warn(`Cartes sans sort : ajoute à la fiche des sorts de niveau ${[...unbound].sort((a, b) => a - b).join(", ")} de la liste du Cartomancien, puis lie-les depuis le gestionnaire.`);
   }
 
   if (firstSetup && stacks.hand.cards.size === 0) {
@@ -350,10 +339,119 @@ const syncActor = withActorLock(async function (actor, { promptAssignments = tru
     if (n > 0) await stacks.deck.deal([stacks.hand], n, { chatNotification: false });
   }
 
+  if (quiet) return stacks;
   if (missing.length) ui.notifications.info(`${missing.length} nouvelle(s) carte(s) ajoutée(s) au deck.`);
   else ui.notifications.info("Deck déjà synchronisé avec le niveau du Cartomancien.");
   return stacks;
+}
+
+const syncActor = withActorLock(synchronize);
+
+/**
+ * Return every card to the deck, cancel the pending hand operations and deal a new starting hand. Spell bindings and
+ * replacement credits are kept, so a reset can't bypass the one change of spell per level; only a GM can also unbind
+ * every card.
+ */
+const resetDeck = withActorLock(async function (actor) {
+  if (!actor.isOwner) return null;
+  const { deck, hand, discard } = await getStacks(actor);
+  if (!deck || !hand || !discard) return ui.notifications.warn("Initialise d'abord le deck du Cartomancien.");
+  const unbindOption = game.user.isGM
+    ? `<label style="display:block;margin-top:6px"><input type="checkbox" name="unbind"> Délier aussi tous les sorts des cartes (MJ)</label>`
+    : "";
+  const choice = await foundry.applications.api.DialogV2.wait({
+    window: { title: "Réinitialiser le deck" },
+    content: `<p>Les cartes de la main et de la défausse reviennent dans le deck, qui est mélangé, puis une nouvelle main de ${getPB(actor)} carte(s) est piochée. Les opérations de main en attente sont annulées.</p><p>Les sorts liés aux cartes et les changements de sort disponibles sont conservés.</p>${unbindOption}`,
+    buttons: [
+      { action: "reset", label: "Réinitialiser", default: true,
+        callback: (event, button) => ({ unbind: button.form?.elements?.unbind?.checked === true }) },
+      { action: "cancel", label: "Annuler", callback: () => null }
+    ],
+    rejectClose: false,
+    modal: true
+  });
+  if (!choice) return null;
+  const unbind = game.user.isGM && choice.unbind === true;
+
+  await deck.recall({ chatNotification: false });
+  // Whatever stayed in the hand or the discard pile doesn't come from this deck
+  for (const stack of [hand, discard]) {
+    const leftovers = [...stack.cards].map(card => card.id);
+    if (leftovers.length) await stack.deleteEmbeddedDocuments("Card", leftovers);
+  }
+  // One card per Arcana, keeping a bound one when a card was duplicated
+  const kept = new Map();
+  const duplicates = [];
+  for (const card of [...deck.cards].sort((a, b) => Number(Boolean(b.getFlag(MODULE_ID, "cartomancien.spellUuid"))) - Number(Boolean(a.getFlag(MODULE_ID, "cartomancien.spellUuid"))))) {
+    if (kept.has(getArcanaIndex(card))) duplicates.push(card.id);
+    else kept.set(getArcanaIndex(card), card);
+  }
+  if (duplicates.length) await deck.deleteEmbeddedDocuments("Card", duplicates);
+  for (const card of kept.values()) {
+    if (card.getFlag(MODULE_ID, "cartomancien.coupEclat")) await card.unsetFlag(MODULE_ID, "cartomancien.coupEclat");
+    if (unbind && card.getFlag(MODULE_ID, "cartomancien.spellUuid")) await card.setFlag(MODULE_ID, "cartomancien.spellUuid", "");
+  }
+  for (const key of ["redrawPending", "restPending", "lastCombatDraw", ...(unbind ? ["archivedCards"] : [])]) {
+    if (actor.getFlag(MODULE_ID, `cartomancien.${key}`) !== undefined) await actor.unsetFlag(MODULE_ID, `cartomancien.${key}`);
+  }
+
+  await synchronize(actor, { promptAssignments: true, quiet: true });
+  await deck.shuffle({ chatNotification: false });
+  const n = Math.min(getPB(actor), deck.availableCards.length);
+  if (n > 0) await deck.deal([hand], n, { chatNotification: false });
+  ui.notifications.info(`Deck réinitialisé : toutes les cartes sont revenues dans le deck et ${n} carte(s) ont été piochées.`);
+  return true;
 });
+
+/**
+ * Spells of the Cartomancien on the sheet: bound to a deck card, added by its automation (cantrips, Mage Hand, Jackpot,
+ * former bindings) or granted by the class, except the ones belonging to another class of the character.
+ */
+function getCartomancienSpells(actor, deck) {
+  const bound = new Set([...(deck?.cards ?? [])].map(card => card.getFlag(MODULE_ID, "cartomancien.spellUuid")).filter(Boolean));
+  const own = new Set(["class:cartomancien", "subclass:deck-du-parieur"]);
+  const others = new Set(actor.items.filter(item => ["class", "subclass"].includes(item.type))
+    .map(item => `${item.type}:${item.system?.identifier}`).filter(source => !own.has(source)));
+  return actor.items.filter(item => {
+    if (item.type !== "spell") return false;
+    const source = item.system?.sourceItem ?? "";
+    if (others.has(source)) return false;
+    return bound.has(item.uuid) || own.has(source)
+      || Boolean(item.getFlag(MODULE_ID, "cartomancien.importedForCartomancien") || item.getFlag(MODULE_ID, "cartomancien.cantrip"));
+  });
+}
+
+/**
+ * After the Cartomancien class is removed from a character: delete its deck, hand and discard pile, the effects left by
+ * its features and its flags, then offer to delete its spells. The piles are deleted by the user who removed the class
+ * when they own them, otherwise by the active GM; the rest by the user who removed the class.
+ */
+async function removeCartomancien(actor, userId, { deck, hand, discard }, spells) {
+  const piles = [hand, discard, deck].filter(Boolean);
+  const remover = game.users.get(userId);
+  const authority = piles.every(pile => pile.testUserPermission(remover, "OWNER")) ? remover : game.users.activeGM;
+  if (piles.length && authority?.id === game.user.id) {
+    for (const pile of piles) await pile.delete();
+  }
+  if (userId !== game.user.id) return;
+  if (piles.length && !authority) ui.notifications.warn("Le deck du Cartomancien n'a pas pu être supprimé : un MJ doit supprimer ses trois piles dans l'onglet Cartes.");
+
+  const markers = ["suiteFavorable", "range60", "mageHand"];
+  const effects = actor.effects.filter(effect => markers.some(marker => effect.getFlag(MODULE_ID, `cartomancien.${marker}`)));
+  if (effects.length) await actor.deleteEmbeddedDocuments("ActiveEffect", effects.map(effect => effect.id));
+  if (actor.getFlag(MODULE_ID, "cartomancien") !== undefined) await actor.unsetFlag(MODULE_ID, "cartomancien");
+  if (piles.length) ui.notifications.info("Classe Cartomancien retirée : son deck, sa main et sa défausse sont supprimés.");
+
+  const remaining = spells.filter(spell => actor.items.has(spell.id));
+  if (!remaining.length) return;
+  const confirmed = await foundry.applications.api.DialogV2.confirm({
+    window: { title: "Sorts du Cartomancien" },
+    content: `<p>Supprimer aussi de la fiche les ${remaining.length} sort(s) du Cartomancien ?</p><ul>${remaining.map(spell => `<li>${foundry.utils.escapeHTML(spell.name)}</li>`).join("")}</ul><p>Les sorts d'une autre classe du personnage ne sont pas concernés.</p>`,
+    rejectClose: false,
+    modal: true
+  });
+  if (confirmed === true) await actor.deleteEmbeddedDocuments("Item", remaining.map(spell => spell.id));
+}
 
 const drawOne = withActorLock(async function (actor) {
   if (!actor.isOwner) return false;
@@ -630,6 +728,7 @@ class CartomancienManager extends HandlebarsApplicationMixin(ApplicationV2) {
     position: { width: 980, height: "auto" },
     actions: {
       sync: CartomancienManager.onSync,
+      reset: CartomancienManager.onReset,
       draw: CartomancienManager.onDraw,
       longRest: CartomancienManager.onLongRest,
       assign: CartomancienManager.onAssign,
@@ -682,6 +781,11 @@ class CartomancienManager extends HandlebarsApplicationMixin(ApplicationV2) {
     await this.render({ force: true });
   }
 
+  static async onReset(event, target) {
+    await resetDeck(this.actor);
+    await this.render({ force: true });
+  }
+
   static async onDraw(event, target) {
     await drawOne(this.actor);
     await this.render({ force: true });
@@ -696,8 +800,9 @@ class CartomancienManager extends HandlebarsApplicationMixin(ApplicationV2) {
     const index = Number(target.dataset.arcana);
     const { deck } = await getStacks(this.actor);
     if (!deck) return;
-    const source = getSourceCard(deck, index);
-    const hasSpell = Boolean(source?.getFlag(MODULE_ID, "cartomancien.spellUuid"));
+    const uuid = getSourceCard(deck, index)?.getFlag(MODULE_ID, "cartomancien.spellUuid");
+    // A card whose spell has left the sheet is bound again without spending a change of spell
+    const hasSpell = Boolean(uuid) && fromUuidSync(uuid)?.parent?.id === this.actor.id;
     await chooseSpellForCard(this.actor, deck, index, { consumeCredit: hasSpell });
     await this.render({ force: true });
   }
@@ -777,6 +882,7 @@ Hooks.once("ready", async () => {
     CARTOMANCIEN_SPELLS,
     openManager,
     syncActor,
+    resetDeck,
     drawOne,
     longRest,
     castFromCard,
@@ -817,6 +923,19 @@ Hooks.on("getApplicationV1HeaderButtons", (app, buttons) => {
     class: "cartomancien-deck-open",
     icon: "fas fa-cards",
     onclick: () => openManager(actor)
+  });
+});
+
+// Removing the class removes its deck. The piles and spells are read now, before the cleanup updates reach this client.
+Hooks.on("deleteItem", (item, options, userId) => {
+  const actor = item.parent;
+  if (actor?.documentName !== "Actor" || !isCartomancerClass(item) || getCartomancerClass(actor)) return;
+  const stacks = stacksOf(actor);
+  const spells = userId === game.user.id ? getCartomancienSpells(actor, stacks.deck) : [];
+  for (const app of [...managers]) if (app.actor === actor) app.close();
+  removeCartomancien(actor, userId, stacks, spells).catch(error => {
+    console.error(`${MODULE_ID} | retrait du Cartomancien`, error);
+    if (userId === game.user.id) ui.notifications.error("Cartomancien : le deck n'a pas pu être supprimé. Voir la console F12.");
   });
 });
 

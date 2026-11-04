@@ -1,0 +1,369 @@
+{
+  "_id": "VOrmsZDnriWQRkmO",
+  "name": "Staff of Light and Shadow",
+  "type": "weapon",
+  "folder": "cJAPb1nNWfLPX4pR",
+  "img": "icons/weapons/staves/staff-ornate.webp",
+  "sort": 800000,
+  "system": {
+    "activities": {
+      "Lm9zbmSvjMGpEgBG": {
+        "type": "attack",
+        "_id": "Lm9zbmSvjMGpEgBG",
+        "sort": -100000,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": false,
+          "requireAttunement": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "",
+            "classification": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      },
+      "YyB0a47AM1Tr1eik": {
+        "type": "utility",
+        "_id": "YyB0a47AM1Tr1eik",
+        "sort": 0,
+        "name": "Shadow Mana",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a level 1–5 Necromancy spell that expends a spell slot (Anathema)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Shadow Mana",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Legendary (Requires Attunement by a Cleric)</em></p><p>This staff has two forms: a shadowy state known as <em>Anathema</em> and a holy state known as <em>Benediction</em>. While attuned to the staff, you can switch the staff from one state to the other at dawn.</p><p><strong>Anathema.</strong> As <em>Anathema</em>, the staff grants the following benefits:</p><ul><li><p><strong>Necrotic Resistance.</strong> While attuned to the staff, you have Resistance to Necrotic damage.</p></li><li><p><strong>Shadow Mana.</strong> While you’re holding the staff, when you cast a level 1–5 spell from the Necromancy school that would expend a spell slot, you can roll 1d6. If the number on the die exceeds the spell’s level, the spell slot isn’t expended.</p></li></ul><p><strong>Benediction.</strong> As <em>Benediction</em>, the staff grants the following benefits:</p><ul><li><p><strong>Radiant Resistance.</strong> While attuned to the staff, you have Resistance to Radiant Damage.</p></li><li><p><strong>Light-Blessed Healing.</strong> While you’re holding the staff, when you cast a spell that would restore Hit Points to a creature, you can treat the spell as if it had been cast using a spell slot of 1 level higher.</p></li></ul><section class=\"secret\" id=\"secret-Sqod7paVFgH9ZLqw\"><p><strong>Foundry Note</strong></p><p>Le bâton commence en <em>Anathema</em>. Pour changer d’état à l’aube, activez l’autre effet et désactivez celui-ci dans l’onglet <em>Effects</em> de l’objet. <em>Shadow Mana</em> lance le d6 : si le résultat dépasse le niveau du sort, rendez l’emplacement à la main. Pour <em>Light-Blessed Healing</em>, ajoutez à la main les soins d’un emplacement d’un niveau de plus.</p></section>",
+      "chat": ""
+    },
+    "identifier": "staff-of-light-and-shadow",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "simpleM",
+      "baseItem": "quarterstaff"
+    },
+    "ammunition": {},
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      },
+      "versatile": {
+        "number": null,
+        "denomination": 0,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc",
+      "ver"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": ""
+    },
+    "mastery": "topple"
+  },
+  "effects": [
+    {
+      "name": "Anathema",
+      "img": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+      "_id": "xH0dzzLDCiGciVpW",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "yjZ8Htfjdh6m8GLA"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Shadowy state: Resistance to Necrotic damage, and Shadow Mana when you cast a level 1–5 Necromancy spell.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793800000000,
+        "modifiedTime": 1793800000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Benediction",
+      "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+      "_id": "PgARQEzVv8IaeJjT",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Qm32E2F8QOzLUaqW"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Holy state: Resistance to Radiant damage, and Light-Blessed Healing when you cast a spell that restores Hit Points.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793800000000,
+        "modifiedTime": 1793800000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793800000000,
+    "modifiedTime": 1793800000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

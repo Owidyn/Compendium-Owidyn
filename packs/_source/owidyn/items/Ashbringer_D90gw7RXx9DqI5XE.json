@@ -1,0 +1,529 @@
+{
+  "_id": "D90gw7RXx9DqI5XE",
+  "name": "Ashbringer",
+  "type": "weapon",
+  "folder": "zJWrXWxeyiofhSh4",
+  "img": "icons/weapons/swords/greatsword-crossguard-embossed-gold.webp",
+  "sort": 200000,
+  "system": {
+    "activities": {
+      "MbHcbIXKHwECMVBi": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": -100000,
+        "_id": "MbHcbIXKHwECMVBi",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "MxanacQP4ssYEAUO": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 3,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": -90000,
+        "_id": "MxanacQP4ssYEAUO",
+        "name": "Attack (Undead)",
+        "img": "",
+        "appliedEffects": []
+      },
+      "T6xD4l8kRgvy069Q": {
+        "type": "heal",
+        "_id": "T6xD4l8kRgvy069Q",
+        "sort": 0,
+        "name": "Steal Life (Corrupted State Only)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Ashbringer to reduce a creature to 0 Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "20",
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "number": 1
+          }
+        }
+      },
+      "p6Pu4UjeXX2Nae8C": {
+        "type": "save",
+        "_id": "p6Pu4UjeXX2Nae8C",
+        "sort": 0,
+        "name": "Wake of Ashes (True State Only)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Ashbringer to reduce a creature to 0 Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "t0HSjhepOJEajGS6",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "spec",
+          "special": "Originating from the target"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Greatsword), Artifact (Requires Attunement by a Paladin)</em></p><p>Infused with the Holy Light and forged by King Magni Bronzebeard on the Great Anvil of Ironforge, <em>Ashbringer</em> was once the pride and joy of the knightly Mograine family. But when the traitorous Renault Mograine used the sword to kill his father, it became corrupted. The sword was claimed by the Scourge until Renault’s brother, Darion Mograine, betrayed the Lich King and delivered the weapon to Tirion Fordring - an act of heroism that cleansed <em>Ashbringer</em> of its corruption and restored the sword to its rightful form.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. It deals an extra 1d10 Fire damage on a hit, or an extra 3d10 Fire damage if the target is Undead.</p><p><strong>Changing States.</strong> When first encountered, <em>Ashbringer</em> is in either its True State or its Corrupted State. At the DM’s discretion, <em>Ashbringer</em> changes into its Corrupted State if its wielder uses it to commit an act of legendary wickedness; it changes into its True State if its wielder uses it to commit an act of legendary heroism. <em>Ashbringer’s</em> current state grants you one of the following benefits:</p><ul><li><p><strong>Steal Life (Corrupted State Only).</strong> Whenever you use <em>Ashbringer</em> to reduce a creature to 0 Hit Points, you gain 20 Temporary Hit Points.</p></li><li><p><strong>Wake of Ashes (True State Only).</strong> Whenever you use <em>Ashbringer</em> to reduce a creature to 0 Hit Points, you can make its corpse explode into a cloud of smoldering ash. Each creature of your choice in a 10-foot Emanation originating from the target must succeed on a DC 18 Constitution saving throw or have the &amp;Reference[Blinded apply=false] condition until the end of its next turn.</p></li></ul><p><strong>Sentience.</strong> <em>Ashbringer</em> is a sentient weapon with an Intelligence of 14, a Wisdom of 17, and a Charisma of 17. It is Lawful Good in its True State or Lawful Evil in its Corrupted State. It has hearing and Darkvision with a range of 120 feet.</p><p>The weapon communicates telepathically with its wielder and speaks Common and Dwarven.</p><p><strong>Personality.</strong> <em>Ashbringer’s</em> voice sounds like faint, intermittent whispers. In its True State, <em>Ashbringer</em> seeks to serve the forces of the Light and reduce the unholy to ash. In its Corrupted State, <em>Ashbringer</em> wants to undermine faith in the Light and destroy the righteous. Conflict arises if the wielder doesn’t share the goals of <em>Ashbringer’s</em> current state.</p><p><strong>Random Properties.</strong> Ashbringer has the following random properties:</p><ul><li><p>1 minor beneficial property</p></li><li><p>1 major beneficial property</p></li><li><p>1 minor detrimental property</p></li></ul><p><strong>Destroying Ashbringer.</strong> <em>Ashbringer</em> can be destroyed only by its creator, Magni Bronzebeard. The weapon will shatter when he strikes it against the Great Anvil of Ironforge.</p><section class=\"secret\" id=\"secret-ZBds95SaJILrEfKy\"><p><strong>Foundry Note</strong></p><p>Contre un Undead, utilisez <em>Attack (Undead)</em> (3d10 Fire au lieu de 1d10). Quand l’épée réduit une créature à 0 PV, utilisez <em>Steal Life</em> ou <em>Wake of Ashes</em> selon son état. Les propriétés aléatoires d’artefact sont à ajouter par le MJ.</p></section>",
+      "chat": ""
+    },
+    "identifier": "ashbringer",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "greatsword"
+    },
+    "ammunition": {},
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 2,
+        "denomination": 6,
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "magicalBonus": 3,
+    "properties": [
+      "mgc",
+      "hvy",
+      "two"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "graze"
+  },
+  "effects": [
+    {
+      "name": "Blinded",
+      "img": "systems/dnd5e/icons/svg/statuses/blinded.svg",
+      "_id": "t0HSjhepOJEajGS6",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793820000000,
+        "modifiedTime": 1793820000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

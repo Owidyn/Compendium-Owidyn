@@ -1,0 +1,339 @@
+{
+  "_id": "kNpwGmFpQJxLAqkb",
+  "name": "Noggenfogger Elixir",
+  "type": "consumable",
+  "folder": "O0iCx4mRsqbUTh6y",
+  "img": "icons/consumables/potions/flask-ornate-skull-green.webp",
+  "sort": 200000,
+  "system": {
+    "activities": {
+      "n8YFISECNDwBONQ3": {
+        "type": "utility",
+        "_id": "n8YFISECNDwBONQ3",
+        "sort": 0,
+        "name": "Drink",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "awV476OduTdt6oBA",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "kmbkNoTOtucocHzK",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "WNqjio7YJxu91jWO",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "formula": "1d6",
+          "name": "Noggenfogger Effect"
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true,
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Potion, Rare</em></p><p><em>Noggenfogger Elixir</em> is an unpredictable potion invented by Marin Noggenfogger, the trade prince of the Steamwheedle Cartel. It is highly coveted by adventurers (particularly goblins), despite or perhaps because of its unpredictable effects. When you drink this potion, roll 1d6: On a 1–2, you take on a skeletal appearance for 1d4 hours, during which time you don’t need to breathe. (Not breathing doesn’t give you Exhaustion levels.) On a 3–4, you gain the Reduce effect of the @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} spell for 1d4 hours (no Concentration required). On a 5–6, your rate of descent while falling slows to 60 feet per round for 10 minutes. During that time, you take no damage from falling.</p><p>Drinking multiple <em>Noggenfogger Elixirs</em> doesn’t require you to roll on the Potion Miscibility table in the Dungeon Master’s Guide.</p><p>This green potion is oily in the mouth.</p><section class=\"secret\" id=\"secret-BybGqLR9ZbOKbaXw\"><p><strong>Foundry Note</strong></p><p><em>Drink</em> lance le 1d6 : appliquez l’effet correspondant depuis le message (1–2 Skeletal Appearance, 3–4 Reduced, 5–6 Slow Fall). Les effets de 1d4 heures n’ont pas de durée automatique : retirez-les à la fin de la durée tirée.</p></section>",
+      "chat": ""
+    },
+    "identifier": "noggenfogger-elixir",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "Skeletal Appearance",
+      "img": "icons/magic/death/skull-humanoid-white-blue.webp",
+      "_id": "awV476OduTdt6oBA",
+      "type": "base",
+      "origin": null,
+      "transfer": false,
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You take on a skeletal appearance for 1d4 hours, during which time you don’t need to breathe. (Not breathing doesn’t give you Exhaustion levels.)</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793770000000,
+        "modifiedTime": 1793770000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Reduced",
+      "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+      "_id": "kmbkNoTOtucocHzK",
+      "type": "base",
+      "origin": null,
+      "transfer": false,
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.damage.mwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "subtract",
+            "phase": "initial",
+            "_id": "guv8fSbqcZOBdAxn"
+          },
+          {
+            "key": "system.rolls.damage.rwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "subtract",
+            "phase": "initial",
+            "_id": "CRkEwMFnTbHcRAk9"
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "US512nmXeOOzpZZe"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "eynqRMaXXMZSdqYl"
+          },
+          {
+            "key": "system.traits.size",
+            "value": 1,
+            "priority": null,
+            "type": "subtract",
+            "phase": "initial",
+            "_id": "1ZdcQSKYevZkPEkp"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You have the Reduce effect of the @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} spell for 1d4 hours (no Concentration required): your size decreases by one category, you have Disadvantage on Strength checks and Strength saving throws, and your attacks with your reduced weapons or Unarmed Strikes deal 1d4 less damage (minimum 1).</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793770000000,
+        "modifiedTime": 1793770000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Slow Fall",
+      "img": "icons/commodities/materials/feather-white.webp",
+      "_id": "WNqjio7YJxu91jWO",
+      "type": "base",
+      "origin": null,
+      "transfer": false,
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Your rate of descent while falling slows to 60 feet per round, and you take no damage from falling.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793770000000,
+        "modifiedTime": 1793770000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793770000000,
+    "modifiedTime": 1793770000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

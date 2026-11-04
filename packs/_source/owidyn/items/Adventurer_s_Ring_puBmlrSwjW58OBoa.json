@@ -1,0 +1,232 @@
+{
+  "_id": "puBmlrSwjW58OBoa",
+  "name": "Adventurer's Ring",
+  "type": "equipment",
+  "folder": "CXLwvP22FA8LZ7S5",
+  "img": "icons/equipment/finger/ring-cabochon-thin-silver-orange.webp",
+  "sort": 100000,
+  "system": {
+    "activities": {
+      "3kLYNtdBY7RQj5Yw": {
+        "type": "utility",
+        "_id": "3kLYNtdBY7RQj5Yw",
+        "sort": 0,
+        "name": "Open or Close Cover",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Ring, Common</em></p><p>“Lamps are a liability on adventures. Delicate and prone to oil spillage, lamps fill a hand that should otherwise be wielding a weapon or casting a spell. Once you try one of our elegant and practical rings, you’ll never go back to cumbersome flint and fire.”</p><p>While the cover on this ring is open, the ring produces a flame that creates no heat and consumes no fuel. It sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. As a Bonus Action, you can close the cover, smothering the flame, or open it again.</p><section class=\"secret\" id=\"secret-Nj5bt7565nFwHy8H\"><p><strong>Foundry Note</strong></p><p>La flamme est une lumière sur le jeton, éteinte par défaut (couvercle fermé). Anneau porté, l’activité <em>Open or Close Cover</em> l’allume ou l’éteint, sans message dans le chat.</p></section>",
+      "chat": ""
+    },
+    "identifier": "adventurers-ring",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Flame",
+      "img": "icons/sundries/lights/candle-lit-yellow.webp",
+      "_id": "edliLcgQtebGCjzi",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.bright",
+            "value": 20,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "X8fFKtfA73sv6K7g"
+          },
+          {
+            "key": "token.light.dim",
+            "value": 40,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "pbUInOGserluCEp9"
+          },
+          {
+            "key": "token.light.color",
+            "value": "#ff9329",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "fTTqgR9mxMfLjyh9"
+          },
+          {
+            "key": "token.light.animation.type",
+            "value": "torch",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "mixhORuoGR5wqCad"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The ring’s cover is open: its flame sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793780000000,
+        "modifiedTime": 1793780000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "toggleEffect": "edliLcgQtebGCjzi"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793780000000,
+    "modifiedTime": 1793780000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -49,7 +49,11 @@ Les jetons ne récupèrent pas au repos : la règle source ne le prévoit pas. L
 
 Après fermeture d'une fenêtre, le gestionnaire permet de reprendre le renouvellement de la main, la remise des trois cartes ou le Jackpot. Une recomposition inachevée bloque les autres opérations de main.
 
-Les sorts proviennent des Spell Items disponibles dans la partie et ses compendiums. Un sort de Jackpot absent conserve son résultat en attente : ajouter son Spell Item à la fiche ou activer son compendium, puis reprendre. Aucun profil de sort incomplet n'est inventé.
+Une carte ne peut être liée qu'à un sort de la Spell List du Cartomancien déjà présent sur la fiche, exactement de son niveau : ajouter d'abord le sort à la fiche, puis le lier depuis le gestionnaire. Initialiser / Synchroniser signale en une fois les niveaux de sort qui manquent sur la fiche. Les sorts mineurs, la Main du Parieur et le Jackpot prennent toujours leurs sorts dans la partie et ses compendiums. Un sort de Jackpot absent conserve son résultat en attente : ajouter son Spell Item à la fiche ou activer son compendium, puis reprendre. Aucun profil de sort incomplet n'est inventé.
+
+**Réinitialiser le deck** ramène les cartes de la main et de la défausse dans le deck, retire les marques de Coup d'éclat, annule le renouvellement de main et la recomposition en attente, mélange puis pioche une nouvelle main de PB cartes. Les sorts liés et les changements de sort disponibles sont conservés ; seul le MJ peut, en cochant l'option, délier aussi toutes les cartes pour que leurs sorts soient choisis à nouveau gratuitement.
+
+**Retirer la classe** de la fiche supprime le deck, la main et la défausse du personnage, les effets laissés par ses capacités (Suite favorable, Miser sa vie, Main du Parieur) et ses données. Une fenêtre propose ensuite de supprimer les sorts du Cartomancien : ceux liés aux cartes, ceux ajoutés par la classe (sorts mineurs, Main du Parieur, Jackpot, anciennes liaisons) ou accordés par elle, sauf ceux d'une autre classe du personnage. Les piles sont supprimées par le joueur qui retire la classe s'il en est propriétaire, sinon par le MJ connecté.
 
 Les cartes débloquées trop tôt par 0.2.1 sont archivées dans le drapeau `archivedCards` du personnage avant retrait des piles. Leur préparation est restaurée lorsqu'elles deviennent disponibles.
 
@@ -59,7 +63,7 @@ Les cartes débloquées trop tôt par 0.2.1 sont archivées dans le drapeau `arc
 await game.modules.get("compendium-owidyn").api.cartomancien.rebuildCompendiums();
 ```
 
-`api.cartomancien.syncActor(actor)` synchronise une fiche. `api.cartomancien.longRest(actor)` renouvelle seulement les cartes d'un repos déjà terminé ; le bouton de l'interface utilise le repos natif complet.
+`api.cartomancien.syncActor(actor)` synchronise une fiche et `api.cartomancien.resetDeck(actor)` la réinitialise. `api.cartomancien.longRest(actor)` renouvelle seulement les cartes d'un repos déjà terminé ; le bouton de l'interface utilise le repos natif complet.
 
 ## Vérifications
 
@@ -67,4 +71,4 @@ await game.modules.get("compendium-owidyn").api.cartomancien.rebuildCompendiums(
 npm run test:cartomancien
 ```
 
-Ces tests simulent documents et hooks Foundry : progression, ressources, annulations, repos, effets et Jackpot. Les signatures et schémas ont été vérifiés dans les sources locales Foundry 14 / D&D5e 6.0.6. Un essai dans l'interface d'une partie reste nécessaire.
+Ces tests simulent documents et hooks Foundry : progression, ressources, annulations, repos, effets, Jackpot, liaison des sorts, réinitialisation du deck et retrait de la classe. Les signatures et schémas ont été vérifiés dans les sources locales Foundry 14 / D&D5e 6.0.6. Un essai dans l'interface d'une partie reste nécessaire.

@@ -52,6 +52,7 @@ async function harness() {
       modules: new Map([[MODULE_ID, moduleState]]),
       cards: stacks,
       user: { id: "owner", isGM: false },
+      users: { activeGM: null, get: id => ({ id, isGM: false }) },
       i18n: { lang: "fr" },
       combat: null,
       time: { worldTime: 1000 },
@@ -131,6 +132,8 @@ async function harness() {
     async pass(target, ids) { for (const id of ids) await this.cards.get(id)?.pass(target); }
     async recall() { for (const card of [...this.cards]) await card.recall(); }
     async update(data) { Object.assign(this, clone(data)); }
+    async delete() { stacks.delete(this.id); this.deleted = true; }
+    testUserPermission() { return true; }
   }
   context.Cards = { implementation: { create: async data => new Stack(data) } };
 
@@ -180,7 +183,7 @@ async function harness() {
         }
         return data;
       },
-      async deleteEmbeddedDocuments(type, ids) { if (type === "ActiveEffect") for (const id of ids) this.effects.delete(id); }
+      async deleteEmbeddedDocuments(type, ids) { for (const id of ids) (type === "ActiveEffect" ? this.effects : this.items).delete(id); }
     };
     actor.items.set("class", { id: "class", type: "class", name: "Le Cartomancien", parent: actor, system: { identifier: "cartomancien", levels: level } });
     return actor;
@@ -192,11 +195,21 @@ async function harness() {
     return { actor, ...result };
   }
 
-  function addSpell(actor, card, level = 1) {
+  /** A spell on the actor's sheet, unbound unless addSpell binds it. */
+  function addSheetSpell(actor, { name = "Sheet spell", level = 1, flags = {}, sourceItem = "" } = {}) {
+    const spell = { id: `spell${++nextId}`, uuid: `Actor.${actor.id}.Item.spell${nextId}`, name, type: "spell", parent: actor, flags: clone(flags),
+      system: { level, sourceItem, method: "spell", ability: "int", range: { units: "touch" }, activities: new Collection() },
+      getFlag(scope, key) { return getPath(this.flags?.[scope], key); } };
+    actor.items.set(spell.id, spell);
+    documents.set(spell.uuid, spell);
+    return spell;
+  }
+
+  function addSpell(actor, card, level = 1, options = {}) {
     const activity = { id: "cast", name: "Cast", type: "utility", system: {}, activation: { type: "action" }, range: { units: "touch" }, consumption: { spellSlot: true } };
     activity.use = vm.runInContext("(async (...args) => { activityCalls.push(args); return activityResult; })", context);
-    const spell = { id: `spell${++nextId}`, uuid: `Actor.${actor.id}.Item.spell${nextId}`, name: "Test spell", type: "spell", parent: actor,
-      system: { level, sourceClass: "cartomancien", method: "spell", ability: "int", range: { units: "touch" }, activities: new Collection([[activity.id, activity]]) } };
+    const spell = addSheetSpell(actor, { name: "Test spell", level, ...options });
+    spell.system.activities.set(activity.id, activity);
     spell.clone = updates => {
       const cast = { ...spell, flags: clone(spell.flags ?? {}), system: { ...spell.system, activities: new Collection() } };
       for (const [key, value] of Object.entries(updates)) setPath(cast, key, value);
@@ -205,13 +218,11 @@ async function harness() {
       return cast;
     };
     activity.item = spell;
-    actor.items.set(spell.id, spell);
-    documents.set(spell.uuid, spell);
     setPath(card.flags, `${MODULE_ID}.cartomancien.spellUuid`, spell.uuid);
     return { spell, activity };
   }
 
-  return { context, api: moduleState.api.cartomancien, notices, calls, castClones, dialogAnswers, setup, makeActor, addSpell, stacks, hooks, modules };
+  return { context, api: moduleState.api.cartomancien, notices, calls, castClones, dialogAnswers, setup, makeActor, addSpell, addSheetSpell, documents, stacks, hooks, modules };
 }
 
 const cases = [];
@@ -331,6 +342,86 @@ test("pending redraw blocks card casting and free draws", async () => {
   await h.api.drawOne(actor);
   assert.equal(h.calls.length, 0);
   assert.equal(hand.cards.size, 2);
+});
+
+test("a card can only be bound to a spell of the list already on the sheet", async () => {
+  const h = await harness();
+  const { actor, deck } = await h.setup(1);
+  h.documents.set("Compendium.dnd5e.spells24.Item.compendiumSpell", { uuid: "Compendium.dnd5e.spells24.Item.compendiumSpell", name: "Compendium spell", type: "spell", system: { level: 1 }, parent: null });
+  const sheet = h.addSheetSpell(actor, { name: "Sheet spell" });
+  const card = index => deck.cards.find(entry => entry.getFlag(MODULE_ID, "cartomancien.arcanaIndex") === index);
+  h.dialogAnswers.push({ spellUuid: "Compendium.dnd5e.spells24.Item.compendiumSpell" });
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), false, "a spell absent from the sheet is refused");
+  assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), "");
+  h.dialogAnswers.push({ spellUuid: sheet.uuid });
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), true);
+  assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), sheet.uuid);
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 1), "none", "the only level 1 spell of the sheet is prepared on another card");
+  assert.equal(h.notices.at(-1).type, "warn");
+});
+
+test("reset returns every card to the deck and deals a new hand, keeping bindings and credits", async () => {
+  const h = await harness();
+  const { actor, deck, hand, discard } = await h.setup(3);
+  const bound = deck.cards.find(entry => entry.getFlag(MODULE_ID, "cartomancien.arcanaIndex") === 0);
+  const { spell } = h.addSpell(actor, bound);
+  await [...hand.cards][0].pass(discard);
+  await [...hand.cards][0].setFlag(MODULE_ID, "cartomancien.coupEclat", true);
+  await actor.update({ [`flags.${MODULE_ID}.cartomancien.redrawPending`]: true, [`flags.${MODULE_ID}.cartomancien.restPending`]: true,
+    [`flags.${MODULE_ID}.cartomancien.replacementCredits`]: 2 });
+  h.dialogAnswers.push({ unbind: true });
+  assert.equal(await h.api.resetDeck(actor), true);
+  assert.equal(deck.cards.size, 6);
+  assert.equal(discard.cards.size, 0);
+  assert.equal(hand.cards.size, 2);
+  assert.equal(deck.availableCards.length, 4);
+  assert.equal(hand.cards.find(card => card.getFlag(MODULE_ID, "cartomancien.coupEclat")), undefined);
+  assert.equal(bound.getFlag(MODULE_ID, "cartomancien.spellUuid"), spell.uuid, "only a GM can unbind the cards");
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien.redrawPending"), undefined);
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien.restPending"), undefined);
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien.replacementCredits"), 2);
+});
+
+test("a GM reset can unbind every card for a free new choice of spell", async () => {
+  const h = await harness();
+  const { actor, deck } = await h.setup(3);
+  h.context.game.user.isGM = true;
+  const card = index => deck.cards.find(entry => entry.getFlag(MODULE_ID, "cartomancien.arcanaIndex") === index);
+  const { spell } = h.addSpell(actor, card(0));
+  const other = h.addSheetSpell(actor, { name: "Other spell" });
+  await actor.update({ [`flags.${MODULE_ID}.cartomancien.replacementCredits`]: 2,
+    [`flags.${MODULE_ID}.cartomancien.archivedCards`]: { 15: { flags: { [MODULE_ID]: { cartomancien: { spellUuid: spell.uuid } } } } } });
+  // The reset with its GM option, then the new spell of the first card; the next prompts are left unanswered
+  h.dialogAnswers.push({ unbind: true }, { spellUuid: other.uuid });
+  assert.equal(await h.api.resetDeck(actor), true);
+  assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), other.uuid, "the first card took a new spell");
+  assert.equal(card(1).getFlag(MODULE_ID, "cartomancien.spellUuid"), "", "a card left unanswered stays unbound");
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien.archivedCards"), undefined);
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien.replacementCredits"), 2, "the new choices spend no change of spell");
+});
+
+test("removing the class deletes its deck, flags and effects, then its spells only", async () => {
+  const h = await harness();
+  const { actor, deck, hand, discard } = await h.setup(3);
+  const card = index => deck.cards.find(entry => entry.getFlag(MODULE_ID, "cartomancien.arcanaIndex") === index);
+  const { spell: bound } = h.addSpell(actor, card(0));
+  const imported = h.addSheetSpell(actor, { name: "Imported", flags: { [MODULE_ID]: { cartomancien: { importedForCartomancien: true } } } });
+  actor.items.set("wizard", { id: "wizard", type: "class", name: "Wizard", parent: actor, system: { identifier: "wizard", levels: 1 } });
+  const { spell: wizard } = h.addSpell(actor, card(1), 1, { sourceItem: "class:wizard" });
+  const plain = h.addSheetSpell(actor, { name: "Unrelated" });
+  await actor.createEmbeddedDocuments("ActiveEffect", [{ name: "Suite favorable", flags: { [MODULE_ID]: { cartomancien: { suiteFavorable: true } } } }]);
+  const cls = actor.items.get("class");
+  actor.items.delete("class");
+  h.dialogAnswers.push(true);
+  for (const callback of h.hooks.get("deleteItem")) callback(cls, {}, "owner");
+  await new Promise(resolve => setTimeout(resolve, 20));
+  for (const stack of [deck, hand, discard]) assert.equal(h.stacks.has(stack.id), false);
+  assert.equal(actor.getFlag(MODULE_ID, "cartomancien"), undefined);
+  assert.equal(actor.effects.size, 0);
+  assert.equal(actor.items.has(bound.id), false);
+  assert.equal(actor.items.has(imported.id), false);
+  assert.equal(actor.items.has(wizard.id), true, "a spell of another class stays");
+  assert.equal(actor.items.has(plain.id), true, "a spell unrelated to the deck stays");
 });
 
 let failures = 0;
