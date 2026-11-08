@@ -2,28 +2,32 @@
  * Add or replace hand-written Owidyn documents in one of the module's compendiums.
  *   node tools/owidyn/add.mjs [--pack <compendium>] <fichier.json|dossier>...          → writes the given documents
  *   node tools/owidyn/add.mjs --check [--pack <compendium>] <fichier.json|dossier>...  → validation only
- * --pack defaults to compendium-owidyn. Sources live in packs/_source/owidyn/<items|bestiaire|journaux>/: one JSON file
- * per folder, item, actor or journal entry, with its embedded documents inline (an item's effects; an actor's items and
- * effects; a journal entry's pages).
+ * Sources live in packs/_source/<compendium>/, laid out like the dnd5e ones: a directory per folder (described by its
+ * _folder.json) and one JSON file per item, actor or journal entry, with its embedded documents inline (an item's
+ * effects; an actor's items and effects; a journal entry's pages). A directory given is read with all its
+ * subdirectories. The compendium is the one whose sources hold the files; --pack names it for files kept elsewhere.
  * Only the documents passed are written: the rest of the pack, including edits made in Foundry, is left untouched.
  * Foundry must not have a world open that uses this module while the LevelDB pack is written.
  */
-import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
-import { embeddedPrefixes, openPack, packConfig, parseArgs, path } from './pack.mjs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
+import { embeddedPrefixes, isFolder, openPack, packConfig, packOfSource, parseArgs, path, readSources } from './pack.mjs';
 
-const { check: checkOnly, pack: PACK, inputs } = parseArgs(process.argv.slice(2));
-const config = packConfig(PACK);
-const { type: packType, collection } = config;
-
-const files = inputs.flatMap(a => statSync(a).isDirectory()
-  ? readdirSync(a).filter(f => f.endsWith('.json')).map(f => `${a.replace(/[\\/]$/, '')}/${f}`)
-  : [a]);
+const { check: checkOnly, pack, inputs } = parseArgs(process.argv.slice(2));
+const files = inputs.flatMap(a => (statSync(a).isDirectory() ? readSources(a.replace(/[\\/]$/, '')).map(s => s.file) : [a]));
 if (!files.length) {
   console.error('Usage : node tools/owidyn/add.mjs [--check] [--pack <compendium>] <fichier.json|dossier>...');
   process.exit(1);
 }
+const found = [...new Set(files.map(packOfSource))];
+if (!pack && (found.length !== 1 || !found[0])) {
+  console.error(found.length > 1 ? `Ces fichiers sont dans les sources de plusieurs compendiums (${found.map(p => p ?? '?').join(', ')}) : un compendium par commande.`
+    : 'Ces fichiers ne sont pas dans packs/_source/<compendium>/ : précisez --pack <compendium>.');
+  process.exit(1);
+}
+const PACK = pack ?? found[0];
+const config = packConfig(PACK);
+const { type: packType, collection } = config;
 const docs = files.map(f => JSON.parse(readFileSync(f, 'utf8')));
-const isFolder = doc => 'sorting' in doc;
 const itemsOf = doc => (collection === 'actors' ? doc.items ?? [] : [doc]);
 
 const db = await openPack(PACK);

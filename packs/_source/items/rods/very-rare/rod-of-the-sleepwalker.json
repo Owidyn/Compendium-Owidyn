@@ -1,0 +1,181 @@
+{
+  "_id": "ZtTVyNCnARCNa1Ue",
+  "name": "Rod of the Sleepwalker",
+  "type": "equipment",
+  "folder": "F9LAOAjXhXPjeEfN",
+  "img": "icons/weapons/staves/staff-crescent-green.webp",
+  "sort": 500000,
+  "system": {
+    "activities": {
+      "DE2GtSLo9g4pVMpt": {
+        "type": "cast",
+        "_id": "DE2GtSLo9g4pVMpt",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour",
+          "special": "",
+          "concentration": true,
+          "override": true
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominateMo",
+          "challenge": {
+            "attack": null,
+            "save": 17,
+            "override": true
+          },
+          "level": 8,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Rod, Very Rare</em></p><p>This rod puts creatures into a suggestible, sleepwalking state. You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplDominateMo]{Dominate Monster} (save DC 17) from this rod, with the following modifications:</p><ul><li><p><strong>Duration.</strong> The spell’s duration is Concentration, up to 8 hours.</p></li><li><p><strong>Immunity.</strong> Creatures that don’t sleep, such as elves, or that have Immunity to the &amp;Reference[Exhaustion apply=false] condition automatically succeed on the save.</p></li><li><p><strong>Memory.</strong> An affected creature remembers nothing from the spell’s duration once the spell ends.</p></li></ul><p>Once the rod has been used to cast the spell in this way, it can’t be used to do so again until the next dawn.</p><section class=\"secret\" id=\"secret-NCRRNp9AX5eDKMwB\"><p><strong>Foundry Note</strong></p><p>Le sort lancé dure jusqu’à 8 heures (Concentration), mais l’effet <em>Dominated</em> du sort de dnd5e dure 1 heure : prolongez-le à la main. L’immunité des créatures qui ne dorment pas et la perte de mémoire sont à gérer vous-même.</p></section>",
+      "chat": ""
+    },
+    "identifier": "rod-of-the-sleepwalker",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40000,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "rod",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "foc",
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793790000000,
+    "modifiedTime": 1793790000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

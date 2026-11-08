@@ -1,0 +1,240 @@
+{
+  "name": "Guide",
+  "type": "background",
+  "img": "icons/tools/navigation/compass-worn-copper.webp",
+  "system": {
+    "advancement": {
+      "vi3TjVefWVTZM7Te": {
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 3,
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "cha"
+          ],
+          "recommendation": null,
+          "max": null
+        },
+        "_id": "vi3TjVefWVTZM7Te",
+        "flags": {},
+        "level": 0,
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20.",
+        "value": {},
+        "name": "",
+        "title": "Background Ability Score Improvement"
+      },
+      "7C1VHtP7aenqHjvJ": {
+        "type": "Trait",
+        "name": "Background Proficiencies",
+        "_id": "7C1VHtP7aenqHjvJ",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:ste",
+            "skills:sur",
+            "tool:art:cartographer"
+          ],
+          "mode": "default"
+        },
+        "flags": {},
+        "level": 0,
+        "hint": "Your background grants you proficiency in Stealth and Survival. It also grants you proficiency in Cartographer's Tools.",
+        "value": {},
+        "title": "Background Proficiencies"
+      },
+      "e4ziAYSbwJVgsEpX": {
+        "type": "Trait",
+        "name": "Choose Languages",
+        "configuration": {
+          "grants": [
+            "languages:standard:common"
+          ],
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "mode": "default"
+        },
+        "_id": "e4ziAYSbwJVgsEpX",
+        "flags": {},
+        "level": 0,
+        "hint": "",
+        "value": {},
+        "title": "Choose Languages"
+      },
+      "4snTFfkpkXUv24NE": {
+        "type": "ItemGrant",
+        "name": "Background Feat",
+        "_id": "4snTFfkpkXUv24NE",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.3cZndrZX1F7P01f9",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "flags": {},
+        "value": {},
+        "level": 0,
+        "hint": "Your background grants you the Magic Initiate (Druid) feat.",
+        "title": "Background Feat"
+      }
+    },
+    "description": {
+      "value": "<p>You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness—strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants—and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.3cZndrZX1F7P01f9]{Magic Initiate (Druid)}</p><p><strong>Skill Proficiencies:</strong> Stealth and Survival</p><p><strong>Tool Proficiency:</strong> Cartographer's Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulCartograph]{Cartographer’s Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTent0000000]{Tent}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 3 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "guide",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC"
+    },
+    "startingEquipment": [
+      {
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "NzqI9vHhsfgvbI9E",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "A7V4zF75xaIlP8wx",
+        "group": "NzqI9vHhsfgvbI9E",
+        "sort": 200000
+      },
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "J6zyTsxKS7MkGVtM",
+        "group": "NzqI9vHhsfgvbI9E",
+        "sort": 300000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepShortbow00",
+        "requiresProficiency": false,
+        "_id": "K7a8YZbgCcgVEsdE",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "count": 20,
+        "key": "Compendium.dnd5e.equipment24.Item.phbamoArrows0000",
+        "requiresProficiency": false,
+        "_id": "UHV0QwGkDEYzG0Mx",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 450000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCartograph",
+        "requiresProficiency": false,
+        "_id": "i2rGDyTJdBzrK8Ub",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 500000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "n0Z2GBYEhhtEAvyC",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 600000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagQuiver00000",
+        "requiresProficiency": false,
+        "_id": "VCF4cljN7vHgYDRG",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 700000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTent0000000",
+        "requiresProficiency": false,
+        "_id": "EBueyk70fIkb98aE",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 800000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "liUcACO55bw4f0CH",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 850000
+      },
+      {
+        "type": "currency",
+        "count": 50,
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "j231OqJybyjsdxFO",
+        "group": "J6zyTsxKS7MkGVtM",
+        "sort": 900000
+      },
+      {
+        "type": "currency",
+        "count": 3,
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "hZreCGEPvHK0GPH2",
+        "group": "A7V4zF75xaIlP8wx",
+        "sort": 1000000
+      }
+    ],
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": "n264u1taQCwy9pR0",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511722502,
+    "modifiedTime": 1793712000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "bn9bzphLj0Y6qU3U",
+  "sort": 100000
+}

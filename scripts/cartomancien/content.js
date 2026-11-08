@@ -1,3 +1,5 @@
+import { PACKS } from "../owidyn/compendiums.mjs";
+
 export const MODULE_ID = "compendium-owidyn";
 export const CONTENT_VERSION = "0.3.0";
 
@@ -49,10 +51,12 @@ export const CARTOMANCIEN_SPELLS = {
   9: ["Power Word Kill", "Prismatic Wall", "Time Stop", "Wish"]
 };
 
-// Compendiums of the Owidyn module: the class goes into the shared Item compendium (Class › Cartomancien).
-const CONTENT_PACK_ID = `${MODULE_ID}.compendium-owidyn`;
-const SPELL_LIST_PACK_ID = `${MODULE_ID}.journaux`;
-const CLASS_FOLDER = /^class(e|es)?$/i;
+// Compendiums of the Owidyn module: the class goes into Classes (folder Cartomancien), its spell list into Journals.
+const CONTENT_PACK_ID = `${MODULE_ID}.${PACKS.classes}`;
+const SPELL_LIST_PACK_ID = `${MODULE_ID}.${PACKS.journals}`;
+const SPELL_LISTS_FOLDER = /^(spell lists|listes de sorts)$/i;
+// Every Owidyn document: Owidyn's Source Compendium, D&D 2024 rules
+const SOURCE = { book: "OSC", page: "", custom: "", license: "", revision: 1, rules: "2024" };
 const documentId = id => String(id).padEnd(16, "0");
 
 const IDS = Object.fromEntries(Object.entries({
@@ -76,6 +80,7 @@ const IDS = Object.fromEntries(Object.entries({
   spellPage: "CrtmSpellList001",
   folderClass: "CrtmFolderClass1",
   folderFeatures: "CrtmFolderFeat01",
+  folderSubclassFeatures: "CrtmFolderSubF01",
   folderParieur: "CrtmFolderPari01",
   folderJournal: "CrtmFolderJrnl01"
 }).map(([key, value]) => [key, documentId(value)]));
@@ -201,7 +206,8 @@ function featureData(id, name, description, {
       identifier: identifier || slug(name),
       type: { value: "class", subtype: "" },
       uses: uses ?? itemUses(),
-      activities: activities.reduce((obj, activity) => (obj[activity._id] = activity, obj), {})
+      activities: activities.reduce((obj, activity) => (obj[activity._id] = activity, obj), {}),
+      source: { ...SOURCE }
     },
     effects,
     flags: { [MODULE_ID]: { cartomancien: { contentKey: id, contentVersion: CONTENT_VERSION } } }
@@ -613,8 +619,9 @@ async function withUnlockedPacks(packs, callback) {
 }
 
 /**
- * Folders of the Cartomancien content. Existing folders are left where the GM moved them;
- * a missing class folder is created inside the root "Class" folder of the compendium when there is one.
+ * Folders of the Cartomancien content, as in the other classes of the Classes compendium: Cartomancien holds the class,
+ * Class Features and the folder of the subclass (Deck du Parieur: the subclass and its Subclass Features).
+ * Existing folders are left where the GM moved them.
  */
 async function ensureFolder(pack, { _id, name, sort = 0, parent = null }) {
   const existing = pack.folders.get(_id);
@@ -624,17 +631,17 @@ async function ensureFolder(pack, { _id, name, sort = 0, parent = null }) {
 }
 
 async function ensureItemFolders(pack) {
-  const classRoot = pack.folders.find(folder => !folder.folder && CLASS_FOLDER.test(folder.name));
-  await ensureFolder(pack, { _id: IDS.folderClass, name: "Cartomancien", sort: 100000, parent: classRoot?.id ?? null });
-  await ensureFolder(pack, { _id: IDS.folderFeatures, name: "Aptitudes de classe", sort: 100, parent: IDS.folderClass });
+  await ensureFolder(pack, { _id: IDS.folderClass, name: "Cartomancien", sort: 100000 });
+  await ensureFolder(pack, { _id: IDS.folderFeatures, name: "Class Features", sort: 100, parent: IDS.folderClass });
   await ensureFolder(pack, { _id: IDS.folderParieur, name: "Deck du Parieur", sort: 200, parent: IDS.folderClass });
+  await ensureFolder(pack, { _id: IDS.folderSubclassFeatures, name: "Subclass Features", sort: 100, parent: IDS.folderParieur });
 }
 
-/** Folder of a generated item: Parieur features beside their subclass, the other features under Aptitudes. */
+/** Folder of a generated feature: the Parieur ones under Deck du Parieur › Subclass Features, the others under Class Features. */
 function featureFolder(id) {
   const parieur = PARIEUR_ADVANCEMENTS.filter(advancement => advancement.type === "ItemGrant")
     .some(advancement => advancement.configuration.items.some(item => item.uuid.endsWith(`.${id}`)));
-  return parieur ? IDS.folderParieur : IDS.folderFeatures;
+  return parieur ? IDS.folderSubclassFeatures : IDS.folderFeatures;
 }
 
 async function syncManagedEffects(doc, effectData = []) {
@@ -732,7 +739,8 @@ async function findSpellSources() {
 
 async function ensureSpellListPack() {
   const pack = getPack(SPELL_LIST_PACK_ID);
-  await ensureFolder(pack, { _id: IDS.folderJournal, name: "Cartomancien" });
+  const lists = pack.folders.find(folder => !folder.folder && SPELL_LISTS_FOLDER.test(folder.name));
+  await ensureFolder(pack, { _id: IDS.folderJournal, name: "Cartomancien", sort: 100000, parent: lists?.id ?? null });
   const found = await findSpellSources();
   const spells = [];
   const unlinkedSpells = [];
@@ -821,7 +829,8 @@ async function ensureContentPack(spellListPage, spellSources) {
       identifier: "deck-du-parieur",
       classIdentifier: "cartomancien",
       spellcasting: { progression: "none", ability: "int" },
-      advancement: PARIEUR_ADVANCEMENTS.reduce((obj, a) => (obj[a._id] = a, obj), {})
+      advancement: PARIEUR_ADVANCEMENTS.reduce((obj, a) => (obj[a._id] = a, obj), {}),
+      source: { ...SOURCE }
     },
     flags: { [MODULE_ID]: { cartomancien: { contentKey: "subclass-parieur", contentVersion: CONTENT_VERSION } } }
   };
@@ -842,7 +851,8 @@ async function ensureContentPack(spellListPage, spellSources) {
         hd: { denomination: "d6", spent: 0, additional: "" },
         primaryAbility: { value: ["int"], all: false },
         spellcasting: { progression: "none", ability: "int" },
-        advancement: Object.fromEntries(classAdvancements.map(advancement => [advancement._id, advancement]))
+        advancement: Object.fromEntries(classAdvancements.map(advancement => [advancement._id, advancement])),
+        source: { ...SOURCE }
       },
       flags: { [MODULE_ID]: { cartomancien: { contentKey: "class-cartomancien", contentVersion: CONTENT_VERSION } } }
     }, { pack: pack.metadata.id, keepId: true });
@@ -856,6 +866,7 @@ async function ensureContentPack(spellListPage, spellSources) {
       "system.hd.denomination": "d6",
       "system.primaryAbility": { value: ["int"], all: false },
       "system.spellcasting": { progression: "none", ability: "int" },
+      "system.source": { ...SOURCE },
       [`flags.${MODULE_ID}.cartomancien.contentVersion`]: CONTENT_VERSION
     });
   }
@@ -888,8 +899,9 @@ export async function getAvailableCartomancienSpellSources(level, { actor = null
   const results = new Map();
 
   if (actor) {
+    // A spell with `cachedFor` is dnd5e's copy of a spell cast through an item, not a spell of the character
     for (const item of actor.items) {
-      if (item.type !== "spell" || Number(item.system?.level ?? -1) !== level) continue;
+      if (item.type !== "spell" || Number(item.system?.level ?? -1) !== level || item.flags?.dnd5e?.cachedFor) continue;
       const key = normalize(item.name);
       if (!allowedByName.has(key)) continue;
       results.set(key, { name: item.name, level, uuid: item.uuid, owned: true });
@@ -928,7 +940,7 @@ export async function importSpellToActor(actor, uuid) {
   if (!source || source.type !== "spell") return null;
   if (source.parent?.id === actor.id) return source;
 
-  const same = actor.items.find(i => i.type === "spell"
+  const same = actor.items.find(i => i.type === "spell" && !i.flags?.dnd5e?.cachedFor
     && Number(i.system?.level ?? -1) === Number(source.system?.level ?? -1)
     && normalize(i.name) === normalize(source.name));
   if (same) return same;

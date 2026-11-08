@@ -1,0 +1,752 @@
+{
+  "_id": "LPiaGapobLVcd58E",
+  "name": "Book of Vile Darkness",
+  "type": "equipment",
+  "folder": "mFkm7TDxnzEECRgw",
+  "img": "icons/sundries/books/book-tooled-eye-gold-red.webp",
+  "sort": 1300000,
+  "system": {
+    "activities": {
+      "JrS5rIoMIDNAfEZM": {
+        "type": "save",
+        "_id": "JrS5rIoMIDNAfEZM",
+        "sort": 0,
+        "name": "Attunement Ordeal",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A creature that isn’t a Fiend or an Undead attunes to the book"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "17"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "t7XRDPeziWF808Ic": {
+        "type": "cast",
+        "_id": "t7XRDPeziWF808Ic",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplAnimateDea",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 3,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "nUAGT0uEsvVU7Gno": {
+        "type": "cast",
+        "_id": "nUAGT0uEsvVU7Gno",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplCircleofDe",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 6,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "vJJ1M6sy2HbHNGai": {
+        "type": "cast",
+        "_id": "vJJ1M6sy2HbHNGai",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominateMo",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 8,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "c3ly2eieC5QlXteH": {
+        "type": "cast",
+        "_id": "c3ly2eieC5QlXteH",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplFingerofDe",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 7,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "8WwKbYvLLTA4Xe0U": {
+        "type": "damage",
+        "_id": "8WwKbYvLLTA4Xe0U",
+        "sort": 0,
+        "name": "Vile Speech",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "15",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": "Creatures other than Fiends and Undead"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      },
+      "HDomAlslsq5IhwMN": {
+        "type": "damage",
+        "_id": "HDomAlslsq5IhwMN",
+        "sort": 0,
+        "name": "Vile Speech (Backlash)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Each time you use Vile Speech"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 12,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><p>The contents of this foul manuscript are meat and drink to the wicked. The knowledge it holds is so horrid that merely glimpsing its scrawled pages invites doom.</p><p>Most believe the lich-god Vecna wrote the <em>Book of Vile Darkness</em>, filling it with every horrid idea, every corrupt thought, and every example of foul magic he came across or devised. Other practitioners of evil have added their own contributions, stitching their writings into the tome or annotating its text; in places, pages are missing, torn, or so covered in ink, blood, and scratches that the original text can’t be made out.</p><p>Nature can’t bear the book’s presence. Ordinary plants wither near it, common animals refuse to approach it, and it slowly destroys whatever it touches—even stone cracks and crumbles to powder if the book rests on it long enough.</p><p>Whenever a creature that isn’t a Fiend or an Undead attunes to the book, it makes a DC 17 Charisma saving throw. On a failed save, it is magically transformed into a Larva under the DM’s control. Only a @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} spell can reverse this transformation.</p><p>A creature attuned to the book must spend 80 hours reading and studying it to absorb its contents and use its Adjusted Ability Scores, Tireless Form, Spells, Vile Lore, and Vile Speech properties.</p><p>The book stays with you only as long as you strive to work evil in the world. If you go 10 days without committing at least one evil act, or if you willingly perform a good act, the book disappears, your Attunement to it ends at once, and you lose all its benefits. If you die while attuned to the book, an entity of great evil claims your soul, and you can’t be restored to life by any means while your soul remains imprisoned.</p><p><strong>Adjusted Ability Scores.</strong> One ability score of your choice increases by 2, to a maximum of 24, and another of your choice decreases by 2, to a minimum of 3. The book can’t adjust your ability scores again.</p><p><strong>Tireless Form.</strong> While the book is on your person, you have Immunity to the &amp;Reference[Exhaustion apply=false] condition.</p><p><strong>Random Properties.</strong> The <em>Book of Vile Darkness</em> has the following random properties (see “Artifacts”):</p><ul><li><p>3 minor beneficial properties</p></li><li><p>1 major beneficial property</p></li><li><p>3 minor detrimental properties</p></li><li><p>2 major detrimental properties</p></li></ul><p><strong>Spells.</strong> While attuned to the book and holding it, you can cast the following spells (save DC 18) from it: @UUID[Compendium.dnd5e.spells24.Item.phbsplAnimateDea]{Animate Dead}, @UUID[Compendium.dnd5e.spells24.Item.phbsplCircleofDe]{Circle of Death}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDominateMo]{Dominate Monster}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFingerofDe]{Finger of Death}. Once you use the book to cast a spell, you can’t cast that spell from it again until the next dawn.</p><p><strong>Vile Lore.</strong> You can consult the book whenever you make an Intelligence check to recall information about some aspect of evil, such as lore about demons; when you do, you have Advantage on that check. At the DM’s discretion, the book might reveal secrets no mortal should know, such as the true names of powerful Fiends, foul rites that let one become a death knight or a lich, or long-lost spells devised by beings so evil their names should never be spoken.</p><p><strong>Vile Speech.</strong> While the book is on your person, you can take a Magic action to recite words from its pages in a foul, dead language. Each time you do, you take 1d12 Psychic damage, and each creature within 15 feet of you takes 3d6 Psychic damage unless it is a Fiend or an Undead.</p><p><strong>Destroying the Book.</strong> Pages can be torn from the book, but the evil lore they held eventually finds its way back into it, usually when a new author adds pages to the tome. If a solar tears the book in two, the book is destroyed for 1d100 years, after which it re-forms in some far corner of the multiverse. A creature attuned to the book for 100 years can uncover a phrase hidden in the original text that, translated into Celestial and spoken aloud, destroys both the speaker and the book in a flash of radiance; but as long as evil exists in the multiverse, the book re-forms 1d10 × 100 years later.</p><section class=\"secret\" id=\"secret-kTAR6cCL7lFrTU1z\"><p><strong>Foundry Note</strong></p><p>Les propriétés aléatoires d’artefact sont à ajouter par le MJ. La transformation en larve (absente de dnd5e) et les ajustements de caractéristiques sont à appliquer à la main, comme l’Avantage de <em>Vile Lore</em>. <em>Vile Speech</em> : utilisez aussi <em>Vile Speech (Backlash)</em> pour vos propres dégâts.</p></section>",
+      "chat": ""
+    },
+    "identifier": "book-of-vile-darkness",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Tireless Form",
+      "img": "icons/sundries/books/book-tooled-eye-gold-red.webp",
+      "_id": "FCI5i8LDSZbeGuGZ",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "value": "exhaustion",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "r5Fqyy3vz2Mxdi9M"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

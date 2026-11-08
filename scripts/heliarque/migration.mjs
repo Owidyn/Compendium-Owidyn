@@ -6,7 +6,7 @@ const CHARACTER_FIELDS = ['ability', 'method', 'prepared', 'sourceItem'];
 
 /**
  * Replace the rules data of every Héliarque feature and spell copied from the module compendium when HELIARQUE_VERSION changes.
- * The compendium is shared with the other Owidyn content: only items carrying an Héliarque key are refreshed.
+ * The Classes compendium also holds the other classes: only items carrying an Héliarque key are refreshed.
  * What belongs to the character (spent uses, spellcasting configuration, advancement origin) is kept.
  */
 export async function refreshCharacterItems() {

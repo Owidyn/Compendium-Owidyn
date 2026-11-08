@@ -1,14 +1,17 @@
 /**
  * Build the Héliarque compendium content of the Owidyn module.
- *   node tools/heliarque/build.mjs          → packs/_source/heliarque/** (JSON, one file per document) + LevelDB packs
+ *   node tools/heliarque/build.mjs          → LevelDB packs + their sources (JSON, one file per document)
  *   node tools/heliarque/build.mjs --check  → validation only
- * The Item compendium is shared with the rest of the Owidyn content: only the Héliarque documents (folder
- * Class › Héliarque) are replaced, everything else is left untouched. The Actor compendium holds the Forms alone.
+ * Both compendiums are shared with the rest of the Owidyn content: only the Héliarque documents are replaced,
+ * everything else is left untouched. The class goes into Classes (folder Héliarque, sources in
+ * packs/_source/classes/heliarque/), the Forms into Creatures (folder Construct, packs/_source/creatures/construct/).
  * Foundry must not have a world open that uses this module while the LevelDB packs are written.
  */
 import { existsSync } from 'node:fs';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { pruneDirectories, readSources, sourceDir, sourceLayout } from '../owidyn/pack.mjs';
 import { ACTOR_PACK, ITEM_PACK, MODULE_ID } from './content/helpers.mjs';
 import { allContent } from './content/index.mjs';
 
@@ -67,13 +70,21 @@ function validate() {
 /*  Output                                      */
 /* -------------------------------------------- */
 
-const fileName = doc => `${doc.name.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z0-9]+/g, '_')}_${doc._id}.json`;
-
-async function writeSource(dirName, docs) {
-  const dir = path(`packs/_source/heliarque/${dirName}/`);
-  await rm(dir, { recursive: true, force: true });
-  await mkdir(dir, { recursive: true });
-  for (const doc of docs) await writeFile(`${dir}${fileName(doc)}`, `${JSON.stringify(doc, null, 2)}\n`, 'utf8');
+/**
+ * Write the sources of the Héliarque documents in those of their compendium, laid out like the rest of the module
+ * (tools/owidyn/pack.mjs): the files of the previous build are replaced (`owned`), the others are left untouched.
+ * `folders` are the compendium's other folders, which place the Héliarque folder.
+ */
+async function writeSource(pack, docs, { folders = [], owned = isHeliarque } = {}) {
+  const root = sourceDir(pack);
+  for (const { file, doc } of readSources(root)) if (owned(doc)) await rm(file);
+  const layout = sourceLayout(docs, folders);
+  for (const doc of docs) {
+    const file = `${root}/${layout.get(doc._id)}`;
+    await mkdir(dirname(file), { recursive: true });
+    await writeFile(file, `${JSON.stringify(doc, null, 2)}\n`, 'utf8');
+  }
+  pruneDirectories(root);
 }
 
 /** Flatten documents into Foundry's LevelDB layout: embedded documents are stored under their own keys. */
@@ -116,43 +127,38 @@ async function openPacks(packs) {
   return dbs;
 }
 
-/** Rewrite a pack owned by Héliarque alone. */
-async function compile(db, entries) {
-  await db.clear();
-  await db.batch(entries.map(([key, value]) => ({ type: 'put', key, value })));
-  await db.compactRange('\x00', '\xff');
-  await db.close();
-}
-
 const isHeliarque = doc => !!doc?.flags?.[MODULE_ID]?.heliarque;
-const CLASS_FOLDER = /^class(e|es)?$/i;
+const CONSTRUCT_FOLDER = /^constructs?$/i;
 
 /**
- * Replace the Héliarque documents of the shared Item pack: the previous build's items (with their effects) and
- * folders are removed, the other documents are kept. The Héliarque folder keeps the parent it was moved to;
- * on the first build it goes into the root "Class" folder when there is one.
+ * Replace the Héliarque documents of a compendium shared with the other Owidyn content: the previous build's documents
+ * (with their embedded documents) and folders are removed, the others are kept. What was there keeps the folder it was
+ * moved to; on the first build, the Héliarque folder goes to the root of Classes, and the Forms into the root
+ * "Construct" folder of Creatures when there is one.
  */
-async function compileShared(db, docs) {
+async function compileShared(db, collection, { folders, docs }) {
   const existing = new Map();
   for await (const [key, value] of db.iterator()) existing.set(key, value);
   const stale = new Set(), parents = new Set();
   for (const [key, value] of existing) {
-    const [, collection, id] = key.split('!');
-    if (!['items', 'folders'].includes(collection) || !isHeliarque(value)) continue;
+    const [, kind, id] = key.split('!');
+    if (![collection, 'folders'].includes(kind) || !isHeliarque(value)) continue;
     stale.add(key);
-    if (collection === 'items') parents.add(id);
+    if (kind === collection) parents.add(id);
   }
   for (const key of existing.keys()) {
-    const [, collection, id] = key.split('!');
-    if (collection === 'items.effects' && parents.has(id.split('.')[0])) stale.add(key);
+    const [, kind, id] = key.split('!');
+    if (kind.startsWith(`${collection}.`) && parents.has(id.split('.')[0])) stale.add(key);
   }
 
-  const top = docs.folders.find(f => !f.folder);
-  const previous = existing.get(`!folders!${top._id}`);
-  const classFolder = [...existing].find(([key, v]) => key.startsWith('!folders!') && !v.folder && CLASS_FOLDER.test(v.name))?.[1];
-  top.folder = previous ? previous.folder ?? null : classFolder?._id ?? null;
+  const others = [...existing].filter(([key, v]) => key.startsWith('!folders!') && !isHeliarque(v)).map(([, v]) => v);
+  const placeOf = (key, fallback = null) => (existing.has(key) ? existing.get(key).folder ?? null : fallback);
+  const top = folders.find(f => !f.folder);
+  if (top) top.folder = placeOf(`!folders!${top._id}`);
+  const construct = others.find(f => !f.folder && CONSTRUCT_FOLDER.test(f.name))?._id ?? null;
+  if (collection === 'actors') for (const doc of docs) doc.folder = placeOf(`!actors!${doc._id}`, construct);
 
-  const entries = [...levelEntries('folders', docs.folders), ...levelEntries('items', docs.items)];
+  const entries = [...levelEntries('folders', folders), ...levelEntries(collection, docs)];
   const kept = new Set(entries.map(([key]) => key));
   await db.batch([
     ...[...stale].filter(key => !kept.has(key)).map(key => ({ type: 'del', key })),
@@ -160,7 +166,11 @@ async function compileShared(db, docs) {
   ]);
   await db.compactRange('\x00', '\xff');
   await db.close();
-  return { removed: [...stale].filter(key => !kept.has(key)).length, parent: top.folder ? (existing.get(`!folders!${top.folder}`)?.name ?? top.folder) : null };
+  const nameOf = id => (id ? existing.get(`!folders!${id}`)?.name ?? id : null);
+  return {
+    removed: [...stale].filter(key => !kept.has(key)).length, folders: others,
+    parent: nameOf(top?.folder ?? (collection === 'actors' ? docs[0]?.folder : null))
+  };
 }
 
 const errors = validate();
@@ -174,8 +184,10 @@ if (checkOnly) process.exit(0);
 
 const dbs = await openPacks([ITEM_PACK, ACTOR_PACK]);
 const itemFolders = folders.filter(f => f.type === 'Item');
-const shared = await compileShared(dbs[ITEM_PACK], { folders: itemFolders, items });
-await compile(dbs[ACTOR_PACK], levelEntries('actors', actors));
-await writeSource('items', [...itemFolders, ...items]);
-await writeSource(ACTOR_PACK, actors);
-console.log(`Compendiums écrits dans ${path('packs/')} (dossier Héliarque ${shared.parent ? `dans « ${shared.parent} »` : 'à la racine'}, ${shared.removed} ancien(s) document(s) retiré(s)).`);
+const classes = await compileShared(dbs[ITEM_PACK], 'items', { folders: itemFolders, docs: items });
+const creatures = await compileShared(dbs[ACTOR_PACK], 'actors', { folders: [], docs: actors });
+await writeSource(ITEM_PACK, [...itemFolders, ...items], { folders: classes.folders });
+await writeSource(ACTOR_PACK, actors, { folders: creatures.folders });
+const where = parent => (parent ? `dans « ${parent} »` : 'à la racine');
+console.log(`Compendiums écrits dans ${path('packs/')} : dossier Héliarque ${where(classes.parent)} de ${ITEM_PACK}, Formes ${where(creatures.parent)}`
+  + ` de ${ACTOR_PACK} (${classes.removed + creatures.removed} ancien(s) document(s) retiré(s)).`);

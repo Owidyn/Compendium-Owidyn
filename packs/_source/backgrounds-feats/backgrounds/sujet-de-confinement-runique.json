@@ -1,0 +1,193 @@
+{
+  "name": "Sujet de Confinement Runique",
+  "type": "background",
+  "_id": "7B6IKcLA7lW4ljrr",
+  "img": "icons/magic/symbols/rune-sigil-green-purple.webp",
+  "folder": "n264u1taQCwy9pR0",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Vous avez autrefois vécu libre sous votre véritable forme élémentaire.</p><p>À un moment de votre existence, vous avez été capturé par des individus qui considéraient votre puissance comme une menace, une ressource ou une arme à contrôler.</p><p>Ils ont construit une Armure de Confinement Runique à partir de matériaux spécialement choisis pour résister à votre énergie, puis l'ont gravée de runes capables d'emprisonner votre essence et de limiter vos pouvoirs.</p><p>Depuis, cette armure est devenue votre prison.</p><p>Avec le temps, vous avez appris à comprendre ses runes, ses mécanismes et surtout ses faiblesses. Vous êtes désormais capable de forcer temporairement ses sceaux à céder, même si vous n'avez pas encore découvert comment vous en libérer définitivement.</p><p><strong>Ability Scores :</strong> Constitution, Charisma, Strength. Augmentez l'un de ces scores de 2 et un autre de 1, ou augmentez chacun des trois de 1.</p><p><strong>Origin Feat :</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.OvjNCufh2lRMoVGv]{Sceau de Confinement}</p><p><strong>Skill Proficiencies :</strong> Athletics, Insight</p><p><strong>Tool Proficiency :</strong> Smith's Tools</p><p><strong>Equipment :</strong> Armure de Confinement Runique, @UUID[Compendium.dnd5e.equipment24.Item.phbtulSmithsTool]{Smith's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes} et 15 GP.</p><section id=\"secret-szgu3qmS5wcudi9S\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Tant que les deux versions de test de l'Armure de Confinement Runique existent, l'équipement de départ propose de choisir l'une ou l'autre. Il fait aussi choisir les langues : Common et deux langues au choix.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "sujet-de-confinement-runique",
+    "wealth": "",
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "ePQVs2FxHnBZRJSp",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "9yLO6JTPWPb8HIOz",
+        "group": "ePQVs2FxHnBZRJSp",
+        "sort": 200000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.compendium-owidyn.items.Item.NZuyF3Sutu552wb2",
+        "requiresProficiency": false,
+        "_id": "gzN8FIl5ecl92sWB",
+        "group": "9yLO6JTPWPb8HIOz",
+        "sort": 300000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.compendium-owidyn.items.Item.O9zcVFwccTTWflJK",
+        "requiresProficiency": false,
+        "_id": "bqmoCHAu2VSLc7Ww",
+        "group": "9yLO6JTPWPb8HIOz",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulSmithsTool",
+        "requiresProficiency": false,
+        "_id": "XWoNIJEUHV3RpRrk",
+        "group": "ePQVs2FxHnBZRJSp",
+        "sort": 500000
+      },
+      {
+        "type": "linked",
+        "count": null,
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "Vkknb9kPxw6EjiYE",
+        "group": "ePQVs2FxHnBZRJSp",
+        "sort": 600000
+      },
+      {
+        "type": "currency",
+        "count": 15,
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "rRnearchZEtEhMEz",
+        "group": "ePQVs2FxHnBZRJSp",
+        "sort": 700000
+      }
+    ],
+    "advancement": {
+      "l41qMIpluVcX4FBV": {
+        "_id": "l41qMIpluVcX4FBV",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "value": {},
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "hint": "Augmentez Constitution, Charisma ou Strength : l'un de 2 et un autre de 1, ou chacun des trois de 1. Aucun score ne peut dépasser 20."
+      },
+      "XdKNwZGIR3U9Rkkq": {
+        "_id": "XdKNwZGIR3U9Rkkq",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:ins",
+            "tool:art:smith"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Background Proficiencies",
+        "hint": "Athletics et Insight, et Smith's Tools."
+      },
+      "FOzftdVgMlY9SaUN": {
+        "_id": "FOzftdVgMlY9SaUN",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.OvjNCufh2lRMoVGv",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Background Feat",
+        "hint": "Votre historique vous accorde le feat Sceau de Confinement."
+      },
+      "Vkknb9kPxw6EjiYF": {
+        "_id": "Vkknb9kPxw6EjiYF",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Choose Languages",
+        "hint": "<p>Common plus deux langues au choix.</p>"
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793655511998,
+    "modifiedTime": 1793712000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

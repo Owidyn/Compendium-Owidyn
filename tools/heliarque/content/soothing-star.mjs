@@ -1,7 +1,9 @@
 /** Discipline stellaire : Soothing Star. */
 import { CHA, DF, PB, activity, baseItem, effect, feature, grant, icon, id, itemUuid } from './helpers.mjs';
 
-const FOLDER = id('folder:soothing-star');
+// The subclass has its own folder in the class folder (Héliarque › Soothing Star), its features in its Subclass Features
+const FOLDER = id('folder:subclass-features');
+const SUBCLASS_FOLDER = id('folder:soothing-star');
 
 const subFeature = (key, name, level, o = {}) => feature(key, name, {
   level, requirements: `Héliarque ${level} (Soothing Star)`, folder: FOLDER, sort: level * 1000, ...o
@@ -101,7 +103,7 @@ Une fois cette aptitude utilisée, vous devez terminer un Long Rest avant de pou
 export const SUBCLASS_FEATURES = [sillage, presences, notYet, secondDawn];
 
 export const soothingStar = baseItem('soothing-star', 'subclass', 'Soothing Star', {
-  img: icon('soothing-star'), folder: FOLDER, sort: 0,
+  img: icon('soothing-star'), folder: SUBCLASS_FOLDER, sort: 0,
   description: `
 Toutes les étoiles ne brûlent pas pour détruire. Certaines éclairent, guident et maintiennent les autres en vie au milieu de l'obscurité.
 

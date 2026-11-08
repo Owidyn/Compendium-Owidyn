@@ -1,0 +1,170 @@
+{
+  "_id": "mQPgGWC9zTy64gn9",
+  "name": "Prismatic Rune",
+  "type": "equipment",
+  "folder": "EtGKBgVFtLG4Giov",
+  "img": "icons/commodities/treasure/talisman-embossed-rune-red.webp",
+  "sort": 11200000,
+  "system": {
+    "activities": {
+      "Yv0GqShasYPrtfrO": {
+        "type": "utility",
+        "_id": "Yv0GqShasYPrtfrO",
+        "sort": 0,
+        "name": "Prismatic Shift",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a spell that deals damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ],
+      "max": "6"
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Rare (Requires Attunement by a Spellcaster)</em></p><p>A magical rune is etched into this small stone of multicolored quartz. When you finish a Long Rest, choose Acid, Cold, Fire, Lightning, or Thunder: the rune is imbued with that damage type until you finish another Long Rest.</p><p><strong>Charges.</strong> The rune has 6 charges and regains 1d6 expended charges daily at dawn. When you cast a spell that deals damage, you can expend 1 charge to change the spell’s damage type to the rune’s damage type.</p><section class=\"secret\" id=\"secret-obE2K4S1nRR9oHof\"><p><strong>Foundry Note</strong></p><p><em>Prismatic Shift</em> dépense la charge ; choisissez le type de la rune dans les dégâts du sort.</p></section>",
+      "chat": ""
+    },
+    "identifier": "prismatic-rune",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "name": "Sceau de Confinement",
+  "type": "feat",
+  "_id": "OvjNCufh2lRMoVGv",
+  "img": "icons/magic/symbols/rune-sigil-green.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p><em>Special Origin Feat</em></p><p>Votre essence élémentaire a été liée à une Armure de Confinement Runique.</p><p>Tant que vous êtes enfermé dans cette armure, votre aptitude Forme Primordiale est supprimée. Vous conservez tous vos autres traits de Primordian.</p><h3>Rupture du Sceau</h3><p>Par une Bonus Action, vous pouvez forcer temporairement les runes de votre Armure de Confinement Runique à céder. Votre véritable forme élémentaire quitte l'armure, qui reste dans l'espace que vous occupiez.</p><p>Tant que vous êtes libéré :</p><ul><li><p>vous récupérez les bénéfices de votre aptitude Forme Primordiale ;</p></li><li><p>vous n'êtes plus considéré comme portant votre Armure de Confinement Runique ;</p></li><li><p>vous ne bénéficiez donc plus des propriétés de cette armure.</p></li></ul><p>Vous pouvez rester libéré pendant un nombre de minutes égal à votre modificateur de Constitution + votre Proficiency Bonus, avec un minimum de 1 minute.</p><p>Lorsque cette durée est dépassée, vous gagnez 1 niveau d'&amp;Reference[Exhaustion] à la fin de chaque minute supplémentaire passée hors de votre armure.</p><p>Lorsque vous êtes à 5 ft ou moins de votre Armure de Confinement Runique, vous pouvez y retourner par une Bonus Action et mettre immédiatement fin à Rupture du Sceau.</p><p>Vous pouvez utiliser Rupture du Sceau un nombre de fois égal à votre Proficiency Bonus. Vous récupérez toutes les utilisations dépensées lorsque vous terminez un Long Rest.</p><section class=\"secret\" id=\"secret-Rhb4oEgKneOY2taL\"><p><strong>Foundry Note</strong></p><p>Vous êtes enfermé tant que votre Armure de Confinement Runique est équipée : les effets de votre Forme Primordiale sont alors suspendus et ses activités bloquées.</p><p><em>Rupture du Sceau</em> dépense une utilisation, déséquipe l'armure (ses propriétés cessent) et pose l'effet <em>Sceau rompu</em>, qui dure Con + PB minutes. <em>Retour dans l'armure</em> rééquipe l'armure et retire l'effet ; rééquiper l'armure à la main fait de même.</p><p>Non automatisé : la distance de 5 ft avec l'armure et les niveaux d'Exhaustion après la durée.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Primordian",
+    "activities": {
+      "89lQMYc2z9XZuaQy": {
+        "type": "utility",
+        "name": "Rupture du Sceau",
+        "_id": "89lQMYc2z9XZuaQy",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Votre forme élémentaire quitte l'Armure de Confinement Runique."
+        },
+        "duration": {
+          "value": "max(1, @abilities.con.mod + @prof)",
+          "units": "minute",
+          "special": "",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "flags": {
+          "compendium-owidyn": {
+            "sceau": "rupture"
+          }
+        }
+      },
+      "OibBioWUZzOz6xhC": {
+        "type": "utility",
+        "name": "Retour dans l'armure",
+        "_id": "OibBioWUZzOz6xhC",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "À 5 ft ou moins de votre Armure de Confinement Runique"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Vous retournez dans votre Armure de Confinement Runique."
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "flags": {
+          "compendium-owidyn": {
+            "sceau": "retour"
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "sceau-de-confinement",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793654055776,
+    "modifiedTime": 1793654055776,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

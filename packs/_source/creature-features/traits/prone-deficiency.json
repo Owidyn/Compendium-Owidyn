@@ -1,0 +1,259 @@
+{
+  "_id": "fqMAnMqUxqQpckVR",
+  "name": "Prone Deficiency",
+  "type": "feat",
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "rbhXhAJiJjrEDx7x": {
+        "_id": "rbhXhAJiJjrEDx7x",
+        "type": "utility",
+        "name": "Roll a die",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "The flumph receives the Prone condition",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "IlXom6Z762mJV9QV"
+          }
+        ],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Odd number: Incapacitated",
+          "formula": "1d6"
+        }
+      },
+      "9EdWSuz7kmpADscm": {
+        "_id": "9EdWSuz7kmpADscm",
+        "type": "save",
+        "name": "End Incapacitated",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the flumph’s turns while Incapacitated",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>If the [[lookup @name lowercase]]{monster} receives the &amp;Reference[Prone] condition, roll a die. On an odd number, it has the &amp;Reference[Incapacitated] condition. At the end of each of its turns, the [[lookup @name lowercase]]{monster} makes a DC 10 Dexterity saving throw, ending the Incapacitated condition on a success.</p><section class=\"secret\" id=\"secret-8XJsmO9ytpuGV8aC\"><p><strong>Foundry Note</strong></p><p><em>Roll a die</em> lance 1d6 : sur un résultat impair, appliquez l’effet <em>Prone Deficiency</em> (Incapacitated) au flumph. À la fin de chacun de ses tours, <em>End Incapacitated</em> lance le Dexterity saving throw DC 10 ; retirez l’effet sur une réussite.</p></section>",
+      "chat": ""
+    },
+    "identifier": "prone-deficiency",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "Ally within 5 feet of attack target",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  },
+  "folder": "UbhDKtZL6Fh8eFOw",
+  "img": "icons/magic/control/silhouette-fall-slip-prone.webp",
+  "effects": [
+    {
+      "name": "Prone Deficiency",
+      "img": "icons/magic/control/silhouette-fall-slip-prone.webp",
+      "_id": "IlXom6Z762mJV9QV",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Incapacitated. At the end of each of its turns, the flumph makes a DC 10 Dexterity saving throw, ending this condition on a success.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793700000000,
+        "modifiedTime": 1793700000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "kXWIyFuLADYXBbOJ",
+        "item": "NUBdKDn8tjsHmzEX"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793700000000,
+    "modifiedTime": 1793700000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.kXWIyFuLADYXBbOJ.Item.NUBdKDn8tjsHmzEX",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0
+}

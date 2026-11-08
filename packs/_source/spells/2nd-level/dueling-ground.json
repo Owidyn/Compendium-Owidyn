@@ -1,0 +1,151 @@
+{
+  "_id": "diDmvH7gO9iFjtBx",
+  "name": "Dueling Ground",
+  "type": "spell",
+  "img": "icons/commodities/treasure/token-runed-circles-blue.webp",
+  "folder": "KR0wEnGpvmed4zUO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You create a dueling ground: a glowing circle of runes around a 15-foot-radius Sphere centered on a point on the ground you touch. As part of the casting, you choose two willing creatures in the Sphere as the targets. The spell ends early if a creature other than a target enters the Sphere.</p><p>If a target drops to 0 Hit Points in the dueling ground, it becomes Stable and teleports to the nearest unoccupied space outside the circle. If a target would be killed outright by an effect that deals no damage, it instead drops to 0 Hit Points with the &amp;Reference[unconscious apply=false]{Unconscious} condition, is Stable, and teleports out in the same way.</p><p>When only one target is left inside, runes matching those of the circle flash briefly around its head like a crown.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional willing creature for each spell slot level above 2.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "dueling-ground",
+    "activation": {
+      "type": "minute",
+      "value": 10,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "2",
+        "type": "willing",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "sphere",
+        "size": "15",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 2,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "materials": {
+      "value": "a silk flag worth 100+ GP",
+      "consumed": false,
+      "cost": 100,
+      "supply": 0
+    },
+    "activities": {
+      "BogBsIsDmBGfTYfb": {
+        "type": "utility",
+        "_id": "BogBsIsDmBGfTYfb",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

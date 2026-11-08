@@ -11,14 +11,23 @@ export const RARITIES = ['common', 'uncommon', 'rare', 'veryRare', 'legendary'];
 const MAGIC_PRICE = { common: 100, uncommon: 400, rare: 4000, veryRare: 40000, legendary: 200000 };
 const GP = { cp: 0.01, sp: 0.1, ep: 0.5, gp: 1, pp: 10 };
 
+/** Rarity of a spell scroll by spell level, from cantrip to 9 (Dungeon Master's Guide 2024). */
+export const SCROLL_RARITY = ['common', 'common', 'uncommon', 'uncommon', 'rare', 'rare', 'veryRare', 'veryRare', 'veryRare', 'legendary'];
+const SCROLLS = 'scrolls-';
+
 /**
  * The shops. Each category is a roll table; its weight is the chance of the shop's master table to give it. A
- * category named after a rarity holds the magic items of that rarity, kept out of a stock above its maximum rarity.
+ * category named after a rarity holds the magic items of that rarity, and "scrolls-<rarity>" the spell scrolls of that
+ * rarity: both are kept out of a stock above its maximum rarity. A shop that lists `all` its goods (the inn's services)
+ * has no draw.
  */
 export const SHOPS = {
   hutte: {
     label: 'La Hutte Enchantée', icon: 'fa-solid fa-hat-wizard',
-    categories: { common: 40, uncommon: 30, rare: 18, veryRare: 9, legendary: 3 }
+    categories: {
+      common: 40, uncommon: 30, rare: 18, veryRare: 9, legendary: 3,
+      'scrolls-common': 8, 'scrolls-uncommon': 6, 'scrolls-rare': 4, 'scrolls-veryRare': 2, 'scrolls-legendary': 1
+    }
   },
   equipement: {
     label: 'Équipement', icon: 'fa-solid fa-toolbox',
@@ -35,15 +44,61 @@ export const SHOPS = {
   ecurie: {
     label: 'Écurie', icon: 'fa-solid fa-horse',
     categories: { mounts: 50, tack: 35, vehicles: 15 }
+  },
+  auberge: {
+    label: "L'Auberge", icon: 'fa-solid fa-beer-mug-empty', all: true,
+    categories: { lodging: 1, meals: 1, drinks: 1, hirelings: 1, spellcasting: 1 }
   }
 };
 
-/** Labels of the categories that aren't a rarity (the rarities use the dnd5e labels). */
+/** Labels of the categories that aren't a rarity (the rarities use the dnd5e labels, the scrolls too). */
 export const CATEGORY_LABELS = {
   gear: 'Matériel', tools: 'Outils', clothing: 'Vêtements', food: 'Vivres',
   weapons: 'Armes', armor: 'Armures', ammo: 'Munitions',
   potions: 'Potions et fioles', herbs: 'Herbes et ingrédients', poisons: 'Poisons', kits: 'Kits et fournitures',
-  mounts: 'Montures', tack: 'Sellerie et fourrage', vehicles: 'Véhicules'
+  mounts: 'Montures', tack: 'Sellerie et fourrage', vehicles: 'Véhicules',
+  lodging: 'Chambres', meals: 'Repas', drinks: 'Boissons', hirelings: 'Employés et messagers', spellcasting: 'Sorts lancés sur demande'
+};
+
+/** Rarity of a scroll category ("scrolls-rare" → "rare"), or null. */
+export const scrollRarityOf = category => (String(category ?? '').startsWith(SCROLLS) ? category.slice(SCROLLS.length) : null);
+
+/** Shop and category of a spell sold as a scroll, with the scroll's price: half that of a magic item of its rarity. */
+export function scrollOf(spell) {
+  const rarity = SCROLL_RARITY[Number(spell.system?.level ?? -1)];
+  if (!rarity) return null;
+  return { shop: 'hutte', category: `${SCROLLS}${rarity}`, price: { value: MAGIC_PRICE[rarity] / 2, denomination: 'gp' } };
+}
+
+/**
+ * Whether the spells of a package are sold as scrolls: those of dnd5e, of the official D&D modules (dnd-…) and of
+ * Owidyn, not the automation copies other modules keep of them.
+ */
+export const sellsScrolls = packageName => ['dnd5e', 'compendium-owidyn'].includes(packageName) || String(packageName).startsWith('dnd-');
+
+/**
+ * Services of the inn, from the System Reference Document 5.2 (Food, Drink, and Lodging; Hirelings; Spellcasting
+ * Services). `INN_RULES` holds the dnd5e rules page of each category.
+ */
+export const INN = [
+  ['lodging', 'Inn Stay, Squalid (per day)', 7, 'cp'], ['lodging', 'Inn Stay, Poor (per day)', 1, 'sp'],
+  ['lodging', 'Inn Stay, Modest (per day)', 5, 'sp'], ['lodging', 'Inn Stay, Comfortable (per day)', 8, 'sp'],
+  ['lodging', 'Inn Stay, Wealthy (per day)', 2, 'gp'], ['lodging', 'Inn Stay, Aristocratic (per day)', 4, 'gp'],
+  ['meals', 'Meal, Squalid', 1, 'cp'], ['meals', 'Meal, Poor', 2, 'cp'], ['meals', 'Meal, Modest', 1, 'sp'],
+  ['meals', 'Meal, Comfortable', 2, 'sp'], ['meals', 'Meal, Wealthy', 3, 'sp'], ['meals', 'Meal, Aristocratic', 6, 'sp'],
+  ['meals', 'Bread (loaf)', 2, 'cp'], ['meals', 'Cheese (wedge)', 1, 'sp'],
+  ['drinks', 'Ale (mug)', 4, 'cp'], ['drinks', 'Wine (bottle), Common', 2, 'sp'], ['drinks', 'Wine (bottle), Fine', 10, 'gp'],
+  ['hirelings', 'Skilled Hireling (per day)', 2, 'gp'], ['hirelings', 'Untrained Hireling (per day)', 2, 'sp'],
+  ['hirelings', 'Messenger (per mile)', 2, 'cp'],
+  ['spellcasting', 'Spellcasting: Cantrip', 30, 'gp'], ['spellcasting', 'Spellcasting: Level 1', 50, 'gp'],
+  ['spellcasting', 'Spellcasting: Level 2', 200, 'gp'], ['spellcasting', 'Spellcasting: Level 3 (town or city)', 300, 'gp'],
+  ['spellcasting', 'Spellcasting: Level 4–5 (town or city)', 2000, 'gp'], ['spellcasting', 'Spellcasting: Level 6–8 (city)', 20000, 'gp'],
+  ['spellcasting', 'Spellcasting: Level 9 (city)', 100000, 'gp']
+].map(([category, name, value, denomination]) => ({ category, name, price: { value, denomination } }));
+const SERVICES = 'Compendium.dnd5e.content24.JournalEntry.phbServices00000.JournalEntryPage.';
+export const INN_RULES = {
+  lodging: `${SERVICES}f67yi5VSl1jEeHpN`, meals: `${SERVICES}f67yi5VSl1jEeHpN`, drinks: `${SERVICES}f67yi5VSl1jEeHpN`,
+  hirelings: `${SERVICES}6JpV8RWOi2AG8BdK`, spellcasting: `${SERVICES}mhsrVbdk7Nxzll72`
 };
 
 /**
@@ -190,8 +245,9 @@ export function sourceRank({ packageName, hidden = false, rules = '' }) {
 
 /** Whether a category is allowed in a stock whose maximum rarity is `maxRarity` ('' for no magic item). */
 export function allowsCategory(category, maxRarity) {
-  if (!RARITIES.includes(category)) return true;
-  return RARITIES.includes(maxRarity) && RARITIES.indexOf(category) <= RARITIES.indexOf(maxRarity);
+  const rarity = RARITIES.includes(category) ? category : scrollRarityOf(category);
+  if (!rarity) return true;
+  return RARITIES.includes(maxRarity) && RARITIES.indexOf(rarity) <= RARITIES.indexOf(maxRarity);
 }
 
 /** Index in `weights` drawn with a random number in [0, 1). */

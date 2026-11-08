@@ -1,0 +1,605 @@
+{
+  "_id": "AvalC9xrSg7iOTDw",
+  "name": "Crown of Horns",
+  "type": "equipment",
+  "folder": "mFkm7TDxnzEECRgw",
+  "img": "icons/magic/death/skull-humanoid-crown-white-blue.webp",
+  "sort": 2800000,
+  "system": {
+    "activities": {
+      "FAl2miA6YfPhCGWX": {
+        "type": "save",
+        "_id": "FAl2miA6YfPhCGWX",
+        "sort": 0,
+        "name": "Cone of Undeath",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "cone",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 4,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      },
+      "KyLe0TyF122xCJaD": {
+        "type": "save",
+        "_id": "KyLe0TyF122xCJaD",
+        "sort": 0,
+        "name": "Fear Aura",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A creature enters the aura for the first time on a turn or starts its turn there"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VwtEF5HUUCcrHGDZ",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "16"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "6ADBeeJQd26suCAu": {
+        "type": "cast",
+        "_id": "6ADBeeJQd26suCAu",
+        "sort": 0,
+        "name": "Myrkul’s Hand",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplPowerWordK",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 9,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "jB4COsnpzJgiobfc": {
+        "type": "cast",
+        "_id": "jB4COsnpzJgiobfc",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": []
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplTeleport00",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": 7,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "HTolglYTlGSaFXbL": {
+        "type": "utility",
+        "_id": "HTolglYTlGSaFXbL",
+        "sort": 0,
+        "name": "Doom Check",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "After you use Cone of Undeath or Myrkul’s Hand"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "1d100",
+          "name": "Transformation (cumulative 10%)",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><p>The <em>Crown of Horns</em> holds the essence and intelligence of Myrkul, one of the Dead Three. This ghastly crown is a pale silver circlet with four curved bones set around its rim, and a black diamond swirling with malignant energy sits on its brow.</p><p>Myrkul made the crown at the height of his power and poured his dying essence into it when Mystra slew him. Myrkul has since returned as one of the Dead Three, and the crown still carries out his gruesome will, seeking mortal agents and slowly turning them into powerful Undead scions. If a wearer proves unworthy of this honor, the crown teleports away to find a new mortal to corrupt for its master.</p><p><strong>Curse.</strong> The crown is cursed, and attuning to it extends the curse to you. Only a @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} spell or Myrkul’s will can remove the curse. As long as you remain cursed, the following properties apply to you.</p><p><strong>Bound.</strong> You are unwilling to part with the crown, wearing it at all times, and you can’t voluntarily end your Attunement to it.</p><p><strong>Cruel.</strong> Your alignment becomes Neutral Evil.</p><p><strong>Doomed.</strong> Over 365 days, you slowly transform into a monstrous servant of Myrkul. Until then, the changes are purely cosmetic, and they slowly fade if you end your Attunement to the crown before the transformation is complete. When it is complete, you become a @UUID[Compendium.dnd5e.actors24.Actor.mmLich0000000000]{Lich} under the DM’s control. Each time you use the crown’s Cone of Undeath or Myrkul’s Hand, there is a cumulative 10 percent chance that the transformation completes instantly.</p><p><strong>Cone of Undeath.</strong> You can take a Magic action to unleash a wave of unholy light in a 60-foot Cone. Each creature in the Cone makes a DC 18 Constitution saving throw, taking 4d8 Necrotic damage on a failed save or half as much damage on a successful one. A Humanoid killed by this damage rises at the start of your next turn as a @UUID[Compendium.dnd5e.actors24.Actor.mmSpecter0000000]{Specter} that follows your spoken orders.</p><p><strong>Damage Immunity.</strong> You have Immunity to Necrotic damage.</p><p><strong>Fear Aura.</strong> While wearing the crown, you radiate an aura of terror in a 60-foot Emanation. A creature that enters the area for the first time on a turn or starts its turn there must succeed on a DC 16 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition. A Frightened creature must use its movement on its turns to get as far away from you as possible by the safest route.</p><p>If you damage a Frightened creature, or if it ends its turn more than 120 feet away from you, it repeats the save, ending the condition on itself on a success. A creature that succeeds on the save is immune to this effect for 1 minute, after which it can be affected again. The aura is inactive while you have the Incapacitated condition, and you can turn it on or off as a Bonus Action.</p><p><strong>Myrkul’s Hand.</strong> While wearing the crown, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplPowerWordK]{Power Word Kill} (save DC 18) from it. A Humanoid killed by this spell rises at the start of your next turn as a @UUID[Compendium.dnd5e.actors24.Actor.mmWraith00000000]{Wraith} that follows your spoken orders. Once you use the crown to cast this spell, you can’t do so again until the next dawn.</p><p><strong>Teleportation.</strong> While wearing the crown, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplTeleport00]{Teleport}; the crown can also cast this spell of its own free will. Once the spell has been cast with the crown, it can’t be cast again until 7 days have passed.</p><p><strong>Random Properties.</strong> The Artifact has the following random properties (see chapter 7 of the <em>Dungeon Master’s Guide</em>):</p><ul><li><p>1 minor beneficial property</p></li><li><p>1 minor detrimental property</p></li><li><p>1 major detrimental property</p></li></ul><p><strong>Sentience.</strong> The <em>Crown of Horns</em> is a sentient Neutral Evil Artifact with an Intelligence of 10, a Wisdom of 16, and a Charisma of 19. It has hearing and Darkvision out to 120 feet, and it communicates telepathically with its wearer in Common.</p><p><strong>Personality.</strong> The crown holds Myrkul’s essence and exists to spread his will: to slay the living, raise the dead, and sow fear across the Material Plane. It urges its wearer to spread dread and destruction wherever possible.</p><p><strong>Destroying the Crown.</strong> The crown is destroyed if Myrkul’s successor, Kelemvor, wears it while sitting on the throne of Myrkul’s former realm, the Bone Castle.</p><section class=\"secret\" id=\"secret-5uD0XwUQvfCjDW6C\"><p><strong>Foundry Note</strong></p><p>Les propriétés aléatoires d’artefact sont à ajouter par le MJ. <em>Doom Check</em> lance le d100 de la transformation après <em>Cone of Undeath</em> ou <em>Myrkul’s Hand</em> (10 % de plus à chaque fois). <em>Teleport</em> dépense son utilisation : rendez-la à la main au bout de 7 jours.</p></section>",
+      "chat": ""
+    },
+    "identifier": "crown-of-horns",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Damage Immunity",
+      "img": "icons/magic/death/skull-humanoid-crown-white-blue.webp",
+      "_id": "PHsyPPvsQEhPYIFL",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MJxhJk3XIB0SZrtw"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Frightened",
+      "img": "systems/dnd5e/icons/svg/statuses/frightened.svg",
+      "_id": "VwtEF5HUUCcrHGDZ",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You must use your movement on your turns to get as far away from the crown’s wearer as possible, by the safest route. If the wearer damages you, or if you end your turn more than 120 feet away from them, you repeat the DC 16 Wisdom saving throw, ending the condition on a success.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

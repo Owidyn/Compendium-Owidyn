@@ -1,0 +1,510 @@
+{
+  "_id": "2R7Pi7OnKWGmmNAB",
+  "name": "Doomhammer",
+  "type": "weapon",
+  "folder": "k5SXmlVACc2CKVy0",
+  "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+  "sort": 800000,
+  "system": {
+    "activities": {
+      "pGzQhszr6dqYgY02": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "lightning"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": -100000,
+        "_id": "pGzQhszr6dqYgY02",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "p7LGqpZkHB1XQO7R": {
+        "type": "utility",
+        "_id": "p7LGqpZkHB1XQO7R",
+        "sort": 0,
+        "name": "Doom Winds",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "While your Rage is active"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "TCXpGcKeFsrlwI96",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      },
+      "alEMEQeuIpz5XcEN": {
+        "type": "utility",
+        "_id": "alEMEQeuIpz5XcEN",
+        "sort": 0,
+        "name": "Lightning Rod",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature you can see within 60 feet of you would take Lightning damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "60",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      },
+      "87iAI6cUL4fIAAzT": {
+        "type": "cast",
+        "_id": "87iAI6cUL4fIAAzT",
+        "sort": 0,
+        "name": "Storm’s Passage",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplWindWalk00",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": 6,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Warhammer), Artifact (Requires Attunement by a Barbarian)</em></p><p>Long ago on the world of Draenor, an orc named Gelnar set out to fashion a weapon that would empower his people against their ogre foes. He forged a fearsome hammer in the heat of an elemental pool of lava. Dubbed <em>Doomhammer</em>, this weapon was passed down through generations of Blackrock orcs. An ancient prophecy foretold that possession of the hammer would someday leave the Blackrock lineage; this prophecy came true when Thrall, an orc shaman, proved himself the weapon’s worthy wielder.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. It deals an extra 1d8 Lightning damage on a hit.</p><p><strong>Gelnar’s Gifts.</strong> While holding <em>Doomhammer</em>, you gain the following benefits:</p><ul><li><p><strong>Doom Winds.</strong> Your fury carries the unbridled momentum of a windstorm. While your Rage is active, your Speed is doubled, and you can take an extra Attack action (one attack only) on each of your turns.</p></li><li><p><strong>Lava Stride.</strong> You take no damage from molten lava and can walk across it as if it were solid ground.</p></li><li><p><strong>Lightning Rod.</strong> When a creature you can see within 60 feet of you would take Lightning damage, you can take a Reaction to reduce the damage to 0.</p></li><li><p><strong>Storm’s Passage.</strong> You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Wind Walk} from this weapon. Once the weapon has been used to cast this spell, it can’t be used to cast it again until the next dawn.</p></li></ul><p><strong>Random Properties.</strong> Doomhammer has the following random properties:</p><ul><li><p>2 minor beneficial properties</p></li><li><p>1 major beneficial property</p></li><li><p>1 minor detrimental property</p></li></ul><p><strong>Destroying Doomhammer.</strong> To destroy <em>Doomhammer</em>, a descendant of Gelnar must hurl the weapon into the eye of a storm in Outland, the remnants of the destroyed world of Draenor.</p><section class=\"secret\" id=\"secret-M5mTtyvl8ygsAX3o\"><p><strong>Foundry Note</strong></p><p>Quand votre Rage commence, appliquez l’effet <em>Doom Winds</em> (vitesse doublée) et retirez-le à sa fin ; l’attaque supplémentaire est à prendre vous-même. Pour <em>Lightning Rod</em>, annulez vous-même les dégâts de foudre. Les propriétés aléatoires d’artefact sont à ajouter par le MJ.</p></section>",
+      "chat": ""
+    },
+    "identifier": "doomhammer",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "warhammer"
+    },
+    "ammunition": {},
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": 0,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "magicalBonus": 3,
+    "properties": [
+      "mgc",
+      "ver"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "push"
+  },
+  "effects": [
+    {
+      "name": "Doom Winds",
+      "img": "icons/magic/air/air-burst-spiral-large-blue.webp",
+      "_id": "TCXpGcKeFsrlwI96",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": 2,
+            "priority": null,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "wQQzEIaik45OwyHX"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While your Rage is active, your Speed is doubled, and you can take an extra Attack action (one attack only) on each of your turns.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793820000000,
+        "modifiedTime": 1793820000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

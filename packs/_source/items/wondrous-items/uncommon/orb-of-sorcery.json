@@ -1,0 +1,170 @@
+{
+  "_id": "fdWsWGzeXXsuKVkB",
+  "name": "Orb of Sorcery",
+  "type": "equipment",
+  "folder": "W6fbFHd5o6kj24g8",
+  "img": "icons/magic/light/orbs-smoke-pink.webp",
+  "sort": 10400000,
+  "system": {
+    "activities": {
+      "cuXm0weZENuFdrO6": {
+        "type": "utility",
+        "_id": "cuXm0weZENuFdrO6",
+        "sort": 0,
+        "name": "Sorcerous Reservoir",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Uncommon (Requires Attunement by a Sorcerer)</em></p><p>Ribbons of many-colored light swirl inside this magic glass orb.</p><p><strong>Sorcerous Reservoir.</strong> While holding the orb, you can take a Magic action to regain up to 2 expended Sorcery Points. Once this property is used, it can’t be used again until the next dawn.</p><p><strong>Spellcasting Focus.</strong> You can use the orb as a Spellcasting Focus for your Sorcerer spells.</p><section class=\"secret\" id=\"secret-2fE6uKiN5s4Kyovt\"><p><strong>Foundry Note</strong></p><p><em>Sorcerous Reservoir</em> compte l’utilisation du jour ; rendez les 2 points de sorcellerie à la main.</p></section>",
+      "chat": ""
+    },
+    "identifier": "orb-of-sorcery",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc",
+      "foc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

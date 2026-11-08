@@ -1,0 +1,340 @@
+{
+  "_id": "CUXIoeh9FER26Fjx",
+  "name": "Sniper's Bracelet",
+  "type": "weapon",
+  "folder": "usSLRTdhbwXEOa19",
+  "img": "icons/equipment/wrist/bracelet-embossed-steel.webp",
+  "sort": 3100000,
+  "system": {
+    "activities": {
+      "3PuJT2deLndxhEG6": {
+        "type": "enchant",
+        "_id": "3PuJT2deLndxhEG6",
+        "sort": 0,
+        "name": "Sniper's Bracelet",
+        "img": "",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "8Lgrjf5lDWx87hQh",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "EGL46GbiAmpZIKSK"
+              ],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "properties": [],
+          "type": "weapon",
+          "categories": [
+            "simpleR",
+            "martialR"
+          ]
+        }
+      },
+      "EGL46GbiAmpZIKSK": {
+        "type": "utility",
+        "_id": "EGL46GbiAmpZIKSK",
+        "sort": 0,
+        "name": "Transform",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Heavy Crossbow, Light Crossbow, Longbow, Musket, Pistol, or Shortbow), Common (Requires Attunement)</em></p><p>As a Magic action while touching this weapon, you can transform it into a bracelet or back into its weapon form. While in bracelet form, it can’t be used to make attacks.</p><p>If the weapon lacks ammunition while in its weapon form, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack roll with it. The ammunition vanishes the instant after it hits or misses a target.</p><section class=\"secret\" id=\"secret-pwBVceJC06iTH7O8\"><p><strong>Foundry Note</strong></p><p>Glissez l’enchantement sur l’arme voulue : elle garde son nom, sa rareté et son prix. Elle reçoit l’activité <em>Transform</em>. Quand vous n’avez plus de munitions, attaquez sans en choisir : celles que crée l’arme ne sont pas suivies.</p></section><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
+      "chat": ""
+    },
+    "identifier": "snipers-bracelet",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "",
+      "baseItem": ""
+    },
+    "ammunition": {},
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": 0,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "mastery": ""
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Sniper's Bracelet",
+      "img": "systems/dnd5e/icons/spell-tiers/spell1.webp",
+      "disabled": true,
+      "_id": "8Lgrjf5lDWx87hQh",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attunement",
+            "value": "required",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "oAHpQXzHMYIiL1Lv"
+          },
+          {
+            "key": "system.description.value",
+            "value": "{}<p>@Embed[Compendium.compendium-owidyn.items.Item.CUXIoeh9FER26Fjx caption=false]</p>",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "1wsKLWiY4Iu0ygmJ"
+          },
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ynFAP57uklXwvF4Z"
+          }
+        ]
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793820000000,
+        "modifiedTime": 1793820000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [
+          "EGL46GbiAmpZIKSK"
+        ],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

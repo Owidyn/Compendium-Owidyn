@@ -1,0 +1,186 @@
+{
+  "name": "Parade de l’Aiguille",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
+  "system": {
+    "activities": {
+      "DmT6Ym7PC22YmeWD": {
+        "_id": "DmT6Ym7PC22YmeWD",
+        "type": "utility",
+        "name": "Critical Hit : récupérer 1 Focus Point",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Critical Hit sur l’Attack Roll de la Parade de l’Aiguille",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "Compendium.dnd5e.classes24.Item.phbmnkMonksFocus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Cette feature remplace votre feature Deflect Attacks.</p><p>Lorsque vous êtes ciblé par une Melee ou Ranged Attack alors que vous maniez votre Lame-aiguille (sauf pour nécrotique, radiant, thunder et psychic), vous pouvez utiliser votre Reaction pour opposer votre propre frappe à celle de l’assaillant. Effectuez une Melee Attack avec votre Lame-aiguille.</p><p>Si le résultat de votre Attack Roll est égal ou supérieur à celui de l’attaque qui vous cible, cette attaque est entièrement annulée et ne vous inflige aucun dégât ni autre effet.</p><p>Un Critical Hit obtenu avec cette Attack Roll n’inflige pas de dégâts à l’assaillant mais vous récupérez 1 Focus Point.</p><p><strong>Deflect Energy.</strong> À partir du niveau 13, vous pouvez également utiliser Parade de l’Aiguille contre les attaques nécrotiques, radiantes et thunder, mais toujours pas contre les attaques psychic.</p><section class=\"secret\" id=\"secret-5kjJIqRNLm4gVtOV\"><p><strong>Foundry Note</strong></p><p>Deflect Attacks et Deflect Energy sont masquées sur votre fiche tant que vous avez cette feature : leur règle est reprise ici.</p><p>L’Attack Roll de la parade se lance depuis votre Lame-aiguille (activité <em>Parade de l’Aiguille</em>), avec son bonus d’attaque. Sur un Critical Hit, utilisez l’activité de cette feature pour récupérer 1 Focus Point.</p></section>",
+      "chat": ""
+    },
+    "identifier": "parade-de-l-aiguille",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "La Voie de l’Aiguille 3",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [
+    {
+      "name": "Remplace Deflect Attacks",
+      "img": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
+      "_id": "L5ZSnLquaDaG22jE",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "priority": null,
+            "phase": "initial",
+            "_id": "DMs8E2qxXHXdx4ar",
+            "key": "items.hidden",
+            "value": "deflect-attacks",
+            "type": "add"
+          },
+          {
+            "priority": null,
+            "phase": "initial",
+            "_id": "NFCyJQZaZTY08C2E",
+            "key": "items.hidden",
+            "value": "deflect-energy",
+            "type": "add"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Parade de l’Aiguille remplace Deflect Attacks et Deflect Energy, qui sont masquées.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793660000000,
+        "modifiedTime": 1793660000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": "uY7DQv33qnariAsF",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511330873,
+    "modifiedTime": 1793660000000,
+    "lastModifiedBy": "ppJzl6mDRBw2GO6v",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "AahYUV1JxPF1W6Tg",
+  "sort": 101563
+}

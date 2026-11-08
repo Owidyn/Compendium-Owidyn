@@ -1,0 +1,342 @@
+{
+  "_id": "o1lKxFZKxR7t89Hv",
+  "name": "Grave Ground",
+  "type": "spell",
+  "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+  "folder": "yL1ACoe0mGMzSWKO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Skeletal hands burst from the ground in an area within range made of up to four 10-foot squares, which you arrange as you like, each touching at least one other. The area is &amp;Reference[difficultterrain apply=false]{Difficult Terrain} for your enemies.</p><p>Each enemy in the area when the hands appear makes a Strength saving throw. On a failure, it takes 6d6 Necrotic damage and subtracts 1d6 from all its damage rolls until the end of its next turn. An enemy also makes this save when it enters the area or ends its turn there, no more than once per turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 5.</p><section class=\"secret\" id=\"secret-2ZbPYXTb7OXXfthH\"><p><strong>Foundry Note</strong></p><p>Place four 10-foot squares by hand; the effect subtracts the 1d6 from the damage rolls of attacks.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "grave-ground",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "enemy",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "square",
+        "size": "10",
+        "width": "",
+        "height": "",
+        "count": "4",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 5,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a handful of grave dirt",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "xkC5MdRATeyyF5KV": {
+        "type": "save",
+        "_id": "xkC5MdRATeyyF5KV",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "onSave": false,
+            "_id": "jB3yiz7ssIOa6SYR"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "Jqek2HWIVwhjxH9y": {
+        "type": "save",
+        "_id": "Jqek2HWIVwhjxH9y",
+        "sort": 100000,
+        "name": "Grasping Hands",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "when an enemy enters the area or ends its turn there"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "onSave": false,
+            "_id": "jB3yiz7ssIOa6SYR"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "enemy",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Grave Ground",
+      "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+      "_id": "jB3yiz7ssIOa6SYR",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "-1d6",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aNpVG8tgBQnREWYX"
+          },
+          {
+            "key": "system.bonuses.rwak.damage",
+            "value": "-1d6",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "1CCrI4RlD7p1qqcl"
+          },
+          {
+            "key": "system.bonuses.msak.damage",
+            "value": "-1d6",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "0Jkhp2lKHQaQoGfF"
+          },
+          {
+            "key": "system.bonuses.rsak.damage",
+            "value": "-1d6",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "t1gEjqwF7h5MniIX"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

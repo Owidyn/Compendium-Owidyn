@@ -1,0 +1,230 @@
+{
+  "_id": "91Ej3hYDGL6DNENn",
+  "name": "Perfume of Bewitching",
+  "type": "consumable",
+  "folder": "4IdWuC4WrOa3oHB2",
+  "img": "icons/consumables/potions/potion-vial-corked-labeled-purple.webp",
+  "sort": 10600000,
+  "system": {
+    "activities": {
+      "BnHKcUbaVVbSxS2X": {
+        "type": "utility",
+        "_id": "BnHKcUbaVVbSxS2X",
+        "sort": 0,
+        "name": "Apply Perfume",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "hLPEK0kBjZJXaLyC",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "1",
+      "autoDestroy": true
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Common</em></p><p>This tiny vial holds a single application of magic perfume. You can take a Magic action to apply it to yourself, and its effect lasts 1 hour. For the duration, you have Advantage on Charisma (Deception and Persuasion) checks made to influence a creature within 5 feet of yourself.</p><section class=\"secret\" id=\"secret-8yC9vFxC2CdAOLyx\"><p><strong>Foundry Note</strong></p><p>L’effet donne l’Avantage à tous les tests de Tromperie et de Persuasion : il ne vaut que face à une créature à 5 pieds ou moins.</p></section>",
+      "chat": ""
+    },
+    "identifier": "perfume-of-bewitching",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "Bewitching Perfume",
+      "img": "icons/consumables/potions/potion-vial-corked-labeled-purple.webp",
+      "_id": "hLPEK0kBjZJXaLyC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.dec.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "wmBCNLJuaFieeoe4"
+          },
+          {
+            "key": "system.skills.per.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "4NA12VNAbdaxL4IR"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>You have Advantage on Charisma (Deception and Persuasion) checks made to influence a creature within 5 feet of yourself.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

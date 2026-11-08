@@ -1,0 +1,1621 @@
+{
+  "_id": "rer0jFEkHKQc2GNX",
+  "name": "Elemental Weapon",
+  "type": "spell",
+  "img": "icons/weapons/swords/sword-runed-glowing.webp",
+  "folder": "o6xVeDDtqtvcdIvb",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.</p><p><strong>Using a Higher-Level Spell Slot.</strong> With a level 5–6 spell slot, the bonus to attack rolls becomes +2 and the extra damage 2d4. With a level 7+ spell slot, the bonus becomes +3 and the extra damage 3d4.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "elemental-weapon",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "object",
+        "special": "nonmagical weapon"
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 3,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "QJYauUGNbEreXyLO": {
+        "type": "enchant",
+        "_id": "QJYauUGNbEreXyLO",
+        "sort": 0,
+        "name": "Acid",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "YxEEBUUN0E1c7mda"
+          },
+          {
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "7fCG0E5thRhAWoYz"
+          },
+          {
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "89Ppo5vaBqHMTUyB"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      },
+      "vYfrTQD6ClDFmzn7": {
+        "type": "enchant",
+        "_id": "vYfrTQD6ClDFmzn7",
+        "sort": 100000,
+        "name": "Cold",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "W4Ga1DjX3yB34fUT"
+          },
+          {
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "VAtfuBlBYAL7J6iR"
+          },
+          {
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "gYt6CNtRgG19CzyS"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      },
+      "hqFzsoSHdhuiKBF2": {
+        "type": "enchant",
+        "_id": "hqFzsoSHdhuiKBF2",
+        "sort": 200000,
+        "name": "Fire",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "N2lDHVp92Esn0BwN"
+          },
+          {
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "cTzIRCRUKSaeFzCy"
+          },
+          {
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "DJ8xjUOgOh9PMttj"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      },
+      "rdM5W0rSljKwz0Do": {
+        "type": "enchant",
+        "_id": "rdM5W0rSljKwz0Do",
+        "sort": 300000,
+        "name": "Lightning",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "yxzv2ZQ5cHFB2Ryq"
+          },
+          {
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "FAtwyhST8A05Ephv"
+          },
+          {
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "8CchGWCFtAucbFwZ"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      },
+      "H8552doMeQtEkVhj": {
+        "type": "enchant",
+        "_id": "H8552doMeQtEkVhj",
+        "sort": 400000,
+        "name": "Thunder",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "uhtr8PxrW2paa9bt"
+          },
+          {
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "qELTb7NOi7HVhuFm"
+          },
+          {
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            },
+            "_id": "3MIRE9AsfZF9KFAu"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Elemental Weapon (Acid +1)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "YxEEBUUN0E1c7mda",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "0ilDlQFqy7lujLgx"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "LizDQGbiZeHsMu9B"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "XbYMMIkSVkzDsPaG"
+          },
+          {
+            "key": "name",
+            "value": "{} (Acid)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "QGUahnMwwVog9NUR"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Acid +2)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "7fCG0E5thRhAWoYz",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "XCKLbqx2nmmWkXkz"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Ms1Uey0yG2GT9Lzx"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GNuImiFCgjGkVwFl"
+          },
+          {
+            "key": "name",
+            "value": "{} (Acid)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "d9Gc1e3WFbBgsMSK"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Acid +3)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "89Ppo5vaBqHMTUyB",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "pFrHHBANOY8mKiZy"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+3",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "lQRBniARsuVDP35X"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "wnqOs2yxWpHt07nH"
+          },
+          {
+            "key": "name",
+            "value": "{} (Acid)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "1Y9rGMe1JvEtVX4I"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Cold +1)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "W4Ga1DjX3yB34fUT",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "XENsXvnwhwSqi3Ij"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3o7HQiqVfJHD0nWy"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "sPgpx9Weanph3zm7"
+          },
+          {
+            "key": "name",
+            "value": "{} (Cold)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "OyjaRaodljxv2oOA"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Cold +2)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "VAtfuBlBYAL7J6iR",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "mjsLNW7uQwcl7TXD"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aM3EoYThfRFqTIc5"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "lxrN1lFIzK3CQ4tb"
+          },
+          {
+            "key": "name",
+            "value": "{} (Cold)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "FacNzRk24G1lZRDr"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Cold +3)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "gYt6CNtRgG19CzyS",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GdmhQaDuXZmdXKBe"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+3",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "f1n1ieWSm5S5ATT9"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "9ni3CkWCOQeaKxAB"
+          },
+          {
+            "key": "name",
+            "value": "{} (Cold)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "NdXE4Nn2idsuIRIm"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Fire +1)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "N2lDHVp92Esn0BwN",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "YTgl9HG2dMHc83SR"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3Npnzo58kRBuXtDa"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DmrVNkyvJqJ9HbkJ"
+          },
+          {
+            "key": "name",
+            "value": "{} (Fire)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "PGGMZ6ExHOREqR1I"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Fire +2)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "cTzIRCRUKSaeFzCy",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "mrFsqsy63qM0LLFy"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "LdWCzp5OHr24jfqK"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RGkm26e4wabVCNrD"
+          },
+          {
+            "key": "name",
+            "value": "{} (Fire)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "3F68axczOIVe41Tb"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Fire +3)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "DJ8xjUOgOh9PMttj",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8cxZ8xukUDkidUkF"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+3",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "jdolzqSbDebb3u8F"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ADBdyMDWxbYluR3e"
+          },
+          {
+            "key": "name",
+            "value": "{} (Fire)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "yQeFXBnhFwLQ7lus"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Lightning +1)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "yxzv2ZQ5cHFB2Ryq",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "tbwBkd0cZ3Vuemin"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dKUN47uc4tETDpRl"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8Duy5oEloJbHlusw"
+          },
+          {
+            "key": "name",
+            "value": "{} (Lightning)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "pfAA01Ed5et9d0cz"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Lightning +2)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "FAtwyhST8A05Ephv",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "nQGbdpjlyFdapH0Q"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Jz24tJQJGjLaQKrO"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "7VqERW8KMz6LXvZP"
+          },
+          {
+            "key": "name",
+            "value": "{} (Lightning)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "TyMhovznGPb8FkeH"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Lightning +3)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "8CchGWCFtAucbFwZ",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "9IhX9ez8aAKxSTcn"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+3",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2artFieK1dgYIYVF"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "E78G3gnBUNVnoOsp"
+          },
+          {
+            "key": "name",
+            "value": "{} (Lightning)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "ClOww8DgcdzTdJAj"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Thunder +1)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "uhtr8PxrW2paa9bt",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "mWEuO4k6OuwFHFbj"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "vrTTwNrVEOXjAPGS"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "COvxT5MZDguZJgnj"
+          },
+          {
+            "key": "name",
+            "value": "{} (Thunder)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "9CvUEUkq2FlmesXI"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Thunder +2)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "qELTb7NOi7HVhuFm",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "FL4CfvVuqEHJNOyJ"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8RoBMuXNOtyPEAJT"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "k02bYzQobWzAiDcR"
+          },
+          {
+            "key": "name",
+            "value": "{} (Thunder)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "VNLeKQ9R0Tk98IYy"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Elemental Weapon (Thunder +3)",
+      "img": "icons/weapons/swords/sword-runed-glowing.webp",
+      "_id": "3MIRE9AsfZF9KFAu",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "92XyCBX82FhK5nzH"
+          },
+          {
+            "key": "activities[attack].attack.bonus",
+            "value": "+3",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "nZK6AXxib9dtTRT9"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "NjPLXIyMMxJALB9e"
+          },
+          {
+            "key": "name",
+            "value": "{} (Thunder)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "S7iA1tjD70ERE8cr"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

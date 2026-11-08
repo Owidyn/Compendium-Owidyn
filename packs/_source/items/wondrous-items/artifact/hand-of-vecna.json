@@ -1,0 +1,649 @@
+{
+  "_id": "p8WaHL9FEss1LwgY",
+  "name": "Hand of Vecna",
+  "type": "equipment",
+  "folder": "mFkm7TDxnzEECRgw",
+  "img": "icons/commodities/biological/hand-gnarled-purple.webp",
+  "sort": 5300000,
+  "system": {
+    "activities": {
+      "8P1O5uasVZdP5SuH": {
+        "type": "damage",
+        "_id": "8P1O5uasVZdP5SuH",
+        "sort": 0,
+        "name": "Icy Touch",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit with a melee spell attack made with the hand or a melee attack with a weapon it holds"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      },
+      "KoGStPOatKSeCwyG": {
+        "type": "cast",
+        "_id": "KoGStPOatKSeCwyG",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplFingerofDe",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 7,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "uRmoxHHlBABPGsUM": {
+        "type": "cast",
+        "_id": "uRmoxHHlBABPGsUM",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplSleep00000",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 1,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "mETnZfWuLtCJKc1Y": {
+        "type": "cast",
+        "_id": "mETnZfWuLtCJKc1Y",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplSlow000000",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 3,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "ohv7cqf73EN9HNPo": {
+        "type": "cast",
+        "_id": "ohv7cqf73EN9HNPo",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplTeleport00",
+          "challenge": {
+            "attack": null,
+            "save": 18,
+            "override": true
+          },
+          "level": 7,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "awyiHRAfk6k62EEW": {
+        "type": "save",
+        "_id": "awyiHRAfk6k62EEW",
+        "sort": 0,
+        "name": "Evil Demand",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Each time you cast a spell from the hand"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4 + 4"
+        }
+      ],
+      "max": "8"
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><p>Vecna was a mighty wizard who forged a terrible empire through magic and conquest. For all his power, he feared death and took steps to cheat it by becoming a lich.</p><p>A treacherous lieutenant named Kas ended Vecna’s rule in a terrible battle. All that remained of Vecna were one hand and one eye, grisly Artifacts that still seek to work his will in the world.</p><p>The <em>Eye of Vecna</em> and the <em>Hand of Vecna</em> are separate Artifacts that might be found together or apart. The eye looks like a bloodshot organ torn from its socket; the hand is a shriveled left hand.</p><p><strong>Random Properties.</strong> The <em>Eye of Vecna</em> and the <em>Hand of Vecna</em> each have the following random properties (see “Artifacts”):</p><ul><li><p>1 minor beneficial property</p></li><li><p>1 major beneficial property</p></li><li><p>1 minor detrimental property</p></li></ul><p><strong>Attuning to the Hand.</strong> To attune to the hand, you must press it against the stump of your left wrist. The hand grafts itself to your arm and becomes a working appendage. If the hand is ever removed, you die.</p><p><strong>Properties of the Hand.</strong> While attuned to the hand, your alignment is Neutral Evil, and you gain the following benefits.</p><p><strong>Great Strength.</strong> Your Strength becomes 20 unless it is already 20 or higher.</p><p><strong>Icy Touch.</strong> Any melee spell attack you make with the hand, and any melee attack made with a weapon it holds, deals an extra 2d8 Cold damage on a hit.</p><p><strong>Spellcasting.</strong> The hand has 8 charges and regains 1d4 + 4 expended charges daily at dawn. You can cast a spell on the Hand of Vecna Spells table from the hand (save DC 18), expending the number of charges it shows. Each time you cast a spell from it, the hand casts @UUID[Compendium.dnd5e.spells24.Item.phbsplSuggestion]{Suggestion} on you (save DC 18; no Concentration required), demanding that you commit an evil act; it might have a specific act in mind or leave the choice to you.</p><p><strong>Hand of Vecna Spells</strong></p><table><thead><tr><th>Spell</th><th>Charge Cost</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFingerofDe]{Finger of Death}</td><td>5</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000]{Sleep}</td><td>1</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}</td><td>2</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplTeleport00]{Teleport}</td><td>3</td></tr></tbody></table><p><strong>Properties of the Eye and Hand.</strong> While attuned to both the hand and the eye, you gain the following additional benefits.</p><p><strong>Danger Sense.</strong> You have Advantage on Initiative rolls.</p><p><strong>Necrotic Reduction.</strong> As a Magic action, you can target one creature you can see within 5 feet of yourself. It makes a DC 18 Constitution saving throw, taking 7d6 Necrotic damage on a failed save or half as much damage on a successful one. A creature reduced to 0 Hit Points by this damage becomes green slime covering the ground in its space, each 5-foot square of slime being a separate patch. Nonmagical objects of metal or organic material worn or carried by the target are destroyed by the slime.</p><p><strong>Poison Immunity.</strong> You have Immunity to Poison damage and the &amp;Reference[Poisoned apply=false] condition.</p><p><strong>Regeneration.</strong> If you start your turn with at least 1 Hit Point, you regain 1d10 Hit Points.</p><p><strong>Wish.</strong> You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}. Once used, this property can’t be used again until 30 days have passed.</p><p><strong>Destroying the Eye and Hand.</strong> If the eye and the hand are both attached to the same creature and that creature is slain by the @UUID[Compendium.compendium-owidyn.items.Item.JPSwohUl80C5s6Eu]{Sword of Kas}, both burst into flame, turn to ash, and are destroyed. Any other attempt to destroy the eye or the hand seems to work, but the Artifact reappears in one of Vecna’s many hidden vaults, where it waits to be found again.</p><section class=\"secret\" id=\"secret-h590ALp9pETRverO\"><p><strong>Foundry Note</strong></p><p>Les propriétés aléatoires d’artefact sont à ajouter par le MJ. <em>Evil Demand</em> est le jet contre la <em>Suggestion</em> de la main après chacun de ses sorts. Les propriétés communes à l’œil et à la main (effet et activités) sont sur l’<em>Eye of Vecna</em>.</p></section>",
+      "chat": ""
+    },
+    "identifier": "hand-of-vecna",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Hand of Vecna",
+      "img": "icons/commodities/biological/hand-gnarled-purple.webp",
+      "_id": "CTcr0JWgauMVuxUW",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.value",
+            "value": 20,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "tOuDywaHmibaaZTb"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793830000000,
+        "modifiedTime": 1793830000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -285,6 +285,7 @@ function formActor(key, name, { size, ac, items, img, sight = false, dr = [], dv
         type: { value: 'custom', subtype: '', swarm: '', custom: 'Forme orbitale' }, cr: 0, alignment: '',
         biography: { value: html(description), public: '' }
       },
+      source: { custom: '', rules: '2024', revision: 1, license: '', book: 'OSC' },
       traits: {
         size,
         di: { value: ['poison', 'psychic'], bypasses: [], custom: '' },

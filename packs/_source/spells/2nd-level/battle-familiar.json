@@ -1,0 +1,201 @@
+{
+  "_id": "YIYID7BBimPO38ps",
+  "name": "Battle Familiar",
+  "type": "spell",
+  "img": "icons/creatures/abilities/paw-print-pair-purple.webp",
+  "folder": "KR0wEnGpvmed4zUO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You call forth a familiar charged with martial magic. It appears in an unoccupied space within range, looks like an animal of your choice but is a Celestial, Fey, or Fiend (your choice), and uses the Battle Familiar stat block. When you cast the spell, choose its form, Brute, Flyer, or Stalker, which determines some details of the stat block.</p><p><strong>Combat.</strong> The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn.</p><p><strong>Disappearance of the Familiar.</strong> The familiar disappears when the spell ends, when it drops to 0 Hit Points, or when you die, leaving behind in its space anything it was wearing or carrying. When you cast this spell again, you choose whether to summon the familiar that disappeared or a different one.</p><p><strong>One Familiar at a Time.</strong> You can’t have more than one familiar from this spell at a time: casting it again while you have one replaces that familiar with the new one.</p><p>If you have a familiar from @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} when you cast this spell, you empower it instead of conjuring a new one. For the duration, it can attack in addition to taking its other actions, and the Battle Familiar stat block replaces its game statistics, but it keeps its creature type, alignment, Hit Points, Hit Point Dice, and the features granted by Find Familiar. It also gains Temporary Hit Points equal to the battle familiar’s Hit Points; the spell ends early once they are gone, and any that remain vanish when the spell ends. Your familiar then returns to its previous form.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"secret\" id=\"secret-OA1KnwTNvPBFzMp9\"><p><strong>Foundry Note</strong></p><p>Summon asks for the form. The familiar’s AC, Hit Points and Rend damage include the spell’s level; Talented (half the spell’s level to its ability checks and saving throws) and the empowerment of a Find Familiar familiar are applied by hand.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "battle-familiar",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "range": {
+      "value": "10",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 2,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a diamond worth 25+ GP",
+      "consumed": false,
+      "cost": 25,
+      "supply": 0
+    },
+    "activities": {
+      "blL3acsmKbtZFJYA": {
+        "type": "summon",
+        "_id": "blL3acsmKbtZFJYA",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "Brute",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.eZDBoCLjUSbBE7Lv",
+            "_id": "jrfzWwvNcXaRQc81"
+          },
+          {
+            "count": "",
+            "name": "Flyer",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.b8EFgbku2m42eiv4",
+            "_id": "DfS1ZE6hUzmaSx0c"
+          },
+          {
+            "count": "",
+            "name": "Stalker",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.eDj7FTfqk3LEd16a",
+            "_id": "cJHhRL8Uy3Nvbuq9"
+          }
+        ],
+        "bonuses": {
+          "ac": "@item.level",
+          "hd": "",
+          "hp": "(@item.level - 2) * 5",
+          "attackDamage": "@item.level",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

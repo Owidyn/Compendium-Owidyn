@@ -1,10 +1,11 @@
 /** Builders producing D&D5e 6.x source data, shaped like the system's own compendium documents. */
 import { createHash } from 'node:crypto';
+import { PACKS } from '../../../scripts/owidyn/compendiums.mjs';
 
 export const MODULE_ID = 'compendium-owidyn';
-/** Shared Item compendium of the Owidyn module (folder Class › Héliarque) and the Forms' Actor compendium. */
-export const ITEM_PACK = 'compendium-owidyn';
-export const ACTOR_PACK = 'formes-orbitales';
+/** Compendiums of the Owidyn module holding the Héliarque: Classes (folder Héliarque) and Creatures (the Forms, folder Construct). */
+export const ITEM_PACK = PACKS.classes;
+export const ACTOR_PACK = PACKS.creatures;
 export const CLASS_ID = 'heliarque';
 export const SUBCLASS_ID = 'soothing-star';
 

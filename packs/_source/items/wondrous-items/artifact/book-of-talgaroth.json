@@ -1,0 +1,166 @@
+{
+  "_id": "6AQMZKbT5FSKALu2",
+  "name": "Book of Talgaroth",
+  "type": "equipment",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-purple.webp",
+  "folder": "mFkm7TDxnzEECRgw",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794193200000,
+    "modifiedTime": 1794193200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "activities": {
+      "EEARBSjfmrby6VA9": {
+        "type": "save",
+        "_id": "EEARBSjfmrby6VA9",
+        "sort": 0,
+        "name": "Telepathic Message",
+        "img": "icons/magic/control/energy-stream-link-teal.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When an unwilling creature in range receives your telepathic message"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "120",
+          "units": "ft",
+          "special": "creatures you can see within 120 feet, or any creature within 60 feet"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><p>Every page of this book is blank except the last, on which a single word is written: <em>Talgaroth</em>. While a creature is attuned to the book, its cover changes color to match that creature’s emotions.</p><p><strong>Talgaroth’s Voice.</strong> While you carry the book, you can send telepathic messages to any number of creatures in range: those you can see within 120 feet of yourself, and those within 60 feet of yourself even if you can’t see them. The communication goes only from you to the targets, which can’t answer through it. A creature that doesn’t want to receive your message can make a Wisdom saving throw (DC 13 plus your Proficiency Bonus) to shut it out; a willing creature can choose to fail.</p><p><strong>Pages of Thought.</strong> While you are attuned to the book, you can make your thoughts appear on its blank pages as words or images. The book doesn’t need to be with you: this works at any distance, as long as you and the book are on the same plane of existence.</p><section class=\"secret\" id=\"secret-XlI2VNcTVHkaJzjH\"><p><strong>Foundry Note</strong></p><p><em>Telepathic Message</em> fait faire le Wisdom Saving Throw (DD 13 + votre bonus de maîtrise) aux créatures qui refusent le message ; une créature consentante le reçoit sans jet.</p></section>",
+      "chat": ""
+    },
+    "identifier": "book-of-talgaroth",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  }
+}

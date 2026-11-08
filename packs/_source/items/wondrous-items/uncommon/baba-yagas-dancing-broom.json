@@ -1,0 +1,186 @@
+{
+  "_id": "4Ovo8hqDX9B3FXvN",
+  "name": "Baba Yaga's Dancing Broom",
+  "type": "equipment",
+  "folder": "W6fbFHd5o6kj24g8",
+  "img": "icons/tools/hand/broom-straw-brown.webp",
+  "sort": 800000,
+  "system": {
+    "activities": {
+      "RsXgNdO8zoLy0l5x": {
+        "type": "summon",
+        "_id": "RsXgNdO8zoLy0l5x",
+        "sort": 0,
+        "name": "Animate Broom",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "spec",
+          "special": "Until you make it inanimate as a Bonus Action",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "qaUyFyJaLNJfiWE2",
+            "uuid": "Compendium.compendium-owidyn.creatures.Actor.E6uwWQ0sDegrDQgR",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>The archfey Baba Yaga made many of these magic brooms, and no two look exactly alike. While holding the broom, you can take a Magic action to turn it into an @UUID[Compendium.compendium-owidyn.creatures.Actor.E6uwWQ0sDegrDQgR]{Animated Broom} under your control; it then moves to an unoccupied space as close to you as possible. The broom acts right after you on your Initiative count and stays animated until you take a Bonus Action and speak a command word to make it inanimate again.</p><p>On your turn, if the broom is within 30 feet of you and you don’t have the &amp;Reference[Incapacitated apply=false] condition, you can command it mentally (no action required). You decide what action it takes and where it moves on its next turn, or you can give it a general command, such as attacking your enemies or guarding a location.</p><p>If the broom drops to 0 Hit Points, it shatters and is destroyed. If it returns to its inanimate form before losing all its Hit Points, it regains all of them.</p><section class=\"secret\" id=\"secret-I8QwkH3nkTZVsnCb\"><p><strong>Foundry Note</strong></p><p>L’activité <em>Animate Broom</em> place le balai animé du Bestiaire Owidyn.</p></section>",
+      "chat": ""
+    },
+    "identifier": "baba-yagas-dancing-broom",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

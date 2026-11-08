@@ -1,0 +1,414 @@
+{
+  "_id": "cWXOO5Ds9uouASux",
+  "name": "Holy Star of Mystra",
+  "type": "spell",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "folder": "yXi4rP3BbtNBsPwp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You create a glowing mote of energy that hovers above you for the duration, shedding Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.</p><p>When you cast this spell, and as a Bonus Action on your later turns, you can loose a shining bolt from the mote at one creature within 120 feet of yourself. Make a ranged spell attack; on a hit, the target takes Force or Radiant damage (your choice) equal to 4d10 plus your spellcasting ability modifier.</p><p>In addition, while the mote is present, you have &amp;Reference[three-quarterscover apply=false]{Three-Quarters Cover}, and if you succeed on a saving throw against a spell of level 7 or lower that targeted only you and didn’t create an area of effect, you can take a Reaction to deflect that spell back at its caster, which makes a saving throw against it using its own spell save DC.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "holy-star-of-mystra",
+    "activation": {
+      "type": "bonus",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "self",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "qEPvcqADieIcZ3Gg": {
+        "type": "attack",
+        "_id": "qEPvcqADieIcZ3Gg",
+        "sort": 0,
+        "name": "Shining Bolt",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "nSaM8gOVD2GkvlIM"
+          }
+        ],
+        "range": {
+          "override": true,
+          "value": "120",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 4,
+              "denomination": 10,
+              "bonus": "@mod",
+              "types": [
+                "force",
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "ZdTfmEHJgOamel9x": {
+        "type": "attack",
+        "_id": "ZdTfmEHJgOamel9x",
+        "sort": 100000,
+        "name": "Later Bolt",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": "Bonus Action on a later turn"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "value": "120",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 4,
+              "denomination": 10,
+              "bonus": "@mod",
+              "types": [
+                "force",
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "B6iAbbeABCByyMq5": {
+        "type": "utility",
+        "_id": "B6iAbbeABCByyMq5",
+        "sort": 200000,
+        "name": "Deflect Spell",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": true,
+          "condition": "when you succeed on a saving throw against a spell of level 7 or lower that targeted only you and created no area of effect"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Holy Star of Mystra",
+      "img": "icons/magic/symbols/star-solid-gold.webp",
+      "_id": "nSaM8gOVD2GkvlIM",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.bright",
+            "value": 5,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "LCaSVhDAxbwa0TWu"
+          },
+          {
+            "key": "token.light.dim",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "en9LeAkYZSUjsHF0"
+          },
+          {
+            "key": "token.light.color",
+            "value": "#fff2b0",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "TdHMFxA5jkp09Ea8"
+          },
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+5",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2njjeetJ0lnxAtpe"
+          },
+          {
+            "key": "system.abilities.dex.bonuses.save",
+            "value": "+5",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MZCr1nF20wxAiXLX"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

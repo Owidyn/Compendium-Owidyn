@@ -1,9 +1,10 @@
 /**
  * Compendium Owidyn.
  * The classes with automation each keep theirs in their own folder; owidyn/ holds the helpers shared by the rest of
- * the compendium content and boutiques/ the shop generators. They register their hooks on import and publish their API
- * under game.modules.get('compendium-owidyn').api.
+ * the compendium content (and the update of worlds made with the former compendiums), boutiques/ the shop generators.
+ * They register their hooks on import and publish their API under game.modules.get('compendium-owidyn').api.
  */
+import './owidyn/migration.mjs';
 import './owidyn/effets-activables.mjs';
 import './owidyn/effets-formules.mjs';
 import './owidyn/familiar-friend.mjs';

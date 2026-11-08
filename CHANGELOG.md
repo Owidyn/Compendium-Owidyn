@@ -2,6 +2,77 @@
 
 Évolutions de **Compendium Owidyn** pour Foundry VTT 14 et D&D5e 6.0.6.
 
+## 2.4.0
+
+### Nouveaux compendiums
+
+Les quatre compendiums (Compendium Owidyn, Héliarque — Formes orbitales, Owidyn — Journaux, Owidyn — Bestiaire) sont remplacés par un compendium par type de contenu, comme dans dnd5e, rangés dans deux dossiers de l'onglet Compendiums : **Owidyn's Source Compendium 5.5** pour les règles 2024 (D&D 5.5e, *Modern Rules*) et tout le contenu propre à Owidyn, **Owidyn's Source Compendium Legacy** pour les règles 2014 (D&D 5e, *Legacy Rules*).
+
+| Compendium | Contenu | Rangement |
+| --- | --- | --- |
+| **Classes** | Cartomancien, Héliarque, Monk › La Voie de l'Aiguille | Classe › *Class Features* et dossier de la sous-classe (la sous-classe et ses *Subclass Features*) |
+| **Items** | Les objets magiques | Catégorie (*Armor*, *Potions*, *Rings*, *Rods*, *Staffs*, *Wands*, *Weapons*, *Wondrous Items*) › rareté, avec *Varies* pour une rareté variable et *Mundane* pour le non magique |
+| **Species** | Primordian, Salamander ; Thri-kreen | Type de créature › species (*Elemental › Primordian*, *Monstrosity › Thri-kreen*), et *Species Features* › une species par dossier |
+| **Creatures** | Le bestiaire et les Formes orbitales de l'Héliarque | Type de créature ; les Formes dans *Construct*. Masqué aux joueurs |
+| **Creature Features** | Nouveau : une base d'aptitudes de créatures à glisser sur un profil, comme les Monster Features de dnd5e, qui la complète | Type d'aptitude (*Traits*, *Actions*, *Attacks*). Masqué aux joueurs |
+| **Backgrounds & Feats** | Historiques et dons | *Backgrounds* ; *Feats* › *General Feats*, *Origin Feats* |
+| **Spells** | Sorts absents de dnd5e | Niveau (*Cantrips*, *1st Level*…) |
+| **Summons** | Nouveau : les créatures des sorts d'invocation, visibles des joueurs pour qu'ils puissent les invoquer | Un dossier par sort |
+| **Journals** | Listes de sorts | *Spell Lists* › une classe par dossier |
+| **Creatures (Legacy)** | Shadow (Monster Manual 2014) | *Undead*. Masqué aux joueurs |
+| **Creature Features (Legacy)** | Strength Drain | *Attacks*. Masqué aux joueurs |
+| **Backgrounds & Feats (Legacy)** | Strike of the Giants et ses options | *Feats* |
+| **Spells (Legacy)** | Thorn Whip (Player's Handbook 2014) | *Cantrips* |
+
+- **Règles** : tous les documents ont pour source Owidyn's Source Compendium et sont marqués selon leurs règles, 2024 dans 5.5 et 2014 dans Legacy. Les Formes orbitales reçoivent leur source.
+- **Creature Features** : chaque aptitude n'y figure qu'une fois, avec un texte qui nomme la créature qui la reçoit. Celles que les Monster Features de dnd5e ont déjà (Amphibious, Bite, Pack Tactics…) et les armes de l'équipement (Dagger, Shortbow…) n'y sont pas : on prend celles de dnd5e.
+- La **Moonblade** fait apparaître son entité avec le Shadow 2024 de dnd5e, et non plus avec celui de 2014 du bestiaire.
+- **Couleurs** : les dossiers sont colorés comme dans dnd5e, les niveaux de sorts en dégradé violet, les types de créatures en bleu nuit, les raretés d'objets du gris au rouge, les listes de sorts de la couleur de leur classe, l'Héliarque en or.
+
+### Boutiques
+
+- **Correction** : **Mettre à jour les tables** ne lisait aucun compendium d'objets (le serveur de Foundry refusait leur index), si bien que seule l'Écurie avait des articles et que **Générer** ne donnait rien pour les autres boutiques. Les tables vides sont reconstruites à la prochaine génération.
+- **La page du stock** liste les articles avec leur prix, puis la fiche de chacun, et un bouton **Régénérer le stock** (MJ seulement) en tire un nouveau avec les mêmes réglages.
+- **Parchemins de sorts** à La Hutte Enchantée : les sorts de dnd5e, des modules D&D officiels et d'Owidyn, de la rareté de leur niveau et à la moitié du prix d'un objet magique de cette rareté, limités par la rareté maximale. Un parchemin tiré est créé par dnd5e à partir de son sort, dans le dossier d'objets *Boutiques — Parchemins*.
+- **L'Auberge**, nouvelle boutique : chambres, repas, boissons, employés et messagers, sorts lancés sur demande, aux prix du System Reference Document 5.2. Elle propose toujours tous ses services.
+- Les générateurs ignorent Creature Features et les Monster Features de dnd5e : ce sont des aptitudes, pas des marchandises.
+
+### Créatures
+
+- **Nouvelles créatures** : les 45 monstres 2024 de FP 0 à 3 absents de dnd5e (Monster Manual 2024, d'après AideDD) : Crawling Claw, Displacer Beast, Empyrean Iota, Faerie Dragon Youth et Adult, Flaming Skeleton, Githyanki Warrior, Githzerai Monk, Gnoll Pack Lord, Goblin Hexer, Grell, Hook Horror, Intellect Devourer, Kuo-toa Monitor et Whip, Lacedon Ghoul, Larva, Lizardfolk Geomancer, Mage Apprentice, Manes Vaporspawn, Myconid Sovereign, Spore Servant et Sprout, Ogrillon Ogre, Peryton, Poltergeist, Psychic Gray Ooze, Quaggoth et Quaggoth Thonot, Sahuagin Priest, Salamander Fire Snake, Scarecrow, Scout Captain, Spectator, Spined Devil, Swarm of Larvae, Swarm of Lemures, Swarm of Stirges, Thri-kreen Marauder, Water Weird, Yeti, Yuan-ti Infiltrator et Yuan-ti Malison (types 1, 2 et 3). Les attaques, jets de sauvegarde, recharges, états, tests pour s'échapper d'une prise et sorts innés sont automatisés, et les aptitudes courantes (Magic Resistance, Amphibious, Flyby…) sont celles de dnd5e. Le Bulette Pup manque : AideDD ne donne que le nom de ses attaques.
+- **Créatures corrigées** : 55 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dégâts : Ankheg (Bite tranchant), Cultist (Ritual Sickle tranchant), Frog et Lizard (Bite de 1 perforant), Giant Fire Beetle (Bite de feu), Giant Octopus (Tentacles contondant), Mimic (1d8 d'acide à Bite et Pseudopod), Spider (1 perforant en plus du poison), Swarm of Insects (Bites de poison), Swarm of Venomous Snakes (3d6 de poison en plus), Vampire Familiar (Umbral Dagger perforant).
+  - Règles : Bugbear Stalker (DD 13 pour Quick Grapple), Gold Dragon Wyrmling (souffle en cône de 15 ft), Ogre Zombie (sans maîtrise des jets d'Intelligence), Phase Spider (voit aussi du plan Éthéré vers le plan Matériel), Swarm of Insects (escalade ou vol, au choix du MJ), Swarm of Piranhas (ne retient pas sa respiration hors de l'eau), Goat (Ram ne fait plus tomber à terre, un effet de la Giant Goat).
+  - Fiche : alignement « Any Alignment » (Berserker, Cultist, Cultist Fanatic, Knight, Pirate), Druid sans sous-type, habitats complétés (Baboon, Goat, Plesiosaurus, Rat, Swarm of Insects, Swarm of Rats, Swarm of Ravens, Vulture, Wolf).
+  - Description absente de dnd5e, reformulée : Animated Armor, Animated Rug of Smothering, Awakened Shrub, Awakened Tree, Azer Sentinel, Bandit Captain, les dragonnets bleu, d'airain, de bronze, d'or, vert et blanc, Centaur Trooper, Druid, Gargoyle, Ghast, Ghoul, Green Hag, Grick, Lemure, Minotaur Skeleton, Mummy, Priest, Sea Hag, Shrieker Fungus, Spy, Swarm of Crawling Claws, Warrior Veteran.
+  - Les copies ont les images de jetons de dnd5e, et non celles du Monster Manual payant que dnd5e leur donne.
+- **Creature Features** passe à 82 aptitudes avec celles des nouvelles créatures.
+
+### Nouveaux sorts
+
+- **Spells** reçoit les sorts 2024 absents de dnd5e : ceux du Player's Handbook hors SRD (Armor of Agathys, Toll the Dead, Witch Bolt, Thunderous Smite, Wrathful Smite…), de World of Warcraft, d'Arcana Unleashed, de Heroes of Faerûn, des D&D Beyond Drops et de Forge of the Artificer, et la version 2024 de ceux que dnd5e n'a qu'en 2014, dans Tasha's (Mind Sliver). Ils couvrent tous les niveaux, des cantrips au niveau 9 : 185 sorts.
+- Les attaques, jets de sauvegarde, dégâts et leur montée en niveau, et les effets (états, vitesse, désavantages, lumière) sont automatisés ; une note Foundry, visible du MJ, dit ce qui reste à gérer à la main.
+- **Listes de sorts** : *Journals › Spell Lists* a un dossier par classe (et *Species*) ; dnd5e réunit ces listes avec les siennes, si bien que les nouveaux sorts apparaissent dans la liste de chaque classe. Freedom of Movement rejoint la liste du Barde, et l'Artificier a toute sa liste 2024.
+- **Sorts d'invocation** : Summon Beast, Summon Fey, Summon Undead, Summon Aberration, Summon Construct, Summon Elemental, Summon Celestial, Summon Fiend (Player's Handbook), Summon Plant, Summon Dinosaur et Battle Familiar (Arcana Unleashed), Homunculus Servant (Forge of the Artificer). Leurs créatures sont dans **Summons**, une par variante ; l'invocation ajoute ce qui monte avec le niveau du sort (CA, points de vie, dégâts) et reprend le bonus de maîtrise, les attaques et les DD de l'invocateur. Sticks to Snakes invoque le Venomous Snake de dnd5e.
+- **Elemental Weapon** enchante l'arme touchée : +1 à l'attaque et 1d4 du type choisi, +2 et 2d4 avec un emplacement de niveau 5–6, +3 et 3d4 au niveau 7+.
+- **Objets magiques** : leurs activités qui attendaient un sort absent de dnd5e le lancent désormais, avec un lien dans leur description : Cube of Summoning, Demonomicon of Iggwilv, Eye of Vecna, Grave Reaper (Spirit Lantern), Helm of Domination (Telepathy), Niko's Mace (Summon Celestial), Spirit-Binding Censer (Circle of Power), Thayan Sword (Thunderous et Wrathful Smite), Wand of Slumber (Catnap).
+- **Thorn Whip** passe à sa fiche 2024 ; sa version 2014 est dans Spells (Legacy).
+
+### Nouveaux objets
+
+- **Book of Talgaroth** (*Wondrous Items › Artifact*, harmonisation) : un livre aux pages blanches, sauf la dernière où est écrit *Talgaroth*, dont la couverture change de couleur selon les émotions de la créature harmonisée. Il permet d'envoyer des messages télépathiques à sens unique à toutes les créatures vues à 120 ft ou situées à 60 ft (une créature qui les refuse fait un Wisdom Saving Throw contre un DD de 13 + bonus de maîtrise), et de faire apparaître ses pensées sur ses pages à toute distance sur le même plan.
+- **Bone Goggles** (*Wondrous Items › Uncommon*) : des lunettes d'os fendues qui annulent le Disadvantage de Sunlight Sensitivity.
+- **Ring of the Storm Whisper** (*Rings › Legendary*, nouveau dossier) : un anneau d'or serti de l'émeraude d'un djinn emprisonné sur un plan prison, qui sert de focaliseur d'incantation.
+- **Whip Rapier** (*Weapons › Uncommon*) : une rapière +1 dont la lame se segmente en Bonus Action pour devenir un fouet (1d4 Slashing, Reach, maîtrise Slow), et inversement.
+
+### Cartomancien
+
+- **Liaison des sorts** : une carte se lie à un sort exactement de son niveau, au choix parmi les sorts déjà sur la fiche, même hors de la Spell List du Cartomancien (sort d'une autre classe, d'un don…), et les sorts de la Spell List trouvés dans les compendiums, ajoutés à la fiche en les liant. Les sorts qu'un objet fait lancer ne sont pas proposés. **Initialiser / Synchroniser** signale en un seul message les niveaux pour lesquels aucun sort n'est disponible.
+
+### Mise à jour
+
+Les documents gardent leur identifiant, mais leur compendium change : au premier chargement d'un monde par le MJ, le module fait pointer sur les nouveaux compendiums les liens du monde qui visaient les anciens (avancements des personnages, Formes de l'Héliarque, liens des journaux…). Le dossier de compendiums *Owidyn* de la 2.3, vide, est supprimé. Les liens des anciens messages du chat et les réglages de visibilité des anciens compendiums ne sont pas repris. Les tables des boutiques sont construites à la première génération, ou avec **Mettre à jour les tables** ; reconstruisez-les après cette mise à jour, et après l'installation d'un nouveau module d'objets.
+
 ## 2.3.0
 
 ### 256 nouveaux objets magiques

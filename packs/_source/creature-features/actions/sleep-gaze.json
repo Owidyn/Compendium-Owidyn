@@ -1,0 +1,253 @@
+{
+  "_id": "r6HtvYi4VDkemgZ6",
+  "name": "Sleep Gaze",
+  "type": "feat",
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "JgGtkWB3R1iwmbM4": {
+        "type": "save",
+        "_id": "JgGtkWB3R1iwmbM4",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "U4djxRQHUlEukIKv",
+            "onSave": false,
+            "level": {}
+          },
+          {
+            "_id": "OlwpAbZvehAxQrpu",
+            "onSave": true,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "30"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "recharge",
+          "formula": "5",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "description": {
+      "value": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=JgGtkWB3R1iwmbM4]], one creature the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=JgGtkWB3R1iwmbM4]] feet (Constructs and Undead succeed automatically).</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Unconscious apply=false] condition for 10 minutes or until it takes damage or a creature within 5 feet of it takes an action to wake it.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}’s Sleep Gaze for 24 hours.</p>",
+      "chat": ""
+    },
+    "identifier": "sleep-gaze",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  },
+  "folder": "54pycForOBO7cp8g",
+  "img": "icons/magic/control/hypnosis-mesmerism-eye-tan.webp",
+  "effects": [
+    {
+      "name": "Unconscious",
+      "img": "systems/dnd5e/icons/svg/statuses/unconscious.svg",
+      "origin": null,
+      "transfer": false,
+      "_id": "U4djxRQHUlEukIKv",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The target has the &amp;Reference[Unconscious apply=false] condition for 10 minutes or until it takes damage or a creature within 5 feet of it takes an action to wake it.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "unconscious"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793740000000,
+        "modifiedTime": 1793740000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    },
+    {
+      "name": "Sleep Gaze Immunity",
+      "img": "icons/magic/control/hypnosis-mesmerism-eye-tan.webp",
+      "origin": null,
+      "transfer": false,
+      "_id": "OlwpAbZvehAxQrpu",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 86400,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The target is immune to this jackalwere’s Sleep Gaze for 24 hours.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793740000000,
+        "modifiedTime": 1793740000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "nyugV7H2Q7v4BlHT",
+        "item": "qZJBvykVBPIgDG8Z"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793740000000,
+    "modifiedTime": 1793740000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.nyugV7H2Q7v4BlHT.Item.qZJBvykVBPIgDG8Z",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 500000
+}

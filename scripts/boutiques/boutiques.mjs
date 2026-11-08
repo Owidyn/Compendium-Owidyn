@@ -1,21 +1,35 @@
 /**
  * Boutiques — shop generators.
- * The GM builds a world roll table per category of each shop from every Item compendium (Tables tab › Boutiques), then
- * generates a shop's stock: the master table of the shop picks the categories, kept under the chosen maximum rarity,
- * and their tables the items. The stock is a page of the Boutiques journal, replaced at each generation, with links
- * that can be dragged onto a character sheet. Console: game.modules.get('compendium-owidyn').api.boutiques.
+ * The GM builds a world roll table per category of each shop from the compendiums (Tables tab › Boutiques), then
+ * generates a shop's stock into a page of the Boutiques journal: the goods with their price, the sheet of each one
+ * embedded under it, and a button that draws a new stock with the same settings. The master table of a shop picks the
+ * categories, kept under the chosen maximum rarity, and their tables the goods. La Hutte Enchantée also sells spell
+ * scrolls, made as world items when drawn; L'Auberge lists all its services. Console:
+ * game.modules.get('compendium-owidyn').api.boutiques.
  */
 import {
-  RARITIES, SHOPS, CATEGORY_LABELS, STABLE, normalize, placesOf, priceOf, sourceRank, allowsCategory, pickWeighted, adjustPrice
+  RARITIES, SHOPS, CATEGORY_LABELS, STABLE, INN, INN_RULES, normalize, placesOf, priceOf, scrollOf, scrollRarityOf, sellsScrolls,
+  sourceRank, allowsCategory, pickWeighted, adjustPrice
 } from './catalogue.mjs';
 
 const MODULE_ID = 'compendium-owidyn';
 const FLAG = 'boutique';
-const INDEX_FIELDS = ['img', 'type', 'folder', 'system.rarity', 'system.type', 'system.price', 'system.properties', 'system.source.rules'];
+/**
+ * Fields read from the item compendiums. dnd5e already indexes the whole `system.source`: asking for one of its fields
+ * as well makes the server refuse the index ("Cannot use 'in' operator to search for 'rules' in 1").
+ */
+const INDEX_FIELDS = ['img', 'type', 'folder', 'system.rarity', 'system.type', 'system.price', 'system.properties', 'system.level', 'system.source'];
+// Copies of the creatures' features and attacks: not goods
+const NOT_SOLD = new Set([`${MODULE_ID}.creature-features`, `${MODULE_ID}.legacy-creature-features`, `${MODULE_ID}.summons`, 'dnd5e.monsterfeatures', 'dnd5e.monsterfeatures24']);
 
-const flagOf = doc => doc?.getFlag?.(MODULE_ID, FLAG) ?? {};
-const categoryLabel = category => (RARITIES.includes(category) ? CONFIG.DND5E.itemRarity[category] : CATEGORY_LABELS[category]) ?? category;
+const flagOf = doc => doc?.getFlag?.(MODULE_ID, FLAG) ?? doc?.flags?.[MODULE_ID]?.[FLAG] ?? {};
 const escape = value => foundry.utils.escapeHTML(String(value ?? ''));
+
+function categoryLabel(category) {
+  const scroll = scrollRarityOf(category);
+  if (scroll) return `Parchemins de sorts (${CONFIG.DND5E.itemRarity[scroll] ?? scroll})`;
+  return (RARITIES.includes(category) ? CONFIG.DND5E.itemRarity[category] : CATEGORY_LABELS[category]) ?? category;
+}
 
 function formatPrice({ value, denomination }) {
   const coin = CONFIG.DND5E.currencies?.[denomination]?.abbreviation ?? denomination;
@@ -32,7 +46,7 @@ function formatPrice({ value, denomination }) {
  */
 async function indexedPacks(documentName, fields) {
   const packs = [];
-  for (const pack of game.packs.filter(p => p.documentName === documentName)) {
+  for (const pack of game.packs.filter(p => (p.documentName === documentName) && !NOT_SOLD.has(p.collection))) {
     try {
       const index = await pack.getIndex({ fields });
       const folders = new Map([...(pack.folders ?? [])].map(folder => [folder.id, [folder, ...(folder.ancestors ?? [])].map(f => f.name).join(' / ')]));
@@ -64,11 +78,19 @@ async function collectGoods() {
           result: { type: 'document', name: entry.name, img: entry.img, documentUuid: uuidOf(source.pack, entry) }
         });
       }
+      // A spell is sold as a scroll, made from it when it is drawn
+      const scroll = (entry.type === 'spell') && sellsScrolls(source.pack.metadata.packageName) && scrollOf(entry);
+      if (scroll) {
+        offer(scroll.shop, `scroll:${normalize(entry.name)}`, {
+          rank: rankOf(source, entry), category: scroll.category, price: scroll.price, scroll: true,
+          result: { type: 'document', name: entry.name, img: 'icons/sundries/scrolls/scroll-runed-brown-purple.webp', documentUuid: uuidOf(source.pack, entry) }
+        });
+      }
     }
   }
 
   // The stable's goods keep their Player's Handbook price, linked to a compendium document of the same name if any
-  const stableSources = { Actor: await indexedPacks('Actor', ['img', 'system.source.rules']), Item: itemSources };
+  const stableSources = { Actor: await indexedPacks('Actor', ['img', 'system.source']), Item: itemSources };
   for (const good of STABLE) {
     const names = new Set(good.names.map(normalize));
     let found = null;
@@ -85,22 +107,29 @@ async function collectGoods() {
     });
   }
 
+  // The inn's services are text results
+  for (const good of INN) {
+    offer('auberge', normalize(good.name), {
+      rank: 0, category: good.category, price: good.price, result: { type: 'text', name: good.name, img: 'icons/svg/item-bag.svg', description: '' }
+    });
+  }
+
   const goods = new Map();
   for (const [shop, entries] of chosen) {
     const categories = new Map();
-    for (const { category, price, result } of entries.values()) {
+    for (const { category, price, scroll, result } of entries.values()) {
       if (!categories.has(category)) categories.set(category, []);
-      categories.get(category).push({ ...result, weight: 1, flags: { [MODULE_ID]: { [FLAG]: { price } } } });
+      categories.get(category).push({ ...result, weight: 1, flags: { [MODULE_ID]: { [FLAG]: { price, ...(scroll ? { scroll } : {}) } } } });
     }
     goods.set(shop, categories);
   }
   return goods;
 }
 
-async function upsertFolder(name, parent, flag) {
-  const existing = game.folders.find(folder => folder.type === 'RollTable' && foundry.utils.objectsEqual(flagOf(folder), flag));
+async function upsertFolder(name, parent, flag, type = 'RollTable') {
+  const existing = game.folders.find(folder => folder.type === type && foundry.utils.objectsEqual(flagOf(folder), flag));
   if (existing) return existing;
-  return Folder.implementation.create({ name, type: 'RollTable', folder: parent?.id ?? null, flags: { [MODULE_ID]: { [FLAG]: flag } } });
+  return Folder.implementation.create({ name, type, folder: parent?.id ?? null, flags: { [MODULE_ID]: { [FLAG]: flag } } });
 }
 
 /** A world roll table found by its flag, created when missing; its results are replaced, with ranges by weight. */
@@ -156,7 +185,7 @@ async function buildTables({ notify = true } = {}) {
     }, masterResults);
     summary.push(`${label} ${count}`);
   }
-  if (notify) ui.notifications.info(`Boutiques : tables construites (${summary.join(', ')} objets).`);
+  if (notify) ui.notifications.info(`Boutiques : tables construites (${summary.join(', ')} articles).`);
   return goods;
 }
 
@@ -196,59 +225,110 @@ async function drawStock(categories, count) {
   return stock;
 }
 
+/** Every good of a shop that lists all of them (the inn's services), in the order of its tables. */
+const allGoods = categories => categories.flatMap(({ category, table }) => table.results.contents.map(result => ({ category, result })));
+
+/**
+ * The scrolls of a stock become world items (folder Boutiques — Parchemins, that the players can open and drag), made
+ * from their spell by dnd5e; those of the page's previous stock are deleted.
+ */
+async function makeScrolls(page, stock, percent) {
+  const previous = game.items.filter(item => flagOf(item).page === page.uuid);
+  if (previous.length) await Item.implementation.deleteDocuments(previous.map(item => item.id));
+  const scrolls = stock.filter(entry => flagOf(entry.result).scroll);
+  if (!scrolls.length) return;
+  const folder = await upsertFolder('Boutiques — Parchemins', null, { scrolls: true }, 'Item');
+  const made = [];
+  for (const entry of scrolls) {
+    const spell = await fromUuid(entry.result.documentUuid);
+    const scroll = spell && await Item.implementation.createScrollFromSpell(spell, {}, { dialog: false });
+    if (!scroll) continue;
+    const source = scroll.toObject();
+    Object.assign(source, { folder: folder.id, ownership: { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER } });
+    source.system.price = adjustPrice(flagOf(entry.result).price, percent);
+    source.flags = { ...source.flags, [MODULE_ID]: { ...source.flags?.[MODULE_ID], [FLAG]: { page: page.uuid } } };
+    made.push({ entry, source });
+  }
+  const created = await Item.implementation.createDocuments(made.map(({ source }) => source));
+  created.forEach((item, i) => Object.assign(made[i].entry, { uuid: item.uuid, name: item.name }));
+}
+
 function stockPage(name, shop, stock, { maxRarity, percent }) {
   const order = Object.keys(SHOPS[shop].categories);
-  const rows = stock
-    .sort((a, b) => (order.indexOf(a.category) - order.indexOf(b.category)) || a.result.name.localeCompare(b.result.name, game.i18n.lang))
-    .map(({ category, result }) => {
-      const link = result.documentUuid ? `@UUID[${result.documentUuid}]{${escape(result.name)}}` : escape(result.name);
-      const price = flagOf(result).price;
-      return `<tr><td>${link}</td><td>${escape(categoryLabel(category))}</td><td>${price ? formatPrice(adjustPrice(price, percent)) : '—'}</td></tr>`;
-    }).join('');
-  const rarity = RARITIES.includes(maxRarity) ? CONFIG.DND5E.itemRarity[maxRarity] : 'aucun objet magique';
+  const entries = stock.sort((a, b) => (order.indexOf(a.category) - order.indexOf(b.category))
+    || (a.name ?? a.result.name).localeCompare(b.name ?? b.result.name, game.i18n.lang));
+  const uuid = entry => entry.uuid ?? entry.result.documentUuid;
+  const label = entry => escape(entry.name ?? entry.result.name);
+  const link = entry => (uuid(entry) ? `@UUID[${uuid(entry)}]{${label(entry)}}` : label(entry));
+  const price = entry => {
+    const listed = flagOf(entry.result).price;
+    return listed ? formatPrice(adjustPrice(listed, percent)) : '—';
+  };
+  const rows = entries.map(e => `<tr><td>${link(e)}</td><td>${escape(categoryLabel(e.category))}</td><td>${price(e)}</td></tr>`).join('');
+  const sheets = entries.filter(uuid).map(e => `<h3>${link(e)} · ${price(e)}</h3><p>@Embed[${uuid(e)} caption=false]</p>`).join('');
+  const rules = [...new Set(entries.map(e => INN_RULES[e.category]).filter(Boolean))].map(page => `@UUID[${page}]`).join(' · ');
+  const settings = SHOPS[shop].all ? [`${stock.length} service(s)`]
+    : [`${stock.length} article(s)`, `rareté maximale : ${RARITIES.includes(maxRarity) ? CONFIG.DND5E.itemRarity[maxRarity] : 'aucun objet magique'}`];
+  if (percent !== 100) settings.push(`prix à ${percent} %`);
   return `<h2>${escape(name)}</h2>`
-    + `<p><em>${stock.length} article(s) · rareté maximale : ${escape(rarity)}${percent !== 100 ? ` · prix à ${percent} %` : ''}</em></p>`
+    + `<p><em>${escape(settings.join(' · '))}</em></p>`
+    + '<p>@OwidynBoutique[regenerate]</p>'
     + `<table><thead><tr><th>Article</th><th>Catégorie</th><th>Prix</th></tr></thead><tbody>${rows}</tbody></table>`
+    + (rules ? `<p>Règles : ${rules}</p>` : '')
+    + (sheets ? `<h2>Fiches</h2>${sheets}` : '')
     + '<p>Pour acheter un objet, glissez-le sur la fiche du personnage puis retirez son prix de sa bourse ; une monture se place sur la scène depuis son lien.</p>';
 }
 
 /**
  * Generate the stock of a shop into the page of the same name of the Boutiques journal, then open it.
  * @param {object} options
- * @param {string} options.shop           Key of the shop (hutte, equipement, forge, apothicaire, ecurie)
+ * @param {string} options.shop           Key of the shop (hutte, equipement, forge, apothicaire, ecurie, auberge)
  * @param {string} [options.name]         Name of the shop and its page (the shop's label by default)
- * @param {number} [options.count=10]     Number of goods
+ * @param {number} [options.count=10]     Number of goods (L'Auberge lists all its services)
  * @param {string} [options.maxRarity]    Maximum rarity of the magic goods ('' for none)
  * @param {number} [options.percent=100]  Prices in percent of the listed ones
  */
 async function generateStock({ shop, name, count = 10, maxRarity = '', percent = 100 } = {}) {
   if (!game.user.isGM) return ui.notifications.warn('Seul le MJ peut générer le stock d\'une boutique.');
   if (!SHOPS[shop]) return ui.notifications.error(`Boutique inconnue : ${shop}.`);
-  if (!stockCategories(shop, maxRarity)) await buildTables();
+  // Tables never built, or built empty (before the index fix of 2.4.0), are built again
+  if (!game.tables.find(table => foundry.utils.objectsEqual(flagOf(table), { shop }))?.results.size) await buildTables();
   const categories = stockCategories(shop, maxRarity) ?? [];
   if (!categories.length) {
     return ui.notifications.warn(shop === 'hutte'
       ? 'La Hutte Enchantée ne vend que des objets magiques : choisissez une rareté maximale.'
       : `Aucun article disponible pour ${SHOPS[shop].label} : mettez à jour les tables.`);
   }
-  const stock = await drawStock(categories, count);
+  const all = SHOPS[shop].all;
+  const stock = all ? allGoods(categories) : await drawStock(categories, count);
   name = name?.trim() || SHOPS[shop].label;
 
   let journal = game.journal.find(entry => flagOf(entry).journal === true);
   journal ??= await JournalEntry.implementation.create({ name: 'Boutiques', flags: { [MODULE_ID]: { [FLAG]: { journal: true } } } });
-  const content = stockPage(name, shop, stock, { maxRarity, percent });
   let page = journal.pages.getName(name);
-  if (page) await page.update({ 'text.content': content, [`flags.${MODULE_ID}.${FLAG}.shop`]: shop });
-  else [page] = await journal.createEmbeddedDocuments('JournalEntryPage', [{
-    name, type: 'text', text: { content, format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML }, flags: { [MODULE_ID]: { [FLAG]: { shop } } }
+  [page] = page ? [page] : await journal.createEmbeddedDocuments('JournalEntryPage', [{
+    name, type: 'text', text: { content: '', format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML }
   }]);
-  if (stock.length < count) ui.notifications.warn(`${name} : seulement ${stock.length} article(s) disponible(s) sur ${count}.`);
+  await makeScrolls(page, stock, percent);
+  await page.update({
+    'text.content': stockPage(name, shop, stock, { maxRarity, percent }),
+    [`flags.${MODULE_ID}.${FLAG}`]: { shop, name, count, maxRarity, percent }
+  });
+  if (!all && (stock.length < count)) ui.notifications.warn(`${name} : seulement ${stock.length} article(s) disponible(s) sur ${count}.`);
   journal.sheet.render({ force: true, pageId: page.id });
   return page;
 }
 
+/** Draw a new stock for a page of the Boutiques journal, with the settings of its last generation. */
+async function regenerate(pageUuid) {
+  const page = await fromUuid(pageUuid);
+  const settings = flagOf(page);
+  if (!page || !settings.shop) return ui.notifications.warn('Cette page n\'est pas le stock d\'une boutique.');
+  return generateStock(settings);
+}
+
 /* -------------------------------------------- */
-/*  Generator window                            */
+/*  Generator window and regenerate button      */
 /* -------------------------------------------- */
 
 async function openGenerator() {
@@ -270,7 +350,7 @@ async function openGenerator() {
       + field('Nombre d\'articles', '<input type="number" name="count" value="10" min="1" max="100">')
       + field('Rareté maximale', `<select name="rarity"><option value="">Aucun objet magique</option>${rarities}</select>`)
       + field('Prix (%)', '<input type="number" name="percent" value="100" min="1">')
-      + '<p class="hint">La rareté maximale vaut pour les objets magiques de La Hutte Enchantée, de la Forge et de l\'Apothicaire. Le stock remplace la page du même nom dans le journal Boutiques.</p>',
+      + '<p class="hint">La rareté maximale vaut pour les objets magiques et les parchemins de La Hutte Enchantée, et pour les objets magiques de la Forge et de l\'Apothicaire. L\'Auberge propose tous ses services. Le stock remplace la page du même nom dans le journal Boutiques, qui a un bouton pour le régénérer.</p>',
     buttons: [
       { action: 'generate', label: 'Générer', icon: 'fa-solid fa-dice', default: true, callback: (event, button) => ({ action: 'generate', ...read(button) }) },
       { action: 'rebuild', label: 'Mettre à jour les tables', icon: 'fa-solid fa-arrows-rotate', callback: () => ({ action: 'rebuild' }) }
@@ -284,6 +364,30 @@ async function openGenerator() {
   }
   return null;
 }
+
+/** @OwidynBoutique[regenerate] in a stock page: a button for the GM that draws a new stock with the same settings. */
+function regenerateButton(match, { relativeTo } = {}) {
+  if (!game.user.isGM || !relativeTo?.uuid) return document.createElement('span');
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'owidyn-boutique-regenerate';
+  button.dataset.page = relativeTo.uuid;
+  button.innerHTML = '<i class="fa-solid fa-dice" inert></i> Régénérer le stock';
+  return button;
+}
+
+function onRenderRegenerate(element) {
+  const button = element.querySelector('button.owidyn-boutique-regenerate');
+  button?.addEventListener('click', async event => {
+    event.preventDefault();
+    button.disabled = true;
+    try { await regenerate(button.dataset.page); } finally { button.disabled = false; }
+  });
+}
+
+Hooks.once('init', () => {
+  CONFIG.TextEditor.enrichers.push({ id: 'owidyn-boutique', pattern: /@OwidynBoutique\[(\w+)\]/g, enricher: regenerateButton, onRender: onRenderRegenerate });
+});
 
 Hooks.on('renderRollTableDirectory', (app, element) => {
   if (!game.user.isGM) return;
@@ -299,5 +403,5 @@ Hooks.on('renderRollTableDirectory', (app, element) => {
 
 Hooks.once('ready', () => {
   const module = game.modules.get(MODULE_ID);
-  module.api = { ...module.api, boutiques: { SHOPS, openGenerator, buildTables, generateStock } };
+  module.api = { ...module.api, boutiques: { SHOPS, openGenerator, buildTables, generateStock, regenerate } };
 });

@@ -1,0 +1,313 @@
+{
+  "name": "Primordian, Salamander",
+  "type": "race",
+  "_id": "JM5M2842UkH5XoXB",
+  "img": "icons/magic/fire/elemental-fire-humanoid.webp",
+  "folder": "rmwFv3PnBVnkYuXp",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Les Primordians sont des êtres élémentaires liés aux forces primordiales de l'Air, du Feu, de l'Eau ou de la Terre. Les Salamanders appartiennent à une lignée primordiale liée au Feu.</p><h3>Primordian Traits</h3><p><strong>Creature Type :</strong> Elemental</p><p><strong>Size :</strong> Small ou Medium (choisi lorsque vous prenez cette species)</p><p><strong>Speed :</strong> 30 ft</p><p><strong>Language :</strong> vous pouvez parler et lire le Primordial. Votre dialecte dépend de votre lignée primordiale : Auran pour les Sylphs, Ignan pour les Salamanders, Aquan pour les Undines, Terran pour les Pygmies.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.L0N3ru1g3xuxAney]{Nature élémentaire}.</strong> Vous n'avez pas besoin de manger, boire, respirer ni dormir, vous ne vieillissez pas et vous êtes immunisé aux maladies et aux effets magiques provoquant le vieillissement.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.YZUepDBfLGyEDpHq]{Lignée Primordiale, Salamander}.</strong> Magie Primordiale (Fire Bolt et Beckon Fire, puis Burning Hands au niveau 3 et Flaming Sphere au niveau 5) et Resistance aux Fire damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.2CGBo7UPCFawuAb1]{Forme Primordiale : Plasma}.</strong> Vous émettez de la lumière (@UUID[Compendium.compendium-owidyn.species.Item.uPAIaUQjUUGzRDSO]{Lumière de plasma}) et pouvez traverser la matière et les créatures pendant votre mouvement (Plasma Phase).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "primordian-salamander",
+    "type": {
+      "value": "elemental",
+      "custom": "",
+      "subtype": "Primordian"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "oeGoUMxGubbNjJzZ": {
+        "_id": "oeGoUMxGubbNjJzZ",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "hint": "Small ou Medium"
+      },
+      "OyHVdveQklI4k4gI": {
+        "_id": "OyHVdveQklI4k4gI",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.L0N3ru1g3xuxAney",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.YZUepDBfLGyEDpHq",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.2CGBo7UPCFawuAb1",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.uPAIaUQjUUGzRDSO",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Primordian Traits",
+        "hint": ""
+      },
+      "DRmYbpk2JHva4bcK": {
+        "_id": "DRmYbpk2JHva4bcK",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "ci:diseased"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Nature élémentaire",
+        "hint": "Vous êtes immunisé aux maladies."
+      },
+      "HsjEJssZk3stSCWS": {
+        "_id": "HsjEJssZk3stSCWS",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:exotic:primordial",
+            "languages:exotic:primordial:ignan"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Language",
+        "hint": "Vous pouvez parler et lire le Primordial, dans son dialecte Ignan."
+      },
+      "9bJf4AoXqGIZzFbB": {
+        "_id": "9bJf4AoXqGIZzFbB",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:fire"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Résistance élémentaire",
+        "hint": "Vous avez Resistance aux Fire damage."
+      },
+      "5sQHDdb36X2aki2U": {
+        "_id": "5sQHDdb36X2aki2U",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireBolt00",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.qeU5jogdOL9G4VlN",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "level": 0,
+        "title": "Magie Primordiale",
+        "hint": "Intelligence, Wisdom ou Charisma est votre Spellcasting Ability pour les spells de cette lignée."
+      },
+      "XNJw2I7wEk4qIJQV": {
+        "_id": "XNJw2I7wEk4qIJQV",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBurningHan",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Magie Primordiale",
+        "hint": "Intelligence, Wisdom ou Charisma est votre Spellcasting Ability pour les spells de cette lignée."
+      },
+      "iU0jjUBWQQSqbiwf": {
+        "_id": "iU0jjUBWQQSqbiwf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlamingSph",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "level": 5,
+        "title": "Magie Primordiale",
+        "hint": "Intelligence, Wisdom ou Charisma est votre Spellcasting Ability pour les spells de cette lignée."
+      },
+      "6khVTvwxkW9IIKzP": {
+        "_id": "6khVTvwxkW9IIKzP",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "plasma",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "number": 1,
+              "faces": 4,
+              "modifiers": []
+            },
+            "5": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "11": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "17": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {},
+        "title": "Plasma Phase",
+        "hint": "Dé de dégâts de Plasma Phase (+ PB)."
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793645230957,
+    "modifiedTime": 1793645230957,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

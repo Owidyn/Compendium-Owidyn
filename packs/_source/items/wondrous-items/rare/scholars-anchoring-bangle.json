@@ -1,0 +1,169 @@
+{
+  "_id": "hkVixNwACeAQCsOv",
+  "name": "Scholar's Anchoring Bangle",
+  "type": "equipment",
+  "folder": "EtGKBgVFtLG4Giov",
+  "img": "icons/equipment/wrist/bracer-ornate-black-silver.webp",
+  "sort": 12300000,
+  "system": {
+    "activities": {
+      "mAZCoGAtCXaw8LD6": {
+        "type": "utility",
+        "_id": "mAZCoGAtCXaw8LD6",
+        "sort": 0,
+        "name": "Single-Minded Focus",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You fail a Constitution saving throw to maintain Concentration"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This heavy magical bracelet shields your mind from distractions. While wearing it, you gain the following benefits.</p><p><strong>Deep Knowledge.</strong> When you take the Study action and make an Intelligence check with a skill you are proficient in, you can treat a d20 roll of 9 or lower as a 10.</p><p><strong>Single-Minded Focus.</strong> When you fail a Constitution saving throw to maintain Concentration, you can take a Reaction to succeed instead. Once you use this property, you can’t use it again until the next dawn.</p><section class=\"secret\" id=\"secret-uh1WSRMP3UzuoDcc\"><p><strong>Foundry Note</strong></p><p><em>Deep Knowledge</em> se règle à la main. <em>Single-Minded Focus</em> compte l’utilisation du jour : le jet de Concentration raté devient une réussite.</p></section>",
+      "chat": ""
+    },
+    "identifier": "scholars-anchoring-bangle",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

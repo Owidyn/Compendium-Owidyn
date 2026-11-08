@@ -1,0 +1,1263 @@
+{
+  "_id": "l13Qe9004tCTlkv7",
+  "name": "Halo",
+  "type": "npc",
+  "img": "modules/compendium-owidyn/assets/heliarque/halo.svg",
+  "folder": "hFRTsmBY5FGDltsw",
+  "sort": 300,
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "temp": null,
+        "tempmax": null,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 0,
+        "fly": 0,
+        "swim": 0,
+        "climb": 0,
+        "burrow": 0,
+        "hover": true,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "custom",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Forme orbitale"
+      },
+      "cr": 0,
+      "alignment": "",
+      "biography": {
+        "value": "<p>Fragments incandescents de matière stellaire entourant une créature consentante, son porteur. Connu à partir du niveau 2. Lors de la Manifestation, l'Héliarque choisit lui-même ou une créature consentante située à 30 ft ou moins. Le Halo partage l'espace de son porteur et se déplace avec lui ; il peut néanmoins être ciblé séparément.</p><table><thead><tr><th>Niveau</th><th>Impulsion coronaire</th><th>Éruption coronaire</th></tr></thead><tbody><tr><td>2–6</td><td>15 ft</td><td>3 DF</td></tr><tr><td>7–12</td><td>20 ft</td><td>4 DF</td></tr><tr><td>13–16</td><td>30 ft</td><td>5 DF</td></tr><tr><td>17–20</td><td>40 ft</td><td>6 DF</td></tr></tbody></table><p><strong>Niveau 7 :</strong> Sillage de comète. <strong>Niveau 13 :</strong> Ascension coronaire. <strong>Soothing Star 6 :</strong> Chaleur réconfortante.</p>",
+        "public": ""
+      }
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC"
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comprend les ordres de son Héliarque"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Halo",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 0.5,
+    "height": 0.5,
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayName": 20,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "texture": {
+      "src": "modules/compendium-owidyn/assets/heliarque/halo.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "visionMode": "basic"
+    },
+    "flags": {
+      "compendium-owidyn": {
+        "heliarque": {
+          "form": "halo"
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "uMrZEFtpKm8cnxTv",
+      "name": "Rappel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+      "folder": null,
+      "sort": 100000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque.</em> La Forme disparaît et son Orbital retourne dans la Réserve. L'Orbital conserve ses Hit Points actuels : il reviendra avec eux à sa prochaine Manifestation. Rappeler une Forme ne restaure aucun Hit Point.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-rappel",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "jSZdi4VzxUeF6Gfs": {
+            "_id": "jSZdi4VzxUeF6Gfs",
+            "type": "utility",
+            "name": "Rappel",
+            "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme disparaît ; son Orbital retourne dans la Réserve."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "recall"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-rappel",
+            "form": "halo",
+            "kind": "recall"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "GHzqCeHevBTEEzIP",
+      "name": "Changer de forme",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+      "folder": null,
+      "sort": 200000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque — Reconfiguration.</em> Transformez cette Forme en une autre Forme que l'Héliarque connaît. Elle conserve ses Hit Points actuels, jusqu'au Hit Point Maximum de sa nouvelle Forme, et reste au même endroit.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-changer-de-forme",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "nUcgNZDKe5wnEiWU": {
+            "_id": "nUcgNZDKe5wnEiWU",
+            "type": "utility",
+            "name": "Changer de forme",
+            "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme devient une autre Forme connue et conserve ses Hit Points."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "reconfigure"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-changer-de-forme",
+            "form": "halo",
+            "kind": "reconfigure"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "jwTR94RmOod5tix4",
+      "name": "Intégrité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/halo.svg",
+      "folder": null,
+      "sort": 300000,
+      "system": {
+        "description": {
+          "value": "<p>Cette Forme est un objet magique, immunisée aux Poison et Psychic damage. Elle agit pendant le tour de son Héliarque et utilise ses actions ; elle n'a pas d'initiative propre.</p><p><strong>Commande.</strong> Une même Forme ne peut utiliser sa Commande qu'une seule fois par tour, sauf aptitude contraire.</p><p><strong>Orbital.</strong> Cette Forme est portée par l'un des Orbitals de l'Héliarque, qui conserve ses Hit Points lorsqu'il est rappelé ou change de forme.</p><p><strong>Destruction.</strong> À 0 Hit Points, la Forme est détruite sans pouvoir utiliser sa Rupture. <em>Règle de table :</em> son Orbital reste indisponible jusqu'au prochain Long Rest de l'Héliarque.</p><p><strong>Repos.</strong> Lorsque l'Héliarque termine un Short ou Long Rest, l'Orbital récupère tous ses Hit Points, sauf s'il a été détruit : il attend alors le Long Rest.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-integrite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-integrite",
+            "form": "halo",
+            "kind": "trait"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "DT59Osppg0KGZOKe",
+      "name": "Présence — Couronne incendiaire",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/halo.svg",
+      "folder": null,
+      "sort": 400000,
+      "system": {
+        "description": {
+          "value": "<p>Le Halo partage l'espace de son porteur et se déplace automatiquement avec lui. Il peut néanmoins être ciblé séparément.</p><p>Une fois par tour, la première fois que le porteur inflige des dégâts à une créature, cette créature subit également <strong>1 Dé de Fusion de Fire damage</strong>. <em>(Ajouté automatiquement au premier jet de dégâts du porteur à chaque tour.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-couronne",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-couronne",
+            "form": "halo",
+            "kind": "presence"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "4FNYUmSzqRAFK7AG",
+      "name": "Impulsion coronaire",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/propulsion-stellaire.svg",
+      "folder": null,
+      "sort": 500000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Commande.</em> Vous déplacez vous-même le porteur du Halo jusqu'à la distance indiquée dans sa table d'évolution. Vous choisissez sa trajectoire et son espace d'arrivée. Le porteur doit être consentant. Ce déplacement ne provoque pas d'Opportunity Attacks et peut être effectué horizontalement ou verticalement. Si le porteur termine ce déplacement dans les airs sans moyen d'y rester, il tombe normalement.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-impulsion",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Commande",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "VkLxLIaxJo7t2jan": {
+            "_id": "VkLxLIaxJo7t2jan",
+            "type": "utility",
+            "name": "Impulsion coronaire",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "command",
+                  "move": {
+                    "mode": "free",
+                    "distance": "@summoner.scale.heliarque.impulsion",
+                    "subject": "bearer",
+                    "action": "fly",
+                    "comet": true
+                  }
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-impulsion",
+            "form": "halo",
+            "kind": "command"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "idAqME9Ng3FvFJHm",
+      "name": "Sillage de comète",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/evolution-orbitale.svg",
+      "folder": null,
+      "sort": 600000,
+      "system": {
+        "description": {
+          "value": "<p><em>Évolution orbitale (niveau 7).</em> Lorsqu'une créature est déplacée par Impulsion coronaire, la première fois pendant cette Impulsion que le porteur passe à 5 ft ou moins d'une créature hostile, celle-ci effectue un Dexterity Saving Throw contre le DD de Fusion. En cas d'échec, elle subit <strong>2 Dés de Fusion de Fire damage</strong> ; en cas de réussite, la moitié. Une même créature ne peut subir ces dégâts qu'une fois par Impulsion. <em>(Les créatures longées sont ciblées automatiquement après l'Impulsion.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-sillage-comete",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "sIN8U7RxxsJPW2nE": {
+            "_id": "sIN8U7RxxsJPW2nE",
+            "type": "save",
+            "name": "Sillage de comète",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Pendant une Impulsion coronaire",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "enemy",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "comet"
+                }
+              }
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "8 + @summoner.abilities.cha.mod + @summoner.attributes.prof"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2@summoner.scale.heliarque.fusion.die"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-sillage-comete",
+            "form": "halo",
+            "kind": "upgrade",
+            "requires": {
+              "level": 7
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "Lu6rnQ20As70JBz1",
+      "name": "Éruption coronaire",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/flash-photospherique.svg",
+      "folder": null,
+      "sort": 700000,
+      "system": {
+        "description": {
+          "value": "<p><em>Reaction — Rupture.</em> Lorsque le porteur inflige des dégâts à une créature, vous pouvez détruire le Halo. Cette créature subit des Fire damage supplémentaires. Vous pouvez ensuite déplacer le porteur jusqu'à la moitié de la distance actuelle d'Impulsion coronaire sans provoquer d'Opportunity Attacks.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-eruption",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Rupture",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "7ROBBOFlHweetVpe": {
+            "_id": "7ROBBOFlHweetVpe",
+            "type": "damage",
+            "name": "Éruption coronaire",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "condition": "Lorsque le porteur inflige des dégâts à une créature",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "rupture",
+                  "move": {
+                    "mode": "free",
+                    "distance": "@summoner.scale.heliarque.impulsion / 2",
+                    "subject": "bearer",
+                    "optional": true
+                  }
+                }
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": false,
+                "bonus": ""
+              },
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "(@summoner.scale.heliarque.eruption)@summoner.scale.heliarque.fusion.die"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-eruption",
+            "form": "halo",
+            "kind": "rupture"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "agBGE6BRoQzV9DjS",
+      "name": "Ascension coronaire",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transcendance-des-formes.svg",
+      "folder": null,
+      "sort": 800000,
+      "system": {
+        "description": {
+          "value": "<p><em>Transcendance des Formes (niveau 13).</em> Le porteur du Halo gagne une <strong>Fly Speed égale à la moitié de sa Speed</strong> et Hover. <em>(Appliqué automatiquement au porteur.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-ascension",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-ascension",
+            "form": "halo",
+            "kind": "upgrade",
+            "requires": {
+              "level": 13
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "bKo5VC29Ce1t7TRL",
+      "name": "Présence apaisante — Chaleur réconfortante",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/presences-apaisantes.svg",
+      "folder": null,
+      "sort": 900000,
+      "system": {
+        "description": {
+          "value": "<p><em>Soothing Star (niveau 6).</em> Au début de chacun de ses tours, le porteur du Halo gagne des Temporary Hit Points égaux au Proficiency Bonus de l'Héliarque. <em>(Automatique en combat.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "halo-chaleur",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "halo-chaleur",
+            "form": "halo",
+            "kind": "presence",
+            "requires": {
+              "subclass": "soothing-star",
+              "level": 6
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "form": "halo"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

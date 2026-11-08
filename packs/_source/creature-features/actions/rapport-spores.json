@@ -1,0 +1,194 @@
+{
+  "_id": "MJCEdrHQf5vcxhZr",
+  "name": "Rapport Spores",
+  "type": "feat",
+  "img": "icons/magic/air/fog-gas-smoke-swirling-green.webp",
+  "system": {
+    "activities": {
+      "SJCBQ5xA2YBA6cD6": {
+        "type": "utility",
+        "_id": "SJCBQ5xA2YBA6cD6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "unCIX9Lwx4Uxgyis",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "count": "",
+            "type": "radius",
+            "size": "30"
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "special": "Intelligence 2 or higher, not Constructs, Elementals, or Undead"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} expels spores in a 30-foot Emanation originating from itself. Creatures in that area with an Intelligence score of 2 or higher that aren’t Constructs, Elementals, or Undead gain telepathy with a range of 30 feet for 1 hour.</p>",
+      "chat": ""
+    },
+    "identifier": "rapport-spores",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "advancement": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Rapport Spores",
+      "img": "icons/magic/perception/third-eye-blue-red.webp",
+      "origin": null,
+      "transfer": false,
+      "_id": "unCIX9Lwx4Uxgyis",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.languages.communication.telepathy.value",
+            "type": "upgrade",
+            "value": 30,
+            "phase": "initial",
+            "priority": null,
+            "_id": "RZtaYoQ5EIXEnLHh"
+          }
+        ],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The target has telepathy with a range of 30 feet for 1 hour (only creatures with an Intelligence score of 2 or higher that aren’t Constructs, Elementals, or Undead).</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793742000000,
+        "modifiedTime": 1793742000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "folder": "54pycForOBO7cp8g",
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "UTg9ba5kvBLvtKWz",
+        "item": "aDx0EHX8QfCtQQso"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793742000000,
+    "modifiedTime": 1793742000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.UTg9ba5kvBLvtKWz.Item.aDx0EHX8QfCtQQso",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  }
+}

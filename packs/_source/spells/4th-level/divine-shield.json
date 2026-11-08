@@ -1,0 +1,296 @@
+{
+  "_id": "ZDdQrStXN5ym8FGi",
+  "name": "Divine Shield",
+  "type": "spell",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "folder": "lzC0VNsq06qtpgKG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You have Immunity to all damage until the start of your next turn, including the triggering damage. For the duration, your Speed can’t be reduced, any current reductions to your Speed are suspended, and no effect can move you against your will.</p><section class=\"secret\" id=\"secret-RmqIGGu8CNkzgsGY\"><p><strong>Foundry Note</strong></p><p>The effect gives the Immunity to all damage; ignore the reductions to your Speed and the forced movement by hand.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "divine-shield",
+    "activation": {
+      "type": "reaction",
+      "value": null,
+      "condition": "when you take damage"
+    },
+    "duration": {
+      "value": "1",
+      "units": "round"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "self",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 4,
+    "school": "abj",
+    "properties": [
+      "vocal"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "ZaopEIap1yTIThyE": {
+        "type": "utility",
+        "_id": "ZaopEIap1yTIThyE",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "when you take damage",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "cIDqmbCsIo5zz20v"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Divine Shield",
+      "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+      "_id": "cIDqmbCsIo5zz20v",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "acid",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3TaUAMzSoiwXLPlj"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "95dM0NOQgrPT8Du4"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "tSp1HczZ10rZBYrb"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "WBqEDdOPFPBiqXLE"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "force",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DlpvuA8veXwg5f2R"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "bqFAf1wSqZhaG99Y"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "T1658CfEAJlYAZv6"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "1wIj7rNbPgnuPwFv"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "o8PvsL8wFOETErpj"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cYYxUelEy3jFwXVD"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "59Fv4j1Yp6v0fM5W"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "OIe3Vweu5vv3rzuP"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "thunder",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "nVSeCEjbvtFxmFXg"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

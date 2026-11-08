@@ -6,7 +6,8 @@ import {
 import { TECHNIQUE_KEYS } from './techniques.mjs';
 
 export const FOLDERS = {
-  class: id('folder:class'), features: id('folder:features'), techniques: id('folder:techniques'), subclass: id('folder:soothing-star')
+  class: id('folder:class'), features: id('folder:features'), techniques: id('folder:techniques'),
+  subclassFeatures: id('folder:subclass-features'), subclass: id('folder:soothing-star')
 };
 
 const classFeature = (key, name, level, o = {}) => feature(key, name, {

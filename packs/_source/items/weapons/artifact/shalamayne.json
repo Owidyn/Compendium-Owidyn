@@ -1,0 +1,293 @@
+{
+  "_id": "PMUPLR8kLqLSXuk8",
+  "name": "Shalamayne",
+  "type": "weapon",
+  "folder": "k5SXmlVACc2CKVy0",
+  "img": "icons/weapons/swords/greatsword-guard-gold.webp",
+  "sort": 2900000,
+  "system": {
+    "activities": {
+      "IbhJuNn6XRLShuCn": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 12,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": -100000,
+        "_id": "IbhJuNn6XRLShuCn",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "SDTA24wbUxLepRUD": {
+        "type": "utility",
+        "_id": "SDTA24wbUxLepRUD",
+        "sort": 0,
+        "name": "Split the Sword",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Greatsword), Artifact (Requires Attunement)</em></p><p>When dragon magic split King Varian Wrynn into two versions of himself, one of his selves wielded the night elven blade <em>Shalla’tor</em>, while the other wielded the night elven blade <em>Ellemayne</em>. Varian eventually merged his twin selves back into one whole. In doing so, he inadvertently fused the blades into a new weapon called <em>Shalamayne</em>.</p><p>The Jailer, one of the rulers of the Shadowlands, once stole and reforged <em>Shalamayne</em> into a mourneblade called Kingsmourne. But Varian’s son, Anduin Wrynn, later restored <em>Shalamayne</em> to its rightful form. Anduin is the sword’s last known wielder.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. It deals an extra 2d12 Force damage on a hit.</p><p><strong>Dual Mastery.</strong> If you have the Weapon Mastery feature and choose Greatsword as one of your mastered weapons, you can use both the Graze and Sap mastery properties at once while wielding <em>Shalamayne</em>.</p><p><strong>Splitting and Reuniting the Sword.</strong> While holding <em>Shalamayne</em>, you can take a Magic action to end your Attunement to the weapon and split it into two magic swords: <em>Shalla’tor</em> and <em>Ellemayne</em>. Each is a +3 Longsword with the Finesse and Light properties. A creature who holds both swords can take a Magic action to rejoin them into <em>Shalamayne</em>, attuning to the weapon instantly.</p><p><strong>Random Properties.</strong> <em>Shalamayne</em> has the following random properties:</p><ul><li><p>2 minor beneficial properties</p></li><li><p>1 major beneficial property</p></li></ul><p><strong>Destroying Shalamayne.</strong> One can destroy <em>Shalamayne</em> by splitting it into <em>Shalla’tor</em> and <em>Ellemayne</em>, then burying one or both swords at the roots of a World Tree in the Emerald Dream. After one year, the buried swords dissolve into the soil.</p><section class=\"secret\" id=\"secret-gJZWVbN55t0uoFDL\"><p><strong>Foundry Note</strong></p><p>Pour séparer l’épée, remplacez-la par deux Longswords +3 avec Finesse et Light, par exemple avec le modèle <em>Weapon, +1, +2, or +3</em> de dnd5e. <em>Dual Mastery</em> est à appliquer à la main. Les propriétés aléatoires d’artefact sont à ajouter par le MJ.</p></section>",
+      "chat": ""
+    },
+    "identifier": "shalamayne",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "greatsword"
+    },
+    "ammunition": {},
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 2,
+        "denomination": 6,
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "magicalBonus": 3,
+    "properties": [
+      "mgc",
+      "hvy",
+      "two"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "graze"
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

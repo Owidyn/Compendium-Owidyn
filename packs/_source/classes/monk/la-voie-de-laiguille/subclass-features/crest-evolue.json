@@ -1,0 +1,154 @@
+{
+  "name": "Crest évolué",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-dagger-runes-gold.webp",
+  "system": {
+    "activities": {
+      "sP6tcjAtvXSZEc8x": {
+        "type": "utility",
+        "name": "Récupérer du Focus",
+        "_id": "sP6tcjAtvXSZEc8x",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Une fois par tour : Critical Hit avec votre Lame-aiguille, ou créature hostile réduite à 0 HP avec elle",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-@scale.voie-de-l-aiguille.crest",
+              "target": "Compendium.dnd5e.classes24.Item.phbmnkMonksFocus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "recovery": [],
+          "max": "",
+          "spent": 0
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "uses": {
+      "max": "max(1, @abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Votre rythme de combat nourrit votre réserve de soie.</p><p>Une fois par tour, lorsque vous obtenez un Critical Hit avec votre Lame-aiguille ou réduisez une créature hostile à 0 HP avec celle-ci, vous pouvez récupérer <strong>1 Focus Point dépensé</strong> (<strong>2 Focus Points</strong> à partir du niveau 17).</p><p>Vous pouvez récupérer du Focus de cette manière un nombre de fois égal à votre Wisdom modifier (minimum 1). Vous récupérez toutes les utilisations lorsque vous terminez un Long Rest.</p><section class=\"secret\" id=\"secret-sz7AU7HDEGcClmU6\"><p><strong>Foundry Note</strong></p><p>L’activité dépense une utilisation et vous rend [[lookup @scale.voie-de-l-aiguille.crest]]{1} Focus Point(s) selon votre niveau.</p></section>",
+      "chat": ""
+    },
+    "identifier": "crest-evolue",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "La Voie de l’Aiguille 6",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [],
+  "folder": "uY7DQv33qnariAsF",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511308702,
+    "modifiedTime": 1793660000000,
+    "lastModifiedBy": "ppJzl6mDRBw2GO6v",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "nyjHciBCnkNUOAng",
+  "sort": 125000
+}

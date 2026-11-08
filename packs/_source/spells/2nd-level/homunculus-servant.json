@@ -1,0 +1,180 @@
+{
+  "_id": "mJEZnEMJWWeiQAgk",
+  "name": "Homunculus Servant",
+  "type": "spell",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "folder": "KR0wEnGpvmed4zUO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You summon a special homunculus in an unoccupied space within range, using the Homunculus Servant stat block. If you already have a homunculus from this spell, the new one replaces it. You choose its appearance, such as a mechanical-looking bird, winged vials, or a tiny walking cauldron.</p><p><strong>Combat.</strong> The homunculus is an ally to you and your allies. In combat, it shares your Initiative count but takes its turn immediately after yours. It obeys your commands (no action required by you); if you give none, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"secret\" id=\"secret-CksZia2JOQZA5KpJ\"><p><strong>Foundry Note</strong></p><p>The homunculus’s Hit Points and Force Strike damage include the spell’s level; Magic Bond (the spell’s level to its ability checks and saving throws) is applied by hand.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "homunculus-servant",
+    "activation": {
+      "type": "hour",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "10",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 2,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "materials": {
+      "value": "a gem worth 100+ GP",
+      "consumed": false,
+      "cost": 100,
+      "supply": 0
+    },
+    "activities": {
+      "ARImzOj2NRch3hiD": {
+        "type": "summon",
+        "_id": "ARImzOj2NRch3hiD",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.R44PRiaYKTxYnkoT",
+            "_id": "YlVgIxWjZT2uC9DX"
+          }
+        ],
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "@item.level * 5",
+          "attackDamage": "@item.level",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

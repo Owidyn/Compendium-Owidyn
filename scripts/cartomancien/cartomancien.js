@@ -3,11 +3,11 @@ import {
   ensureContent,
   getAvailableCartomancienSpellSources,
   importSpellToActor,
-  syncActorContent,
-  isCartomancienSpell
+  syncActorContent
 } from "./content.js";
 import { influxLevel, isConsecutiveDraw, cantripCount } from "./rules.js";
 import { registerFeatureAutomation } from "./features.js";
+import { migrated } from "../owidyn/migration.mjs";
 
 const MODULE_ID = "compendium-owidyn";
 const CARD_FACE_IMG = `modules/${MODULE_ID}/assets/cartomancien/tarot-card.svg`;
@@ -90,12 +90,26 @@ function getCardDef(index) {
   return ARCANA.find(c => c.index === Number(index));
 }
 
-function getActorSpells(actor, level) {
-  return actor.items
-    .filter(item => item.type === "spell"
-      && Number(item.system?.level ?? 0) === Number(level)
-      && isCartomancienSpell(item.name, level))
-    .sort((a, b) => a.name.localeCompare(b.name, game.i18n.lang));
+/**
+ * Spells a card of this level can be bound to: the ones of that level on the character sheet, then the ones of the
+ * Cartomancien Spell List found in the compendiums. One entry per spell name, keeping the bound copy; the copies dnd5e
+ * keeps of spells cast through an item (`cachedFor`) belong to that item and are left out.
+ */
+async function getSpellChoices(actor, level, currentUuid = "") {
+  const choices = new Map();
+  for (const item of actor.items) {
+    if (item.type !== "spell" || Number(item.system?.level ?? -1) !== Number(level) || item.flags?.dnd5e?.cachedFor) continue;
+    const key = normalize(item.name);
+    if (!choices.has(key) || item.uuid === currentUuid) choices.set(key, { name: item.name, uuid: item.uuid, spell: item });
+  }
+  const { available, missing } = await getAvailableCartomancienSpellSources(level, { actor });
+  for (const entry of available) {
+    if (!choices.has(normalize(entry.name))) choices.set(normalize(entry.name), entry);
+  }
+  return {
+    choices: [...choices.values()].sort((a, b) => a.name.localeCompare(b.name, game.i18n.lang)),
+    missing
+  };
 }
 
 function cardLabel(def) {
@@ -211,9 +225,9 @@ function makeCardData(def, actor) {
 }
 
 /**
- * Bind a spell to a deck card: only a spell of the Cartomancien Spell List already on the character sheet, of the card's
- * exact level, can be chosen. Returns "none" when the sheet has no such spell left for the card (`quiet` skips the
- * warning, for the synchronization to give a single one).
+ * Bind a spell of the card's exact level to a deck card: a spell of the character sheet, or one of the Cartomancien
+ * Spell List from the compendiums, which is then added to the sheet. Returns "none" when no such spell is left for the
+ * card (`quiet` skips the warning, for the synchronization to give a single one).
  */
 async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = false, quiet = false } = {}) {
   if (!actor.isOwner) return false;
@@ -230,43 +244,52 @@ async function chooseSpellForCard(actor, deck, arcanaIndex, { consumeCredit = fa
   const preparedElsewhere = new Set(deck.cards.filter(c => c.id !== sourceCard.id)
     .map(c => c.getFlag(MODULE_ID, "cartomancien.spellUuid")).filter(Boolean)
     .map(uuid => fromUuidSync(uuid)?.name).filter(Boolean).map(normalize));
-  const available = getActorSpells(actor, def.spellLevel).filter(spell => !preparedElsewhere.has(normalize(spell.name)));
+  const { choices, missing } = await getSpellChoices(actor, def.spellLevel, currentUuid);
+  const available = choices.filter(choice => !preparedElsewhere.has(normalize(choice.name)));
 
   if (!available.length) {
-    if (!quiet) ui.notifications.warn(`Aucun sort de niveau ${def.spellLevel} de la liste du Cartomancien n'est disponible sur la fiche : ajoute-le d'abord à la fiche du personnage.`);
+    if (!quiet) ui.notifications.warn(`Aucun sort de niveau ${def.spellLevel} n'est disponible, ni sur la fiche, ni dans la Spell List du Cartomancien.`);
     return "none";
   }
 
   const options = available.map(s => {
     const selected = s.uuid === currentUuid ? "selected" : "";
-    return `<option value="${s.uuid}" ${selected}>${foundry.utils.escapeHTML(s.name)}</option>`;
+    const origin = s.spell ? "sur la fiche" : "Spell List";
+    return `<option value="${s.uuid}" ${selected}>${foundry.utils.escapeHTML(`${s.name} — ${origin}`)}</option>`;
   }).join("");
+  const missingNote = missing.length
+    ? `<p class="hint"><strong>${missing.length}</strong> sort(s) de ce niveau de la Spell List ne sont disponibles dans aucun compendium activé.</p>`
+    : "";
 
   const result = await foundry.applications.api.DialogV2.input({
     window: { title: `${cardLabel(def)} — choisir le sort` },
     content: `
       <div class="form-group">
-        <label>Sort de Cartomancien niveau ${def.spellLevel}</label>
+        <label>Sort de niveau ${def.spellLevel}</label>
         <select name="spellUuid">${options}</select>
       </div>
-      <p>La carte ne peut recevoir qu'un sort de la <strong>Spell List du Cartomancien</strong>, exactement de son niveau, déjà présent sur la fiche du personnage.</p>
-      <p class="hint">Pour en proposer d'autres, ajoute-les d'abord à la fiche depuis la Spell List du Cartomancien.</p>`,
+      <p>La carte reçoit un sort de son niveau : un sort déjà sur la fiche du personnage, ou un sort de la <strong>Spell List du Cartomancien</strong>, qui est alors ajouté à la fiche.</p>
+      ${missingNote}`,
     ok: { label: "Lier ce sort" },
     rejectClose: false,
     modal: true
   });
 
-  const spell = available.find(s => s.uuid === result?.spellUuid);
-  if (!spell) return false;
+  const choice = available.find(s => s.uuid === result?.spellUuid);
+  if (!choice) return false;
 
-  if (consumeCredit && currentUuid && currentUuid !== spell.uuid) {
-    const credits = Number(actor.getFlag(MODULE_ID, "cartomancien.replacementCredits") ?? 0);
-    if (credits <= 0) {
-      ui.notifications.warn("Aucun changement de sort disponible pour ce niveau de Cartomancien.");
-      return false;
-    }
-    await actor.setFlag(MODULE_ID, "cartomancien.replacementCredits", credits - 1);
+  const changing = consumeCredit && currentUuid && currentUuid !== choice.uuid;
+  const credits = Number(actor.getFlag(MODULE_ID, "cartomancien.replacementCredits") ?? 0);
+  if (changing && credits <= 0) {
+    ui.notifications.warn("Aucun changement de sort disponible pour ce niveau de Cartomancien.");
+    return false;
   }
+  const spell = choice.spell ?? await importSpellToActor(actor, choice.uuid);
+  if (!spell) {
+    ui.notifications.error(`Impossible d'ajouter ${choice.name} à la fiche du personnage.`);
+    return false;
+  }
+  if (changing) await actor.setFlag(MODULE_ID, "cartomancien.replacementCredits", credits - 1);
 
   await sourceCard.setFlag(MODULE_ID, "cartomancien.spellUuid", spell.uuid);
   ui.notifications.info(`${cardLabel(def)} est maintenant liée à ${spell.name}.`);
@@ -323,14 +346,14 @@ async function synchronize(actor, { promptAssignments = true, quiet = false } = 
   });
 
   if (promptAssignments) {
-    // Spell levels of the cards left unbound because the sheet has no spell of the list to give them
+    // Spell levels of the cards left unbound because no spell of their level is left to give them
     const unbound = new Set();
     for (const card of [...stacks.deck.cards].filter(c => !c.getFlag(MODULE_ID, "cartomancien.spellUuid"))) {
       const index = getArcanaIndex(card);
       const result = await chooseSpellForCard(actor, stacks.deck, index, { consumeCredit: false, quiet: true });
       if (result === "none") unbound.add(getCardDef(index).spellLevel);
     }
-    if (unbound.size) ui.notifications.warn(`Cartes sans sort : ajoute à la fiche des sorts de niveau ${[...unbound].sort((a, b) => a - b).join(", ")} de la liste du Cartomancien, puis lie-les depuis le gestionnaire.`);
+    if (unbound.size) ui.notifications.warn(`Cartes sans sort : aucun sort de niveau ${[...unbound].sort((a, b) => a - b).join(", ")} n'est disponible, ni sur la fiche, ni dans la Spell List du Cartomancien. Ajoute-en à la fiche, puis lie-les depuis le gestionnaire.`);
   }
 
   if (firstSetup && stacks.hand.cards.size === 0) {
@@ -895,6 +918,7 @@ Hooks.once("ready", async () => {
 
   if (game.user.isGM && (!game.users.activeGM || game.users.activeGM.id === game.user.id)) {
     try {
+      await migrated;
       await ensureContent({ notify: true });
     } catch (err) {
       console.error(`${MODULE_ID} | erreur d'installation des compendiums`, err);

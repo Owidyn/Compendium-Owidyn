@@ -1,0 +1,271 @@
+{
+  "_id": "bJcoegCDaPUEAx5a",
+  "name": "NOT YET",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/not-yet.svg",
+  "folder": "R9EkiIIPMEOe3XN9",
+  "sort": 10000,
+  "system": {
+    "description": {
+      "value": "<p>Lorsque l'un de vos alliés situé à 30 ft ou moins d'une Forme devrait tomber à 0 Hit Points ou échoue à un Saving Throw, vous pouvez utiliser votre Reaction. Choisissez une Forme située à 30 ft ou moins de cette créature et détruisez-la. Son Orbital devient Dépensé et sa Rupture n'est pas déclenchée. Choisissez l'effet approprié.</p><p><strong>Refuser la chute.</strong> Si la créature devait tomber à 0 Hit Points, elle tombe à <strong>1 Hit Point</strong> à la place. Elle gagne ensuite <strong>2 Dés de Fusion + votre modificateur de Charisma Hit Points</strong> et peut se téléporter dans l'espace qu'occupait la Forme ou dans un espace inoccupé situé à 5 ft ou moins.</p><p><strong>Refuser l'échec.</strong> Si la créature a échoué à un Saving Throw, elle relance immédiatement le Saving Throw et ajoute <strong>1 Dé de Fusion</strong> au nouveau résultat. Elle doit utiliser ce nouveau résultat.</p><p>Une fois NOT YET utilisé, vous devez terminer un Short ou Long Rest avant de pouvoir l'utiliser de nouveau.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC"
+    },
+    "identifier": "not-yet",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 10 (Soothing Star)",
+    "prerequisites": {
+      "level": 10,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "VLiN8x3kUs3xRKxZ": {
+        "_id": "VLiN8x3kUs3xRKxZ",
+        "type": "heal",
+        "name": "Refuser la chute",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "Un allié à 30 ft ou moins d'une Forme devrait tomber à 0 Hit Points",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "notyet",
+              "sacrifice": true,
+              "teleportToForm": true
+            }
+          }
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "2@scale.heliarque.fusion.die + @abilities.cha.mod"
+          },
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "cqiI8d745d1uSgFN": {
+        "_id": "cqiI8d745d1uSgFN",
+        "type": "utility",
+        "name": "Refuser l'échec",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "Un allié à 30 ft ou moins d'une Forme échoue à un Saving Throw",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "notyet",
+              "sacrifice": true
+            }
+          }
+        },
+        "roll": {
+          "formula": "1@scale.heliarque.fusion.die",
+          "name": "Bonus au nouveau jet",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "not-yet"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

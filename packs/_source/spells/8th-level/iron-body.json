@@ -1,0 +1,259 @@
+{
+  "_id": "uoKfye7kiFg4SkXF",
+  "name": "Iron Body",
+  "type": "spell",
+  "img": "icons/magic/defensive/armor-shield-barrier-steel.webp",
+  "folder": "yXi4rP3BbtNBsPwp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>A willing creature you touch turns into living metal. Until the spell ends, its &amp;Reference[exhaustion apply=false]{Exhaustion} level can’t increase; it has Resistance to Bludgeoning, Fire, Piercing, and Slashing damage; and it has Immunity to Poison damage and the &amp;Reference[paralyzed apply=false]{Paralyzed}, &amp;Reference[petrified apply=false]{Petrified}, and &amp;Reference[poisoned apply=false]{Poisoned} conditions. If it has any of those conditions when you cast the spell, they end immediately.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "iron-body",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "willing",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "diamond dust worth 250+ GP, which the spell consumes",
+      "consumed": true,
+      "cost": 250,
+      "supply": 0
+    },
+    "activities": {
+      "lKZ06Xr9VGupDg9y": {
+        "type": "utility",
+        "_id": "lKZ06Xr9VGupDg9y",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "rDJA8WtA8XB2l50a"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Iron Body",
+      "img": "icons/magic/defensive/armor-shield-barrier-steel.webp",
+      "_id": "rDJA8WtA8XB2l50a",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "kU2l8MGgRAVTwjcE"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "BcxlsXVzDUcSNANT"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "4JxGjPk89JJGqD4u"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "bA50MNWLpwAeSXbu"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3hgITMr6ythDpULS"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "paralyzed",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xZjTDkp1EpLVp0X9"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "petrified",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "FKYFclGBDfflkWRv"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "poisoned",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "noDIxSsVbD5SQ7na"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

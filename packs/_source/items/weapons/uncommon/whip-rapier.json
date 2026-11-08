@@ -1,0 +1,378 @@
+{
+  "name": "Whip Rapier",
+  "system": {
+    "description": {
+      "value": "<p><em>Weapon (Rapier), Uncommon</em></p><p>The blade of this rapier is made of interlocking segments. You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.</p><p><strong>Segmented Blade.</strong> As a Bonus Action, you can unlock the blade into a flexible whip, or lock it back into a rapier. As a whip, the weapon deals 1d4 Slashing damage instead of 1d8 Piercing damage, has the Reach property, and uses the Slow mastery property instead of Vex; it keeps the Finesse property.</p><section class=\"secret\" id=\"secret-WfxMbu3eOuqhy5UU\"><p><strong>Foundry Note</strong></p><p><em>Segmented Blade</em> donne à l’arme sa forme de fouet (1d4 Slashing, Reach, maîtrise Slow) ; utilisez-la de nouveau pour revenir à la rapière.</p></section>",
+      "chat": ""
+    },
+    "price": {
+      "value": 425,
+      "denomination": "gp"
+    },
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "types": [
+          "piercing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "rapier"
+    },
+    "magicalBonus": 1,
+    "properties": [
+      "fin",
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {
+      "0PGNisis4CVkSml5": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "_id": "0PGNisis4CVkSml5",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "aEyxdyyAkC3EypCU": {
+        "type": "enchant",
+        "_id": "aEyxdyyAkC3EypCU",
+        "sort": 100000,
+        "name": "Segmented Blade",
+        "img": "icons/skills/melee/strike-chain-whip-blue.webp",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "OdK1HZ8bbucb31Eb",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "self": true
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        }
+      }
+    },
+    "ammunition": {},
+    "mastery": "vex",
+    "identifier": "whip-rapier"
+  },
+  "_id": "eh1UTWBXHoHxCHN6",
+  "type": "weapon",
+  "folder": "CORNXrZXx7JFHG0n",
+  "img": "icons/weapons/swords/sword-guard-flanged-purple.webp",
+  "effects": [
+    {
+      "name": "Whip Form",
+      "img": "icons/skills/melee/strike-chain-whip-blue.webp",
+      "_id": "OdK1HZ8bbucb31Eb",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.damage.base.denomination",
+            "value": 4,
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "Fr4nIWoZ1PvpSLxn"
+          },
+          {
+            "key": "system.damage.base.types",
+            "value": "-piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rDpBIlNAjOh6GGpC"
+          },
+          {
+            "key": "system.damage.base.types",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dUwZSJmEEiAk9eh5"
+          },
+          {
+            "key": "system.range.reach",
+            "value": 10,
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "JXK0UUBppKgsjFLi"
+          },
+          {
+            "key": "system.properties",
+            "value": "rch",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "NcDC7sA93Kv0zZRQ"
+          },
+          {
+            "key": "system.mastery",
+            "value": "slow",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "457Al31M8S33dEEF"
+          },
+          {
+            "key": "name",
+            "value": "{} (Whip Form)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "7zN3nHkShaDUw4fp"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The blade is unlocked into a flexible whip: 1d4 Slashing damage, Reach, Slow mastery.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794193200000,
+        "modifiedTime": 1794193200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794193200000,
+    "modifiedTime": 1794193200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -7,10 +7,11 @@
     "build:heliarque": "node tools/heliarque/build.mjs",
     "check:heliarque": "node tools/heliarque/build.mjs --check",
     "migrate-world": "node tools/migrate-world.mjs",
-    "test": "npm run test:heliarque && npm run test:cartomancien && npm run test:boutiques",
+    "test": "npm run test:heliarque && npm run test:cartomancien && npm run test:boutiques && npm run test:owidyn",
     "test:heliarque": "node tests/heliarque/content.test.mjs && node tests/heliarque/rules.test.mjs",
     "test:cartomancien": "node --experimental-vm-modules tests/cartomancien/deck.test.mjs && node --experimental-vm-modules tests/cartomancien/content.test.mjs && node --experimental-vm-modules tests/cartomancien/features.test.mjs",
-    "test:boutiques": "node tests/boutiques/catalogue.test.mjs && node --experimental-vm-modules tests/boutiques/boutiques.test.mjs"
+    "test:boutiques": "node tests/boutiques/catalogue.test.mjs && node --experimental-vm-modules tests/boutiques/boutiques.test.mjs",
+    "test:owidyn": "node --experimental-vm-modules tests/owidyn/migration.test.mjs"
   },
   "devDependencies": {
     "classic-level": "1.4.1"

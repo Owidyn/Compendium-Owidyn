@@ -1,0 +1,157 @@
+{
+  "name": "Magic Initiate (Druid)",
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Two Cantrips.</strong> You learn two cantrips of your choice from the @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric}, @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druid}, or @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</p><p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p><p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p><p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different spell list each time.</p><section class=\"secret\" id=\"secret-gYlGJ4nqnh87JE4z\"><p><strong>Foundry Note</strong></p><p>This copy of @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate} only offers spells from the Druid spell list: it is the feat granted by the @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.bn9bzphLj0Y6qU3U]{Guide} background. To pick another spell list, use the official feat.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "CC-BY-4.0",
+      "book": "OSC"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": true,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "magic-initiate-druid",
+    "advancement": {
+      "ElkyDafWSUXOkPdJ": {
+        "type": "ItemChoice",
+        "_id": "ElkyDafWSUXOkPdJ",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [
+              "class:druid"
+            ],
+            "level": "0",
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "prepared": 0
+          },
+          "type": "spell",
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "",
+        "name": "Two Cantrips",
+        "flags": {},
+        "title": "Two Cantrips"
+      },
+      "ZbKHs2FVCkJVNW8p": {
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [
+              "class:druid"
+            ],
+            "level": "1",
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "prepared": 2
+          },
+          "type": "spell",
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "",
+        "_id": "ZbKHs2FVCkJVNW8p",
+        "name": "Level 1 Spell",
+        "flags": {},
+        "title": "Level 1 Spell"
+      }
+    },
+    "crewed": false
+  },
+  "type": "feat",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+  "effects": [],
+  "folder": "MgZSCfP4IH3V1nCF",
+  "ownership": {
+    "default": 0,
+    "ppJzl6mDRBw2GO6v": 3
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1792511714341,
+    "modifiedTime": 1793712000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "3cZndrZX1F7P01f9",
+  "sort": 100000
+}

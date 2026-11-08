@@ -1,0 +1,360 @@
+{
+  "_id": "3f9ZOdCyJueZMrtw",
+  "name": "Alustriel's Mooncloak",
+  "type": "spell",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+  "folder": "yL1ACoe0mGMzSWKO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>For the duration, moonlight fills a 20-foot Emanation originating from you with Dim Light. While in that area, you and your allies have &amp;Reference[halfcover apply=false]{Half Cover} and Resistance to Cold, Lightning, and Radiant damage.</p><p>While the spell lasts, you can use one of the following options, which ends the spell immediately.</p><p><strong>Liberation.</strong> When you fail a saving throw to avoid or end the &amp;Reference[frightened apply=false]{Frightened}, &amp;Reference[grappled apply=false]{Grappled}, or &amp;Reference[restrained apply=false]{Restrained} condition, you can take a Reaction to succeed on the save instead.</p><p><strong>Respite.</strong> As a Magic action, you or an ally in the area regains Hit Points equal to 4d10 plus your spellcasting ability modifier.</p><section class=\"secret\" id=\"secret-TSLIpaiCDcthQ6SP\"><p><strong>Foundry Note</strong></p><p>Apply the effect (Half Cover and the Resistances) to the allies in the area. Using Liberation or Respite ends the spell.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "alustriels-mooncloak",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": true,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "radius",
+        "size": "20",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 5,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a moonstone worth 50+ GP",
+      "consumed": false,
+      "cost": 50,
+      "supply": 0
+    },
+    "activities": {
+      "BiLWPwYzAStWmfTk": {
+        "type": "utility",
+        "_id": "BiLWPwYzAStWmfTk",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "GBLU2pYGhlTm6kq5"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      },
+      "5WcWD7px6JeSlETg": {
+        "type": "heal",
+        "_id": "5WcWD7px6JeSlETg",
+        "sort": 100000,
+        "name": "Respite",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": true,
+          "condition": "Magic action, ending the spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": 4,
+          "denomination": 10,
+          "bonus": "@mod",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "y5agbRe335LGhVEt": {
+        "type": "utility",
+        "_id": "y5agbRe335LGhVEt",
+        "sort": 200000,
+        "name": "Liberation",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": true,
+          "condition": "when you fail a saving throw to avoid or end the Frightened, Grappled, or Restrained condition, ending the spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Alustriel’s Mooncloak",
+      "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+      "_id": "GBLU2pYGhlTm6kq5",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "M79LumHTc9dFs9uI"
+          },
+          {
+            "key": "system.abilities.dex.bonuses.save",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "OWqaItbScHgOGWBX"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "YwgZqSSsuQcbl7UX"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "tBFMrlUrs0Rjo1mu"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "hckH9VGplSwRutGe"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

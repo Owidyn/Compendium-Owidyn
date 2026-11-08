@@ -8,7 +8,7 @@ Classe **Héliarque** et discipline **Soothing Star** pour **Foundry VTT 14** et
 
 1. Activez **Compendium Owidyn** dans le monde, puis rechargez.
 2. Au chargement (MJ connecté), le module crée pour chaque Héliarque un acteur **Orbital** par point de Formes simultanées, dans le dossier **Héliarque — Orbitals**, et en donne la propriété aux joueurs de l'Héliarque. Les copies des Formes importées par les versions 2.0–2.2 sont supprimées si aucun pion ne les utilise. Le réglage dnd5e **Allow Summoning** est activé s'il ne l'était pas. Les joueurs doivent aussi avoir la permission Foundry **Créer des pions**.
-3. Glissez **Héliarque** depuis le compendium **Compendium Owidyn** (dossier *Class › Héliarque*) sur la fiche du personnage. Les Formes sont dans le compendium **Héliarque — Formes orbitales**.
+3. Glissez **Héliarque** depuis le compendium **Classes** (dossier *Héliarque*) sur la fiche du personnage. Les Formes sont dans le compendium **Creatures** (dossier *Construct*), masqué aux joueurs : le module les lit quand même pour les Manifestations.
 
 Les flags de l'Héliarque sont rangés sous `flags.compendium-owidyn.heliarque`. L'archive de la version 1.4.0 de l'ancien module n'est plus dans le module : elle reste dans la sauvegarde `FoundryVTT/Backups/fusion-owidyn-2026-11-02/modules/Heliarque/archive/`.
 
@@ -40,10 +40,10 @@ Les flags de l'Héliarque sont rangés sous `flags.compendium-owidyn.heliarque`.
 
 ```sh
 npm install                # classic-level, pour écrire les compendiums
-npm run build:heliarque    # tools/heliarque/content/*.mjs → packs/_source/heliarque (JSON) + packs/ (LevelDB)
+npm run build:heliarque    # tools/heliarque/content/*.mjs → packs/ (LevelDB) + leurs sources : packs/_source/classes/heliarque et packs/_source/creatures/construct (JSON)
 npm run test:heliarque
 ```
 
 Fermez le monde dans Foundry avant `npm run build:heliarque` : les compendiums sont verrouillés pendant qu'il est ouvert. La compilation le détecte et s'arrête sans rien modifier.
 
-Le compendium d'objets est partagé avec le reste du contenu Owidyn : la compilation ne remplace que les documents Héliarque (ceux qui portent `flags.compendium-owidyn.heliarque`) et laisse tout le reste intact. Le dossier *Héliarque* garde l'emplacement où il a été déplacé. Ne rangez donc pas d'objet personnel dans ses dossiers, et modifiez le contenu Héliarque dans `tools/heliarque/content/`, pas dans Foundry : une recompilation écraserait ces changements.
+Les compendiums Classes et Creatures sont partagés avec le reste du contenu Owidyn : la compilation ne remplace que les documents Héliarque (ceux qui portent `flags.compendium-owidyn.heliarque`) et laisse tout le reste intact. Le dossier *Héliarque* et les Formes gardent l'emplacement où ils ont été déplacés ; à la première compilation, les Formes vont dans le dossier *Construct* de Creatures. Ne rangez donc pas d'objet personnel dans les dossiers de l'Héliarque, et modifiez le contenu Héliarque dans `tools/heliarque/content/`, pas dans Foundry : une recompilation écraserait ces changements.

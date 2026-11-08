@@ -1,0 +1,144 @@
+{
+  "name": "Armure de Confinement Runique (Force ajoutée)",
+  "type": "equipment",
+  "_id": "NZuyF3Sutu552wb2",
+  "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+  "folder": "x0rugDoOR613Ew9B",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p><em>Special Heavy Armor</em></p><p>Cette armure a été spécialement construite pour contenir l'essence d'une créature élémentaire.</p><p>Sa structure utilise des matériaux capables de résister à une importante quantité d'énergie élémentaire. Des runes gravées sur l'ensemble de l'armure maintiennent l'essence de son prisonnier comprimée à l'intérieur et limitent l'expression de sa véritable forme.</p><p><strong>Armor Category :</strong> Heavy Armor<br><strong>Armor Class :</strong> 17<br><strong>Strength Requirement :</strong> —<br><strong>Stealth :</strong> Disadvantage<br><strong>Weight :</strong> 552 lb<br><strong>Height :</strong> 7,9 ft</p><p>Une créature liée à cette armure par le feat @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.OvjNCufh2lRMoVGv]{Sceau de Confinement} possède automatiquement Armor Training avec cette armure. Cette maîtrise ne s'étend à aucune autre Heavy Armor.</p><p>L'Armure de Confinement Runique ne peut pas être retirée normalement tant que les runes de confinement restent actives.</p><p>Elle est conçue spécifiquement pour la créature qu'elle contient et ne peut pas servir d'Armure de Confinement à une autre créature sans être entièrement modifiée.</p><h3>Confinement runique</h3><p>Tant que vous portez cette armure : Votre modificateur de Dexterity est converti en bonus de Strength (minimum +1), qui s'ajoute à votre modificateur de Strength. Votre modificateur de Dexterity devient +0. <em>Exemple : Dex 14 (+2) et Str 16 (+3) → Str +5, Dex +0.</em></p><section class=\"secret\" id=\"secret-ddUMDsIjDtYLAQIK\"><p><strong>Foundry Note</strong></p><p>Version de test « Force ajoutée ». L'effet <em>Confinement runique</em> s'applique tant que l'armure est équipée : il fixe la Dexterity à 10 et modifie la Strength de la valeur correspondante. Le porteur est toujours considéré comme maîtrisant cette armure. L'interdiction de la retirer n'est pas automatisée.</p></section>",
+      "chat": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "armure-de-confinement-runique",
+    "identified": true,
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 552,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 17,
+      "magicalBonus": null,
+      "dex": 0
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "heavy",
+      "baseItem": ""
+    },
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "activities": {}
+  },
+  "effects": [
+    {
+      "name": "Confinement runique",
+      "img": "icons/equipment/chest/breastplate-banded-blue.webp",
+      "_id": "B3maJrUPEu7mEup2",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.value",
+            "value": "2 * max(1, floor((@abilities.dex.value - 10) / 2))",
+            "priority": null,
+            "type": "owidyn-formula-add",
+            "phase": "initial",
+            "_id": "zumbt7iXBGWyjVxg"
+          },
+          {
+            "key": "system.abilities.dex.value",
+            "value": 10,
+            "priority": 60,
+            "type": "override",
+            "phase": "initial",
+            "_id": "aIrDCeGU7aFZ3ku5"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Votre modificateur de Dexterity est converti en bonus de Strength (minimum +1), qui s'ajoute à votre modificateur de Strength. Votre modificateur de Dexterity devient +0. <em>Exemple : Dex 14 (+2) et Str 16 (+3) → Str +5, Dex +0.</em></p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793653326791,
+        "modifiedTime": 1793653326791,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793653326791,
+    "modifiedTime": 1793653326791,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

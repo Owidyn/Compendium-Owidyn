@@ -1,0 +1,233 @@
+{
+  "_id": "9q60WarUC4evv3ZG",
+  "name": "Zone of Amicability",
+  "type": "spell",
+  "img": "icons/magic/holy/yin-yang-balance-symbol.webp",
+  "folder": "lzC0VNsq06qtpgKG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>A zone of goodwill radiates from you in a 60-foot Emanation for the duration. When you make an ability check to influence a creature in that area, you can treat a d20 roll of 9 or lower as a 10.</p><section class=\"secret\" id=\"secret-uZtqLJ6huCHgckc7\"><p><strong>Foundry Note</strong></p><p>The effect sets a minimum of 10 on the d20 of your Animal Handling, Deception, Intimidation, Performance and Persuasion checks; it only applies to influencing creatures in the zone.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "zone-of-amicability",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "radius",
+        "size": "60",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 4,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "pWRcXi2MGf5JsWSD": {
+        "type": "utility",
+        "_id": "pWRcXi2MGf5JsWSD",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "qMrZTNImcJHgBi2q"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Zone of Amicability",
+      "img": "icons/magic/holy/yin-yang-balance-symbol.webp",
+      "_id": "qMrZTNImcJHgBi2q",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ani.roll.min",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "O26NxRGBZExzYhWd"
+          },
+          {
+            "key": "system.skills.dec.roll.min",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "MkAvyOff9UFNPBac"
+          },
+          {
+            "key": "system.skills.itm.roll.min",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "f3dqqnW74otgSUOe"
+          },
+          {
+            "key": "system.skills.prf.roll.min",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "bASYk7RAUgyGee9F"
+          },
+          {
+            "key": "system.skills.per.roll.min",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "elFjdkhtRJHVHAy6"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

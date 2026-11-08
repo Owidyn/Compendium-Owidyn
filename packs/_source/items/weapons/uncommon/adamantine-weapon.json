@@ -1,0 +1,263 @@
+{
+  "_id": "rdcPFN2FoCO5OILf",
+  "name": "Adamantine Weapon",
+  "type": "weapon",
+  "folder": "CORNXrZXx7JFHG0n",
+  "img": "icons/weapons/swords/sword-guard-steel-green.webp",
+  "sort": 100000,
+  "system": {
+    "activities": {
+      "0egj56akKKsKLtUi": {
+        "type": "enchant",
+        "_id": "0egj56akKKsKLtUi",
+        "sort": 0,
+        "name": "Adamantine Weapon",
+        "img": "",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "z6KG3NfrFMFFuGbI",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "properties": [],
+          "type": "",
+          "categories": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Any Ammunition or Melee Weapon), Uncommon</em></p><p>This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.</p><section class=\"secret\" id=\"secret-VuGWjj24P1b15WBk\"><p><strong>Foundry Note</strong></p><p>Glissez l’enchantement sur une arme de corps à corps ou des munitions : elles gardent leur nom, leur rareté et leur prix, et l’arme reçoit la propriété Adamantine. Le coup critique contre un objet est à appliquer à la main.</p></section><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
+      "chat": ""
+    },
+    "identifier": "adamantine-weapon",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "",
+      "baseItem": ""
+    },
+    "ammunition": {},
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": 0,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "mastery": ""
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Adamantine Weapon",
+      "img": "systems/dnd5e/icons/spell-tiers/spell2.webp",
+      "disabled": true,
+      "_id": "z6KG3NfrFMFFuGbI",
+      "system": {
+        "changes": [
+          {
+            "key": "system.description.value",
+            "value": "{}<p>@Embed[Compendium.compendium-owidyn.items.Item.rdcPFN2FoCO5OILf caption=false]</p>",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "dk0gq3MdUpnxMbHE"
+          },
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Mk0yOJ42dGaLsZG6"
+          },
+          {
+            "key": "system.properties",
+            "value": "ada",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3yO4hVZ7yx3sIlUl"
+          }
+        ]
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793820000000,
+        "modifiedTime": 1793820000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

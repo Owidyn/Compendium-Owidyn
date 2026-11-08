@@ -2,7 +2,8 @@
 // Regression checks of the shop rules; the tables, the journal and the window need a Foundry test.
 import assert from 'node:assert/strict';
 import {
-  SHOPS, STABLE, CATEGORY_LABELS, RARITIES, placesOf, priceOf, sourceRank, allowsCategory, pickWeighted, adjustPrice
+  SHOPS, STABLE, INN, INN_RULES, CATEGORY_LABELS, RARITIES, placesOf, priceOf, scrollOf, scrollRarityOf, sellsScrolls, sourceRank,
+  allowsCategory, pickWeighted, adjustPrice
 } from '../../scripts/boutiques/catalogue.mjs';
 
 const item = (type, subtype, { rarity = '', magic = false, price = 1, denomination = 'gp', name = 'Item', baseItem = '' } = {}) => ({
@@ -89,6 +90,36 @@ test('the maximum rarity keeps the mundane categories and the magic ones up to i
   assert.equal(allowsCategory('uncommon', 'uncommon'), true);
   assert.equal(allowsCategory('rare', 'uncommon'), false);
   assert.equal(allowsCategory('legendary', 'legendary'), true);
+  assert.equal(allowsCategory('scrolls-rare', 'uncommon'), false, 'a scroll rarer than the maximum');
+  assert.equal(allowsCategory('scrolls-uncommon', 'uncommon'), true);
+  assert.equal(allowsCategory('scrolls-common', ''), false, 'no scroll without magic items');
+  assert.equal(allowsCategory('lodging', ''), true);
+});
+
+test('a spell is sold as a scroll of the rarity of its level, at half the price of a magic item of that rarity', () => {
+  const spell = level => ({ name: 'Spell', type: 'spell', system: { level } });
+  assert.deepEqual(scrollOf(spell(0)), { shop: 'hutte', category: 'scrolls-common', price: { value: 50, denomination: 'gp' } });
+  assert.deepEqual(scrollOf(spell(1)).category, 'scrolls-common');
+  assert.deepEqual(scrollOf(spell(3)), { shop: 'hutte', category: 'scrolls-uncommon', price: { value: 200, denomination: 'gp' } });
+  assert.deepEqual(scrollOf(spell(5)).category, 'scrolls-rare');
+  assert.deepEqual(scrollOf(spell(8)), { shop: 'hutte', category: 'scrolls-veryRare', price: { value: 20000, denomination: 'gp' } });
+  assert.deepEqual(scrollOf(spell(9)).category, 'scrolls-legendary');
+  assert.equal(scrollRarityOf('scrolls-veryRare'), 'veryRare');
+  assert.equal(scrollRarityOf('rare'), null);
+});
+
+test('scrolls come from dnd5e, the official D&D modules and Owidyn', () => {
+  assert.ok(['dnd5e', 'compendium-owidyn', 'dnd-tashas-cauldron', 'dnd-players-handbook'].every(sellsScrolls));
+  assert.ok(!['chris-premades', 'kctg-5e'].some(sellsScrolls));
+});
+
+test("the inn lists the services of the System Reference Document, with their rules", () => {
+  assert.equal(INN.length, 27);
+  assert.deepEqual([...new Set(INN.map(good => good.category))], Object.keys(SHOPS.auberge.categories));
+  assert.deepEqual(INN.find(good => good.name === 'Inn Stay, Modest (per day)').price, { value: 5, denomination: 'sp' });
+  assert.deepEqual(INN.find(good => good.name === 'Spellcasting: Level 9 (city)').price, { value: 100000, denomination: 'gp' });
+  assert.ok(Object.keys(SHOPS.auberge.categories).every(category => INN_RULES[category]));
+  assert.equal(SHOPS.auberge.all, true);
 });
 
 test('weighted draws follow the weights', () => {
@@ -106,7 +137,7 @@ test('prices are adjusted in their denomination', () => {
 
 test('every shop category has a label and the stable lists the Player\'s Handbook goods', () => {
   for (const { categories } of Object.values(SHOPS)) {
-    for (const category of Object.keys(categories)) assert.ok(RARITIES.includes(category) || CATEGORY_LABELS[category], category);
+    for (const category of Object.keys(categories)) assert.ok(RARITIES.includes(category) || scrollRarityOf(category) || CATEGORY_LABELS[category], category);
   }
   assert.equal(STABLE.length, 21);
   assert.deepEqual([...new Set(STABLE.map(good => good.category))], ['mounts', 'tack', 'vehicles']);

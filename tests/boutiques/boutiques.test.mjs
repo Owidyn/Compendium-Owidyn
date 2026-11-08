@@ -24,8 +24,28 @@ const item = (name, type, subtype, { rarity = '', magic = false, price = 1, deno
   _id: name.replace(/\W/g, '').padEnd(16, '0').slice(0, 16), name, img: 'icons/svg/item-bag.svg', type,
   system: { rarity, properties: magic ? ['mgc'] : [], type: { value: subtype }, price: { value: price, denomination }, source: { rules: '2024' } }
 });
+const spell = (name, level) => ({ _id: name.replace(/\W/g, '').padEnd(16, '0').slice(0, 16), name, img: 'icons/svg/book.svg', type: 'spell',
+  system: { level, source: { rules: '2024' } } });
 
-async function harness() {
+// Index fields of every compendium (Foundry's, plus dnd5e's for items)
+const DEFAULT_INDEX = { Item: ['name', 'type', 'img', 'sort', 'folder', 'system.container', 'system.identifier', 'system.source'], Actor: ['name', 'type', 'img', 'sort', 'folder'] };
+/** As Foundry 14's server: the index fields make a projection, where a field under another one is refused. */
+function projection(documentName, fields = []) {
+  const projected = {};
+  for (const field of new Set([...DEFAULT_INDEX[documentName], ...fields])) {
+    const parts = field.split('.');
+    const key = parts.pop();
+    let target = projected;
+    for (const part of parts) {
+      if (target[part] === undefined) target[part] = {};
+      target = target[part];
+    }
+    if (typeof target !== 'object') throw new TypeError(`Cannot use 'in' operator to search for '${key}' in ${target}`);
+    target[key] = 1;
+  }
+}
+
+async function harness({ spells = [] } = {}) {
   let nextId = 0;
   const notices = [];
   const rendered = [];
@@ -36,8 +56,9 @@ async function harness() {
   };
   const game = {
     user: { isGM: true }, i18n: { lang: 'fr' }, modules: new Map([[MODULE_ID, {}]]),
-    folders: new Collection(), tables: new Collection(), journal: new Collection(), packs: []
+    folders: new Collection(), tables: new Collection(), journal: new Collection(), items: new Collection(), packs: []
   };
+  const enrichers = [];
 
   class Table {
     constructor(data) {
@@ -60,17 +81,30 @@ async function harness() {
 
   const context = vm.createContext({
     console: { log() {}, warn() {}, error() {} },
-    game,
-    Hooks: { on() {}, once(name, handler) { if (name === 'ready') handler(); } },
+    game, document: { createElement: tag => ({ tag, dataset: {} }) },
+    Hooks: { on() {}, once(name, handler) { if (['init', 'ready'].includes(name)) handler(); } },
     CONFIG: { DND5E: {
       itemRarity: { common: 'Commun', uncommon: 'Peu commun', rare: 'Rare', veryRare: 'Très rare', legendary: 'Légendaire' },
       currencies: { gp: { abbreviation: 'po' }, sp: { abbreviation: 'pa' }, cp: { abbreviation: 'pc' } }
-    } },
-    CONST: { JOURNAL_ENTRY_PAGE_FORMATS: { HTML: 1 } },
+    }, TextEditor: { enrichers } },
+    CONST: { JOURNAL_ENTRY_PAGE_FORMATS: { HTML: 1 }, DOCUMENT_OWNERSHIP_LEVELS: { OBSERVER: 2 } },
     foundry: { utils: { escapeHTML: String, objectsEqual: (a, b) => JSON.stringify(a) === JSON.stringify(b) },
       applications: { api: { DialogV2: { wait: async () => null } } } },
     ui: { notifications: Object.fromEntries(['info', 'warn', 'error'].map(type => [type, message => notices.push({ type, message })])) },
     fromUuidSync: uuid => uuids.get(uuid),
+    fromUuid: async uuid => uuids.get(uuid),
+    Item: { implementation: {
+      createScrollFromSpell: async (source, options, config) => (config.dialog === false
+        ? { toObject: () => ({ name: `Spell Scroll: ${source.name}`, type: 'consumable', system: { price: { value: 0, denomination: 'gp' } }, flags: {} }) } : null),
+      createDocuments: async datas => datas.map(data => {
+        const created = doc(data);
+        created.uuid = `Item.${created.id}`;
+        game.items.set(created.id, created);
+        uuids.set(created.uuid, created);
+        return created;
+      }),
+      deleteDocuments: async ids => { for (const id of ids) game.items.delete(id); }
+    } },
     Folder: { implementation: { create: async data => { const folder = doc(data); game.folders.set(folder.id, folder); return folder; } } },
     RollTable: { implementation: { create: async data => { const table = new Table(data); game.tables.set(table.id, table); return table; } } },
     JournalEntry: { implementation: { create: async data => {
@@ -79,8 +113,10 @@ async function harness() {
         const page = doc(data, { async update(changes) { for (const [key, value] of Object.entries(changes)) {
           const parts = key.split('.'); let cursor = this;
           for (const part of parts.slice(0, -1)) cursor = cursor[part] ??= {};
-          cursor[parts.at(-1)] = value;
+          cursor[parts.at(-1)] = clone(value);
         } } });
+        page.uuid = `JournalEntry.${journal.id}.JournalEntryPage.${page.id}`;
+        uuids.set(page.uuid, page);
         journal.pages.set(page.id, page);
         return page;
       });
@@ -91,8 +127,9 @@ async function harness() {
 
   const pack = (collection, documentName, entries, { packageName = collection.split('.')[0], hidden = false } = {}) => ({
     collection, documentName, metadata: { packageName }, ownership: { PLAYER: hidden ? 'NONE' : 'OBSERVER' }, folders: [],
-    getIndex: async () => entries
+    getIndex: async ({ fields } = {}) => { projection(documentName, fields); return entries; }
   });
+  for (const entry of spells) uuids.set(`Compendium.dnd5e.spells24.Item.${entry._id}`, entry);
   game.packs.push(
     pack('dnd5e.equipment24', 'Item', [
       item('Longsword', 'weapon', 'martialM', { price: 15 }), item('Chain Mail', 'equipment', 'heavy', { price: 75 }),
@@ -102,9 +139,12 @@ async function harness() {
       item('Potion of Healing', 'consumable', 'potion', { rarity: 'common', magic: true, price: 50 }),
       item('Acid', 'consumable', 'potion', { price: 25 })
     ]),
-    pack('compendium-owidyn.compendium-owidyn', 'Item', [item('Bag of Holding', 'container', '', { rarity: 'uncommon', magic: true, price: 500 })]),
+    pack('compendium-owidyn.items', 'Item', [item('Bag of Holding', 'container', '', { rarity: 'uncommon', magic: true, price: 500 })]),
+    pack('compendium-owidyn.creature-features', 'Item', [item('Bone Bow', 'weapon', 'martialR', { price: 50 })], { hidden: true }),
     pack('dnd5e.items', 'Item', [item('Riding Saddle', 'equipment', 'clothing', { price: 10 })]),
-    pack('dnd5e.actors24', 'Actor', [{ _id: 'mmRidingHorse000', name: 'Riding Horse', img: 'horse.webp' }])
+    pack('dnd5e.actors24', 'Actor', [{ _id: 'mmRidingHorse000', name: 'Riding Horse', img: 'horse.webp' }]),
+    pack('dnd5e.spells24', 'Item', spells),
+    pack('chris-premades.spells', 'Item', [spell('Automated Copy', 1)])
   );
 
   const modules = new Map();
@@ -118,7 +158,7 @@ async function harness() {
   }
   const main = await load('boutiques.mjs');
   await main.evaluate();
-  return { api: game.modules.get(MODULE_ID).api.boutiques, game, notices, rendered };
+  return { api: game.modules.get(MODULE_ID).api.boutiques, game, notices, rendered, enrichers };
 }
 
 const tableOf = (game, shop, category) => game.tables.find(table => JSON.stringify(table.flags[MODULE_ID].boutique) === JSON.stringify(category ? { shop, category } : { shop }));
@@ -129,13 +169,14 @@ const test = (name, run) => cases.push({ name, run });
 test('the tables give each shop its categories, one copy per name, and link the stable goods', async () => {
   const { api, game } = await harness();
   await api.buildTables({ notify: false });
-  assert.equal(game.folders.size, 6, 'the Boutiques folder and one folder per shop');
+  assert.equal(game.folders.size, 7, 'the Boutiques folder and one folder per shop');
+  assert.ok(tableOf(game, 'hutte', 'uncommon'), 'the item compendiums are indexed: no index field the server refuses');
   const bag = tableOf(game, 'hutte', 'uncommon').results.contents;
   assert.equal(bag.length, 1);
-  assert.equal(bag[0].documentUuid, 'Compendium.compendium-owidyn.compendium-owidyn.Item.BagofHolding0000', 'the Owidyn copy wins');
+  assert.equal(bag[0].documentUuid, 'Compendium.compendium-owidyn.items.Item.BagofHolding0000', 'the Owidyn copy wins');
   assert.deepEqual(bag[0].flags[MODULE_ID].boutique.price, { value: 500, denomination: 'gp' });
   assert.deepEqual(tableOf(game, 'forge', 'rare').results.map(result => result.name), ['Flame Tongue']);
-  assert.deepEqual(tableOf(game, 'forge', 'weapons').results.map(result => result.name), ['Longsword']);
+  assert.deepEqual(tableOf(game, 'forge', 'weapons').results.map(result => result.name), ['Longsword'], 'creature attacks are not goods');
   assert.deepEqual(tableOf(game, 'apothicaire', 'potions').results.map(result => result.name), ['Acid']);
   const mounts = tableOf(game, 'ecurie', 'mounts').results.contents;
   assert.equal(mounts.length, 8);
@@ -183,6 +224,47 @@ test('La Hutte Enchantée needs a maximum rarity, and a stock can take its own n
   const content = game.journal.contents[0].pages.getName('Hutte de Mère Grise').text.content;
   assert.ok(content.includes('550 po'), 'the Bag of Holding at 110 %');
   assert.ok(content.includes('55 po'), 'the Potion of Healing at 110 %');
+});
+
+test('La Hutte Enchantée sells scrolls of the spells, made as world items when drawn and replaced with the stock', async () => {
+  const { api, game } = await harness({ spells: [spell('Fire Bolt', 0), spell('Fireball', 3)] });
+  await api.buildTables({ notify: false });
+  const common = tableOf(game, 'hutte', 'scrolls-common').results.contents;
+  assert.deepEqual(common.map(result => result.name), ['Fire Bolt'], 'the automation copies of other modules are not sold');
+  assert.deepEqual(clone(common[0].flags[MODULE_ID].boutique), { price: { value: 50, denomination: 'gp' }, scroll: true });
+  assert.deepEqual(tableOf(game, 'hutte', 'scrolls-uncommon').results.map(result => result.name), ['Fireball']);
+  const page = await api.generateStock({ shop: 'hutte', count: 20, maxRarity: 'common' });
+  const scrolls = game.items.contents;
+  assert.deepEqual(scrolls.map(scroll => scroll.name), ['Spell Scroll: Fire Bolt'], 'Fireball is uncommon, above the maximum rarity');
+  assert.equal(scrolls[0].ownership.default, 2, 'the players can open and drag it');
+  assert.equal(scrolls[0].flags[MODULE_ID].boutique.page, page.uuid);
+  assert.ok(page.text.content.includes(`@UUID[${scrolls[0].uuid}]{Spell Scroll: Fire Bolt}`));
+  assert.ok(page.text.content.includes(`@Embed[${scrolls[0].uuid} caption=false]`), 'its sheet is embedded');
+  assert.ok(page.text.content.includes('@Embed[Compendium.dnd5e.equipment24.Item.PotionofHealing0 caption=false]'));
+  await api.generateStock({ shop: 'hutte', count: 20, maxRarity: 'common' });
+  assert.equal(game.items.size, 1, 'the scrolls of the previous stock are deleted');
+  assert.notEqual(game.items.contents[0].id, scrolls[0].id);
+});
+
+test("L'Auberge lists all its services with their rules, and a page can draw its stock again", async () => {
+  const { api, game, enrichers } = await harness();
+  const page = await api.generateStock({ shop: 'auberge', count: 3, percent: 200 });
+  const content = page.text.content;
+  assert.equal((content.match(/<tr><td>/g) ?? []).length, 27, 'every service, whatever the number asked');
+  assert.ok(content.includes('<tr><td>Ale (mug)</td><td>Boissons</td><td>8 pc</td></tr>'), 'the price at 200 %');
+  assert.ok(content.includes('@UUID[Compendium.dnd5e.content24.JournalEntry.phbServices00000.JournalEntryPage.f67yi5VSl1jEeHpN]'));
+  assert.ok(content.includes('@OwidynBoutique[regenerate]'));
+  assert.deepEqual(clone(page.flags[MODULE_ID].boutique), { shop: 'auberge', name: "L'Auberge", count: 3, maxRarity: '', percent: 200 });
+  const forge = await api.generateStock({ shop: 'forge', name: 'Forge de Brandur', count: 2 });
+  forge.text.content = '';
+  await api.regenerate(forge.uuid);
+  assert.equal((forge.text.content.match(/<tr><td>/g) ?? []).length, 2, 'the same settings draw a new stock');
+  const enricher = enrichers.find(config => config.id === 'owidyn-boutique');
+  assert.ok(enricher.pattern.test('@OwidynBoutique[regenerate]'));
+  const button = enricher.enricher(['@OwidynBoutique[regenerate]', 'regenerate'], { relativeTo: forge });
+  assert.equal(button.dataset.page, forge.uuid, 'the button draws the stock of its page');
+  game.user.isGM = false;
+  assert.equal(enricher.enricher(['@OwidynBoutique[regenerate]', 'regenerate'], { relativeTo: forge }).tag, 'span', 'no button for the players');
 });
 
 let failures = 0;

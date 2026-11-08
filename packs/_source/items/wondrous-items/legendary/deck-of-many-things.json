@@ -1,0 +1,227 @@
+{
+  "_id": "Kgu5aWSzIBgPK6Md",
+  "name": "Deck of Many Things",
+  "type": "equipment",
+  "folder": "RTbervUSHs1Dr8d6",
+  "img": "icons/sundries/gaming/playing-cards.webp",
+  "sort": 3300000,
+  "system": {
+    "activities": {
+      "AAmj2GH943cN0TEn": {
+        "type": "utility",
+        "_id": "AAmj2GH943cN0TEn",
+        "sort": 0,
+        "name": "Draw (13-Card Deck)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "1d100",
+          "name": "Card Drawn",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "N2Rb6f8NAqTpkc0O": {
+        "type": "utility",
+        "_id": "N2Rb6f8NAqTpkc0O",
+        "sort": 0,
+        "name": "Draw (22-Card Deck)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "roll": {
+          "formula": "1d100",
+          "name": "Card Drawn",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Wondrous Item, Legendary</em></p><p>Usually found in a box or a pouch, this deck holds a number of cards made of ivory or vellum. Most of these decks (75 percent) have thirteen cards, but some have twenty-two. Use the matching column of the Deck of Many Things table when drawing cards at random from the deck.</p><p>Before you draw a card, you must declare how many cards you mean to draw, then draw them at random. Cards drawn beyond that number have no effect. Otherwise, a card’s magic takes effect as soon as you draw it, and you must draw each card no more than 1 hour after the previous one. If you fail to draw the number you declared, the remaining cards fly from the deck on their own and all take effect at once.</p><p>A drawn card disappears. Unless it is the Fool or the Jester, it reappears in the deck, so the same card can be drawn twice. (Once the Fool or the Jester has left the deck, reroll if that card comes up again.)</p><p><strong>Deck of Many Things</strong></p><table><thead><tr><th>1d100 (13-Card Deck)</th><th>1d100 (22-Card Deck)</th><th>Card</th></tr></thead><tbody><tr><td>—</td><td>01–05</td><td>Balance</td></tr><tr><td>—</td><td>06–10</td><td>Comet</td></tr><tr><td>—</td><td>11–14</td><td>Donjon</td></tr><tr><td>01–08</td><td>15–18</td><td>Euryale</td></tr><tr><td>—</td><td>19–23</td><td>Fates</td></tr><tr><td>09–16</td><td>24–27</td><td>Flames</td></tr><tr><td>—</td><td>28–31</td><td>Fool</td></tr><tr><td>—</td><td>32–36</td><td>Gem</td></tr><tr><td>17–24</td><td>37–41</td><td>Jester</td></tr><tr><td>25–32</td><td>42–46</td><td>Key</td></tr><tr><td>33–40</td><td>47–51</td><td>Knight</td></tr><tr><td>41–48</td><td>52–56</td><td>Moon</td></tr><tr><td>—</td><td>57–60</td><td>Puzzle</td></tr><tr><td>49–56</td><td>61–64</td><td>Rogue</td></tr><tr><td>57–64</td><td>65–68</td><td>Ruin</td></tr><tr><td>—</td><td>69–73</td><td>Sage</td></tr><tr><td>65–72</td><td>74–77</td><td>Skull</td></tr><tr><td>73–80</td><td>78–82</td><td>Star</td></tr><tr><td>81–88</td><td>83–87</td><td>Sun</td></tr><tr><td>—</td><td>88–91</td><td>Talons</td></tr><tr><td>89–96</td><td>92–96</td><td>Throne</td></tr><tr><td>97–00</td><td>97–00</td><td>Void</td></tr></tbody></table><p>The effect of each card is described below.</p><p><strong>Balance.</strong> You can raise one of your ability scores by 2, to a maximum of 22, if you also lower another one by 2. You can’t lower an ability score of 5 or less. You can also choose to change nothing, in which case the card has no effect.</p><p><strong>Comet.</strong> The next time you enter combat against one or more Hostile creatures, you can pick one of them as your foe when you roll Initiative. If you reduce your foe to 0 Hit Points during that combat, you have Advantage on Death Saving Throws for 1 year. If someone else reduces your foe to 0 Hit Points, or if you don’t pick a foe, the card has no effect.</p><p><strong>Donjon.</strong> You vanish and are entombed in suspended animation inside an extradimensional sphere. Everything you are wearing and carrying vanishes with you, except Artifacts, which stay behind in the space you left. You remain imprisoned until someone finds you and removes you from the sphere. No Divination magic can locate you, but a @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} spell can reveal where your prison is. You draw no more cards.</p><p><strong>Euryale.</strong> The card’s medusa-like face curses you: you have a −2 penalty to saving throws while cursed this way. Only a god or the magic of the Fates card can end this curse.</p><p><strong>Fates.</strong> The fabric of reality unravels and is spun anew, letting you avoid or erase one event as if it never happened. You can use the card’s magic as soon as you draw it or at any other time before you die.</p><p><strong>Flames.</strong> A powerful devil becomes your enemy. It seeks your ruin and torments you, savoring your suffering before it tries to kill you. The enmity lasts until you or the devil dies.</p><p><strong>Fool.</strong> You have Disadvantage on D20 Tests for the next 72 hours. Draw another card; this draw doesn’t count as one of your declared draws.</p><p><strong>Gem.</strong> Twenty-five pieces of jewelry worth 2,000 GP each or fifty gems worth 1,000 GP each appear at your feet.</p><p><strong>Jester.</strong> You have Advantage on D20 Tests for the next 72 hours, or you can draw two cards beyond your declared draws.</p><p><strong>Key.</strong> A Rare or rarer magic weapon you are proficient with appears on your person. The DM chooses the weapon.</p><p><strong>Knight.</strong> You gain the service of a @UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Knight}, who appears in an unoccupied space you choose within 30 feet of yourself. The knight shares your alignment and serves you loyally until death, believing that fate has brought the two of you together. Work with your DM to give this NPC a name and a backstory. The DM can use a different stat block to represent the knight.</p><p><strong>Moon.</strong> You gain the ability to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} 1d3 times.</p><p><strong>Puzzle.</strong> Permanently lower your Intelligence or Wisdom by 1d4 + 1 (to a minimum score of 1). You can draw one card beyond your declared draws.</p><p><strong>Rogue.</strong> An NPC of the DM’s choice becomes Hostile toward you. You don’t learn who it is until the NPC or someone else reveals it. Nothing less than a @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} spell or divine intervention can end that hostility.</p><p><strong>Ruin.</strong> You lose every form of wealth you carry or own, other than magic items. Portable property vanishes, and businesses, buildings, and land you own are lost in the way that alters reality the least. If you have a Bastion, some calamity beyond your control destroys it. Any document proving that you should own something lost to this card disappears too.</p><p><strong>Sage.</strong> At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to it.</p><p><strong>Skull.</strong> An @UUID[Compendium.dnd5e.actors24.Actor.dmgAvatarofDeath]{Avatar of Death} appears in an unoccupied space as close to you as possible. It attacks only you and looks like a ghostly skeleton in a tattered black robe, carrying a spectral scythe. The avatar disappears when it drops to 0 Hit Points or when you die. If one of your allies deals damage to it, that ally summons another Avatar of Death, which appears as close to that ally as possible and attacks only that ally. You and each of your allies can summon only one avatar from this draw. A creature slain by an avatar can’t be restored to life.</p><p><strong>Star.</strong> Increase one of your ability scores by 2, to a maximum of 24.</p><p><strong>Sun.</strong> A magic item chosen by the DM appears on your person. In addition, you gain 10 Temporary Hit Points daily at dawn until you die.</p><p><strong>Talons.</strong> Every magic item you wear or carry disintegrates. Artifacts in your possession vanish instead.</p><p><strong>Throne.</strong> You gain proficiency and Expertise in your choice of History, Insight, Intimidation, or Persuasion. You also become the rightful owner of a small keep somewhere in the world, but monsters currently live there, and they must be cleared out before you can claim it.</p><p><strong>Void.</strong> Your soul is pulled from your body and held in an object in a place of the DM’s choice, guarded by one or more powerful beings. While your soul is trapped, your body is inert, stops aging, and needs no food, air, or water. A @UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish} spell can’t return your soul to your body, but it reveals where the object holding your soul is. You draw no more cards.</p><section class=\"secret\" id=\"secret-dq9epJxkOBw3oN8f\"><p><strong>Foundry Note</strong></p><p><em>Draw (13-Card Deck)</em> et <em>Draw (22-Card Deck)</em> tirent une carte sur la colonne du paquet ; le MJ applique son effet.</p></section>",
+      "chat": ""
+    },
+    "identifier": "deck-of-many-things",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793830000000,
+    "modifiedTime": 1793830000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

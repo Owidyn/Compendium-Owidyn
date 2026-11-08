@@ -1,0 +1,150 @@
+{
+  "_id": "bVP64G7z0hEPP6F6",
+  "name": "Tasha's Bubbling Cauldron",
+  "type": "spell",
+  "img": "icons/tools/laboratory/cauldron-filled-gold.webp",
+  "folder": "JEGq6BdHmxTqhVEU",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You conjure a claw-footed cauldron full of bubbling liquid in an unoccupied space on the ground within 5 feet of you. It lasts for the duration, can’t be moved, and vanishes with its contents when the spell ends.</p><p>The liquid duplicates the properties of a Common or an Uncommon potion of your choice (such as a Potion of Healing). As a Bonus Action, you or an ally can reach into the cauldron and draw out one potion of that kind, in a vial that vanishes once the potion is consumed. The cauldron can produce a number of potions equal to your spellcasting ability modifier (minimum 1); when the last one is drawn, the cauldron disappears and the spell ends.</p><p>Potions from the cauldron that haven’t been consumed vanish when you cast this spell again.</p><section class=\"secret\" id=\"secret-x8lwaAYqjOYIZ9wa\"><p><strong>Foundry Note</strong></p><p>Drag the chosen potion onto the sheets of those who draw one, and delete them when the spell is cast again.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "tashas-bubbling-cauldron",
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "range": {
+      "value": "5",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 6,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a gilded ladle worth 500+ GP",
+      "consumed": false,
+      "cost": 500,
+      "supply": 0
+    },
+    "activities": {
+      "Ybf6tYWnQZDCuC7v": {
+        "type": "utility",
+        "_id": "Ybf6tYWnQZDCuC7v",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

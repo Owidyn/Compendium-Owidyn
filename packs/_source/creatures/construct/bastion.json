@@ -1,0 +1,1257 @@
+{
+  "_id": "PLpggoSjtVUZ8NV7",
+  "name": "Bastion",
+  "type": "npc",
+  "img": "modules/compendium-owidyn/assets/heliarque/bastion.svg",
+  "folder": "hFRTsmBY5FGDltsw",
+  "sort": 200,
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "temp": null,
+        "tempmax": null,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 0,
+        "fly": 0,
+        "swim": 0,
+        "climb": 0,
+        "burrow": 0,
+        "hover": true,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "custom",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Forme orbitale"
+      },
+      "cr": 0,
+      "alignment": "",
+      "biography": {
+        "value": "<p>Plaque de matière stellaire condensée. Connue dès le niveau 1. Armor Class de base 16, Resistance à tous les dégâts sauf Force, auxquels elle est Vulnerable. Elle fournit un Cover normal selon sa position.</p><table><thead><tr><th>Niveau</th><th>Taille max.</th><th>Onde de pression</th><th>Repousse</th><th>Implosion protectrice</th></tr></thead><tbody><tr><td>1–6</td><td>5×5 ft</td><td>1 DF</td><td>10 ft</td><td>3 DF + CHA</td></tr><tr><td>7–12</td><td>10×10 ft</td><td>2 DF</td><td>15 ft</td><td>4 DF + CHA</td></tr><tr><td>13–16</td><td>15×15 ft</td><td>3 DF</td><td>20 ft</td><td>5 DF + CHA</td></tr><tr><td>17–20</td><td>20×20 ft</td><td>4 DF</td><td>25 ft</td><td>6 DF + CHA</td></tr></tbody></table><p><strong>Niveau 7 :</strong> Réfraction vectorielle. <strong>Niveau 13 :</strong> Architecture flottante. <strong>Soothing Star 6 :</strong> Refuge.</p>",
+        "public": ""
+      }
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "bludgeoning",
+          "cold",
+          "fire",
+          "lightning",
+          "necrotic",
+          "piercing",
+          "radiant",
+          "slashing",
+          "thunder"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "force"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comprend les ordres de son Héliarque"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Bastion",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayName": 20,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "texture": {
+      "src": "modules/compendium-owidyn/assets/heliarque/bastion.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "visionMode": "basic"
+    },
+    "flags": {
+      "compendium-owidyn": {
+        "heliarque": {
+          "form": "bastion"
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "uqucn1AUuq1SnLFX",
+      "name": "Rappel",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+      "folder": null,
+      "sort": 100000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque.</em> La Forme disparaît et son Orbital retourne dans la Réserve. L'Orbital conserve ses Hit Points actuels : il reviendra avec eux à sa prochaine Manifestation. Rappeler une Forme ne restaure aucun Hit Point.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-rappel",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "2jTgclyIB1LpXIqY": {
+            "_id": "2jTgclyIB1LpXIqY",
+            "type": "utility",
+            "name": "Rappel",
+            "img": "modules/compendium-owidyn/assets/heliarque/recall.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme disparaît ; son Orbital retourne dans la Réserve."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "recall"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-rappel",
+            "form": "bastion",
+            "kind": "recall"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "DAJ9i6vRqhzPi6cA",
+      "name": "Changer de forme",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+      "folder": null,
+      "sort": 200000,
+      "system": {
+        "description": {
+          "value": "<p><em>Bonus Action de l'Héliarque — Reconfiguration.</em> Transformez cette Forme en une autre Forme que l'Héliarque connaît. Elle conserve ses Hit Points actuels, jusqu'au Hit Point Maximum de sa nouvelle Forme, et reste au même endroit.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-changer-de-forme",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "7UUAxIG0Y7AbYMEz": {
+            "_id": "7UUAxIG0Y7AbYMEz",
+            "type": "utility",
+            "name": "Changer de forme",
+            "img": "modules/compendium-owidyn/assets/heliarque/transform-slot.svg",
+            "sort": 100000,
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": "La Forme devient une autre Forme connue et conserve ses Hit Points."
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "reconfigure"
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-changer-de-forme",
+            "form": "bastion",
+            "kind": "reconfigure"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "9ymHvNRTurFSNLeD",
+      "name": "Intégrité",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/bastion.svg",
+      "folder": null,
+      "sort": 300000,
+      "system": {
+        "description": {
+          "value": "<p>Cette Forme est un objet magique, immunisée aux Poison et Psychic damage. Elle agit pendant le tour de son Héliarque et utilise ses actions ; elle n'a pas d'initiative propre.</p><p><strong>Commande.</strong> Une même Forme ne peut utiliser sa Commande qu'une seule fois par tour, sauf aptitude contraire.</p><p><strong>Orbital.</strong> Cette Forme est portée par l'un des Orbitals de l'Héliarque, qui conserve ses Hit Points lorsqu'il est rappelé ou change de forme.</p><p><strong>Destruction.</strong> À 0 Hit Points, la Forme est détruite sans pouvoir utiliser sa Rupture. <em>Règle de table :</em> son Orbital reste indisponible jusqu'au prochain Long Rest de l'Héliarque.</p><p><strong>Repos.</strong> Lorsque l'Héliarque termine un Short ou Long Rest, l'Orbital récupère tous ses Hit Points, sauf s'il a été détruit : il attend alors le Long Rest.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-integrite",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-integrite",
+            "form": "bastion",
+            "kind": "trait"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "jj9iKMGWeJR1nMnH",
+      "name": "Présence — Champ d'inertie",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/inertia.svg",
+      "folder": null,
+      "sort": 400000,
+      "system": {
+        "description": {
+          "value": "<p><em>Règle de table.</em> Tant que le Bastion est Bloodied (Hit Points actuels positifs et inférieurs ou égaux à la moitié de son maximum), chaque application de dégâts qu'il reçoit est réduite du <strong>Proficiency Bonus + modificateur de Charisma</strong> de l'Héliarque, après ses résistances et vulnérabilités, sans descendre sous 0. Le coup qui le fait passer Bloodied n'est pas réduit. <em>(Automatique.)</em></p><p>Le Bastion fournit un Cover normal selon sa position.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-inertie",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-inertie",
+            "form": "bastion",
+            "kind": "presence"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "S9RAUHlgzUSGAOYA",
+      "name": "Onde de pression",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/onde-de-resonance.svg",
+      "folder": null,
+      "sort": 500000,
+      "system": {
+        "description": {
+          "value": "<p><em>Magic Action — Commande.</em> Choisissez un côté du Bastion. Chaque créature hostile dans un cône de 15 ft provenant de ce côté effectue un Strength Saving Throw contre le DD de Fusion. En cas d'échec, elle subit des Force damage et est repoussée. En cas de réussite, elle ne subit aucun dégât et n'est pas déplacée.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-onde",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Commande",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "PGYaIqMQNWnD5Cqx": {
+            "_id": "PGYaIqMQNWnD5Cqx",
+            "type": "save",
+            "name": "Onde de pression",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "cone",
+                "size": "15",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "enemy",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "command",
+                  "move": {
+                    "mode": "away",
+                    "distance": "@summoner.scale.heliarque.poussee",
+                    "from": "this",
+                    "subject": "targets",
+                    "save": true
+                  }
+                }
+              }
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "8 + @summoner.abilities.cha.mod + @summoner.attributes.prof"
+              }
+            },
+            "damage": {
+              "onSave": "none",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "(@summoner.scale.heliarque.onde)@summoner.scale.heliarque.fusion.die"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-onde",
+            "form": "bastion",
+            "kind": "command"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "0yzLkQQ5ZUKPuEE9",
+      "name": "Réfraction vectorielle",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/evolution-orbitale.svg",
+      "folder": null,
+      "sort": 600000,
+      "system": {
+        "description": {
+          "value": "<p><em>Évolution orbitale (niveau 7).</em> Une fois par tour, lorsque l'Héliarque utilise une Technique, il peut tirer à travers le Bastion comme s'il n'était pas là. Avant ou après avoir utilisé Onde de pression, il peut également déplacer et réorienter le Bastion jusqu'à <strong>15 ft</strong>.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-refraction",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "Z19H7AgUVIUtcjhL": {
+            "_id": "Z19H7AgUVIUtcjhL",
+            "type": "utility",
+            "name": "Déplacer et réorienter le Bastion",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Avant ou après Onde de pression",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "move": {
+                    "mode": "free",
+                    "distance": "15",
+                    "subject": "this",
+                    "action": "fly"
+                  }
+                }
+              }
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-refraction",
+            "form": "bastion",
+            "kind": "upgrade",
+            "requires": {
+              "level": 7
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "jrhCIThvhr4fDQCR",
+      "name": "Implosion protectrice",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/egide-vectorielle.svg",
+      "folder": null,
+      "sort": 700000,
+      "system": {
+        "description": {
+          "value": "<p><em>Reaction — Rupture.</em> Lorsqu'une créature située à 10 ft ou moins du Bastion subit des dégâts, détruisez le Bastion. Réduisez ces dégâts de la valeur indiquée dans sa table d'évolution.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-implosion",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Rupture",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "UHq2lg1YfusbeBXL": {
+            "_id": "UHq2lg1YfusbeBXL",
+            "type": "utility",
+            "name": "Implosion protectrice",
+            "img": "",
+            "sort": 100000,
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "condition": "Une créature à 10 ft ou moins du Bastion subit des dégâts",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": true,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "identifier": "heliarque",
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": [],
+            "flags": {
+              "compendium-owidyn": {
+                "heliarque": {
+                  "role": "rupture",
+                  "reduction": true
+                }
+              }
+            },
+            "roll": {
+              "formula": "(@summoner.scale.heliarque.implosion)@summoner.scale.heliarque.fusion.die + @summoner.abilities.cha.mod",
+              "name": "Réduction des dégâts",
+              "prompt": false,
+              "visible": true
+            }
+          }
+        },
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-implosion",
+            "form": "bastion",
+            "kind": "rupture"
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "RmX6ReyK6Mmc1BRC",
+      "name": "Architecture flottante",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/transcendance-des-formes.svg",
+      "folder": null,
+      "sort": 800000,
+      "system": {
+        "description": {
+          "value": "<p><em>Transcendance des Formes (niveau 13).</em> Le Bastion peut flotter librement et être placé horizontalement, verticalement ou selon n'importe quelle inclinaison. Un Bastion horizontal peut supporter normalement des créatures et des objets. Lorsque Constellation mobile déplace un Bastion, les créatures consentantes et les objets qu'il supporte se déplacent avec lui.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-architecture",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Amélioration",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-architecture",
+            "form": "bastion",
+            "kind": "upgrade",
+            "requires": {
+              "level": 13
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "omcnoHijoGDUtLEG",
+      "name": "Présence apaisante — Refuge",
+      "type": "feat",
+      "img": "modules/compendium-owidyn/assets/heliarque/presences-apaisantes.svg",
+      "folder": null,
+      "sort": 900000,
+      "system": {
+        "description": {
+          "value": "<p><em>Soothing Star (niveau 6).</em> Les créatures alliées situées à 5 ft ou moins du Bastion gagnent <strong>+1 AC</strong>. <em>(Appliqué automatiquement selon la position des pions.)</em></p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "",
+          "book": "OSC"
+        },
+        "identifier": "bastion-refuge",
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "Présence",
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "enchant": {},
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "bastion-refuge",
+            "form": "bastion",
+            "kind": "presence",
+            "requires": {
+              "subclass": "soothing-star",
+              "level": 6
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "form": "bastion"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

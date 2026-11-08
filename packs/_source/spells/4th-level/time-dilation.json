@@ -1,0 +1,280 @@
+{
+  "_id": "uaFBvrhX00dTBJJX",
+  "name": "Time Dilation",
+  "type": "spell",
+  "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+  "folder": "lzC0VNsq06qtpgKG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The target reduces the damage it takes by 4d8. Then, at the end of each of its turns, it loses 1d8 Hit Points, until it has lost a total of 4d8 Hit Points (roll these 4d8 separately from the damage reduction).</p><section class=\"secret\" id=\"secret-bW3H4M75txX4dK16\"><p><strong>Foundry Note</strong></p><p><em>Damage Reduction</em> rolls the amount to subtract from the damage; <em>Delayed Total</em> rolls the Hit Points to lose over the following turns, 1d8 at a time with <em>Delayed Loss</em>.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "time-dilation",
+    "activation": {
+      "type": "reaction",
+      "value": null,
+      "condition": "in response to you or a creature you can see within 60 feet of you taking damage"
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 4,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "QrRwONq0sKx3Xiks": {
+        "type": "utility",
+        "_id": "QrRwONq0sKx3Xiks",
+        "sort": 0,
+        "name": "Damage Reduction",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "in response to you or a creature you can see within 60 feet of you taking damage",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "4d8",
+          "name": "Damage Reduction",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "s2WDRieb2w8IDHBH": {
+        "type": "utility",
+        "_id": "s2WDRieb2w8IDHBH",
+        "sort": 100000,
+        "name": "Delayed Total",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "in response to you or a creature you can see within 60 feet of you taking damage",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "4d8",
+          "name": "Delayed Hit Point Loss",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "Znn6apSR8nkLkkNt": {
+        "type": "damage",
+        "_id": "Znn6apSR8nkLkkNt",
+        "sort": 200000,
+        "name": "Delayed Loss",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "at the end of each of the target’s turns, until the total is lost"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [],
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

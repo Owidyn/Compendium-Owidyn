@@ -7,7 +7,7 @@ Adaptation du [Cartomancien et du Deck du Parieur](https://homebrewery.naturalcr
 ## Mise à jour
 
 1. Redémarrer Foundry ou recharger le monde.
-2. Ouvrir le monde avec un compte MJ : la classe (compendium **Compendium Owidyn**, dossier *Class › Cartomancien*) et la Spell List (compendium **Owidyn — Journaux**, dossier *Cartomancien*) sont reconstruites automatiquement quand leur version change. Les compendiums sont déverrouillés le temps de l'écriture, puis reverrouillés.
+2. Ouvrir le monde avec un compte MJ : la classe (compendium **Classes**, dossier *Cartomancien* : la classe, *Class Features* et *Deck du Parieur* › la sous-classe et ses *Subclass Features*) et la Spell List (compendium **Journals**, dossier *Spell Lists › Cartomancien*) sont reconstruites automatiquement quand leur version change. Les compendiums sont déverrouillés le temps de l'écriture, puis reverrouillés.
 3. Sur chaque ancienne fiche, ouvrir **Cartomancien** dans l'en-tête, puis **Initialiser / Synchroniser**. Cela ajoute les capacités manquantes du niveau et met à jour leurs activités et effets. Les usages dépensés et les choix d'avancement existants sont conservés.
 4. Utiliser **Choisir les sorts mineurs** pour compléter une ancienne fiche. Pour les nouvelles fiches, ce choix existe dans l'avancement de classe.
 
@@ -49,7 +49,7 @@ Les jetons ne récupèrent pas au repos : la règle source ne le prévoit pas. L
 
 Après fermeture d'une fenêtre, le gestionnaire permet de reprendre le renouvellement de la main, la remise des trois cartes ou le Jackpot. Une recomposition inachevée bloque les autres opérations de main.
 
-Une carte ne peut être liée qu'à un sort de la Spell List du Cartomancien déjà présent sur la fiche, exactement de son niveau : ajouter d'abord le sort à la fiche, puis le lier depuis le gestionnaire. Initialiser / Synchroniser signale en une fois les niveaux de sort qui manquent sur la fiche. Les sorts mineurs, la Main du Parieur et le Jackpot prennent toujours leurs sorts dans la partie et ses compendiums. Un sort de Jackpot absent conserve son résultat en attente : ajouter son Spell Item à la fiche ou activer son compendium, puis reprendre. Aucun profil de sort incomplet n'est inventé.
+Une carte se lie à un sort exactement de son niveau, choisi dans le gestionnaire : un sort déjà sur la fiche, même s'il n'est pas dans la Spell List du Cartomancien (sort d'une autre classe, d'un don…), ou un sort de la Spell List trouvé dans les compendiums activés, qui est alors ajouté à la fiche. Les sorts qu'un objet fait lancer restent à l'objet et ne sont pas proposés. Initialiser / Synchroniser signale en une fois les niveaux pour lesquels aucun sort n'est disponible. Les sorts mineurs, la Main du Parieur et le Jackpot prennent toujours leurs sorts dans la partie et ses compendiums. Un sort de Jackpot absent conserve son résultat en attente : ajouter son Spell Item à la fiche ou activer son compendium, puis reprendre. Aucun profil de sort incomplet n'est inventé.
 
 **Réinitialiser le deck** ramène les cartes de la main et de la défausse dans le deck, retire les marques de Coup d'éclat, annule le renouvellement de main et la recomposition en attente, mélange puis pioche une nouvelle main de PB cartes. Les sorts liés et les changements de sort disponibles sont conservés ; seul le MJ peut, en cochant l'option, délier aussi toutes les cartes pour que leurs sorts soient choisis à nouveau gratuitement.
 

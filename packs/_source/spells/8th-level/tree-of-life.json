@@ -1,0 +1,252 @@
+{
+  "_id": "FJH1oYrPlWIPKE2r",
+  "name": "Tree of Life",
+  "type": "spell",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "folder": "yXi4rP3BbtNBsPwp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You shape-shift into a Tree of Life form that looks like a treant, and you gain the following benefits.</p><p><strong>Tree Form.</strong> You become Large. Your Speed becomes 10 feet and can’t be reduced, and &amp;Reference[difficultterrain apply=false]{Difficult Terrain} doesn’t cost you extra movement.</p><p><strong>Bark Skin.</strong> You gain a +2 bonus to Armor Class and 10 Temporary Hit Points.</p><p><strong>Condition Immunity.</strong> You have Immunity to the &amp;Reference[paralyzed apply=false]{Paralyzed} and &amp;Reference[restrained apply=false]{Restrained} conditions, and you can’t be shape-shifted against your will.</p><p><strong>Source of Life.</strong> When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains an extra 1d8 Hit Points on the turn you cast it.</p><p><strong>Spells Enhanced.</strong> The spell save DC of your Druid spells increases by 1, and you have Advantage on the attack rolls of the Druid spells you cast.</p><section class=\"secret\" id=\"secret-YMZhhBuRHaFrSoLG\"><p><strong>Foundry Note</strong></p><p>The effect raises the save DC of all your spells by 1 (only your Druid spells benefit); take the Advantage of Spells Enhanced and the extra 1d8 of Source of Life by hand.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "OSC",
+      "page": "",
+      "license": ""
+    },
+    "identifier": "tree-of-life",
+    "activation": {
+      "type": "bonus",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "self",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "FzV3Rjk7b6Xmd7dV": {
+        "type": "heal",
+        "_id": "FzV3Rjk7b6Xmd7dV",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "XWKqcIGcO9mAb7SI"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "10"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Tree of Life",
+      "img": "icons/environment/wilderness/tree-oak.webp",
+      "_id": "XWKqcIGcO9mAb7SI",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.size",
+            "value": "lg",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "ZP8qYMfcHCWkVcn8"
+          },
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "10",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "sHvFXyDGY9ypecoI"
+          },
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ScdGVdCxshZLHBHt"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "paralyzed",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "20exbR0TpELF4OFk"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "restrained",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GJaDZPnrGFfwISPh"
+          },
+          {
+            "key": "system.bonuses.spell.dc",
+            "value": "1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "A3o3QJYmLlzUP1GC"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

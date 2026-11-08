@@ -6,6 +6,7 @@ import { registerSocket } from './socket.mjs';
 import { registerOrbitals, orbitalSummary } from './orbitals.mjs';
 import { ensureOrbitals, reconfigureFlow, registerForms } from './forms.mjs';
 import { refreshCharacterItems } from './migration.mjs';
+import { migrated } from '../owidyn/migration.mjs';
 import { registerPresences, scheduleRefresh } from './presences.mjs';
 import { addMoveButton, executeMove } from './movement.mjs';
 import { addUseButtons, registerActions } from './actions.mjs';
@@ -57,7 +58,9 @@ Hooks.once('ready', async () => {
   registerSocket();
   const module = game.modules.get(MODULE_ID);
   module.api = { ...module.api, heliarque: { executeMove, reconfigureFlow, orbitalSummary, ensureOrbitals } };
-  // Items first: the Orbitals read their Forms from the character's Manifestation orbitale.
+  // The world's links to the module compendiums first, then the items: the Orbitals read their Forms from the
+  // character's Manifestation orbitale.
+  await migrated;
   await refreshCharacterItems();
   await ensureOrbitals();
   for (const scene of game.scenes.filter(s => s.active || s.isView)) scheduleRefresh(scene);

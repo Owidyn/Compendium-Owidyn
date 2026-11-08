@@ -40,6 +40,9 @@ async function harness() {
   const calls = [];
   const castClones = [];
   const dialogAnswers = [];
+  const dialogs = [];
+  // Spell List spells found in the compendiums and their import onto the sheet, replaced by the tests that need them
+  const spellSources = { available: async () => ({ available: [], missing: [] }), import: async () => null };
   const moduleState = {};
   const context = vm.createContext({
     console: { log() {}, warn() {}, error() {} },
@@ -72,7 +75,7 @@ async function harness() {
         ApplicationV2: class {},
         HandlebarsApplicationMixin: base => base,
         DialogV2: {
-          input: async () => dialogAnswers.shift() ?? null,
+          input: async options => { dialogs.push(options); return dialogAnswers.shift() ?? null; },
           wait: async () => dialogAnswers.shift() ?? null,
           confirm: async () => dialogAnswers.shift() ?? false
         }
@@ -142,13 +145,16 @@ async function harness() {
   ], function () {
     this.setExport("CARTOMANCIEN_SPELLS", {});
     this.setExport("ensureContent", async () => null);
-    this.setExport("getAvailableCartomancienSpellSources", async () => ({ available: [], missing: [] }));
-    this.setExport("importSpellToActor", async () => null);
+    this.setExport("getAvailableCartomancienSpellSources", (...args) => spellSources.available(...args));
+    this.setExport("importSpellToActor", (...args) => spellSources.import(...args));
     this.setExport("syncActorContent", async () => null);
     this.setExport("isCartomancienSpell", () => true);
   }, { context });
   const features = new vm.SyntheticModule(["registerFeatureAutomation"], function () {
     this.setExport("registerFeatureAutomation", () => {});
+  }, { context });
+  const migration = new vm.SyntheticModule(["migrated"], function () {
+    this.setExport("migrated", Promise.resolve());
   }, { context });
   const modules = new Map();
   async function load(filename) {
@@ -159,6 +165,7 @@ async function harness() {
     await module.link(async specifier => {
       if (specifier === "./content.js") return content;
       if (specifier === "./features.js") return features;
+      if (specifier === "../owidyn/migration.mjs") return migration;
       return load(path.basename(specifier));
     });
     return module;
@@ -222,7 +229,7 @@ async function harness() {
     return { spell, activity };
   }
 
-  return { context, api: moduleState.api.cartomancien, notices, calls, castClones, dialogAnswers, setup, makeActor, addSpell, addSheetSpell, documents, stacks, hooks, modules };
+  return { context, api: moduleState.api.cartomancien, notices, calls, castClones, dialogAnswers, dialogs, spellSources, setup, makeActor, addSpell, addSheetSpell, documents, stacks, hooks, modules };
 }
 
 const cases = [];
@@ -344,19 +351,39 @@ test("pending redraw blocks card casting and free draws", async () => {
   assert.equal(hand.cards.size, 2);
 });
 
-test("a card can only be bound to a spell of the list already on the sheet", async () => {
+test("a card is bound to a spell of its level from the sheet or from the Spell List", async () => {
   const h = await harness();
   const { actor, deck } = await h.setup(1);
-  h.documents.set("Compendium.dnd5e.spells24.Item.compendiumSpell", { uuid: "Compendium.dnd5e.spells24.Item.compendiumSpell", name: "Compendium spell", type: "spell", system: { level: 1 }, parent: null });
-  const sheet = h.addSheetSpell(actor, { name: "Sheet spell" });
   const card = index => deck.cards.find(entry => entry.getFlag(MODULE_ID, "cartomancien.arcanaIndex") === index);
-  h.dialogAnswers.push({ spellUuid: "Compendium.dnd5e.spells24.Item.compendiumSpell" });
-  assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), false, "a spell absent from the sheet is refused");
+  const listed = { name: "Listed spell", level: 1, uuid: "Compendium.dnd5e.spells24.Item.listedSpell00000", owned: false };
+  h.spellSources.available = async level => ({ available: level === 1 ? [listed] : [], missing: [] });
+  h.spellSources.import = async (target, uuid) => uuid === listed.uuid ? h.addSheetSpell(target, { name: listed.name }) : null;
+  const offList = h.addSheetSpell(actor, { name: "Off-list spell" });
+  const higher = h.addSheetSpell(actor, { name: "Higher spell", level: 2 });
+  h.addSheetSpell(actor, { name: "Wand spell", flags: { dnd5e: { cachedFor: ".Item.wand.Activity.cast" } } });
+
+  h.dialogAnswers.push({ spellUuid: higher.uuid });
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), false, "a spell of another level is refused");
+  const offered = h.dialogs.at(-1).content;
+  assert.match(offered, /Off-list spell — sur la fiche/, "any spell of the sheet of the card's level is offered");
+  assert.match(offered, /Listed spell — Spell List/, "the Spell List spells of the compendiums are offered");
+  assert.doesNotMatch(offered, /Higher spell|Wand spell/, "no spell of another level, nor cast through an item");
   assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), "");
-  h.dialogAnswers.push({ spellUuid: sheet.uuid });
+
+  h.dialogAnswers.push({ spellUuid: offList.uuid });
   assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), true);
-  assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), sheet.uuid);
-  assert.equal(await h.api.chooseSpellForCard(actor, deck, 1), "none", "the only level 1 spell of the sheet is prepared on another card");
+  assert.equal(card(0).getFlag(MODULE_ID, "cartomancien.spellUuid"), offList.uuid);
+
+  h.dialogAnswers.push({ spellUuid: listed.uuid });
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 1), true);
+  const imported = actor.items.find(item => item.name === listed.name);
+  assert.ok(imported, "a Spell List spell is added to the sheet");
+  assert.equal(card(1).getFlag(MODULE_ID, "cartomancien.spellUuid"), imported.uuid);
+
+  h.spellSources.available = async () => ({ available: [], missing: [] });
+  await card(0).setFlag(MODULE_ID, "cartomancien.spellUuid", "");
+  actor.items.delete(offList.id);
+  assert.equal(await h.api.chooseSpellForCard(actor, deck, 0), "none", "the only level 1 spell left is prepared on another card");
   assert.equal(h.notices.at(-1).type, "warn");
 });
 

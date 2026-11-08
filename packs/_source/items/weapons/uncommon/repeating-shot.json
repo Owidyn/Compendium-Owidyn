@@ -1,0 +1,286 @@
+{
+  "_id": "72d189KiOqUawEGw",
+  "name": "Repeating Shot",
+  "type": "weapon",
+  "folder": "CORNXrZXx7JFHG0n",
+  "img": "icons/weapons/crossbows/crossbow-loaded-black.webp",
+  "sort": 2700000,
+  "system": {
+    "activities": {
+      "2fbUstpHZrEvIBIn": {
+        "type": "enchant",
+        "_id": "2fbUstpHZrEvIBIn",
+        "sort": 0,
+        "name": "Repeating Shot",
+        "img": "",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4iX3KqZqm3ttypul",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "properties": [
+            "amm"
+          ],
+          "type": "weapon",
+          "categories": [
+            "simpleM",
+            "simpleR",
+            "martialM",
+            "martialR"
+          ]
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Weapon (Any Simple or Martial with the Ammunition Property), Uncommon (Requires Attunement)</em></p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it when it’s used to make a ranged attack, and it ignores the Loading property if it has that property.</p><p>If the weapon lacks ammunition, it produces its own, automatically creating one piece of magic ammunition when the wielder makes a ranged attack roll with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.</p><section class=\"secret\" id=\"secret-8aVwB7FDUqRsLYhi\"><p><strong>Foundry Note</strong></p><p>Glissez l’enchantement sur l’arme voulue : elle garde son nom, sa rareté et son prix. Elle reçoit le bonus de +1 et perd la propriété Loading. Quand vous n’avez plus de munitions, attaquez sans en choisir.</p></section><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
+      "chat": ""
+    },
+    "identifier": "repeating-shot",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "license": "",
+      "book": "OSC",
+      "page": "",
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "",
+      "baseItem": ""
+    },
+    "ammunition": {},
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": 0,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "proficient": null,
+    "range": {
+      "value": null,
+      "long": null,
+      "reach": null,
+      "units": "ft"
+    },
+    "mastery": ""
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Repeating Shot",
+      "img": "systems/dnd5e/icons/spell-tiers/spell2.webp",
+      "disabled": true,
+      "_id": "4iX3KqZqm3ttypul",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attunement",
+            "value": "required",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "OA5xCbJFtsZuBGUe"
+          },
+          {
+            "key": "system.description.value",
+            "value": "{}<p>@Embed[Compendium.compendium-owidyn.items.Item.72d189KiOqUawEGw caption=false]</p>",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "A3YO8PJcG0YXnJzV"
+          },
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "0YaKXB0EhsCDHhTU"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": 1,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "vUAf86o15KEE9dKE"
+          },
+          {
+            "key": "system.properties",
+            "value": "-lod",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "eIjEaNrT1RMvUHle"
+          }
+        ]
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1793820000000,
+        "modifiedTime": 1793820000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793820000000,
+    "modifiedTime": 1793820000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

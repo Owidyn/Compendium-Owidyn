@@ -1,0 +1,109 @@
+{
+  "type": "feat",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1793646899628,
+    "modifiedTime": 1793646899628,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "name": "Strike of the Giants",
+  "_id": "Xi23Web5ZsWnpdwT",
+  "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+  "folder": "6isNb90KSnISVUM8",
+  "sort": 200000,
+  "effects": [],
+  "system": {
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": "19"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Martial Weapon Proficiency or Giant Foundling",
+    "activities": {},
+    "enchant": {},
+    "advancement": {
+      "BwXggAuDHYmPpt1V": {
+        "_id": "BwXggAuDHYmPpt1V",
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.3vw8Yn747ObDt5ec"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.beT3V3WjBOmesqCL"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.GWDRSr7386T6WXuO"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.wdDmu0L7frsfnVsR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.VrGvoMDoR4YIiXPG"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.jQmqA06XBvb1sqam"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "level": "",
+            "subtype": "",
+            "type": ""
+          },
+          "spell": null,
+          "type": "feat",
+          "sorting": "m"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "Choose one of the benefits of Strike of the Giants.",
+        "title": "Giant Benefit",
+        "flags": {}
+      }
+    },
+    "crewed": false,
+    "description": {
+      "value": "<p>You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.3vw8Yn747ObDt5ec]{Cloud Strike}.</strong> The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become &amp;Reference[Invisible] to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.beT3V3WjBOmesqCL]{Fire Strike}.</strong> The target takes an extra 1d10 fire damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.GWDRSr7386T6WXuO]{Frost Strike}.</strong> The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.wdDmu0L7frsfnVsR]{Hill Strike}.</strong> The target takes an extra 1d6 damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.VrGvoMDoR4YIiXPG]{Stone Strike}.</strong> The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line.</p><p><strong>@UUID[Compendium.compendium-owidyn.legacy-backgrounds-feats.Item.jQmqA06XBvb1sqam]{Storm Strike}.</strong> The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has &amp;Reference[Disadvantage] on attack rolls until the start of your next turn.</p><p>The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier.</p><p>You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><section class=\"secret\" id=\"secret-4ZJJOoitApkqLhj6\"><p><strong>Foundry Note</strong></p><p>The benefit is chosen during advancement and added to your features. It holds the uses and an activity that rolls the extra damage and the saving throw (DC with the higher of Strength and Constitution); failed saves get their effect from the chat card. The once-per-turn limit is not tracked.</p></section>",
+      "chat": ""
+    },
+    "identifier": "strike-of-the-giants"
+  }
+}

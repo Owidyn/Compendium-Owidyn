@@ -1,10 +1,11 @@
 /** Shared helpers. Nothing here reads Foundry globals at import time. */
+import { PACKS } from '../owidyn/compendiums.mjs';
+
 export const MODULE_ID = 'compendium-owidyn';
 /** Version of the Héliarque content: characters' features and Orbitals are refreshed when it changes. */
 export const HELIARQUE_VERSION = '2.5.0';
-/** Item compendium holding the class (folder Class › Héliarque) and Actor compendium holding the Forms. */
-export const ITEM_PACK = `${MODULE_ID}.compendium-owidyn`;
-export const ACTOR_PACK = `${MODULE_ID}.formes-orbitales`;
+/** Compendium holding the class, its features and techniques (folder Héliarque); the Forms are in Creatures › Construct. */
+export const ITEM_PACK = `${MODULE_ID}.${PACKS.classes}`;
 /** Every Héliarque flag lives under flags.compendium-owidyn.heliarque. */
 export const flagsOf = doc => doc?.flags?.[MODULE_ID]?.heliarque ?? {};
 export const FORMS = Object.freeze({

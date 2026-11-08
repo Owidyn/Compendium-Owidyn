@@ -1,0 +1,217 @@
+{
+  "_id": "871zKl9QiEhqhGtw",
+  "name": "SECOND DAWN",
+  "type": "feat",
+  "img": "modules/compendium-owidyn/assets/heliarque/second-dawn.svg",
+  "folder": "R9EkiIIPMEOe3XN9",
+  "sort": 14000,
+  "system": {
+    "description": {
+      "value": "<p>Par une Bonus Action, chacune de vos Formes libère simultanément une vague d'énergie apaisante. Choisissez n'importe quel nombre de créatures alliées situées à 30 ft ou moins d'au moins une de vos Formes. Chaque cible :</p><ul><li>récupère <strong>4 Dés de Fusion + votre modificateur de Charisma Hit Points</strong> ;</li><li>peut mettre fin à l'une des conditions Charmed, Frightened, Poisoned ou Prone qui l'affectent ;</li><li>peut immédiatement se déplacer jusqu'à la moitié de sa Speed sans provoquer d'Opportunity Attacks.</li></ul><p>Pendant 1 minute après l'activation de SECOND DAWN, vous pouvez utiliser <strong>Sillage apaisant deux fois pendant chacun de vos tours</strong>, mais une même créature ne peut en bénéficier qu'une seule fois par tour.</p><p>Une fois cette aptitude utilisée, vous devez terminer un Long Rest avant de pouvoir l'utiliser de nouveau.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC"
+    },
+    "identifier": "second-dawn",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Héliarque 14 (Soothing Star)",
+    "prerequisites": {
+      "level": 14,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "pJMmFlvhBuIMEAtT": {
+        "_id": "pJMmFlvhBuIMEAtT",
+        "type": "heal",
+        "name": "SECOND DAWN",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "pOm5W3Bn7H74G2RS",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": true,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "ally",
+            "choice": true,
+            "special": "À 30 ft ou moins d'au moins une de vos Formes"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "identifier": "heliarque",
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {
+          "compendium-owidyn": {
+            "heliarque": {
+              "role": "second-dawn",
+              "move": {
+                "mode": "free",
+                "distance": "halfSpeed",
+                "subject": "targets",
+                "optional": true
+              }
+            }
+          }
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "4@scale.heliarque.fusion.die + @abilities.cha.mod"
+          },
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "pOm5W3Bn7H74G2RS",
+      "name": "SECOND DAWN — Sillage redoublé",
+      "img": "modules/compendium-owidyn/assets/heliarque/second-dawn.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "description": "<p>Vous pouvez utiliser Sillage apaisant deux fois pendant chacun de vos tours ; une même créature ne peut en bénéficier qu'une fois par tour.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "heliarque": {
+            "key": "second-dawn:sillage"
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "heliarque": {
+        "key": "second-dawn"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

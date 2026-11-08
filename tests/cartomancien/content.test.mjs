@@ -4,12 +4,17 @@ import fs from "node:fs/promises";
 import vm from "node:vm";
 
 const context = vm.createContext({ Hooks: { once() {} }, console });
+const compendiums = new vm.SourceTextModule(await fs.readFile(new URL("../../scripts/owidyn/compendiums.mjs", import.meta.url), "utf8"), { context });
+await compendiums.link(() => {});
 const content = new vm.SourceTextModule(
   await fs.readFile(new URL("../../scripts/cartomancien/content.js", import.meta.url), "utf8")
     + "\nexport { FEATURES, CLASS_ADVANCEMENTS, PARIEUR_ADVANCEMENTS, cantripAdvancement };",
   { context }
 );
-await content.link(() => { throw new Error("Unexpected import"); });
+await content.link(specifier => {
+  if (specifier === "../owidyn/compendiums.mjs") return compendiums;
+  throw new Error(`Unexpected import ${specifier}`);
+});
 await content.evaluate();
 const rules = new vm.SourceTextModule(await fs.readFile(new URL("../../scripts/cartomancien/rules.js", import.meta.url), "utf8"), { context });
 await rules.link(() => {});

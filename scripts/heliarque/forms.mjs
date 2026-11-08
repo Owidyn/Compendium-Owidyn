@@ -8,7 +8,7 @@
  */
 import { asGM, registerGM } from './socket.mjs';
 import { addDestroyed, restore } from './orbitals.mjs';
-import { ACTOR_PACK, FORMS, HELIARQUE_VERSION, MODULE_ID, choose, escape, featureItem, formKey, formTokenOf, formTokens, isActiveGM, knownForms,
+import { FORMS, HELIARQUE_VERSION, MODULE_ID, choose, escape, featureItem, formKey, formTokenOf, formTokens, isActiveGM, knownForms,
   levelOf, meta, notify, orbitalData, scaleOf, subclassOf, summonerOf, turnKey } from './util.mjs';
 import { centerOf, docOf, within } from './geometry.mjs';
 
@@ -464,7 +464,8 @@ async function createOrbitals() {
 
 /**
  * Remove actors the module no longer uses, unless a token still shows them: copies of the Form templates imported
- * by versions 2.0–2.2, and Orbitals whose Héliarque was deleted or lost the class.
+ * by versions 2.0–2.2 (dnd5e's summoning copies, carrying the Form flag but no Orbital), and Orbitals whose Héliarque
+ * was deleted or lost the class. The creatures of the Creatures compendium, which holds the Forms, are never touched.
  */
 async function removeUnusedActors() {
   const placed = a => game.scenes.some(s => s.tokens.some(t => t.actorId === a.id));
@@ -472,8 +473,9 @@ async function removeUnusedActors() {
     const summoner = orbitalData(a) && fromUuidSync(orbitalData(a).summoner, { strict: false });
     return orbitalData(a) && !summoner?.classes?.heliarque;
   };
-  const copies = game.actors.filter(a => !placed(a) && (orphan(a)
-    || (a.getFlag('dnd5e', 'isAutoImported') && a._stats?.compendiumSource?.startsWith(`Compendium.${ACTOR_PACK}.`))));
+  const formCopy = a => a.getFlag('dnd5e', 'isAutoImported') && formKey(a) && !orbitalData(a)
+    && a._stats?.compendiumSource?.startsWith(`Compendium.${MODULE_ID}.`);
+  const copies = game.actors.filter(a => !placed(a) && (orphan(a) || formCopy(a)));
   if (copies.length) await Actor.implementation.deleteDocuments(copies.map(a => a.id));
   const folder = game.folders.find(f => f.type === 'Actor' && f.getFlag(MODULE_ID, 'heliarque.forms'));
   if (folder && !folder.contents.length && !folder.children.length) await folder.delete();
