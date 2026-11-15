@@ -1,0 +1,133 @@
+{
+  "_id": "pF0gQV6no5QeWlZH",
+  "name": "Vampire Hunter",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-stake-gray.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "WfDAr6hVI7788Zqx": {
+        "type": "utility",
+        "_id": "WfDAr6hVI7788Zqx",
+        "sort": 0,
+        "name": "Vitality Ward",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "When you take Necrotic damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "(@prof)d6",
+          "name": "Necrotic Damage Reduction",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Adroit Escape.</strong> You have Advantage on checks you make to escape from nonmagical restraints or from the Grappled condition.</p><p><strong>Vitality Ward.</strong> When you take Necrotic damage, you can take a Reaction to roll a number of d6s equal to your Proficiency Bonus and reduce the Necrotic damage you take by the total. Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-9EK35GJls11Y916N\"><p><strong>Foundry Note</strong></p><p><em>Vitality Ward</em> rolls the reduction to subtract from the Necrotic damage.</p></section>",
+      "chat": ""
+    },
+    "identifier": "vampire-hunter",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

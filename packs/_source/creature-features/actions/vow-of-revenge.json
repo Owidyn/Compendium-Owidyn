@@ -1,0 +1,147 @@
+{
+  "_id": "TubeUDGUsd2XC0vm",
+  "name": "Vow of Revenge",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-orange.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "9gfWIxX9TIpFotGi",
+        "item": "9HUhyxu0CXejWyIA"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.9gfWIxX9TIpFotGi.Item.9HUhyxu0CXejWyIA",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "qHtLd0UMLFe0TLVm": {
+        "type": "utility",
+        "_id": "qHtLd0UMLFe0TLVm",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "<p>The [[lookup @name lowercase]]{monster} curses one creature it can see within 30 feet of itself. The [[lookup @name lowercase]]{monster} knows the distance to and direction of the cursed target, even if it is on a different plane of existence. The curse ends on the target if the [[lookup @name lowercase]]{monster} uses this Bonus Action on a different creature.</p>",
+      "chat": ""
+    },
+    "identifier": "vow-of-revenge",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

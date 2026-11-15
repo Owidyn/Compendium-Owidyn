@@ -1,0 +1,207 @@
+{
+  "_id": "ODF7vJp13qrYXTk2",
+  "name": "Water Jet",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "BsJ4UTduKSM9E6qh",
+        "item": "u8d0KuylHzPnWDhF"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.BsJ4UTduKSM9E6qh.Item.u8d0KuylHzPnWDhF",
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "_id": "PxCFbBlCrf4rZIff",
+      "name": "Prone",
+      "img": "systems/dnd5e/icons/svg/statuses/prone.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "prone"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "iUwbybSS73fOZ9Ab": {
+        "type": "save",
+        "_id": "iUwbybSS73fOZ9Ab",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "PxCFbBlCrf4rZIff",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "line",
+            "size": "60",
+            "count": "",
+            "width": "10"
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 9,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=iUwbybSS73fOZ9Ab]], each creature in a 60-foot-long, 10-foot-wide Line. <em>Failure:</em> [[/damage 9d6 average type=cold]] damage. If the target is a Huge or smaller creature, it is pushed up to 20 feet straight away from the [[lookup @name lowercase]]{monster} and has the &amp;Reference[Prone apply=false] condition. <em>Success:</em> Half damage only.</p>",
+      "chat": ""
+    },
+    "identifier": "water-jet",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

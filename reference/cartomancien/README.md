@@ -1,4 +1,4 @@
-# Cartomancien — Deck de Tarot 0.3.0
+# Cartomancien — Deck de Tarot 0.4.0
 
 Partie du module **Compendium Owidyn** : scripts dans `scripts/cartomancien/`, icônes dans `assets/cartomancien/`, gabarit dans `templates/cartomancien/`. Les flags sont rangés sous `flags.compendium-owidyn.cartomancien`.
 
@@ -8,13 +8,15 @@ Adaptation du [Cartomancien et du Deck du Parieur](https://homebrewery.naturalcr
 
 1. Redémarrer Foundry ou recharger le monde.
 2. Ouvrir le monde avec un compte MJ : la classe (compendium **Classes**, dossier *Cartomancien* : la classe, *Class Features* et *Deck du Parieur* › la sous-classe et ses *Subclass Features*) et la Spell List (compendium **Journals**, dossier *Spell Lists › Cartomancien*) sont reconstruites automatiquement quand leur version change. Les compendiums sont déverrouillés le temps de l'écriture, puis reverrouillés.
-3. Sur chaque ancienne fiche, ouvrir **Cartomancien** dans l'en-tête, puis **Initialiser / Synchroniser**. Cela ajoute les capacités manquantes du niveau et met à jour leurs activités et effets. Les usages dépensés et les choix d'avancement existants sont conservés.
+3. Sur chaque ancienne fiche, utiliser l'aptitude **Tarots** (ajoutée par le MJ à l'ouverture du monde), ou **Cartomancien** dans le menu de l'en-tête, puis **Initialiser / Synchroniser**. Cela ajoute les capacités manquantes du niveau et met à jour leurs activités et effets. Les usages dépensés et les choix d'avancement existants sont conservés.
 4. Utiliser **Choisir les sorts mineurs** pour compléter une ancienne fiche. Pour les nouvelles fiches, ce choix existe dans l'avancement de classe.
 
 Les nouveaux avancements de points de vie, caractéristiques et dons ne recalculent pas rétroactivement les choix d'une ancienne fiche. Les vérifier dans l'onglet d'avancement de la classe. Les descriptions générées de l'ancienne version sont corrigées ; noms, images et activités personnelles sont conservés.
 
 ## Corrections et ajouts
 
+- **Tarots** (aptitude de niveau 1) ouvre le gestionnaire du deck, de la main et de la défausse, comme **Cuisiner** ouvre la cuisine. Sa description rappelle les cartes encore dans le deck, celles de la main et le nombre de cartes défaussées ; elle se met à jour après chaque pioche, carte jouée ou repos. Le menu de l'en-tête garde son entrée **Cartomancien**.
+- Le deck, la main et la défausse sont rangés dans l'onglet **Cartes**, dans le dossier *Cartomancien › <personnage>*, par le MJ connecté (à leur création, et à l'ouverture du monde pour les piles plus anciennes). Le dossier suit le nom du personnage et est supprimé avec sa dernière pile. Une pile ou un dossier que le MJ a déplacé n'est plus touché.
 - Identifiants des documents, activités, effets et avancements corrigés au format Foundry de **16 caractères**.
 - Progression corrigée : La Tour au niveau 11, La Lune au 13, Le Jugement au 15, Le Monde au 17, Le Diable au 18, L'Étoile au 19 et Le Soleil au 20.
 - Points de vie (d6), améliorations de caractéristique aux niveaux 4/8/12/16, don de niveau 19, sous-classe et sorts mineurs.

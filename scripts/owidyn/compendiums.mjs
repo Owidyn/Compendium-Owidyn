@@ -9,7 +9,7 @@ export const MODULE_ID = 'compendium-owidyn';
 export const PACKS = Object.freeze({
   classes: 'classes', items: 'items', species: 'species', creatures: 'creatures', creatureFeatures: 'creature-features',
   backgroundsFeats: 'backgrounds-feats', spells: 'spells', summons: 'summons', journals: 'journals',
-  legacyCreatures: 'legacy-creatures', legacyCreatureFeatures: 'legacy-creature-features',
+  legacyClasses: 'legacy-classes', legacyCreatures: 'legacy-creatures', legacyCreatureFeatures: 'legacy-creature-features',
   legacyBackgroundsFeats: 'legacy-backgrounds-feats', legacySpells: 'legacy-spells'
 });
 

@@ -1,0 +1,242 @@
+{
+  "_id": "RSJZBwceWZlLkBCf",
+  "name": "Rôti des Abîmes",
+  "type": "consumable",
+  "img": "icons/consumables/food/cooked-hock-glowing-orange.webp",
+  "folder": "X3txUOiX6NHXAFnf",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Outreterre · DD 14</em></p><p><strong>Ingrédients</strong> : Côte de rothé, Perles-de-nuit, 1 Herbe.</p><p><strong>Effet</strong> : Tu as la Darkvision sur 18 m, mais tes yeux luisent : tu ne peux pas te cacher dans l’obscurité. Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "roti-des-abimes",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ESVDHhdBWwGWRV7Z": {
+        "type": "utility",
+        "_id": "ESVDHhdBWwGWRV7Z",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "5DQhfky1stt48w0S"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Rôti des Abîmes",
+      "img": "icons/consumables/food/cooked-hock-glowing-orange.webp",
+      "_id": "5DQhfky1stt48w0S",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": 60,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "63YexJzVZdGrKIYI"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu as la Darkvision sur 18 m, mais tes yeux luisent : tu ne peux pas te cacher dans l’obscurité. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "roti-des-abimes",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 14,
+          "tag": "robuste",
+          "base": null,
+          "livre": "carnet-de-l-explorateur",
+          "depart": false,
+          "region": "Outreterre",
+          "effet": "Tu as la Darkvision sur 18 m, mais tes yeux luisent : tu ne peux pas te cacher dans l’obscurité. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "cote-de-rothe",
+              "count": 1,
+              "name": "Côte de rothé"
+            },
+            {
+              "identifier": "perles-de-nuit",
+              "count": 1,
+              "name": "Perles-de-nuit"
+            },
+            {
+              "family": "herbe",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

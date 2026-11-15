@@ -30,6 +30,11 @@ assert.equal(CLASS_ADVANCEMENTS.filter(a => a.type === "HitPoints").length, 1);
 assert.deepEqual(Array.from(CLASS_ADVANCEMENTS.filter(a => a.type === "AbilityScoreImprovement"), a => a.level), [4, 8, 12, 16]);
 assert.ok(CLASS_ADVANCEMENTS.some(a => a.type === "ItemChoice" && a.level === 19));
 assert.deepEqual(Array.from(PARIEUR_ADVANCEMENTS, a => a.level), [3, 6, 10, 14]);
+// The Tarots feature opens the deck manager (its activity is caught before use) and is granted at level 1
+const tarots = byName("tarots");
+assert.ok(tarots, "Tarots");
+assert.deepEqual(Object.keys(tarots.system.activities), ["CrtmActTarots001"]);
+assert.ok(CLASS_ADVANCEMENTS.find(a => a.type === "ItemGrant" && a.level === 1).configuration.items.some(item => item.uuid.endsWith(tarots._id)));
 assert.equal(cantripAdvancement(new Map()).configuration.choices[1].count, 3);
 assert.equal(cantripAdvancement(new Map()).configuration.choices[4].count, 1);
 assert.equal(cantripAdvancement(new Map()).configuration.choices[10].count, 1);

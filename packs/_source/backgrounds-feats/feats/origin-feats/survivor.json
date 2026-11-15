@@ -1,0 +1,133 @@
+{
+  "_id": "oBBdGnHRtzJkr2sB",
+  "name": "Survivor",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-campfire-rocks.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "wHoELHNRA1TzCMGe": {
+        "type": "utility",
+        "_id": "wHoELHNRA1TzCMGe",
+        "sort": 0,
+        "name": "Steel Yourself",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "When you fail a saving throw to avoid or end the Charmed or Frightened condition"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "@prof",
+          "name": "Bonus to the Save",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Hypervigilance.</strong> Whenever you roll Initiative, you can reroll the d20 if it shows a 9 or lower, and you must use the new roll.</p><p><strong>Steel Yourself.</strong> When you fail a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to add a bonus equal to your Proficiency Bonus to the roll, potentially turning it into a success. Once you take this Reaction, you can’t do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-rwYvb0z9Dn7DSK7Y\"><p><strong>Foundry Note</strong></p><p>Reroll an Initiative of 9 or lower yourself. <em>Steel Yourself</em> rolls the bonus to add to the failed save.</p></section>",
+      "chat": ""
+    },
+    "identifier": "survivor",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

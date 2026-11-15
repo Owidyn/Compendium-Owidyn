@@ -1,0 +1,39 @@
+.owidyn-cuisine { min-width: 760px; }
+.owidyn-cuisine-body { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.owidyn-cuisine-columns { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: 12px; min-width: 0; }
+.owidyn-cuisine-column { min-width: 0; border: 1px solid var(--color-border-light-primary); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+.owidyn-cuisine-column h3 { margin: 0; display: flex; justify-content: space-between; gap: 8px; }
+.owidyn-cuisine-column h3 span { font-size: 0.8em; font-weight: 400; opacity: 0.8; }
+.owidyn-cuisine-list { display: flex; flex-direction: column; gap: 8px; max-height: 460px; overflow-y: auto; padding: 2px 4px 2px 0; }
+.owidyn-cuisine-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+/* Foundry's buttons have a fixed height and centered content: the cards size to their text instead */
+.owidyn-cuisine .owidyn-cuisine-card {
+  display: flex; flex: 0 0 auto; justify-content: flex-start; align-items: center; gap: 10px;
+  width: 100%; height: auto; min-height: 54px; margin: 0; padding: 8px 10px;
+  text-align: left; white-space: normal; line-height: 1.3;
+}
+.owidyn-cuisine .owidyn-cuisine-card img { width: 40px; height: 40px; flex: 0 0 40px; object-fit: cover; border: none; border-radius: 4px; }
+.owidyn-cuisine-card-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.owidyn-cuisine-card-main strong { white-space: normal; overflow-wrap: anywhere; }
+.owidyn-cuisine-card-main strong em { font-weight: 400; opacity: 0.8; }
+.owidyn-cuisine-card-main small { opacity: 0.8; white-space: normal; }
+.owidyn-cuisine-card.chosen { border-color: var(--color-border-highlight); box-shadow: 0 0 4px var(--color-shadow-highlight); }
+.owidyn-cuisine-card.missing { opacity: 0.7; }
+.owidyn-cuisine-cards { display: flex; flex-direction: column; gap: 8px; }
+.owidyn-cuisine-cards.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.owidyn-cuisine-family { margin: 6px 0 0; padding-bottom: 2px; border-bottom: 1px solid var(--color-border-light-primary); font-size: 0.95em; opacity: 0.85; }
+.owidyn-cuisine-family:first-child { margin-top: 0; }
+.owidyn-cuisine-toggles { display: flex; gap: 4px; margin-left: auto; }
+.owidyn-cuisine .owidyn-cuisine-toggles button { width: 28px; height: 24px; min-height: 0; padding: 0; font-size: 0.85em; opacity: 0.6; }
+.owidyn-cuisine .owidyn-cuisine-toggles button.active { opacity: 1; border-color: var(--color-border-highlight); }
+.owidyn-cuisine-missing { color: var(--color-level-warning, #c9822b); }
+.owidyn-cuisine-danger { color: var(--color-level-error, #b23a3a); }
+.owidyn-cuisine-empty { opacity: 0.75; font-style: italic; }
+.owidyn-cuisine-preview { border-top: 1px solid var(--color-border-light-primary); padding-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+.owidyn-cuisine-preview p { margin: 0; }
+.owidyn-cuisine-preview.unknown strong { font-style: italic; }
+.owidyn-cuisine-encas { display: flex; align-items: center; gap: 6px; }
+.owidyn-cuisine-actions { display: flex; gap: 8px; }
+.owidyn-cuisine-actions button { flex: 1; }
+.owidyn-cuisine-starter { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 900px) { .owidyn-cuisine-columns { grid-template-columns: 1fr; } .owidyn-cuisine { min-width: 480px; } }

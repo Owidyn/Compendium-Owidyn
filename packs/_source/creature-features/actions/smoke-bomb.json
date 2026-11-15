@@ -1,0 +1,219 @@
+{
+  "_id": "k5iOqTOpm27xdaJJ",
+  "name": "Smoke Bomb",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "w7ByorFM13xi2uvk",
+        "item": "78nfQFoQcIJjK1qS"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.w7ByorFM13xi2uvk.Item.78nfQFoQcIJjK1qS",
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "_id": "9UijFa9CaCoLHuYs",
+      "name": "Blinded",
+      "img": "systems/dnd5e/icons/svg/statuses/blinded.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "m6sGoSTvZVqsvIsK": {
+        "type": "save",
+        "_id": "m6sGoSTvZVqsvIsK",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9UijFa9CaCoLHuYs",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "30"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "20",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 8,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "poison"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "16"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "<p>The [[lookup @name lowercase]]{monster} throws a bomb to a point it can see within 30 feet of itself. <em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=m6sGoSTvZVqsvIsK]], each creature in a 20-foot-radius Sphere centered on that point. <em>Failure:</em> [[/damage 8d6 average type=poison]] damage, and the target has the &amp;Reference[Blinded apply=false] condition until the end of the [[lookup @name lowercase]]{monster}'s next turn. <em>Success:</em> Half damage only.</p>",
+      "chat": ""
+    },
+    "identifier": "smoke-bomb",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

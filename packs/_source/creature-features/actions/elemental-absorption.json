@@ -1,0 +1,147 @@
+{
+  "_id": "wIY0XocUfN8jUfeZ",
+  "name": "Elemental Absorption",
+  "type": "feat",
+  "img": "icons/magic/acid/orb-bubble-smoke-drip.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "hnfF9Htc0OUw85eL",
+        "item": "xduMwv3sCXnJdKtX"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.hnfF9Htc0OUw85eL.Item.xduMwv3sCXnJdKtX",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "V6HynkvmDEuVoIfE": {
+        "type": "utility",
+        "_id": "V6HynkvmDEuVoIfE",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "The cultist takes Acid, Cold, Fire, Lightning, or Thunder damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "<p><em>Trigger:</em> The [[lookup @name lowercase]]{monster} takes Acid, Cold, Fire, Lightning, or Thunder damage. <em>Response:</em> The [[lookup @name lowercase]]{monster} gives itself Resistance to that instance of damage and gains 10 &amp;Reference[Temporary Hit Points].</p>",
+      "chat": ""
+    },
+    "identifier": "elemental-absorption",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

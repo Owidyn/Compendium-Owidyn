@@ -1,0 +1,161 @@
+{
+  "_id": "OEjMzMQNMyhVeUug",
+  "name": "Curse of the Riddle",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "lcTFrwx5tzxAtN5v",
+        "item": "uaMxdAzoNNBYhG6U"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.lcTFrwx5tzxAtN5v.Item.uaMxdAzoNNBYhG6U",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "6eg3Wz6jaUXysQ6L": {
+        "type": "save",
+        "_id": "6eg3Wz6jaUXysQ6L",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "60"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p><em>Intelligence Saving Throw:</em> DC [[lookup @save.dc.value activity=6eg3Wz6jaUXysQ6L]], one creature the [[lookup @name lowercase]]{monster} can see within 60 feet. <em>Failure:</em> [[/damage 6d6 average type=psychic]] damage, and the target is cursed with a riddle. The cursed target has Disadvantage on ability checks and attack rolls. In addition, if it takes the Magic action, it must succeed on a DC 15 Intelligence saving throw or that action is wasted. The cursed target can take a Study action to make a DC 15 Intelligence check, solving the riddle and ending the curse on a success. The curse ends early if the [[lookup @name lowercase]]{monster} curses another target.</p>",
+      "chat": ""
+    },
+    "identifier": "curse-of-the-riddle",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

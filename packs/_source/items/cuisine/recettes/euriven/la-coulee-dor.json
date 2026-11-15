@@ -1,0 +1,232 @@
+{
+  "_id": "6BCEhSttvk0JSJ6C",
+  "name": "La Coulée d’or",
+  "type": "consumable",
+  "img": "icons/consumables/food/cheese-wedge-swiss-yellow.webp",
+  "folder": "KVbYd7a7UXw61Gjp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Baerdar · DD 13</em></p><p><strong>Ingrédients</strong> : L’Or des caves, 1 Légume, 1 Viande.</p><p><strong>Effet</strong> : Tu gagnes puissance × d10 PV temporaires. Jusqu’au prochain Long Rest.</p><p>Le fromage fond et coule sur les pommes de terre comme de l’or fondu.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "la-coulee-d-or",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "yWJAICFN8az2mv7x": {
+        "type": "utility",
+        "_id": "yWJAICFN8az2mv7x",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "XtBaPzswFcL27dGQ"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "La Coulée d’or",
+      "img": "icons/consumables/food/cheese-wedge-swiss-yellow.webp",
+      "_id": "XtBaPzswFcL27dGQ",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu gagnes puissance × d10 PV temporaires. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "la-coulee-d-or",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 13,
+          "tag": "robuste",
+          "base": null,
+          "livre": "montagnes-et-terrasses",
+          "depart": false,
+          "region": "Baerdar",
+          "effet": "Tu gagnes puissance × d10 PV temporaires. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "l-or-des-caves",
+              "count": 1,
+              "name": "L’Or des caves"
+            },
+            {
+              "family": "legume",
+              "count": 1
+            },
+            {
+              "family": "viande",
+              "count": 1
+            }
+          ],
+          "temphp": "@puissanced10",
+          "elans": null,
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

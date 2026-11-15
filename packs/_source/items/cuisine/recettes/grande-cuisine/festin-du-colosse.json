@@ -1,0 +1,240 @@
+{
+  "_id": "dkboocpBAb0k2MCE",
+  "name": "Festin du colosse",
+  "type": "consumable",
+  "img": "icons/consumables/food/bowl-ribs-meat-rice-mash-brown-white.webp",
+  "folder": "odrfZMBWI3OeljVI",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette libre · Peu commune · DD 15</em></p><p><strong>Ingrédients</strong> : 2 × Viande, 1 Herbe, 1 ingrédient Robuste.</p><p><strong>Effet</strong> : Tu gagnes puissance × d8 PV temporaires, et tu as l’Advantage aux tests de Force. Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "festin-du-colosse",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "HCjGuMtZleuirshb": {
+        "type": "utility",
+        "_id": "HCjGuMtZleuirshb",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "WsIECJRVj3dBGeqI"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Festin du colosse",
+      "img": "icons/consumables/food/bowl-ribs-meat-rice-mash-brown-white.webp",
+      "_id": "WsIECJRVj3dBGeqI",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "XLW5RF4B7GGKI5SM"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu gagnes puissance × d8 PV temporaires, et tu as l’Advantage aux tests de Force. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "festin-du-colosse",
+          "type": "libre",
+          "tier": "peu-commune",
+          "dc": 15,
+          "tag": "robuste",
+          "base": null,
+          "livre": "le-grimoire-du-gourmet",
+          "depart": false,
+          "region": "",
+          "effet": "Tu gagnes puissance × d8 PV temporaires, et tu as l’Advantage aux tests de Force. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "family": "viande",
+              "count": 2
+            },
+            {
+              "family": "herbe",
+              "count": 1
+            },
+            {
+              "tag": "robuste",
+              "count": 1
+            }
+          ],
+          "temphp": "@puissanced8",
+          "elans": null,
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

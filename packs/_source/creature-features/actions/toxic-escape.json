@@ -1,0 +1,234 @@
+{
+  "_id": "pOlVWkMB0shQQxpK",
+  "name": "Toxic Escape",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "YLWjGyEfVqF71I38",
+        "item": "37KbD9fdbdrF9Emn"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.YLWjGyEfVqF71I38.Item.37KbD9fdbdrF9Emn",
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "_id": "FsbaeWbxBuUfwuHe",
+      "name": "Incapacitated",
+      "img": "systems/dnd5e/icons/svg/statuses/incapacitated.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Kp7Ej0qyCi0zUAvs",
+      "name": "Poisoned",
+      "img": "systems/dnd5e/icons/svg/statuses/poisoned.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "poisoned"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "0wuU3cUgVxv7hYpY": {
+        "type": "save",
+        "_id": "0wuU3cUgVxv7hYpY",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "The yochlol is hit by an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "FsbaeWbxBuUfwuHe",
+            "onSave": false,
+            "level": {}
+          },
+          {
+            "_id": "Kp7Ej0qyCi0zUAvs",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "5",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p><em>Trigger:</em> The [[lookup @name lowercase]]{monster} is hit by an attack roll. <em>Response:</em> The [[lookup @name lowercase]]{monster} halves the attack's damage to itself (round down), and it teleports to an unoccupied space it can see within 30 feet of itself. <em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=0wuU3cUgVxv7hYpY]], each creature within 5 feet of the [[lookup @name lowercase]]{monster}'s destination space. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn. While Poisoned, it has the &amp;Reference[Incapacitated apply=false] condition.</p>",
+      "chat": ""
+    },
+    "identifier": "toxic-escape",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

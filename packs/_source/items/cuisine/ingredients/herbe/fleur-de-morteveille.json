@@ -1,0 +1,74 @@
+{
+  "_id": "VKHI4z5QoIu65ct2",
+  "name": "Fleur de Morteveille",
+  "type": "loot",
+  "img": "icons/consumables/plants/fern-sprig-stem-leaf-herb-green.webp",
+  "folder": "d3ldqV2CAxE0Qidw",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>Une fleur bleue à cinq pétales, au cœur pâle. Bien dosée, elle apaise ; mal dosée, elle plonge dans un sommeil qui ressemble à la mort.</p><p><strong>Ingrédient</strong> : Herbe · Apaisant · Rare — Outreterre.</p><p><strong>Dangereux</strong> : un plat raté qui en contient impose à chaque mangeur un jet de sauvegarde de Constitution DD 15.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "fleur-de-morteveille",
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "material",
+      "subtype": ""
+    },
+    "properties": []
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "ingredient": {
+          "family": "herbe",
+          "tag": "apaisant",
+          "danger": {
+            "dc": 15,
+            "status": "unconscious",
+            "seconds": 3600
+          }
+        }
+      }
+    }
+  }
+}

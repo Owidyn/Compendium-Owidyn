@@ -1,11 +1,14 @@
 /**
  * Boutiques — catalogue.
- * Pure rules of the shop generators: the shops and their categories, which category an entry of a compendium index
- * belongs to, which copy of a duplicated item wins, the stable's goods and the prices. No Foundry API here, so that the
- * regression checks can run outside Foundry.
+ * Pure rules of the shops: the kinds of goods and their rarities, the templates that pre-fill the generator, which kind
+ * an entry of a compendium index is, which copy of a duplicated item wins, the stable's and the inn's goods, the draw
+ * of a stock, the prices and the payment with change. No Foundry API here, so that the regression checks can run
+ * outside Foundry.
  */
 
 export const RARITIES = ['common', 'uncommon', 'rare', 'veryRare', 'legendary'];
+/** Rarities a shop can allow: the mundane goods, then the magic ones. */
+export const SHOP_RARITIES = ['mundane', ...RARITIES];
 
 // Price of a magic item without price, by rarity (Dungeon Master's Guide 2024); a consumable costs half
 const MAGIC_PRICE = { common: 100, uncommon: 400, rare: 4000, veryRare: 40000, legendary: 200000 };
@@ -13,61 +16,79 @@ const GP = { cp: 0.01, sp: 0.1, ep: 0.5, gp: 1, pp: 10 };
 
 /** Rarity of a spell scroll by spell level, from cantrip to 9 (Dungeon Master's Guide 2024). */
 export const SCROLL_RARITY = ['common', 'common', 'uncommon', 'uncommon', 'rare', 'rare', 'veryRare', 'veryRare', 'veryRare', 'legendary'];
-const SCROLLS = 'scrolls-';
 
 /**
- * The shops. Each category is a roll table; its weight is the chance of the shop's master table to give it. A
- * category named after a rarity holds the magic items of that rarity, and "scrolls-<rarity>" the spell scrolls of that
- * rarity: both are kept out of a stock above its maximum rarity. A shop that lists `all` its goods (the inn's services)
- * has no draw.
+ * The kinds of goods, by group, as the generator lists them: a group's box checks all its kinds. A kind is
+ * [key, label, weight, weight of its magic goods]: its share of a draw, multiplied by the weight of the rarity. The
+ * stable's goods are drawn too; the services of the checked kinds are all listed, besides the goods drawn.
  */
+export const GOODS = [
+  { key: 'weapons', label: 'Armes', kinds: [
+    ['simpleM', 'Armes courantes de corps à corps', 14, 3], ['simpleR', 'Armes courantes à distance', 6, 2],
+    ['martialM', 'Armes de guerre de corps à corps', 22, 5], ['martialR', 'Armes de guerre à distance', 8, 2], ['ammo', 'Munitions', 12, 4]
+  ] },
+  { key: 'armor', label: 'Armures', kinds: [
+    ['light', 'Armures légères', 10, 3], ['medium', 'Armures intermédiaires', 10, 3], ['heavy', 'Armures lourdes', 8, 3], ['shield', 'Boucliers', 6, 3]
+  ] },
+  { key: 'adventuring', label: "Équipement d'aventurier", kinds: [
+    ['gear', 'Matériel', 45], ['containers', 'Contenants', 8], ['clothing', 'Vêtements', 10], ['food', 'Vivres', 12]
+  ] },
+  { key: 'tools', label: 'Outils', kinds: [
+    ['art', "Outils d'artisan", 10], ['game', 'Jeux', 4], ['music', 'Instruments de musique', 5], ['otherTools', 'Autres outils', 6]
+  ] },
+  { key: 'apothecary', label: 'Apothicaire', kinds: [
+    ['potions', 'Potions et fioles', 30, 25], ['herbs', 'Herbes et ingrédients', 15], ['poisons', 'Poisons', 12, 5], ['kits', 'Kits et fournitures', 10]
+  ] },
+  { key: 'magic', label: 'Objets magiques', kinds: [
+    ['wondrous', 'Objets merveilleux', 40], ['rings', 'Anneaux', 8], ['rods', 'Sceptres', 4], ['wands', 'Baguettes', 8],
+    ['scrolls', 'Parchemins de sort', 20], ['reagents', 'Ingrédients enchantés', 4]
+  ] },
+  { key: 'stable', label: 'Écurie', kinds: [['mounts', 'Montures', 50], ['tack', 'Sellerie et fourrage', 35], ['vehicles', 'Véhicules', 15]] },
+  { key: 'services', label: 'Services', kinds: [
+    ['lodging', 'Chambres', 0], ['meals', 'Repas', 0], ['drinks', 'Boissons', 0], ['hirelings', 'Employés et messagers', 0],
+    ['spellcasting', 'Sorts lancés sur demande', 0]
+  ] }
+];
+const KINDS = new Map(GOODS.flatMap(group => group.kinds.map(([key, label, weight, magicWeight = weight]) => [key, { key, label, weight, magicWeight, group: group.key }])));
+const kindsOf = (...groups) => GOODS.filter(group => groups.includes(group.key)).flatMap(group => group.kinds.map(([key]) => key));
+/** Kinds whose goods come from the item compendiums, which the rarities filter (not the stable's goods nor the services). */
+export const ITEM_KINDS = new Set(GOODS.filter(group => !['stable', 'services'].includes(group.key)).flatMap(group => group.kinds.map(([key]) => key)));
+export const SERVICE_KINDS = new Set(kindsOf('services'));
+/** Order of the kinds, for the lines of a shop. */
+export const KIND_ORDER = [...KINDS.keys()];
+export const kindLabel = kind => KINDS.get(kind)?.label ?? kind;
+// Weight of each rarity in a draw: a magic good is much rarer than a mundane one
+const RARITY_WEIGHTS = { mundane: 60, common: 12, uncommon: 9, rare: 5, veryRare: 2.5, legendary: 1 };
+
+/** Weight in a draw of the goods of a kind and a rarity. */
+export function poolWeight(kind, rarity) {
+  const def = KINDS.get(kind);
+  if (!def) return 0;
+  return (rarity === 'mundane' ? def.weight : def.magicWeight) * (RARITY_WEIGHTS[rarity] ?? 0);
+}
+
+/**
+ * The shop templates: the kinds and rarities they check in the generator, which the GM can change before generating.
+ * Nothing very rare nor legendary at first.
+ */
+const UP_TO_RARE = ['common', 'uncommon', 'rare'];
 export const SHOPS = {
   hutte: {
     label: 'La Hutte Enchantée', icon: 'fa-solid fa-hat-wizard',
-    categories: {
-      common: 40, uncommon: 30, rare: 18, veryRare: 9, legendary: 3,
-      'scrolls-common': 8, 'scrolls-uncommon': 6, 'scrolls-rare': 4, 'scrolls-veryRare': 2, 'scrolls-legendary': 1
-    }
+    kinds: [...kindsOf('weapons', 'armor', 'magic'), 'potions', 'poisons'], rarities: UP_TO_RARE
   },
-  equipement: {
-    label: 'Équipement', icon: 'fa-solid fa-toolbox',
-    categories: { gear: 60, tools: 20, clothing: 10, food: 10 }
-  },
-  forge: {
-    label: 'Forge', icon: 'fa-solid fa-hammer',
-    categories: { weapons: 55, armor: 35, ammo: 15, common: 6, uncommon: 5, rare: 3, veryRare: 2, legendary: 1 }
-  },
-  apothicaire: {
-    label: 'Apothicaire', icon: 'fa-solid fa-flask',
-    categories: { potions: 45, herbs: 20, poisons: 15, kits: 10, common: 10, uncommon: 7, rare: 4, veryRare: 2, legendary: 1 }
-  },
-  ecurie: {
-    label: 'Écurie', icon: 'fa-solid fa-horse',
-    categories: { mounts: 50, tack: 35, vehicles: 15 }
-  },
-  auberge: {
-    label: "L'Auberge", icon: 'fa-solid fa-beer-mug-empty', all: true,
-    categories: { lodging: 1, meals: 1, drinks: 1, hirelings: 1, spellcasting: 1 }
-  }
+  equipement: { label: 'Équipement', icon: 'fa-solid fa-toolbox', kinds: kindsOf('adventuring', 'tools'), rarities: ['mundane'] },
+  forge: { label: 'Forge', icon: 'fa-solid fa-hammer', kinds: kindsOf('weapons', 'armor'), rarities: ['mundane', ...UP_TO_RARE] },
+  apothicaire: { label: 'Apothicaire', icon: 'fa-solid fa-flask', kinds: kindsOf('apothecary'), rarities: ['mundane', ...UP_TO_RARE] },
+  ecurie: { label: 'Écurie', icon: 'fa-solid fa-horse', kinds: kindsOf('stable'), rarities: ['mundane'] },
+  auberge: { label: "L'Auberge", icon: 'fa-solid fa-beer-mug-empty', kinds: kindsOf('services'), rarities: ['mundane'] }
 };
 
-/** Labels of the categories that aren't a rarity (the rarities use the dnd5e labels, the scrolls too). */
-export const CATEGORY_LABELS = {
-  gear: 'Matériel', tools: 'Outils', clothing: 'Vêtements', food: 'Vivres',
-  weapons: 'Armes', armor: 'Armures', ammo: 'Munitions',
-  potions: 'Potions et fioles', herbs: 'Herbes et ingrédients', poisons: 'Poisons', kits: 'Kits et fournitures',
-  mounts: 'Montures', tack: 'Sellerie et fourrage', vehicles: 'Véhicules',
-  lodging: 'Chambres', meals: 'Repas', drinks: 'Boissons', hirelings: 'Employés et messagers', spellcasting: 'Sorts lancés sur demande'
-};
-
-/** Rarity of a scroll category ("scrolls-rare" → "rare"), or null. */
-export const scrollRarityOf = category => (String(category ?? '').startsWith(SCROLLS) ? category.slice(SCROLLS.length) : null);
-
-/** Shop and category of a spell sold as a scroll, with the scroll's price: half that of a magic item of its rarity. */
+/** Kind, rarity and price of a spell sold as a scroll: half the price of a magic item of its rarity. */
 export function scrollOf(spell) {
   const rarity = SCROLL_RARITY[Number(spell.system?.level ?? -1)];
   if (!rarity) return null;
-  return { shop: 'hutte', category: `${SCROLLS}${rarity}`, price: { value: MAGIC_PRICE[rarity] / 2, denomination: 'gp' } };
+  return { kind: 'scrolls', rarity, price: { value: MAGIC_PRICE[rarity] / 2, denomination: 'gp' } };
 }
 
 /**
@@ -78,7 +99,7 @@ export const sellsScrolls = packageName => ['dnd5e', 'compendium-owidyn'].includ
 
 /**
  * Services of the inn, from the System Reference Document 5.2 (Food, Drink, and Lodging; Hirelings; Spellcasting
- * Services). `INN_RULES` holds the dnd5e rules page of each category.
+ * Services). `INN_RULES` holds the dnd5e rules page of each kind.
  */
 export const INN = [
   ['lodging', 'Inn Stay, Squalid (per day)', 7, 'cp'], ['lodging', 'Inn Stay, Poor (per day)', 1, 'sp'],
@@ -94,7 +115,7 @@ export const INN = [
   ['spellcasting', 'Spellcasting: Level 2', 200, 'gp'], ['spellcasting', 'Spellcasting: Level 3 (town or city)', 300, 'gp'],
   ['spellcasting', 'Spellcasting: Level 4–5 (town or city)', 2000, 'gp'], ['spellcasting', 'Spellcasting: Level 6–8 (city)', 20000, 'gp'],
   ['spellcasting', 'Spellcasting: Level 9 (city)', 100000, 'gp']
-].map(([category, name, value, denomination]) => ({ category, name, price: { value, denomination } }));
+].map(([kind, name, value, denomination]) => ({ kind, name, price: { value, denomination } }));
 const SERVICES = 'Compendium.dnd5e.content24.JournalEntry.phbServices00000.JournalEntryPage.';
 export const INN_RULES = {
   lodging: `${SERVICES}f67yi5VSl1jEeHpN`, meals: `${SERVICES}f67yi5VSl1jEeHpN`, drinks: `${SERVICES}f67yi5VSl1jEeHpN`,
@@ -119,8 +140,8 @@ export const STABLE = [
   ['vehicles', 'Carriage', 100, 'gp', 'Item'], ['vehicles', 'Cart', 15, 'gp', 'Item'],
   ['vehicles', 'Chariot', 250, 'gp', 'Item'], ['vehicles', 'Sled', 20, 'gp', 'Item'],
   ['vehicles', 'Wagon', 35, 'gp', 'Item']
-].map(([category, name, value, denomination, documentName, aliases = []]) => ({
-  category, name, names: [name, ...aliases], price: { value, denomination }, documentName
+].map(([kind, name, value, denomination, documentName, aliases = []]) => ({
+  kind, name, names: [name, ...aliases], price: { value, denomination }, documentName
 }));
 
 // Item types that are never goods, and the healing and alchemical goods of the apothecary that dnd5e doesn't type so
@@ -129,10 +150,13 @@ const APOTHECARY_GOODS = new Set(["healer's kit", 'perfume']);
 const APOTHECARY_TOOLS = new Set(['herb', 'pois', 'alchemist']);
 const WEAPONS = new Set(['simpleM', 'simpleR', 'martialM', 'martialR']);
 const ARMOR = new Set(['light', 'medium', 'heavy', 'shield']);
+const TOOLS = { art: 'art', game: 'game', music: 'music' };
 // Loot subtypes of the general store: none, or adventuring gear (not trade goods, gems, art, materials…)
 const GEAR_LOOT = new Set(['', 'gear']);
 // Consumable subtypes that say what the item is; the others (a module's own) are read from the compendium folder
 const KNOWN_CONSUMABLES = new Set(['ammo', 'potion', 'poison', 'food', 'scroll', 'trinket', 'rod', 'wand', 'wondrous']);
+// Kind of a magic item by its subtype, when it isn't a weapon nor an armor (wondrous item otherwise)
+const MAGIC_KINDS = { ring: 'rings', rod: 'rods', wand: 'wands', potion: 'potions', poison: 'poisons', ammo: 'ammo', scroll: 'scrolls' };
 
 // Compendium folders that tell what an untyped item is: herbs, potions, food, or raw materials and treasures (not sold)
 const FOLDER_HINTS = [
@@ -159,7 +183,8 @@ function folderHint(folder) {
   return hint ? hint[0] : undefined;
 }
 
-export const isMagic = entry => RARITIES.includes(entry.system?.rarity) && (entry.system?.properties ?? []).includes('mgc');
+// The properties are an array in a compendium index, a Set in a document
+export const isMagic = entry => RARITIES.includes(entry.system?.rarity) && [...(entry.system?.properties ?? [])].includes('mgc');
 
 /** Price of an entry in gold pieces (0 when it has none). */
 export function priceInGp(price) {
@@ -176,78 +201,81 @@ export function priceOf(entry) {
 }
 
 /**
- * Shops and categories of an item index entry, as [shop, category] pairs. A magic item goes to La Hutte Enchantée and,
- * when it's a weapon, an armor or a potion, also to the Forge or the Apothecary in its rarity; an item without price
- * (feature, placeholder, artifact) goes nowhere, and the stable's goods only to the stable. `folder` is the name of the
- * item's compendium folder (and its parents), read for the loot and consumables that their type doesn't describe.
+ * What an item index entry is as a good: { kinds, rarity }, or null when it isn't for sale. `kinds` are the kinds it
+ * can be sold as, first the one it shows (a shop sells it as the first of them it allows): an herbalism kit is a kit
+ * of the Apothicaire, else another tool. `rarity` is "mundane" or a magic rarity. An item without price (feature,
+ * placeholder, artifact) isn't for sale, nor the stable's goods but at the stable. `folder` is the name of the item's
+ * compendium folder (and its parents), read for the loot and consumables that their type doesn't describe.
  */
-export function placesOf(entry, { folder = '' } = {}) {
+export function classify(entry, { folder = '' } = {}) {
   const type = entry.type;
   const subtype = entry.system?.type?.value ?? '';
-  if (NOT_GOODS.has(type) || !priceOf(entry)) return [];
+  if (NOT_GOODS.has(type) || !priceOf(entry)) return null;
   const name = normalize(entry.name);
-  if (STABLE_NAMES.has(name)) return [];
+  if (STABLE_NAMES.has(name)) return null;
+  const good = (kinds, rarity = 'mundane') => (kinds.length ? { kinds, rarity } : null);
+  // An ingredient of the cooking system: food, an herb also, or an enchanted ingredient when its lore sells it only at
+  // La Hutte Enchantée (the Baies de Sunilda)
+  const ingredient = entry.flags?.['compendium-owidyn']?.cuisine?.ingredient;
+  if (ingredient) {
+    if (ingredient.boutique === 'hutte') return good(['reagents'], RARITIES.includes(entry.system?.rarity) ? entry.system.rarity : 'common');
+    return good(ingredient.family === 'herbe' ? ['herbs', 'food'] : ['food']);
+  }
   const hinted = fallback => {
     const hint = folderHint(folder);
-    if (hint === null) return [];
-    if (hint === 'herbs') return [['apothicaire', 'herbs']];
-    if (hint === 'potions') return [['apothicaire', 'potions']];
-    if (hint === 'food') return [['equipement', 'food']];
-    return fallback;
+    if (hint === null) return null;
+    return good(hint ? [hint] : fallback);
   };
 
   if (isMagic(entry)) {
-    if (type === 'loot' || (type === 'consumable' && subtype === 'food')) return [];
+    if (type === 'loot' || (type === 'consumable' && subtype === 'food')) return null;
     const rarity = entry.system.rarity;
-    const places = [['hutte', rarity]];
-    if ((type === 'weapon' && WEAPONS.has(subtype)) || (type === 'equipment' && ARMOR.has(subtype))
-      || (type === 'consumable' && subtype === 'ammo')) places.push(['forge', rarity]);
-    if (type === 'consumable' && ['potion', 'poison'].includes(subtype)) places.push(['apothicaire', rarity]);
-    return places;
+    if ((type === 'weapon' && WEAPONS.has(subtype)) || (type === 'equipment' && ARMOR.has(subtype))) return good([subtype], rarity);
+    if (type === 'tool') return good(['wondrous', TOOLS[subtype] ?? 'otherTools'], rarity);
+    if (type === 'container') return good(['wondrous', 'containers'], rarity);
+    if (subtype === 'clothing') return good(['wondrous', 'clothing'], rarity);
+    return good([MAGIC_KINDS[subtype] ?? 'wondrous'], rarity);
   }
 
-  if (type === 'weapon') return WEAPONS.has(subtype) ? [['forge', 'weapons']] : [];
+  if (type === 'weapon') return WEAPONS.has(subtype) ? good([subtype]) : null;
   if (type === 'equipment') {
-    if (ARMOR.has(subtype)) return [['forge', 'armor']];
-    if (subtype === 'clothing') return [['equipement', 'clothing']];
-    return ['trinket', 'rod', 'wand', 'ring'].includes(subtype) ? [['equipement', 'gear']] : [];
+    if (ARMOR.has(subtype)) return good([subtype]);
+    if (subtype === 'clothing') return good(['clothing']);
+    return ['trinket', 'rod', 'wand', 'ring'].includes(subtype) ? good(['gear']) : null;
   }
   if (type === 'consumable') {
-    if (subtype === 'ammo') return [['forge', 'ammo']];
-    if (subtype === 'potion') return [['apothicaire', 'potions']];
-    if (subtype === 'poison') return [['apothicaire', 'poisons']];
-    if (APOTHECARY_GOODS.has(name)) return [['apothicaire', 'kits'], ['equipement', 'gear']];
-    if (subtype === 'food') return [['equipement', 'food']];
+    if (subtype === 'ammo') return good(['ammo']);
+    if (subtype === 'potion') return good(['potions']);
+    if (subtype === 'poison') return good(['poisons']);
+    if (APOTHECARY_GOODS.has(name)) return good(['kits', 'gear']);
+    if (subtype === 'food') return good(['food']);
     if (!KNOWN_CONSUMABLES.has(subtype)) return hinted([]);
-    return ['trinket', 'rod', 'wand'].includes(subtype) ? [['equipement', 'gear']] : [];
+    return ['trinket', 'rod', 'wand'].includes(subtype) ? good(['gear']) : null;
   }
   if (type === 'tool') {
-    const places = [['equipement', 'tools']];
-    if (APOTHECARY_TOOLS.has(entry.system?.type?.baseItem)) places.push(['apothicaire', 'kits']);
-    return places;
+    const tool = TOOLS[subtype] ?? 'otherTools';
+    return good(APOTHECARY_TOOLS.has(entry.system?.type?.baseItem) ? ['kits', tool] : [tool]);
   }
-  if (type === 'container') return [['equipement', 'gear']];
+  if (type === 'container') return good(['containers']);
   if (type === 'loot') {
-    if (APOTHECARY_GOODS.has(name)) return [['apothicaire', 'kits'], ['equipement', 'gear']];
-    return GEAR_LOOT.has(subtype) ? hinted([['equipement', 'gear']]) : [];
+    if (APOTHECARY_GOODS.has(name)) return good(['kits', 'gear']);
+    return GEAR_LOOT.has(subtype) ? hinted(['gear']) : null;
   }
-  return [];
+  return null;
 }
 
 /**
- * Rank of a copy among the items sharing a name (lower wins): a compendium hidden from the players comes last, then
- * the Owidyn content, the dnd5e 2024 content, the rest of dnd5e, and the other modules (2024 rules first).
+ * Rank of a copy among the items sharing a name (lower wins): the Owidyn content, the dnd5e 2024 content, the Owidyn
+ * 2014 content (its Legacy compendiums: the 2014 Ensnaring Strike gives way to the 2024 one of dnd5e), the rest of
+ * dnd5e, and the other modules (2024 rules first); a compendium of another package hidden from the players comes last.
+ * The Owidyn compendiums are all hidden from the players, who still buy their goods: the active GM's client gives them,
+ * and shows them their sheets.
  */
 export function sourceRank({ packageName, hidden = false, rules = '' }) {
-  const own = packageName === 'compendium-owidyn' ? 0 : packageName === 'dnd5e' ? (rules === '2024' ? 1 : 2) : (rules === '2024' ? 3 : 4);
-  return (hidden ? 10 : 0) + own;
-}
-
-/** Whether a category is allowed in a stock whose maximum rarity is `maxRarity` ('' for no magic item). */
-export function allowsCategory(category, maxRarity) {
-  const rarity = RARITIES.includes(category) ? category : scrollRarityOf(category);
-  if (!rarity) return true;
-  return RARITIES.includes(maxRarity) && RARITIES.indexOf(rarity) <= RARITIES.indexOf(maxRarity);
+  const owidyn = packageName === 'compendium-owidyn';
+  const own = owidyn ? (rules === '2014' ? 2 : 0)
+    : packageName === 'dnd5e' ? (rules === '2024' ? 1 : 3) : (rules === '2024' ? 4 : 5);
+  return (hidden && !owidyn ? 10 : 0) + own;
 }
 
 /** Index in `weights` drawn with a random number in [0, 1). */
@@ -265,4 +293,76 @@ export function pickWeighted(weights, random) {
 export function adjustPrice(price, percent = 100) {
   const value = price.value * percent / 100;
   return { value: value >= 10 ? Math.round(value) : Math.round(value * 10) / 10, denomination: price.denomination };
+}
+
+/* -------------------------------------------- */
+/*  Generator and purchases                     */
+/* -------------------------------------------- */
+
+/** Price settings of the generator, in percent of the listed prices. */
+export const PERCENTS = [50, 100, 150];
+
+/** Value of each coin in copper pieces, from dnd5e's rates (coins per gold piece): pp 1000, gp 100, ep 50, sp 10, cp 1. */
+export function coinValues(currencies) {
+  return Object.fromEntries(Object.entries(currencies).map(([coin, { conversion }]) => [coin, Math.round(100 / conversion)]));
+}
+
+/** A price in copper pieces. */
+export const priceInCp = (price, values) => Math.round(Number(price?.value ?? 0) * (values[price?.denomination] ?? values.gp ?? 100));
+
+/** What a purse holds, in copper pieces. */
+export const walletInCp = (wallet, values) => Object.keys(values).reduce((sum, coin) => sum + (Number(wallet?.[coin]) || 0) * values[coin], 0);
+
+/**
+ * The purse left after paying `cost` copper pieces, or null when it isn't enough. The coins that fit in the price are
+ * spent first, largest first; what is still owed is paid with the smallest coin that covers it, and the change comes
+ * back in smaller coins (no electrum). A purse of 1 pp and 5 sp pays 8 sp with its 5 sp and the pp, and gets 9 gp and
+ * 7 sp back.
+ */
+export function pay(wallet, cost, values) {
+  if (cost <= 0) return { ...wallet };
+  if (walletInCp(wallet, values) < cost) return null;
+  const coins = Object.keys(values).sort((a, b) => values[b] - values[a]);
+  const left = Object.fromEntries(coins.map(coin => [coin, Number(wallet?.[coin]) || 0]));
+  let owed = cost;
+  for (const coin of coins) {
+    const used = Math.min(left[coin], Math.floor(owed / values[coin]));
+    left[coin] -= used;
+    owed -= used * values[coin];
+  }
+  if (!owed) return left;
+  // Every coin left is worth more than what is owed: the smallest one pays it
+  const broken = [...coins].reverse().find(coin => left[coin] > 0);
+  left[broken] -= 1;
+  let change = values[broken] - owed;
+  for (const coin of coins) {
+    if ((values[coin] >= values[broken]) || (coin === 'ep')) continue;
+    const given = Math.floor(change / values[coin]);
+    left[coin] += given;
+    change -= given * values[coin];
+  }
+  return left;
+}
+
+/** Number of a good put on sale: one magic item, scroll or mount, 1 to 5 of the other goods, unlimited services. */
+export function stockQuantity(good, random) {
+  if (good.kind === 'service') return null;
+  if (good.magic || (good.kind === 'scroll') || (good.kind === 'actor')) return 1;
+  return 1 + Math.floor(random() * 5);
+}
+
+/**
+ * Up to `count` different goods drawn from their pools (Map pool → goods), each pool picked by its weight; a pool
+ * whose goods are all on sale is left aside.
+ */
+export function drawGoods(pools, weights, count, random) {
+  const left = [...pools].filter(([pool, goods]) => goods.length && (weights[pool] > 0))
+    .map(([pool, goods]) => ({ pool, goods: [...goods] }));
+  const drawn = [];
+  while ((drawn.length < count) && left.length) {
+    const entry = left[pickWeighted(left.map(candidate => weights[candidate.pool]), random())];
+    drawn.push(...entry.goods.splice(Math.floor(random() * entry.goods.length), 1));
+    if (!entry.goods.length) left.splice(left.indexOf(entry), 1);
+  }
+  return drawn;
 }

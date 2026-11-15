@@ -1,0 +1,244 @@
+{
+  "_id": "kG9sa51ViSNI7eQG",
+  "name": "Arcane Undertaker",
+  "type": "feat",
+  "img": "icons/magic/death/grave-tombstone-glow-teal.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "tLJeXMO8eLa4IsrN": {
+        "type": "utility",
+        "_id": "tLJeXMO8eLa4IsrN",
+        "sort": 0,
+        "name": "Understanding of Death",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you take the Help action to stabilize a creature with 0 Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {
+      "PTEKdQPhQV2q02Pf": {
+        "_id": "PTEKdQPhQV2q02Pf",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "ItemChoice",
+        "name": "Necromancy Cantrip",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplChillTouch"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPoisonSpra"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSparetheDy"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.srWTUnOXAd1qrtHB"
+            }
+          ],
+          "type": "spell",
+          "sorting": "a",
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "requireSlot": false,
+              "max": "",
+              "per": ""
+            }
+          }
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Cantrip.</strong> You learn one Necromancy cantrip of your choice from the Cleric or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you take this feat).</p><p><strong>Knowledge from the Dead.</strong> When you make an Intelligence (History) or Wisdom (Medicine) check, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Understanding of Death.</strong> When you take the Help action to stabilize a creature that has 0 Hit Points, you gain Heroic Inspiration. Once you use this benefit, you can’t use it again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-QNwDIem9lwVyjsaA\"><p><strong>Foundry Note</strong></p><p>The cantrip is chosen among Chill Touch, Poison Spray, Spare the Dying, and Toll the Dead. The 1d4 is added to History and Medicine checks automatically; tick Heroic Inspiration on your sheet.</p></section>",
+      "chat": ""
+    },
+    "identifier": "arcane-undertaker",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "name": "Knowledge from the Dead",
+      "img": "icons/magic/death/grave-tombstone-glow-teal.webp",
+      "_id": "sd53Mz3bsBtyYvdB",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.his.bonuses.check",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "eecZH6ZolAUzgCZi"
+          },
+          {
+            "key": "system.skills.med.bonuses.check",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "4q5GJiJzpJxG8Utn"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

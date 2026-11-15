@@ -1,0 +1,157 @@
+{
+  "_id": "RWR2wIdXYTTWyaZV",
+  "name": "Confusing Gaze",
+  "type": "feat",
+  "img": "icons/magic/light/beam-horizon-strike-yellow.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "PgKGdgn7SZ5eqOk6",
+        "item": "3y960FDxyP5Yjvv5"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.PgKGdgn7SZ5eqOk6.Item.3y960FDxyP5Yjvv5",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "05jCzM9gTWqPUcQj": {
+        "type": "save",
+        "_id": "05jCzM9gTWqPUcQj",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "cone",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "14"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "recharge",
+          "formula": "5",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=05jCzM9gTWqPUcQj]], each creature in a 30-foot Cone. <em>Failure:</em> The target can't take Reactions until the start of the [[lookup @name lowercase]]{monster}'s next turn, and the target rolls [[/r 1d8]] to determine what it does on its next turn:</p><p><strong>1–4.</strong> The target does nothing.</p><p><strong>5–6.</strong> The target takes no action or Bonus Action and uses all its movement to move in a random direction.</p><p><strong>7–8.</strong> The target makes a melee attack against a random creature within its reach or does nothing if it can't make such an attack.</p>",
+      "chat": ""
+    },
+    "identifier": "confusing-gaze",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

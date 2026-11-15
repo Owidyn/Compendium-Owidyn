@@ -1,0 +1,159 @@
+{
+  "_id": "VETeIoIMUYCh3lq9",
+  "name": "Purple Dragon Rook",
+  "type": "feat",
+  "img": "icons/commodities/currency/coin-embossed-crown-gold.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "l0FB1CcPxgZOnGlq": {
+        "type": "utility",
+        "_id": "l0FB1CcPxgZOnGlq",
+        "sort": 0,
+        "name": "Rallying Cry",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you roll Initiative"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "@prof",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {
+      "r19YDWa5cMVd20XX": {
+        "_id": "r19YDWa5cMVd20XX",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "Trait",
+        "name": "Entreat",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ins",
+                "skills:prf",
+                "skills:per"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Entreat.</strong> You gain proficiency in one of the following skills: Insight, Performance, or Persuasion.</p><p><strong>Rallying Cry.</strong> When you roll Initiative and don’t have the Incapacitated condition, you can choose a number of creatures equal to your Proficiency Bonus that you can see within 30 feet of yourself. Those creatures gain Heroic Inspiration. Once you use this benefit, you can’t do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-xYI28CAWEZqdlkHy\"><p><strong>Foundry Note</strong></p><p>Give Heroic Inspiration on the sheets of the chosen creatures.</p></section>",
+      "chat": ""
+    },
+    "identifier": "purple-dragon-rook",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

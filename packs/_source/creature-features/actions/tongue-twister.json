@@ -1,0 +1,143 @@
+{
+  "_id": "UHwNM7s6Tj5FqopP",
+  "name": "Tongue Twister",
+  "type": "feat",
+  "img": "icons/magic/air/wind-swirl-gray-blue.webp",
+  "folder": "54pycForOBO7cp8g",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "aWAY1aEdOqq6XRRl",
+        "item": "QG7NMPIq6dCwGsiT"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.aWAY1aEdOqq6XRRl.Item.QG7NMPIq6dCwGsiT",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "ypgM5N5vgGwK7gDD": {
+        "type": "cast",
+        "_id": "ypgM5N5vgGwK7gDD",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplCounterspe",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": 3,
+          "properties": [],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p>The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}</em> in response to that spell's trigger, using the same spellcasting ability as Spellcasting. If the target fails its saving throw, it is cursed until the end of its next turn. Until the curse ends, the target can't cast spells with a Verbal component, and when it speaks, it says the opposite of what it means.</p>",
+      "chat": ""
+    },
+    "identifier": "tongue-twister",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

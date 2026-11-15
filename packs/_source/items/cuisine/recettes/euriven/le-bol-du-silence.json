@@ -1,0 +1,232 @@
+{
+  "_id": "b9um7qQHSH9fXAQh",
+  "name": "Le Bol du silence",
+  "type": "consumable",
+  "img": "icons/consumables/food/bowl-stew-tofu-potato-brown.webp",
+  "folder": "KVbYd7a7UXw61Gjp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Doshein · DD 13</em></p><p><strong>Ingrédients</strong> : Larmes de jade, 1 Céréale, 1 Légume.</p><p><strong>Effet</strong> : Tu as l’Advantage aux jets de sauvegarde contre les conditions Frightened et Charmed. Jusqu’au prochain Long Rest.</p><p>Un riz parfumé, infusé au thé, que l’on mange sans un mot.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "le-bol-du-silence",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "yHpNuKHConJdKLF4": {
+        "type": "utility",
+        "_id": "yHpNuKHConJdKLF4",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "5Gfs9v2Hu3whi18T"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Le Bol du silence",
+      "img": "icons/consumables/food/bowl-stew-tofu-potato-brown.webp",
+      "_id": "5Gfs9v2Hu3whi18T",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu as l’Advantage aux jets de sauvegarde contre les conditions Frightened et Charmed. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "le-bol-du-silence",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 13,
+          "tag": "apaisant",
+          "base": null,
+          "livre": "montagnes-et-terrasses",
+          "depart": false,
+          "region": "Doshein",
+          "effet": "Tu as l’Advantage aux jets de sauvegarde contre les conditions Frightened et Charmed. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "larmes-de-jade",
+              "count": 1,
+              "name": "Larmes de jade"
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            },
+            {
+              "family": "legume",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

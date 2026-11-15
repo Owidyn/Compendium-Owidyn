@@ -1,7 +1,7 @@
 import { PACKS } from "../owidyn/compendiums.mjs";
 
 export const MODULE_ID = "compendium-owidyn";
-export const CONTENT_VERSION = "0.3.0";
+export const CONTENT_VERSION = "0.4.0";
 
 export const CARTOMANCIEN_SPELLS = {
   0: [
@@ -63,6 +63,7 @@ const IDS = Object.fromEntries(Object.entries({
   class: "CrtmClass0000001",
   subclassParieur: "CrtmPari00000001",
   spellcasting: "CrtmFeatSpell001",
+  tarots: "CrtmFeatTarots01",
   mainMagique: "CrtmFeatMain0001",
   lancerCartes: "CrtmFeatLancer01",
   styleDeck: "CrtmFeatStyle001",
@@ -187,6 +188,13 @@ function activeEffect(id, name, {
   };
 }
 
+/**
+ * Text of the Tarots feature, which opens the deck manager. On a character, the Cartomancien script adds the state of
+ * the deck under it (available cards, hand, size of the discard pile) each time the cards move.
+ */
+export const TAROTS_DESCRIPTION = `
+    <p>Votre deck de tarot. Utilisez cette aptitude pour ouvrir le gestionnaire du deck : piocher, jouer une carte de votre main, lier un sort à une carte, synchroniser le deck après un niveau ou finir un Long Rest.</p>`;
+
 function featureData(id, name, description, {
   requirements = "",
   img = ASSETS.feature,
@@ -301,6 +309,14 @@ const FEATURES = [
     <p>Quand vous gagnez un niveau de Cartomancien, vous pouvez remplacer l'un de vos sorts préparés par un autre sort de même niveau de la liste du Cartomancien.</p>
     <p><strong>Spellcasting Ability :</strong> Intelligence.<br><strong>Spell Save DC :</strong> 8 + PB + INT modifier.<br><strong>Spell Attack Modifier :</strong> PB + INT modifier.</p>
     <p>Votre deck de tarot est votre Spellcasting Focus.</p>`, { identifier: "spellcasting-cartomancien" }),
+
+  featureData(IDS.tarots, "Tarots", TAROTS_DESCRIPTION, {
+    identifier: "tarots",
+    img: ASSETS.back,
+    activities: [utilityActivity("CrtmActTarots001", "Ouvrir les tarots", {
+      chatFlavor: "Ouvre le deck, la main et la défausse du Cartomancien."
+    })]
+  }),
 
   featureData(IDS.mainMagique, "Main magique", `
     <p>Votre deck commence au niveau 1 avec <strong>0 — Le Fou</strong> et <strong>I — Le Magicien</strong>, puis grandit avec vos niveaux de Cartomancien.</p>
@@ -571,7 +587,7 @@ const CLASS_ADVANCEMENTS = [
   trait("CrtmAdvSkills001", 1, {
     choices: [{ count: 1, pool: ["skills:arc", "skills:dec", "skills:his", "skills:ins", "skills:inv", "skills:prc", "skills:prf", "skills:per", "skills:slt"] }]
   }, { name: "Skill Proficiencies" }),
-  itemGrant("CrtmAdvFeatLvl01", 1, [IDS.spellcasting, IDS.mainMagique]),
+  itemGrant("CrtmAdvFeatLvl01", 1, [IDS.spellcasting, IDS.tarots, IDS.mainMagique]),
   itemGrant("CrtmAdvFeatLvl02", 2, [IDS.lancerCartes]),
   itemGrant("CrtmAdvFeatLvl03", 3, [IDS.styleDeck, IDS.influx]),
   subclassAdvancement("CrtmAdvSubcl0003", 3, "Style de deck"),
@@ -1065,6 +1081,21 @@ export async function syncActorContent(actor) {
     updated++;
   }
   return { updated, created };
+}
+
+/** The Tarots feature of a Cartomancien made before it existed (content 0.4.0), from the class compendium. */
+export async function ensureTarots(actor) {
+  if (!actor?.isOwner || !actor.items.some(item => item.type === "class" && item.system.identifier === "cartomancien")) return null;
+  const existing = actor.items.find(item => item.type === "feat" && (item.getFlag(MODULE_ID, "cartomancien.contentKey") === IDS.tarots
+    || item.system.identifier === "tarots"));
+  if (existing) return existing;
+  const template = await game.packs.get(CONTENT_PACK_ID)?.getDocument(IDS.tarots);
+  if (!template) return null;
+  const data = template.toObject();
+  delete data._id;
+  data.flags.dnd5e = { ...(data.flags.dnd5e ?? {}), sourceId: template.uuid };
+  const [created] = await actor.createEmbeddedDocuments("Item", [data]);
+  return created;
 }
 
 export async function ensureContent({ force = false, notify = false } = {}) {

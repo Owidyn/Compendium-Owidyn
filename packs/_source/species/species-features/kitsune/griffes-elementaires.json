@@ -1,0 +1,211 @@
+{
+  "name": "Griffes élémentaires",
+  "type": "weapon",
+  "_id": "l2JBdEe8t7gltOkQ",
+  "img": "icons/creatures/claws/claw-talons-glowing-purple.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Vos griffes sont une arme naturelle dont vous avez la maîtrise, avec la propriété Finesse. Elles infligent 1d6 dégâts d'un type de l'une de vos @UUID[Compendium.compendium-owidyn.species.Item.fjxAclhSIxZHDL1U]{Queues de renard}, que vous choisissez à chaque attaque. Vous les avez sous votre forme véritable et sous votre forme de renard, mais pas sous votre forme humaine.</p><section class=\"secret\" id=\"secret-18WrZS2DgrHYybIL\"><p><strong>Foundry Note</strong></p><p>Le jet de dégâts ne propose que les types de vos queues. Les griffes ne peuvent pas attaquer sous forme humaine ; la forme de renard les garde, à côté de la morsure du Fox.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "griffes-elementaires",
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+      "name": "Unidentified Weapon",
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crew": {
+      "value": []
+    },
+    "activities": {
+      "9ogifmoFFAEhMlmy": {
+        "type": "attack",
+        "_id": "9ogifmoFFAEhMlmy",
+        "sort": 0,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false
+        },
+        "number": 1,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "force",
+          "lightning",
+          "necrotic",
+          "poison",
+          "psychic",
+          "radiant",
+          "thunder"
+        ],
+        "scaling": {
+          "number": 1
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null,
+      "reach": 5
+    },
+    "type": {
+      "value": "natural",
+      "baseItem": ""
+    },
+    "properties": [
+      "fin"
+    ],
+    "proficient": 1,
+    "mastery": "",
+    "ammunition": {}
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "kitsuneClaws": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

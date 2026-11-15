@@ -1,0 +1,241 @@
+{
+  "_id": "QjtsbsI7ZhBASO6P",
+  "name": "Clafoutis des crêtes",
+  "type": "consumable",
+  "img": "icons/consumables/food/berries-cream-bowl-mint-red.webp",
+  "folder": "KVbYd7a7UXw61Gjp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Commune · Baerdar · DD 11</em></p><p><strong>Ingrédients</strong> : Myrtilles des crêtes, 1 Laitage, 1 Céréale.</p><p><strong>Effet</strong> : Tu ajoutes puissance × d6 à tes jets d’Initiative. Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "clafoutis-des-cretes",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "A9dNGBOIPF9NFKxa": {
+        "type": "utility",
+        "_id": "A9dNGBOIPF9NFKxa",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "oGZ9REAOmG1ptLHP"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Clafoutis des crêtes",
+      "img": "icons/consumables/food/berries-cream-bowl-mint-red.webp",
+      "_id": "oGZ9REAOmG1ptLHP",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "value": "@puissanced6",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aEZX7JGkhgoMN4rG"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu ajoutes puissance × d6 à tes jets d’Initiative. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "clafoutis-des-cretes",
+          "type": "stricte",
+          "tier": "commune",
+          "dc": 11,
+          "tag": "vif",
+          "base": null,
+          "livre": "montagnes-et-terrasses",
+          "depart": false,
+          "region": "Baerdar",
+          "effet": "Tu ajoutes puissance × d6 à tes jets d’Initiative. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "myrtilles-des-cretes",
+              "count": 1,
+              "name": "Myrtilles des crêtes"
+            },
+            {
+              "family": "laitage",
+              "count": 1
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "_id": "dKcCTavkLaXjdxSn",
+  "name": "Elder Champion",
+  "type": "feat",
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "folder": "7zIhVwEEFlBXYwyZ",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "vXWbFLDKAuP5dYMZ": {
+        "type": "utility",
+        "_id": "vXWbFLDKAuP5dYMZ",
+        "sort": 0,
+        "name": "Transform",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "fPbbScWWc9KBU0l2"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      },
+      "J1n1Z33E94oKWip4": {
+        "type": "heal",
+        "_id": "J1n1Z33E94oKWip4",
+        "sort": 100000,
+        "name": "Regeneration",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "At the start of each of your turns while transformed"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "10"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>At 20th level, you can take on the form of an ancient force of nature, with an appearance of your choice. For example, your skin might turn green or grow a bark-like texture, your hair might become leafy or mossy, or you might sprout antlers or a lion-like mane.</p><p>As an action, you undergo this transformation. For 1 minute, you gain the following benefits:</p><ul><li><p>At the start of each of your turns, you regain 10 hit points.</p></li><li><p>Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.</p></li><li><p>Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.</p></li></ul><p>Once you use this feature, you can’t use it again until you finish a long rest.</p><section class=\"secret\" id=\"secret-OWWkGe4td0I6xG4k\"><p><strong>Foundry Note</strong></p><p><em>Transform</em> puts the effect on you; use <em>Regeneration</em> at the start of each of your turns while it lasts.</p></section>",
+      "chat": ""
+    },
+    "identifier": "elder-champion",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Oath of the Ancients 20",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Elder Champion",
+      "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+      "_id": "fPbbScWWc9KBU0l2",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<ul><li><p>At the start of each of your turns, you regain 10 hit points.</p></li><li><p>Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.</p></li><li><p>Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.</p></li></ul>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

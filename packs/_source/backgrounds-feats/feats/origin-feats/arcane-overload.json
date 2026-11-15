@@ -1,0 +1,168 @@
+{
+  "_id": "VG3UdbTmjxulFV2y",
+  "name": "Arcane Overload",
+  "type": "feat",
+  "img": "icons/magic/fire/projectile-fireball-sparks-orange.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "uarpGLdJ8qC8SAfG": {
+        "type": "utility",
+        "_id": "uarpGLdJ8qC8SAfG",
+        "sort": 0,
+        "name": "Power Surge",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you cast an Evocation spell and deal damage with it"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "@prof",
+          "name": "Extra Damage",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {
+      "9P6TkXon0EE78Scp": {
+        "_id": "9P6TkXon0EE78Scp",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "ItemGrant",
+        "name": "Cantrip",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireBolt00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "requireSlot": false,
+              "max": "",
+              "per": ""
+            }
+          }
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Cantrip.</strong> You learn the Fire Bolt cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you take this feat).</p><p><strong>Power Surge.</strong> When you cast an Evocation spell and deal damage with it, you can add your Proficiency Bonus to one damage roll of that spell. Once you use this benefit, you can’t do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-4VmiLCHJNpr9m0IX\"><p><strong>Foundry Note</strong></p><p><em>Power Surge</em> rolls the bonus to add to one damage roll of the spell.</p></section>",
+      "chat": ""
+    },
+    "identifier": "arcane-overload",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

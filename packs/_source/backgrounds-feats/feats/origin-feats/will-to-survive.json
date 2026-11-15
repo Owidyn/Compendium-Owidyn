@@ -1,0 +1,121 @@
+{
+  "_id": "aACW3ieguwBQKVTl",
+  "name": "Will to Survive",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage-red.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "Ufz7NgqtKnjwMADG": {
+        "type": "utility",
+        "_id": "Ufz7NgqtKnjwMADG",
+        "sort": 0,
+        "name": "Will to Survive",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "On your turn, while you are Incapacitated but not Unconscious"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>(Prerequisite: World of Warcraft Campaign, Human Species)</em></p><p>When you have the Incapacitated condition but not the Unconscious condition, you can draw on the proud heritage of Stormwind or Stromgarde to ignore the Incapacitated condition on your turn. If you do, you gain 1 Exhaustion level.</p><section class=\"secret\" id=\"secret-z1a985sxPVdi4clv\"><p><strong>Foundry Note</strong></p><p>Add the Exhaustion level on your sheet.</p></section>",
+      "chat": ""
+    },
+    "identifier": "will-to-survive",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "World of Warcraft Campaign, Human Species",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

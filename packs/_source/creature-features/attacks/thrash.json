@@ -1,0 +1,247 @@
+{
+  "_id": "Q5u8f8r4YxHwgQ9o",
+  "name": "Thrash",
+  "type": "weapon",
+  "system": {
+    "type": {
+      "value": "natural",
+      "baseItem": ""
+    },
+    "activities": {
+      "IEMFjWe2w3eJQuXK": {
+        "type": "attack",
+        "_id": "IEMFjWe2w3eJQuXK",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "J0HyT8tJCXG744Af",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+      "chat": ""
+    },
+    "identifier": "thrash",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "properties": [],
+    "identified": true,
+    "unidentified": {
+      "name": "Unidentified Weapon",
+      "description": ""
+    },
+    "mastery": "",
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null,
+      "reach": null
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false
+        },
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "scaling": {
+          "number": 1
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "cover": null,
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "crew": {
+      "value": []
+    }
+  },
+  "folder": "G7kGENbzBQwABGag",
+  "img": "icons/skills/melee/strike-slashes-red.webp",
+  "effects": [
+    {
+      "_id": "J0HyT8tJCXG744Af",
+      "name": "Prone",
+      "img": "systems/dnd5e/icons/svg/statuses/prone.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "prone"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "2rI3MQDEGW2RHxPd",
+        "item": "hnlCE3TZKo6MLP0j"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.2rI3MQDEGW2RHxPd.Item.hnlCE3TZKo6MLP0j",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 500000
+}

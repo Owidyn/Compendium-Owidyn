@@ -1,0 +1,716 @@
+{
+  "_id": "HEQ7nznWEyd5cc5k",
+  "name": "Défauts de goût",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-pink.webp",
+  "folder": "0TRsyKtkC7Rfujk3",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>La table des défauts de goût, pour le MJ : le nom d’un plat raté montre son goût, et le malus ne se révèle qu’au repas.</p><p>Un plat raté de peu (échec de moins de 5) a un défaut, un plat raté de 5 ou plus en a deux, tirés au d12 (deux fois chacun pour un Master Chef, qui choisit). Qui en mange fait un jet de sauvegarde de Constitution contre le DD du plat :</p><ul><li><p>Un défaut : raté, il ne garde que le défaut ; réussi, il profite quand même du plat ; réussi de 5 ou plus (ou 20 naturel), il ne sent pas le défaut.</p></li><li><p>Deux défauts : le plat a perdu son effet ; raté, il subit les deux ; réussi, un seul ; réussi de 5 ou plus (ou 20 naturel), aucun.</p></li></ul><p>Les malus durent jusqu’au prochain Short Rest, sauf mention contraire :</p><ul><li><p><strong>1. Trop salé</strong> (Jambes en coton) : Tu bois sans t’arrêter et tes chevilles gonflent : ta vitesse diminue de 10 ft.</p></li><li><p><strong>2. Pas assez salé</strong> (Somnolence) : C’est si fade que tu t’endors dessus : tu as le Disadvantage aux tests de Sagesse.</p></li><li><p><strong>3. Trop sucré</strong> (Bras de guimauve) : Le sucre te coupe les bras : tu as le Disadvantage aux tests de Force.</p></li><li><p><strong>4. Pas assez sucré</strong> (Esprit embrumé) : Ton esprit réclamait du sucre et n’en a pas eu : tu as le Disadvantage aux tests d’Intelligence.</p></li><li><p><strong>5. Trop épicé</strong> (Haleine de dragon) : Ta bouche brûle, et ton haleine aussi : tu as le Disadvantage aux tests de Charisme.</p></li><li><p><strong>6. Pas assez épicé</strong> (Mou du genou) : Rien dans ce plat ne te réveille : tu as un malus de 2 à tes jets d’Initiative.</p></li><li><p><strong>7. Trop amer</strong> (Estomac noué) : L’amertume te noue l’estomac : tu as le Disadvantage aux jets de sauvegarde de Constitution.</p></li><li><p><strong>8. Pas assez amer</strong> (Sans mordant) : Ce plat trop doux t’a ôté tout mordant : tu as un malus de 2 aux jets de dégâts de tes attaques.</p></li><li><p><strong>9. Trop acide</strong> (Hoquet) : L’acide te remonte dans la gorge, hic ! Tu as le Disadvantage aux tests de Dextérité.</p></li><li><p><strong>10. Pas assez acide</strong> (Ventre lourd) : Lourd, gras, et rien pour le faire passer : tu te traînes et tu as un malus de 1 à la CA.</p></li><li><p><strong>11. Trop cuit</strong> (Indigestion) : Sec, noirci et dur à avaler : tu as la condition Poisoned pendant 10 minutes.</p></li><li><p><strong>12. Pas assez cuit</strong> (Intoxication) : C’était encore cru au milieu : jet de sauvegarde de Constitution DD 15. Échec : condition Poisoned jusqu’au prochain Long Rest et 1 niveau d’Exhaustion. Réussite : condition Poisoned pendant 1 heure.</p></li></ul>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "defauts-de-gout",
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "Trop salé",
+      "img": "icons/consumables/food/salt-seasoning-spice-pink.webp",
+      "_id": "hXWH7t64aRIq1HaE",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": -10,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "PqKl2R6Jt2bMbReS"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Jambes en coton.</strong> Tu bois sans t’arrêter et tes chevilles gonflent : ta vitesse diminue de 10 ft. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 1
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez salé",
+      "img": "icons/consumables/drinks/tea-jug-gourd-brown.webp",
+      "_id": "egxsEDqHAUz7B9CS",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "YQC8hdE0wgp3B0HE"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Somnolence.</strong> C’est si fade que tu t’endors dessus : tu as le Disadvantage aux tests de Sagesse. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 2
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trop sucré",
+      "img": "icons/consumables/food/candy-taffy-yellow.webp",
+      "_id": "HIDW5uXHPPCFEkYr",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "I4pXIjhGRGWYWKCr"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Bras de guimauve.</strong> Le sucre te coupe les bras : tu as le Disadvantage aux tests de Force. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 3
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez sucré",
+      "img": "icons/consumables/food/candy-pattie-pink-white.webp",
+      "_id": "qsGWnoz5jvFE0QDm",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GFdO0H60T2ndZnlJ"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Esprit embrumé.</strong> Ton esprit réclamait du sucre et n’en a pas eu : tu as le Disadvantage aux tests d’Intelligence. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 4
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trop épicé",
+      "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+      "_id": "AlMbS6TXtLDSNkRI",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "hgqnoDpOdPWhrsL6"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Haleine de dragon.</strong> Ta bouche brûle, et ton haleine aussi : tu as le Disadvantage aux tests de Charisme. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 5
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez épicé",
+      "img": "icons/consumables/food/bowl-stew-brown.webp",
+      "_id": "csCWIlLYSCiUMl4x",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "value": "-2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "VXbEtaBZkE1PHzko"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Mou du genou.</strong> Rien dans ce plat ne te réveille : tu as un malus de 2 à tes jets d’Initiative. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 6
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trop amer",
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "_id": "XNDG2yiwk40Ydh6F",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "on4AbZjYXF28GiND"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Estomac noué.</strong> L’amertume te noue l’estomac : tu as le Disadvantage aux jets de sauvegarde de Constitution. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 7
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez amer",
+      "img": "icons/commodities/bones/tooth-molar-white.webp",
+      "_id": "w4FUA2rovUBrbxsT",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.damage.mwak.bonus",
+            "value": "-2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "JH7oATroi3C0XfzU"
+          },
+          {
+            "key": "system.rolls.damage.rwak.bonus",
+            "value": "-2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "EhOwByuIUmeAxlnU"
+          },
+          {
+            "key": "system.rolls.damage.msak.bonus",
+            "value": "-2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "TSB3Ka9BuGfEBwuY"
+          },
+          {
+            "key": "system.rolls.damage.rsak.bonus",
+            "value": "-2",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "A5gfdtZrUz5KgdMY"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Sans mordant.</strong> Ce plat trop doux t’a ôté tout mordant : tu as un malus de 2 aux jets de dégâts de tes attaques. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 8
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trop acide",
+      "img": "icons/consumables/drinks/glass-liquid-blue.webp",
+      "_id": "VhRrC0E5j56MOZvV",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "x3pEB4FmMmN4XRSe"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Hoquet.</strong> L’acide te remonte dans la gorge, hic ! Tu as le Disadvantage aux tests de Dextérité. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 9
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez acide",
+      "img": "icons/consumables/food/cooked-grilled-ham-hock-glazed-brown.webp",
+      "_id": "2ocix7HXJFBbrzVB",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "-1",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GKEldOuRLHsvyHCc"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Ventre lourd.</strong> Lourd, gras, et rien pour le faire passer : tu te traînes et tu as un malus de 1 à la CA. Jusqu’au prochain Short Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 10
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Trop cuit",
+      "img": "icons/consumables/food/steak-aged-brown.webp",
+      "_id": "eBT2qXmu0pkjttnC",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p><strong>Indigestion.</strong> Sec, noirci et dur à avaler : tu as la condition Poisoned pendant 10 minutes.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "poisoned"
+      ],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 11
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Pas assez cuit",
+      "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+      "_id": "xTHs8K8xv5L1ocz5",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "shortRest",
+        "expired": false
+      },
+      "description": "<p><strong>Intoxication.</strong> C’était encore cru au milieu : jet de sauvegarde de Constitution DD 15. Échec : condition Poisoned jusqu’au prochain Long Rest et 1 niveau d’Exhaustion. Réussite : condition Poisoned pendant 1 heure.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "defaut": 12,
+            "poison": {
+              "dc": 15,
+              "exhaustion": 1,
+              "seconds": 3600
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "special": "defauts-de-gout"
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "_id": "CYRgPQ0CgELcck9W",
+  "name": "Croûte du mineur",
+  "type": "consumable",
+  "img": "icons/consumables/grains/pastry-bread-brown.webp",
+  "folder": "xrkPkrvUDHXbhnku",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Commune · Asharia · DD 12</em></p><p><strong>Ingrédients</strong> : Le Charbonnier, 1 Céréale, 1 Légume.</p><p><strong>Effet</strong> : Tu as l’Advantage aux tests de Force (Athletics), et ta capacité de charge double. Jusqu’au prochain Long Rest.</p><p>Le casse-croûte que les mineurs emportent au fond des galeries, encore tiède dans un linge.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "croute-du-mineur",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "q9lC6yUGpOG8Cohb": {
+        "type": "utility",
+        "_id": "q9lC6yUGpOG8Cohb",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4jxV0HiJ5QEbqGLl"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Croûte du mineur",
+      "img": "icons/consumables/grains/pastry-bread-brown.webp",
+      "_id": "4jxV0HiJ5QEbqGLl",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ath.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gcQiO3CizrP64XAc"
+          },
+          {
+            "key": "system.attributes.encumbrance.multipliers.overall",
+            "value": "2",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "ea11JSEWXdUTBRWH"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu as l’Advantage aux tests de Force (Athletics), et ta capacité de charge double. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "croute-du-mineur",
+          "type": "stricte",
+          "tier": "commune",
+          "dc": 12,
+          "tag": "fort",
+          "base": null,
+          "livre": "gamelles-de-l-ouest",
+          "depart": false,
+          "region": "Asharia",
+          "effet": "Tu as l’Advantage aux tests de Force (Athletics), et ta capacité de charge double. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "le-charbonnier",
+              "count": 1,
+              "name": "Le Charbonnier"
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            },
+            {
+              "family": "legume",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

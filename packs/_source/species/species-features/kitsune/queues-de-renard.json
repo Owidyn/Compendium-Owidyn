@@ -1,0 +1,59 @@
+{
+  "name": "Queues de renard",
+  "type": "feat",
+  "_id": "fjxAclhSIxZHDL1U",
+  "img": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>Vous êtes un renard-esprit, et votre puissance se mesure à votre nombre de queues. Vous avez 1 queue au niveau 1, puis une de plus aux niveaux 3, 5, 7, 9, 11, 13, 15, 17 et 19, jusqu'à 10 queues.</p><p>Chaque fois que vous gagnez une queue, choisissez une affinité élémentaire que vous n'avez pas encore : Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant, Thunder. Elle vous donne le cantrip <em>Éclat</em> de cet élément, et ce type de dégâts pour vos @UUID[Compendium.compendium-owidyn.species.Item.l2JBdEe8t7gltOkQ]{Griffes élémentaires}.</p><table><thead><tr><th>Niveau</th><th>Queues</th><th>DD de Peur spirituelle</th><th>Cases de Surcharge</th><th>Temporary HP (forme de renard)</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>11</td><td>2</td><td>5</td></tr><tr><td>3</td><td>2</td><td>12</td><td>3</td><td>10</td></tr><tr><td>5</td><td>3</td><td>13</td><td>4</td><td>15</td></tr><tr><td>7</td><td>4</td><td>14</td><td>5</td><td>20</td></tr><tr><td>9</td><td>5</td><td>15</td><td>6</td><td>25</td></tr><tr><td>11</td><td>6</td><td>16</td><td>7</td><td>30</td></tr><tr><td>13</td><td>7</td><td>17</td><td>8</td><td>35</td></tr><tr><td>15</td><td>8</td><td>18</td><td>9</td><td>40</td></tr><tr><td>17</td><td>9</td><td>19</td><td>10</td><td>45</td></tr><tr><td>19</td><td>10</td><td>20</td><td>11</td><td>50</td></tr></tbody></table><section class=\"secret\" id=\"secret-TU9vZacVFW9J1f3h\"><p><strong>Foundry Note</strong></p><p>Le nombre de queues est la valeur d'échelle <code>@scale.kitsune-air.queues</code> de la species, les Temporary Hit Points de la forme de renard <code>@scale.kitsune-air.pv-renard</code> ; chaque queue se choisit à la montée de niveau.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kitsune",
+    "activities": {},
+    "enchant": {},
+    "identifier": "queues-de-renard",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

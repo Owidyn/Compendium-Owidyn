@@ -1,0 +1,204 @@
+{
+  "_id": "r4hTGTBT11fG4m9S",
+  "name": "Connect with the Dead",
+  "type": "feat",
+  "img": "icons/magic/death/grave-tombstone-glow-teal.webp",
+  "folder": "uik6k8G26IPlXvbi",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "HQRB6gPDvB9HWa0d": {
+        "type": "cast",
+        "_id": "HQRB6gPDvB9HWa0d",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells.Item.I2LUSF5ogc7Bj62e",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "int"
+        }
+      },
+      "EsYq6MI4kUUZJgPn": {
+        "type": "utility",
+        "_id": "EsYq6MI4kUUZJgPn",
+        "sort": 100000,
+        "name": "Revived Capabilities",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When the speak with dead spell ends"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "1d3",
+          "name": "Revived Capabilities",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>At 9th level, you can create a link with a spirit through its corpse. When you do so, you cast the @UUID[Compendium.dnd5e.spells.Item.I2LUSF5ogc7Bj62e]{speak with dead} spell without using a spell slot or material components. Intelligence is your spellcasting ability for this spell.</p><p>Speaking with the dead in this way briefly grants you a capability from a past life, though you can’t tell whether it comes from your past life or from the spirit’s. When the spell ends, you gain one random benefit from the Revived Capabilities table. The benefit lasts until you finish a short or long rest.</p><table><caption>Revived Capabilities</caption><thead><tr><th>d3</th><th>Capability</th></tr></thead><tbody><tr><td>1</td><td>You learn to speak, read, and write one language of your choice.</td></tr><tr><td>2</td><td>You gain one skill or tool proficiency of your choice.</td></tr><tr><td>3</td><td>You gain proficiency in one saving throw of your choice.</td></tr></tbody></table><p>Once you cast the spell with this feature, you can’t do so again until you finish a short or long rest.</p><section class=\"secret\" id=\"secret-6ymkbAU29CHMwxyb\"><p><strong>Foundry Note</strong></p><p>When the spell ends, use <em>Revived Capabilities</em> to roll the d3, then add the benefit on the character sheet until your next short or long rest.</p></section>",
+      "chat": ""
+    },
+    "identifier": "connect-with-the-dead",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Revived 9",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

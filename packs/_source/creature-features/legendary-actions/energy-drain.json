@@ -1,0 +1,152 @@
+{
+  "_id": "BLSe3SE5creRGoFR",
+  "name": "Energy Drain",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+  "folder": "CHU17c09EsJzwRpU",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "Ppu1dE5wMWG5nnNP",
+        "item": "bc1FXSROp10DLBUp"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.Ppu1dE5wMWG5nnNP.Item.bc1FXSROp10DLBUp",
+    "exportSource": null
+  },
+  "effects": [],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "Wtpr8lN9yvfj7ebz": {
+        "type": "save",
+        "_id": "Wtpr8lN9yvfj7ebz",
+        "sort": 0,
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "resources.legact.value",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "120"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "19"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=Wtpr8lN9yvfj7ebz]], one creature the [[lookup @name lowercase]]{monster} can see within 120 feet. <em>Failure:</em> The target's Hit Point maximum decreases by 14 (4d6). <em>Failure or Success:</em> The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "energy-drain",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

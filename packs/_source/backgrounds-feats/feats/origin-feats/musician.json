@@ -1,0 +1,145 @@
+{
+  "_id": "nQPQRlZ6fWml4Fw9",
+  "name": "Musician",
+  "type": "feat",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "C0UPlk46OlTDIycu": {
+        "type": "utility",
+        "_id": "C0UPlk46OlTDIycu",
+        "sort": 0,
+        "name": "Encouraging Song",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "As you finish a Short or Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "@prof",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {
+      "LDsZFDWcn9SnGaGp": {
+        "_id": "LDsZFDWcn9SnGaGp",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "Trait",
+        "name": "Instrument Training",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "tool:music:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Instrument Training.</strong> You gain proficiency with three Musical Instruments of your choice.</p><p><strong>Encouraging Song.</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument you have proficiency with and give Heroic Inspiration to allies who hear the song. You can affect a number of allies equal to your Proficiency Bonus.</p><section class=\"secret\" id=\"secret-4eQUdmoOxA8uNbfX\"><p><strong>Foundry Note</strong></p><p>Give Heroic Inspiration on the sheets of the allies who hear the song.</p></section>",
+      "chat": ""
+    },
+    "identifier": "musician",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

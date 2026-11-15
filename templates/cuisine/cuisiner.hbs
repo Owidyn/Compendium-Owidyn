@@ -1,0 +1,92 @@
+<div class="owidyn-cuisine-body">
+  {{#if starterMode}}
+  <section class="owidyn-cuisine-starter">
+    <h3>Carnet de recettes</h3>
+    <p>Choisis trois recettes de base pour ton carnet ({{starterCount}}/3). Une recette libre accepte tout ingrédient de la famille demandée, une recette stricte demande des ingrédients précis.</p>
+    {{#each starter}}
+    <h4 class="owidyn-cuisine-family">{{label}}</h4>
+    <div class="owidyn-cuisine-grid">
+      {{#each recipes}}
+      <button type="button" class="owidyn-cuisine-card {{#if chosen}}chosen{{/if}}" data-action="toggleStarter" data-recipe="{{identifier}}">
+        <img src="{{img}}" alt="">
+        <span class="owidyn-cuisine-card-main"><strong>{{name}}</strong><small>{{ingredients}} · DD {{dc}}</small><small>{{effet}}</small></span>
+      </button>
+      {{/each}}
+    </div>
+    {{/each}}
+    <button type="button" data-action="confirmStarter" {{#unless starterReady}}disabled{{/unless}}><i class="fa-solid fa-book-open"></i> Valider mon carnet</button>
+  </section>
+  {{else}}
+  <div class="owidyn-cuisine-columns">
+    <section class="owidyn-cuisine-column">
+      <h3>Recettes connues <span>{{recipes.length}}</span></h3>
+      <div class="owidyn-cuisine-list">
+        {{#each recipes}}
+        <button type="button" class="owidyn-cuisine-card {{#if selected}}chosen{{/if}} {{#unless ready}}missing{{/unless}}" data-action="pickRecipe" data-recipe="{{identifier}}">
+          <img src="{{img}}" alt="">
+          <span class="owidyn-cuisine-card-main">
+            <strong>{{name}}</strong>
+            <small>{{type}} · {{tier}}{{#if region}} · {{region}}{{/if}} · DD {{dc}}</small>
+            <small>{{ingredients}}</small>
+            {{#if missing}}<small class="owidyn-cuisine-missing">Manque : {{missing}}</small>{{/if}}
+          </span>
+        </button>
+        {{else}}
+        <p class="owidyn-cuisine-empty">Aucune recette : étudie un livre, ou expérimente.</p>
+        {{/each}}
+      </div>
+    </section>
+    <section class="owidyn-cuisine-column">
+      <h3>
+        Ingrédients <span>{{stockCount}}</span>
+        <span class="owidyn-cuisine-toggles">
+          <button type="button" class="{{#if layout.colonnes}}active{{/if}}" data-action="toggleColumns" data-tooltip="Deux colonnes"><i class="fa-solid fa-table-columns"></i></button>
+          <button type="button" class="{{#if layout.familles}}active{{/if}}" data-action="toggleFamilies" data-tooltip="Grouper par famille"><i class="fa-solid fa-layer-group"></i></button>
+        </span>
+      </h3>
+      <div class="owidyn-cuisine-list">
+        {{#each stockGroups}}
+        {{#if label}}<h4 class="owidyn-cuisine-family">{{label}}</h4>{{/if}}
+        <div class="owidyn-cuisine-cards {{#if ../layout.colonnes}}two-columns{{/if}}">
+          {{#each items}}
+          <button type="button" class="owidyn-cuisine-card" data-action="addIngredient" data-item="{{item}}" {{#if disabled}}disabled{{/if}}>
+            <img src="{{img}}" alt="">
+            <span class="owidyn-cuisine-card-main">
+              <strong>{{name}} <em>× {{left}}</em></strong>
+              <small>{{family}}{{#if tag}} · {{tag}}{{/if}} · {{rarityLabel}}</small>
+              {{#if dangerous}}<small class="owidyn-cuisine-danger"><i class="fa-solid fa-skull-crossbones"></i> Dangereux</small>{{/if}}
+            </span>
+          </button>
+          {{/each}}
+        </div>
+        {{else}}
+        <p class="owidyn-cuisine-empty">Aucun ingrédient dans l’inventaire.</p>
+        {{/each}}
+      </div>
+    </section>
+    <section class="owidyn-cuisine-column owidyn-cuisine-pot">
+      <h3>Marmite <span>{{pot.length}}/{{slots}}</span></h3>
+      <div class="owidyn-cuisine-list">
+        {{#each pot}}
+        <button type="button" class="owidyn-cuisine-card" data-action="removeUnit" data-index="{{index}}" data-tooltip="Retirer">
+          <img src="{{img}}" alt=""><span class="owidyn-cuisine-card-main"><strong>{{name}}</strong></span><i class="fa-solid fa-xmark"></i>
+        </button>
+        {{/each}}
+      </div>
+      {{#if missing}}<p class="owidyn-cuisine-missing">Manque : {{missing}}</p>{{/if}}
+      <div class="owidyn-cuisine-preview {{#if preview.unknown}}unknown{{/if}}">
+        <strong>{{preview.label}}</strong>
+        {{#if preview.effet}}<p>{{preview.effet}}</p>{{/if}}
+        {{#if preview.known}}<small>DD {{preview.dc}}{{#if preview.potency}} · puissance {{preview.potency}}{{#if preview.spent}} ({{preview.spent}}){{/if}}{{/if}}{{#if preview.mastery}} · {{preview.mastery}}{{/if}}{{#if utensils}} · ustensiles +{{utensils}}{{/if}}</small>{{/if}}
+        {{#if dangerous}}<small class="owidyn-cuisine-danger"><i class="fa-solid fa-skull-crossbones"></i> Ingrédient dangereux : un échec peut empoisonner les convives.</small>{{/if}}
+      </div>
+      {{#if masterChef}}<label class="owidyn-cuisine-encas"><input type="checkbox" name="encas" {{#if encas}}checked{{/if}}> Préparer en en-cas (Bonus Action, 1 heure)</label>{{/if}}
+      {{#if (eq usesLeft 0)}}<p class="owidyn-cuisine-missing">Tu as déjà cuisiné depuis ton dernier repos.</p>{{/if}}
+      <div class="owidyn-cuisine-actions">
+        <button type="button" data-action="clearPot" {{#unless pot.length}}disabled{{/unless}}><i class="fa-solid fa-trash"></i> Vider</button>
+        <button type="button" data-action="cook" {{#unless canCook}}disabled{{/unless}}><i class="fa-solid fa-fire-burner"></i> Cuisiner</button>
+      </div>
+    </section>
+  </div>
+  {{/if}}
+</div>

@@ -1,0 +1,232 @@
+{
+  "_id": "rs73NPidtjV37tZP",
+  "name": "Poisson en croûte de sel",
+  "type": "consumable",
+  "img": "icons/consumables/meat/fillet-fish-pink-white.webp",
+  "folder": "xrkPkrvUDHXbhnku",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Asharia · DD 13</em></p><p><strong>Ingrédients</strong> : Fleur de sel de Cynstefistone, 1 Poisson, 1 Herbe.</p><p><strong>Effet</strong> : À la fin de ton prochain Short Rest, tu récupères puissance × d8 PV.</p><p>On casse la croûte de sel à table, d’un coup de manche de couteau.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "poisson-en-croute-de-sel",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "AcampjT4YXYdo9vb": {
+        "type": "utility",
+        "_id": "AcampjT4YXYdo9vb",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZRq9BCmwlgfQsoD7"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Poisson en croûte de sel",
+      "img": "icons/consumables/meat/fillet-fish-pink-white.webp",
+      "_id": "ZRq9BCmwlgfQsoD7",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>À la fin de ton prochain Short Rest, tu récupères puissance × d8 PV.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "poisson-en-croute-de-sel",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 13,
+          "tag": "revigorant",
+          "base": null,
+          "livre": "cuisine-des-brisants",
+          "depart": false,
+          "region": "Asharia",
+          "effet": "À la fin de ton prochain Short Rest, tu récupères puissance × d8 PV.",
+          "slots": [
+            {
+              "identifier": "fleur-de-sel-de-cynstefistone",
+              "count": 1,
+              "name": "Fleur de sel de Cynstefistone"
+            },
+            {
+              "family": "poisson",
+              "count": 1
+            },
+            {
+              "family": "herbe",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": "@puissanced8",
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

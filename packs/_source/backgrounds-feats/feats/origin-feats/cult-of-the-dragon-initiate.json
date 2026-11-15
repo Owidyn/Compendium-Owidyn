@@ -1,0 +1,266 @@
+{
+  "_id": "rB02hBDYKcISULgK",
+  "name": "Cult of the Dragon Initiate",
+  "type": "feat",
+  "img": "icons/creatures/abilities/dragon-breath-purple.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "LCvs9sttwmeZ0ez3": {
+        "type": "save",
+        "_id": "LCvs9sttwmeZ0ez3",
+        "sort": 0,
+        "name": "Dragon’s Terror",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Magic action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "onSave": false,
+            "_id": "D1gmDWFZpwDB53pS"
+          }
+        ],
+        "range": {
+          "override": false,
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @abilities.wis.mod + @prof"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "PEFEgaSr2KM36Aov": {
+        "type": "utility",
+        "_id": "PEFEgaSr2KM36Aov",
+        "sort": 100000,
+        "name": "Inspired by Fear",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you give a creature the Frightened condition as the source of its fear"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {
+      "SI5nHBbKzItFdVcH": {
+        "_id": "SI5nHBbKzItFdVcH",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "Trait",
+        "name": "Dragon’s Tongue",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:draconic"
+          ],
+          "mode": "default"
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Dragon’s Tongue.</strong> You know Draconic. If you already know it when you take this feat, you learn another language of your choice from the language tables of the Player’s Handbook or of Heroes of Faerûn.</p><p><strong>Dragon’s Terror.</strong> You can take a Magic action to fill a creature you can see within 30 feet of yourself with terror. The target must succeed on a Wisdom saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn. When the target succeeds on the save, or when the effect ends on it, the target is immune to this effect for 24 hours.</p><p><strong>Inspired by Fear.</strong> When you give a creature the Frightened condition and you are the source of its fear, you can gain Heroic Inspiration if you lack it. Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-uND2cHO4erWX9d5L\"><p><strong>Foundry Note</strong></p><p><em>Inspired by Fear</em> spends the feat’s use: tick Heroic Inspiration on your sheet. Track the 24-hour immunity yourself.</p></section>",
+      "chat": ""
+    },
+    "identifier": "cult-of-the-dragon-initiate",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "name": "Frightened",
+      "img": "systems/dnd5e/icons/svg/statuses/frightened.svg",
+      "_id": "D1gmDWFZpwDB53pS",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

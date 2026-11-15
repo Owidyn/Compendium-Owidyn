@@ -1,0 +1,107 @@
+{
+  "_id": "NzFdCVMU2pQq8J7w",
+  "name": "Audience with Death",
+  "type": "feat",
+  "img": "icons/magic/death/skull-humanoid-crown-white-blue.webp",
+  "folder": "uik6k8G26IPlXvbi",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>By 13th level, when you are at death’s door, you can converse with the powers of death. You have advantage on death saving throws, and whenever you make a death saving throw, your spirit can ask an entity of death a question that can be answered with “yes,” “no,” or “unknown.” The entity answers truthfully, drawing on the knowledge of all those who have died.</p><p>In addition, whenever you are healed or stabilized while you have 0 hit points, you can change any of your personal characteristics: personality trait, ideal, bond, or flaw.</p><section class=\"secret\" id=\"secret-WUYCsvfWwz5NrQPF\"><p><strong>Foundry Note</strong></p><p>The advantage on death saving throws is automated.</p></section>",
+      "chat": ""
+    },
+    "identifier": "audience-with-death",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Revived 13",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Audience with Death",
+      "img": "icons/magic/death/skull-humanoid-crown-white-blue.webp",
+      "_id": "YYOBhsjX2bEVXNe8",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.death.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ocKLL3RZHFNzyHeA"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

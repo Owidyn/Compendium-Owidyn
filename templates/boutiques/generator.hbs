@@ -1,0 +1,62 @@
+<div class="owidyn-shop-generator-body standard-form">
+    <div class="form-group">
+        <label>Modèle</label>
+        <div class="form-fields">
+            <select name="template">
+                {{#each templates}}<option value="{{ key }}" {{#if selected}}selected{{/if}}>{{ label }}</option>{{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Nom</label>
+        <div class="form-fields"><input type="text" name="name" value="{{ name }}" placeholder="Le nom du modèle"></div>
+    </div>
+    <div class="form-group stacked">
+        <label>Description</label>
+        <textarea name="description" rows="3" placeholder="Ce que les joueurs lisent en ouvrant la boutique">{{ description }}</textarea>
+    </div>
+    <div class="form-group">
+        <label>Nombre d'articles</label>
+        <div class="form-fields"><input type="number" name="count" value="{{ count }}" min="1" max="200"></div>
+        <p class="hint">Les services cochés sont tous proposés, en plus.</p>
+    </div>
+    <div class="form-group">
+        <label>Valeur</label>
+        <div class="form-fields">
+            <select name="percent">
+                {{#each percents}}<option value="{{ value }}" {{#if selected}}selected{{/if}}>{{ label }}</option>{{/each}}
+            </select>
+        </div>
+    </div>
+
+    <fieldset class="owidyn-shop-goods">
+        <legend>Articles autorisés</legend>
+        <p class="hint">Le modèle ne fait que pré-cocher cette liste. Cocher un groupe coche tous ses articles, que vous pouvez ensuite décocher un par un.</p>
+        <ol class="owidyn-goods-tree">
+            {{#each groups}}
+            <li class="owidyn-goods-group">
+                <label class="checkbox owidyn-goods-category"><input type="checkbox" data-group="{{ key }}" {{#if checked}}checked{{/if}}> {{ label }}</label>
+                <ol>
+                    {{#each children}}
+                    <li><label class="checkbox"><input type="checkbox" name="{{ ../field }}" value="{{ key }}" data-parent="{{ ../key }}" {{#if checked}}checked{{/if}}> {{ label }}</label></li>
+                    {{/each}}
+                </ol>
+            </li>
+            {{/each}}
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>Compendiums</legend>
+        <div class="owidyn-shop-pack-actions">
+            <button type="button" data-action="allPacks"><i class="fa-solid fa-check-double" inert></i> Tous</button>
+            <button type="button" data-action="noPacks"><i class="fa-solid fa-xmark" inert></i> Aucun</button>
+        </div>
+        <div class="owidyn-shop-packs">
+            {{#each packs}}
+            <label class="checkbox"><input type="checkbox" name="packs" value="{{ collection }}" {{#if checked}}checked{{/if}}> {{ label }} <span class="hint">({{ packageTitle }})</span></label>
+            {{/each}}
+        </div>
+    </fieldset>
+    <p class="hint">La rareté trie les objets et les parchemins des compendiums : « Non magique » garde les objets ordinaires. Un objet magique se range dans sa sorte (une épée +1 dans les armes, un anneau dans les anneaux). Les montures viennent des compendiums de créatures ; les autres articles de l'Écurie et les services n'ont pas besoin de compendium.</p>
+</div>

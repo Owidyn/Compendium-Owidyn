@@ -141,10 +141,13 @@ async function harness() {
   context.Cards = { implementation: { create: async data => new Stack(data) } };
 
   const content = new vm.SyntheticModule([
-    "CARTOMANCIEN_SPELLS", "ensureContent", "getAvailableCartomancienSpellSources", "importSpellToActor", "syncActorContent", "isCartomancienSpell"
+    "CARTOMANCIEN_SPELLS", "TAROTS_DESCRIPTION", "ensureContent", "ensureTarots", "getAvailableCartomancienSpellSources", "importSpellToActor",
+    "syncActorContent", "isCartomancienSpell"
   ], function () {
     this.setExport("CARTOMANCIEN_SPELLS", {});
+    this.setExport("TAROTS_DESCRIPTION", "<p>Tarots</p>");
     this.setExport("ensureContent", async () => null);
+    this.setExport("ensureTarots", async () => null);
     this.setExport("getAvailableCartomancienSpellSources", (...args) => spellSources.available(...args));
     this.setExport("importSpellToActor", (...args) => spellSources.import(...args));
     this.setExport("syncActorContent", async () => null);

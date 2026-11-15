@@ -1,0 +1,434 @@
+{
+  "name": "Kitsune, Air",
+  "type": "race",
+  "_id": "4XT9pM7DQVZOdLib",
+  "img": "modules/compendium-owidyn/image/kitsune.webp",
+  "folder": "ptPaquiEiN4hPukg",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>Les Kitsune sont des renards-esprits : leur forme véritable est celle d'un renard aux queues lumineuses, et leur puissance grandit avec le nombre de leurs queues. Par magie, ils prennent une forme humaine ou celle d'un simple renard. Ils ne vieillissent pas comme les mortels : la plupart ont plus de cent ans, choisissent l'âge apparent de leur forme humaine et ne craignent pas les effets magiques qui font vieillir. Les Kitsune de l'air maîtrisent le mouvement : ils passent d'un endroit à l'autre aussi vite que le vent.</p><h3>Traits des Kitsune de l'air</h3><p><strong>Creature Type :</strong> Humanoid</p><p><strong>Size :</strong> Medium</p><p><strong>Speed :</strong> 35 ft</p><p><strong>&amp;Reference[Darkvision] :</strong> 60 ft</p><p><strong>Keotal :</strong> vous parlez, lisez et écrivez le Keotal, la langue des Kitsune, en plus des langues de votre origine.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.fjxAclhSIxZHDL1U]{Queues de renard}.</strong> 1 queue au niveau 1, puis une de plus tous les deux niveaux, jusqu'à 10 au niveau 19. Chaque queue donne une affinité élémentaire : son cantrip <em>Éclat</em> et son type de dégâts pour vos Griffes élémentaires.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.l2JBdEe8t7gltOkQ]{Griffes élémentaires}.</strong> Arme naturelle (Finesse) de 1d6 dégâts, d'un type de vos queues, sous forme véritable ou de renard.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.NWtyG2kYPgKjoxas]{Contrôle}.</strong> Command, sans spell slot, autant de fois que vous avez de queues par Long Rest. Vos sorts kitsune utilisent Intelligence, Wisdom ou Charisma, au choix.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.KcGNWFCCe1IjQkHI]{Esprit affûté}.</strong> Advantage aux Saving Throws contre la condition Charmed.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.yDtCEkawVVQzdRbT]{Sens du renard}.</strong> Maîtrise de Perception et de Nature ; sous forme véritable ou de renard, Advantage aux Perception checks qui reposent sur l'odorat.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.sFq6DB4tPhFP5P1D]{Forme spirituelle}.</strong> Forme véritable (et sa Peur spirituelle), forme humaine ou forme de renard (le Fox, avec vos Hit Points et des Temporary Hit Points selon votre niveau).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.SdLHY1nQJqIZCu5R]{Surcharge spirituelle}.</strong> Lancer un sort kitsune sous forme humaine ou de renard coche ou décoche des cases ; toutes cochées, c'est le Débordement spirituel.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.GUg8gnf06Sls7Auo]{Aspect de l'Air}.</strong> Maîtrise d'Athletics, +5 ft de Speed, et Misty Step autant de fois que vous avez de queues par Long Rest.</p><table><thead><tr><th>Niveau</th><th>Queues</th><th>DD de Peur spirituelle</th><th>Cases de Surcharge</th><th>Temporary HP (forme de renard)</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>11</td><td>2</td><td>5</td></tr><tr><td>3</td><td>2</td><td>12</td><td>3</td><td>10</td></tr><tr><td>5</td><td>3</td><td>13</td><td>4</td><td>15</td></tr><tr><td>7</td><td>4</td><td>14</td><td>5</td><td>20</td></tr><tr><td>9</td><td>5</td><td>15</td><td>6</td><td>25</td></tr><tr><td>11</td><td>6</td><td>16</td><td>7</td><td>30</td></tr><tr><td>13</td><td>7</td><td>17</td><td>8</td><td>35</td></tr><tr><td>15</td><td>8</td><td>18</td><td>9</td><td>40</td></tr><tr><td>17</td><td>9</td><td>19</td><td>10</td><td>45</td></tr><tr><td>19</td><td>10</td><td>20</td><td>11</td><td>50</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "kitsune-air",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Kitsune"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "35",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "HBIgB8xnupLqOYUj": {
+        "_id": "HBIgB8xnupLqOYUj",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "title": "",
+        "hint": "Medium"
+      },
+      "zvH4ZQ1GvI116wZw": {
+        "_id": "zvH4ZQ1GvI116wZw",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.fjxAclhSIxZHDL1U",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.l2JBdEe8t7gltOkQ",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.NWtyG2kYPgKjoxas",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.KcGNWFCCe1IjQkHI",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.yDtCEkawVVQzdRbT",
+              "optional": false,
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.sFq6DB4tPhFP5P1D",
+              "optional": false,
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.SdLHY1nQJqIZCu5R",
+              "optional": false,
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.6AzWkKigaqo3zd1o",
+              "optional": false,
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.GUg8gnf06Sls7Auo",
+              "optional": false,
+              "sort": 8
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "name": "Traits kitsune",
+        "title": "Traits kitsune",
+        "hint": ""
+      },
+      "HaT1ym5dSrWcAEm8": {
+        "_id": "HaT1ym5dSrWcAEm8",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "skills:prc",
+            "skills:nat"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "name": "Sens du renard",
+        "title": "Sens du renard",
+        "hint": "Vous avez la maîtrise de Perception et de Nature."
+      },
+      "Bz1QlKw0RGChyFqI": {
+        "_id": "Bz1QlKw0RGChyFqI",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "skills:ath"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "name": "Aspect du mouvement",
+        "title": "Aspect du mouvement",
+        "hint": "Vous avez la maîtrise d'Athletics."
+      },
+      "9rpdkelzGUzxSBTt": {
+        "_id": "9rpdkelzGUzxSBTt",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:exotic:keotal"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "name": "Keotal",
+        "title": "Keotal",
+        "hint": "Vous parlez, lisez et écrivez le Keotal, la langue des Kitsune."
+      },
+      "L2xDSClJtLpSCfEj": {
+        "_id": "L2xDSClJtLpSCfEj",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommand000",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMistyStep0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "@scale.kitsune-air.queues",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "level": 0,
+        "name": "Sorts kitsune",
+        "title": "Sorts kitsune",
+        "hint": "Intelligence, Wisdom ou Charisma est votre Spellcasting Ability pour vos sorts kitsune (Command, Misty Step et vos cantrips Éclat)."
+      },
+      "o6hMde5FPdfzDPzm": {
+        "_id": "o6hMde5FPdfzDPzm",
+        "type": "ItemChoice",
+        "name": "Queues de renard",
+        "title": "Queues de renard",
+        "hint": "Choisissez une affinité élémentaire pour votre nouvelle queue.",
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            },
+            "3": {
+              "count": 1,
+              "replacement": false
+            },
+            "5": {
+              "count": 1,
+              "replacement": false
+            },
+            "7": {
+              "count": 1,
+              "replacement": false
+            },
+            "9": {
+              "count": 1,
+              "replacement": false
+            },
+            "11": {
+              "count": 1,
+              "replacement": false
+            },
+            "13": {
+              "count": 1,
+              "replacement": false
+            },
+            "15": {
+              "count": 1,
+              "replacement": false
+            },
+            "17": {
+              "count": 1,
+              "replacement": false
+            },
+            "19": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "restriction": {
+            "level": "",
+            "list": [],
+            "school": [],
+            "subtype": "",
+            "type": "race"
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.bIh4GjZvX5WjImlT"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.uxkZaCMnGTngnu1W"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.PRwPSMlp2ZGmOkGM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.V4gh81czJBjtFUHz"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.Cc4418qEpAD3qOKU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.w1lp7BgE8UEuDkL9"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.rVlkAHsht1HGRFVd"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.6RYkzoFwE46JitWu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.61LAfTaHaFtcWGm2"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.jU9r6IGdDe0MUtli"
+            }
+          ],
+          "spell": null
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "level": 0
+      },
+      "k1fwMmkGnCsu5Skx": {
+        "_id": "k1fwMmkGnCsu5Skx",
+        "type": "ScaleValue",
+        "name": "Queues",
+        "title": "Queues",
+        "hint": "Nombre de queues du Kitsune.",
+        "configuration": {
+          "identifier": "queues",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "3": {
+              "value": 2
+            },
+            "5": {
+              "value": 3
+            },
+            "7": {
+              "value": 4
+            },
+            "9": {
+              "value": 5
+            },
+            "11": {
+              "value": 6
+            },
+            "13": {
+              "value": 7
+            },
+            "15": {
+              "value": 8
+            },
+            "17": {
+              "value": 9
+            },
+            "19": {
+              "value": 10
+            }
+          }
+        },
+        "value": {},
+        "level": 0
+      },
+      "gITx5t7PmBwgt279": {
+        "_id": "gITx5t7PmBwgt279",
+        "type": "ScaleValue",
+        "name": "PV de la forme de renard",
+        "title": "PV de la forme de renard",
+        "hint": "Temporary Hit Points gagnés en forme de renard.",
+        "configuration": {
+          "identifier": "pv-renard",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 5
+            },
+            "3": {
+              "value": 10
+            },
+            "5": {
+              "value": 15
+            },
+            "7": {
+              "value": 20
+            },
+            "9": {
+              "value": 25
+            },
+            "11": {
+              "value": 30
+            },
+            "13": {
+              "value": 35
+            },
+            "15": {
+              "value": 40
+            },
+            "17": {
+              "value": 45
+            },
+            "19": {
+              "value": 50
+            }
+          }
+        },
+        "value": {},
+        "level": 0
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

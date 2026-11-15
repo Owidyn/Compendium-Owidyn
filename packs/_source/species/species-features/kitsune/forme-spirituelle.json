@@ -1,0 +1,484 @@
+{
+  "name": "Forme spirituelle",
+  "type": "feat",
+  "_id": "sFq6DB4tPhFP5P1D",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>Votre forme véritable est celle d'un Kitsune, un renard-esprit aux queues lumineuses. Par magie, vous pouvez prendre deux autres formes : une forme humaine et une forme de renard.</p><h3>Changer de forme</h3><p>Par une Magic action, vous prenez votre forme humaine ou votre forme de renard. Vous reprenez votre forme véritable à tout moment, sans action, et automatiquement si vous tombez &amp;Reference[Unconscious] ou mourez. Changer de forme ne rompt pas votre &amp;Reference[Concentration].</p><h3>Forme véritable</h3><p>Vous utilisez toutes vos aptitudes de species et tous vos spells, sans @UUID[Compendium.compendium-owidyn.species.Item.SdLHY1nQJqIZCu5R]{Surcharge spirituelle}.</p><p><strong>Peur spirituelle.</strong> Quand une créature voit votre forme véritable pour la première fois, elle fait un Wisdom Saving Throw (DD 10 + votre nombre de queues). En cas d'échec, elle a la condition &amp;Reference[Frightened] pendant 1 minute ; elle refait le Saving Throw à la fin de chacun de ses tours et met fin à l'effet sur une réussite. Une créature qui réussit ou met fin à l'effet est immunisée contre votre Peur spirituelle jusqu'à la fin de son prochain Long Rest.</p><h3>Forme humaine</h3><p>Vous paraissez être un humanoïde ordinaire, de l'espèce de votre choix, et aucun moyen non magique ne permet de reconnaître un Kitsune sous cette forme. Vous lancez vos spells normalement et votre équipement fonctionne comme d'habitude, mais vous perdez l'odorat affûté de votre @UUID[Compendium.compendium-owidyn.species.Item.yDtCEkawVVQzdRbT]{Sens du renard} et vos @UUID[Compendium.compendium-owidyn.species.Item.l2JBdEe8t7gltOkQ]{Griffes élémentaires}.</p><h3>Forme de renard</h3><p>Vous prenez la forme d'un renard de taille Tiny, avec le profil du @UUID[Compendium.compendium-owidyn.legacy-creatures.Actor.LfTExh1UxiUuKjTq]{Fox}. Vous gardez vos Hit Points et vos Hit Point Dice, vos valeurs d'Intelligence, de Wisdom et de Charisma, vos aptitudes de classe, vos langues et toutes vos maîtrises de Saving Throws et de skills, et vous gagnez des Temporary Hit Points selon votre niveau (table des @UUID[Compendium.compendium-owidyn.species.Item.fjxAclhSIxZHDL1U]{Queues de renard}). Vous pouvez lancer les spells qui n'ont ni composante verbale, ni somatique, ni matérielle. Quand vous vous transformez, tout ce que vous portez tombe au sol dans votre espace.</p><p>Sous votre forme humaine ou de renard, lancer un sort kitsune (Command, Misty Step et vos cantrips <em>Éclat</em>) déclenche un jet de @UUID[Compendium.compendium-owidyn.species.Item.SdLHY1nQJqIZCu5R]{Surcharge spirituelle}.</p><section class=\"secret\" id=\"secret-0KqHGIDt2kTWIOk2\"><p><strong>Foundry Note</strong></p><p>Les activités <em>Forme humaine</em> et <em>Forme véritable</em> changent la forme sans carte de chat ; la forme humaine est l'effet <em>Forme humaine</em> de cette aptitude, qui désactive l'effet <em>Odorat du renard</em> et bloque les Griffes élémentaires. L'activité <em>Forme de renard</em> fait une carte : son bouton transforme le personnage en Fox (Hit Points, caractéristiques mentales, classe, aptitudes, Griffes élémentaires, spells, langues et maîtrises conservés, Temporary Hit Points de la table) ; <em>Forme véritable</em> ou le bouton de retour de la fiche lui rendent sa forme. L'activité <em>Peur spirituelle</em> lance le Saving Throw et applique Frightened.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kitsune",
+    "activities": {
+      "rQZSV1PmRxwSk5sd": {
+        "type": "utility",
+        "_id": "rQZSV1PmRxwSk5sd",
+        "sort": 0,
+        "name": "Forme humaine",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {
+          "compendium-owidyn": {
+            "kitsuneForm": "human"
+          }
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "47t5eJPtb0FssEsH": {
+        "type": "transform",
+        "_id": "47t5eJPtb0FssEsH",
+        "sort": 100000,
+        "name": "Forme de renard",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "wC7VPk9LVWFvpWn3",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "movement": [],
+            "name": "Renard",
+            "sizes": [],
+            "types": [],
+            "uuid": "Compendium.compendium-owidyn.legacy-creatures.Actor.LfTExh1UxiUuKjTq"
+          }
+        ],
+        "settings": {
+          "preset": null,
+          "effects": [
+            "origin",
+            "otherOrigin",
+            "background",
+            "class",
+            "feat",
+            "spell"
+          ],
+          "keep": [
+            "bio",
+            "class",
+            "feats",
+            "hp",
+            "languages",
+            "mental",
+            "spells",
+            "tempHP",
+            "type"
+          ],
+          "merge": [
+            "saves",
+            "skills"
+          ],
+          "other": [],
+          "spellLists": [],
+          "transformTokens": true,
+          "minimumAC": "",
+          "tempFormula": "@scale.kitsune-air.pv-renard"
+        },
+        "transform": {
+          "customize": true,
+          "formless": false,
+          "mode": "",
+          "preset": ""
+        }
+      },
+      "nCC5hueJfAXdMgGF": {
+        "type": "utility",
+        "_id": "nCC5hueJfAXdMgGF",
+        "sort": 200000,
+        "name": "Forme véritable",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "À tout moment, sans action."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {
+          "compendium-owidyn": {
+            "kitsuneForm": "true"
+          }
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "w3aFnKynHkm78sHO": {
+        "type": "save",
+        "_id": "w3aFnKynHkm78sHO",
+        "sort": 300000,
+        "name": "Peur spirituelle",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Une créature voit votre forme véritable pour la première fois."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "DqSKNcqU5zClpYhv",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "spec",
+          "special": "Une créature qui vous voit"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10 + @scale.kitsune-air.queues"
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "forme-spirituelle",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "DqSKNcqU5zClpYhv",
+      "name": "Peur spirituelle",
+      "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Frightened pendant 1 minute. La créature refait le Saving Throw à la fin de chacun de ses tours et met fin à l'effet sur une réussite.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1RCVG6VjrHrueGht",
+      "name": "Forme humaine",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Le Kitsune a l'apparence d'un humanoïde ordinaire : pas de Griffes élémentaires ni d'Odorat du renard, et ses sorts kitsune déclenchent la Surcharge spirituelle.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "kitsuneHumanForm": true
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

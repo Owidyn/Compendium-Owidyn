@@ -1,0 +1,149 @@
+{
+  "_id": "7DBFEnLcwetoDWOd",
+  "name": "Carnet de l’explorateur",
+  "type": "consumable",
+  "img": "icons/sundries/books/book-worn-brown.webp",
+  "folder": "Xfh1O1ujsJFdcsTG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>Les notes d’un explorateur revenu des sables gelés de Zerzatar et des cavernes drows de l’Outreterre. Il jure que tout y est comestible, à condition d’avoir assez faim.</p><p>Un personnage qui a le don Cuisinier ou Master Chef peut l’étudier pendant un Long Rest pour apprendre ses recettes :</p><ul><li><p>Thé des sables gelés</p></li><li><p>Rôti des Abîmes</p></li></ul>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "carnet-de-l-explorateur",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "APlDGerUr1bl62vw": {
+        "type": "utility",
+        "_id": "APlDGerUr1bl62vw",
+        "sort": 0,
+        "name": "Étudier",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "livre": {
+          "identifier": "carnet-de-l-explorateur",
+          "recettes": [
+            "the-des-sables-geles",
+            "roti-des-abimes"
+          ]
+        }
+      }
+    }
+  }
+}

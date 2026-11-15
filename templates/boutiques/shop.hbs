@@ -1,0 +1,70 @@
+<div class="owidyn-shop-body flexcol">
+    {{#if missing}}
+    <p>Cette boutique n'existe plus.</p>
+    {{else}}
+    <header class="owidyn-shop-header">
+        <p class="owidyn-shop-template">{{ template }}{{#if isGM}} · {{#if shop.visible}}visible des joueurs{{else}}cachée aux joueurs{{/if}}{{/if}}</p>
+        {{#if description}}<div class="owidyn-shop-description">{{{ description }}}</div>{{/if}}
+        <div class="form-group owidyn-shop-buyer">
+            <label>Acheteur</label>
+            {{#if buyers.length}}
+            <select name="buyer">{{#each buyers}}<option value="{{ id }}" {{#if selected}}selected{{/if}}>{{ name }}</option>{{/each}}</select>
+            {{else}}
+            <span class="hint">Aucun personnage à vous.</span>
+            {{/if}}
+        </div>
+    </header>
+
+    <ol class="owidyn-shop-lines">
+        <li class="owidyn-shop-line owidyn-shop-heading">
+            <span class="owidyn-shop-good">Article</span>
+            <span class="owidyn-shop-quantity">Dispo</span>
+            <span class="owidyn-shop-price">Prix</span>
+            <span class="owidyn-shop-actions"></span>
+        </li>
+        {{#each lines}}
+        <li class="owidyn-shop-line {{#if soldOut}}sold-out{{/if}}" data-line-id="{{ id }}">
+            <span class="owidyn-shop-good">
+                <img src="{{ img }}" alt="" width="28" height="28">
+                {{#if (and @root.isGM (eq kind "service"))}}
+                <input type="text" data-field="name" value="{{ name }}">
+                {{else if canShow}}
+                <a data-action="show" data-tooltip="Voir la fiche">{{ name }}</a>
+                {{else}}
+                <span>{{ name }}</span>
+                {{/if}}
+                {{#if rules}}<a class="owidyn-shop-rules" data-link data-uuid="{{ rules }}" data-tooltip="Règles"><i class="fa-solid fa-book-open" inert></i></a>{{/if}}
+                {{#if category}}<span class="owidyn-shop-category">{{ category }}</span>{{/if}}
+            </span>
+            <span class="owidyn-shop-quantity">
+                {{#if @root.isGM}}
+                <input type="number" data-field="quantity" value="{{#unless unlimited}}{{ quantity }}{{/unless}}" min="0" placeholder="∞" data-tooltip="Vide : illimité">
+                {{else}}{{#if unlimited}}∞{{else}}{{ quantity }}{{/if}}{{/if}}
+            </span>
+            <span class="owidyn-shop-price">
+                {{#if @root.isGM}}
+                <input type="number" data-field="price" value="{{ price.value }}" min="0" step="any">
+                <select data-field="denomination">{{#each denominations}}<option value="{{ key }}" {{#if selected}}selected{{/if}}>{{ label }}</option>{{/each}}</select>
+                {{else}}{{ priceLabel }}{{/if}}
+            </span>
+            <span class="owidyn-shop-actions">
+                <button type="button" data-action="buy" {{#if soldOut}}disabled{{/if}}><i class="fa-solid fa-coins" inert></i> Acheter</button>
+                {{#if @root.isGM}}<a data-action="remove" data-tooltip="Retirer de la boutique"><i class="fa-solid fa-trash" inert></i></a>{{/if}}
+            </span>
+        </li>
+        {{else}}
+        <li class="owidyn-shop-empty">Plus rien à vendre.</li>
+        {{/each}}
+    </ol>
+
+    {{#if isGM}}
+    <footer class="owidyn-shop-footer flexrow">
+        <button type="button" data-action="addService"><i class="fa-solid fa-bell-concierge" inert></i> Ajouter un service</button>
+        <button type="button" data-action="restock"><i class="fa-solid fa-dice" inert></i> Nouveau stock</button>
+        <button type="button" data-action="edit"><i class="fa-solid fa-pen" inert></i> Modifier</button>
+        <button type="button" data-action="toggleVisible"><i class="fa-solid {{#if shop.visible}}fa-eye-slash{{else}}fa-eye{{/if}}" inert></i> {{#if shop.visible}}Cacher{{else}}Montrer aux joueurs{{/if}}</button>
+    </footer>
+    <p class="hint owidyn-shop-hint">Glissez un objet ou une créature dans cette fenêtre pour l'ajouter. Laissez « Dispo » vide pour une quantité illimitée.</p>
+    {{/if}}
+    {{/if}}
+</div>

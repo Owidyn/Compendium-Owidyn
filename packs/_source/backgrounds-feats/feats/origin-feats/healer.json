@@ -1,0 +1,352 @@
+{
+  "_id": "1M64ZpNOx4YSXXDu",
+  "name": "Healer",
+  "type": "feat",
+  "img": "icons/tools/medical/bandages-gauze.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "Z8J2rEmYbwidxb4L": {
+        "type": "heal",
+        "_id": "Z8J2rEmYbwidxb4L",
+        "sort": 0,
+        "name": "Battle Medic (d6)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Utilize action, expending a use of a Healer’s Kit"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d6r1 + @prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "h0BUE9tikPU44Spj": {
+        "type": "heal",
+        "_id": "h0BUE9tikPU44Spj",
+        "sort": 100000,
+        "name": "Battle Medic (d8)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Utilize action, expending a use of a Healer’s Kit"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d8r1 + @prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "DQu3oFuCBzgFOVCE": {
+        "type": "heal",
+        "_id": "DQu3oFuCBzgFOVCE",
+        "sort": 200000,
+        "name": "Battle Medic (d10)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Utilize action, expending a use of a Healer’s Kit"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d10r1 + @prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "rJ5zwcAPCZ6UqqSe": {
+        "type": "heal",
+        "_id": "rJ5zwcAPCZ6UqqSe",
+        "sort": 300000,
+        "name": "Battle Medic (d12)",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Utilize action, expending a use of a Healer’s Kit"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "5",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d12r1 + @prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Battle Medic.</strong> If you have a Healer’s Kit, you can expend one of its uses to tend to a creature within 5 feet of yourself as a Utilize action. That creature can spend one of its Hit Point Dice; you roll that die, and the creature regains Hit Points equal to the roll plus your Proficiency Bonus.</p><p><strong>Healing Rerolls.</strong> Whenever you roll a die to determine how many Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</p><section class=\"secret\" id=\"secret-xrN1GYo3yPWlhCbl\"><p><strong>Foundry Note</strong></p><p>Use the <em>Battle Medic</em> of the creature’s Hit Point Die size (a 1 is rerolled): the creature spends that die on its sheet, and you remove a use from your Healer’s Kit. Reroll the 1s of your healing spells yourself.</p></section>",
+      "chat": ""
+    },
+    "identifier": "healer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

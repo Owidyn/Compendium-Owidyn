@@ -1,0 +1,133 @@
+{
+  "_id": "7dhJllD0NmSTJ8H8",
+  "name": "Vampire's Plaything",
+  "type": "feat",
+  "img": "icons/consumables/potions/potion-flask-corked-flat-red.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "vJS0ryi7JGga2sYW": {
+        "type": "utility",
+        "_id": "vJS0ryi7JGga2sYW",
+        "sort": 0,
+        "name": "Timely Retreat",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "Dash or Disengage action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@prof"
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Decanting.</strong> When you finish a Long Rest, you can create one Potion of Healing or one Antitoxin, as long as you have an empty vial or flask. The liquid evaporates when you finish another Long Rest.</p><p><strong>Timely Retreat.</strong> You can take a Bonus Action to take the Dash or the Disengage action. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Vampiric Connection.</strong> The DM decides the fate of your former vampire master. While you and that vampire are on the same plane of existence, it can communicate with you telepathically, and you can let it perceive through your senses.</p><section class=\"secret\" id=\"secret-91xPbVdlZh6m3JVx\"><p><strong>Foundry Note</strong></p><p>Add the potion or the Antitoxin from the dnd5e equipment yourself, and remove it after your next Long Rest.</p></section>",
+      "chat": ""
+    },
+    "identifier": "vampires-plaything",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

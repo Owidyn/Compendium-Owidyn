@@ -1,0 +1,236 @@
+{
+  "_id": "r75mr7CiEOpXlxOz",
+  "name": "Brochette du guetteur",
+  "type": "consumable",
+  "img": "icons/consumables/meat/kebab-skewer-red.webp",
+  "folder": "bjwfi9KtPgOO9NDF",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette libre · Commune · DD 12</em></p><p><strong>Ingrédients</strong> : 1 Viande, 1 ingrédient Vif.</p><p><strong>Effet</strong> : Tu ajoutes puissance × d4 à tes jets d’Initiative. Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "brochette-du-guetteur",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "iZ9Cp0g3sDRSRkVF": {
+        "type": "utility",
+        "_id": "iZ9Cp0g3sDRSRkVF",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "UcDDyxCABXuy3nsd"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Brochette du guetteur",
+      "img": "icons/consumables/meat/kebab-skewer-red.webp",
+      "_id": "UcDDyxCABXuy3nsd",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "value": "@puissanced4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "bMiW9eebFEyCT0ry"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu ajoutes puissance × d4 à tes jets d’Initiative. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "brochette-du-guetteur",
+          "type": "libre",
+          "tier": "commune",
+          "dc": 12,
+          "tag": "vif",
+          "base": "vif",
+          "livre": "carnet-du-guerrier",
+          "depart": true,
+          "region": "",
+          "effet": "Tu ajoutes puissance × d4 à tes jets d’Initiative. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "family": "viande",
+              "count": 1
+            },
+            {
+              "tag": "vif",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

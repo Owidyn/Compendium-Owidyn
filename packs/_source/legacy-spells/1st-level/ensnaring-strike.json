@@ -1,0 +1,345 @@
+{
+  "_id": "PPehYsBEFwzeEmCV",
+  "name": "Ensnaring Strike",
+  "type": "spell",
+  "img": "icons/magic/nature/plant-vines-skull-green.webp",
+  "folder": "47tTe0JVyiUw6aOA",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The next time you hit a creature with a weapon attack before this spell ends, a tangle of thorny vines bursts from the point of impact. The target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends; a Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines wither away.</p><p>While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. The restrained creature, or a creature that can touch it, can use its action to make a Strength check against your spell save DC. On a success, the target is freed.</p><p><strong>At Higher Levels.</strong> If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p><section class=\"secret\" id=\"secret-Hf88TZfrK3VEM5Vw\"><p><strong>Foundry Note</strong></p><p>Cast the spell before your attack: Concentration begins and its card stays in the chat. When your weapon attack hits, the target rolls the save from that card (with advantage if it is Large or larger) and you apply <em>Ensnared</em>, which ends with your Concentration. While the target is restrained, use <em>Start of Turn Damage</em> (its dialog asks for the level the spell was cast at) and <em>Break Free</em>.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "ensnaring-strike",
+    "activation": {
+      "type": "bonus",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "QZW0cPFEUbGoZNaO": {
+        "type": "save",
+        "_id": "QZW0cPFEUbGoZNaO",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "onSave": false,
+            "_id": "T8GgxUy9jjwwNoY1"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "Uo45sOIWFCGxlAUK": {
+        "type": "damage",
+        "_id": "Uo45sOIWFCGxlAUK",
+        "sort": 100000,
+        "name": "Start of Turn Damage",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "at the start of each of the restrained target’s turns"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "9PUr8gV7nGlwMDaC": {
+        "type": "check",
+        "_id": "9PUr8gV7nGlwMDaC",
+        "sort": 200000,
+        "name": "Break Free",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": true,
+          "condition": "a creature restrained by the vines, or one that can touch it, uses its action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "check": {
+          "associated": [],
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "",
+    "sourceItem": ""
+  },
+  "effects": [
+    {
+      "name": "Ensnared",
+      "img": "icons/magic/nature/root-vine-entangled-hand.webp",
+      "_id": "T8GgxUy9jjwwNoY1",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Thorny vines hold the target restrained until the spell ends. At the start of each of its turns, it takes 1d6 piercing damage (plus 1d6 for each slot level above 1st). The target, or a creature that can touch it, can use its action to make a Strength check against the spell save DC, freeing the target on a success.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794096000000,
+    "modifiedTime": 1794096000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

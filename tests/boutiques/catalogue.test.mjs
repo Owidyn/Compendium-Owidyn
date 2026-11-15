@@ -1,9 +1,10 @@
 // Run with: node tests/boutiques/catalogue.test.mjs
-// Regression checks of the shop rules; the tables, the journal and the window need a Foundry test.
+// Regression checks of the shop rules; the sidebar tab and the shop window need a Foundry test.
 import assert from 'node:assert/strict';
 import {
-  SHOPS, STABLE, INN, INN_RULES, CATEGORY_LABELS, RARITIES, placesOf, priceOf, scrollOf, scrollRarityOf, sellsScrolls, sourceRank,
-  allowsCategory, pickWeighted, adjustPrice
+  SHOPS, GOODS, STABLE, INN, INN_RULES, SHOP_RARITIES, ITEM_KINDS, SERVICE_KINDS, KIND_ORDER, classify, kindLabel, poolWeight, isMagic,
+  priceOf, scrollOf, sellsScrolls, sourceRank, pickWeighted, adjustPrice, PERCENTS, coinValues, priceInCp, walletInCp, pay, stockQuantity,
+  drawGoods
 } from '../../scripts/boutiques/catalogue.mjs';
 
 const item = (type, subtype, { rarity = '', magic = false, price = 1, denomination = 'gp', name = 'Item', baseItem = '' } = {}) => ({
@@ -12,61 +13,76 @@ const item = (type, subtype, { rarity = '', magic = false, price = 1, denominati
 
 const cases = [];
 const test = (name, run) => cases.push({ name, run });
+const as = (kinds, rarity = 'mundane') => ({ kinds, rarity });
 
-test('magic items go to La Hutte Enchantée, weapons, armor and ammunition also to the Forge', () => {
-  assert.deepEqual(placesOf(item('equipment', 'wondrous', { rarity: 'uncommon', magic: true, price: 400 })), [['hutte', 'uncommon']]);
-  assert.deepEqual(placesOf(item('weapon', 'martialM', { rarity: 'rare', magic: true, price: 4000 })), [['hutte', 'rare'], ['forge', 'rare']]);
-  assert.deepEqual(placesOf(item('equipment', 'heavy', { rarity: 'veryRare', magic: true })), [['hutte', 'veryRare'], ['forge', 'veryRare']]);
-  assert.deepEqual(placesOf(item('consumable', 'ammo', { rarity: 'uncommon', magic: true })), [['hutte', 'uncommon'], ['forge', 'uncommon']]);
+test('a magic item is sold as its kind, in its rarity: a weapon or an armor with its type, a ring, a potion, a wondrous item', () => {
+  assert.deepEqual(classify(item('equipment', 'wondrous', { rarity: 'uncommon', magic: true, price: 400 })), as(['wondrous'], 'uncommon'));
+  assert.deepEqual(classify(item('weapon', 'martialM', { rarity: 'rare', magic: true, price: 4000 })), as(['martialM'], 'rare'));
+  assert.deepEqual(classify(item('equipment', 'heavy', { rarity: 'veryRare', magic: true })), as(['heavy'], 'veryRare'));
+  assert.deepEqual(classify(item('consumable', 'ammo', { rarity: 'uncommon', magic: true })), as(['ammo'], 'uncommon'));
+  assert.deepEqual(classify(item('equipment', 'ring', { rarity: 'rare', magic: true })), as(['rings'], 'rare'));
+  assert.deepEqual(classify(item('consumable', 'wand', { rarity: 'uncommon', magic: true })), as(['wands'], 'uncommon'));
+  assert.deepEqual(classify(item('consumable', 'potion', { rarity: 'common', magic: true, price: 50 })), as(['potions'], 'common'));
+  assert.deepEqual(classify(item('consumable', 'poison', { rarity: 'uncommon', magic: true })), as(['poisons'], 'uncommon'));
+  assert.deepEqual(classify(item('container', '', { rarity: 'uncommon', magic: true })), as(['wondrous', 'containers'], 'uncommon'));
+  assert.deepEqual(classify(item('tool', 'music', { rarity: 'rare', magic: true })), as(['wondrous', 'music'], 'rare'));
+  assert.deepEqual(classify(item('consumable', 'scroll', { rarity: 'common', magic: true })), as(['scrolls'], 'common'));
 });
 
-test('magic potions and poisons also go to the Apothecary', () => {
-  assert.deepEqual(placesOf(item('consumable', 'potion', { rarity: 'common', magic: true, price: 50 })), [['hutte', 'common'], ['apothicaire', 'common']]);
-  assert.deepEqual(placesOf(item('consumable', 'poison', { rarity: 'uncommon', magic: true })), [['hutte', 'uncommon'], ['apothicaire', 'uncommon']]);
+test("a document's properties are a Set: a magic item dropped in a shop is still magic", () => {
+  const sword = item('weapon', 'martialM', { rarity: 'rare', magic: true, price: 0 });
+  sword.system.properties = new Set(['mgc']);
+  assert.ok(isMagic(sword));
+  assert.deepEqual(priceOf(sword), { value: 4000, denomination: 'gp' });
 });
 
 test('a rarity without the magic property is mundane, and loot, food and artifacts never are magic goods', () => {
-  assert.deepEqual(placesOf(item('consumable', 'food', { rarity: 'common', price: 2, denomination: 'cp' })), [['equipement', 'food']]);
-  assert.deepEqual(placesOf(item('loot', 'gem', { rarity: 'common', price: 50 })), []);
-  assert.deepEqual(placesOf(item('loot', '', { rarity: 'veryRare', magic: true, price: 40000 })), []);
-  assert.deepEqual(placesOf(item('consumable', 'food', { rarity: 'common', magic: true, price: 10 })), []);
-  assert.deepEqual(placesOf(item('equipment', 'wondrous', { rarity: 'artifact', magic: true, price: 0 })), []);
+  assert.deepEqual(classify(item('consumable', 'food', { rarity: 'common', price: 2, denomination: 'cp' })), as(['food']));
+  assert.equal(classify(item('loot', 'gem', { rarity: 'common', price: 50 })), null);
+  assert.equal(classify(item('loot', '', { rarity: 'veryRare', magic: true, price: 40000 })), null);
+  assert.equal(classify(item('consumable', 'food', { rarity: 'common', magic: true, price: 10 })), null);
+  assert.equal(classify(item('equipment', 'wondrous', { rarity: 'artifact', magic: true, price: 0 })), null);
 });
 
-test('mundane goods go to their shop and category', () => {
-  assert.deepEqual(placesOf(item('weapon', 'martialM', { price: 15 })), [['forge', 'weapons']]);
-  assert.deepEqual(placesOf(item('weapon', 'natural', { price: 0 })), []);
-  assert.deepEqual(placesOf(item('equipment', 'shield', { price: 10 })), [['forge', 'armor']]);
-  assert.deepEqual(placesOf(item('consumable', 'ammo', { price: 1 })), [['forge', 'ammo']]);
-  assert.deepEqual(placesOf(item('consumable', 'potion', { price: 25, name: 'Acid' })), [['apothicaire', 'potions']]);
-  assert.deepEqual(placesOf(item('consumable', 'poison', { price: 100 })), [['apothicaire', 'poisons']]);
-  assert.deepEqual(placesOf(item('consumable', 'trinket', { price: 5, name: "Healer's Kit" })), [['apothicaire', 'kits'], ['equipement', 'gear']]);
-  assert.deepEqual(placesOf(item('loot', 'gear', { price: 5, name: 'Perfume' })), [['apothicaire', 'kits'], ['equipement', 'gear']]);
-  assert.deepEqual(placesOf(item('tool', '', { price: 5, baseItem: 'herb' })), [['equipement', 'tools'], ['apothicaire', 'kits']]);
-  assert.deepEqual(placesOf(item('consumable', 'trinket', { price: 1, name: 'Rope' })), [['equipement', 'gear']]);
-  assert.deepEqual(placesOf(item('container', '', { price: 2 })), [['equipement', 'gear']]);
-  assert.deepEqual(placesOf(item('equipment', 'clothing', { price: 15 })), [['equipement', 'clothing']]);
-  assert.deepEqual(placesOf(item('loot', 'trade', { price: 2 })), []);
-  assert.deepEqual(placesOf(item('container', '', { price: 0 })), [], 'an item without price is not for sale');
-  assert.deepEqual(placesOf({ name: 'Fireball', type: 'spell', system: { level: 3 } }), []);
+test('mundane goods are sold as their kind', () => {
+  assert.deepEqual(classify(item('weapon', 'martialM', { price: 15 })), as(['martialM']));
+  assert.deepEqual(classify(item('weapon', 'simpleR', { price: 25 })), as(['simpleR']));
+  assert.equal(classify(item('weapon', 'natural', { price: 0 })), null);
+  assert.deepEqual(classify(item('equipment', 'shield', { price: 10 })), as(['shield']));
+  assert.deepEqual(classify(item('consumable', 'ammo', { price: 1 })), as(['ammo']));
+  assert.deepEqual(classify(item('consumable', 'potion', { price: 25, name: 'Acid' })), as(['potions']));
+  assert.deepEqual(classify(item('consumable', 'poison', { price: 100 })), as(['poisons']));
+  assert.deepEqual(classify(item('consumable', 'trinket', { price: 5, name: "Healer's Kit" })), as(['kits', 'gear']));
+  assert.deepEqual(classify(item('loot', 'gear', { price: 5, name: 'Perfume' })), as(['kits', 'gear']));
+  assert.deepEqual(classify(item('tool', '', { price: 5, baseItem: 'herb' })), as(['kits', 'otherTools']), 'a kit at the Apothicaire, else a tool');
+  assert.deepEqual(classify(item('tool', 'art', { price: 50, baseItem: 'alchemist' })), as(['kits', 'art']));
+  assert.deepEqual(classify(item('tool', 'game', { price: 1 })), as(['game']));
+  assert.deepEqual(classify(item('tool', 'music', { price: 30 })), as(['music']));
+  assert.deepEqual(classify(item('tool', '', { price: 25, baseItem: 'thief' })), as(['otherTools']));
+  assert.deepEqual(classify(item('consumable', 'trinket', { price: 1, name: 'Rope' })), as(['gear']));
+  assert.deepEqual(classify(item('container', '', { price: 2 })), as(['containers']));
+  assert.deepEqual(classify(item('equipment', 'clothing', { price: 15 })), as(['clothing']));
+  assert.equal(classify(item('loot', 'trade', { price: 2 })), null);
+  assert.equal(classify(item('container', '', { price: 0 })), null, 'an item without price is not for sale');
+  assert.equal(classify({ name: 'Fireball', type: 'spell', system: { level: 3 } }), null);
 });
 
 test('the compendium folder sorts the loot and consumables that their type does not describe', () => {
   const loot = item('loot', '', { price: 1, denomination: 'sp' });
-  assert.deepEqual(placesOf(loot, { folder: 'Herbalist Supplies' }), [['apothicaire', 'herbs']]);
-  assert.deepEqual(placesOf(loot, { folder: 'Food & Produce' }), [['equipement', 'food']]);
-  assert.deepEqual(placesOf(loot, { folder: 'Ore & Metals' }), [], 'raw materials are not for sale');
-  assert.deepEqual(placesOf(loot, { folder: 'Gemstones' }), []);
-  assert.deepEqual(placesOf(loot, { folder: 'General Store / Tools' }), [['equipement', 'gear']], 'a store is not an ore');
-  assert.deepEqual(placesOf(loot), [['equipement', 'gear']]);
-  assert.deepEqual(placesOf(item('consumable', 'consumable', { price: 25 }), { folder: 'Potions & Tinctures' }), [['apothicaire', 'potions']]);
-  assert.deepEqual(placesOf(item('consumable', 'consumable', { price: 25 })), [], 'an unknown consumable without folder is left out');
+  assert.deepEqual(classify(loot, { folder: 'Herbalist Supplies' }), as(['herbs']));
+  assert.deepEqual(classify(loot, { folder: 'Food & Produce' }), as(['food']));
+  assert.equal(classify(loot, { folder: 'Ore & Metals' }), null, 'raw materials are not for sale');
+  assert.equal(classify(loot, { folder: 'Gemstones' }), null);
+  assert.deepEqual(classify(loot, { folder: 'General Store / Tools' }), as(['gear']), 'a store is not an ore');
+  assert.deepEqual(classify(loot), as(['gear']));
+  assert.deepEqual(classify(item('consumable', 'consumable', { price: 25 }), { folder: 'Potions & Tinctures' }), as(['potions']));
+  assert.equal(classify(item('consumable', 'consumable', { price: 25 })), null, 'an unknown consumable without folder is left out');
 });
 
 test('the stable goods are only sold at the stable', () => {
-  assert.deepEqual(placesOf(item('equipment', 'clothing', { price: 10, name: 'Riding Saddle' })), []);
-  assert.deepEqual(placesOf(item('consumable', 'food', { price: 5, denomination: 'cp', name: 'Feed' })), []);
-  assert.deepEqual(placesOf(item('container', '', { price: 4, name: 'Saddlebags' })), []);
+  assert.equal(classify(item('equipment', 'clothing', { price: 10, name: 'Riding Saddle' })), null);
+  assert.equal(classify(item('consumable', 'food', { price: 5, denomination: 'cp', name: 'Feed' })), null);
+  assert.equal(classify(item('container', '', { price: 4, name: 'Saddlebags' })), null);
 });
 
 test('a magic item without price costs its rarity price, half for a consumable', () => {
@@ -76,36 +92,64 @@ test('a magic item without price costs its rarity price, half for a consumable',
   assert.equal(priceOf(item('loot', 'gear', { price: 0 })), null);
 });
 
-test('Owidyn, then dnd5e 2024, then dnd5e 2014, then the other modules win; a hidden compendium comes last', () => {
+test('Owidyn, then dnd5e 2024, then Owidyn Legacy, then dnd5e 2014, then the other modules win; another module\'s hidden compendium comes last', () => {
   const ranks = [
-    { packageName: 'compendium-owidyn', rules: '2024' }, { packageName: 'dnd5e', rules: '2024' }, { packageName: 'dnd5e', rules: '2014' },
-    { packageName: 'kctg-5e', rules: '2024' }, { packageName: 'dnd-tashas-cauldron', rules: '2014' }, { packageName: 'compendium-owidyn', hidden: true }
+    { packageName: 'compendium-owidyn', rules: '2024' }, { packageName: 'dnd5e', rules: '2024' }, { packageName: 'compendium-owidyn', rules: '2014' },
+    { packageName: 'dnd5e', rules: '2014' }, { packageName: 'kctg-5e', rules: '2024' }, { packageName: 'dnd-tashas-cauldron', rules: '2014' },
+    { packageName: 'kctg-5e', rules: '2024', hidden: true }
   ].map(sourceRank);
   assert.deepEqual([...ranks].sort((a, b) => a - b), ranks);
+  assert.ok(ranks[2] > ranks[1], 'the 2014 Ensnaring Strike of Spells (Legacy) gives way to the 2024 one of dnd5e');
+  assert.equal(sourceRank({ packageName: 'compendium-owidyn', rules: '2024', hidden: true }), ranks[0], 'the Owidyn compendiums are hidden from the players, their copies still win');
 });
 
-test('the maximum rarity keeps the mundane categories and the magic ones up to it', () => {
-  assert.equal(allowsCategory('weapons', ''), true);
-  assert.equal(allowsCategory('common', ''), false);
-  assert.equal(allowsCategory('uncommon', 'uncommon'), true);
-  assert.equal(allowsCategory('rare', 'uncommon'), false);
-  assert.equal(allowsCategory('legendary', 'legendary'), true);
-  assert.equal(allowsCategory('scrolls-rare', 'uncommon'), false, 'a scroll rarer than the maximum');
-  assert.equal(allowsCategory('scrolls-uncommon', 'uncommon'), true);
-  assert.equal(allowsCategory('scrolls-common', ''), false, 'no scroll without magic items');
-  assert.equal(allowsCategory('lodging', ''), true);
+test('cooking ingredients are food, herbs also, and the Baies de Sunilda enchanted ingredients of their rarity', () => {
+  const ingredient = (family, extra = {}, rarity = 'common') => ({
+    ...item('loot', 'material', { rarity, price: 1, denomination: 'sp' }), flags: { 'compendium-owidyn': { cuisine: { ingredient: { family, tag: null, danger: null, ...extra } } } }
+  });
+  assert.deepEqual(classify(ingredient('viande')), as(['food']));
+  assert.deepEqual(classify(ingredient('herbe')), as(['herbs', 'food']));
+  assert.deepEqual(classify(ingredient('fruit', { boutique: 'hutte' }, 'rare')), as(['reagents'], 'rare'));
+  assert.deepEqual(classify(ingredient('fruit', { boutique: 'hutte' }, '')), as(['reagents'], 'common'));
+  assert.equal(classify({ ...ingredient('boisson'), system: { ...ingredient('boisson').system, price: { value: 0, denomination: 'cp' } } }), null, 'free water is not sold');
+  assert.ok(SHOPS.hutte.kinds.includes('reagents') && !SHOPS.apothicaire.kinds.includes('reagents'), 'the berries only at La Hutte, by its template');
+});
+
+test('a template only pre-fills kinds of the catalogue, and nothing very rare nor legendary', () => {
+  const kinds = new Set(GOODS.flatMap(group => group.kinds.map(([key]) => key)));
+  for (const [key, shop] of Object.entries(SHOPS)) {
+    assert.ok(shop.label && shop.icon, key);
+    assert.ok(shop.kinds.length && shop.kinds.every(kind => kinds.has(kind)), key);
+    assert.ok(shop.rarities.every(rarity => SHOP_RARITIES.includes(rarity) && !['veryRare', 'legendary'].includes(rarity)), key);
+  }
+  assert.deepEqual(SHOPS.forge.kinds, ['simpleM', 'simpleR', 'martialM', 'martialR', 'ammo', 'light', 'medium', 'heavy', 'shield']);
+  assert.deepEqual(SHOPS.forge.rarities, ['mundane', 'common', 'uncommon', 'rare']);
+  assert.ok(!SHOPS.hutte.rarities.includes('mundane'), 'La Hutte sells magic goods only');
+  assert.deepEqual(SHOPS.auberge.kinds, ['lodging', 'meals', 'drinks', 'hirelings', 'spellcasting']);
+  assert.equal(kinds.size, KIND_ORDER.length, 'each kind in one group only');
+  assert.ok([...SERVICE_KINDS].every(kind => !ITEM_KINDS.has(kind)) && !ITEM_KINDS.has('mounts'));
+  assert.equal(kindLabel('rings'), 'Anneaux');
+  assert.deepEqual(PERCENTS, [50, 100, 150]);
+});
+
+test('a magic good weighs less than a mundane one, the more so the rarer', () => {
+  assert.ok(poolWeight('martialM', 'mundane') > poolWeight('martialM', 'common'));
+  assert.ok(poolWeight('wondrous', 'common') > poolWeight('wondrous', 'rare'));
+  assert.ok(poolWeight('wondrous', 'rare') > poolWeight('wondrous', 'legendary'));
+  assert.ok(poolWeight('potions', 'common') > poolWeight('martialM', 'common'), 'a magic shop is not an armory');
+  assert.equal(poolWeight('lodging', 'mundane'), 0, 'services are listed, not drawn');
+  assert.equal(poolWeight('unknown', 'mundane'), 0);
 });
 
 test('a spell is sold as a scroll of the rarity of its level, at half the price of a magic item of that rarity', () => {
   const spell = level => ({ name: 'Spell', type: 'spell', system: { level } });
-  assert.deepEqual(scrollOf(spell(0)), { shop: 'hutte', category: 'scrolls-common', price: { value: 50, denomination: 'gp' } });
-  assert.deepEqual(scrollOf(spell(1)).category, 'scrolls-common');
-  assert.deepEqual(scrollOf(spell(3)), { shop: 'hutte', category: 'scrolls-uncommon', price: { value: 200, denomination: 'gp' } });
-  assert.deepEqual(scrollOf(spell(5)).category, 'scrolls-rare');
-  assert.deepEqual(scrollOf(spell(8)), { shop: 'hutte', category: 'scrolls-veryRare', price: { value: 20000, denomination: 'gp' } });
-  assert.deepEqual(scrollOf(spell(9)).category, 'scrolls-legendary');
-  assert.equal(scrollRarityOf('scrolls-veryRare'), 'veryRare');
-  assert.equal(scrollRarityOf('rare'), null);
+  assert.deepEqual(scrollOf(spell(0)), { kind: 'scrolls', rarity: 'common', price: { value: 50, denomination: 'gp' } });
+  assert.equal(scrollOf(spell(1)).rarity, 'common');
+  assert.deepEqual(scrollOf(spell(3)), { kind: 'scrolls', rarity: 'uncommon', price: { value: 200, denomination: 'gp' } });
+  assert.equal(scrollOf(spell(5)).rarity, 'rare');
+  assert.deepEqual(scrollOf(spell(8)), { kind: 'scrolls', rarity: 'veryRare', price: { value: 20000, denomination: 'gp' } });
+  assert.equal(scrollOf(spell(9)).rarity, 'legendary');
+  assert.equal(scrollOf(spell(10)), null);
 });
 
 test('scrolls come from dnd5e, the official D&D modules and Owidyn', () => {
@@ -115,11 +159,10 @@ test('scrolls come from dnd5e, the official D&D modules and Owidyn', () => {
 
 test("the inn lists the services of the System Reference Document, with their rules", () => {
   assert.equal(INN.length, 27);
-  assert.deepEqual([...new Set(INN.map(good => good.category))], Object.keys(SHOPS.auberge.categories));
+  assert.deepEqual([...new Set(INN.map(good => good.kind))], [...SERVICE_KINDS]);
   assert.deepEqual(INN.find(good => good.name === 'Inn Stay, Modest (per day)').price, { value: 5, denomination: 'sp' });
   assert.deepEqual(INN.find(good => good.name === 'Spellcasting: Level 9 (city)').price, { value: 100000, denomination: 'gp' });
-  assert.ok(Object.keys(SHOPS.auberge.categories).every(category => INN_RULES[category]));
-  assert.equal(SHOPS.auberge.all, true);
+  assert.ok([...SERVICE_KINDS].every(kind => INN_RULES[kind]));
 });
 
 test('weighted draws follow the weights', () => {
@@ -135,13 +178,59 @@ test('prices are adjusted in their denomination', () => {
   assert.deepEqual(adjustPrice({ value: 15, denomination: 'gp' }, 100), { value: 15, denomination: 'gp' });
 });
 
-test('every shop category has a label and the stable lists the Player\'s Handbook goods', () => {
-  for (const { categories } of Object.values(SHOPS)) {
-    for (const category of Object.keys(categories)) assert.ok(RARITIES.includes(category) || scrollRarityOf(category) || CATEGORY_LABELS[category], category);
-  }
+test('every kind has a label and the stable lists the Player\'s Handbook goods', () => {
+  for (const group of GOODS) for (const [key, label] of group.kinds) assert.ok(label && (kindLabel(key) === label), key);
   assert.equal(STABLE.length, 21);
-  assert.deepEqual([...new Set(STABLE.map(good => good.category))], ['mounts', 'tack', 'vehicles']);
-  assert.ok(STABLE.every(good => good.documentName === (good.category === 'mounts' ? 'Actor' : 'Item')));
+  assert.deepEqual([...new Set(STABLE.map(good => good.kind))], ['mounts', 'tack', 'vehicles']);
+  assert.ok(STABLE.every(good => good.documentName === (good.kind === 'mounts' ? 'Actor' : 'Item')));
+});
+
+const CURRENCIES = { pp: { conversion: 0.1 }, gp: { conversion: 1 }, ep: { conversion: 2 }, sp: { conversion: 10 }, cp: { conversion: 100 } };
+const VALUES = coinValues(CURRENCIES);
+const purse = (coins = {}) => ({ pp: 0, gp: 0, ep: 0, sp: 0, cp: 0, ...coins });
+
+test('coins and prices are counted in copper pieces from the dnd5e rates', () => {
+  assert.deepEqual(VALUES, { pp: 1000, gp: 100, ep: 50, sp: 10, cp: 1 });
+  assert.equal(priceInCp({ value: 15, denomination: 'gp' }, VALUES), 1500);
+  assert.equal(priceInCp({ value: 2.5, denomination: 'sp' }, VALUES), 25);
+  assert.equal(priceInCp({ value: 4 }, VALUES), 400, 'gold pieces without denomination');
+  assert.equal(walletInCp(purse({ pp: 1, ep: 1, cp: 3 }), VALUES), 1053);
+});
+
+test('a purchase spends the coins that fit, breaks a larger coin when it must and gives the change back', () => {
+  assert.deepEqual(pay(purse({ gp: 20 }), 1500, VALUES), purse({ gp: 5 }));
+  assert.deepEqual(pay(purse({ pp: 1, sp: 5 }), 80, VALUES), purse({ gp: 9, sp: 7 }), 'the 5 sp, then the pp broken');
+  assert.deepEqual(pay(purse({ pp: 1 }), 1, VALUES), purse({ gp: 9, sp: 9, cp: 9 }), 'no electrum in the change');
+  assert.deepEqual(pay(purse({ gp: 1, cp: 50 }), 30, VALUES), purse({ gp: 1, cp: 20 }), 'the small coins first when they fit');
+  assert.deepEqual(pay(purse({ ep: 3 }), 120, VALUES), purse({ sp: 3 }), 'electrum is spent');
+  assert.deepEqual(pay(purse({ gp: 3 }), 0, VALUES), purse({ gp: 3 }), 'a free good');
+  assert.equal(pay(purse({ gp: 14, sp: 9, cp: 9 }), 1500, VALUES), null, 'not enough money');
+  for (const [coins, cost] of [[{ pp: 3, gp: 1, sp: 7 }, 2345], [{ ep: 9, cp: 4 }, 333], [{ pp: 1, gp: 2, ep: 1, sp: 3, cp: 4 }, 1277]]) {
+    const left = pay(purse(coins), cost, VALUES);
+    assert.equal(walletInCp(left, VALUES), walletInCp(purse(coins), VALUES) - cost, `${JSON.stringify(coins)} - ${cost}`);
+    assert.ok(Object.values(left).every(count => Number.isInteger(count) && (count >= 0)));
+  }
+});
+
+test('a stock holds one magic good, scroll or mount, 1 to 5 of the others and unlimited services', () => {
+  assert.equal(stockQuantity({ kind: 'service' }, () => 0.5), null);
+  assert.equal(stockQuantity({ kind: 'item', magic: true }, () => 0.99), 1);
+  assert.equal(stockQuantity({ kind: 'scroll' }, () => 0.99), 1);
+  assert.equal(stockQuantity({ kind: 'actor' }, () => 0.99), 1);
+  assert.equal(stockQuantity({ kind: 'item' }, () => 0), 1);
+  assert.equal(stockQuantity({ kind: 'item' }, () => 0.99), 5);
+});
+
+test('a draw gives different goods by the weights of their pools, and stops when everything is drawn', () => {
+  const longsword = { name: 'Longsword', category: 'martialM' };
+  const goods = new Map([['martialM:mundane', [longsword, { name: 'Dagger' }]], ['shield:mundane', [{ name: 'Shield' }]], ['rings:rare', []]]);
+  const drawn = drawGoods(goods, { 'martialM:mundane': 3, 'shield:mundane': 1, 'rings:rare': 5 }, 10, () => 0);
+  assert.deepEqual(drawn.map(good => good.name), ['Longsword', 'Dagger', 'Shield'], 'an empty pool is never picked');
+  assert.equal(drawn[0], longsword, 'the goods as they are');
+  const rolls = [0.9, 0];
+  assert.deepEqual(drawGoods(goods, { 'martialM:mundane': 3, 'shield:mundane': 1 }, 1, () => rolls.shift()).map(good => good.name), ['Shield'], 'the last quarter of the roll');
+  assert.deepEqual(drawGoods(goods, { 'martialM:mundane': 0, 'shield:mundane': 1 }, 5, () => 0).map(good => good.name), ['Shield'], 'a pool without weight is left aside');
+  assert.equal(goods.get('martialM:mundane').length, 2, 'the goods given are not changed');
 });
 
 let failures = 0;

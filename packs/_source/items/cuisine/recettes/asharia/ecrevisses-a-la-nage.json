@@ -1,0 +1,249 @@
+{
+  "_id": "YogdBDgVf98CLeav",
+  "name": "Écrevisses à la nage",
+  "type": "consumable",
+  "img": "icons/consumables/meat/crab-leg-shell-white-red.webp",
+  "folder": "xrkPkrvUDHXbhnku",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Commune · Asharia · DD 11</em></p><p><strong>Ingrédients</strong> : Écrevisses de la Kinds, 1 Légume, 1 Boisson.</p><p><strong>Effet</strong> : Ta vitesse augmente de 10 ft, et tu as l’Advantage aux tests de Dextérité (Acrobatics). Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "ecrevisses-a-la-nage",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d0TCr9FBw9z49xMV": {
+        "type": "utility",
+        "_id": "d0TCr9FBw9z49xMV",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VACgoZqx0FkMqw7k"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Écrevisses à la nage",
+      "img": "icons/consumables/meat/crab-leg-shell-white-red.webp",
+      "_id": "VACgoZqx0FkMqw7k",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": 10,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "mRrcXXUr2Hf6FRxT"
+          },
+          {
+            "key": "system.skills.acr.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "zAwkyiMCkYLIthYF"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Ta vitesse augmente de 10 ft, et tu as l’Advantage aux tests de Dextérité (Acrobatics). Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "ecrevisses-a-la-nage",
+          "type": "stricte",
+          "tier": "commune",
+          "dc": 11,
+          "tag": "veloce",
+          "base": null,
+          "livre": "rivieres-et-sous-bois",
+          "depart": false,
+          "region": "Asharia",
+          "effet": "Ta vitesse augmente de 10 ft, et tu as l’Advantage aux tests de Dextérité (Acrobatics). Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "ecrevisses-de-la-kinds",
+              "count": 1,
+              "name": "Écrevisses de la Kinds"
+            },
+            {
+              "family": "legume",
+              "count": 1
+            },
+            {
+              "family": "boisson",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

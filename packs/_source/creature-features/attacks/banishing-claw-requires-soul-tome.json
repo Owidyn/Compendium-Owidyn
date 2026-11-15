@@ -1,0 +1,340 @@
+{
+  "_id": "haI7pYTDBsJqNahp",
+  "name": "Banishing Claw (Requires Soul Tome)",
+  "type": "weapon",
+  "system": {
+    "type": {
+      "value": "natural",
+      "baseItem": ""
+    },
+    "activities": {
+      "EuaAWRWnoqxBfIZP": {
+        "type": "attack",
+        "_id": "EuaAWRWnoqxBfIZP",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "int",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 3,
+              "denomination": 12,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      },
+      "lj3L51L4aopW4Q7V": {
+        "type": "save",
+        "_id": "lj3L51L4aopW4Q7V",
+        "sort": 150000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A target hit by Banishing Claw (Requires Soul Tome)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "bcCboe7F8ntmqwxc",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "Charisma Save",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "17"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a creature, it is subjected to the following effect. <em>Charisma Saving Throw:</em> DC [[lookup @save.dc.value activity=lj3L51L4aopW4Q7V]]. <em>Failure:</em> The target is trapped in a demiplane inside the Soul Tome. While trapped there, the target has the &amp;Reference[Incapacitated apply=false] condition. At the end of each of its turns, the target repeats the save, escaping the tome on a success. When the target escapes, it appears in the space it left or, if that space is occupied, the nearest unoccupied space. If the target fails three of these saves while in the demiplane, it becomes bound to the tome and can escape only if the tome is reduced to 0 Hit Points.</p>",
+      "chat": ""
+    },
+    "identifier": "banishing-claw",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "properties": [],
+    "identified": true,
+    "unidentified": {
+      "name": "Unidentified Weapon",
+      "description": ""
+    },
+    "mastery": "",
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null,
+      "reach": null
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false
+        },
+        "number": 2,
+        "denomination": 4,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "scaling": {
+          "number": 1
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "cover": null,
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "crew": {
+      "value": []
+    }
+  },
+  "folder": "G7kGENbzBQwABGag",
+  "img": "icons/skills/melee/strike-slashes-red.webp",
+  "effects": [
+    {
+      "_id": "bcCboe7F8ntmqwxc",
+      "name": "Incapacitated",
+      "img": "systems/dnd5e/icons/svg/statuses/incapacitated.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "QBmXdMzMaK0d0q0R",
+        "item": "AsDCZIFjZNgYrxrP"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.QBmXdMzMaK0d0q0R.Item.AsDCZIFjZNgYrxrP",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 600000
+}

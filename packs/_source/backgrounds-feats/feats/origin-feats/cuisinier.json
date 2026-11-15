@@ -1,0 +1,144 @@
+{
+  "_id": "pfdHBiLrcI2w9UJp",
+  "name": "Cuisinier",
+  "type": "feat",
+  "img": "icons/tools/cooking/pot-camping-iron-black.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "TAigJROLFEn8jq5J": {
+        "type": "utility",
+        "_id": "TAigJROLFEn8jq5J",
+        "sort": 0,
+        "name": "Cuisiner",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Short ou Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": {
+      "5F73oXzLgM8TMqtD": {
+        "_id": "5F73oXzLgM8TMqtD",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "Trait",
+        "name": "Ustensiles",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "tool:art:cook"
+          ],
+          "mode": "default"
+        }
+      }
+    },
+    "description": {
+      "value": "<p>Tu sais tirer un vrai repas de presque rien, et un festin de ce que les autres jettent.</p><p><strong>Ustensiles.</strong> Tu as la maîtrise des Cook’s Utensils.</p><p><strong>Carnet de recettes.</strong> Tu connais trois recettes de ton choix parmi les recettes de base et la cuisine du quotidien. Tu en apprends d’autres en étudiant des livres de recettes ou en expérimentant.</p><p><strong>Cuisine de camp.</strong> Une fois par Short ou Long Rest, tu peux cuisiner un plat avec des ingrédients de ton inventaire. Il donne un nombre de portions égal à ton bonus de maîtrise. Le premier point de puissance du plat fait son effet ; chaque autre point lui donne, à ton choix, un dé de plus (il en lance au plus ton bonus de maîtrise) ou une portion de plus. Raté, il garde un défaut de goût (deux s’il est raté de 5 ou plus), qui cache un malus : qui le mange fait un jet de sauvegarde de Constitution pour s’en tirer.</p><p><strong>Maîtrise.</strong> Quand tu as réussi cinq fois la même recette, tu la maîtrises : tu as un bonus de +1 à ses tests de cuisine.</p><p><strong>Palais.</strong> Tu as l’Advantage aux jets de sauvegarde de Constitution contre le poison d’un aliment avarié ou dangereux.</p><section class=\"secret\" id=\"secret-6KrevYnBmqMMCeY5\"><p><strong>Foundry Note</strong></p><p><em>Cuisiner</em> ouvre la fenêtre de cuisine. À la première ouverture, elle te fait choisir tes trois recettes de départ.</p></section>",
+      "chat": ""
+    },
+    "identifier": "cuisinier",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

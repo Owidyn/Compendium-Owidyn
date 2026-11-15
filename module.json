@@ -2,10 +2,10 @@
   "id": "compendium-owidyn",
   "title": "Compendium Owidyn",
   "description": "Contenu homebrew d'Owidyn pour D&D5e : classes Cartomancien (Deck du Parieur) et Héliarque (Soothing Star) avec leurs automatisations, La Voie de l'Aiguille, espèces, dons, historiques, équipement et bestiaire.",
-  "version": "2.2.0",
+  "version": "2.5.0",
   "url": "https://github.com/Owidyn/Compendium-Owidyn",
   "manifest": "https://github.com/Owidyn/Compendium-Owidyn/releases/latest/download/module.json",
-  "download": "https://github.com/Owidyn/Compendium-Owidyn/releases/download/2.2.0/compendium-owidyn.zip",
+  "download": "https://github.com/Owidyn/Compendium-Owidyn/releases/download/2.5.0/compendium-owidyn.zip",
   "bugs": "https://github.com/Owidyn/Compendium-Owidyn/issues",
   "compatibility": {
     "minimum": "14.367",
@@ -35,7 +35,9 @@
   ],
   "styles": [
     "styles/heliarque.css",
-    "styles/cartomancien.css"
+    "styles/cartomancien.css",
+    "styles/cuisine.css",
+    "styles/boutiques.css"
   ],
   "socket": true,
   "packs": [
@@ -46,7 +48,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -69,7 +71,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -93,7 +95,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -102,7 +104,8 @@
           "types": [
             "race",
             "feat",
-            "spell"
+            "spell",
+            "weapon"
           ]
         }
       }
@@ -150,7 +153,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -170,7 +173,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -190,7 +193,7 @@
       "type": "Actor",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -206,10 +209,33 @@
       "type": "JournalEntry",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {}
+    },
+    {
+      "name": "legacy-classes",
+      "label": "Classes (Legacy)",
+      "path": "packs/legacy-classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "sourceBook": "OSC",
+          "types": [
+            "class",
+            "subclass",
+            "feat",
+            "spell",
+            "weapon"
+          ]
+        }
+      }
     },
     {
       "name": "legacy-creatures",
@@ -254,7 +280,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -274,7 +300,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       },
       "flags": {
@@ -299,7 +325,7 @@
       "name": "Owidyn's Source Compendium Legacy",
       "sorting": "m",
       "color": "#3a3a3a",
-      "packs": ["legacy-creatures", "legacy-creature-features", "legacy-backgrounds-feats", "legacy-spells"]
+      "packs": ["legacy-classes", "legacy-creatures", "legacy-creature-features", "legacy-backgrounds-feats", "legacy-spells"]
     }
   ],
   "flags": {

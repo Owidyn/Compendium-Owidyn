@@ -1,0 +1,139 @@
+{
+  "name": "Queue de feu",
+  "type": "feat",
+  "_id": "PRwPSMlp2ZGmOkGM",
+  "img": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 520000,
+  "system": {
+    "description": {
+      "value": "<p>L'une de vos queues est liée à l'élément Fire. Vous connaissez le cantrip @UUID[Compendium.compendium-owidyn.species.Item.dYckjFAwE695Flgx]{Éclat de feu}, un sort kitsune, et vos @UUID[Compendium.compendium-owidyn.species.Item.l2JBdEe8t7gltOkQ]{Griffes élémentaires} peuvent infliger des Fire damage.</p><section class=\"secret\" id=\"secret-I8HHR2siCxxuF2ch\"><p><strong>Foundry Note</strong></p><p>Le cantrip est dans votre spellbook, lié à cette queue, avec la Spellcasting Ability choisie pour vos sorts kitsune. Le jet de dégâts des Griffes élémentaires propose le type Fire grâce à elle.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kitsune",
+    "activities": {
+      "21g6wD92dWqaKW4Q": {
+        "type": "cast",
+        "_id": "21g6wD92dWqaKW4Q",
+        "sort": 0,
+        "name": "Éclat de feu",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.compendium-owidyn.species.Item.dYckjFAwE695Flgx",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": 0,
+          "properties": [],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "queue-fire",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "kitsuneTail": "fire"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

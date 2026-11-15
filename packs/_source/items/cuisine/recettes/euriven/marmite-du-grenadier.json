@@ -1,0 +1,233 @@
+{
+  "_id": "w0SvOQMJfZ2rs5SK",
+  "name": "Marmite du grenadier",
+  "type": "consumable",
+  "img": "icons/tools/cooking/pot-camping-iron-black.webp",
+  "folder": "KVbYd7a7UXw61Gjp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Colvan · DD 13</em></p><p><strong>Ingrédients</strong> : Viande de fer, 1 Céréale, Feu de Lallin.</p><p><strong>Effet</strong> : Tu gagnes une réserve d’Élans de puissance × d8 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.</p><p>Le ragoût des casernes de Colvan, servi brûlant avant la manœuvre.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "marmite-du-grenadier",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "P8cRSlH1vfwDsmkI": {
+        "type": "utility",
+        "_id": "P8cRSlH1vfwDsmkI",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "KcXdaBcCCwCAePBs"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Marmite du grenadier",
+      "img": "icons/tools/cooking/pot-camping-iron-black.webp",
+      "_id": "KcXdaBcCCwCAePBs",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu gagnes une réserve d’Élans de puissance × d8 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "marmite-du-grenadier",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 13,
+          "tag": "puissant",
+          "base": null,
+          "livre": "l-ordinaire-des-legions",
+          "depart": false,
+          "region": "Colvan",
+          "effet": "Tu gagnes une réserve d’Élans de puissance × d8 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "viande-de-fer",
+              "count": 1,
+              "name": "Viande de fer"
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            },
+            {
+              "identifier": "feu-de-lallin",
+              "count": 1,
+              "name": "Feu de Lallin"
+            }
+          ],
+          "temphp": null,
+          "elans": "@puissanced8",
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

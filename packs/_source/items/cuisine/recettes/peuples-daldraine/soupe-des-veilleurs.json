@@ -1,0 +1,232 @@
+{
+  "_id": "ERZT3BWpK2UBxmTD",
+  "name": "Soupe des Veilleurs",
+  "type": "consumable",
+  "img": "icons/tools/cooking/bowl-steaming-brown.webp",
+  "folder": "zrJG186BFDWdnP2o",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Commune · Refuges des Lanternes · DD 10</em></p><p><strong>Ingrédients</strong> : Miche de veille, 1 Viande, 1 Légume.</p><p><strong>Effet</strong> : À la fin de ton prochain Short Rest, tu récupères puissance × d6 PV.</p><p>Servie dans tous les Refuges des Lanternes à qui frappe à la porte, de jour comme de nuit.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "soupe-des-veilleurs",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "gI4auCAq3M6kPhiv": {
+        "type": "utility",
+        "_id": "gI4auCAq3M6kPhiv",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9wm0hvA13SaXztgF"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Soupe des Veilleurs",
+      "img": "icons/tools/cooking/bowl-steaming-brown.webp",
+      "_id": "9wm0hvA13SaXztgF",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>À la fin de ton prochain Short Rest, tu récupères puissance × d6 PV.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "soupe-des-veilleurs",
+          "type": "stricte",
+          "tier": "commune",
+          "dc": 10,
+          "tag": "revigorant",
+          "base": null,
+          "livre": "tables-des-peuples",
+          "depart": false,
+          "region": "Refuges des Lanternes",
+          "effet": "À la fin de ton prochain Short Rest, tu récupères puissance × d6 PV.",
+          "slots": [
+            {
+              "identifier": "miche-de-veille",
+              "count": 1,
+              "name": "Miche de veille"
+            },
+            {
+              "family": "viande",
+              "count": 1
+            },
+            {
+              "family": "legume",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": "@puissanced6",
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

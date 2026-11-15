@@ -6,8 +6,9 @@
  * Shortbow…); Creature Features (Legacy) does the same from Creatures (Legacy), against dnd5e's Monster Features (SRD).
  *   node tools/owidyn/creature-features.mjs          → LevelDB packs + their sources (packs/_source/<compendium>/)
  *   node tools/owidyn/creature-features.mjs --check  → counts only, writes nothing
- * The compendiums are rebuilt from the creatures each time: edit a creature, then run it again. A feature keeps the id
- * derived from the first creature that has it, so its UUID doesn't change. The Héliarque Forms are left out: their
+ * The compendiums are rebuilt from the creatures each time: edit a creature, then run it again. A feature comes from the
+ * first creature that has it, or from the creature it already came from, and keeps the id derived from that creature,
+ * so its UUID doesn't change when other creatures get a feature of the same name. The Héliarque Forms are left out: their
  * aptitudes only work through the Héliarque scripts.
  * Foundry must not have a world open that uses this module while the LevelDB packs are written.
  */
@@ -68,6 +69,10 @@ for (const { source, pack, rules, official } of SETS) {
   for await (const [key, value] of db.iterator()) entries.set(key, value);
   await db.close();
   const known = await officialNames(official);
+  // A feature already in the compendium keeps the creature it comes from, so its UUID doesn't change when a creature
+  // sorted before that one gets a feature of the same name.
+  const kept = new Map(readSources(sourceDir(pack)).map(({ doc }) => doc).filter(d => d.flags?.[MODULE_ID]?.creatureFeature?.actor)
+    .map(d => [d.name.toLowerCase(), d.flags[MODULE_ID].creatureFeature.actor]));
 
   const actors = [...entries].filter(([key]) => /^!actors![^.]+$/.test(key)).map(([, a]) => a)
     .filter(a => !a.flags?.[MODULE_ID]?.heliarque).sort((a, b) => a.name.localeCompare(b.name));
@@ -79,7 +84,7 @@ for (const { source, pack, rules, official } of SETS) {
       if (!item || !['feat', 'weapon'].includes(item.type)) continue;
       if (item.type === 'weapon' && item.system?.type?.baseItem) continue;
       const name = item.name.toLowerCase();
-      if (known.has(name) || items.has(name)) continue;
+      if (known.has(name) || (items.has(name) && kept.get(name) !== actor._id)) continue;
       const kind = kindOf(item);
       const folder = derivedId(`${pack}:folder:${kind}`);
       const label = KINDS.find(([k]) => k === kind)[1];

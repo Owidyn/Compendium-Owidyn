@@ -1,6 +1,8 @@
 import {
   CARTOMANCIEN_SPELLS,
+  TAROTS_DESCRIPTION,
   ensureContent,
+  ensureTarots,
   getAvailableCartomancienSpellSources,
   importSpellToActor,
   syncActorContent
@@ -21,8 +23,45 @@ function withActorLock(operation) {
     if (deckOperations.has(key)) return null;
     deckOperations.add(key);
     try { return await operation(actor, ...args); }
-    finally { deckOperations.delete(key); refreshManagers(actor.id); }
+    finally {
+      deckOperations.delete(key);
+      refreshManagers(actor.id);
+      refreshTarots(actor).catch(error => console.error(`${MODULE_ID} | Tarots`, error));
+    }
   };
+}
+
+/**
+ * The Tarots feature recalls the state of the deck under its text: the cards left to draw, the hand, and the size of
+ * the discard pile (whose cards the Cartomancien can't look at).
+ */
+async function refreshTarots(actor) {
+  if (!actor?.isOwner) return;
+  const item = actor.items.find(i => i.type === "feat" && i.system.identifier === "tarots");
+  if (!item) return;
+  const { deck, hand, discard } = stacksOf(actor);
+  const initialized = Boolean(actor.getFlag(MODULE_ID, "cartomancien.initialized"));
+  const label = card => {
+    const vm = buildCardVM(deck, card);
+    return `${vm.name}${vm.spellName ? ` (<em>${vm.spellName}</em>)` : ""}`;
+  };
+  const byArcana = (a, b) => getArcanaIndex(a) - getArcanaIndex(b);
+  let state;
+  if (!initialized || !deck) state = "<p><em>Deck pas encore préparé : ouvrez les tarots et synchronisez le deck.</em></p>";
+  else {
+    const available = [...(deck.availableCards ?? [])].sort(byArcana);
+    const held = [...(hand?.cards ?? [])].sort(byArcana);
+    const mystery = actor.getFlag(MODULE_ID, "cartomancien.jackpotMystery") ? ["<em>carte mystère</em>"] : [];
+    const handLabels = [...held.map(label), ...mystery];
+    const discarded = discard?.cards?.size ?? 0;
+    state = "<ul>"
+      + `<li><strong>Deck (${available.length}/${deck.cards.size}) :</strong> ${available.map(label).join(", ") || "vide"}</li>`
+      + `<li><strong>Main (${getHandCount(actor, hand)}/${getPB(actor)}) :</strong> ${handLabels.join(", ") || "vide"}</li>`
+      + `<li><strong>Défausse :</strong> ${discarded} carte${discarded > 1 ? "s" : ""}</li>`
+      + "</ul>";
+  }
+  const value = `${TAROTS_DESCRIPTION}<h3>État du deck</h3>${state}`;
+  if (item.system.description.value !== value) await item.update({ "system.description.value": value });
 }
 
 function refreshManagers(actorId) {
@@ -184,6 +223,56 @@ function stacksOf(actor) {
 
 async function getStacks(actor) {
   return stacksOf(actor);
+}
+
+/* -------------------------------------------- */
+/*  Folders of the card stacks                  */
+/* -------------------------------------------- */
+
+const isActiveGM = () => game.user.isGM && (!game.users.activeGM || (game.users.activeGM.id === game.user.id));
+const folderFlag = folder => folder.getFlag(MODULE_ID, "cartomancien") ?? {};
+const actorFolderOf = actorId => game.folders.find(f => (f.type === "Cards") && (folderFlag(f).actorId === actorId)) ?? null;
+
+/** The Cards folder of a Cartomancien, in the folder Cartomancien: made if missing, renamed after the character. */
+async function stacksFolder(actor) {
+  let folder = actorFolderOf(actor.id);
+  if (folder) {
+    if (folder.name !== actor.name) await folder.update({ name: actor.name });
+    return folder;
+  }
+  let root = game.folders.find(f => (f.type === "Cards") && folderFlag(f).root);
+  root ??= await Folder.implementation.create({
+    name: "Cartomancien", type: "Cards", sorting: "a", flags: { [MODULE_ID]: { cartomancien: { root: true } } }
+  });
+  return Folder.implementation.create({
+    name: actor.name, type: "Cards", folder: root.id, sorting: "a", flags: { [MODULE_ID]: { cartomancien: { actorId: actor.id } } }
+  });
+}
+
+/**
+ * Put the deck, hand and discard of a Cartomancien in the folder Cartomancien › <character>. Done by the active GM, one
+ * at a time (the three stacks are made together); a stack the GM moved to another folder stays there.
+ */
+let filing = Promise.resolve();
+function fileStacks(actor, stacks) {
+  if (!actor || !isActiveGM()) return filing;
+  filing = filing.then(async () => {
+    const loose = stacks.filter(stack => stack && !stack.folder && game.cards.has(stack.id));
+    if (!loose.length) return;
+    const folder = await stacksFolder(actor);
+    await Cards.implementation.updateDocuments(loose.map(stack => ({ _id: stack.id, folder: folder.id })));
+  }).catch(error => console.error(`${MODULE_ID} | rangement des cartes de ${actor.name}`, error));
+  return filing;
+}
+
+/** Every stack of the Cartomancien in the world, by character (whose stacks are left where they are once filed). */
+async function fileAllStacks() {
+  const byActor = new Map();
+  for (const stack of game.cards) {
+    const actor = game.actors.get(stack.getFlag(MODULE_ID, "cartomancien.actorId"));
+    if (actor) byActor.set(actor, [...(byActor.get(actor) ?? []), stack]);
+  }
+  for (const [actor, stacks] of byActor) await fileStacks(actor, stacks);
 }
 
 async function syncCardImages(stacks) {
@@ -849,6 +938,7 @@ function openManager(actor) {
   if (!actor) return ui.notifications.warn("Aucun personnage sélectionné.");
   if (!getCartomancerLevel(actor)) return ui.notifications.warn("Ce personnage n'a pas la classe Cartomancien.");
   new CartomancienManager(actor).render({ force: true });
+  refreshTarots(actor).catch(error => console.error(`${MODULE_ID} | Tarots`, error));
 }
 
 const featureAutomation = registerFeatureAutomation({
@@ -859,7 +949,7 @@ const featureAutomation = registerFeatureAutomation({
 
 Hooks.on("dnd5e.preUseActivity", activity => {
   if (!activity.item?.getFlag(MODULE_ID, "cartomancien.contentKey")) return;
-  if (["CrtmActTouch0001", "CrtmActInflux001", "CrtmActDivine001"].some(id => activity.id === id || activity.id === id.padEnd(16, "0"))) {
+  if (["CrtmActTarots001", "CrtmActTouch0001", "CrtmActInflux001", "CrtmActDivine001"].some(id => activity.id === id || activity.id === id.padEnd(16, "0"))) {
     openManager(activity.actor ?? activity.item.parent);
     return false;
   }
@@ -920,6 +1010,12 @@ Hooks.once("ready", async () => {
     try {
       await migrated;
       await ensureContent({ notify: true });
+      // The Cartomanciens made before the Tarots feature (content 0.4.0) get it, with the state of their deck
+      for (const actor of game.actors.filter(a => getCartomancerLevel(a))) {
+        await ensureTarots(actor);
+        await refreshTarots(actor);
+      }
+      await fileAllStacks();
     } catch (err) {
       console.error(`${MODULE_ID} | erreur d'installation des compendiums`, err);
       ui.notifications.error("Cartomancien : impossible de créer les compendiums. Voir la console F12.");
@@ -948,6 +1044,29 @@ Hooks.on("getApplicationV1HeaderButtons", (app, buttons) => {
     icon: "fas fa-cards",
     onclick: () => openManager(actor)
   });
+});
+
+// The stacks go to the character's folder as soon as they are made, whoever makes them
+Hooks.on("createCards", cards => {
+  const actorId = cards.getFlag(MODULE_ID, "cartomancien.actorId");
+  if (actorId) fileStacks(game.actors.get(actorId), [cards]);
+});
+
+// The character's folder follows its name, and goes when its last stack goes
+Hooks.on("updateActor", (actor, changes) => {
+  if (!("name" in changes) || !isActiveGM()) return;
+  const folder = actorFolderOf(actor.id);
+  if (folder && (folder.name !== actor.name)) folder.update({ name: actor.name });
+});
+const emptied = new Set();
+Hooks.on("deleteCards", cards => {
+  const folder = cards.folder;
+  if (!isActiveGM() || !folder || !folderFlag(folder).actorId || emptied.has(folder.id)) return;
+  const empty = !game.cards.some(stack => stack.folder?.id === folder.id) && !game.folders.some(f => f.folder?.id === folder.id);
+  if (!empty) return;
+  // The three stacks may go in one batch: the folder is deleted once
+  emptied.add(folder.id);
+  folder.delete().catch(() => null).finally(() => emptied.delete(folder.id));
 });
 
 // Removing the class removes its deck. The piles and spells are read now, before the cleanup updates reach this client.

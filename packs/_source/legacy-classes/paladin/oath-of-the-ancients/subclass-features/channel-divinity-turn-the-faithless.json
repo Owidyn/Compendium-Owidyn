@@ -1,0 +1,188 @@
+{
+  "_id": "JeVF0ljXQS8JEptk",
+  "name": "Channel Divinity: Turn the Faithless",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-white.webp",
+  "folder": "7zIhVwEEFlBXYwyZ",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "hxw3RTBg77Iaxbyx": {
+        "type": "save",
+        "_id": "hxw3RTBg77Iaxbyx",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:channel-divinity",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "onSave": false,
+            "_id": "hsKZqGXwfBAXik5z"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "width": "",
+            "height": "",
+            "count": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": "Each fey or fiend that can hear you"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>When you take this oath at 3rd level, you gain this @UUID[Compendium.dnd5e.classfeatures.Item.8M7uOPhbTxoxxJSo]{Channel Divinity} option.</p><p>You can use your Channel Divinity to speak ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p><p>If an illusion, shapeshifting, or another effect conceals the creature’s true form, that form is revealed while it is turned.</p><section class=\"secret\" id=\"secret-OPT5x7Msh2zpC3aU\"><p><strong>Foundry Note</strong></p><p>Target only the fey and fiends that can hear you. Remove the <em>Turned</em> effect when the creature takes damage.</p></section>",
+      "chat": ""
+    },
+    "identifier": "channel-divinity-turn-the-faithless",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Oath of the Ancients 3",
+    "type": {
+      "value": "class",
+      "subtype": "channelDivinity"
+    }
+  },
+  "effects": [
+    {
+      "name": "Turned",
+      "img": "icons/magic/control/fear-fright-white.webp",
+      "_id": "hsKZqGXwfBAXik5z",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The creature is turned for 1 minute or until it takes damage. It must spend its turns trying to move as far away from the paladin as it can, and it can’t willingly move to a space within 30 feet of the paladin. It can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving; if it has nowhere to move, it can use the Dodge action.</p><p>While the creature is turned, its true form is revealed if an illusion, shapeshifting, or another effect conceals it.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

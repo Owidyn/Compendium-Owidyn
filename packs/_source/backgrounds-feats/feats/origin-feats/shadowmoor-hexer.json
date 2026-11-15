@@ -1,0 +1,176 @@
+{
+  "_id": "pxO2ULjAT92e8nso",
+  "name": "Shadowmoor Hexer",
+  "type": "feat",
+  "img": "icons/commodities/biological/hand-clawed-grey.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "wm6Pw0GVkX5WQc2c": {
+        "type": "damage",
+        "_id": "wm6Pw0GVkX5WQc2c",
+        "sort": 0,
+        "name": "Curse Magic",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When a creature you cursed with Hex hits you with an attack roll (once per turn)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "120",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@prof"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {
+      "fGbxLKiBIQTF4Slj": {
+        "_id": "fGbxLKiBIQTF4Slj",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "ItemGrant",
+        "name": "Hex",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHex0000000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "requireSlot": false,
+              "max": "1",
+              "per": "lr"
+            }
+          }
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Hex.</strong> You always have the Hex spell prepared. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you take this feat). You can cast it once without a spell slot, and you regain the ability to cast it that way when you finish a Long Rest. You can also cast it using any spell slots you have.</p><p><strong>Curse Magic.</strong> When a creature you have cursed with Hex hits you with an attack roll, it takes Psychic damage equal to your Proficiency Bonus. A creature takes this damage only once per turn.</p>",
+      "chat": ""
+    },
+    "identifier": "shadowmoor-hexer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

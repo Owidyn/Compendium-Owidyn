@@ -1,0 +1,206 @@
+{
+  "_id": "Eq15y46DcHTQaoxe",
+  "name": "Elemental Flail",
+  "type": "weapon",
+  "system": {
+    "type": {
+      "value": "natural",
+      "baseItem": ""
+    },
+    "activities": {
+      "i6JR3HO5uHLCbJwg": {
+        "type": "attack",
+        "_id": "i6JR3HO5uHLCbJwg",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
+      "chat": ""
+    },
+    "identifier": "elemental-flail",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "properties": [],
+    "identified": true,
+    "unidentified": {
+      "name": "Unidentified Weapon",
+      "description": ""
+    },
+    "mastery": "",
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null,
+      "reach": null
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false
+        },
+        "number": 6,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ],
+        "scaling": {
+          "number": 1
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "cover": null,
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "crew": {
+      "value": []
+    }
+  },
+  "folder": "G7kGENbzBQwABGag",
+  "img": "icons/skills/melee/strike-slashes-red.webp",
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "hnfF9Htc0OUw85eL",
+        "item": "Dw5QsOAi5yzlBmAB"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.hnfF9Htc0OUw85eL.Item.Dw5QsOAi5yzlBmAB",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 200000
+}

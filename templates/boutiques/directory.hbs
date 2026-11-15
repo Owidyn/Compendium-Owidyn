@@ -1,0 +1,28 @@
+<header class="directory-header flexcol">
+    {{#if isGM}}
+    <div class="header-actions action-buttons flexrow">
+        <button type="button" class="create-entry" data-action="create">
+            <i class="fa-solid fa-store" inert></i>
+            <span>Créer une boutique</span>
+        </button>
+    </div>
+    {{/if}}
+</header>
+
+<ol class="directory-list owidyn-shops-list">
+    {{#each shops}}
+    <li class="directory-item entry flexrow owidyn-shop-entry" data-shop-id="{{ id }}">
+        <i class="owidyn-shop-icon {{ icon }}" inert></i>
+        <a class="entry-name ellipsis" data-action="open" data-tooltip="{{ template }} · {{ count }} article(s)">{{ name }}</a>
+        {{#if @root.isGM}}
+        <a class="owidyn-shop-control" data-action="toggleVisible"
+           data-tooltip="{{#if visible}}Visible des joueurs{{else}}Cachée aux joueurs{{/if}}">
+            <i class="fa-solid {{#if visible}}fa-eye{{else}}fa-eye-slash{{/if}}" inert></i>
+        </a>
+        <a class="owidyn-shop-control" data-action="delete" data-tooltip="Supprimer"><i class="fa-solid fa-trash" inert></i></a>
+        {{/if}}
+    </li>
+    {{else}}
+    <li class="owidyn-shops-empty">{{#if isGM}}Aucune boutique : créez-en une avec le bouton ci-dessus.{{else}}Aucune boutique ouverte.{{/if}}</li>
+    {{/each}}
+</ol>

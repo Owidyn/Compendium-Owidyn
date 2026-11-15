@@ -1,0 +1,210 @@
+{
+  "name": "Bright Fungal Cloak",
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>While wearing this cloak, you can take a Bonus Action to furl or unfurl it. Unfurled, it sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.</p><p>One pound of edible fungus is sewn into a Bright Fungal Cloak. Once all of it has been eaten, the cloak becomes a mundane set of Traveler’s Clothes.</p><section class=\"secret\" id=\"secret-Ya03k6zErKoag0U9\"><p><strong>Foundry Note</strong></p><p><em>Furl or Unfurl</em> puts the light on your token; remove the effect to furl the cloak.</p></section>"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "clothing",
+      "baseItem": ""
+    },
+    "properties": [],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "activities": {
+      "3ojhl7sdnQQJ8Y5R": {
+        "type": "utility",
+        "_id": "3ojhl7sdnQQJ8Y5R",
+        "sort": 0,
+        "name": "Furl or Unfurl",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "yccMwutHzlq1Ympf"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "identifier": "bright-fungal-cloak"
+  },
+  "_id": "6Cw6wXYcevVL78Gk",
+  "type": "equipment",
+  "folder": "r61Gn40nJErgThmy",
+  "img": "icons/equipment/back/cloak-brown-collared-padded.webp",
+  "effects": [
+    {
+      "name": "Unfurled",
+      "img": "icons/magic/light/explosion-star-glow-blue.webp",
+      "_id": "yccMwutHzlq1Ympf",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.bright",
+            "value": 5,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cYoOSnCrbcCB90SK"
+          },
+          {
+            "key": "token.light.dim",
+            "value": 10,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "sxEgAaZgtZMKjrTU"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The cloak sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

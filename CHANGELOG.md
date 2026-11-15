@@ -2,6 +2,150 @@
 
 Évolutions de **Compendium Owidyn** pour Foundry VTT 14 et D&D5e 6.0.6.
 
+## 2.5.0
+
+### Nouvel équipement
+
+**Items** reçoit l'équipement 2024 de la liste du wiki que dnd5e n'a pas, avec quatre nouvelles catégories (*Adventuring Gear*, *Explosives*, *Tools*, *Mounts and Vehicles*) et *Weapons › Mundane* :
+
+- **Armes** (D&D Beyond Drops, novembre 2026) : Pitchfork, Weighted Chain, Bola.
+- **Armes à feu** (Dungeon Master's Guide) : Automatic Rifle, Hunting Rifle, Revolver, Semiautomatic Pistol et Shotgun (*Rare*), Antimatter Rifle, Laser Pistol et Laser Rifle (*Very Rare*), avec l'Energy Cell de ces dernières. Chaque attaque dépense un des tirs de l'arme et une munition ; **Reload** rend tous les tirs en Bonus Action, et l'Automatic Rifle a son **Burst Fire** (DD 15 en Dextérité, cube de 10 ft, 10 tirs).
+- **Explosifs** (Dungeon Master's Guide, *Explosives › Rare*) : Bomb, Dynamite Stick, Grenade (Fragmentation et Smoke), Grenade Launcher, Gunpowder (Keg et Powder Horn), avec leur jet de sauvegarde, leurs dégâts et leur zone.
+- **Équipement d'aventurier** : Bright Fungal Cloak (sa lumière s'allume sur le jeton), Desert Clothing, Devil Mask, Garb of Light and Shadow, Genie Robe, Locking Spellbook, Monster Camouflage, Warm Fungal Clothing, Winter Camouflage (Advantage en Stealth, effet à activer dans la neige).
+- **Montures et véhicules** : les selles (Exotic, Military, Riding), Carriage, Cart, Chariot, Covered Wagon, Sled, Wagon et Feed, que dnd5e n'a qu'en règles 2014, et le Fuel des véhicules motorisés.
+- **Véhicules** (*Creatures › Vehicles*) : les aéronefs d'Eberron (Lyrandar Air Cruiser, Lyrandar Skyskiff, Strider Airship) et les véhicules motorisés de World of Warcraft (Flying Machine, Goblin Trike, Mechano-Hog, Mekgineer’s Chopper).
+- **Copies corrigées** : Chain, Herbalism Kit et Bagpipes, dont le poids est faux dans dnd5e (0, 8 et 1 lb au lieu de 10, 3 et 6 lb).
+- Manquent le Giant Turtle, le Mechanostrider et le Sled Dog, dont le wiki ne donne pas le profil. Les poisons Carrion Crawler Mucus et Lolth's Sting sont dans dnd5e sous leur nom SRD (Crawler Mucus, Spider's Sting).
+
+### Nouveaux dons
+
+**Backgrounds & Feats** reçoit les dons 2024 de la liste du wiki que dnd5e n'a pas, en commençant par les 33 dons d'origine (*Feats › Origin Feats*) :
+
+- **Player's Handbook** : Crafter, Healer, Lucky, Musician, Tavern Brawler, Tough.
+- **Heroes of Faerûn** : Cult of the Dragon Initiate, Emerald Enclave Fledgling, Harper Agent, Lords' Alliance Agent, Purple Dragon Rook, Spellfire Spark, Tyro of the Gauntlet, Zhentarim Ruffian.
+- **Ravenloft: The Horrors Within** : Sharp Eye, Survivor.
+- **Lorwyn: First Light** : Child of the Sun, Shadowmoor Hexer.
+- **Astarion's Book of Hungers** : Tireless Reveler, Vampire Hunter, Vampire's Plaything.
+- **World of Warcraft** (espèce humaine) : Arathi Heritage, Child of the Sea, Will to Survive.
+- **Arcana Unleashed** : Arcane Artist, Arcane Eloquence, Arcane Infiltrator, Arcane Omens, Arcane Overload, Arcane Safeguard, Arcane Undertaker, Portal Jumper, Transmuted Anatomy.
+
+Les maîtrises, langues, résistances et sorts s'ajoutent par avancement ; les utilisations, jets de sauvegarde, soins, attaques et bonus (vitesse, points de vie, d4 de compétence) sont automatisés, et une note Foundry dit ce qui reste à faire à la main.
+
+### Cuisine d'Aldraine
+
+- **Dons** : *Cuisinier* (Origin Feat : Cook's Utensils, trois recettes de base au choix, un plat par Short ou Long Rest, Palais contre le poison des aliments) et *Master Chef* (General Feat, niveau 4+ : +1 en Constitution ou en Sagesse, 2 portions de plus, Advantage aux tests de cuisine, en-cas, risque maîtrisé).
+- **Fenêtre « Cuisiner »** : elle lit les ingrédients de l'inventaire (sur une ou deux colonnes, groupés ou non par famille), montre l'effet d'une recette connue ou indique « Inconnue », remplit la marmite d'après une recette ou indique ce qui manque, lance le test de Cook's Utensils et crée le plat. Les recettes découvertes s'inscrivent au carnet du personnage. Une recette réussie cinq fois est maîtrisée : +1 à ses tests de cuisine. Les *Ustensiles de cuisinier de maître* (50 gp) donnent aussi +1.
+- **Contenu** (*Items › Cuisine*) : 72 ingrédients, ceux du marché (ail, oignon, noix, épices, poivre, riz, poulet, porc, œufs, beurre, pommes de terre, carottes, crevettes, baies sauvages, champignon brun…) et les spécialités d'Asharia (Porces, Eupe, Tonther, Illibria, Vondris, Cynstefistone, la forteresse de Scolyancotis, Dereardrey, la Kinds et la forêt de Brumeveille), d'Enloden, de Colvan, de Baerdar, de Doshein, de Zerzatar, de l'Outreterre, de la Forêt de Sunilda, des Refuges des Lanternes, des nains, des elfes et des gobelins, et deux parties de monstres (ours-hibou, salamandre) ; 63 recettes libres ou strictes, rangées par origine, dont les plats du quotidien (poêlée terre-mer, soupe à l'oignon gratinée, poulet rôti à l'ail, pain perdu…) et les spécialités (Cassole du Roi, Bœuf Croydon, La Coulée d'or, Omelette aux truffes de Scolyancotis…) ; les plats spéciaux (grillade de survie, repas simple, plat douteux) et la table des défauts de goût ; vingt petits livres de deux à quatre recettes, du *Carnet du voyageur* à *La Table du Roi*, le livre de la cour de Vondris.
+- **Défauts de goût** : un plat raté de peu garde un défaut (trop ou pas assez salé, sucré, épicé, amer, acide ou cuit), un plat raté de 5 ou plus en garde deux et perd son effet. Chaque défaut cache un malus, révélé au repas. Qui mange fait un jet de sauvegarde de Constitution : avec un défaut, une réussite garde l'effet du plat malgré le malus et une réussite de 5 ou plus évite le malus ; avec deux, une réussite n'en laisse qu'un et une réussite de 5 ou plus aucun.
+- **Repas** : manger applique l'effet jusqu'au prochain Long Rest, en remplaçant le précédent. Le premier point de puissance fait l'effet du plat ; chaque autre point lui donne, au choix du cuisinier, un dé de plus (« puissance × d6 », du d4 des plats du quotidien au d12 des Œufs brouillés du griffon royal, au plus autant de dés que son bonus de maîtrise) ou une portion de plus. Les dés sont des PV temporaires, un bonus d'Initiative, une réserve d'Élans ou des PV rendus à la fin du prochain Short Rest par les plats revigorants ; un plat sans dés change ses autres points en portions.
+- **Boutiques** : les ingrédients sont des vivres ou des herbes, pré-cochés à l'Équipement et à l'Apothicaire. Les Baies de Sunilda sont des ingrédients enchantés, pré-cochés seulement à La Hutte Enchantée.
+
+### Nouvelle species : Kitsune, Air
+
+Les Kitsune du monde Aldraine, remis au propre, en français et aux règles 2024 (*Species › Humanoid › Kitsune*, aptitudes dans *Species Features › Kitsune*), avec leur illustration :
+
+- **Kitsune, Air** : Humanoid Medium, Speed 35 ft, Darkvision 60 ft, maîtrise d'Athletics, langue Keotal. **Sens du renard** : maîtrise de Perception et de Nature, et odorat affûté (Advantage aux Perception checks qui reposent sur l'odorat) sous forme véritable ou de renard seulement ; l'effet *Odorat du renard* se désactive sous forme humaine. Comme toute species 2024, elle ne donne plus d'augmentation de caractéristique ni le Common et une langue au choix, qui viennent de l'origine du personnage.
+- **Sorts kitsune** : Command (**Contrôle**), Misty Step (**Aspect de l'Air**) et les cantrips *Éclat*. Intelligence, Wisdom ou Charisma, au choix quand on prend la species, sert à tous ; Command et Misty Step se lancent sans spell slot autant de fois qu'on a de queues par Long Rest, ou avec ses spell slots.
+- **Queues de renard** : 1 queue au niveau 1, puis une de plus tous les deux niveaux jusqu'à 10. Chaque queue (Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant ou Thunder) donne son cantrip *Éclat* (1d8, 60 ft, avec son effet propre) et son type de dégâts aux **Griffes élémentaires** (1d6, Finesse) ; le jet de dégâts des griffes ne propose que les types de vos queues. **Esprit affûté** : Advantage contre Charmed.
+- **Forme spirituelle** : activités *Forme humaine*, *Forme de renard* et *Forme véritable*. La forme véritable a la **Peur spirituelle** (Wisdom Saving Throw, DD 10 + queues, Frightened 1 minute) ; sous forme humaine, les griffes ne peuvent pas attaquer et l'odorat du renard est perdu. La forme de renard (le **Fox**, nouveau dans *Creatures (Legacy) › Beast*, avec son illustration et son jeton) se fait comme le Wild Shape 2024 : le personnage garde ses Hit Points, ses caractéristiques mentales, sa classe, ses aptitudes, ses Griffes élémentaires, ses spells, ses langues et ses maîtrises, et gagne 5 Temporary Hit Points par queue (de 5 au niveau 1 à 50 au niveau 19).
+- **Surcharge spirituelle** : lancer un sort kitsune sous forme humaine ou de renard lance tout seul le jet (1d20 + Constitution), qui coche ou décoche les cases (queues + 1, vidées au Long Rest). Le jet et son résultat sont cachés aux autres joueurs : seuls le joueur du personnage et le MJ les voient. Toutes cochées, le **Débordement spirituel** rend la forme véritable, ajoute 1 niveau d'Exhaustion et bloque les sorts kitsune pendant 5 rounds. La macro et les modules Effect Macro et Midi-QOL ne sont plus nécessaires.
+- La langue **Keotal** est ajoutée aux langues exotiques si le monde ne l'a pas déjà.
+
+### Nouvelles sous-classes (2014)
+
+Nouveau compendium **Classes (Legacy)**, dans le dossier *Owidyn's Source Compendium Legacy* : deux sous-classes des règles 2014, rangées comme celles de Classes (*Paladin › Oath of the Ancients*, *Rogue › Revived*, chacune avec ses *Subclass Features*).
+
+- **Oath of the Ancients** (*Paladin*, Player's Handbook 2014) : ses sorts de serment s'ajoutent toujours préparés aux niveaux 3, 5, 9, 13 et 17. Nature's Wrath et Turn the Faithless dépensent le Channel Divinity du Paladin 2014 et posent leur effet (Restrained, Turned) sur un échec. Aura of Warding pose un rappel de résistance aux sorts sur les alliés de l'aura (10 ft, 30 ft au niveau 18) ; Undying Sentinel ramène à 1 point de vie une fois par long rest ; Elder Champion transforme pour 1 minute et rend 10 points de vie au début de chaque tour.
+- **Revived** (*Rogue*, Unearthed Arcana 64) : Revived Nature donne la résistance au poison ; Bolts from the Grave est une attaque de sort à distance qui inflige les dés de Sneak Attack plus le modificateur de Dextérité en dégâts nécrotiques ; Connect with the Dead lance Speak with Dead (Intelligence, sans emplacement ni composante matérielle, une fois par short rest) puis tire au d3 sa capacité ; Audience with Death donne l'Advantage aux jets contre la mort ; Ethereal Jaunt téléporte à 30 ft avec la Cunning Action.
+- **Ensnaring Strike** (version 2014), sort de serment des Anciens absent de dnd5e, rejoint **Spells (Legacy)** › *1st Level* : on le lance en Bonus Action avant de frapper, et la cible fait son jet de Strength depuis la carte du sort quand l'attaque touche. Les boutiques gardent le parchemin de la version 2024 : à nom égal, le contenu Legacy d'Owidyn passe après celui de dnd5e 2024.
+
+### Créatures de FP 4 et 5
+
+**Creatures** reçoit les monstres 2024 de FP 4 et 5 (Monster Manual 2024, d'après AideDD), comparés un à un à ceux de dnd5e :
+
+- **Nouvelles créatures** : les 21 monstres absents de dnd5e : Aarakocra Aeromancer, Banshee, Barlgura, Beholder Zombie, Bone Naga, Cambion, Flameskull, Giant Axe Beak, Gnoll Fang of Yeenoghu, Helmed Horror, Juvenile Shadow Dragon, Lizardfolk Sovereign, Mezzoloth, Pixie Wonderbringer, Red Slaad, Revenant, Sahuagin Baron, Shadow Demon, Swarm of Dretches, Umber Hulk et Young Remorhaz. Les attaques, jets de sauvegarde, recharges, utilisations par jour, états, tests pour s'échapper d'une prise, régénérations et sorts innés sont automatisés, et les aptitudes courantes (Magic Resistance, Incorporeal Movement, Shadow Stealth, Undead Fortitude…) sont celles de dnd5e. Les rayons du Beholder Zombie et la table du Confusing Gaze de l'Umber Hulk tiennent chacun en une aptitude, comme les Eye Rays du Spectator.
+- **Créatures corrigées** : 25 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dégâts : Barbed Devil (Claws perforant, Tail tranchant), Otyugh (Tentacle Slam contondant ; dnd5e n'a pas de type de dégâts).
+  - Règles : Couatl (Divine Aid 2/jour : Bless, Lesser Restoration, Sanctuary), Fire Elemental (Fiery Aura touche toutes les créatures de l'émanation), Ghost (Possession en Recharge 6), Giant Shark (Initiative +3), Shambling Mound (Stealth +3), Succubus (Charm sans recharge), Werebear et Wereboar (DD de la morsure et du Gore sur la Constitution : 14 et 12).
+  - Fiche : immunités aux états (Ettin, Gorgon), télépathie 120 ft (Couatl, Otyugh, Unicorn), langues (Chuul et Flesh Golem comprennent sans parler, Otyugh), sous-type Dinosaur (Archelon, Triceratops), alignement « Any Alignment » (Tough Boss), vitesses des formes animales (Werebear, Wereboar, Weretiger), Darkvision que les Ténèbres magiques ne gênent pas (Barbed Devil), résistance du Half-Dragon au type de son Draconic Origin, habitats (Air Elemental, Giant Crocodile), nom du Gore du Wereboar.
+  - Description absente de dnd5e, reformulée : Black Pudding, Bulette, Gorgon, Salamander.
+- **Identiques à dnd5e**, donc pas copiés : Bullywug Bog Sage, Earth Elemental, Elephant, Gladiator, Guard Captain, Hill Giant, Hippopotamus, Incubus, Lamia, Night Hag, Red Dragon Wyrmling, Roper, Troll, Vampire Spawn, Water Elemental, Wraith, Xorn.
+- **Creature Features** reçoit les aptitudes des nouvelles créatures. Une aptitude garde la créature dont elle vient : les Eye Rays restent ceux du Spectator, même si le Beholder Zombie passe avant lui dans l'ordre alphabétique.
+
+### Créatures de FP 6 à 8
+
+- **Nouvelles créatures** : les 34 monstres absents de dnd5e : Aberrant Cultist, Azer Pyromancer, Bandit Deceiver, Berserker Commander, Blue Slaad, Centaur Warden, Chasme, Cockatrice Regent, Cyclops Sentry, Death Cultist, Elemental Cultist, Fiend Cultist, Fomorian, Galeb Duhr, Ghast Gravecaller, Giant Squid, Githyanki Knight, Githzerai Zerth, Gnoll Demoniac, Graveyard Revenant, Green Slaad, Grick Ancient, Hobgoblin Warlord, Kuo-toa Archpriest, Merfolk Wavebender, Mind Flayer, Performer Maestro, Satyr Revelmaster, Sphinx of Secrets, Thri-kreen Psion, Tree Blight, Vampire Nightbringer, Violet Fungus Necrohulk et Yuan-ti Abomination. Leur équipement (armures, boucliers, armes, baguette) vient des monstres de dnd5e, et leurs armes sont celles de leurs attaques. Destructive Wave (Kuo-toa Archpriest) et Synaptic Static (Thri-kreen Psion), absents de dnd5e, se lancent depuis **Spells**. Les deux chants du Fey Melody du Satyr Revelmaster sont deux jets de sauvegarde d'une même aptitude. Le Primeval Owlbear manque : AideDD ne donne que le nom de ses aptitudes.
+- **Créatures corrigées** : 11 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dégâts : Frost Giant (Frost Axe tranchant ; dnd5e n'a pas de type de dégâts), Spirit Naga (Necrotic Ray sur l'Intelligence : +6 au lieu de +7).
+  - Règles : Initiative avec le bonus de maîtrise (Giant Ape, Mammoth, Tyrannosaurus Rex), allonge du Bite du Spirit Naga (10 ft) et du Tail du Tyrannosaurus Rex (15 ft).
+  - Fiche : immunité à Frightened (Cloaker), alignement « Any Alignment » (Pirate Captain), langues (Shield Guardian : comprend les ordres sans parler), habitats du Spirit Naga (Planar (Lower Planes) et Underdark, mêlés en un seul dans dnd5e), sous-type Dinosaur (Tyrannosaurus Rex).
+  - Description absente de dnd5e, reformulée : Assassin, Young Brass Dragon, Young Bronze Dragon.
+- **Diables** : leur Darkvision n'est pas gênée par les Ténèbres magiques, ce que dnd5e n'indique sur aucun d'eux. Imp, Bearded Devil et Chain Devil sont copiés avec cette mention, et la copie du Lemure la reçoit.
+- **Identiques à dnd5e**, donc pas copiés : Chimera, Drider, Hezrou, Hydra, Invisible Stalker, Mage, Medusa, Oni, Stone Giant, Vrock, Wyvern, Young Black Dragon, Young Copper Dragon, Young Green Dragon, Young White Dragon.
+
+### Créatures de FP 9 à 12
+
+- **Nouvelles créatures** : les 24 monstres absents de dnd5e : Abominable Yeti, Arcanaloth, Archpriest, Bandit Crime Lord, Brazen Gorgon, Cultist Hierophant, Cyclops Oracle, Dao, Death Knight Aspirant, Death Slaad, Dire Worg, Githzerai Psion, Gray Slaad, Haunting Revenant, Marid, Mind Flayer Arcanist, Noble Prodigy, Nycaloth, Performer Legend, Pirate Admiral, Questing Knight, Spy Master, Warrior Commander et Yochlol. Jallarzi's Storm of Radiance (Cultist Hierophant) et Destructive Wave (Death Knight Aspirant) se lancent depuis **Spells**. Les effets au choix d'une attaque (Awestruck et Poison du Scimitar du Pirate Admiral, Sap et Maneuver du Greatsword du Warrior Commander) sont décrits dans l'arme.
+- **Créatures corrigées** : 14 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dégâts : Behir (Lightning Breath de 12d10, et non 12d6), Horned Devil (Infernal Tail sur la Force : 1d8 + 6), Young Silver Dragon (Rend tranchant), Stone Golem (Force Bolt sur la Constitution : +9 au lieu de +10).
+  - Règles : Aboleth (Tentacle à 15 ft d'allonge), Archmage (Initiative avec le bonus de maîtrise, et non l'Intelligence), Clay Golem (vitesse de 20 ft), Guardian Naga (Bite à 10 ft d'allonge), Young Red Dragon (Fire Breath en Recharge 5–6 ; dnd5e ne donne pas de valeur).
+  - Fiche : Deva (sous-type Angel, immunité à Charmed, Exhaustion et Frightened, télépathie 120 ft), Djinni (Chaotic Good), Horned Devil (pas de résistance au froid), Archmage (Charmed avec Mind Blank), Aboleth (télépathie rangée comme telle), Stone Golem (comprend sans parler), Bone Devil et Horned Devil (Darkvision que les Ténèbres magiques ne gênent pas).
+  - Description absente de dnd5e, reformulée : Remorhaz, Young Blue Dragon.
+- **Identiques à dnd5e**, donc pas copiés : Cloud Giant, Efreeti, Erinyes, Fire Giant, Glabrezu, Roc, Sphinx of Lore, Treant, Young Gold Dragon.
+- Le Tree Blight (FP 6 à 8) n'inflige plus les dégâts de Grasping Root dès le jet raté : ils tombent au début de chaque tour de la cible agrippée.
+
+### Créatures de FP 13 à 16
+
+- **Nouvelles créatures** : les 7 monstres absents de dnd5e : Death Tyrant, Githyanki Dracomancer, Gulthias Blight, Salamander Inferno Master, Shadow Dragon, Ultroloth et Vampire Umbral Lord. Les actions légendaires dépensent les utilisations du monstre (3, ou 4 dans son repaire) et la Legendary Resistance est celle de dnd5e, comme chez les dragons adultes. Les dix rayons du Death Tyrant tiennent en une aptitude, et Hunger of Hadar (Vampire Umbral Lord) se lance depuis **Spells**, au niveau 5. Le Beholder manque : AideDD ne donne aucune de ses aptitudes.
+- **Créatures corrigées** : 13 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dragons adultes : sous-type Chromatic (Black, Blue, Green, White) ou Metallic (Brass, Bronze, Copper, Silver), comme leurs jeunes dans dnd5e ; souffle en Recharge 5–6 (Blue, Copper ; dnd5e ne donne pas de valeur) ; Rend à 10 ft d'allonge (Brass, Green, Silver) ; descriptions absentes de dnd5e (Blue, Brass, Bronze, Green, White).
+  - Dégâts : Mummy Lord (Dreadful Glare de 6d6 + 4, et non 6d8 ; description reformulée), Purple Worm (Tail Stinger perforant ; dnd5e n'a pas de type de dégâts), Iron Golem (Fiery Bolt sur la Constitution : +10 au lieu de +12 ; comprend sans parler).
+  - Fiche : Planetar (sous-type Angel, immunité à Charmed, Exhaustion et Frightened, télépathie 120 ft), Rakshasa (immunité à Charmed et Frightened).
+- **Identiques à dnd5e**, donc pas copiés : Ice Devil, Marilith, Nalfeshnee, Storm Giant, Vampire.
+
+### Créatures de FP 17 et plus
+
+- **Nouvelles créatures** : les 7 monstres absents de dnd5e : Arch-hag, Colossus, Death Knight, Demilich, Dracolich, Empyrean et Goristro, avec leurs actions légendaires et leur Legendary Resistance. L'Empyrean, « Celestial or Fiend » dans le Monster Manual, est rangé dans *Celestial* ; son Divine Ray inflige au choix des dégâts nécrotiques ou radiants. Manquent l'Animal Lord, le Blob of Annihilation et l'Elemental Cataclysm : AideDD ne donne aucune de leurs aptitudes.
+- **Créatures corrigées** : 17 monstres de dnd5e dont la fiche diffère sont copiés avec la correction.
+  - Dragons : sous-type Chromatic ou Metallic (Adult Gold, Adult Red, Ancient Black, Blue, Brass, Bronze, Copper) ; Weakening Breath de l'Adult Gold Dragon au DD 21 (13 dans dnd5e) ; Ancient Gold Dragon avec ses jets de sauvegarde de Dextérité et de Sagesse, son Initiative (+16) et 4 Legendary Resistances ; souffle en Recharge 5–6 (Ancient Copper, Gold et Green ; dnd5e ne donne pas de valeur) ; Rend à 15 ft d'allonge (Ancient Black, Green) ; Freezing Burst de l'Ancient White Dragon au DD 20 ; descriptions absentes de dnd5e (Adult Gold, Ancient Blue, Brass, Bronze, Gold, White).
+  - Règles : Balor (demi-dégâts au Death Throes réussi), Pit Fiend (Bite à 10 ft d'allonge, jet de Constitution ; dnd5e ne donne pas de caractéristique), Kraken (Tentacle à 30 ft d'allonge), Dragon Turtle (Bite à 15 ft d'allonge), Tarrasque (Thunderous Bellow en Recharge 5–6, et non 6).
+  - Fiche : Solar (sous-type Angel, télépathie 120 ft), Lich (toutes les langues, comme le Couatl de dnd5e ; description reformulée).
+- **Identiques à dnd5e**, donc pas copiés : Ancient Red Dragon, Ancient Silver Dragon, Sphinx of Valor.
+- **Creature Features** passe à 252 aptitudes, dont 16 actions légendaires.
+
+### Boutiques
+
+Les boutiques changent de forme : elles ne sont plus des tables et des pages de journal, mais des fenêtres où les joueurs achètent eux-mêmes.
+
+- **Onglet Boutiques** dans la barre latérale, juste après le Journal : la liste des boutiques, avec pour le MJ le bouton **Créer une boutique**, l'œil qui les montre ou les cache aux joueurs et la corbeille. Les joueurs ne voient que les boutiques montrées.
+- **Formulaire de création** : modèle (La Hutte Enchantée, Équipement, Forge, Apothicaire, Écurie, L'Auberge), nom, description, nombre d'articles, valeur (50 %, 100 % ou 150 %), articles autorisés et compendiums où les chercher. Le formulaire défile, son bouton reste en bas. Les compendiums sont lus à chaque création : il n'y a plus de tables à mettre à jour.
+- **Articles autorisés** : la liste complète, comme le choix des maîtrises de dnd5e. Les groupes (Armes, Armures, Équipement d'aventurier, Outils, Apothicaire, Objets magiques, Écurie, Services, Rareté des objets) cochent tous leurs articles, qu'on peut ensuite décocher un par un. Le modèle ne fait que pré-cocher la liste, sans les objets très rares et légendaires : une Forge peut aussi vendre des potions. Un objet magique est rangé dans sa sorte (une épée +1 avec les armes) et filtré par sa rareté ; les services cochés sont tous proposés, en plus des articles tirés.
+- **Fenêtre de la boutique** : une ligne par article ou service, avec le nombre disponible, le prix et un bouton **Acheter** ; le nom d'un article ouvre sa fiche, celui d'un service de L'Auberge a un lien vers ses règles. Le MJ y change les nombres (vide : illimité), les prix et leur monnaie, retire des lignes, ajoute un service ou glisse un objet, un sort (vendu en parchemin) ou une créature, tire un **Nouveau stock** avec les mêmes réglages, et renomme la boutique.
+- **Acheter** paie avec la bourse du personnage choisi, convertie si besoin (une pièce plus grosse est cassée et la monnaie rendue), puis pose l'objet sur sa fiche (ajouté à sa pile pour un consommable ou un butin), crée le parchemin à partir de son sort ou la monture, qui appartient au joueur, dans le dossier d'acteurs *Boutiques — Montures*. L'achat d'un objet ou d'un service est annoncé dans le chat. Sans assez d'argent, un message le dit au joueur, avec le contenu de sa bourse. Les achats sont faits par le MJ connecté, un par un, pour que le dernier exemplaire ne soit vendu qu'une fois.
+- Un objet magique, un parchemin ou une monture est en vente à un exemplaire, un autre objet à 1 à 5 exemplaires, un service sans limite.
+- Le bouton **Boutiques** de l'onglet Tables, les tables de catégories et les pages de stock disparaissent. Le bouton **Régénérer le stock** des anciennes pages n'est plus affiché.
+
+### Cartomancien
+
+- **Tarots**, nouvelle aptitude de niveau 1 : comme **Cuisiner** pour la cuisine, elle ouvre le gestionnaire du deck, de la main et de la défausse, sans passer par le menu de l'en-tête de la fiche (qui garde son entrée **Cartomancien**). Sa description rappelle les cartes encore dans le deck, celles de la main et le nombre de cartes défaussées ; elle se met à jour après chaque pioche, carte jouée ou repos.
+- **Onglet Cartes** : le deck, la main et la défausse de chaque Cartomancien sont rangés dans le dossier *Cartomancien › <personnage>*, dès leur création ; ceux des personnages existants y sont rangés à l'ouverture du monde par le MJ. Le dossier prend le nouveau nom du personnage et disparaît avec sa dernière pile ; une pile ou un dossier déplacé par le MJ reste où il est.
+
+### Compendiums masqués aux joueurs
+
+- Tous les compendiums sont masqués aux joueurs, comme l'étaient déjà Creatures et Creature Features : ils ne les voient plus dans l'onglet Compendiums ni dans le Compendium Browser, et n'ouvrent plus leurs fiches depuis un lien.
+- Ce que le jeu leur donne fonctionne toujours : avancements de classe et de sous-classe, invocations de Summons, sorts lancés par une aptitude ou un objet, Cartomancien, Formes de l'Héliarque, et boutiques, dont la fenêtre montre la fiche de chaque article.
+- **Boutiques** : la version Owidyn d'un objet reste celle qu'elles vendent, même masquée ; seul le compendium masqué d'un autre module passe en dernier.
+
+### Corrections
+
+- **Concentration** : les activités qui suivent le lancement d'un sort à Concentration (dégâts au début d'un tour, nouveau jet de sauvegarde…) relançaient la Concentration, ce qui mettait fin à celle du sort et retirait ses effets. Elles n'y touchent plus : 53 activités de 45 sorts de Spells (Witch Bolt, Crown of Madness, Hunger of Hadar, Dirge…).
+- **Téléportation** : Rescue, Steel Wind Strike et Lay Waste téléportent à leur distance ; Lay Waste ne déplaçait pas du tout (0 ft).
+- **Icônes** : des attaques de 19 créatures et 17 Creature Features (Claw, Bone Flail, Branch…) avaient une icône qui n'existe pas dans Foundry ; elles ont maintenant celle des coups tranchants (*strike-slashes-red*). Toutes les images des compendiums existent désormais.
+
+### Mise à jour
+
+Aucune migration n'est nécessaire : Classes (Legacy) apparaît dans le dossier *Owidyn's Source Compendium Legacy*. Un compendium dont la visibilité a déjà été réglée dans un monde (clic droit › *Configurer les droits*) garde ce réglage. Au premier lancement par le MJ, chaque Cartomancien du monde reçoit l'aptitude **Tarots**. Les boutiques sont à recréer dans le nouvel onglet ; les anciennes peuvent être supprimées : le dossier de tables *Boutiques*, le journal *Boutiques* et le dossier d'objets *Boutiques — Parchemins*.
+
 ## 2.4.0
 
 ### Nouveaux compendiums

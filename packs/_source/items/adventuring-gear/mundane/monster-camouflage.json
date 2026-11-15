@@ -1,0 +1,149 @@
+{
+  "name": "Monster Camouflage",
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>A suit of Monster Camouflage makes you look like a Beast or a Monstrosity, such as an owlbear. To see through the disguise, a creature must take the Study action to inspect your appearance and succeed on a DC 10 Intelligence (Investigation or Nature) check. It has Advantage on this check if it is within 30 feet of you, and it succeeds automatically if you do anything the monster you’re disguised as couldn’t do.</p>"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "clothing",
+      "baseItem": ""
+    },
+    "properties": [],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "activities": {
+      "ExjC4RQKLYKOJy3O": {
+        "type": "check",
+        "_id": "ExjC4RQKLYKOJy3O",
+        "sort": 0,
+        "name": "See Through the Disguise",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "A creature takes the Study action to inspect you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "check": {
+          "associated": [
+            "inv",
+            "nat"
+          ],
+          "ability": "int",
+          "dc": {
+            "calculation": "",
+            "formula": "10"
+          }
+        }
+      }
+    },
+    "identifier": "monster-camouflage"
+  },
+  "_id": "ys3B5nXBP9tRqJCh",
+  "type": "equipment",
+  "folder": "r61Gn40nJErgThmy",
+  "img": "icons/creatures/reptiles/chameleon-camouflage-green-brown.webp",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

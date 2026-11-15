@@ -1,0 +1,158 @@
+{
+  "_id": "3zef3lYcVqgEVCPP",
+  "name": "Arcane Eloquence",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake-gray.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {
+      "aEPl05DCjuds2Z9m": {
+        "_id": "aEPl05DCjuds2Z9m",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "ItemGrant",
+        "name": "Cantrip",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplViciousMoc",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "requireSlot": false,
+              "max": "",
+              "per": ""
+            }
+          }
+        }
+      }
+    },
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Cantrip.</strong> You learn the Vicious Mockery cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you take this feat).</p><p><strong>Smooth Talker.</strong> When you make a Charisma (Deception, Intimidation, or Persuasion) check, you can roll 1d4 and add the number rolled to the check.</p><section class=\"secret\" id=\"secret-qWPtWQqbdGe1Wrgw\"><p><strong>Foundry Note</strong></p><p>The 1d4 is added to these three skills automatically.</p></section>",
+      "chat": ""
+    },
+    "identifier": "arcane-eloquence",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "name": "Smooth Talker",
+      "img": "icons/skills/social/diplomacy-handshake-gray.webp",
+      "_id": "0p4fS7A6hcDZLROx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.dec.bonuses.check",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "zHhMYzGvYxpaxYxN"
+          },
+          {
+            "key": "system.skills.itm.bonuses.check",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "macF6iFdRmmMGopc"
+          },
+          {
+            "key": "system.skills.per.bonuses.check",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "1hOihixEhlAmF9Fz"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

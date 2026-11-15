@@ -1,0 +1,121 @@
+{
+  "_id": "kRqoTozRdD7DRGPd",
+  "name": "Ethereal Jaunt",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "uik6k8G26IPlXvbi",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "iepVETdtrGuc0Mfs": {
+        "type": "teleport",
+        "_id": "iepVETdtrGuc0Mfs",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "Cunning Action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "teleport": {
+          "override": false,
+          "units": "ft",
+          "value": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>When you reach 17th level, you can slip in and out of the Ethereal Plane like a ghost. You can now use your @UUID[Compendium.dnd5e.classfeatures.Item.01pcLg6PRu5zGrsb]{Cunning Action} to teleport to an unoccupied space within 30 feet of you. You don’t need to see that space, but the teleportation fails, wasting your bonus action, if you try to teleport through a magical force that is Medium or larger, such as a <em>wall of force</em>. If you arrive in a space occupied by another creature or filled by an object, you are immediately shunted to the nearest unoccupied space you can occupy and take force damage equal to twice the number of feet you are shunted.</p><section class=\"secret\" id=\"secret-Fx2nM3WVDyiC9jzI\"><p><strong>Foundry Note</strong></p><p>If you are shunted, apply the force damage yourself (2 per foot).</p></section>",
+      "chat": ""
+    },
+    "identifier": "ethereal-jaunt",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Revived 17",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

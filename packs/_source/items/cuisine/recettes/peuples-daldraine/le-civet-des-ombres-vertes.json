@@ -1,0 +1,249 @@
+{
+  "_id": "adKeZADAZzm9AmAt",
+  "name": "Le Civet des ombres vertes",
+  "type": "consumable",
+  "img": "icons/consumables/food/cooked-drumstick-turkey-brown.webp",
+  "folder": "zrJG186BFDWdnP2o",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Peu commune · Elfes des forêts · DD 13</em></p><p><strong>Ingrédients</strong> : Chevreuil de brume, 1 Fruit, 1 Herbe.</p><p><strong>Effet</strong> : Tu as l’Advantage aux tests de Dextérité (Stealth) et de Sagesse (Perception). Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "le-civet-des-ombres-vertes",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "L84EQhwuhVp2dmpG": {
+        "type": "utility",
+        "_id": "L84EQhwuhVp2dmpG",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "vjwOrFtjmp849xpg"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Le Civet des ombres vertes",
+      "img": "icons/consumables/food/cooked-drumstick-turkey-brown.webp",
+      "_id": "vjwOrFtjmp849xpg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ste.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "yP9qfbDrA9I96mPZ"
+          },
+          {
+            "key": "system.skills.prc.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "FkSzFyLGV8I4qDt3"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu as l’Advantage aux tests de Dextérité (Stealth) et de Sagesse (Perception). Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "le-civet-des-ombres-vertes",
+          "type": "stricte",
+          "tier": "peu-commune",
+          "dc": 13,
+          "tag": "furtif",
+          "base": null,
+          "livre": "tables-des-peuples",
+          "depart": false,
+          "region": "Elfes des forêts",
+          "effet": "Tu as l’Advantage aux tests de Dextérité (Stealth) et de Sagesse (Perception). Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "chevreuil-de-brume",
+              "count": 1,
+              "name": "Chevreuil de brume"
+            },
+            {
+              "family": "fruit",
+              "count": 1
+            },
+            {
+              "family": "herbe",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

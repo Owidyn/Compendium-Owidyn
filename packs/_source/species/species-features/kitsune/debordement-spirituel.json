@@ -1,0 +1,105 @@
+{
+  "name": "Débordement spirituel",
+  "type": "feat",
+  "_id": "6AzWkKigaqo3zd1o",
+  "img": "icons/magic/light/explosion-star-blue-large.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 420000,
+  "system": {
+    "description": {
+      "value": "<p>Quand toutes vos cases de @UUID[Compendium.compendium-owidyn.species.Item.SdLHY1nQJqIZCu5R]{Surcharge spirituelle} sont cochées, votre forme véritable jaillit dans une explosion d'énergie spirituelle :</p><ul><li><p>vous reprenez instantanément votre forme véritable ;</p></li><li><p>vous ne pouvez pas lancer de sort kitsune (Command, Misty Step et vos cantrips <em>Éclat</em>) pendant 5 rounds ;</p></li><li><p>vous subissez 1 niveau d'&amp;Reference[Exhaustion].</p></li></ul><section class=\"secret\" id=\"secret-eSB2QUGlTSVdSr1l\"><p><strong>Foundry Note</strong></p><p>Le jet de Surcharge qui coche la dernière case rend sa forme véritable au personnage, lui ajoute 1 niveau d'Exhaustion et applique l'effet <em>Débordement spirituel</em> (5 rounds), pendant lequel les sorts kitsune ne peuvent pas être lancés.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kitsune",
+    "activities": {},
+    "enchant": {},
+    "identifier": "debordement-spirituel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "C2gWkFCPkbGyRzjU",
+      "name": "Débordement spirituel",
+      "img": "icons/magic/light/explosion-star-blue-large.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 5,
+        "units": "rounds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Ne peut pas lancer de sort kitsune pendant 5 rounds.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "kitsuneOverflow": true
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

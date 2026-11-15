@@ -1,0 +1,218 @@
+{
+  "_id": "FApuj63RiVXHvgyG",
+  "name": "Aquatic Lash",
+  "type": "weapon",
+  "system": {
+    "type": {
+      "value": "natural",
+      "baseItem": ""
+    },
+    "activities": {
+      "VZEi8O2PYJEyXUX3": {
+        "type": "attack",
+        "_id": "VZEi8O2PYJEyXUX3",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "number": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
+      "chat": ""
+    },
+    "identifier": "aquatic-lash",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "properties": [],
+    "identified": true,
+    "unidentified": {
+      "name": "Unidentified Weapon",
+      "description": ""
+    },
+    "mastery": "",
+    "range": {
+      "units": "ft",
+      "value": null,
+      "long": null,
+      "reach": 15
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false
+        },
+        "number": 2,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "scaling": {
+          "number": 1
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": true,
+    "cover": null,
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "crew": {
+      "value": []
+    }
+  },
+  "folder": "G7kGENbzBQwABGag",
+  "img": "icons/creatures/tentacles/tentacle-earth-green.webp",
+  "effects": [],
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "BsJ4UTduKSM9E6qh",
+        "item": "ucWCksbRfJowPPqY"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.BsJ4UTduKSM9E6qh.Item.ucWCksbRfJowPPqY",
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 500000
+}

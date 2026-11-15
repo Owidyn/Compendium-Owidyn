@@ -1,0 +1,151 @@
+{
+  "_id": "8e4H1Gq8SPUmzUtm",
+  "name": "Tables des peuples",
+  "type": "consumable",
+  "img": "icons/sundries/books/book-embossed-spiral-purple-white.webp",
+  "folder": "Xfh1O1ujsJFdcsTG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>Ce que l’on mange dans les Refuges des Lanternes, les forteresses naines, les forêts elfiques… et, pour les plus courageux, chez les gobelins.</p><p>Un personnage qui a le don Cuisinier ou Master Chef peut l’étudier pendant un Long Rest pour apprendre ses recettes :</p><ul><li><p>Soupe des Veilleurs</p></li><li><p>Le Mijoté des Ancêtres</p></li><li><p>Le Civet des ombres vertes</p></li><li><p>Les Croque-Vermines</p></li></ul>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "tables-des-peuples",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "CccDlxnxaDFox1rj": {
+        "type": "utility",
+        "_id": "CccDlxnxaDFox1rj",
+        "sort": 0,
+        "name": "Étudier",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "livre": {
+          "identifier": "tables-des-peuples",
+          "recettes": [
+            "soupe-des-veilleurs",
+            "le-mijote-des-ancetres",
+            "le-civet-des-ombres-vertes",
+            "les-croque-vermines"
+          ]
+        }
+      }
+    }
+  }
+}

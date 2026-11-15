@@ -1,0 +1,231 @@
+{
+  "_id": "LvdflwAfZtE2HnDi",
+  "name": "Brochette du guerrier",
+  "type": "consumable",
+  "img": "icons/consumables/meat/kebab-skewer-vegetable-brown.webp",
+  "folder": "bjwfi9KtPgOO9NDF",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette libre · Commune · DD 12</em></p><p><strong>Ingrédients</strong> : 1 Viande, 1 Céréale, 1 ingrédient Puissant.</p><p><strong>Effet</strong> : Tu gagnes une réserve d’Élans de puissance × d6 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "brochette-du-guerrier",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "P22syCCxVXHRHCct": {
+        "type": "utility",
+        "_id": "P22syCCxVXHRHCct",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "vMq7iNzemBczNziN"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "Brochette du guerrier",
+      "img": "icons/consumables/meat/kebab-skewer-vegetable-brown.webp",
+      "_id": "vMq7iNzemBczNziN",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu gagnes une réserve d’Élans de puissance × d6 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "brochette-du-guerrier",
+          "type": "libre",
+          "tier": "commune",
+          "dc": 12,
+          "tag": "puissant",
+          "base": "puissant",
+          "livre": "carnet-du-guerrier",
+          "depart": true,
+          "region": "",
+          "effet": "Tu gagnes une réserve d’Élans de puissance × d6 : quand tu touches avec une attaque, tu peux lancer l’un de ces dés et l’ajouter aux dégâts, une fois par tour. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "family": "viande",
+              "count": 1
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            },
+            {
+              "tag": "puissant",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": "@puissanced6",
+          "soin": null,
+          "des": true,
+          "risque": null
+        }
+      }
+    }
+  }
+}

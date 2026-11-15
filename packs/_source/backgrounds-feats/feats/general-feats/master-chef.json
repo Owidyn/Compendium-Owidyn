@@ -1,0 +1,149 @@
+{
+  "_id": "dL8HPvHp7olNgnrh",
+  "name": "Master Chef",
+  "type": "feat",
+  "img": "icons/tools/cooking/knife-chef-steel-brown.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "GKv3GfABRPPxaObw": {
+        "type": "utility",
+        "_id": "GKv3GfABRPPxaObw",
+        "sort": 0,
+        "name": "Cuisiner",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Short ou Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {
+      "DyiEEEoSlJXtoy0m": {
+        "_id": "DyiEEEoSlJXtoy0m",
+        "level": 0,
+        "hint": "",
+        "flags": {},
+        "value": {},
+        "type": "AbilityScoreImprovement",
+        "name": "Ability Score Increase",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "cha"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prérequis : niveau 4+, don Cuisinier ou Chef)</em></p><p>Ta cuisine est devenue un art, et ta réputation te précède dans toutes les auberges.</p><p><strong>Amélioration de caractéristique.</strong> Ta Constitution ou ta Sagesse augmente de 1, jusqu’à un maximum de 20.</p><p><strong>Grande tablée.</strong> Tes plats donnent 2 portions de plus.</p><p><strong>Main sûre.</strong> Tu as l’Advantage aux tests de cuisine.</p><p><strong>En-cas.</strong> Quand tu cuisines, tu peux préparer le plat en en-cas : chaque portion se mange en Bonus Action et son effet dure 1 heure. Une créature peut avoir un repas et un en-cas actifs en même temps.</p><p><strong>Risque maîtrisé.</strong> Quand un de tes plats est raté, tu tires deux fois chacun de ses défauts de goût et tu choisis celui qu’il garde.</p>",
+      "chat": ""
+    },
+    "identifier": "master-chef",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Niveau 4+, Cuisinier ou Chef",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

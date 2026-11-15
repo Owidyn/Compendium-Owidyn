@@ -1,0 +1,241 @@
+{
+  "_id": "wWeXxXrdvfaJhC0O",
+  "name": "La Tarte des Songes",
+  "type": "consumable",
+  "img": "icons/consumables/food/berries-cream-bowl-mint-red.webp",
+  "folder": "X3txUOiX6NHXAFnf",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p><em>Recette stricte · Rare · Forêt de Sunilda · DD 16</em></p><p><strong>Ingrédients</strong> : Baies de Sunilda, 1 Céréale, 1 Fruit.</p><p><strong>Effet</strong> : Tu as l’Advantage aux jets de sauvegarde pour maintenir ta Concentration et contre la condition Charmed. Jusqu’au prochain Long Rest.</p><p>Chaque bouchée laisse un goût de rêve, et parfois le souvenir d’un rêve qui n’est pas le tien.</p>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "la-tarte-des-songes",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "fG2zG9FVQHMqmD00": {
+        "type": "utility",
+        "_id": "fG2zG9FVQHMqmD00",
+        "sort": 0,
+        "name": "Manger",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un repos"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "3VDTGoaBIALDcvfU"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [
+    {
+      "name": "La Tarte des Songes",
+      "img": "icons/consumables/food/berries-cream-bowl-mint-red.webp",
+      "_id": "3VDTGoaBIALDcvfU",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.concentration.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xaCnxbPgBAUiO8KB"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "<p>Tu as l’Advantage aux jets de sauvegarde pour maintenir ta Concentration et contre la condition Charmed. Jusqu’au prochain Long Rest.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "compendium-owidyn": {
+          "cuisine": {
+            "repas": {
+              "slot": "repas"
+            }
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "recette": {
+          "identifier": "la-tarte-des-songes",
+          "type": "stricte",
+          "tier": "rare",
+          "dc": 16,
+          "tag": "arcanique",
+          "base": null,
+          "livre": null,
+          "depart": false,
+          "region": "Forêt de Sunilda",
+          "effet": "Tu as l’Advantage aux jets de sauvegarde pour maintenir ta Concentration et contre la condition Charmed. Jusqu’au prochain Long Rest.",
+          "slots": [
+            {
+              "identifier": "baies-de-sunilda",
+              "count": 1,
+              "name": "Baies de Sunilda"
+            },
+            {
+              "family": "cereale",
+              "count": 1
+            },
+            {
+              "family": "fruit",
+              "count": 1
+            }
+          ],
+          "temphp": null,
+          "elans": null,
+          "soin": null,
+          "des": false,
+          "risque": null
+        }
+      }
+    }
+  }
+}

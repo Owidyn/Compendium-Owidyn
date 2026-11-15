@@ -1,0 +1,153 @@
+{
+  "_id": "Srp0ZBDzaG4M75HR",
+  "name": "Bolts from the Grave",
+  "type": "feat",
+  "img": "icons/magic/death/projectile-skull-fire-green.webp",
+  "folder": "uik6k8G26IPlXvbi",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "abcJJZgMycQvOCTg": {
+        "type": "attack",
+        "_id": "abcJJZgMycQvOCTg",
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Immediately after you use your Cunning Action, if you haven’t used your Sneak Attack this turn"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          },
+          "ability": "dex",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.rogue.sneak-attack + @mod"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>Starting at 3rd level, you can unleash bolts of necrotic energy from within your revived body. Immediately after you use your @UUID[Compendium.dnd5e.classfeatures.Item.01pcLg6PRu5zGrsb]{Cunning Action}, you can make a ranged spell attack against a creature within 30 feet of you, provided you haven’t used your @UUID[Compendium.dnd5e.classfeatures.Item.DPN2Gfk8yi1Z5wp7]{Sneak Attack} this turn. You are proficient with this attack, and you add your Dexterity modifier to its attack and damage rolls. On a hit, the creature takes necrotic damage equal to your Sneak Attack damage. Making this attack uses your Sneak Attack for the turn.</p><section class=\"secret\" id=\"secret-QfGFKeQm4Q4n7Y9n\"><p><strong>Foundry Note</strong></p><p>The damage uses your Sneak Attack dice plus your Dexterity modifier. Don’t use Sneak Attack again this turn.</p></section>",
+      "chat": ""
+    },
+    "identifier": "bolts-from-the-grave",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Revived 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

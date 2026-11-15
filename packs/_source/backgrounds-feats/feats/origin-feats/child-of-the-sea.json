@@ -1,0 +1,107 @@
+{
+  "_id": "tPcJq1nWJ2q1C8HG",
+  "name": "Child of the Sea",
+  "type": "feat",
+  "img": "icons/magic/water/wave-water-blue.webp",
+  "folder": "MgZSCfP4IH3V1nCF",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>(Prerequisite: World of Warcraft Campaign, Human Species)</em></p><p>As a Kul Tiran, you gain the following benefits.</p><p><strong>Lasting Breath.</strong> You can hold your breath for a number of minutes equal to 2 plus your Constitution modifier (minimum of 1 minute).</p><p><strong>Ocean Born.</strong> You have a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-zdkXHFdBeNrsqQ2o\"><p><strong>Foundry Note</strong></p><p>The Swim Speed is automated.</p></section>",
+      "chat": ""
+    },
+    "identifier": "child-of-the-sea",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "World of Warcraft Campaign, Human Species",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "name": "Ocean Born",
+      "img": "icons/magic/water/wave-water-blue.webp",
+      "_id": "LmedGZhxVcMg2Q55",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "@attributes.movement.speeds.walk",
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "qRykv5pa533wLKZt"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "_id": "mvNRtnVuYwHIqZTR",
+  "name": "Grave-Dust Flight",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-wings-gray.webp",
+  "folder": "CHU17c09EsJzwRpU",
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "creatureFeature": {
+        "actor": "Ppu1dE5wMWG5nnNP",
+        "item": "3gN97JErDBGZyKVl"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794441600000,
+    "modifiedTime": 1794441600000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": "Compendium.compendium-owidyn.creatures.Actor.Ppu1dE5wMWG5nnNP.Item.3gN97JErDBGZyKVl",
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "_id": "1m6DeJ1hT930KEhR",
+      "name": "Blinded",
+      "img": "systems/dnd5e/icons/svg/statuses/blinded.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794441600000,
+        "modifiedTime": 1794441600000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "system": {
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "activities": {
+      "iz2pE72ysvHjyizL": {
+        "type": "save",
+        "_id": "iz2pE72ysvHjyizL",
+        "sort": 0,
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "resources.legact.value",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "1m6DeJ1hT930KEhR",
+            "onSave": false,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "19"
+          }
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "description": {
+      "value": "<p>The [[lookup @name lowercase]]{monster} flies up to its Fly Speed, shedding grave dust. Each creature within 5 feet of the [[lookup @name lowercase]]{monster} as it moves is targeted once by the following effect. <em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=iz2pE72ysvHjyizL]]. <em>Failure:</em> The target has the &amp;Reference[Blinded apply=false] condition until the end of the [[lookup @name lowercase]]{monster}'s next turn. <em>Failure or Success:</em> The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "grave-dust-flight",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "OSC",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "advancement": {},
+    "cover": null,
+    "crewed": false
+  }
+}

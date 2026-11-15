@@ -1,0 +1,150 @@
+{
+  "_id": "zXWEVIo9nToSdA6O",
+  "name": "La Table du Roi",
+  "type": "consumable",
+  "img": "icons/sundries/books/book-embossed-gold-green.webp",
+  "folder": "Xfh1O1ujsJFdcsTG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>Les plats servis à la cour de Vondris, recopiés par un marmiton bavard.</p><p>Un personnage qui a le don Cuisinier ou Master Chef peut l’étudier pendant un Long Rest pour apprendre ses recettes :</p><ul><li><p>Cassole du Roi</p></li><li><p>Fondue de la Cendrée</p></li><li><p>Œufs brouillés du griffon royal</p></li></ul>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "la-table-du-roi",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "9wAwEGinFVIaaTUE": {
+        "type": "utility",
+        "_id": "9wAwEGinFVIaaTUE",
+        "sort": 0,
+        "name": "Étudier",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "livre": {
+          "identifier": "la-table-du-roi",
+          "recettes": [
+            "cassole-du-roi",
+            "fondue-de-la-cendree",
+            "oeufs-du-griffon-royal"
+          ]
+        }
+      }
+    }
+  }
+}

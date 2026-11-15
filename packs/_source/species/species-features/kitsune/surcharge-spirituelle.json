@@ -1,0 +1,139 @@
+{
+  "name": "Surcharge spirituelle",
+  "type": "feat",
+  "_id": "SdLHY1nQJqIZCu5R",
+  "img": "icons/magic/control/fear-fright-white.webp",
+  "folder": "O5jQlnNuZZL1zNSO",
+  "sort": 410000,
+  "system": {
+    "description": {
+      "value": "<p>Sous votre forme humaine ou de renard, votre esprit force contre sa coquille mortelle. Chaque fois que vous lancez un sort kitsune (Command, Misty Step et vos cantrips <em>Éclat</em>) sous l'une de ces formes, faites un jet de Surcharge : 1d20 + votre modificateur de Constitution.</p><table><thead><tr><th>Jet</th><th>Effet</th></tr></thead><tbody><tr><td>1 naturel</td><td>Cochez 2 cases</td></tr><tr><td>Moins de 10</td><td>Cochez 1 case</td></tr><tr><td>10 ou plus</td><td>Décochez 1 case</td></tr><tr><td>20 naturel</td><td>Décochez 2 cases</td></tr></tbody></table><p>Vous avez un nombre de cases égal à votre nombre de queues + 1. Toutes vos cases se décochent à la fin d'un Long Rest. Votre forme véritable n'est pas soumise à la Surcharge.</p><p>Quand toutes vos cases sont cochées, vous subissez un @UUID[Compendium.compendium-owidyn.species.Item.6AzWkKigaqo3zd1o]{Débordement spirituel}.</p><section class=\"secret\" id=\"secret-5v2BPBVzdiAL0rbE\"><p><strong>Foundry Note</strong></p><p>Les cases sont les utilisations de cette aptitude. Le jet se lance tout seul quand vous lancez un sort kitsune sous forme humaine ou de renard : il coche ou décoche les cases et annonce le résultat en privé, à vous et au MJ ; quand toutes sont cochées, le Débordement spirituel s'applique tout seul. L'activité <em>Jet de surcharge</em> permet un jet à la main.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "floor((@details.level + 1) / 2) + 1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kitsune",
+    "activities": {
+      "3ibmKWl735WshQfY": {
+        "type": "utility",
+        "_id": "3ibmKWl735WshQfY",
+        "sort": 0,
+        "name": "Jet de surcharge",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Vous lancez un sort kitsune sous forme humaine ou de renard."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "Jet de surcharge",
+          "formula": "1d20 + @abilities.con.mod"
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "surcharge-spirituelle",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "kitsuneSurge": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

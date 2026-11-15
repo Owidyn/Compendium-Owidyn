@@ -1,0 +1,150 @@
+{
+  "_id": "znPIsiQommnSsjQW",
+  "name": "Gamelles de l’Ouest",
+  "type": "consumable",
+  "img": "icons/sundries/books/book-embossed-steel-green.webp",
+  "folder": "Xfh1O1ujsJFdcsTG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "chat": "",
+      "value": "<p>Ce que mangent les mercenaires de Dereardrey, les mineurs et la garnison de Scolyancotis.</p><p>Un personnage qui a le don Cuisinier ou Master Chef peut l’étudier pendant un Long Rest pour apprendre ses recettes :</p><ul><li><p>Marmite des mercenaires</p></li><li><p>Croûte du mineur</p></li><li><p>Omelette aux truffes de Scolyancotis</p></li></ul>"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "gamelles-de-l-ouest",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "Wa3DN1Xl0tY6VwV1": {
+        "type": "utility",
+        "_id": "Wa3DN1Xl0tY6VwV1",
+        "sort": 0,
+        "name": "Étudier",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Pendant un Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "damage": {
+      "base": null,
+      "replace": false
+    },
+    "magicalBonus": null,
+    "attunement": "",
+    "attuned": false,
+    "equipped": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "cuisine": {
+        "livre": {
+          "identifier": "gamelles-de-l-ouest",
+          "recettes": [
+            "marmite-des-mercenaires",
+            "croute-du-mineur",
+            "omelette-aux-truffes"
+          ]
+        }
+      }
+    }
+  }
+}

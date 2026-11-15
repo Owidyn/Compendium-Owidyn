@@ -1,0 +1,107 @@
+{
+  "_id": "ZaWKybLiA3pjOIDT",
+  "name": "Revived Nature",
+  "type": "feat",
+  "img": "icons/magic/death/undead-skeleton-energy-green.webp",
+  "folder": "uik6k8G26IPlXvbi",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p>When you choose this archetype at 3rd level, your new connection to death gives you the following benefits:</p><ul><li><p>You have advantage on saving throws against disease and against being poisoned, and you have resistance to poison damage.</p></li><li><p>You don’t need to eat, drink, or breathe.</p></li><li><p>You don’t need to sleep. When you take a long rest, you must spend at least 4 hours in an inactive, motionless state instead of sleeping. In this state, you remain semiconscious and can hear as normal.</p></li></ul><section class=\"secret\" id=\"secret-4rFiji9g1DKh5Urr\"><p><strong>Foundry Note</strong></p><p>The resistance to poison damage is automated. Roll the saving throws against disease and against being poisoned with advantage yourself.</p></section>",
+      "chat": ""
+    },
+    "identifier": "revived-nature",
+    "source": {
+      "custom": "",
+      "rules": "2014",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Revived 3",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Revived Nature",
+      "img": "icons/magic/death/undead-skeleton-energy-green.webp",
+      "_id": "Gc3dw260lVias9cN",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "K8WZRhwGQHdLJ6lO"
+          }
+        ],
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794096000000,
+        "modifiedTime": 1794096000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794182400000,
+    "modifiedTime": 1794182400000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
