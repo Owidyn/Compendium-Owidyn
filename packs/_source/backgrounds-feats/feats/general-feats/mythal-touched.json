@@ -1,0 +1,170 @@
+{
+  "_id": "3igCWIHnpNCEAUvt",
+  "name": "Mythal Touched",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "57zDCOGddIuAyHNx": {
+        "type": "utility",
+        "_id": "57zDCOGddIuAyHNx",
+        "sort": 100000,
+        "name": "Mythal Ward",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A spell attack hits you or you fail a saving throw against a spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d20",
+          "name": "Mythal-Touched Magic",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "M9vm48z51soptWLs": {
+        "_id": "M9vm48z51soptWLs",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Mythal Ward.</strong> If a spell attack hits you or you fail a saving throw against a spell, you can take a Reaction to roll on the Mythal-Touched Magic table and create a magical effect. If an effect calls for a saving throw, the DC equals 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><h4>Mythal-Touched Magic</h4><table><thead><tr><th>1d20</th><th>Effect</th></tr></thead><tbody><tr><td>1–2</td><td>You and each creature within 15 feet of you make a Dexterity saving throw, taking Force damage equal to 1d8 times the level of the triggering spell on a failure or half as much on a success.</td></tr><tr><td>3–7</td><td>You and the caster of the triggering spell form a telepathic link for 1 hour.</td></tr><tr><td>8–10</td><td>Gravity reverses in a 15-foot-radius, 60-foot-tall Cylinder centered on you for 1 minute, as the @UUID[Compendium.dnd5e.spells24.Item.phbsplReverseGra]{Reverse Gravity} spell.</td></tr><tr><td>11–13</td><td>You and the caster of the triggering spell each make a Constitution saving throw. On a failure, a creature has the &amp;Reference[Stunned] condition until the end of its next turn.</td></tr><tr><td>14–17</td><td>You gain a +2 bonus to AC for 1 minute, which can turn the triggering spell into a miss if it was a spell attack.</td></tr><tr><td>18–19</td><td>Each flammable, nonmagical object within 10 feet of the triggering spell's caster that isn't worn or carried by another creature bursts into flame, takes 1d4 Fire damage, and is burning.</td></tr><tr><td>20</td><td>The triggering spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If it was cast with a spell slot, the slot isn't expended.</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "identifier": "mythal-touched",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

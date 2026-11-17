@@ -1,0 +1,238 @@
+{
+  "name": "Dragon Cultist",
+  "type": "background",
+  "_id": "4Y2NmTwwGbncCfyl",
+  "img": "icons/creatures/reptiles/dragon-winged-blue.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You are an initiate of the Cult of the Dragon. You found, or were brought to, one of its cells, where you embodied the qualities dragon cultists prize: duplicity, secrecy, and determination. In exchange for your oath of service, the cult gave you the fellowship of other dragon worshipers and access to resources that can further your study of arcana and the occult.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.rB02hBDYKcISULgK]{Cult of the Dragon Initiate}</p><p><strong>Skill Proficiencies:</strong> Deception and Stealth</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBottleGlass]{Glass Bottle}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (5 flasks), 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}, 30 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "dragon-cultist",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "vMOfhCfRy5kH3bX2": {
+        "_id": "vMOfhCfRy5kH3bX2",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Intelligence scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "4PxtYJEM9qpfB2d0": {
+        "_id": "4PxtYJEM9qpfB2d0",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Deception and Stealth. It also grants you proficiency in Calligrapher's Supplies.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:dec",
+            "skills:ste",
+            "tool:art:calligrapher"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "1o2zBx9CGUg9tbYO": {
+        "_id": "1o2zBx9CGUg9tbYO",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Cult of the Dragon Initiate feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.rB02hBDYKcISULgK",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "03hfpo7GVsfdPOqH": {
+        "_id": "03hfpo7GVsfdPOqH",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "yj8TBVSrxuM4FlIf",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCalligraph",
+        "requiresProficiency": false,
+        "_id": "dAsl8BlFYB4ukK0y",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "Vhz9itvJdWZsNNjh",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBottleGlass",
+        "requiresProficiency": false,
+        "_id": "yE6F5EyUFyhFTh0f",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "requiresProficiency": false,
+        "_id": "UMtXzn0Gt1ggy8sD",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagManacles000",
+        "requiresProficiency": false,
+        "_id": "PxyB94IBy0sjcmBp",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 600000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "REJJFmRXJTDSotbt",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 700000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "EJyq0ABv7K4ucapn",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRobe0000000",
+        "requiresProficiency": false,
+        "_id": "CpTRYxz83CrDiitH",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 900000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRope0000000",
+        "requiresProficiency": false,
+        "_id": "vcus7bdZaqQ8Dmj1",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 1000000
+      },
+      {
+        "count": 30,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "OLtGOL39UbJm1tRf",
+        "group": "yj8TBVSrxuM4FlIf",
+        "sort": 1100000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "_id": "CfaE49fswBXxSZMI",
+  "name": "Tiny Abomination in a Jar",
+  "type": "equipment",
+  "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
+  "folder": "RTbervUSHs1Dr8d6",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>When you roll an 11 on the d20 for an attack roll while this monstrous item is on your person, you gain a Mote of Anger: a Tiny, invulnerable mote of glowing red light that orbits your head at a distance of 1d3 feet and lasts until you finish a Long Rest. Each Mote of Anger gives you a +2 bonus to damage rolls.</p><p>If you ever have four Motes of Anger at once, they erupt and fill you with rage, letting you make an immediate weapon attack with Advantage. The Motes grant their damage bonuses to this attack if it hits, and they dissipate after it, hit or miss.</p><p>The tiny abomination floating in the jar seems lifeless, but if you have one or more Motes of Anger, it stirs, more and more animated the more Motes you have.</p><section class=\"secret\" id=\"secret-b9XZ5yZ3AhEXhiy4\"><p><strong>Foundry Note</strong></p><p>Keep count of your Motes of Anger (they last until your next Long Rest) and add +2 per Mote to your damage rolls yourself; after the eruption attack, set them back to 0.</p></section>",
+      "chat": ""
+    },
+    "identifier": "tiny-abomination-in-a-jar",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "MEoaR8ljGFV4b9Vr": {
+        "type": "utility",
+        "_id": "MEoaR8ljGFV4b9Vr",
+        "sort": 100000,
+        "name": "Gain a Mote of Anger",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You roll an 11 on an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d3",
+          "name": "Orbit distance (feet)",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "Zixtut9GdP5MQ28N": {
+        "type": "utility",
+        "_id": "Zixtut9GdP5MQ28N",
+        "sort": 200000,
+        "name": "Eruption (4 Motes)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You have four Motes of Anger"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

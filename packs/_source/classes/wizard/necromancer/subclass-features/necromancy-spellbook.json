@@ -1,0 +1,193 @@
+{
+  "name": "Necromancy Spellbook",
+  "type": "feat",
+  "_id": "sDkDUn8WqGzz01BH",
+  "img": "icons/sundries/books/book-eye-purple.webp",
+  "folder": "SW5oQFPSBAriY2lY",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Your spellbook's necromantic secrets grant you additional powers. You gain the following benefits.</p><p><strong>Necrotic Resistance.</strong> You have Resistance to Necrotic damage.</p><p><strong>Undead Familiar.</strong> The @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} spell appears in your spellbook. When you cast it, you choose one of the normal forms for your familiar or one of the following special forms: Skeleton or Zombie (see appendix B of the Player's Handbook for their stat blocks). When you choose a normal form, you can make Undead its creature type. In addition, when you take the Attack action, you can forgo one of your own attacks to let your familiar make one attack of its own with its Reaction.</p><p><strong>Undead Vitality.</strong> When you cast a Necromancy spell using a spell slot, you can choose an Undead creature you can see within 60 feet of you; it regains Hit Points equal to the level of the spell slot expended plus your Wizard level.</p><section class=\"secret\" id=\"secret-fLNNq3yUN33udGJf\"><p><strong>Foundry Note</strong></p><p>Undead Vitality: add the level of the slot expended to the healing.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Necromancer 3",
+    "activities": {
+      "zX4rGM2GMwm6uIm5": {
+        "type": "heal",
+        "_id": "zX4rGM2GMwm6uIm5",
+        "sort": 100000,
+        "name": "Undead Vitality",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a Necromancy spell with a slot"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@classes.wizard.levels"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "necromancy-spellbook",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "TkfkVjQRcdQm59fu",
+      "name": "Necrotic Resistance",
+      "img": "icons/sundries/books/book-eye-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Q13nI2fGve6uqGh5"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Necrotic damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

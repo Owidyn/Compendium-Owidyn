@@ -1,0 +1,214 @@
+{
+  "name": "Unbreakable Majesty",
+  "type": "feat",
+  "_id": "4k1MzjE0KYchIkm9",
+  "img": "icons/commodities/treasure/crown-gold-satin-gems-red.webp",
+  "folder": "vtlGgiYzuG6cOmgD",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can take on a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead as it recoils from your majesty. Once you take on this presence, you can't do so again until you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "College of Glamour 14",
+    "activities": {
+      "MasKrX7uUmhRte1F": {
+        "type": "utility",
+        "_id": "MasKrX7uUmhRte1F",
+        "sort": 100000,
+        "name": "Unbreakable Majesty",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "YTu7M24stGppAuJq": {
+        "type": "save",
+        "_id": "YTu7M24stGppAuJq",
+        "sort": 200000,
+        "name": "Majesty Save",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A creature hits you for the first time on a turn"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "unbreakable-majesty",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

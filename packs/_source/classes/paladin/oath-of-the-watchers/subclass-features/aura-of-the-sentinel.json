@@ -1,0 +1,110 @@
+{
+  "name": "Aura of the Sentinel",
+  "type": "feat",
+  "_id": "4tiUAssCUhw9DEtJ",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp",
+  "folder": "sjOGGeuugsSBpzCr",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You emit an aura of alertness while you don't have the Incapacitated condition. When you and any creatures of your choice within 10 feet of you roll Initiative, you all gain a bonus to Initiative equal to your Proficiency Bonus. At Paladin level 18, the aura's range increases to 30 feet.</p><section class=\"secret\" id=\"secret-8LVLUKE69KX6w5ap\"><p><strong>Foundry Note</strong></p><p>The effect covers you; allies in the aura add your Proficiency Bonus to their Initiative.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of the Watchers 7",
+    "activities": {},
+    "enchant": {},
+    "identifier": "aura-of-the-sentinel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "KJdxOqtTM7gZAm0V",
+      "name": "Aura of the Sentinel",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "value": "@prof",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "IYMANwilJsfutCaB"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Initiative + your Proficiency Bonus (allies in the aura too).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

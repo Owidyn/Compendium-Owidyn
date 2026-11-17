@@ -1,0 +1,145 @@
+{
+  "name": "Beasts of Ill Omen",
+  "type": "feat",
+  "_id": "7QhlhVeZPWB1LeG8",
+  "img": "icons/creatures/mammals/wolf-shadow-black.webp",
+  "folder": "xCuA6IhvQnawWBY2",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You can call forth a howling creature of shadow to hound your foes. You can spend 3 Sorcery Points to cast @UUID[Compendium.compendium-owidyn.spells.Item.6RTnNWs5mJgj9f3K]{Summon Beast} as a Bonus Action without expending a spell slot, without preparing the spell, and without Material components. The creature appears as a beast made of shadow, and enemies within 5 feet of it have Disadvantage on saving throws against spells you cast. Whenever you cast the spell, you can modify it so that it doesn't require Concentration; the spell's duration then becomes 1 minute for that casting, and it ends early if you cast the spell again.</p><section class=\"secret\" id=\"secret-b209DwtUuJCbeHlN\"><p><strong>Foundry Note</strong></p><p>Cast it as a Bonus Action.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Shadow Sorcery 6",
+    "activities": {
+      "ZHoNqdqgRG9Od6VB": {
+        "type": "cast",
+        "_id": "ZHoNqdqgRG9Od6VB",
+        "sort": 100000,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "feat:font-of-magic",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.compendium-owidyn.spells.Item.6RTnNWs5mJgj9f3K",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "material"
+          ],
+          "spellbook": false,
+          "ability": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "beasts-of-ill-omen",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

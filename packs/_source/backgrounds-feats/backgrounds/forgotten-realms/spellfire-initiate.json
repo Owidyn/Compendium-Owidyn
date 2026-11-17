@@ -1,0 +1,216 @@
+{
+  "name": "Spellfire Initiate",
+  "type": "background",
+  "_id": "Qm3gQjJfhz6uhAT2",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You carry the gift of spellfire, a rare magic that channels the raw power of the Weave. Wielding spellfire takes a heavy toll on the body, so you have trained both mind and body to command this sacred power efficiently.</p><p><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.xCBlCHh7lOh8taWq]{Spellfire Spark}</p><p><strong>Skill Proficiencies:</strong> Arcana and Perception</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus} (@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{Crystal} or @UUID[Compendium.dnd5e.equipment24.Item.phbafcWand000000]{Wand}), 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 36 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "spellfire-initiate",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "xN2O4CUmiNpGi8FG": {
+        "_id": "xN2O4CUmiNpGi8FG",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "FQkFs8blNfuVBdsT": {
+        "_id": "FQkFs8blNfuVBdsT",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Arcana and Perception. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:arc",
+            "skills:prc"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "B8UXN5UInGIrxlhp": {
+        "_id": "B8UXN5UInGIrxlhp",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Spellfire Spark feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.xCBlCHh7lOh8taWq",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "K5cOZg9kgC0EMu1B": {
+        "_id": "K5cOZg9kgC0EMu1B",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "HhI8v3NgDF0naqMM",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "7Y371N1Vtc6G58DA",
+        "group": "HhI8v3NgDF0naqMM",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "OR",
+        "requiresProficiency": false,
+        "_id": "HZaBxAL1I43UJRQa",
+        "group": "HhI8v3NgDF0naqMM",
+        "sort": 300000
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbafcCrystal000",
+        "count": null,
+        "requiresProficiency": false,
+        "_id": "BM3glAV8n7sJMyRW",
+        "group": "HZaBxAL1I43UJRQa",
+        "sort": 400000
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbafcWand000000",
+        "count": null,
+        "requiresProficiency": false,
+        "_id": "8VRQummEbkSV8R3B",
+        "group": "HZaBxAL1I43UJRQa",
+        "sort": 500000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "tYtD6AmnHpmstOps",
+        "group": "HhI8v3NgDF0naqMM",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "oGSoiIMhWCikiTHR",
+        "group": "HhI8v3NgDF0naqMM",
+        "sort": 700000
+      },
+      {
+        "count": 36,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "UK7D5r4ABT0b6TgQ",
+        "group": "HhI8v3NgDF0naqMM",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

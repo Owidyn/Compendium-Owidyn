@@ -1,0 +1,186 @@
+{
+  "name": "Shifter",
+  "type": "race",
+  "_id": "Y83cexckHTIFrqev",
+  "img": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+  "folder": "8icOaSCCorEaz3rL",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Shifters, sometimes called \"weretouched,\" descend from people who caught lycanthropy in full or in part. Humanoids with a bestial side, they can't fully change shape, but they can briefly bring out their animal features, which they call \"shifting.\"</p><p>Shifters have the height and build of humans but are usually leaner and more flexible. Their faces have a bestial cast, often with large eyes and pointed ears, and most have prominent canines; fur-like hair grows over most of their body. Even at their most feral, they remain clearly Humanoid.</p><h3>Shifter Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.9rU5xi7MJb4K6UvV]{Bestial Instincts}.</strong> Channeling the beast within, you gain proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.vKj3KB3UlTovQFS6]{Shifting}.</strong> As a Bonus Action, a number of times per Long Rest equal to your Proficiency Bonus, you shift for 1 minute, gaining Temporary Hit Points equal to twice your Proficiency Bonus and the benefit of your option (Beasthide, Longtooth, Swiftstride, or Wildhunt).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "shifter",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Shifter"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "X8JJvSc719q5Zy22": {
+        "_id": "X8JJvSc719q5Zy22",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "EPNbcBuX0jDac3OB": {
+        "_id": "EPNbcBuX0jDac3OB",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Shifter Traits",
+        "title": "Shifter Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.9rU5xi7MJb4K6UvV",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.vKj3KB3UlTovQFS6",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hYTrM9shUGUSVvi4": {
+        "_id": "hYTrM9shUGUSVvi4",
+        "type": "Trait",
+        "level": 0,
+        "name": "Bestial Instincts",
+        "title": "Bestial Instincts",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:itm",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "iIuGH4SnZmyqpAa3": {
+        "_id": "iIuGH4SnZmyqpAa3",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Shifting Option",
+        "title": "Shifting Option",
+        "hint": "Choose the benefit you gain whenever you shift.",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.ptHHOwHUtHHF3eRN"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.0cGImo1zinfc7PiF"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.QpGkTmgMEUrjWK4F"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.vlmDmviMco6YqKgR"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

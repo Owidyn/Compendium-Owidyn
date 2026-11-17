@@ -1,0 +1,226 @@
+{
+  "name": "Illidari Knowledge",
+  "type": "feat",
+  "_id": "m5syndsA7TkHGtRC",
+  "img": "icons/weapons/swords/scimitar-worn-blue.webp",
+  "folder": "43lHaixCR7Jsrr5m",
+  "sort": 800000,
+  "system": {
+    "description": {
+      "value": "<p>Your mastery of souls grants you new ways to use soul fragments.</p><p><strong>Disrupt.</strong> You can expend two soul fragments to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell} in response to that spell's trigger, using your spellcasting ability.</p><p><strong>Warglaive Mastery.</strong> As a Bonus Action, you can expend one soul fragment to cast @UUID[Compendium.compendium-owidyn.spells.Item.6K9bd7HLoBIKqFR7]{Throw Glaive} without expending a spell slot.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Demon Hunter 11",
+    "activities": {
+      "8Gzu02sToQ2W3M1a": {
+        "type": "cast",
+        "_id": "8Gzu02sToQ2W3M1a",
+        "sort": 100000,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "feat:soul-fragments",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplCounterspe",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "yYScMSdEUbW4uc5X": {
+        "type": "cast",
+        "_id": "yYScMSdEUbW4uc5X",
+        "sort": 200000,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:soul-fragments",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.compendium-owidyn.spells.Item.6K9bd7HLoBIKqFR7",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "illidari-knowledge",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

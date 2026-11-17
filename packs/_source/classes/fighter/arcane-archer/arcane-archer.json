@@ -1,0 +1,567 @@
+{
+  "name": "Arcane Archer",
+  "type": "subclass",
+  "_id": "3OqIYVIJQ9d8AlnI",
+  "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+  "folder": "GHPyG8hXu8dC00qg",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Deploy Magical Effects Through Enchanted Ammunition</p></blockquote><p>An Arcane Archer studies an elven technique of archery that weaves magic into attacks to produce supernatural effects. Over the centuries, others have learned it and broadened it to ranged weapons of many kinds and to aspects of adventuring outside combat.</p><h3>Arcane Archer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Jnn3a9SnvL9xzLPJ]{Arcane Archer Lore}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.s7PGDR45iyQknqoS]{Arcane Shot}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.dwfxZHHJwYPu0Eou]{Curving Shot}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.iLdWOw9ooDurUh9N]{Magical Ammunition}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.dRB3C7tYQoBqyydN]{Ever-Ready Shot}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.BOhYR615mNZxuUfB]{Indomitable Teleport}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.CUQVJAuB18UO8q9S]{Masterful Shots}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "arcane-archer",
+    "classIdentifier": "fighter",
+    "advancement": {
+      "3Seb4nXlTqPexATd": {
+        "_id": "3Seb4nXlTqPexATd",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Jnn3a9SnvL9xzLPJ",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.s7PGDR45iyQknqoS",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "JoMOCtGRCpNOpMZA": {
+        "_id": "JoMOCtGRCpNOpMZA",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.dwfxZHHJwYPu0Eou",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.iLdWOw9ooDurUh9N",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "z3Be2rx6bmnV5oyP": {
+        "_id": "z3Be2rx6bmnV5oyP",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.dRB3C7tYQoBqyydN",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "G8kMBJSEySpc1LMl": {
+        "_id": "G8kMBJSEySpc1LMl",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.BOhYR615mNZxuUfB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wRK6YiL3m45QvIdf": {
+        "_id": "wRK6YiL3m45QvIdf",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CUQVJAuB18UO8q9S",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ojz0VtPbBkaYN64s": {
+        "_id": "ojz0VtPbBkaYN64s",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Arcane Archer Lore (Cantrip)",
+        "title": "Arcane Archer Lore (Cantrip)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDruidcraft"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPrestidigi"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "eGEprQm3MLnGRvub": {
+        "_id": "eGEprQm3MLnGRvub",
+        "type": "Trait",
+        "level": 3,
+        "name": "Arcane Archer Lore (Skills)",
+        "title": "Arcane Archer Lore (Skills)",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "skills:arc",
+            "skills:nat"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "TCnKeJKCi7QLJqx9": {
+        "_id": "TCnKeJKCi7QLJqx9",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Arcane Shot Options",
+        "title": "Arcane Shot Options",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qjc8gHGgYF1zX2BM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KjB4K9RwPQmvKyBR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pYKYAJTsbiZReHoe"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.l5rJZ3eM7davjVy1"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y2D7FfmjO95kDDyI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C1FUcYpabqVyl6WS"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xCqMOuHGgjtuT1SY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pdvOZZw2LaftDj6H"
+            }
+          ],
+          "restriction": {
+            "type": "class",
+            "subtype": "arcaneShot",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "zS6vQ7EKmGYSD8FF": {
+        "_id": "zS6vQ7EKmGYSD8FF",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Arcane Shot Options",
+        "title": "Arcane Shot Options",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qjc8gHGgYF1zX2BM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KjB4K9RwPQmvKyBR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pYKYAJTsbiZReHoe"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.l5rJZ3eM7davjVy1"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y2D7FfmjO95kDDyI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C1FUcYpabqVyl6WS"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xCqMOuHGgjtuT1SY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pdvOZZw2LaftDj6H"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "wDqEIxwMYpeDKICL": {
+        "_id": "wDqEIxwMYpeDKICL",
+        "type": "ItemChoice",
+        "level": 10,
+        "name": "Arcane Shot Options",
+        "title": "Arcane Shot Options",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "10": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qjc8gHGgYF1zX2BM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KjB4K9RwPQmvKyBR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pYKYAJTsbiZReHoe"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.l5rJZ3eM7davjVy1"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y2D7FfmjO95kDDyI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C1FUcYpabqVyl6WS"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xCqMOuHGgjtuT1SY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pdvOZZw2LaftDj6H"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "7YQtKGFw3jq5fRNL": {
+        "_id": "7YQtKGFw3jq5fRNL",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Arcane Shot Options",
+        "title": "Arcane Shot Options",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qjc8gHGgYF1zX2BM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KjB4K9RwPQmvKyBR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pYKYAJTsbiZReHoe"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.l5rJZ3eM7davjVy1"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y2D7FfmjO95kDDyI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C1FUcYpabqVyl6WS"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xCqMOuHGgjtuT1SY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pdvOZZw2LaftDj6H"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "LohaW1LQtjkevx4B": {
+        "_id": "LohaW1LQtjkevx4B",
+        "type": "ItemChoice",
+        "level": 18,
+        "name": "Arcane Shot Options",
+        "title": "Arcane Shot Options",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "18": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qjc8gHGgYF1zX2BM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KjB4K9RwPQmvKyBR"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pYKYAJTsbiZReHoe"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.l5rJZ3eM7davjVy1"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y2D7FfmjO95kDDyI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C1FUcYpabqVyl6WS"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xCqMOuHGgjtuT1SY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pdvOZZw2LaftDj6H"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "qJtC9fCmgld1r6oC": {
+        "_id": "qJtC9fCmgld1r6oC",
+        "type": "ScaleValue",
+        "name": "Arcane Shot Die",
+        "title": "Arcane Shot Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "10": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "15": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "18": {
+              "number": 1,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

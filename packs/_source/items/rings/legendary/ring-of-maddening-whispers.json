@@ -1,0 +1,312 @@
+{
+  "_id": "PzU2lQMg7Qt83E2q",
+  "name": "Ring of Maddening Whispers",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-cabochon-copper-red.webp",
+  "folder": "m1DFhwfJdcKsdcHC",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p><em>Requires Attunement by a Spellcaster.</em></p><p>This ring looks like a fleshy purple tentacle banded with dark metal, suffused with a reddish glow. While wearing it, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplDominateMo]{Dominate Monster} (level 9 version, save DC 19) from it. Once you do, you can't do so again until the next dawn.</p><p>Whenever a creature succeeds on its saving throw against the spell cast from the ring, a chorus of babbling whispers assails your mind: you take 5d10 Psychic damage and have the Incapacitated condition until the end of your next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "ring-of-maddening-whispers",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "gTc7voSiAl0sqw6s": {
+        "type": "cast",
+        "_id": "gTc7voSiAl0sqw6s",
+        "sort": 100000,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": true,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominateMo",
+          "challenge": {
+            "attack": null,
+            "save": 19,
+            "override": true
+          },
+          "level": 9,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "ddTLPnEPfasmjnME": {
+        "type": "damage",
+        "_id": "ddTLPnEPfasmjnME",
+        "sort": 200000,
+        "name": "Maddening Whispers",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A creature succeeds on its save against the spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 5,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "LChRuOIh04vbHSsc",
+      "name": "Maddening Whispers",
+      "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>Incapacitated until the end of your next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

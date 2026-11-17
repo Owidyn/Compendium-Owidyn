@@ -1,0 +1,114 @@
+{
+  "_id": "23LR4jfIjTtuYb9G",
+  "name": "Weapon Master",
+  "type": "feat",
+  "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "2LXnifS6A9UqLPqf": {
+        "_id": "2LXnifS6A9UqLPqf",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        }
+      },
+      "I3hWolIVlgLjtfqs": {
+        "_id": "I3hWolIVlgLjtfqs",
+        "type": "Trait",
+        "level": 0,
+        "name": "Mastery Property",
+        "title": "Mastery Property",
+        "hint": "",
+        "configuration": {
+          "mode": "mastery",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "weapon:sim:*",
+                "weapon:mar:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Mastery Property.</strong> Your training lets you use the mastery property of one kind of Simple or Martial weapon of your choice, as long as you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</p><section class=\"secret\" id=\"secret-tlsAfP1ROTUYZjva\"><p><strong>Foundry Note</strong></p><p>To change the weapon after a Long Rest, change the weapon mastery on your sheet.</p></section>",
+      "chat": ""
+    },
+    "identifier": "weapon-master",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

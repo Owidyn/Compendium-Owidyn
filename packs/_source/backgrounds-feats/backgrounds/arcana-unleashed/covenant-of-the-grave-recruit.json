@@ -1,0 +1,193 @@
+{
+  "name": "Covenant of the Grave Recruit",
+  "type": "background",
+  "_id": "vJzju6cPHLyuCy4s",
+  "img": "icons/magic/death/skull-humanoid-white-red.webp",
+  "folder": "pIA0XJ0HUfMM0WRE",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Death has always fascinated you. You have studied that grim subject alongside the members of the Covenant of the Grave, examining the macabre with scientific rigor. Through this work, you have built up knowledge of medicine, necromancy, and history.</p><p><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.kG9sa51ViSNI7eQG]{Arcane Undertaker}</p><p><strong>Skill Proficiencies:</strong> History and Medicine</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book} (anatomy), @UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000]{Shovel}, 16 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "covenant-of-the-grave-recruit",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "XFBOHc7fjGBlqaA4": {
+        "_id": "XFBOHc7fjGBlqaA4",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Intelligence, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "kFjpMF0GoUxQJJ5C": {
+        "_id": "kFjpMF0GoUxQJJ5C",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in History and Medicine. It also grants you proficiency in Herbalism Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:his",
+            "skills:med",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "a8QJelpVF00ecXXF": {
+        "_id": "a8QJelpVF00ecXXF",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Arcane Undertaker feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.kG9sa51ViSNI7eQG",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Hs1HNypiRH1toc1I": {
+        "_id": "Hs1HNypiRH1toc1I",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "pKo32fxgoYl0lz5E",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "ui2qlTjcccC2zDO8",
+        "group": "pKo32fxgoYl0lz5E",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulHerbalismK",
+        "requiresProficiency": false,
+        "_id": "vIrJtQSFJkD7s7HC",
+        "group": "pKo32fxgoYl0lz5E",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBook0000000",
+        "requiresProficiency": false,
+        "_id": "uJb9fq90swLg5een",
+        "group": "pKo32fxgoYl0lz5E",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagShovel00000",
+        "requiresProficiency": false,
+        "_id": "vrGx0Hj7eCMia56M",
+        "group": "pKo32fxgoYl0lz5E",
+        "sort": 500000
+      },
+      {
+        "count": 16,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "Gs8zLjK8HsZfJ5nw",
+        "group": "pKo32fxgoYl0lz5E",
+        "sort": 600000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

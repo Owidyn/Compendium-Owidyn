@@ -1,0 +1,159 @@
+{
+  "_id": "Q7HygZaibbzumnEX",
+  "name": "Mark of Handling",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-green.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "SntZko1VzHUDd1ni": {
+        "_id": "SntZko1VzHUDd1ni",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Primal Connection",
+        "title": "Primal Connection",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAnimalFrie",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpeakwithA",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>The Mark of Handling of House Vadalis manifests on your skin. You gain the following benefits.</p><p><strong>Wild Intuition.</strong> When you make an Intelligence (Nature) or Wisdom (Animal Handling) check, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Primal Connection.</strong> @UUID[Compendium.dnd5e.spells24.Item.phbsplAnimalFrie]{Animal Friendship} and @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with Animals} are always prepared for you. You can cast each of them once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast them with any spell slots you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><p><strong>Monstrous Connections.</strong> From character level 3, you can target a Monstrosity whose Intelligence score is 3 or lower with @UUID[Compendium.dnd5e.spells24.Item.phbsplAnimalFrie]{Animal Friendship} and @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with Animals}.</p><p><strong>Spells of the Mark.</strong> If you have the Spellcasting or Pact Magic feature, the spells on the Mark of Handling Spells table are added to that feature's spell list.</p><h4>Mark of Handling Spells</h4><table><thead><tr><th>Spell Level</th><th>Spells</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar}</td></tr><tr><td>2</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H]{Beast Sense}, @UUID[Compendium.dnd5e.spells24.Item.phbsplCalmEmotio]{Calm Emotions}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBeaconofHo]{Beacon of Hope}, @UUID[Compendium.dnd5e.spells24.Item.phbsplConjureAni]{Conjure Animals}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAuraofLife]{Aura of Life}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDominateBe]{Dominate Beast}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAwaken0000]{Awaken}</td></tr></tbody></table><section class=\"secret\" id=\"secret-YNvfcxkYeDGGTSt5\"><p><strong>Foundry Note</strong></p><p>The effect <em>Wild Intuition</em> adds the 1d4 to the Nature and Animal Handling checks. The Spells of the Mark are not added to your class spell list automatically: prepare them from the compendium if your class can. Monstrous Connections is not automated: choose a Monstrosity with an Intelligence of 3 or lower as the target yourself.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mark-of-handling",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "FkrBdHAok7FAghOi",
+      "name": "Wild Intuition",
+      "img": "icons/magic/symbols/rune-sigil-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.nat.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "onBIEaYdjLvdelma"
+          },
+          {
+            "key": "system.skills.ani.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "hq1wC5ATFUCymU3d"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Intelligence (Nature) or Wisdom (Animal Handling) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

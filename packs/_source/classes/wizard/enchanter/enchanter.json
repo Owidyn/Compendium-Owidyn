@@ -1,0 +1,539 @@
+{
+  "name": "Enchanter",
+  "type": "subclass",
+  "_id": "Y3wN8alL47AK6T7t",
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "folder": "mvxqq5TEUIlaGZUu",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Entrance and Beguile Others</p></blockquote><p>An Enchanter's magic clouds or captivates minds. Some Enchanters use their abilities to encourage peace and soften cruelty, while others use their mind-altering magic for selfish ends.</p><h3>Enchanter Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.VrUfAZg4m3uTGQEo]{Enchanting Conversationalist}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.TKHW9PVo4qBQ4Efs]{Enchantment Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.b6EaJkMY1Gy99WXv]{Hypnotic Presence}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bO3z4Uz9iRBOrXPB]{Split Enchantment}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.YlstgX3fjFqHhyZZ]{Instinctive Charm}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.7QF4nhQ28hwmIwbl]{Alter Memories}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "enchanter",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "lWbBohx0yVfBj3hH": {
+        "_id": "lWbBohx0yVfBj3hH",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.VrUfAZg4m3uTGQEo",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.TKHW9PVo4qBQ4Efs",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.b6EaJkMY1Gy99WXv",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "eeGt52t7B4cHkcF7": {
+        "_id": "eeGt52t7B4cHkcF7",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bO3z4Uz9iRBOrXPB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "HmJVI7f90uo9dkH9": {
+        "_id": "HmJVI7f90uo9dkH9",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.YlstgX3fjFqHhyZZ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8ICl0KHam4tUrvAC": {
+        "_id": "8ICl0KHam4tUrvAC",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.7QF4nhQ28hwmIwbl",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "9SIhWFp9TtVvEEcZ": {
+        "_id": "9SIhWFp9TtVvEEcZ",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add two Wizard spells of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "tvGUlq699iJ3TcJZ": {
+        "_id": "tvGUlq699iJ3TcJZ",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "V2497cZ1x41EWjcR": {
+        "_id": "V2497cZ1x41EWjcR",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "v6BSMzBRnw701bda": {
+        "_id": "v6BSMzBRnw701bda",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "hGRXRxBnUAVMyXT5": {
+        "_id": "hGRXRxBnUAVMyXT5",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "FOCoMlOMMmC6vZri": {
+        "_id": "FOCoMlOMMmC6vZri",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Hw4lAwtCPDGRM7L1": {
+        "_id": "Hw4lAwtCPDGRM7L1",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "HqnHHLeiCpTplxIZ": {
+        "_id": "HqnHHLeiCpTplxIZ",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Enchantment Savant",
+        "title": "Enchantment Savant",
+        "hint": "Add one Wizard spell of the Enchantment school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "uI7Y4FYvLELClTHp": {
+        "_id": "uI7Y4FYvLELClTHp",
+        "type": "Trait",
+        "level": 3,
+        "name": "Enchanting Conversationalist",
+        "title": "Enchanting Conversationalist",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:dec",
+                "skills:itm",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

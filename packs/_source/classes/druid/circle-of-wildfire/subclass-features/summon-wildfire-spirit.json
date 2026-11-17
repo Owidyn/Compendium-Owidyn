@@ -1,0 +1,261 @@
+{
+  "name": "Summon Wildfire Spirit",
+  "type": "feat",
+  "_id": "7uHDa6oMUUZ8D0DA",
+  "img": "icons/magic/fire/flame-burning-creature-skeleton.webp",
+  "folder": "vTBFur23dCrO9Wgo",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You can summon the primal spirit bound to your soul. As a Magic action, you can expend one use of your Wild Shape to summon your wildfire spirit instead of transforming. It appears in an unoccupied space of your choice you can see within 30 feet of you, and each creature within 10 feet of it (other than you) when it appears must succeed on a Dexterity saving throw against your spell save DC or take 2d6 Fire damage.</p><p>The spirit uses the @UUID[Compendium.compendium-owidyn.summons.Actor.fFuVfuGtCkdROc1e]{Wildfire Spirit} stat block, is Friendly to you and your allies, and obeys your commands. You determine its appearance: a humanoid figure of gnarled, burning branches, or a beast wreathed in fire, for example. In combat, it acts immediately after you on your Initiative count; the only action it takes is the Dodge action, unless you take a Bonus Action to command it to take another action. If you have the Incapacitated condition, it can take any action of its choice. It manifests for 1 hour, until it drops to 0 Hit Points, until you summon it again, or until you die.</p><section class=\"secret\" id=\"secret-iRqg6YCEN2feZByN\"><p><strong>Foundry Note</strong></p><p>The spirit has five plus five times your Druid level Hit Points; its attacks add your Proficiency Bonus.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of Wildfire 3",
+    "activities": {
+      "f7a4zA67Jb2PZiX2": {
+        "type": "summon",
+        "_id": "f7a4zA67Jb2PZiX2",
+        "sort": 100000,
+        "name": "Summon Wildfire Spirit",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:wild-shape",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "1CiswsHMaVt8Om1s",
+            "count": "",
+            "name": "Wildfire Spirit",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.fFuVfuGtCkdROc1e"
+          }
+        ],
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "5 * @classes.druid.levels",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "wis",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "83wYedss4vSu0nLl": {
+        "type": "save",
+        "_id": "83wYedss4vSu0nLl",
+        "sort": 200000,
+        "name": "Arrival Flare",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "The spirit appears"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "summon-wildfire-spirit",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

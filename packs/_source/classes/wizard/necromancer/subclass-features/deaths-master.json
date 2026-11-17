@@ -1,0 +1,296 @@
+{
+  "name": "Death's Master",
+  "type": "feat",
+  "_id": "66J9A14TfOMYtI6b",
+  "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+  "folder": "SW5oQFPSBAriY2lY",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>Abstruse rituals in your spellbook grant you mastery over undeath. While holding your spellbook, you gain the following benefits.</p><p><strong>Bolster Undead.</strong> As a Bonus Action, choose any number of Undead you have created or summoned with a Necromancy spell that are within 60 feet of you. Each gains Temporary Hit Points equal to your Wizard level. Once you use this Bonus Action, you can't do so again until you finish a Long Rest.</p><p><strong>Extinguish Undead.</strong> When an Undead creature you can see is reduced to 0 Hit Points, you can make it explode with necrotic energy. Roll a number of d6s equal to half the creature's unexpended Hit Dice (round up, minimum of 1d6) and add them together. Each creature in a 10-foot Emanation originating from the Undead makes a Dexterity saving throw. On a failure, a target takes Necrotic damage equal to the total and can't take Reactions until the start of its next turn; on a success, it takes only half as much damage. To explode an Undead you don't control this way, you must take a Reaction and expend a level 5+ spell slot.</p><section class=\"secret\" id=\"secret-oYWfrmu4aUcNinkx\"><p><strong>Foundry Note</strong></p><p>Extinguish Undead rolls 1d6: roll as many d6s as half the Undead's unexpended Hit Dice (round up) instead. The effect applies only on a failed save.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Necromancer 14",
+    "activities": {
+      "ptiq17PKVIXITP9H": {
+        "type": "heal",
+        "_id": "ptiq17PKVIXITP9H",
+        "sort": 100000,
+        "name": "Bolster Undead",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@classes.wizard.levels"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "z0hiIenTNMdbM1qb": {
+        "type": "save",
+        "_id": "z0hiIenTNMdbM1qb",
+        "sort": 200000,
+        "name": "Extinguish Undead",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "An Undead you can see drops to 0 Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "S6ytc4orQMqsyAZt",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "deaths-master",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "S6ytc4orQMqsyAZt",
+      "name": "Extinguish Undead",
+      "img": "icons/magic/death/skull-energy-light-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetStart",
+        "expired": false
+      },
+      "description": "<p>Can't take Reactions until the start of its next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

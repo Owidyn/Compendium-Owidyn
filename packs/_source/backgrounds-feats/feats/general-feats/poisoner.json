@@ -1,0 +1,253 @@
+{
+  "_id": "BFIN3Pt5L5ogXlnl",
+  "name": "Poisoner",
+  "type": "feat",
+  "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "JjudR8VznXeEzexF": {
+        "type": "save",
+        "_id": "JjudR8VznXeEzexF",
+        "sort": 100000,
+        "name": "Poison Dose",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A creature takes damage from your poisoned weapon or ammunition"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Uk1tUI3xem6Tfvlc",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "poison"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "int",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "MIL0IFwacHkd2LPw": {
+        "_id": "MIL0IFwacHkd2LPw",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        }
+      },
+      "kCuRCFZE98LSFO2k": {
+        "_id": "kCuRCFZE98LSFO2k",
+        "type": "Trait",
+        "level": 0,
+        "name": "Brew Poison",
+        "title": "Brew Poison",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:pois"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity or Intelligence score by 1, to a maximum of 20.</p><p><strong>Potent Poison.</strong> When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.</p><p><strong>Brew Poison.</strong> You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and 50 GP of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a dose to a weapon or a piece of ammunition; the poison keeps its potency for 1 minute or until you deal damage with the poisoned item, whichever comes first. When a creature takes damage from the poisoned item, it must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</p><section class=\"secret\" id=\"secret-vAwJ3TiFJclrkUIx\"><p><strong>Foundry Note</strong></p><p>The save DC uses Intelligence: change it to Dexterity in the activity if you increased Dexterity.</p></section>",
+      "chat": ""
+    },
+    "identifier": "poisoner",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "Uk1tUI3xem6Tfvlc",
+      "name": "Poisoned",
+      "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceEnd",
+        "expired": false
+      },
+      "description": "<p>Poisoned until the end of the poisoner's next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "poisoned"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

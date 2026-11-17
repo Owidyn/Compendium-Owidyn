@@ -1,0 +1,159 @@
+{
+  "name": "Troll",
+  "type": "race",
+  "_id": "yEKgsUU4yaKjaFA6",
+  "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+  "folder": "Ud1jIjGWkLGsRYie",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Trolls are among the oldest peoples of Azeroth and have always revered the Wild Gods, whom they call loa. From Zandalar, their first great center, troll tribes spread across the ancient continent and founded the empires of the Amani (forest trolls), the Gurubashi (jungle trolls), and the Drakkari (ice trolls), while dark trolls lived underground in the west. The Great Sundering isolated them; most of the empires now lie in ruins, though trolls still dwell in each ancient fortress.</p><p><strong>Darkspear trolls</strong>, jungle trolls driven out of Stranglethorn, were the first to join the Horde and settled on the Echo Isles. The <strong>Zandalari</strong>, heirs of the first tribe, have an empire steeped in ritual, dinosaur-riding warriors, and the Golden Fleet; under Queen Talanji they joined the Horde. The <strong>Amani</strong> forest trolls of Zul'Aman recently allied uneasily with the blood elves against servants of the Void.</p><p><strong>Renown.</strong> With the Darkspear or Zandalari lineage, your Renown Score with the Darkspear Tribe (Horde) begins at 3; otherwise, you have no starting Renown Score.</p><h3>Troll Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.38KIVZE6vlDf7768]{Bloodied Frenzy}.</strong> While Bloodied, you have Advantage on attack rolls.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.QxyK5cyJyHMPBPui]{Troll Healing}.</strong> When you spend Hit Point Dice to regain Hit Points at the end of a Short Rest, you regain Hit Points equal to the maximum roll of the dice plus your Constitution modifier.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.5ortL9QICL3ZZYcI]{Troll Lineage}.</strong> You choose a lineage: Amani Troll, Darkspear Troll, or Zandalari Troll.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "troll",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Troll"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "7NmhyBvi3dZGAKFY": {
+        "_id": "7NmhyBvi3dZGAKFY",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 7 feet tall)",
+        "flags": {}
+      },
+      "pi3fBcsNmFrqk4TS": {
+        "_id": "pi3fBcsNmFrqk4TS",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Troll Traits",
+        "title": "Troll Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.38KIVZE6vlDf7768",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.QxyK5cyJyHMPBPui",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.5ortL9QICL3ZZYcI",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "JneD1CtAqhVSGCdn": {
+        "_id": "JneD1CtAqhVSGCdn",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Troll Lineage",
+        "title": "Troll Lineage",
+        "hint": "Choose your lineage.",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.eiUVyavZj7EMeiuy"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.qNfXNKANk9JG08ol"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.YIykosFEOsLlXoLk"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

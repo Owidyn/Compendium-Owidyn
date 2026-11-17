@@ -1,0 +1,179 @@
+{
+  "name": "Oceanic Gift",
+  "type": "feat",
+  "_id": "w92xbGoPaLNhrdCT",
+  "img": "icons/magic/water/heart-ice-freeze.webp",
+  "folder": "KIFUiWkctIrs1z0l",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>Instead of manifesting the Emanation of Wrath of the Sea around yourself, you can manifest it around one willing creature within 60 feet of you; that creature gains all its benefits and uses your spell save DC and Wisdom modifier for it. You can also manifest it around both that creature and yourself by expending two uses of your Wild Shape instead of one.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of the Sea 14",
+    "activities": {
+      "0AQIkK6hQJgeVHIf": {
+        "type": "utility",
+        "_id": "0AQIkK6hQJgeVHIf",
+        "sort": 100000,
+        "name": "Oceanic Gift",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:wild-shape",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "5YQQmDTtZMAkqUm9"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "oceanic-gift",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "5YQQmDTtZMAkqUm9",
+      "name": "Wrath of the Sea",
+      "img": "icons/magic/water/wave-water-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>An Emanation of ocean spray surrounds you.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

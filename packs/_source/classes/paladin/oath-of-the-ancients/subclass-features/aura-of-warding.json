@@ -1,0 +1,126 @@
+{
+  "name": "Aura of Warding",
+  "type": "feat",
+  "_id": "R8ZfNGniMe9i7L8S",
+  "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+  "folder": "v3XQ9hTaPYGC1u2Z",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Ancient magic lies so heavily on you that it forms an eldritch ward, blunting energy from beyond the Material Plane: you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p><section class=\"secret\" id=\"secret-mvK3qmtd2HHWmcYc\"><p><strong>Foundry Note</strong></p><p>The effect gives you the Resistances; your allies in the aura have them too.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of the Ancients 7",
+    "activities": {},
+    "enchant": {},
+    "identifier": "aura-of-warding",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "RzOYy29GaVdtNNsi",
+      "name": "Aura of Warding",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Uos63l3O2r1ReArL"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "4ynlICwrQ7Lr6R4J"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "dtYYizAzEhKSjWgY"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Necrotic, Psychic, and Radiant damage (you and allies in your Aura of Protection).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

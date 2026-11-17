@@ -1,0 +1,180 @@
+{
+  "name": "Blessing of the Trickster",
+  "type": "feat",
+  "_id": "FqZ6dDCN6GbLS1bx",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "dSFcpUjhipaKa1QO",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>As a Magic action, you can give yourself or a willing creature within 30 feet of you Advantage on Dexterity (Stealth) checks. The blessing lasts until you finish a Long Rest or use this feature again.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Trickery Domain 3",
+    "activities": {
+      "lsaADeCbFDiFMFTG": {
+        "type": "utility",
+        "_id": "lsaADeCbFDiFMFTG",
+        "sort": 100000,
+        "name": "Blessing of the Trickster",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "p0QDYQ3MHre4Pofq"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "blessing-of-the-trickster",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "p0QDYQ3MHre4Pofq",
+      "name": "Blessing of the Trickster",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ste.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "NnqEfsNklzngG5Ka"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Dexterity (Stealth) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

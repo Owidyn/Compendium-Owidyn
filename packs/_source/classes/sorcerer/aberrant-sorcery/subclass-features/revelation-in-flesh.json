@@ -1,0 +1,339 @@
+{
+  "name": "Revelation in Flesh",
+  "type": "feat",
+  "_id": "onNxRMWcU926MCrO",
+  "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+  "folder": "ynPvfi7UdjAGk9y5",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>You can unleash the aberrant truth hidden within yourself. As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, which lasts until the alteration ends.</p><p><strong>Aquatic Adaptation.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater. Gills grow from your neck or flare behind your ears, and your fingers become webbed or you sprout wriggling cilia.</p><p><strong>Glistening Flight.</strong> You gain a Fly Speed equal to your Speed, and you can hover. As you fly, your skin glistens with mucus or otherworldly light.</p><p><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of you that isn't behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p><p><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p><section class=\"secret\" id=\"secret-38NUJehPyh7kwxpg\"><p><strong>Foundry Note</strong></p><p>Spend one Sorcery Point per benefit (scale the use), then apply the chosen effects.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Aberrant Sorcery 14",
+    "activities": {
+      "WBeG3ljSrj1ASSw8": {
+        "type": "utility",
+        "_id": "WBeG3ljSrj1ASSw8",
+        "sort": 100000,
+        "name": "Revelation in Flesh",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "4"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:font-of-magic",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "QCGyM9wemPXKCCJW"
+          },
+          {
+            "_id": "Dk33bHX6IAdMXdUu"
+          },
+          {
+            "_id": "obHwarZFA7oO9i3y"
+          },
+          {
+            "_id": "Y2YEWPhxsHqnulS6"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "revelation-in-flesh",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "QCGyM9wemPXKCCJW",
+      "name": "Aquatic Adaptation",
+      "img": "icons/magic/water/wave-water-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "2 * @attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "LuWU6BD85IF5VpdY"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Swim Speed equal to twice your Speed; you can breathe underwater.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Dk33bHX6IAdMXdUu",
+      "name": "Glistening Flight",
+      "img": "icons/magic/air/wind-swirl-pink-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mDwNaERMG0uPC6Ws"
+          },
+          {
+            "key": "system.attributes.movement.hover",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Cf7lkoYQfKGYekKq"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Fly Speed equal to your Speed; you can hover.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "obHwarZFA7oO9i3y",
+      "name": "See the Invisible",
+      "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You see Invisible creatures within 60 feet of you that aren't behind Total Cover.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Y2YEWPhxsHqnulS6",
+      "name": "Wormlike Movement",
+      "img": "icons/environment/creatures/bug-worm-pincer-pink.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You can move through spaces as narrow as 1 inch and spend 5 feet of movement to escape nonmagical restraints or the Grappled condition.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

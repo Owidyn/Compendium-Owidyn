@@ -1,0 +1,265 @@
+{
+  "name": "Dead Magic Dweller",
+  "type": "background",
+  "_id": "VRnpzPBpEmrMHaEu",
+  "img": "icons/magic/death/skull-sand-white-yellow.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The dead magic zones of the Anauroch desert are loathed by spellcasters and magical monsters—which is exactly why you settled there. Maybe you were fleeing the Red Wizards, or you crossed a powerful djinni in Calimshan. Whatever the reason, Anauroch seemed your best option. After long months or years there, you are stronger and wiser, and you know a great deal about desert medicine and surviving in the wastes.</p><p><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.1M64ZpNOx4YSXXDu]{Healer}</p><p><strong>Skill Proficiencies:</strong> Medicine and Survival</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulLeatherwor]{Leatherworker's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepGreatclub0]{Greatclub}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulLeatherwor]{Leatherworker's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBlanket0000]{Blanket}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPole0000000]{Pole}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRations0000]{Rations} (3 days' worth), @UUID[Compendium.dnd5e.equipment24.Item.phbagTent0000000]{Tent}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, 5 @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 32 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "dead-magic-dweller",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "vXrM40CRfss1XpPl": {
+        "_id": "vXrM40CRfss1XpPl",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "fVxYhAoOqc6GwAw1": {
+        "_id": "fVxYhAoOqc6GwAw1",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Medicine and Survival. It also grants you proficiency in Leatherworker's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:med",
+            "skills:sur",
+            "tool:art:leatherworker"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ZodNS6WkPgeGtkQ4": {
+        "_id": "ZodNS6WkPgeGtkQ4",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Healer feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.1M64ZpNOx4YSXXDu",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1kS36MdnRFdO4pcj": {
+        "_id": "1kS36MdnRFdO4pcj",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "LrnQ0rOGd1bzEFQd",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepGreatclub0",
+        "requiresProficiency": false,
+        "_id": "rERP0AEL4lYw0kR1",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulLeatherwor",
+        "requiresProficiency": false,
+        "_id": "c9k0GQFt0evfLv2V",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "fuUSKH1ASRoiRQ6e",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBlanket0000",
+        "requiresProficiency": false,
+        "_id": "JGT5hDT41oDQO6a6",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHealersKit0",
+        "requiresProficiency": false,
+        "_id": "W4Gqplo7P2FToALD",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPole0000000",
+        "requiresProficiency": false,
+        "_id": "ikKFFi3DevJ0mlEF",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 700000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRations0000",
+        "requiresProficiency": false,
+        "_id": "XqfN4l7RTJod8vkA",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTent0000000",
+        "requiresProficiency": false,
+        "_id": "z9PAsmZ1QVUXVFuJ",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 900000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "B1d0pvgDsgt3BykB",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 1000000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTorch000000",
+        "requiresProficiency": false,
+        "_id": "3FqYx2UIT4udh4Di",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 1100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "eCH23BPbhCoi62TH",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 1200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "7T9z9FvtLAuxDS4p",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 1300000
+      },
+      {
+        "count": 32,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "jsQpNy0e9USDyBq2",
+        "group": "LrnQ0rOGd1bzEFQd",
+        "sort": 1400000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

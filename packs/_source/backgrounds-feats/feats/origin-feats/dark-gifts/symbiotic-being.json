@@ -1,0 +1,404 @@
+{
+  "_id": "3lVV4sKAcFFbGCrD",
+  "name": "Symbiotic Being",
+  "type": "feat",
+  "img": "icons/creatures/tentacles/tentacles-eyes-poisoned-green.webp",
+  "folder": "13Z2QY6ujzN3RLir",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "AwagwHrUvZyN9Cpi": {
+        "type": "utility",
+        "_id": "AwagwHrUvZyN9Cpi",
+        "sort": 100000,
+        "name": "Sustained Symbiosis",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You fail a saving throw"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            },
+            {
+              "type": "hitDice",
+              "value": "1",
+              "target": "largest",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d@attributes.hd.largestFace",
+          "name": "Bonus to the save",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "lvQkKFU4B0jUDVq2": {
+        "type": "save",
+        "_id": "lvQkKFU4B0jUDVq2",
+        "sort": 200000,
+        "name": "Symbiotic Agenda",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Immediately after you roll a 1 on the d20 of a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "30fkcSHAVAKBLZS1",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        }
+      },
+      "1Ia9cDvoRsas1u69": {
+        "type": "utility",
+        "_id": "1Ia9cDvoRsas1u69",
+        "sort": 300000,
+        "name": "Agenda Duration",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You fail the Symbiotic Agenda save"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d12",
+          "name": "Hours Charmed",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "sPiVpSNYXCclnkEW": {
+        "_id": "sPiVpSNYXCclnkEW",
+        "type": "Trait",
+        "level": 0,
+        "name": "Second Mind",
+        "title": "Second Mind",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:arc",
+                "skills:dec",
+                "skills:his",
+                "skills:ins",
+                "skills:itm",
+                "skills:inv",
+                "skills:nat",
+                "skills:prc",
+                "skills:per",
+                "skills:rel"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "KQNAHP27P7OMaHys": {
+        "_id": "KQNAHP27P7OMaHys",
+        "type": "Trait",
+        "level": 0,
+        "name": "Second Mind (Language)",
+        "title": "Second Mind (Language)",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Ravenloft Campaign)</em></p><p>A second being lives inside your body, offering you knowledge and help while it pursues its own goals. You gain the following features.</p><p><strong>Entwined Existence.</strong> The symbiote can't be targeted. If you die, it dies too; if you are returned to life, it revives as well.</p><p><strong>Second Mind.</strong> You gain proficiency in one of the following skills: Arcana, Deception, History, Insight, Intimidation, Investigation, Nature, Perception, Persuasion, or Religion. You also know one additional language of your choice from the Player's Handbook language tables.</p><p><strong>Sustained Symbiosis.</strong> When you fail a saving throw, you can take a Reaction to expend one of your Hit Point Dice, roll it, and add the number rolled to the save, which can turn the failure into a success. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Symbiotic Agenda.</strong> Immediately after you roll a 1 on the d20 of a D20 Test, your symbiote tries to take control. Make a Charisma saving throw (DC 13 plus your Proficiency Bonus). On a failure, you have the &amp;Reference[Charmed] condition for 1d12 hours; while Charmed this way, you must try to follow the symbiote's commands and further its goals, as determined by the DM. Whenever you take damage, you can repeat the save, ending the effect on a success. At the DM's discretion, you might also make this save whenever you act against the symbiote's agenda.</p><section class=\"secret\" id=\"secret-pe0xz0BJVEQYF1Fe\"><p><strong>Foundry Note</strong></p><p><em>Sustained Symbiosis</em> spends a use of the feat and rolls the Hit Point Die it spends. <em>Symbiotic Agenda</em> is a Charisma saving throw against DC 13 + your Proficiency Bonus; on a failure, apply its effect (Charmed; roll its 1d12 hours with the activity).</p></section>",
+      "chat": ""
+    },
+    "identifier": "symbiotic-being",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Ravenloft Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "30fkcSHAVAKBLZS1",
+      "name": "Symbiotic Agenda",
+      "img": "icons/creatures/tentacles/tentacles-eyes-poisoned-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Charmed for 1d12 hours: you follow the symbiote's commands. Repeat the save whenever you take damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "charmed"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

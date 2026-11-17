@@ -1,0 +1,248 @@
+{
+  "name": "Chemical Mastery",
+  "type": "feat",
+  "_id": "tVW9xNPmK2TDwWcn",
+  "img": "icons/magic/acid/projectile-smoke-glowing.webp",
+  "folder": "6KgsSF7UP48Nfsd6",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Alchemical Eruption.</strong> When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal 2d8 Force damage to that target. You can use this benefit only once on each of your turns.</p><p><strong>Chemical Resistance.</strong> You gain Resistance to Acid and Poison damage and Immunity to the &amp;Reference[Poisoned] condition.</p><p><strong>Conjured Cauldron.</strong> You can cast @UUID[Compendium.compendium-owidyn.spells.Item.bVP64G7z0hEPP6F6]{Tasha's Bubbling Cauldron} without expending a spell slot, preparing it, or Material components, as long as you use Alchemist's Supplies as the Spellcasting Focus. Once you use this benefit, you can't use it again until you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Alchemist 15",
+    "activities": {
+      "qWHsCdWHK1fAPbsi": {
+        "type": "damage",
+        "_id": "qWHsCdWHK1fAPbsi",
+        "sort": 100000,
+        "name": "Alchemical Eruption",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, an Artificer spell deals Acid, Fire, or Poison damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "L8JVX6MDcNeiFBuf": {
+        "type": "utility",
+        "_id": "L8JVX6MDcNeiFBuf",
+        "sort": 200000,
+        "name": "Conjured Cauldron",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "chemical-mastery",
+    "advancement": {
+      "9EZ5m7ABwnl0VPGT": {
+        "_id": "9EZ5m7ABwnl0VPGT",
+        "type": "Trait",
+        "level": 0,
+        "name": "Chemical Resistance",
+        "title": "Chemical Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:acid",
+            "dr:poison",
+            "ci:poisoned"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

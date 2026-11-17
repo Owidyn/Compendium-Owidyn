@@ -1,0 +1,171 @@
+{
+  "name": "Reanimated Companion",
+  "type": "feat",
+  "_id": "08S1Gytnt0iVs3Hp",
+  "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+  "folder": "MnPXC7hi7pxE8O9l",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Using Tinker's Tools or another type of Artisan's Tools you are proficient with, you can take a Magic action to create a Reanimated Companion through the power of necromancy and science, in an unoccupied space within 5 feet of you. You decide its appearance; your choices don't affect its game statistics. The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or take a Magic action to dismiss it, when it harmlessly collapses into a pile of viscera; if you die, it immediately drops to 0 Hit Points and dies (triggering its Death Burst).</p><p>Once you create a companion, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time.</p><p><strong>The Companion in Combat.</strong> In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take another action. If you have the Incapacitated condition, it acts on its own and isn't limited to the Dodge action.</p><p><strong>Reanimated Companion.</strong> Medium Undead, Neutral. AC 10 + your Intelligence modifier. Hit Points 5 + five times your Artificer level (Hit Dice: d8s equal to your Artificer level). Speed 30 ft. STR 11, DEX 10, CON 16, INT 4, WIS 10, CHA 6. Resistances Necrotic, Poison; Immunities Lightning; Charmed, Exhaustion, Poisoned. Blindsight 60 ft. It understands the languages you know, and its Proficiency Bonus equals yours. <em>Death Burst:</em> when it dies, each creature in a 10-foot Emanation makes a Dexterity saving throw against your spell save DC, taking 2d4 Necrotic damage on a failure or half as much on a success. <em>Lightning Absorption:</em> Lightning damage restores Hit Points to it instead. <em>Dreadful Swipe:</em> melee attack using your spell attack modifier, reach 5 ft., 1d4 plus your Intelligence modifier Necrotic damage, and the target can't take Opportunity Attacks until the start of its next turn.</p><section class=\"secret\" id=\"secret-FGsQ6FMv9bbrFWmO\"><p><strong>Foundry Note</strong></p><p>Restore the use when you expend a spell slot to create another companion.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Reanimator 3",
+    "activities": {
+      "5rJ6lIUdBtycemZi": {
+        "type": "summon",
+        "_id": "5rJ6lIUdBtycemZi",
+        "sort": 100000,
+        "name": "Reanimated Companion",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "ZxXAEMq0fKxqIQN6",
+            "count": "",
+            "name": "Reanimated Companion",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.IAIuTmfL65Fs65YD"
+          }
+        ],
+        "bonuses": {
+          "ac": "@abilities.int.mod",
+          "hd": "",
+          "hp": "5 * @classes.artificer.levels",
+          "attackDamage": "@abilities.int.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "int",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "reanimated-companion",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

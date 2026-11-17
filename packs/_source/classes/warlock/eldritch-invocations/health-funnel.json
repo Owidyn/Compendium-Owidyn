@@ -1,0 +1,134 @@
+{
+  "_id": "dJYoB7QMSzOyFQdH",
+  "name": "Health Funnel",
+  "type": "feat",
+  "img": "icons/magic/life/heart-glowing-red.webp",
+  "folder": "xKTk3ZyCsz8XXqhx",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can expend any number of your unexpended Hit Point Dice, roll them, add your Charisma modifier to each die, and total the rolls. Your familiar or another Fiend you command gains that many Temporary Hit Points.</p><section class=\"secret\" id=\"secret-LwLDm5IjRa0ChUjg\"><p><strong>Foundry Note</strong></p><p>Choose how many Hit Point Dice to spend in the dialog, roll them, add your Charisma modifier per die, and give the total as Temporary Hit Points.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 2,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "EYUxSfL6lZ4ghJF1": {
+        "type": "utility",
+        "_id": "EYUxSfL6lZ4ghJF1",
+        "sort": 100000,
+        "name": "Health Funnel",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "@attributes.hd.value"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "hitDice",
+              "value": "1",
+              "target": "smallest",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "health-funnel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

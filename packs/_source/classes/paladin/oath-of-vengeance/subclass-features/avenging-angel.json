@@ -1,0 +1,328 @@
+{
+  "name": "Avenging Angel",
+  "type": "feat",
+  "_id": "peBwqzBqJDe5EZvP",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "folder": "tbFkH9qfyw6zr6M1",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you gain the following benefits for 10 minutes or until you end them (no action required).</p><p><strong>Flight.</strong> You sprout spectral wings and have a Fly Speed of 60 feet, and you can hover.</p><p><strong>Frightful Aura.</strong> Whenever an enemy starts its turn in your Aura of Protection, it must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest, but you can restore it by expending a level 5 spell slot (no action required).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of Vengeance 20",
+    "activities": {
+      "8EIjFFfjrJgfzJ1k": {
+        "type": "utility",
+        "_id": "8EIjFFfjrJgfzJ1k",
+        "sort": 100000,
+        "name": "Avenging Angel",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "7mTSsK5tDWE4XC5M"
+          },
+          {
+            "_id": "8FzDnvcIOXjAzG8L"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "mco9nydiA0d2afzf": {
+        "type": "save",
+        "_id": "mco9nydiA0d2afzf",
+        "sort": 200000,
+        "name": "Frightful Aura",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "An enemy starts its turn in your aura"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "8FzDnvcIOXjAzG8L",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "avenging-angel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "7mTSsK5tDWE4XC5M",
+      "name": "Avenging Angel",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "60",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "ZDjGROpDIhP1NKLE"
+          },
+          {
+            "key": "system.attributes.movement.hover",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "B5gsxi8woJx59ExS"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Fly Speed 60 feet (hover); Frightful Aura.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "8FzDnvcIOXjAzG8L",
+      "name": "Frightful Aura",
+      "img": "icons/magic/control/fear-fright-white.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Frightened for 1 minute or until it takes damage; attack rolls against it have Advantage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

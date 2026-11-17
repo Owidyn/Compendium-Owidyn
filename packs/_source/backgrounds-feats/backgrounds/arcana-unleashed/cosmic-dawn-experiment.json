@@ -1,0 +1,199 @@
+{
+  "name": "Cosmic Dawn Experiment",
+  "type": "background",
+  "_id": "pc5CkJrYRTbfFykD",
+  "img": "icons/magic/nature/leaf-juggle-humanoid-green.webp",
+  "folder": "pIA0XJ0HUfMM0WRE",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The transmutation rituals of the Bringers of the Cosmic Dawn have reshaped your body. Perhaps you were caught up in one of the organization's experiments by accident, or perhaps you were a member who sought to perfect your body through magic. Either way, you turn your strange anatomy to your advantage.</p><p><strong>Ability Scores:</strong> Strength, Dexterity, Constitution</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.RwzhXQ0pAqFtJH1p]{Transmuted Anatomy}</p><p><strong>Skill Proficiencies:</strong> Athletics and Survival</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Artisan's Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Artisan's Tools (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 30 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "cosmic-dawn-experiment",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "L0zZYkmghqCOo77J": {
+        "_id": "L0zZYkmghqCOo77J",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Dexterity, and Constitution scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "HD7CnuUcv2pin8FH": {
+        "_id": "HD7CnuUcv2pin8FH",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Athletics and Survival. It also grants you proficiency with one kind of Artisan's Tools of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:sur"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "QZK7TTsVTz8v7K2i": {
+        "_id": "QZK7TTsVTz8v7K2i",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Transmuted Anatomy feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.RwzhXQ0pAqFtJH1p",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "WjrLHWEFd40uPOXg": {
+        "_id": "WjrLHWEFd40uPOXg",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "k6DiNVcgKyjN9wsa",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "art",
+        "requiresProficiency": false,
+        "_id": "TEHxiRWyNMesY72M",
+        "group": "k6DiNVcgKyjN9wsa",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBackpack000",
+        "requiresProficiency": false,
+        "_id": "LF6vekPlHCEQtsPU",
+        "group": "k6DiNVcgKyjN9wsa",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRobe0000000",
+        "requiresProficiency": false,
+        "_id": "YkomTC4FjyBnMAG9",
+        "group": "k6DiNVcgKyjN9wsa",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "EK31h1uD77s9cL2s",
+        "group": "k6DiNVcgKyjN9wsa",
+        "sort": 500000
+      },
+      {
+        "count": 30,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "VX1a41uUZsdIoQtQ",
+        "group": "k6DiNVcgKyjN9wsa",
+        "sort": 600000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

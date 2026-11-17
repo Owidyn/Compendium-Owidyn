@@ -1,0 +1,160 @@
+{
+  "name": "Hand of Ultimate Mercy",
+  "type": "feat",
+  "_id": "XAr0Sj87HGDTmVpX",
+  "img": "icons/magic/life/ankh-gold-blue.webp",
+  "folder": "Y1NLlhkloKSEAjpe",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>Your mastery of life energy opens the door to the ultimate mercy. As a Magic action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 Focus Points. The creature returns to life with Hit Points equal to 4d10 plus your Wisdom modifier, and if it died with any of the following conditions, it revives without them: Blinded, Deafened, Paralyzed, Poisoned, and Stunned. Once you use this feature, you can't use it again until you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of Mercy 17",
+    "activities": {
+      "Ueg4Gd3oVIup1n3W": {
+        "type": "heal",
+        "_id": "Ueg4Gd3oVIup1n3W",
+        "sort": 100000,
+        "name": "Hand of Ultimate Mercy",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "feat:monks-focus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "4d10 + @abilities.wis.mod"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "hand-of-ultimate-mercy",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

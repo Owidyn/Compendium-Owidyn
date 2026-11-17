@@ -1,0 +1,152 @@
+{
+  "name": "Voice of Death",
+  "type": "feat",
+  "_id": "3OuWamgjxlcSdG2Z",
+  "img": "icons/commodities/bones/skull-white-purple.webp",
+  "folder": "AzTXOtdCemKgb5nG",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithD]{Speak with Dead} once without a spell slot, requiring no spell components and using Dexterity as the spellcasting modifier. You regain the ability to cast it this way when you finish a Short or Long Rest. When you cast the spell, you can target one of your soul trinkets from Tokens of the Departed instead of a corpse, letting the spirit of the creature associated with the trinket answer.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Phantom 9",
+    "activities": {
+      "zKYM0JLbev5aZZoy": {
+        "type": "cast",
+        "_id": "zKYM0JLbev5aZZoy",
+        "sort": 100000,
+        "name": "",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpeakwithD",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "voice-of-death",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

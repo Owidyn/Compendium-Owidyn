@@ -1,0 +1,124 @@
+{
+  "name": "Arcane Armor",
+  "type": "feat",
+  "_id": "bDGJXEeUMqZ8eVel",
+  "img": "icons/equipment/chest/breastplate-layered-steel.webp",
+  "folder": "nToP5r4nIXNeP27o",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>As a Magic action while holding Smith's Tools, you can turn a suit of armor you are wearing into Arcane Armor. It stays Arcane Armor until you don another suit of armor or you die. While wearing your Arcane Armor, you gain the following benefits.</p><p><strong>No Strength Requirement.</strong> If the armor normally has a Strength requirement, it has none for you.</p><p><strong>Quick Don and Doff.</strong> You can don or doff the armor as a Utilize action, and it can't be removed against your will.</p><p><strong>Spellcasting Focus.</strong> You can use the Arcane Armor as a Spellcasting Focus for your Artificer spells.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Armorer 3",
+    "activities": {
+      "ZhKhuAx1IuleJBHJ": {
+        "type": "utility",
+        "_id": "ZhKhuAx1IuleJBHJ",
+        "sort": 100000,
+        "name": "Arcane Armor",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "arcane-armor",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

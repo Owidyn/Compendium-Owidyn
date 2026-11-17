@@ -79,4 +79,19 @@ assert.equal(nextJackpot(1, 7).streak, 2);
 assert.equal(nextJackpot(2, 4).streak, 0);
 assert.equal(nextJackpot(2, 7).streak, 0);
 assert.deepEqual(Array.from(nextJackpot(2, 7).results), Array.from({ length: 20 }, (_, index) => index + 1));
-console.log("PASS content, effect links, progression, resources, influx, suites and Jackpot rules");
+
+// Content before 0.4.1 left ASIs with old 15-character ids next to the current ones: one ASI per level remains,
+// the one holding a player's choice if any (re-keyed when its id is invalid), else the current one.
+const { dedupeAdvancements } = content.namespace;
+const clone = value => JSON.parse(JSON.stringify(value));
+const asi = (id, level, value = {}) => ({ _id: id, type: "AbilityScoreImprovement", level, value });
+const current = Object.fromEntries(CLASS_ADVANCEMENTS.map(a => [a._id, clone(a)]));
+const legacy = { ...clone(current), CrtmAdvASI00004: asi("CrtmAdvASI00004", 4), BNq9BNw1fvcofbXQ: asi("BNq9BNw1fvcofbXQ", 8),
+  CrtmAdvASI00012: asi("CrtmAdvASI00012", 12, { type: "asi", assignments: { int: 2 } }) };
+assert.equal(dedupeAdvancements(legacy, new Set(Object.keys(current))), true);
+const asis = Object.values(legacy).filter(a => a.type === "AbilityScoreImprovement");
+assert.deepEqual(asis.map(a => a.level).sort((a, b) => a - b), [4, 8, 12, 16]);
+assert.ok(Object.keys(legacy).every(id => /^[a-zA-Z0-9]{16}$/.test(id)));
+assert.deepEqual(asis.find(a => a.level === 12).value.assignments, { int: 2 }, "a player's choice is kept");
+assert.equal(dedupeAdvancements(clone(current), new Set(Object.keys(current))), false, "current content is left alone");
+console.log("PASS content, effect links, progression, resources, influx, suites, Jackpot rules and duplicate ASI repair");

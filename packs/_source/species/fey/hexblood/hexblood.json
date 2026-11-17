@@ -1,0 +1,152 @@
+{
+  "name": "Hexblood",
+  "type": "race",
+  "_id": "t7TiVrdd9ULR8mUz",
+  "img": "icons/magic/unholy/hand-claw-fire-green.webp",
+  "folder": "t3K7uSITFRdov5j7",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Hexbloods are people filled with fey magic by eldritch energy or mysterious witchcraft. Many became hexbloods after striking a bargain with a powerful hag, but other strange forces can also give birth to one. Their uncanny fey power shows itself as eerie clairvoyance and beguiling magic.</p><h3>Hexblood Traits</h3><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.KQ3l5Hd4UVAGfNKK]{Eerie Token}.</strong> As a Bonus Action, you can create a magical token by harmlessly removing a lock of your hair, a nail, or something similar. While the token exists, you gain the following benefits: <strong>Distant Message.</strong> As a Magic action, you can send a telepathic message of 25 words or fewer to a creature holding or carrying the token, as long as you are within 10 miles of it. <strong>Remote Viewing.</strong> While within 10 miles of the token, you can take a Magic action to extend your senses through it for 1 minute, until you have the Incapacitated condition, or until you end it (no action required). During this time, you see and hear from the token as if you were where it is. When this ends, the token is harmlessly destroyed. Unless destroyed early, the token lasts until you finish a Long Rest. Once you create a token, you can't do so again until you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.hRzpEqY1x8BYIViD]{Hex Magic}.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise Self} and @UUID[Compendium.dnd5e.spells24.Item.phbsplHex0000000]{Hex} prepared. You can cast each once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast them with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "hexblood",
+    "type": {
+      "value": "fey",
+      "custom": "",
+      "subtype": "Hexblood"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "WCD367TWA13mKtuY": {
+        "_id": "WCD367TWA13mKtuY",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "EO8HnorAzy9e0nmP": {
+        "_id": "EO8HnorAzy9e0nmP",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Hexblood Traits",
+        "title": "Hexblood Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.KQ3l5Hd4UVAGfNKK",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.hRzpEqY1x8BYIViD",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "eZ7G2O8EF82XcCNI": {
+        "_id": "eZ7G2O8EF82XcCNI",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Hex Magic",
+        "title": "Hex Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDisguiseSe",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHex0000000",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

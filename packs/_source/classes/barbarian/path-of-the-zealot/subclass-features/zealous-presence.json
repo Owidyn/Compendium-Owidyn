@@ -1,0 +1,309 @@
+{
+  "name": "Zealous Presence",
+  "type": "feat",
+  "_id": "PkwcDd4tfLZizAES",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "folder": "By0RaJomwVCvlcL8",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you gain Advantage on attack rolls and saving throws until the start of your next turn. Once you use this feature, you can't use it again until you finish a Long Rest, unless you expend a use of your Rage (no action required) to restore it.</p><section class=\"secret\" id=\"secret-gryVjPyZwUXZPZhk\"><p><strong>Foundry Note</strong></p><p>The effect gives Advantage on saving throws; ask for the Advantage on attack rolls.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Zealot 10",
+    "activities": {
+      "6kTMahAxWobrtQei": {
+        "type": "utility",
+        "_id": "6kTMahAxWobrtQei",
+        "sort": 100000,
+        "name": "Zealous Presence",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "hyW1P5RGdKjez3q4"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "10",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "kWKFhuoHYohmcRSX": {
+        "type": "utility",
+        "_id": "kWKFhuoHYohmcRSX",
+        "sort": 200000,
+        "name": "Restore with Rage",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:rage",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "zealous-presence",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "hyW1P5RGdKjez3q4",
+      "name": "Zealous Presence",
+      "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "fUw47XtcqnRZVQ0H"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DzdDq746s9aYxjC1"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "L2aivzg9FBL0jGUS"
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "QA2Hi4rZHZKPUXm8"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "OXeBNeBJMpcvbjEm"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "WYtSI47V9sAvvvYW"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Advantage on attack rolls and saving throws until the start of the zealot's next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "_id": "NE3rr0xIn7m7KaKX",
+  "name": "Repulsion Shield",
+  "type": "equipment",
+  "img": "icons/equipment/shield/heater-steel-segmented-purple.webp",
+  "folder": "9XopUUqImvakZshR",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You gain a +1 bonus to Armor Class while wielding this shield, in addition to its normal bonus.</p><p>The shield has 4 charges and regains 1d4 expended charges daily at dawn. While holding it, when a Large or smaller creature within 5 feet of you hits you with a melee attack roll, you can take a Reaction to expend 1 charge and push the attacker up to 15 feet straight away from you.</p>",
+      "chat": ""
+    },
+    "identifier": "repulsion-shield",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "price": {
+      "value": 410,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "4",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4"
+        }
+      ]
+    },
+    "activities": {
+      "oogUHAVFwxXKrhoA": {
+        "type": "utility",
+        "_id": "oogUHAVFwxXKrhoA",
+        "sort": 100000,
+        "name": "Repulsion",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A Large or smaller creature within 5 feet hits you with a melee attack"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "shield",
+      "baseItem": "shield"
+    },
+    "armor": {
+      "value": 2,
+      "magicalBonus": 1,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

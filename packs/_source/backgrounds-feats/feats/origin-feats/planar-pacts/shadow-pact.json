@@ -1,0 +1,196 @@
+{
+  "_id": "s5yljQh2RkRyY7W7",
+  "name": "Shadow Pact",
+  "type": "feat",
+  "img": "icons/magic/light/orb-shadow-blue.webp",
+  "folder": "CgeLHtyCXMpYAd5r",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "NnrMdMNzzacvfZd2": {
+        "type": "utility",
+        "_id": "NnrMdMNzzacvfZd2",
+        "sort": 100000,
+        "name": "Shroud of Shadows",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "5",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>(Prerequisite: Can't Have Another Planar Pact Feat)</em></p><p>You struck a bargain with a power of the Shadowfell. You gain the following benefits.</p><p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 30 feet instead.</p><p><strong>Shadow Blood.</strong> Whenever you roll a die to determine how many Hit Points you regain while you're entirely within Dim Light or Darkness, you can reroll the die if it shows a 1, and you must use the new roll.</p><p><strong>Shroud of Shadows.</strong> As a Bonus Action, you can surround yourself with a 5-foot Emanation of Dim Light for 1 minute. It ends early if you dismiss it (no action required) or if you have the Incapacitated condition. Once you use this benefit, you can't do so again until you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-mHToyjCKmViwF5DF\"><p><strong>Foundry Note</strong></p><p>The effect <em>Shadow Darkvision</em> gives 60 feet of Darkvision, or 30 more feet if you already have it. <em>Shroud of Shadows</em> spends its use; Shadow Blood is not automated.</p></section>",
+      "chat": ""
+    },
+    "identifier": "shadow-pact",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Can't Have Another Planar Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "6IUWtl1ZRjUA7LLM",
+      "name": "Shadow Darkvision",
+      "img": "icons/magic/light/orb-shadow-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "30",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "klFHb18YS4X6b2YR"
+          },
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "60",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "pMGVC5FssWY280Mx"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Darkvision 60 ft, or +30 ft to an existing Darkvision.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

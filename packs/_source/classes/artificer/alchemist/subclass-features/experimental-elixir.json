@@ -1,0 +1,828 @@
+{
+  "name": "Experimental Elixir",
+  "type": "feat",
+  "_id": "gipp6i2SwxyssGeb",
+  "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+  "folder": "6KgsSF7UP48Nfsd6",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you finish a Long Rest while holding Alchemist's Supplies, you can use them to magically produce two elixirs. For each, roll on the Experimental Elixir table to determine its effect, which is triggered when someone drinks it. The elixir appears in a vial that vanishes when the elixir is drunk or poured out; any elixir left when you finish a Long Rest vanishes with its vial.</p><p><strong>Drinking an Elixir.</strong> As a Bonus Action, a creature can drink the elixir or give it to another creature within 5 feet of itself.</p><p><strong>Creating Additional Elixirs.</strong> As a Magic action while holding Alchemist's Supplies, you can expend a spell slot to create another elixir, choosing its effect from the table instead of rolling.</p><p>At certain Artificer levels, you make more elixirs at the end of each Long Rest: three at level 5, four at level 9, and five at level 15.</p><h4>Experimental Elixir</h4><table><thead><tr><th>1d6</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td><strong>Healing.</strong> The drinker regains Hit Points equal to 2d8 plus your Intelligence modifier; this increases by 1d8 at Artificer levels 9 (3d8) and 15 (4d8).</td></tr><tr><td>2</td><td><strong>Swiftness.</strong> The drinker's Speed increases by 10 feet for 1 hour; the bonus increases at Artificer levels 9 (15 feet) and 15 (20 feet).</td></tr><tr><td>3</td><td><strong>Resilience.</strong> The drinker gains a +1 bonus to AC for 10 minutes; the duration increases at Artificer levels 9 (1 hour) and 15 (8 hours).</td></tr><tr><td>4</td><td><strong>Boldness.</strong> The drinker can roll 1d4 and add the number rolled to every attack roll and saving throw it makes for the next minute; the duration increases at Artificer levels 9 (10 minutes) and 15 (1 hour).</td></tr><tr><td>5</td><td><strong>Flight.</strong> The drinker gains a Fly Speed of 10 feet for 10 minutes; it increases at Artificer levels 9 (20 feet) and 15 (30 feet).</td></tr><tr><td>6</td><td><strong>Choice.</strong> You choose the elixir's effect from the other rows of this table.</td></tr></tbody></table><section class=\"secret\" id=\"secret-Jm9r6Wg0ok9uNWdT\"><p><strong>Foundry Note</strong></p><p>The uses are your elixirs. <em>Roll Elixir</em> rolls the table; each drink activity spends an elixir and applies its effect. <em>Create Elixir</em> spends a spell slot: restore one use yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.alchemist.elixirs",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Alchemist 3",
+    "activities": {
+      "F6Ar3XHj69un8rA0": {
+        "type": "utility",
+        "_id": "F6Ar3XHj69un8rA0",
+        "sort": 100000,
+        "name": "Roll Elixir",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Experimental Elixir",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "AcVfRUUpfBcC2iT4": {
+        "type": "heal",
+        "_id": "AcVfRUUpfBcC2iT4",
+        "sort": 200000,
+        "name": "Elixir of Healing",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "A creature drinks or administers the elixir"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@scale.alchemist.elixir-healing + @abilities.int.mod"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "GKILgBHxaS4132e4": {
+        "type": "utility",
+        "_id": "GKILgBHxaS4132e4",
+        "sort": 300000,
+        "name": "Elixir of Swiftness",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "A creature drinks or administers the elixir"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "GKILgBHxaS4132e4"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "CdnKqS62vU0SdAR7": {
+        "type": "utility",
+        "_id": "CdnKqS62vU0SdAR7",
+        "sort": 400000,
+        "name": "Elixir of Resilience",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "A creature drinks or administers the elixir"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "CdnKqS62vU0SdAR7"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "7zrI2DCK2rqPTpqb": {
+        "type": "utility",
+        "_id": "7zrI2DCK2rqPTpqb",
+        "sort": 500000,
+        "name": "Elixir of Boldness",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "A creature drinks or administers the elixir"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "7zrI2DCK2rqPTpqb"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "4UWogsrsZFTlp4iZ": {
+        "type": "utility",
+        "_id": "4UWogsrsZFTlp4iZ",
+        "sort": 600000,
+        "name": "Elixir of Flight",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "A creature drinks or administers the elixir"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4UWogsrsZFTlp4iZ"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "cloQCjHDTobhrVsx": {
+        "type": "utility",
+        "_id": "cloQCjHDTobhrVsx",
+        "sort": 700000,
+        "name": "Create Elixir",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "experimental-elixir",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "GKILgBHxaS4132e4",
+      "name": "Elixir of Swiftness",
+      "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "@scale.alchemist.elixir-speed",
+            "type": "owidyn-formula-add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "YyA1iBZc0KbxrjE9"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Speed increase.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "CdnKqS62vU0SdAR7",
+      "name": "Elixir of Resilience",
+      "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Q6fEEII25KywauXH"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1 AC.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "7zrI2DCK2rqPTpqb",
+      "name": "Elixir of Boldness",
+      "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.attack.mwak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "QWB5x1FPuN9b2BXX"
+          },
+          {
+            "key": "system.rolls.attack.rwak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Y4v2gZF3RX8wZn6z"
+          },
+          {
+            "key": "system.rolls.attack.msak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "gseKi6Th0DFCMiEr"
+          },
+          {
+            "key": "system.rolls.attack.rsak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "AYBgj5P0MY84WD8e"
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mlQcoGZj5vFADunP"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to attack rolls and saving throws.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "4UWogsrsZFTlp4iZ",
+      "name": "Elixir of Flight",
+      "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@scale.alchemist.elixir-fly",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "2eKQpJ7saAzQOUCn"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Fly Speed.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "_id": "lRuuK26PYOCR7NaZ",
+  "name": "Boon of Recovery",
+  "type": "feat",
+  "img": "icons/magic/life/cross-area-circle-green-white.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "QGdSzWOsXPhDCUgE": {
+        "type": "heal",
+        "_id": "QGdSzWOsXPhDCUgE",
+        "sort": 100000,
+        "name": "Last Stand",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You would be reduced to 0 Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1 + floor(@attributes.hp.max / 2)"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "YtxChIIPzZWU1TKN": {
+        "type": "heal",
+        "_id": "YtxChIIPzZWU1TKN",
+        "sort": 200000,
+        "name": "Recover Vitality",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "10"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "whole",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "10",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "SfxMZhD3gPGWXBOV": {
+        "_id": "SfxMZhD3gPGWXBOV",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1,
+          "max": 30
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Last Stand.</strong> When you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain Hit Points equal to half your Hit Point maximum. Once you use this benefit, you can't use it again until you finish a Long Rest.</p><p><strong>Recover Vitality.</strong> You have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll them, and regain Hit Points equal to the total. You regain all the expended dice when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-aliP71fZLjIaASPp\"><p><strong>Foundry Note</strong></p><p>The uses of the feat are the d10s of Recover Vitality: choose how many to spend in the dialog. Last Stand sets you to 1 Hit Point plus half your maximum: set your Hit Points to that total.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-recovery",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "_id": "CTRnvkON3f6v3e8e",
+  "name": "Treacherous Allure",
+  "type": "feat",
+  "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "sJkkdqPAGZTr0r8v": {
+        "_id": "sJkkdqPAGZTr0r8v",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "eOteucImFWIaalzB": {
+        "_id": "eOteucImFWIaalzB",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Enchanting Presence",
+        "title": "Enchanting Presence",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCharmPerso",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Enchanting Presence.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]{Charm Person} prepared. You can cast it without a spell slot, and you must finish a Long Rest before you can cast it this way again; you can also cast it with spell slots of the appropriate level you have. Its spellcasting ability is the ability increased by this feat.</p><p><strong>Inevitable Betrayal.</strong> You have Advantage on attack rolls against creatures that have the &amp;Reference[Charmed] condition.</p>",
+      "chat": ""
+    },
+    "identifier": "treacherous-allure",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

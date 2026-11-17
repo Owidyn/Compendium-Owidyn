@@ -1,0 +1,164 @@
+{
+  "_id": "UtbtuyzegNOmOSak",
+  "name": "Potent Dragonmark",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+  "folder": "K2FEiJR0BdVXKWt7",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "MyWVshxoPt8OFBww": {
+        "type": "utility",
+        "_id": "MyWVshxoPt8OFBww",
+        "sort": 100000,
+        "name": "Dragonmark Spellcasting",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a spell of your Dragonmark feat"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "XNapz1AzcsmuirLx": {
+        "_id": "XNapz1AzcsmuirLx",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Any Dragonmark Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Dragonmark Preparation.</strong> You always have the spells of your Spells of the Mark list (if any) prepared.</p><p><strong>Dragonmark Spellcasting.</strong> You have one extra spell slot to cast the spells granted by your Dragonmark feat. Its level is half your level (round up), to a maximum of level 5. You regain the expended slot when you finish a Short or Long Rest. You can use this slot only to cast a spell you have prepared because of your Dragonmark feat or the Dragonmark Preparation benefit of this feat.</p><section class=\"secret\" id=\"secret-4fkmqwIQAdeNTIpE\"><p><strong>Foundry Note</strong></p><p>The Ability Score Increase must be the spellcasting ability of your Dragonmark feat. Add the Spells of the Mark to your spells as always prepared. The use of the feat is the extra slot: cast the spell at the slot level of ceil(level / 2), up to 5, without spending a slot of your class.</p></section>",
+      "chat": ""
+    },
+    "identifier": "potent-dragonmark",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Any Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

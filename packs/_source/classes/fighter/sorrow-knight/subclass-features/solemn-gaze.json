@@ -1,0 +1,201 @@
+{
+  "name": "Solemn Gaze",
+  "type": "feat",
+  "_id": "E9cXWeTK5ovtFfgF",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-teal.webp",
+  "folder": "DXuTDmkSX7nGAdBb",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You see through the darkness around you and recognize the darkness in others. You gain the following benefits.</p><p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet; if you already have it, its range increases by 60 feet.</p><p><strong>Empathetic Inquiry.</strong> As a Magic action, you can try to search the mind of a creature you can see within 30 feet. It must succeed on a Wisdom saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus), or you learn an emotion that looms large in its mind, such as a worry, a love, or a hatred. If it can see you, it knows you have read its emotions. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(1, @abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Sorrow Knight 3",
+    "activities": {
+      "emEfIF2fLdJmbBvZ": {
+        "type": "save",
+        "_id": "emEfIF2fLdJmbBvZ",
+        "sort": 100000,
+        "name": "Empathetic Inquiry",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "solemn-gaze",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "yLhUFLKgWNLpvmBY",
+      "name": "Solemn Gaze",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "60",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "jUyNnApOCsYA4hKE"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Darkvision 60 feet, or +60 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

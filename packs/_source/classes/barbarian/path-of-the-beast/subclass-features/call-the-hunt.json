@@ -1,0 +1,244 @@
+{
+  "name": "Call the Hunt",
+  "type": "feat",
+  "_id": "xc1o6pyRAyH2sbE6",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "folder": "C03pgEUSi3m7btSA",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>The beast within you grows so powerful that you can spread its ferocity to others. When you enter your Rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one). You gain 5 Temporary Hit Points for each creature that accepts.</p><p>Until the Rage ends, each chosen creature can use the following benefit once on each of its turns: when it hits a target with an attack roll and deals damage, it can roll a d6 and add the number rolled to the damage.</p><p>You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-CjDIgQbkqq0FHukZ\"><p><strong>Foundry Note</strong></p><p>Scale the use to the number of creatures (5 Temporary Hit Points each).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Beast 14",
+    "activities": {
+      "o6J4Nby99u7IvcI4": {
+        "type": "heal",
+        "_id": "o6J4Nby99u7IvcI4",
+        "sort": 100000,
+        "name": "Call the Hunt",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You enter your Rage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "max(1, @abilities.con.mod) - 1"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "5",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": "5"
+          }
+        }
+      },
+      "RxCQ4UnJaF7F5KhI": {
+        "type": "damage",
+        "_id": "RxCQ4UnJaF7F5KhI",
+        "sort": 200000,
+        "name": "Hunt Die (Ally)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, a chosen creature hits and deals damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "call-the-hunt",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "name": "Fey Wanderer",
+  "type": "subclass",
+  "_id": "oHSVPGAR8WFB2rpF",
+  "img": "icons/magic/nature/leaf-glow-teal.webp",
+  "folder": "vWI9KUsOUAIDzi8s",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Wield Fey Mirth and Fury</p></blockquote><p>A fey mystique surrounds you, thanks to the boon of an archfey or to a place in the Feywild that transformed you. However you gained your fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</p><h3>Fey Wanderer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.MOlPK9HFM0ocSHOg]{Dreadful Strikes}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.GxVLC3dtbT22A0mo]{Fey Wanderer Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.oKAc2PWNb5gCoMVL]{Otherworldly Glamour}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HW9pDtFTpvk1nB4Z]{Beguiling Twist}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.CMHz0BWZ6vR0lCOt]{Fey Reinforcements}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.uNboVLIjON5sJlyJ]{Misty Wanderer}</td></tr></tbody></table><h3>Fey Wanderer Spells</h3><table><thead><tr><th>Ranger Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]{Charm Person}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty Step}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.qFaKFBbHNtVhJcL9]{Summon Fey}</td></tr><tr><td>13</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDimensionD]{Dimension Door}</td></tr><tr><td>17</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMislead000]{Mislead}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "fey-wanderer",
+    "classIdentifier": "ranger",
+    "advancement": {
+      "TZBz0O3souhYkmtz": {
+        "_id": "TZBz0O3souhYkmtz",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MOlPK9HFM0ocSHOg",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.GxVLC3dtbT22A0mo",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.oKAc2PWNb5gCoMVL",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "IuqrzqsC7xveBBPB": {
+        "_id": "IuqrzqsC7xveBBPB",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HW9pDtFTpvk1nB4Z",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ti0ii9NIEMnah64b": {
+        "_id": "ti0ii9NIEMnah64b",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CMHz0BWZ6vR0lCOt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "iLGxqAVzanW2FE0P": {
+        "_id": "iLGxqAVzanW2FE0P",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.uNboVLIjON5sJlyJ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "aQN6GHTGqyisLJbQ": {
+        "_id": "aQN6GHTGqyisLJbQ",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Fey Wanderer Spells",
+        "title": "Fey Wanderer Spells",
+        "hint": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCharmPerso",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "a0xjWymWanYBssxQ": {
+        "_id": "a0xjWymWanYBssxQ",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Fey Wanderer Spells",
+        "title": "Fey Wanderer Spells",
+        "hint": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMistyStep0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "yp1mzzM61RSNFGyJ": {
+        "_id": "yp1mzzM61RSNFGyJ",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Fey Wanderer Spells",
+        "title": "Fey Wanderer Spells",
+        "hint": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.qFaKFBbHNtVhJcL9",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CGhjqni9YH4ccKGB": {
+        "_id": "CGhjqni9YH4ccKGB",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Fey Wanderer Spells",
+        "title": "Fey Wanderer Spells",
+        "hint": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDimensionD",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "b2BiZHorse6vLJ51": {
+        "_id": "b2BiZHorse6vLJ51",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Fey Wanderer Spells",
+        "title": "Fey Wanderer Spells",
+        "hint": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMislead000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "JNYJljPTHr5HomMW": {
+        "_id": "JNYJljPTHr5HomMW",
+        "type": "Trait",
+        "level": 3,
+        "name": "Otherworldly Glamour",
+        "title": "Otherworldly Glamour",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:dec",
+                "skills:prf",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "FPlNYrHIQqJJ2lPr": {
+        "_id": "FPlNYrHIQqJJ2lPr",
+        "type": "ScaleValue",
+        "name": "Dreadful Strikes",
+        "title": "Dreadful Strikes",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "dreadful-strikes",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 4,
+              "modifiers": []
+            },
+            "11": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

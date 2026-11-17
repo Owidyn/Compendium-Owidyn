@@ -1,0 +1,105 @@
+{
+  "_id": "yutpNhWXoGdyuTJB",
+  "name": "Boon of Poison Mastery",
+  "type": "feat",
+  "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "p2vYsjoZMYBKqCf1": {
+        "_id": "p2vYsjoZMYBKqCf1",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "TJBi2gTpekmj971e": {
+        "_id": "TJBi2gTpekmj971e",
+        "type": "Trait",
+        "level": 0,
+        "name": "Antitoxic",
+        "title": "Antitoxic",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "di:poison",
+            "ci:poisoned"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Antitoxic.</strong> You have Immunity to Poison damage and the Poisoned condition.</p><p><strong>Perfect Poisoner.</strong> Once per turn, when you roll dice to determine the Poison damage a creature takes from your attack, spell, or feature, you can use the highest number possible for each die instead.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-poison-mastery",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "name": "Inner Magic",
+  "type": "feat",
+  "_id": "LUEpcQatUgKGRnnU",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "folder": "vzMm8Zi2FMbA8Ep4",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Magic within you can enhance your body or mind. When you finish a Long Rest, choose one of the following benefits; it lasts until you choose another. As a Bonus Action, you can switch to a different benefit, a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Ardor.</strong> You have Advantage on Charisma ability checks and on saving throws to avoid or end the Frightened condition.</p><p><strong>Mobility.</strong> Your Speed increases by 10 feet, and climbing and swimming don't cost you extra movement.</p><p><strong>Vigor.</strong> You gain Temporary Hit Points equal to your Proficiency Bonus, and you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</p><section class=\"secret\" id=\"secret-5QG9SDf6xVHJ3EAF\"><p><strong>Foundry Note</strong></p><p>Each activity applies its benefit (Vigor also gives the Temporary Hit Points); remove the previous benefit's effect yourself. After a Long Rest, the choice is free: use the activity and restore the use. The Advantage against Frightened is not automated.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Duskling",
+    "activities": {
+      "zpEQCoUEAa3UywoV": {
+        "type": "utility",
+        "_id": "zpEQCoUEAa3UywoV",
+        "sort": 100000,
+        "name": "Ardor",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "smc1oIN31rUNNpa6"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Sil2uGFp3sP8KBZA": {
+        "type": "utility",
+        "_id": "Sil2uGFp3sP8KBZA",
+        "sort": 200000,
+        "name": "Mobility",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9vHHyUCk59iksS3T"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "E7wCJUKsHd4ARQiz": {
+        "type": "heal",
+        "_id": "E7wCJUKsHd4ARQiz",
+        "sort": 300000,
+        "name": "Vigor",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "BzrDVcupY2IwcdOB"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "inner-magic",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "smc1oIN31rUNNpa6",
+      "name": "Ardor",
+      "img": "icons/magic/nature/moon-crescent.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "2Sv0O07FbGPRkxhc"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You have Advantage on Charisma ability checks and on saving throws to avoid or end the Frightened condition.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9vHHyUCk59iksS3T",
+      "name": "Mobility",
+      "img": "icons/magic/nature/moon-crescent.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "VchrNfihYpcBcwlr"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Your Speed increases by 10 feet, and climbing and swimming don't cost you extra movement.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "BzrDVcupY2IwcdOB",
+      "name": "Vigor",
+      "img": "icons/magic/nature/moon-crescent.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ath.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "xTN5RquashHX0wVo"
+          },
+          {
+            "key": "system.skills.acr.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DzK5wPghFFaQFbka"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You gain Temporary Hit Points equal to your Proficiency Bonus, and you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

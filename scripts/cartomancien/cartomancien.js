@@ -5,6 +5,7 @@ import {
   ensureTarots,
   getAvailableCartomancienSpellSources,
   importSpellToActor,
+  repairClassAdvancements,
   syncActorContent
 } from "./content.js";
 import { influxLevel, isConsecutiveDraw, cantripCount } from "./rules.js";
@@ -1011,7 +1012,9 @@ Hooks.once("ready", async () => {
       await migrated;
       await ensureContent({ notify: true });
       // The Cartomanciens made before the Tarots feature (content 0.4.0) get it, with the state of their deck
+      // and, from content 0.4.1, lose the duplicate ASIs of the old 15-character ids
       for (const actor of game.actors.filter(a => getCartomancerLevel(a))) {
+        await repairClassAdvancements(actor);
         await ensureTarots(actor);
         await refreshTarots(actor);
       }

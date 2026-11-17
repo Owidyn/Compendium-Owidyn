@@ -1,0 +1,157 @@
+{
+  "name": "Spreading Spores",
+  "type": "feat",
+  "_id": "ImkCjTLhNR1TPopk",
+  "img": "icons/consumables/mushrooms/alien-spotted-blue.webp",
+  "folder": "e4qAu10I9kjDT1zK",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action while your Symbiotic Entity is active, you can hurl spores up to 30 feet away, where they swirl in a 10-foot Cube for 1 minute. They disappear early if you use this feature again, if you dismiss them as a Bonus Action, or if your Symbiotic Entity ends. Whenever a creature moves into the Cube or starts its turn there, it takes your Halo of Spores damage unless it succeeds on a Constitution saving throw against your spell save DC; a creature takes this damage no more than once per turn. While the Cube persists, you can't take your Halo of Spores Reaction.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of Spores 10",
+    "activities": {
+      "5MwyQ21NGZklxTUd": {
+        "type": "save",
+        "_id": "5MwyQ21NGZklxTUd",
+        "sort": 100000,
+        "name": "Spreading Spores",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "cube",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.circle-of-spores.halo"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "spreading-spores",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

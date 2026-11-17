@@ -1,0 +1,250 @@
+{
+  "name": "Reanimator's Skill Set",
+  "type": "feat",
+  "_id": "zaIB2BtoOJPsDE3H",
+  "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+  "folder": "MnPXC7hi7pxE8O9l",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Jolt to Life.</strong> When you cast @UUID[Compendium.dnd5e.spells24.Item.phbsplSparetheDy]{Spare the Dying}, you can modify it to send a jolt of electricity through the target, reviving it: the target regains Hit Points equal to your Artificer level, and each creature of your choice in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking 2d4 Lightning damage on a failure or half as much on a success. You can modify the spell this way a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a Long Rest. The Lightning damage increases by 1d4 at Artificer levels 11 (3d4) and 17 (4d4).</p><p><strong>Reanimator's Tools.</strong> You gain proficiency with Alchemist's Supplies. If you already have it, you gain proficiency with one other type of Artisan's Tools of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Reanimator 3",
+    "activities": {
+      "yKuDzaQjHCkCSFy1": {
+        "type": "heal",
+        "_id": "yKuDzaQjHCkCSFy1",
+        "sort": 100000,
+        "name": "Jolt to Life",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Spare the Dying"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@classes.artificer.levels"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "axOyFTJIn3aEHZBZ": {
+        "type": "save",
+        "_id": "axOyFTJIn3aEHZBZ",
+        "sort": 200000,
+        "name": "Jolt to Life (Lightning)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Same Jolt to Life"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "spec",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.reanimator.jolt"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "lightning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "reanimators-skill-set",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

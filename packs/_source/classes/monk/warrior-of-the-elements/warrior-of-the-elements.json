@@ -1,0 +1,172 @@
+{
+  "name": "Warrior of the Elements",
+  "type": "subclass",
+  "_id": "2EWAc0lyT7bAvza4",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "folder": "NZt6z1QtKEoDKBA2",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Wield Strikes and Bursts of Elemental Power</p></blockquote><p>Warriors of the Elements tap into the power of the Elemental Planes. Through their supernatural focus, they briefly tame the energy of the Elemental Chaos to empower themselves in and out of battle.</p><h3>Warrior of the Elements Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.6mHgN7dLzQfqZ4V4]{Elemental Attunement}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.eyiOXSZiMiiBYEaM]{Manipulate Elements}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.EgygSPFMTD8TLOap]{Elemental Burst}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Wgk9dMtT79LeEURN]{Stride of the Elements}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.3vVqyv7FFhe7LZAt]{Elemental Epitome}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "warrior-of-the-elements",
+    "classIdentifier": "monk",
+    "advancement": {
+      "lb6KduIqu8SWPY1L": {
+        "_id": "lb6KduIqu8SWPY1L",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.6mHgN7dLzQfqZ4V4",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.eyiOXSZiMiiBYEaM",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "XS6gE5yig53o0FDu": {
+        "_id": "XS6gE5yig53o0FDu",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.EgygSPFMTD8TLOap",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "sHGWbsvP4lnUARg2": {
+        "_id": "sHGWbsvP4lnUARg2",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Wgk9dMtT79LeEURN",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "uVASxE40ahUUMaa5": {
+        "_id": "uVASxE40ahUUMaa5",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.3vVqyv7FFhe7LZAt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "2OosKtzZLSFoQXWa": {
+        "_id": "2OosKtzZLSFoQXWa",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Manipulate Elements",
+        "title": "Manipulate Elements",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplElementali",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "atwill",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "name": "Vestige Power",
+  "type": "feat",
+  "_id": "A3oZI7wIYP3pemUs",
+  "img": "icons/magic/unholy/orb-glowing-purple.webp",
+  "folder": "3meuxt6L1V2EV8n4",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Your Vestige Companion now regains its use of Divine Power whenever you finish a Short or Long Rest or use your Magical Cunning feature. In addition, while within 30 feet of your Vestige Companion, you have Resistance to the same damage types as the vestige.</p><section class=\"secret\" id=\"secret-jVAJ5XXGqv5in6dR\"><p><strong>Foundry Note</strong></p><p>Turn on the effect matching your vestige's form (only while within 30 feet of it).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Vestige Patron 6",
+    "activities": {},
+    "enchant": {},
+    "identifier": "vestige-power",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "1oPvsrJUAmBTeeqp",
+      "name": "Vestige Power (Radiant)",
+      "img": "icons/magic/unholy/orb-glowing-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "HJz9a33EBSTvVgaU"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to radiant damage within 30 feet of the vestige.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "CD5bQjYLDjfOQO9q",
+      "name": "Vestige Power (Fire)",
+      "img": "icons/magic/unholy/orb-glowing-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "an3BkCSAVEeWr1wm"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to fire damage within 30 feet of the vestige.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ngQEwGEQmgeirO4H",
+      "name": "Vestige Power (Necrotic)",
+      "img": "icons/magic/unholy/orb-glowing-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "CY8oYMxohNVhcofi"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to necrotic damage within 30 feet of the vestige.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

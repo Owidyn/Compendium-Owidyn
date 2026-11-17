@@ -1,0 +1,110 @@
+{
+  "name": "Power of the Wilds",
+  "type": "feat",
+  "_id": "7keD3j6WrmCHRacF",
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "folder": "BEiE4ffTXWJKpGaO",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you activate your Rage, you gain one of the following options of your choice.</p><p><strong>Falcon.</strong> While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.</p><p><strong>Lion.</strong> While your Rage is active, your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.</p><p><strong>Ram.</strong> While your Rage is active, you can give a Large or smaller creature the Prone condition when you hit it with a melee attack.</p><section class=\"secret\" id=\"secret-erpVsJorJiCvMso7\"><p><strong>Foundry Note</strong></p><p>Turn on the <em>Falcon</em> effect while you rage with that option and wear no armor.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Wild Heart 14",
+    "activities": {},
+    "enchant": {},
+    "identifier": "power-of-the-wilds",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "ZDI4h6y3YWk209TF",
+      "name": "Falcon",
+      "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "cLro9hnCcE3Plx4c"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

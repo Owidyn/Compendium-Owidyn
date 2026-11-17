@@ -1,0 +1,299 @@
+{
+  "name": "Giant's Might",
+  "type": "feat",
+  "_id": "YVdIX4XknliIW4Mc",
+  "img": "icons/magic/earth/construct-stone-long-arms.webp",
+  "folder": "Q0eCd0d4MXww9RUn",
+  "sort": 900000,
+  "system": {
+    "description": {
+      "value": "<p>You can imbue yourself with the might of giants. As a Bonus Action, you magically gain the following benefits for 1 minute. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><ul><li>If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room, your size doesn't change.</li><li>You have Advantage on Strength checks and Strength saving throws.</li><li>Once on each of your turns, one of your attacks with a weapon or an Unarmed Strike can deal an extra 1d6 damage to a target on a hit (1d8 at Fighter level 10, 1d10 at level 18).</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Rune Knight 3",
+    "activities": {
+      "TT7hTsQTXp4PCWWe": {
+        "type": "utility",
+        "_id": "TT7hTsQTXp4PCWWe",
+        "sort": 100000,
+        "name": "Giant's Might",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Oc8iqiFl9Bcydw20"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "9J76zm5Pr2XGfWTw": {
+        "type": "damage",
+        "_id": "9J76zm5Pr2XGfWTw",
+        "sort": 200000,
+        "name": "Giant's Might (Extra Damage)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, you hit with a weapon or an Unarmed Strike"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.rune-knight.might"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "giants-might",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "Oc8iqiFl9Bcydw20",
+      "name": "Giant's Might",
+      "img": "icons/magic/earth/construct-stone-long-arms.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "i4NuugLETECfDASP"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "KuUD2r43w8XRREue"
+          },
+          {
+            "key": "system.traits.size",
+            "value": "lg",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "RedzK7L2oBhewKmY"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Large (Huge with Runic Juggernaut), Advantage on Strength checks and saves, extra damage once per turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

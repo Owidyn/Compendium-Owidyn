@@ -1,0 +1,179 @@
+{
+  "name": "Shape-Shifter",
+  "type": "feat",
+  "_id": "HuhnLBn2HSQDIoEA",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "nqJJn2ktj2B23tIG",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>As an action, you can change your appearance and your voice. You decide the details, including your coloration, hair length, and sex, and you can adjust your height and weight and switch your size between Medium and Small. You can look like a member of another playable species, though none of your game statistics change. You can't copy the appearance of someone you have never seen, and your new form must have the same basic arrangement of limbs as yours. Your clothing and equipment don't change.</p><p>While shape-shifted this way, you have Advantage on Charisma checks. You keep the new form until you take an action to return to your true form.</p><section class=\"secret\" id=\"secret-YEZWuelyznhbhKcT\"><p><strong>Foundry Note</strong></p><p>The activity <em>Shape-Shift</em> turns on the effect <em>Shape-Shifted</em> (Advantage on Charisma checks), and turns it off again to return to your true form.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Changeling",
+    "activities": {
+      "Exrkxhlj6uR3wKCf": {
+        "type": "utility",
+        "_id": "Exrkxhlj6uR3wKCf",
+        "sort": 100000,
+        "name": "Shape-Shift",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "shape-shifter",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "eMPNfr8sSCZKDslf",
+      "name": "Shape-Shifted",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mjuNB12DMHgvFgAE"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Charisma checks while shape-shifted.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "compendium-owidyn": {
+      "toggleEffect": "eMPNfr8sSCZKDslf"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

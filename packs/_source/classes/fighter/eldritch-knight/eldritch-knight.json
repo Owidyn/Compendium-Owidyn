@@ -1,0 +1,262 @@
+{
+  "name": "Eldritch Knight",
+  "type": "subclass",
+  "_id": "vCbBeQt1oTgvmZUn",
+  "img": "icons/magic/fire/dagger-rune-enchant-teal-purple.webp",
+  "folder": "z0u91ZbJQ40EnQz8",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Support Combat Skills with Arcane Magic</p></blockquote><p>Eldritch Knights combine the martial mastery of all Fighters with a careful study of magic. Their spells complement and extend their combat skills, shoring up their armor and letting them take on many foes at once with explosive magic.</p><h3>Eldritch Knight Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Ud8LbQSSqYBJAg7W]{Spellcasting}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jzALEZw6oT4Uhm2M]{War Bond}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.I17WmfwBZkElM2ym]{War Magic}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.QmTdto4mIHQKSQbw]{Eldritch Strike}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.3cj87KiJghFHtmDD]{Arcane Charge}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.5DGEuQLqj8cX8khR]{Improved War Magic}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "eldritch-knight",
+    "classIdentifier": "fighter",
+    "advancement": {
+      "y4n8vxkvnecrwnvp": {
+        "_id": "y4n8vxkvnecrwnvp",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Ud8LbQSSqYBJAg7W",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jzALEZw6oT4Uhm2M",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "h0nKkTHmbbAGMiKR": {
+        "_id": "h0nKkTHmbbAGMiKR",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.I17WmfwBZkElM2ym",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "SEJt8RVFSznlzlRv": {
+        "_id": "SEJt8RVFSznlzlRv",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QmTdto4mIHQKSQbw",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CYwskakzyfxC5MtJ": {
+        "_id": "CYwskakzyfxC5MtJ",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.3cj87KiJghFHtmDD",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "0NgPnCbc4K4KPzFG": {
+        "_id": "0NgPnCbc4K4KPzFG",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5DGEuQLqj8cX8khR",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "qTwHAbefNZPU0NVQ": {
+        "_id": "qTwHAbefNZPU0NVQ",
+        "type": "ScaleValue",
+        "name": "Max Prepared Spells",
+        "title": "Max Prepared Spells",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "max-prepared",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 4
+            },
+            "6": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "8": {
+              "value": 6
+            },
+            "9": {
+              "value": 6
+            },
+            "10": {
+              "value": 7
+            },
+            "11": {
+              "value": 8
+            },
+            "12": {
+              "value": 8
+            },
+            "13": {
+              "value": 9
+            },
+            "14": {
+              "value": 10
+            },
+            "15": {
+              "value": 10
+            },
+            "16": {
+              "value": 11
+            },
+            "17": {
+              "value": 11
+            },
+            "18": {
+              "value": 11
+            },
+            "19": {
+              "value": 12
+            },
+            "20": {
+              "value": 13
+            }
+          }
+        }
+      },
+      "pisP4umWKf8wirFF": {
+        "_id": "pisP4umWKf8wirFF",
+        "type": "ScaleValue",
+        "name": "Cantrips Known",
+        "title": "Cantrips Known",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "cantrips-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "10": {
+              "value": 3
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "third",
+      "ability": "int",
+      "preparation": {
+        "formula": "@scale.eldritch-knight.max-prepared"
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

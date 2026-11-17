@@ -1,0 +1,138 @@
+{
+  "_id": "rmt8UG3711Vp8N2A",
+  "name": "War Caster",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "uVLlffglsWuzrThA": {
+        "_id": "uVLlffglsWuzrThA",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Concentration.</strong> You have Advantage on Constitution saving throws that you make to maintain Concentration.</p><p><strong>Reactive Spell.</strong> When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at it instead of making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</p><p><strong>Somatic Components.</strong> You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</p>",
+      "chat": ""
+    },
+    "identifier": "war-caster",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "0YAAFKsdO0jHfU4O",
+      "name": "War Caster",
+      "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.concentration.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "MgsaIYQx25A4zdRL"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Concentration saving throws.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "_id": "BjdUBgjNFmzGJx7l",
+  "name": "Pact of the Legion",
+  "type": "feat",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "folder": "xKTk3ZyCsz8XXqhx",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You learn the @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar} spell and can cast it as a Magic action without expending a spell slot. When you cast it, you summon a Fel Imp familiar.</p><p>In addition, when you take the Attack action, you can forgo one of your own attacks to let your familiar make one attack with its Reaction.</p><section class=\"secret\" id=\"secret-Iz0ktydvVHD4Znq8\"><p><strong>Foundry Note</strong></p><p>The Fel Imp stat block is in D&D: World of Warcraft; use an Imp or the familiar of your choice.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 1,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "YMYguasPZ8uoX2QC": {
+        "type": "cast",
+        "_id": "YMYguasPZ8uoX2QC",
+        "sort": 100000,
+        "name": "Find Familiar (Pact of the Legion)",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplFindFamili",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "pact-of-the-legion",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

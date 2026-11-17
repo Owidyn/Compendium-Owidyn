@@ -1,0 +1,291 @@
+{
+  "_id": "A9a38VrTMWKbJ6vv",
+  "name": "Watchers",
+  "type": "feat",
+  "img": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+  "folder": "13Z2QY6ujzN3RLir",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "VI56MjlHY4TxHUAA": {
+        "type": "utility",
+        "_id": "VI56MjlHY4TxHUAA",
+        "sort": 100000,
+        "name": "Heightened Suspicion",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You take the Search action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Bonus to the check",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "ZCz42Nff6zBwgg5C": {
+        "type": "save",
+        "_id": "ZCz42Nff6zBwgg5C",
+        "sort": 200000,
+        "name": "Incessant Watchers",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Immediately after you roll a 1 on the d20 of a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "fZxNB5GyzAy3uGHx",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "jWY8QnTidO1NEiQG": {
+        "_id": "jWY8QnTidO1NEiQG",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Borrowed Eyes",
+        "title": "Borrowed Eyes",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpeakwithA",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Ravenloft Campaign)</em></p><p>Something unnatural is always watching you, in the shape of scurrying vermin and other eerie creatures. You gain the following features.</p><p><strong>Borrowed Eyes.</strong> @UUID[Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H]{Beast Sense} and @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with Animals} are always prepared for you. You can cast each of them without a spell slot, and you must finish a Long Rest before you can cast it this way again; you can also cast them with spell slots of the appropriate level you have.</p><p><strong>Heightened Suspicion.</strong> Whenever you take the Search action, you can roll 1d4 and add the number rolled to any ability check you make as part of that action.</p><p><strong>Incessant Watchers.</strong> You have Disadvantage on saving throws against the @UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying} spell. In addition, immediately after you roll a 1 on the d20 of a D20 Test, paranoia threatens to overwhelm you. Make a Wisdom saving throw (DC 13 plus your Proficiency Bonus). On a failure, you have Disadvantage on D20 Tests for 1 minute. You can repeat the save at the end of each of your turns, ending the effect on a success.</p><section class=\"secret\" id=\"secret-WmDBBGhLPmmdV5GD\"><p><strong>Foundry Note</strong></p><p><em>Heightened Suspicion</em> rolls the 1d4 to add to the check. <em>Incessant Watchers</em> is a Wisdom saving throw against DC 13 + your Proficiency Bonus; on a failure, apply its effect (Disadvantage on D20 Tests, not automated).</p></section>",
+      "chat": ""
+    },
+    "identifier": "watchers",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Ravenloft Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "fZxNB5GyzAy3uGHx",
+      "name": "Incessant Watchers",
+      "img": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Disadvantage on D20 Tests for 1 minute. Repeat the save at the end of each of your turns, ending the effect on a success.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

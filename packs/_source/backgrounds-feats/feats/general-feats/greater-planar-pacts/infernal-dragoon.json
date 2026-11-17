@@ -1,0 +1,326 @@
+{
+  "_id": "IUHENhBeyRoY4prf",
+  "name": "Infernal Dragoon",
+  "type": "feat",
+  "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+  "folder": "hZXEZhLBP1OnVB49",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "PhJZQX3HtuEEsHn0": {
+        "type": "save",
+        "_id": "PhJZQX3HtuEEsHn0",
+        "sort": 100000,
+        "name": "Devilish Aura",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "xXTEOaW9ulHFo9Vw",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        }
+      },
+      "g7UBgDGwFcY5pkGA": {
+        "type": "utility",
+        "_id": "g7UBgDGwFcY5pkGA",
+        "sort": 200000,
+        "name": "Devil's Favor",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You make a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "wtOc8okI0yfAZZxF": {
+        "_id": "wtOc8okI0yfAZZxF",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 1
+        }
+      },
+      "AI8bmKB9myzItOOL": {
+        "_id": "AI8bmKB9myzItOOL",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Diabolic Empowerment",
+        "title": "Diabolic Empowerment",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Infernal Pact Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Constitution or Charisma score by 1, to a maximum of 20.</p><p><strong>Devilish Aura.</strong> Your close ties with diabolic powers unsettle others. You can take a Magic action to manifest an aura of fear in a 30-foot Emanation originating from you. Each creature of your choice in it makes a Charisma saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus). On a failure, it has the Frightened condition until the end of its next turn; on a success, it is unaffected and immune to this aura for 24 hours.</p><p><strong>Devil's Favor.</strong> You can call on your infernal patron for help: when you make a D20 Test, you can add a +2 bonus to the roll. Once you use this benefit, you can't do so again until you finish a Long Rest.</p><p><strong>Diabolic Empowerment.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicWeapo]{Magic Weapon} prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; cast this way, its duration becomes 8 hours. You can also cast it with any spell slots of the appropriate level you have. Charisma is your spellcasting ability for this spell.</p><section class=\"secret\" id=\"secret-GJPUjL1qkJY6dAvB\"><p><strong>Foundry Note</strong></p><p>The save DC uses Charisma: change it to Constitution in the activity if you increased Constitution. Add the +2 of Devil's Favor to the roll.</p></section>",
+      "chat": ""
+    },
+    "identifier": "infernal-dragoon",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "infernal-pact"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Infernal Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "xXTEOaW9ulHFo9Vw",
+      "name": "Devilish Aura",
+      "img": "icons/creatures/unholy/demon-horned-winged-laughing.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>Frightened until the end of its next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

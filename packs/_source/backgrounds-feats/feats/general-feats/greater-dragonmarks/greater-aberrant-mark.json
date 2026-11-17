@@ -1,0 +1,180 @@
+{
+  "_id": "EMaLUQgkNNCllXR7",
+  "name": "Greater Aberrant Mark",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "folder": "K2FEiJR0BdVXKWt7",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "Mv3LGs7CMV3eX4kG": {
+        "type": "utility",
+        "_id": "Mv3LGs7CMV3eX4kG",
+        "sort": 100000,
+        "name": "Mark of Inspiration",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a cantrip"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            },
+            {
+              "type": "hitDice",
+              "value": "1",
+              "target": "largest",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d@attributes.hd.largestFace",
+          "name": "Hit Point Die (Temporary Hit Points and Force damage)",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "gIREYrqSCMuaEyn5": {
+        "_id": "gIREYrqSCMuaEyn5",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Aberrant Dragonmark Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Constitution score by 1, to a maximum of 20.</p><p><strong>Improved Fortitude.</strong> When you use the Aberrant Fortitude benefit of your Aberrant Dragonmark feat, you can roll 1d6 instead of 1d4, and you now regain its use when you finish a Short or Long Rest.</p><p><strong>Mark of Inspiration.</strong> When you cast a cantrip, you can roll one or two of your unexpended Hit Point Dice. You gain Temporary Hit Points equal to the total rolled plus your Constitution modifier, and one creature of your choice within 30 feet of you (other than you) takes Force damage equal to the total rolled. Those dice are then expended. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-zu5nALg5rBD9L7Uk\"><p><strong>Foundry Note</strong></p><p>Improved Fortitude: change the roll of <em>Aberrant Fortitude</em> to 1d6 and its recovery to Short Rest in your Aberrant Dragonmark feat. <em>Mark of Inspiration</em> spends a use and one Hit Point Die (change it to two in the dialog): gain the roll plus your Constitution modifier as Temporary Hit Points and deal the roll as Force damage.</p></section>",
+      "chat": ""
+    },
+    "identifier": "greater-aberrant-mark",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "aberrant-dragonmark"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Aberrant Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

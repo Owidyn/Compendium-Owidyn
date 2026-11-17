@@ -1,0 +1,110 @@
+{
+  "name": "Advanced Artifice",
+  "type": "feat",
+  "_id": "hz6xlaNy4sKHZcMp",
+  "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+  "folder": "4RbdHSEXTHThnBoK",
+  "sort": 800000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Magic Item Savant.</strong> You can now attune to up to five magic items at once.</p><p><strong>Refreshed Genius.</strong> When you finish a Short Rest, you regain one expended use of your Flash of Genius feature.</p><section class=\"secret\" id=\"secret-CRgkW62VdGbRDy1E\"><p><strong>Foundry Note</strong></p><p>Refreshed Genius: after a Short Rest, restore one use of Flash of Genius yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artificer 14",
+    "activities": {},
+    "enchant": {},
+    "identifier": "advanced-artifice",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "DL0F3y3iVDKmKldl",
+      "name": "Magic Item Savant",
+      "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.attunement.max",
+            "value": "5",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "jPBJofh97Ah17L1a"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Attunement to up to five magic items.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

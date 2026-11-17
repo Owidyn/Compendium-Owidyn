@@ -1,0 +1,171 @@
+{
+  "_id": "LwO97WzWpTYbkMUl",
+  "name": "Vampire Touched",
+  "type": "feat",
+  "img": "icons/creatures/mammals/bat-giant-tattered-purple.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "d9Fi86D8gFRPxVVk": {
+        "_id": "d9Fi86D8gFRPxVVk",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "tDTMMbsYBqBAARDs": {
+        "_id": "tDTMMbsYBqBAARDs",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Vampire Magic",
+        "title": "Vampire Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiderClim",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "e0S0t2Byj4DvDLIt": {
+        "_id": "e0S0t2Byj4DvDLIt",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Vampire Magic (Level 1 Spell)",
+        "title": "Vampire Magic (Level 1 Spell)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "1",
+            "list": [],
+            "school": [
+              "enc",
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Vampire Magic.</strong> Choose one level 1 spell from the Enchantment or Illusion school. You always have that spell and @UUID[Compendium.dnd5e.spells24.Item.phbsplSpiderClim]{Spider Climb} prepared. You can cast each of them without a spell slot—Spider Climb cast this way must target you—and you must finish a Long Rest before you can cast each spell this way again; you can also cast either spell with spell slots of the appropriate level you have. Their spellcasting ability is the ability increased by this feat.</p><section class=\"secret\" id=\"secret-CIWOYRy3pHbzMKs5\"><p><strong>Foundry Note</strong></p><p>Choose for both spells the ability you increased with this feat.</p></section>",
+      "chat": ""
+    },
+    "identifier": "vampire-touched",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

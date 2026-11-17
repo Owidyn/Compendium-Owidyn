@@ -1,0 +1,396 @@
+{
+  "name": "Spellfire Sorcery",
+  "type": "subclass",
+  "_id": "F8CIRihl3DlrMlir",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "folder": "eVhNEeiCMb2cPVHe",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Wield Raw Magic</p></blockquote><p>Your innate power stems from the source of magic itself: the Weave. This connection manifests as a rare ability known as spellfire, and you surge with radiant bursts of this raw magic. Your talent with spellfire lets you heal allies, sear enemies, and absorb powerful spells.</p><p>Wielders of spellfire tend to wander. Many travel between cosmopolitan settlements, such as those of the Sword Coast, and use their magic for the common good. Others discover their strange powers while roaming equally strange lands, from the magic-blasted desert of Anauroch to the god-touched wilds of the Old Empires. Wherever they go in the Realms, spellfire Sorcerers are courted by factions interested in the arcane arts, such as the Harpers, the Cult of the Dragon, and the Red Wizards.</p><h3>Spellfire Sorcery Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.CC0E7M9Xb8QrTiOr]{Spellfire Burst}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Nvco4HE5ssIMojPL]{Spellfire Spells}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.VWNfGihG1j6XM2Ir]{Absorb Spells}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.lfCxAWqoErt385w6]{Honed Spellfire}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.vFTelyd50MToOsCw]{Crown of Spellfire}</td></tr></tbody></table><h3>Spellfire Spells</h3><table><thead><tr><th>Sorcerer Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure Wounds}, @UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser Restoration}, @UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching Ray}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.ap9j32ixgVwRkURC]{Aura of Vitality}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel Magic}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFlameStrik]{Flame Strike}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "spellfire-sorcery",
+    "classIdentifier": "sorcerer",
+    "advancement": {
+      "z30RoQGOwYKnCoeB": {
+        "_id": "z30RoQGOwYKnCoeB",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CC0E7M9Xb8QrTiOr",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Nvco4HE5ssIMojPL",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ZaRaBeW51Lt4FsfU": {
+        "_id": "ZaRaBeW51Lt4FsfU",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.VWNfGihG1j6XM2Ir",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "B037xG0RKnqlTZ49": {
+        "_id": "B037xG0RKnqlTZ49",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lfCxAWqoErt385w6",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "xohG0ufGnPoHAQX1": {
+        "_id": "xohG0ufGnPoHAQX1",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.vFTelyd50MToOsCw",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "GLhpRdScyOxlBoDE": {
+        "_id": "GLhpRdScyOxlBoDE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Spellfire Spells",
+        "title": "Spellfire Spells",
+        "hint": "When you reach a Sorcerer level specified in the Spellfire Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCureWounds",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLesserRest",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScorchingR",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "BnUgGDBFbsYm1pAm": {
+        "_id": "BnUgGDBFbsYm1pAm",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Spellfire Spells",
+        "title": "Spellfire Spells",
+        "hint": "When you reach a Sorcerer level specified in the Spellfire Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.ap9j32ixgVwRkURC",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelMagi",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PTABXtnhHhtNFWvh": {
+        "_id": "PTABXtnhHhtNFWvh",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Spellfire Spells",
+        "title": "Spellfire Spells",
+        "hint": "When you reach a Sorcerer level specified in the Spellfire Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofFire",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "aK08PVNL3cWTHHi6": {
+        "_id": "aK08PVNL3cWTHHi6",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Spellfire Spells",
+        "title": "Spellfire Spells",
+        "hint": "When you reach a Sorcerer level specified in the Spellfire Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGreaterRes",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameStrik",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RY7U604FAtXOjbkW": {
+        "_id": "RY7U604FAtXOjbkW",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Absorb Spells",
+        "title": "Absorb Spells",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCounterspe",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FOkcsmD6d3DP5QPG": {
+        "_id": "FOkcsmD6d3DP5QPG",
+        "type": "ScaleValue",
+        "name": "Radiant Fire",
+        "title": "Radiant Fire",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "radiant-fire",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 4,
+              "modifiers": []
+            },
+            "14": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "3MCj5ix0JMmWAxXN": {
+        "_id": "3MCj5ix0JMmWAxXN",
+        "type": "ScaleValue",
+        "name": "Honed Bolstering Flames",
+        "title": "Honed Bolstering Flames",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "honed",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 0
+            },
+            "14": {
+              "value": 14
+            },
+            "15": {
+              "value": 15
+            },
+            "16": {
+              "value": 16
+            },
+            "17": {
+              "value": 17
+            },
+            "18": {
+              "value": 18
+            },
+            "19": {
+              "value": 19
+            },
+            "20": {
+              "value": 20
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

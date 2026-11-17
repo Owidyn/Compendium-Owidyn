@@ -1,0 +1,225 @@
+{
+  "_id": "IrFUvwU6QNSdCF5t",
+  "name": "Abjuration Adept",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "72VsWGebQgFnZ2xs": {
+        "type": "heal",
+        "_id": "72VsWGebQgFnZ2xs",
+        "sort": 100000,
+        "name": "Protective Ward",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast an Abjuration spell with a spell slot"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "2 * 1"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "Rx1QgzYxwM3ioDJo": {
+        "_id": "Rx1QgzYxwM3ioDJo",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "pAqCv7MdI3ObXZEB": {
+        "_id": "pAqCv7MdI3ObXZEB",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Additional Spells",
+        "title": "Additional Spells",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShield0000",
+              "optional": true,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLesserRest",
+              "optional": true,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbProtectionFro",
+              "optional": true,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBanishment",
+              "optional": true,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassCureWo",
+              "optional": true,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Additional Spells.</strong> Your mastery keeps certain spells always at the ready. Once you have spell slots of a level shown in the Abjuration Adept Spells table, you always have the spells of that level and lower prepared.</p><p><strong>Protective Ward.</strong> When you cast an Abjuration spell with a spell slot, you or one creature you can see within 30 feet of you gains Temporary Hit Points equal to twice the level of the slot expended.</p><h4>Abjuration Adept Spells</h4><table><thead><tr><th>Spell Slot Level</th><th>Spell</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser Restoration}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbProtectionFro]{Protection from Energy}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBanishment]{Banishment}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMassCureWo]{Mass Cure Wounds}</td></tr></tbody></table><section class=\"secret\" id=\"secret-SlBDsOyo27YPE1O9\"><p><strong>Foundry Note</strong></p><p>Choose the spells of the levels whose slots you have; add the others when you gain those slots. <em>Protective Ward</em> gives 2 Temporary Hit Points: change the formula to twice the slot level in the roll dialog.</p></section>",
+      "chat": ""
+    },
+    "identifier": "abjuration-adept",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

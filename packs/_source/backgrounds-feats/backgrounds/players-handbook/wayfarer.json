@@ -1,0 +1,211 @@
+{
+  "name": "Wayfarer",
+  "type": "background",
+  "_id": "lIox6n5YUW8aF3z4",
+  "img": "icons/tools/hand/lockpicks-steel-grey.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You grew up on the streets among other unlucky outcasts, some of them friends and some of them rivals. You slept wherever you could and worked odd jobs for food, and when hunger became too much to bear, you sometimes stole. Yet you never lost your pride or gave up hope: fate isn't done with you yet.</p><p><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt]{Lucky}</p><p><strong>Skill Proficiencies:</strong> Insight and Stealth</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools}, Gaming Set (any), @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 16 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "wayfarer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "JnJEXfcTACdUdtcT": {
+        "_id": "JnJEXfcTACdUdtcT",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "wmTQcHQU1DD8idQg": {
+        "_id": "wmTQcHQU1DD8idQg",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Insight and Stealth. It also grants you proficiency in Thieves' Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:ste",
+            "tool:thief"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "QAN2LRHBwj6igSsU": {
+        "_id": "QAN2LRHBwj6igSsU",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Lucky feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "r9Kop2fouXHHPGHd": {
+        "_id": "r9Kop2fouXHHPGHd",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "4wF90fROdPnNhLCA",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "FVApin3pSLcQI7eL",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulThievesToo",
+        "requiresProficiency": false,
+        "_id": "saMgrXBgeYYDIHDr",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "2AGlsjY0kWS4oLz8",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "bupxiKDodUfsnusB",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 500000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "VjNtTkZt3e7GdIOx",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "RZ29RsLBGqo6WNcs",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 700000
+      },
+      {
+        "count": 16,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "HRRuoTelAupyG9B8",
+        "group": "4wF90fROdPnNhLCA",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "name": "Hollow Warden",
+  "type": "subclass",
+  "_id": "5ZiNu3Eiso8U9jqC",
+  "img": "icons/commodities/bones/horn-antler-brown-red.webp",
+  "folder": "Wjtol6wvqEDzv4Bn",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Draw on the Might of Ancient Wild Terrors</p></blockquote><p>Legends tell that the most ancient and bloodthirsty terrors lurk deep in the old places of the earth. Hollow Wardens venerate these beings and draw power from them, turning into merciless, monstrous guardians who stalk jagged coastlines, steep mountain crags, and other dark and wild places.</p><h3>Hollow Warden Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jg3gMBAqmEueYXvz]{Hollow Warden Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HruIS19UoHKBBO68]{Wrath of the Wild}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.cSu8ieiXU4wGRjU4]{Hungering Might}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.LQQd53o3CpckAyaH]{Rot and Violence}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.2RA5F7TRNldzVQ0D]{Ancient Might}</td></tr></tbody></table><h3>Hollow Warden Spells</h3><table><thead><tr><th>Ranger Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.TZSVMNFj00ubd60B]{Wrathful Smite}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAlterSelf0]{Alter Self}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPhantomSte]{Phantom Steed}</td></tr><tr><td>13</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDominateBe]{Dominate Beast}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.YeiTWaNwrurgKm2A]{Steel Wind Strike}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "hollow-warden",
+    "classIdentifier": "ranger",
+    "advancement": {
+      "8FtZ4iHlD5hGPEoG": {
+        "_id": "8FtZ4iHlD5hGPEoG",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jg3gMBAqmEueYXvz",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HruIS19UoHKBBO68",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wh7vWGyyijjPJDN7": {
+        "_id": "wh7vWGyyijjPJDN7",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cSu8ieiXU4wGRjU4",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "X72kZ8zkDKQXWCrz": {
+        "_id": "X72kZ8zkDKQXWCrz",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LQQd53o3CpckAyaH",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DcU9dpjChDdrvpFp": {
+        "_id": "DcU9dpjChDdrvpFp",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.2RA5F7TRNldzVQ0D",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "lQiU1BgLCnTeKj4J": {
+        "_id": "lQiU1BgLCnTeKj4J",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Hollow Warden Spells",
+        "title": "Hollow Warden Spells",
+        "hint": "When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.TZSVMNFj00ubd60B",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "beftNTGXsxltQoLE": {
+        "_id": "beftNTGXsxltQoLE",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Hollow Warden Spells",
+        "title": "Hollow Warden Spells",
+        "hint": "When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAlterSelf0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "fQK7yR4nCbfyLaku": {
+        "_id": "fQK7yR4nCbfyLaku",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Hollow Warden Spells",
+        "title": "Hollow Warden Spells",
+        "hint": "When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPhantomSte",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "d7tqSyBHzavP4uPx": {
+        "_id": "d7tqSyBHzavP4uPx",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Hollow Warden Spells",
+        "title": "Hollow Warden Spells",
+        "hint": "When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominateBe",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CQlupWGqA548oWip": {
+        "_id": "CQlupWGqA548oWip",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Hollow Warden Spells",
+        "title": "Hollow Warden Spells",
+        "hint": "When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.YeiTWaNwrurgKm2A",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Ni2gn3A6QwegZkAW": {
+        "_id": "Ni2gn3A6QwegZkAW",
+        "type": "ScaleValue",
+        "name": "Ancient Armor",
+        "title": "Ancient Armor",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "ancient-armor",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 1
+            },
+            "11": {
+              "value": 2
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

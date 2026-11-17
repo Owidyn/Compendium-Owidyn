@@ -1,0 +1,239 @@
+{
+  "name": "Rage of the Wilds",
+  "type": "feat",
+  "_id": "qWCVhn4gbuA4FYnf",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "folder": "BEiE4ffTXWJKpGaO",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.</p><p><strong>Bear.</strong> While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.</p><p><strong>Eagle.</strong> When you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions.</p><p><strong>Wolf.</strong> While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.</p><section class=\"secret\" id=\"secret-dRUTimuIGAwqwfrF\"><p><strong>Foundry Note</strong></p><p>Turn on the <em>Bear</em> effect while you rage with that option.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Wild Heart 3",
+    "activities": {
+      "0x0ZZ6K4Od8ywWWC": {
+        "type": "utility",
+        "_id": "0x0ZZ6K4Od8ywWWC",
+        "sort": 100000,
+        "name": "Eagle (Disengage and Dash)",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "While raging with the Eagle option"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "rage-of-the-wilds",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "jtXrQ7p0VGFYlyRR",
+      "name": "Bear",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "YwLxDtAxnMKKAq3l"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "IVaMT0bglpVKNkYU"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Grh0cbYkRDw1p7ug"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "yC8yjrHhy0gdgAYw"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "62s5AiEtGsP6i8bH"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "P3Si3dv1sQ1fkOzc"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Mgm878YCZz77nup1"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "T4Q0vtsQRTJDaaEJ"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "kaH9cIWbzl4Q67Yl"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

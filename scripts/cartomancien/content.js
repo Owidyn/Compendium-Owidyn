@@ -1,7 +1,7 @@
 import { PACKS } from "../owidyn/compendiums.mjs";
 
 export const MODULE_ID = "compendium-owidyn";
-export const CONTENT_VERSION = "0.4.0";
+export const CONTENT_VERSION = "0.4.1";
 
 export const CARTOMANCIEN_SPELLS = {
   0: [
@@ -692,10 +692,60 @@ function mergeGeneratedAdvancements(item, additions) {
   for (const [id, advancement] of Object.entries(current)) {
     const replacedDefault = ["HitPoints", "AbilityScoreImprovement"].includes(advancement?.type)
       && !Object.keys(advancement.value ?? {}).length;
-    if (advancement?.flags?.[MODULE_ID]?.cartomancien?.generated || replacedDefault) delete current[id];
+    if (advancement?.flags?.[MODULE_ID]?.cartomancien?.generated || replacedDefault || !VALID_ID.test(id)) delete current[id];
   }
   for (const advancement of additions) current[advancement._id] = advancement;
   return current;
+}
+
+const VALID_ID = /^[a-zA-Z0-9]{16}$/;
+const ONE_PER_LEVEL = ["HitPoints", "AbilityScoreImprovement", "Subclass"];
+
+/**
+ * Remove the duplicates of a class's one-per-level advancements (Hit Points, Ability Score Improvement, Subclass).
+ * Content before 0.4.1 left the old 15-character ASI ids (invalid: Foundry gives them a random id at each load) next to
+ * the current ones, so a Cartomancien got two ASIs at levels 4, 8, 12 and 16. Per type and level, the advancements
+ * holding a choice are kept (a player's choice is never deleted); otherwise the preferred id, then any valid one.
+ * A kept advancement with an invalid id gets a valid one. Returns true if something changed.
+ */
+export function dedupeAdvancements(advancements, preferred = new Set()) {
+  let changed = false;
+  const groups = new Map();
+  for (const [key, advancement] of Object.entries(advancements)) {
+    if (!ONE_PER_LEVEL.includes(advancement?.type)) continue;
+    const group = `${advancement.type}:${advancement.level ?? ""}`;
+    if (!groups.has(group)) groups.set(group, []);
+    groups.get(group).push(key);
+  }
+  for (const keys of groups.values()) {
+    if (keys.length < 2) continue;
+    const valued = keys.filter(key => Object.keys(advancements[key]?.value ?? {}).length);
+    const keep = valued.length ? valued
+      : [keys.find(key => preferred.has(key) && VALID_ID.test(key)) ?? keys.find(key => VALID_ID.test(key)) ?? keys[0]];
+    for (const key of keys) if (!keep.includes(key)) { delete advancements[key]; changed = true; }
+  }
+  for (const [key, advancement] of Object.entries(advancements)) {
+    if (VALID_ID.test(key)) continue;
+    const id = documentId(key).slice(0, 16).replace(/[^a-zA-Z0-9]/g, "0");
+    delete advancements[key];
+    advancements[id] = { ...advancement, _id: id };
+    changed = true;
+  }
+  return changed;
+}
+
+/** Replace a whole object field in an update, instead of merging it into the stored one (stale keys would stay). */
+const replaced = value => foundry.data?.operators?.ForcedReplacement?.create?.(value) ?? value;
+
+/** The Cartomancien class of an actor without its duplicate advancements (see dedupeAdvancements). */
+export async function repairClassAdvancements(actor) {
+  const cls = actor?.items?.find(item => item.type === "class" && item.system.identifier === "cartomancien");
+  if (!cls || !actor.isOwner) return false;
+  const advancements = foundry.utils.deepClone(cls._source.system?.advancement ?? {});
+  const preferred = new Set(CLASS_ADVANCEMENTS.map(advancement => advancement._id));
+  if (!dedupeAdvancements(advancements, preferred)) return false;
+  await cls.update({ "system.advancement": replaced(advancements) });
+  return true;
 }
 
 async function findSpellSources() {
@@ -888,7 +938,7 @@ async function ensureContentPack(spellListPage, spellSources) {
   }
 
   const merged = mergeGeneratedAdvancements(cls, classAdvancements);
-  await cls.update({ "system.advancement": merged });
+  await cls.update({ "system.advancement": replaced(merged) });
 
   // Ajoute un lien cliquable vers la vraie page D&D5e de Spell List sans rendre la classe dépendante de cette page.
   if (spellListPage) {
@@ -1075,7 +1125,8 @@ export async function syncActorContent(actor) {
         if (advancement.type === "AbilityScoreImprovement" && advancement.level === 19
           && !Object.keys(advancement.value ?? {}).length) delete advancements[id];
       }
-      update["system.advancement"] = advancements;
+      dedupeAdvancements(advancements, new Set(Object.keys(incoming.system.advancement ?? {})));
+      update["system.advancement"] = replaced(advancements);
     }
     await item.update(update);
     updated++;

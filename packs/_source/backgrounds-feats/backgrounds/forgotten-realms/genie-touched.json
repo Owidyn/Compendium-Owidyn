@@ -1,0 +1,211 @@
+{
+  "name": "Genie Touched",
+  "type": "background",
+  "_id": "EDC19Jjlw7yqmncw",
+  "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Genies no longer rule Calimshan, but their magic is still common in your homeland. Perhaps you accidentally called a djinni out of a magic lamp, or stumbled upon an oasis guarded by a marid. A dao might have rescued you from a landslide, or you bargained with an efreeti for a short-lived fortune. However your path crossed a genie's, the encounter left you with sharp eyes, a silver tongue, and more than a touch of magic.</p><p><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic Initiate} (Wizard)</p><p><strong>Skill Proficiencies:</strong> Perception and Persuasion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulGlassblowe]{Glassblower's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepLightHamme]{Light Hammer}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulGlassblowe]{Glassblower's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 2 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "genie-touched",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "fbP7R8hzQoCrguXR": {
+        "_id": "fbP7R8hzQoCrguXR",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "O9YiBwoI3n8swtoI": {
+        "_id": "O9YiBwoI3n8swtoI",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Perception and Persuasion. It also grants you proficiency in Glassblower's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:prc",
+            "skills:per",
+            "tool:art:glassblower"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "74wIADWuglODB3Ry": {
+        "_id": "74wIADWuglODB3Ry",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Magic Initiate (Wizard) feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftMagicInitia",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "e8b0CCw7V7mj0bAh": {
+        "_id": "e8b0CCw7V7mj0bAh",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "mvTFOmgkwSXiCNSK",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepLightHamme",
+        "requiresProficiency": false,
+        "_id": "pnw4uQkdfbP79PSI",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulGlassblowe",
+        "requiresProficiency": false,
+        "_id": "irPDAK1nGaVPaztC",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "utBFZEE56hMkZHml",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "requiresProficiency": false,
+        "_id": "4ltbjwJnlOXTXGzO",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 500000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "xtYohHBWqYOm23VF",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "Y3U5FfS8ItBTT4vL",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 700000
+      },
+      {
+        "count": 2,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "BfBfjE4qVFGdxNqB",
+        "group": "mvTFOmgkwSXiCNSK",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

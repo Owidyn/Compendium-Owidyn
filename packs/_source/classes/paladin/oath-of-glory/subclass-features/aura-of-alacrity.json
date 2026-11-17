@@ -1,0 +1,110 @@
+{
+  "name": "Aura of Alacrity",
+  "type": "feat",
+  "_id": "GmwCIEOBtWCMDfk3",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "folder": "QG5CK3rGvf877J6D",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>Your Speed increases by 10 feet. In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts its turn there, its Speed increases by 10 feet until the end of its next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of Glory 7",
+    "activities": {},
+    "enchant": {},
+    "identifier": "aura-of-alacrity",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "YNO9Jf98cz9BcapX",
+      "name": "Aura of Alacrity",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "dDValdQPOvtmmxdM"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Speed +10 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

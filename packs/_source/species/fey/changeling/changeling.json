@@ -1,0 +1,141 @@
+{
+  "name": "Changeling",
+  "type": "race",
+  "_id": "tHq8FBcI8foITVh9",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "hntlm5BzZQMHCVbS",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>With faces that never stay the same, changelings live unnoticed in many societies. A changeling can take on any face it likes through supernatural means, and for some, a new face can reveal a part of their soul.</p><p>The first changelings of the multiverse appeared in the Feywild, and the shifting, wondrous essence of that plane still lingers in them, even in those who have never set foot there. In their true form, changelings look faded, their features nearly without detail; few ever see that form, since most change shape as easily as others change clothes. Many build whole personas—each with a history and beliefs—for different situations such as negotiation, investigation, or combat. Several changelings can share a persona, and a persona can even be handed down within a family along with its contacts.</p><h3>Changeling Traits</h3><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.b7ftce4rENSTXvWc]{Changeling Instincts}.</strong> Thanks to your bond with the Feywild, you gain proficiency in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.HuhnLBn2HSQDIoEA]{Shape-Shifter}.</strong> As an action, you can change your appearance and your voice. You decide the details, including your coloration, hair length, and sex, and you can adjust your height and weight and switch your size between Medium and Small. You can look like a member of another playable species, though none of your game statistics change. You can't copy the appearance of someone you have never seen, and your new form must have the same basic arrangement of limbs as yours. Your clothing and equipment don't change. While shape-shifted this way, you have Advantage on Charisma checks. You keep the new form until you take an action to return to your true form.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "changeling",
+    "type": {
+      "value": "fey",
+      "custom": "",
+      "subtype": "Changeling"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "r55z9kGtzefq0n9i": {
+        "_id": "r55z9kGtzefq0n9i",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "ALm0y7QU0k4FDztn": {
+        "_id": "ALm0y7QU0k4FDztn",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Changeling Traits",
+        "title": "Changeling Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.b7ftce4rENSTXvWc",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.HuhnLBn2HSQDIoEA",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RDNYAXrkkTscEwoC": {
+        "_id": "RDNYAXrkkTscEwoC",
+        "type": "Trait",
+        "level": 0,
+        "name": "Changeling Instincts",
+        "title": "Changeling Instincts",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:ins",
+                "skills:itm",
+                "skills:prf",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

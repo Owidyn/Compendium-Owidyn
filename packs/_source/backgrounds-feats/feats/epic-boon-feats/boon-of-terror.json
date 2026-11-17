@@ -1,0 +1,221 @@
+{
+  "_id": "lkikk850KnlzBBTq",
+  "name": "Boon of Terror",
+  "type": "feat",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "8Cm1pWKj9efFMwD5": {
+        "type": "save",
+        "_id": "8Cm1pWKj9efFMwD5",
+        "sort": 100000,
+        "name": "Flee, Fools!",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A Frightened creature starts its turn within 60 feet of you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "yELI2l6tMhyIC0q5": {
+        "_id": "yELI2l6tMhyIC0q5",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "cUIeL99aLIw3Cd9M": {
+        "_id": "cUIeL99aLIw3Cd9M",
+        "type": "Trait",
+        "level": 0,
+        "name": "Fearless",
+        "title": "Fearless",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "ci:frightened"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "EHkahiY4AtLNdzaw": {
+        "_id": "EHkahiY4AtLNdzaw",
+        "type": "Trait",
+        "level": 0,
+        "name": "Intimidating",
+        "title": "Intimidating",
+        "hint": "",
+        "configuration": {
+          "mode": "forcedExpertise",
+          "allowReplacements": false,
+          "grants": [
+            "skills:itm"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Charisma score by 1, to a maximum of 30.</p><p><strong>Fearless.</strong> You have Immunity to the Frightened condition.</p><p><strong>Flee, Fools!.</strong> When a creature with the Frightened condition starts its turn within 60 feet of you, you can take a Reaction to stoke its terror, as long as you can see it and it isn't behind Total Cover. It must succeed on a Wisdom saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or spend its turn moving away from you by the fastest available means. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p><p><strong>Intimidating.</strong> You gain proficiency in the Intimidation skill if you don't already have it, and you gain Expertise in it.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-terror",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

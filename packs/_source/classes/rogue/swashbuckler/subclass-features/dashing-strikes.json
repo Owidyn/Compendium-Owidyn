@@ -1,0 +1,282 @@
+{
+  "name": "Dashing Strikes",
+  "type": "feat",
+  "_id": "EKM8xATQEAQ7s3eV",
+  "img": "icons/magic/life/heart-glowing-red.webp",
+  "folder": "0lbolZO8VLLNvchy",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You have practiced new ways to use your Sneak Attack. The following effects are now among your Cunning Strike options.</p><p><strong>Invigorate (Cost: 2d6).</strong> Choose a creature you can see within 30 feet of you. Until the end of that creature's next turn, whenever it makes an attack roll or a saving throw, it can roll 1d6 and add the number rolled to the roll.</p><p><strong>Parrying Stance (Cost: 2d6).</strong> Roll 1d6. Until the start of your next turn, you gain a bonus to your AC equal to the number rolled.</p><section class=\"secret\" id=\"secret-mYvovx34ejgPlZk0\"><p><strong>Foundry Note</strong></p><p>Parrying Stance: add the rolled bonus to your AC until the start of your next turn yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Swashbuckler 13",
+    "activities": {
+      "Hk7s196oevsRVR79": {
+        "type": "utility",
+        "_id": "Hk7s196oevsRVR79",
+        "sort": 100000,
+        "name": "Invigorate",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Cunning Strike (cost: 2d6)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Hk7s196oevsRVR79"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "HkZTUR8fopuvm13R": {
+        "type": "utility",
+        "_id": "HkZTUR8fopuvm13R",
+        "sort": 200000,
+        "name": "Parrying Stance",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Cunning Strike (cost: 2d6)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Bonus to AC",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "dashing-strikes",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "Hk7s196oevsRVR79",
+      "name": "Invigorate",
+      "img": "icons/magic/life/heart-glowing-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.attack.mwak.bonus",
+            "value": "1d6",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "wKQUzRMaOxcF4KNJ"
+          },
+          {
+            "key": "system.rolls.attack.rwak.bonus",
+            "value": "1d6",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "hhsOSEM5CjcDdFcB"
+          },
+          {
+            "key": "system.rolls.attack.msak.bonus",
+            "value": "1d6",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "iD0uI3IW8e6cMebd"
+          },
+          {
+            "key": "system.rolls.attack.rsak.bonus",
+            "value": "1d6",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "uUzyahvA2YxsBmw5"
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
+            "value": "1d6",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "cyA3AVjqtNsYoHqJ"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>Adds 1d6 to attack rolls and saving throws until the end of its next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

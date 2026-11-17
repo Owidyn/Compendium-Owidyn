@@ -1,0 +1,144 @@
+{
+  "name": "Lupin",
+  "type": "race",
+  "_id": "PTv97qV3FeQXBpOA",
+  "img": "icons/creatures/mammals/wolf-howl-moon-black.webp",
+  "folder": "yhF9oQFvQ5iXs8Yz",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>With bristling fur and snarling muzzles, lupins cast fearsome shadows in the Mists. They usually arise from encounters with werewolves where the curse of lycanthropy didn't fully take hold: unlike true werewolves, they can't change between wolf and humanoid forms and remain stuck in a hybrid form. This cursed, wolf-like body gives them bestial strength, keen instincts, and a terrifying howl.</p><h3>Lupin Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.l7eXX69tBOBII0Dd]{Feral Pounce}.</strong> Your Unarmed Strikes deal Slashing damage instead of Bludgeoning damage. In addition, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Shove options. You can use this benefit only once per turn.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.d7XqOSAN8RZCYQJu]{Howl}.</strong> As a Bonus Action, you let out an unearthly howl. Each creature of your choice within 15 feet of you must succeed on a Wisdom saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or have Disadvantage on attack rolls and saving throws until the start of your next turn. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.0hVwAeEu6NgbGNsA]{Werewolf Instincts}.</strong> You have proficiency in the Perception, Stealth, or Survival skill.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "lupin",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Lupin"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "jPVPWz7F0BMFYjbM": {
+        "_id": "jPVPWz7F0BMFYjbM",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "uIV4w2tHmds7zCLB": {
+        "_id": "uIV4w2tHmds7zCLB",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Lupin Traits",
+        "title": "Lupin Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.l7eXX69tBOBII0Dd",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.d7XqOSAN8RZCYQJu",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.0hVwAeEu6NgbGNsA",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "l57R9lEunJaDSuEY": {
+        "_id": "l57R9lEunJaDSuEY",
+        "type": "Trait",
+        "level": 0,
+        "name": "Werewolf Instincts",
+        "title": "Werewolf Instincts",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:prc",
+                "skills:ste",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

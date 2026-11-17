@@ -1,0 +1,138 @@
+{
+  "name": "Shared Resilience",
+  "type": "feat",
+  "_id": "yLLVk5Mq6mZE7Mb0",
+  "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+  "folder": "3KubVEbwiFGLdeaO",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>When an ally you can see within 60 feet of you fails a saving throw, you can take a Reaction to expend a use of your Indomitable feature: the ally immediately rerolls the saving throw with a bonus equal to your Fighter level and must use the new roll.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Banneret 15",
+    "activities": {
+      "XVOkZVJxK4JVvTGP": {
+        "type": "utility",
+        "_id": "XVOkZVJxK4JVvTGP",
+        "sort": 100000,
+        "name": "Shared Resilience",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "An ally you can see within 60 feet fails a saving throw"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:indomitable",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "@classes.fighter.levels",
+          "name": "Bonus to the reroll",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "shared-resilience",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

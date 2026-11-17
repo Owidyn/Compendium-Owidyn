@@ -1,0 +1,160 @@
+{
+  "name": "Bestial Soul",
+  "type": "feat",
+  "_id": "UUTDjJoX0oFILPGm",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "folder": "C03pgEUSi3m7btSA",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>The feral power within you grows: the natural weapons of your Form of the Beast count as magic weapons. You can also alter your form to adapt to your surroundings. When you finish a Short or Long Rest, choose one of the following benefits, which lasts until you finish your next Short or Long Rest.</p><p><strong>Amphibious.</strong> You gain a Swim Speed equal to your Speed, and you can breathe underwater.</p><p><strong>Climber.</strong> You gain a Climb Speed equal to your Speed, and you can climb difficult surfaces, including upside down on ceilings, without an ability check.</p><p><strong>Leaper.</strong> When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</p><section class=\"secret\" id=\"secret-B8nzAXxRTB2AD8Rv\"><p><strong>Foundry Note</strong></p><p>Turn on the effect of the benefit you chose (none for the jump).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Beast 6",
+    "activities": {},
+    "enchant": {},
+    "identifier": "bestial-soul",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "FF2FGbiBgIFuWhbd",
+      "name": "Bestial Soul (Swim)",
+      "img": "icons/creatures/fish/fish-marlin-swordfight-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "hl96SEQnXn1HWxc2"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Swim Speed equal to your Speed; you breathe underwater.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "C5q3YZLJAYZ4ngof",
+      "name": "Bestial Soul (Climb)",
+      "img": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.climb",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "nVfFj23MITlnTdmV"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Climb Speed equal to your Speed, even on ceilings.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

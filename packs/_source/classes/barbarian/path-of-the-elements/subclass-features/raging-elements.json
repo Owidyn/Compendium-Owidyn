@@ -1,0 +1,477 @@
+{
+  "name": "Raging Elements",
+  "type": "feat",
+  "_id": "yA7IZ3rKznoXRhQ0",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "folder": "gG1H03rYYaINA3dz",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you activate your Rage, you can use one of the following Raging Elements options as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to use that option again or a different one. If an option requires a saving throw, its DC equals 8 plus your Constitution modifier and Proficiency Bonus.</p><p><strong>Icefury.</strong> Roll a number of d8s equal to your Rage Damage bonus and hurl frigid ice at one creature within 30 feet of you, making a melee spell attack (if it is within 5 feet) or a ranged spell attack, with Constitution as your spellcasting ability. On a hit, the attack deals Cold damage equal to the total rolled, and the next time the target takes Fire damage before the end of your next turn, it takes an extra 1d10 Fire damage.</p><p><strong>Lava Burst.</strong> Roll a number of d4s equal to your Rage Damage bonus and hurl molten lava at one creature you can see within 30 feet. The target makes a Dexterity saving throw: on a failure, it takes Fire damage equal to the total, and the next time it takes Lightning damage before the end of your next turn, it takes an extra 1d8 Lightning damage; on a success, it takes only half as much damage.</p><p><strong>Lightning Bolt.</strong> Roll a number of d6s equal to your Rage Damage bonus and hurl a bolt of lightning at one other creature you can see within 30 feet. The target makes a Dexterity saving throw: on a failure, it takes Lightning damage equal to the total, and the next time it takes Cold damage before the end of your next turn, it takes an extra 1d6 Cold damage; on a success, it takes only half as much damage.</p><section class=\"secret\" id=\"secret-rFH2XwRZrjNtpj1x\"><p><strong>Foundry Note</strong></p><p>Icefury uses a ranged spell attack: switch it to melee within 5 feet. <em>Elemental Follow-Up</em> rolls the extra damage of the three options: keep the one that applies.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Elements 3",
+    "activities": {
+      "Gw5FQ01IguS1nFCQ": {
+        "type": "attack",
+        "_id": "Gw5FQ01IguS1nFCQ",
+        "sort": 100000,
+        "name": "Icefury",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "While raging"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "ability": "con",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@scale.barbarian.rage-damage)d8"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "Mk2TmI1XemILI2cF": {
+        "type": "save",
+        "_id": "Mk2TmI1XemILI2cF",
+        "sort": 200000,
+        "name": "Lava Burst",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "While raging"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@scale.barbarian.rage-damage)d4"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        }
+      },
+      "2BfZfj5wwEMYemAl": {
+        "type": "save",
+        "_id": "2BfZfj5wwEMYemAl",
+        "sort": 300000,
+        "name": "Lightning Bolt",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "While raging"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@scale.barbarian.rage-damage)d6"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "lightning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        }
+      },
+      "tv409xWLeGc6tItX": {
+        "type": "damage",
+        "_id": "tv409xWLeGc6tItX",
+        "sort": 400000,
+        "name": "Elemental Follow-Up",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "The target of an option takes the linked damage type"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            },
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "lightning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            },
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "raging-elements",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

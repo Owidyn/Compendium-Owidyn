@@ -1,0 +1,265 @@
+{
+  "name": "Mist Wanderer",
+  "type": "background",
+  "_id": "zG3bY4EFTCHVvy9P",
+  "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+  "folder": "TyqnGDdRjkNl091a",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Once, you knew your home. Then one day the Mists rose and carried you into a Domain of Dread. Since then, you have wandered from domain to domain, braving the fickle Mists in search of a way back. These cursed lands have changed you, but you take comfort in the communities of fellow wanderers scattered throughout the Mists.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> A Dark Gift feat of your choice (@UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.8hKS95aCSXFbSlo6]{Mist Walker} is recommended)</p><p><strong>Skill Proficiencies:</strong> Survival and Stealth</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Artisan's Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Artisan's Tools (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (5 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 30 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "mist-wanderer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "i9r8mXCQc8J5l6Y8": {
+        "_id": "i9r8mXCQc8J5l6Y8",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "R2E33vT28EIwVpbD": {
+        "_id": "R2E33vT28EIwVpbD",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Survival and Stealth. It also grants you proficiency with one kind of Artisan's Tools of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:sur",
+            "skills:ste"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "xUqTnXLyTeed2oYd": {
+        "_id": "xUqTnXLyTeed2oYd",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Choose a Dark Gift feat (Mist Walker is recommended).",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.GK7VmFMPLApUJGBk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.WjBUrOR3GLXBdZJw"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.9UNJXujWE0F0ekYU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.Frn4SkTajMgthVFI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.8hKS95aCSXFbSlo6"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.hiLE4tEqkX9PPJOZ"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.3lVV4sKAcFFbGCrD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.wLUYd568oDelEk3d"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.A9a38VrTMWKbJ6vv"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ebJ6cM8fEH6QkE30": {
+        "_id": "ebJ6cM8fEH6QkE30",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "Q5TzJVdnSeNHrul5",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "art",
+        "requiresProficiency": false,
+        "_id": "mMOvd9tvc6vokZlB",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "requiresProficiency": false,
+        "_id": "eGdtd9jYm5albSL2",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 300000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "vXVMwJslnyTeK5ES",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "5rinvD0yzsAZBYhC",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRope0000000",
+        "requiresProficiency": false,
+        "_id": "5C206tnWyOsEMJDG",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "ZoMQKLhsWlgvSWhj",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "4C591Wdw59mKG4pU",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 800000
+      },
+      {
+        "count": 30,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "zTXbuA7pxqWLZsBr",
+        "group": "Q5TzJVdnSeNHrul5",
+        "sort": 900000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

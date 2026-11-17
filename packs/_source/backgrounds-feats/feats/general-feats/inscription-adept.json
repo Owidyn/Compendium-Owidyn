@@ -1,0 +1,122 @@
+{
+  "_id": "eSVP3IESrPCELKZe",
+  "name": "Inscription Adept",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-runed-brown.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "hbXaZHsUNCXdrzxV": {
+        "_id": "hbXaZHsUNCXdrzxV",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "ijS9epEBIwzmfUQD": {
+        "_id": "ijS9epEBIwzmfUQD",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Inscription Magic",
+        "title": "Inscription Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplIllusorySc",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Proficiency with Calligrapher's Supplies, Cartographer's Tools, or Painter's Supplies)</em></p><p>Your mastery of inscription lets you reproduce the effects of certain spells through written magic. You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Inscription Magic.</strong> You learn @UUID[Compendium.dnd5e.spells24.Item.phbsplIllusorySc]{Illusory Script} and always have it prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; you can also cast it with any spell slots of the appropriate level you have. You can use herbalism resources of the appropriate value in place of its Material component. Its spellcasting ability is the ability increased by this feat.</p><p>As your proficiency in inscription improves, you learn higher-level spells and can cast them the same way, as shown on the table.</p><table><thead><tr><th>Proficiency</th><th>Spell</th></tr></thead><tbody><tr><td>Journeyman (+3)</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGlyphofWar]{Glyph of Warding}</td></tr><tr><td>Artisan (+5)</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSymbol0000]{Symbol}</td></tr></tbody></table><section class=\"secret\" id=\"secret-if2fws1rvgDtzgzc\"><p><strong>Foundry Note</strong></p><p>Glyph of Warding and Symbol are not granted automatically: add them (always prepared, once per Long Rest without a slot) when your inscription proficiency allows it.</p></section>",
+      "chat": ""
+    },
+    "identifier": "inscription-adept",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Proficiency with Calligrapher's Supplies, Cartographer's Tools, or Painter's Supplies",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

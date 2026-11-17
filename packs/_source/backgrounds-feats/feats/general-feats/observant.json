@@ -1,0 +1,115 @@
+{
+  "_id": "UxBpcWpCHyer1zWL",
+  "name": "Observant",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-green.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "DFNYoUmTNj5sEgzP": {
+        "_id": "DFNYoUmTNj5sEgzP",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con",
+            "cha"
+          ],
+          "points": 1
+        }
+      },
+      "8Ej7zgdNcnh7iRS8": {
+        "_id": "8Ej7zgdNcnh7iRS8",
+        "type": "Trait",
+        "level": 0,
+        "name": "Keen Observer",
+        "title": "Keen Observer",
+        "hint": "",
+        "configuration": {
+          "mode": "upgrade",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ins",
+                "skills:inv",
+                "skills:prc"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Intelligence or Wisdom 13+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence or Wisdom score by 1, to a maximum of 20.</p><p><strong>Keen Observer.</strong> Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency in it, you gain proficiency; if you already have it, you gain Expertise in it.</p><p><strong>Quick Search.</strong> You can take the Search action as a Bonus Action.</p>",
+      "chat": ""
+    },
+    "identifier": "observant",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Intelligence or Wisdom 13+",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

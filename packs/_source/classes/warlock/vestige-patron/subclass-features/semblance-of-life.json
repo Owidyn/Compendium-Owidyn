@@ -1,0 +1,138 @@
+{
+  "name": "Semblance of Life",
+  "type": "feat",
+  "_id": "fzE9dHahgcRD4bZL",
+  "img": "icons/creatures/magical/spirit-undead-winged-ghost.webp",
+  "folder": "3meuxt6L1V2EV8n4",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>Your Vestige Companion keeps growing in strength, and with your help it can briefly adopt a more powerful form. While the vestige is within 90 feet of you, you can take a Magic action to shape-shift it for 1 hour, depending on its type, into a Celestial Spirit (Celestial vestige; see @UUID[Compendium.compendium-owidyn.spells.Item.jivWkxHu2huBXV0U]{Summon Celestial}), a Fiendish Spirit (Fiend vestige; see @UUID[Compendium.compendium-owidyn.spells.Item.veN6IiVn4zwHM7r9]{Summon Fiend}), or an Undead Spirit (Undead vestige; see @UUID[Compendium.compendium-owidyn.spells.Item.EX24QkNdCeUOAeeV]{Summon Undead}). The vestige's game statistics are replaced by the spirit's stat block, with a spell level equal to half your Warlock level (round down; maximum level 9), but it keeps its personality, Divine Power Bonus Action, Hit Points, and Hit Point Dice.</p><p>The vestige gains Temporary Hit Points equal to the Hit Points of the spirit form. Any that remain after 1 hour vanish, and the transformation ends early if it has no Temporary Hit Points left. Once you use this feature, you can't do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-dEgNmmUOxOBSEL0Y\"><p><strong>Foundry Note</strong></p><p>Summon the spirit of the matching spell at the level shown, then give it the vestige's Hit Points as Temporary Hit Points equal to the spirit's Hit Points.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Vestige Patron 14",
+    "activities": {
+      "Lo8hL2jwitBCymr2": {
+        "type": "utility",
+        "_id": "Lo8hL2jwitBCymr2",
+        "sort": 100000,
+        "name": "Semblance of Life",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "90",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "semblance-of-life",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

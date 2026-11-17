@@ -1,0 +1,111 @@
+{
+  "name": "Duskling",
+  "type": "race",
+  "_id": "V2nPCHA4TspVihSQ",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "folder": "08TgOswz3jS5wNIA",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Dusklings are a people who left the Feywild to settle in the forests of the Outer Planes and the Material Plane. The magic of the Feywild still flows through them, letting them fill themselves with magical effects.</p><p>Dusklings who travel the planes often live in migrating communities that follow the herds they tend, moving on when an area runs out of resources. Young dusklings play daring games that teach them to master and use their inner power.</p><h3>Duskling Traits</h3><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.1JH3YHN7r86cZmqS]{Enhanced Jump}.</strong> Add 2 feet to the distance of your running High Jump and 10 feet to the distance of your running Long Jump.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.LUEpcQatUgKGRnnU]{Inner Magic}.</strong> Magic within you can enhance your body or mind. When you finish a Long Rest, choose one of the following benefits; it lasts until you choose another. As a Bonus Action, you can switch to a different benefit, a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. <strong>Ardor.</strong> You have Advantage on Charisma ability checks and on saving throws to avoid or end the Frightened condition. <strong>Mobility.</strong> Your Speed increases by 10 feet, and climbing and swimming don't cost you extra movement. <strong>Vigor.</strong> You gain Temporary Hit Points equal to your Proficiency Bonus, and you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "duskling",
+    "type": {
+      "value": "fey",
+      "custom": "",
+      "subtype": "Duskling"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "en8qUtxzGO1bAJ4E": {
+        "_id": "en8qUtxzGO1bAJ4E",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 5–6 feet tall)",
+        "flags": {}
+      },
+      "F583q0O8qgXs8S5P": {
+        "_id": "F583q0O8qgXs8S5P",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Duskling Traits",
+        "title": "Duskling Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.1JH3YHN7r86cZmqS",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.LUEpcQatUgKGRnnU",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

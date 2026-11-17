@@ -1,0 +1,170 @@
+{
+  "_id": "Z6uES1d1HwVmjf2F",
+  "name": "Scroll of Titan Summoning",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-red-tan.webp",
+  "folder": "Q32Vz3Fo3HAqDGX8",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>When you take a Magic action to read this scroll, the titan named in it appears in an unoccupied space on the ground or in water that you can see within 1 mile of you. The DM picks a suitable titan or rolls on the table below (see the Monster Manual for its stat block).</p><table><thead><tr><th>1d100</th><th>Titan</th></tr></thead><tbody><tr><td>01–15</td><td>Animal Lord</td></tr><tr><td>16–30</td><td>Blob of Annihilation</td></tr><tr><td>31–45</td><td>Colossus</td></tr><tr><td>46–60</td><td>Elemental Cataclysm</td></tr><tr><td>61–75</td><td>Empyrean</td></tr><tr><td>76–90</td><td>Kraken (it requires a body of water large enough to hold it, or the summoning fails and the scroll is wasted)</td></tr><tr><td>91–00</td><td>Tarrasque</td></tr></tbody></table><p>The titan is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If it is summoned into a space too small to contain it, the summoning fails and the scroll is wasted.</p>",
+      "chat": ""
+    },
+    "identifier": "scroll-of-titan-summoning",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true
+    },
+    "activities": {
+      "un6mpX2oHTk6FmBC": {
+        "type": "utility",
+        "_id": "un6mpX2oHTk6FmBC",
+        "sort": 100000,
+        "name": "Read the Scroll",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "mi",
+          "value": "1",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d100",
+          "name": "Titan",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "scroll",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

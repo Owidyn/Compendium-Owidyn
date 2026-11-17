@@ -1,0 +1,349 @@
+{
+  "name": "Umbral Form",
+  "type": "feat",
+  "_id": "reOyi6xw1XEqbAwQ",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "xCuA6IhvQnawWBY2",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>When you use Innate Sorcery, you can adopt a shadowy form, gaining the following benefits while your Innate Sorcery is active or until you end the form (no action required). Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 6 Sorcery Points (no action required) to restore your use of it.</p><p><strong>Incorporeal Movement.</strong> You can move through creatures and objects as if they were Difficult Terrain, but you take 1d10 Force damage if you end your turn inside a creature or an object.</p><p><strong>Shadow Resilience.</strong> You have Resistance to all damage except Force and Radiant damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Shadow Sorcery 18",
+    "activities": {
+      "lAEVtuda8YAVoVyV": {
+        "type": "utility",
+        "_id": "lAEVtuda8YAVoVyV",
+        "sort": 100000,
+        "name": "Umbral Form",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Innate Sorcery"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "lAEVtuda8YAVoVyV"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "sviJEXf8pF0DGeY4": {
+        "type": "utility",
+        "_id": "sviJEXf8pF0DGeY4",
+        "sort": 200000,
+        "name": "Restore with Sorcery Points",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "No action required"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "6",
+              "target": "feat:font-of-magic",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "umbral-form",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "lAEVtuda8YAVoVyV",
+      "name": "Umbral Form",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "UpPKDzrAFWRyDHBP"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "eMpUxvXVX7NneZ67"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "rBaZVLRMJ78pt1NH"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "uKDkPjamJrtcb04v"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "LKIsmYxamgXg126G"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "EXEAqYGBZ9UYkdrP"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "hPYRAPBq8plKlFCL"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "eMRzxoGGffQBBddA"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "HvSDD1ts7sWWsQ97"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "AfwVeXzSGBlOxwoX"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "WwbCFT8BqHgycNe7"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Shadowy form while Innate Sorcery is active: Incorporeal Movement and Resistance to all damage except Force and Radiant.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

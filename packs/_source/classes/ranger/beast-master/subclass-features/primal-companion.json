@@ -1,0 +1,421 @@
+{
+  "name": "Primal Companion",
+  "type": "feat",
+  "_id": "lJCvN5zxp98EFJVa",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "folder": "ueoCKHVUfp0HaoX8",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You magically summon a primal beast, which draws strength from your bond with nature. Choose its stat block—@UUID[Compendium.compendium-owidyn.summons.Actor.cxH1BJmIiU2nukbH]{Beast of the Land}, @UUID[Compendium.compendium-owidyn.summons.Actor.eD2NzS5VFxBIluCd]{Beast of the Sea}, @UUID[Compendium.compendium-owidyn.summons.Actor.irvLRA3GnH9azJko]{Beast of the Sky}—and the kind of animal it is, one that suits the stat block. Whatever you choose, the beast bears primal markings revealing its supernatural origin.</p><p>The beast is Friendly to you and your allies and obeys your commands. It vanishes if you die.</p><p><strong>The Beast in Combat.</strong> In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take its Beast's Strike action. If you have the Incapacitated condition, the beast acts on its own and isn't limited to the Dodge action.</p><p><strong>Restoring or Replacing the Beast.</strong> If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot; it returns to life after 1 minute with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast, which appears in an unoccupied space within 5 feet of you; you choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.</p><section class=\"secret\" id=\"secret-c7YGEhwj6momFkrr\"><p><strong>Foundry Note</strong></p><p>The summon applies your Wisdom modifier to the beast's AC and Beast's Strike damage, your spell attack modifier to its attack, and five times your Ranger level to its Hit Points (four times for the Beast of the Sky).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Beast Master 3",
+    "activities": {
+      "1gcwtPLURyHgKsvo": {
+        "type": "summon",
+        "_id": "1gcwtPLURyHgKsvo",
+        "sort": 100000,
+        "name": "Beast of the Land",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you finish a Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "nEyPAfuM3IBSFFA9",
+            "count": "",
+            "name": "Beast of the Land",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.cxH1BJmIiU2nukbH"
+          }
+        ],
+        "bonuses": {
+          "ac": "@abilities.wis.mod",
+          "hd": "",
+          "hp": "5 * @classes.ranger.levels",
+          "attackDamage": "@abilities.wis.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "wis",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "FtQGxfObE4NZM9uX": {
+        "type": "summon",
+        "_id": "FtQGxfObE4NZM9uX",
+        "sort": 200000,
+        "name": "Beast of the Sea",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you finish a Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "W9BgRwFAKsond9uU",
+            "count": "",
+            "name": "Beast of the Sea",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.eD2NzS5VFxBIluCd"
+          }
+        ],
+        "bonuses": {
+          "ac": "@abilities.wis.mod",
+          "hd": "",
+          "hp": "5 * @classes.ranger.levels",
+          "attackDamage": "@abilities.wis.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "wis",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "hZLp81QmC6zbYdCe": {
+        "type": "summon",
+        "_id": "hZLp81QmC6zbYdCe",
+        "sort": 300000,
+        "name": "Beast of the Sky",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you finish a Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "igo6dagFdXiQkX9N",
+            "count": "",
+            "name": "Beast of the Sky",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.irvLRA3GnH9azJko"
+          }
+        ],
+        "bonuses": {
+          "ac": "@abilities.wis.mod",
+          "hd": "",
+          "hp": "4 * @classes.ranger.levels",
+          "attackDamage": "@abilities.wis.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "wis",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "ElNcEFSzALbyiael": {
+        "type": "utility",
+        "_id": "ElNcEFSzALbyiael",
+        "sort": 400000,
+        "name": "Restore the Beast",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "primal-companion",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

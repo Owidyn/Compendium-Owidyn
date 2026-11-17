@@ -1,0 +1,168 @@
+{
+  "_id": "3yxLzDwlNJIsvGVy",
+  "name": "Boon of the Furious Storm",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "d7xU1fM5CYsiL7r8": {
+        "_id": "d7xU1fM5CYsiL7r8",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "LZaT12z8cPJ17lpZ": {
+        "_id": "LZaT12z8cPJ17lpZ",
+        "type": "Trait",
+        "level": 0,
+        "name": "Eye of the Storm",
+        "title": "Eye of the Storm",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:lightning",
+            "dr:thunder"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</p><p><strong>Eye of the Storm.</strong> You have Resistance to Lightning and Thunder damage. While you are Bloodied, you have Immunity to Lightning and Thunder damage.</p><p><strong>Storm's Strength.</strong> Creatures have Disadvantage on saving throws against your spells that deal Lightning or Thunder damage.</p><section class=\"secret\" id=\"secret-ggaif5xYEKUHqV6M\"><p><strong>Foundry Note</strong></p><p>Turn on the effect while you are Bloodied.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-the-furious-storm",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [
+    {
+      "_id": "R5LFTFWnl0oJNDLe",
+      "name": "Eye of the Storm (Bloodied)",
+      "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "39Br6GVYf4RHAdwy"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "6SCnGKst2niEQP6Z"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While Bloodied: Immunity to Lightning and Thunder damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

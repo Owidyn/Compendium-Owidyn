@@ -1,0 +1,131 @@
+{
+  "name": "Echo of the Elements",
+  "type": "feat",
+  "_id": "XAh3EZ39FTyLP8ms",
+  "img": "icons/magic/nature/leaf-glow-triple-orange.webp",
+  "folder": "gG1H03rYYaINA3dz",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You tap into the tranquility of the elements. You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplElementali]{Elementalism} cantrip. In addition, you can expend a use of your Rage to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWaterWalk0]{Water Walk}, or @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]{Wind Wall}. Wisdom is your spellcasting ability for these spells.</p><section class=\"secret\" id=\"secret-97YhZSRLSUYbBErT\"><p><strong>Foundry Note</strong></p><p>Cast Daylight, Water Walk, or Wind Wall from your sheet after <em>Expend a Rage</em> spends a use of your Rage.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Elements 6",
+    "activities": {
+      "yrPd0RVDPAqEdgFm": {
+        "type": "utility",
+        "_id": "yrPd0RVDPAqEdgFm",
+        "sort": 100000,
+        "name": "Expend a Rage",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:rage",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "echo-of-the-elements",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

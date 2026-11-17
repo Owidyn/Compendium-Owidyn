@@ -1,0 +1,276 @@
+{
+  "name": "Discipline Domain",
+  "type": "subclass",
+  "_id": "ayYdmX7dCeaMhrDh",
+  "img": "icons/magic/symbols/circle-ouroboros.webp",
+  "folder": "bHi5j3971vMWJCzE",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Cure Allies' Wounds While Smiting Enemies</p></blockquote><p>The Discipline Domain is about the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, its Clerics aid their allies and harm their foes, often with a single spell.</p><h3>Discipline Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.6aQNet7lDJikCuvX]{Discipline Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.L89hW3EH3WyuUAsP]{Holy Bolt}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.SmwXvX8zT2dRuAOD]{Atonement}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.mUbWNKV6JOCklLC4]{Luminous Barrier}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.fleCK6FBFQ8AioJ0]{Ultimate Penitence}</td></tr></tbody></table><h3>Discipline Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneVigo]{Arcane Vigor}, @UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShieldofFa]{Shield of Faith}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.BxGyVAouAysXl0Uf]{Prayer of Mending}, @UUID[Compendium.dnd5e.spells24.Item.phbProtectionFro]{Protection from Energy}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Guardian of Faith}, @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneskin0]{Stoneskin}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.Ydjq7AY2mw80wgeM]{Circle of Power}, @UUID[Compendium.compendium-owidyn.spells.Item.9l9wvGNjcFI9kCHq]{Destructive Wave}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "discipline-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "qDaUhtswEhOrYOkp": {
+        "_id": "qDaUhtswEhOrYOkp",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.6aQNet7lDJikCuvX",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.L89hW3EH3WyuUAsP",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SmwXvX8zT2dRuAOD",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1le0oZV27kgIRakg": {
+        "_id": "1le0oZV27kgIRakg",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.mUbWNKV6JOCklLC4",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "kc7k82uQ3HbCHdxY": {
+        "_id": "kc7k82uQ3HbCHdxY",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.fleCK6FBFQ8AioJ0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "16uUtEMvwsgEWbei": {
+        "_id": "16uUtEMvwsgEWbei",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Discipline Domain Spells",
+        "title": "Discipline Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneVigo",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShieldofFa",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "9cqmfDZlwZ1q8yAW": {
+        "_id": "9cqmfDZlwZ1q8yAW",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Discipline Domain Spells",
+        "title": "Discipline Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.BxGyVAouAysXl0Uf",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbProtectionFro",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "D2yLAZ3sA1H9IEAQ": {
+        "_id": "D2yLAZ3sA1H9IEAQ",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Discipline Domain Spells",
+        "title": "Discipline Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuardianof",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplStoneskin0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "s8zyTyRV3Nj4NwTw": {
+        "_id": "s8zyTyRV3Nj4NwTw",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Discipline Domain Spells",
+        "title": "Discipline Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Ydjq7AY2mw80wgeM",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.9l9wvGNjcFI9kCHq",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

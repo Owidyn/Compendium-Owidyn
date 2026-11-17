@@ -1,0 +1,211 @@
+{
+  "name": "House Ghallanda Heir",
+  "type": "background",
+  "_id": "GV0qY2rWACYbXvpW",
+  "img": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Thanks to your ties to House Ghallanda, you grew up used to comfort, lively conversation, fine drink, and delicious food. You might be a witty, charming scion who loves nothing more than a pleasant evening by a warm hearth, or a schemer who uses trust and friendship to bend others to your will. You might take up adventuring to learn the cuisines of other cultures and eras, widen your circle of useful contacts, or earn enough to open your own inn.</p><p><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.s9uNMvT2QYghCPLW]{Mark of Hospitality}</p><p><strong>Skill Proficiencies:</strong> Insight and Persuasion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCooksUtens]{Cook's Utensils}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCooksUtens]{Cook's Utensils}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPotIron0000]{Iron Pot}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (5 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagPerfume0000]{Perfume}, 26 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-ghallanda-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "AMunySdEYQxR0p4M": {
+        "_id": "AMunySdEYQxR0p4M",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "7gduEMlytddqfS3u": {
+        "_id": "7gduEMlytddqfS3u",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Insight and Persuasion. It also grants you proficiency in Cook's Utensils.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:per",
+            "tool:art:cook"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "upnaA0VQ8WQ03dBh": {
+        "_id": "upnaA0VQ8WQ03dBh",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Hospitality feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.s9uNMvT2QYghCPLW",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "kBzPzpdoIgQyqPot": {
+        "_id": "kBzPzpdoIgQyqPot",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "Zis6RCTmXufaPHEm",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCooksUtens",
+        "requiresProficiency": false,
+        "_id": "SAsy46uSN1dXXWRL",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "iLnh7Si9As7pyDMy",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPotIron0000",
+        "requiresProficiency": false,
+        "_id": "L7KqC512WNELXavP",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "requiresProficiency": false,
+        "_id": "1EvCa0DOz7YMPcVW",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 500000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "tWV6w2f8HB1HBnFX",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPerfume0000",
+        "requiresProficiency": false,
+        "_id": "DQqzqVVOu6TPO9W5",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 700000
+      },
+      {
+        "count": 26,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "eIgxnY2P9Md51Bnl",
+        "group": "Zis6RCTmXufaPHEm",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

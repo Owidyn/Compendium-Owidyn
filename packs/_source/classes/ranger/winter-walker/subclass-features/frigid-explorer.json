@@ -1,0 +1,200 @@
+{
+  "name": "Frigid Explorer",
+  "type": "feat",
+  "_id": "VtdX7Q644JBr0B4E",
+  "img": "icons/magic/water/ice-crystal-white.webp",
+  "folder": "ckt37zU50BTCDxVF",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><p><strong>Biting Cold.</strong> Damage from your weapon attacks, Ranger spells, and Ranger features ignores Resistance to Cold damage.</p><p><strong>Frost Resistance.</strong> You have Resistance to Cold damage.</p><p><strong>Polar Strikes.</strong> When you hit a creature with an attack roll using a weapon, you can deal an extra 1d4 Cold damage to it; a creature can take this extra damage only once per turn. The extra damage increases to 1d6 at Ranger level 11.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Winter Walker 3",
+    "activities": {
+      "2PkDVeK92rvxZZIW": {
+        "type": "damage",
+        "_id": "2PkDVeK92rvxZZIW",
+        "sort": 100000,
+        "name": "Polar Strikes",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit a creature with a weapon"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.winter-walker.polar-strikes"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "frigid-explorer",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "FwxWf2ATG7CRA2E2",
+      "name": "Frost Resistance",
+      "img": "icons/magic/water/ice-crystal-white.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "sVcLntuFnAdnSIQw"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Cold damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

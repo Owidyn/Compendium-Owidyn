@@ -1,0 +1,235 @@
+{
+  "name": "Familiar Trainer",
+  "type": "background",
+  "_id": "69yKjIYySWALAFBx",
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "folder": "pIA0XJ0HUfMM0WRE",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>A magical familiar bonded with you when you were young and stayed by your side as you grew up. Now you can't imagine life without your furry—or feathered, scaly, or slimy—companion. You have learned to work hand in hand with your familiar, and when adventure turns hard, it is quick to remind you of life's small joys.</p><p><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.az44pZCPz6PYU23k]{Familiar Friend}</p><p><strong>Skill Proficiencies:</strong> Animal Handling and Arcana</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}, Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBell0000000]{Bell}, @UUID[Compendium.dnd5e.equipment24.Item.phbagString00000]{String}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 44 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "familiar-trainer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "hY2FkwecuYWZL9GX": {
+        "_id": "hY2FkwecuYWZL9GX",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Intelligence, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "7PYBG79kjOYk5CGn": {
+        "_id": "7PYBG79kjOYk5CGn",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Animal Handling and Arcana. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:arc"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "GRXs9rspYrQIj2Ij": {
+        "_id": "GRXs9rspYrQIj2Ij",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Familiar Friend feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.az44pZCPz6PYU23k",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Yt2OrVEuCWBcfb2O": {
+        "_id": "Yt2OrVEuCWBcfb2O",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "FRqfkh3obuXAcOnm",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepQuartersta",
+        "requiresProficiency": false,
+        "_id": "cm7iGVzbFivvGh2t",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "tamSBdkWQWgYhlE9",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "aFKiBBoZf6cL4zIS",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBell0000000",
+        "requiresProficiency": false,
+        "_id": "DuYZQRDZeJasTOD9",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagString00000",
+        "requiresProficiency": false,
+        "_id": "Gdjxq8DqlYO75tTC",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "aMjWDI8ffEB9hz7D",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "FGAZNI6eDcomJNCT",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "eohJqWUvrGT4HfNx",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 900000
+      },
+      {
+        "count": 44,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "3hSzfaBq3sTOUD2C",
+        "group": "FRqfkh3obuXAcOnm",
+        "sort": 1000000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

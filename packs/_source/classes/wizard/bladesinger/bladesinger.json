@@ -1,0 +1,197 @@
+{
+  "name": "Bladesinger",
+  "type": "subclass",
+  "_id": "PXnBY9nh7o041XuJ",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "folder": "TH4qyKdmXNFiVZcx",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Wield Weapon and Wizardry in Elegant Tandem</p></blockquote><p>Bladesingers master a tradition of wizardry that weaves together swordplay and dance. In combat, a Bladesinger uses intricate, elegant maneuvers that fend off harm and channel magic into devastating attacks and a cunning defense. Many who have watched a Bladesinger at work remember the sight as one of the most beautiful of their lives—a glorious dance accompanied by a singing blade.</p><p>Bladesinging is tied to the ancient elven societies that first mastered the art and named it. Even today, most Bladesingers come from old elven realms such as Myth Drannor, or from non-elven societies that share land and history with elves, such as the Silver Marches. Wherever they come from, Bladesingers carry their talents across the Realms to help common folk and perform heroic deeds, and most communities greet the arrival of a Bladesinger as a good omen.</p><h3>Bladesinger Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.lYnjYZwi5clEUK9v]{Bladesong}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Kj0Jos1BhE98aMXR]{Training in War and Song}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.xcCp5EFBt0HFHs6v]{Extra Attack}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.kUXgIxcGw4g6qfKX]{Song of Defense}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.vwZBSg3FFhbcyyLA]{Song of Victory}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "bladesinger",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "O0QDl8ym4TUfnbak": {
+        "_id": "O0QDl8ym4TUfnbak",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lYnjYZwi5clEUK9v",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Kj0Jos1BhE98aMXR",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "vh1yylryB1pjrTNe": {
+        "_id": "vh1yylryB1pjrTNe",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xcCp5EFBt0HFHs6v",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "I8Uv7J5AKmSX78Zk": {
+        "_id": "I8Uv7J5AKmSX78Zk",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.kUXgIxcGw4g6qfKX",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "3GlDO92CtC6RfTE2": {
+        "_id": "3GlDO92CtC6RfTE2",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.vwZBSg3FFhbcyyLA",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PCVb2JWlaHw9oGP0": {
+        "_id": "PCVb2JWlaHw9oGP0",
+        "type": "Trait",
+        "level": 3,
+        "name": "Training in War and Song (Weapons)",
+        "title": "Training in War and Song (Weapons)",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:mar:battleaxe",
+            "weapon:mar:flail",
+            "weapon:mar:longsword",
+            "weapon:mar:morningstar",
+            "weapon:mar:rapier",
+            "weapon:mar:scimitar",
+            "weapon:mar:shortsword",
+            "weapon:mar:trident",
+            "weapon:mar:warpick",
+            "weapon:mar:warhammer",
+            "weapon:mar:whip"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "I67diKpIumbuOntW": {
+        "_id": "I67diKpIumbuOntW",
+        "type": "Trait",
+        "level": 3,
+        "name": "Training in War and Song (Skill)",
+        "title": "Training in War and Song (Skill)",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:prf",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

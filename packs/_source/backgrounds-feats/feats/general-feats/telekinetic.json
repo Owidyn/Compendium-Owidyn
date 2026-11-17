@@ -1,0 +1,201 @@
+{
+  "_id": "Dafe9rboXYOUVYph",
+  "name": "Telekinetic",
+  "type": "feat",
+  "img": "icons/magic/control/debuff-energy-hold-pink.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "ZLtwgBYTvFAVhWRv": {
+        "type": "save",
+        "_id": "ZLtwgBYTvFAVhWRv",
+        "sort": 100000,
+        "name": "Telekinetic Shove",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "E06w4VawJ5CzxMsl": {
+        "_id": "E06w4VawJ5CzxMsl",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "bVsCywnzq3Cu9kHH": {
+        "_id": "bVsCywnzq3Cu9kHH",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Minor Telekinesis",
+        "title": "Minor Telekinesis",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMageHand00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Minor Telekinesis.</strong> You learn the @UUID[Compendium.dnd5e.spells24.Item.phbsplMageHand00]{Mage Hand} cantrip. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance the hand can be from you both increase by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.</p><p><strong>Telekinetic Shove.</strong> As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of you. It must succeed on a Strength saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</p><section class=\"secret\" id=\"secret-aQhTgaO15KEkzfYo\"><p><strong>Foundry Note</strong></p><p>The save DC uses your spellcasting ability: make sure it is the ability you increased.</p></section>",
+      "chat": ""
+    },
+    "identifier": "telekinetic",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

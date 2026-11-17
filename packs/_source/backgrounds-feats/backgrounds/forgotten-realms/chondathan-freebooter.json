@@ -1,0 +1,256 @@
+{
+  "name": "Chondathan Freebooter",
+  "type": "background",
+  "_id": "RryEVZ9N9fytPNbm",
+  "img": "icons/sundries/flags/banner-flag-skull-red.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Most young people in Chondath accept their four years of mandatory military service, but you chafed at that authoritarian attempt to control your life. You renounced your nationality, cast off your given name, and signed on as a freebooter with the first ship that would take you. Since then you have roamed the Vilhon Reach. You have never sailed more than a few dozen leagues from shore, but your strong local connections and the breadth of your experience make up for it.</p><p><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled}</p><p><strong>Skill Proficiencies:</strong> Athletics and Sleight of Hand</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulWeaversToo]{Weaver's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulWeaversToo]{Weaver's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBallBearing]{Ball Bearings}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBasket00000]{Basket}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBucket00000]{Bucket}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRations0000]{Rations} (3 days' worth), @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd5e.equipment24.Item.phbagSignalWhist]{Signal Whistle}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 38 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "chondathan-freebooter",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "9sl6slNAXIV851Fk": {
+        "_id": "9sl6slNAXIV851Fk",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Dexterity, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "gseWnwdZ0yiJHwrV": {
+        "_id": "gseWnwdZ0yiJHwrV",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Athletics and Sleight of Hand. It also grants you proficiency in Weaver's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:slt",
+            "tool:art:weaver"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "CZGlsWnTt8D9nkdS": {
+        "_id": "CZGlsWnTt8D9nkdS",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Skilled feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftSkilled0000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "34c8vGoZt9z3BzUC": {
+        "_id": "34c8vGoZt9z3BzUC",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "LlfNNcdxExbd6Bem",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "4AokbhRfCzJKB6Kq",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulWeaversToo",
+        "requiresProficiency": false,
+        "_id": "TJCO8lkrd53CmPS0",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBackpack000",
+        "requiresProficiency": false,
+        "_id": "ENlRyvzIOVXwukXP",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBallBearing",
+        "requiresProficiency": false,
+        "_id": "g9zETYbHRUOK1Ds7",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBasket00000",
+        "requiresProficiency": false,
+        "_id": "czAqkgEgsebDoAOG",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "R0LqJrYHov0l35JW",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBucket00000",
+        "requiresProficiency": false,
+        "_id": "6z8dNWDUHB2iT5Nj",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 800000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRations0000",
+        "requiresProficiency": false,
+        "_id": "cfAm5NQzK1SpTaYr",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 900000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRope0000000",
+        "requiresProficiency": false,
+        "_id": "3aqx74YCKE5vYVjC",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 1000000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagSignalWhist",
+        "requiresProficiency": false,
+        "_id": "uROD75GK2DttWAnX",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 1100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "6WsVNsvizUR1KCZU",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 1200000
+      },
+      {
+        "count": 38,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "bB2yPUsCUH6drYAe",
+        "group": "LlfNNcdxExbd6Bem",
+        "sort": 1300000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Arcane Firearm",
+  "type": "feat",
+  "_id": "dCxDONxpdnP1PiyI",
+  "img": "icons/weapons/wands/wand-carved-pink.webp",
+  "folder": "AZMsvdYPT0ubU3XS",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>When you finish a Long Rest, you can use Woodcarver's Tools to carve special sigils into a Rod, Staff, Wand, or Martial Ranged weapon, turning it into your Arcane Firearm. The sigils disappear if you later carve them on another item; otherwise they last indefinitely. You can use your Arcane Firearm as a Spellcasting Focus for your Artificer spells. When you cast an Artificer spell through it, roll 1d8: you gain a bonus to one of the spell's damage rolls equal to the number rolled.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artillerist 5",
+    "activities": {
+      "fRuZyiweuWD5at2r": {
+        "type": "utility",
+        "_id": "fRuZyiweuWD5at2r",
+        "sort": 100000,
+        "name": "Arcane Firearm",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d8",
+          "name": "Bonus to a damage roll",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "arcane-firearm",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

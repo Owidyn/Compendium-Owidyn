@@ -1,0 +1,126 @@
+{
+  "_id": "NCkVEOsNayqhi9cK",
+  "name": "Protection",
+  "type": "feat",
+  "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+  "folder": "wQo2sovs7D6oiySl",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "6f4zaxbd3CdhKygb": {
+        "type": "utility",
+        "_id": "6f4zaxbd3CdhKygb",
+        "sort": 100000,
+        "name": "Protection",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature you can see attacks a target other than you within 5 feet of you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>Fighting Style Feat (Prerequisite: Fighting Style Feature)</em></p><p>When a creature you can see attacks a target other than you within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on that attack roll and on all other attack rolls against the target until the start of your next turn, as long as you stay within 5 feet of it.</p>",
+      "chat": ""
+    },
+    "identifier": "protection",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "fighting-style"
+      ],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Fighting Style Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

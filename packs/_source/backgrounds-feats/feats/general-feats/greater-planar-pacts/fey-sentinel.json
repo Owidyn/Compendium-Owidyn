@@ -1,0 +1,284 @@
+{
+  "_id": "iDF8PMzbsXiPAd0F",
+  "name": "Fey Sentinel",
+  "type": "feat",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "folder": "hZXEZhLBP1OnVB49",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "kqhA5WTUoRSOeNs3": {
+        "type": "utility",
+        "_id": "kqhA5WTUoRSOeNs3",
+        "sort": 100000,
+        "name": "Fading Target",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "An enemy misses you with an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "WE6eD4MstL0gSRDR"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "1JD6sGHMRJ4K5DmE": {
+        "_id": "1JD6sGHMRJ4K5DmE",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "ZXeiBCN4H5KydYsj": {
+        "_id": "ZXeiBCN4H5KydYsj",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Nature's Roots",
+        "title": "Nature's Roots",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEntangle00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "AX5UugCrDNYpT4C8": {
+        "_id": "AX5UugCrDNYpT4C8",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Nature's Roots (Level 5)",
+        "title": "Nature's Roots (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPlantGrowt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Fey Pact Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Fading Target.</strong> When an enemy misses you with an attack roll, you can take a Reaction to gain the Invisible condition until the start of your next turn, or until immediately after you make an attack roll, deal damage, or cast a spell. Once you use this benefit, you can't do so again until you finish a Long Rest.</p><p><strong>Fey Shift.</strong> When you take the Dash action, you can forgo the extra movement to teleport to an unoccupied space you can see within a distance equal to half your Speed instead.</p><p><strong>Nature's Roots.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplEntangle00]{Entangle} prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; you can also cast it with any spell slots you have. Its spellcasting ability is the ability increased by this feat. From character level 5, you also always have @UUID[Compendium.dnd5e.spells24.Item.phbsplPlantGrowt]{Plant Growth} prepared and can cast it the same way.</p><section class=\"secret\" id=\"secret-EBfB8E3f4g8P9UUB\"><p><strong>Foundry Note</strong></p><p>Choose the ability you increased for both spells.</p></section>",
+      "chat": ""
+    },
+    "identifier": "fey-sentinel",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "fey-pact"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Fey Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "WE6eD4MstL0gSRDR",
+      "name": "Fading Target",
+      "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Invisible until the start of your next turn, or until you attack, deal damage, or cast a spell.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "invisible"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

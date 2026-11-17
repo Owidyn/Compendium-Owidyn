@@ -1,0 +1,235 @@
+{
+  "name": "Pact Seeker",
+  "type": "background",
+  "_id": "B2xmv111uvq5cHuH",
+  "img": "icons/sundries/scrolls/scroll-runed-brown.webp",
+  "folder": "yPb7DAZUVx2Ey6GP",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You had a goal in mind—knowledge, power, or perhaps hidden secrets. One way or another, your path led you to seek out a being from beyond your plane. Once you made contact, a deal was struck, and your life was never the same.</p><p><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</p><p><strong>Feat:</strong> A Planar Pact feat of your choice</p><p><strong>Skill Proficiencies:</strong> Arcana and Persuasion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink}, @UUID[Compendium.dnd5e.equipment24.Item.phbagInkPen00000]{Ink Pen}, @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (10 sheets), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 2 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "pact-seeker",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "ojDTyTMHuGChDFnf": {
+        "_id": "ojDTyTMHuGChDFnf",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "8HdEk0GayNgXmW0E": {
+        "_id": "8HdEk0GayNgXmW0E",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Arcana and Persuasion. It also grants you proficiency in Calligrapher's Supplies.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:arc",
+            "skills:per",
+            "tool:art:calligrapher"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "7cBrjhv9sNKBNO1g": {
+        "_id": "7cBrjhv9sNKBNO1g",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Choose a Planar Pact feat.",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.dMEa1ECciSyFQq1X"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.NQ8J3VyzL1ZsAPCa"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.s5yljQh2RkRyY7W7"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.XBLCMoMamJqzJGg1"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "pYqz5I5OEs4SrQur": {
+        "_id": "pYqz5I5OEs4SrQur",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "u4DFbNa2hGINotiW",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBook0000000",
+        "requiresProficiency": false,
+        "_id": "JvTfH4d0FfnojC8h",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCalligraph",
+        "requiresProficiency": false,
+        "_id": "gBH08dNeaFZFyCBw",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagInk00000000",
+        "requiresProficiency": false,
+        "_id": "GopAUXe4YEMB2VkM",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagInkPen00000",
+        "requiresProficiency": false,
+        "_id": "DlGhkWds9fS8nrHB",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 500000
+      },
+      {
+        "count": 10,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagParchment00",
+        "requiresProficiency": false,
+        "_id": "Rnt865eD8MvOnmNW",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "Fw5HWD1OgKBXvBgn",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 700000
+      },
+      {
+        "count": 2,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "KMd4Df8NbRXCAp6J",
+        "group": "u4DFbNa2hGINotiW",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

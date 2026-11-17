@@ -1,0 +1,110 @@
+{
+  "name": "Spectral Sight",
+  "type": "feat",
+  "_id": "a0OHj6LRJaDkRBoj",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+  "folder": "43lHaixCR7Jsrr5m",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>You have Blindsight with a range of 10 feet.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Demon Hunter 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "spectral-sight",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "8cZl5dN4bIjUL4HH",
+      "name": "Spectral Sight",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.blindsight",
+            "value": "10",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "hGPg1pyXJDVwh8KW"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Blindsight 10 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "name": "Starry Form",
+  "type": "feat",
+  "_id": "wX40MZSodC6FBVNN",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
+  "folder": "JAgWyF0vek2lVWIB",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can expend a use of your Wild Shape to take on a starry form instead of shape-shifting. You keep your game statistics, but your body becomes luminous, your joints glimmer like stars, and glowing lines connect them as on a star chart. The form sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and it lasts 10 minutes, ending early if you dismiss it (no action required), have the Incapacitated condition, or use this feature again. Whenever you take this form, choose which of the following constellations glimmers on your body; it gives you its benefits while in the form.</p><p><strong>Archer.</strong> When you take this form, and as a Bonus Action on your later turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow at one creature within 60 feet of you. On a hit, it deals Radiant damage equal to 1d8 plus your Wisdom modifier.</p><p><strong>Chalice.</strong> Whenever you cast a spell with a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to 1d8 plus your Wisdom modifier.</p><p><strong>Dragon.</strong> When you make an Intelligence or Wisdom check, or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p><section class=\"secret\" id=\"secret-Q7pXB2f898SA9cyT\"><p><strong>Foundry Note</strong></p><p>Dragon: treat a d20 roll of 9 or lower as a 10 on the eligible rolls (or set the minimum on the roll).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of the Stars 3",
+    "activities": {
+      "DiDkf8OAw0Vh3Nnn": {
+        "type": "utility",
+        "_id": "DiDkf8OAw0Vh3Nnn",
+        "sort": 100000,
+        "name": "Starry Form",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:wild-shape",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "DiDkf8OAw0Vh3Nnn"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "hfmZBZvJ9gQiOjxF": {
+        "type": "attack",
+        "_id": "hfmZBZvJ9gQiOjxF",
+        "sort": 200000,
+        "name": "Archer",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "While in Starry Form (Archer)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "ability": "spellcasting",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.circle-of-the-stars.constellation + @abilities.wis.mod"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "dCAyuGnMEkCUNABi": {
+        "type": "heal",
+        "_id": "dCAyuGnMEkCUNABi",
+        "sort": 300000,
+        "name": "Chalice",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You restore Hit Points with a spell slot (Chalice)"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@scale.circle-of-the-stars.constellation + @abilities.wis.mod"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "starry-form",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "DiDkf8OAw0Vh3Nnn",
+      "name": "Starry Form",
+      "img": "icons/magic/symbols/runes-star-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Bright Light 10 feet, Dim Light 10 feet more; the chosen constellation.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

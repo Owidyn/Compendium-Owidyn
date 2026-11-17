@@ -1,0 +1,546 @@
+{
+  "name": "Genie Patron",
+  "type": "subclass",
+  "_id": "4aZjLnFH34fkhEjn",
+  "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
+  "folder": "7GWKLOlI6n3FXIe8",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Make a Pact with a Noble Genie</p></blockquote><p>You have made a pact with one of the rarest kinds of genie: a noble genie. These entities rule vast fiefs on the Elemental Planes and hold great sway over lesser genies and elemental creatures. Their motives vary, but most are arrogant and wield power that rivals that of lesser deities. They delight in turning the tables on mortals, who so often bind genies into servitude, and readily enter into pacts that expand their reach.</p><p>When you choose this subclass, choose the kind of your patron in the Genie Kind table: it determines the element of your gifts, the damage type of Genie's Wrath and Elemental Gift, and your Genie Spells.</p><table><thead><tr><th>Kind</th><th>Element</th><th>Damage Type</th></tr></thead><tbody><tr><td>@UUID[Compendium.compendium-owidyn.classes.Item.bAlYPl3mtjmGxuNa]{Dao}</td><td>Earth</td><td>Bludgeoning</td></tr><tr><td>@UUID[Compendium.compendium-owidyn.classes.Item.SZwvJbkNUDqlIEvM]{Djinni}</td><td>Air</td><td>Thunder</td></tr><tr><td>@UUID[Compendium.compendium-owidyn.classes.Item.VYhPrXMYy8c1U1FH]{Efreeti}</td><td>Fire</td><td>Fire</td></tr><tr><td>@UUID[Compendium.compendium-owidyn.classes.Item.Wxp4l7FiOYYE7Scz]{Marid}</td><td>Water</td><td>Cold</td></tr></tbody></table><p><em>Owidyn adaptation of the Genie patron (Tasha's Cauldron of Everything) to the 2024 rules: features at Warlock levels 3, 6, 10, and 14, and always-prepared Genie Spells.</em></p><h3>Genie Patron Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.6BhsB8YrSrzoHJ1i]{Genie Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.V2PNUGfMUh5MlqfS]{Genie's Vessel}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.ebMrvA65NxTXZ9bL]{Elemental Gift}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.B7uCAAFz0Ef1dCHy]{Sanctuary Vessel}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.xg26LX4S6xRKu3a7]{Limited Wish}</td></tr></tbody></table><h3>Genie Spells</h3><table><thead><tr><th>Warlock Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good}, @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasmal Force}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCreateFood]{Create Food and Water}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPhantasmal]{Phantasmal Killer}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCreation00]{Creation}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "genie-patron",
+    "classIdentifier": "warlock",
+    "advancement": {
+      "N1dHAgbrphHdbtNr": {
+        "_id": "N1dHAgbrphHdbtNr",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.6BhsB8YrSrzoHJ1i",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.V2PNUGfMUh5MlqfS",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VCwlNaHnchD6rwXk": {
+        "_id": "VCwlNaHnchD6rwXk",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.ebMrvA65NxTXZ9bL",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "OfXC2UQxVPCPfAKb": {
+        "_id": "OfXC2UQxVPCPfAKb",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.B7uCAAFz0Ef1dCHy",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "crnmKnaexM9xAiGC": {
+        "_id": "crnmKnaexM9xAiGC",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xg26LX4S6xRKu3a7",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "V93H7csaAyCTAGgm": {
+        "_id": "V93H7csaAyCTAGgm",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Genie Spells",
+        "title": "Genie Spells",
+        "hint": "When you reach a Warlock level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectEvil",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbPhantasmalFor",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "pJB5F4n7s1ngw6K5": {
+        "_id": "pJB5F4n7s1ngw6K5",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Genie Spells",
+        "title": "Genie Spells",
+        "hint": "When you reach a Warlock level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCreateFood",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "miXKZkiZ9VuxRsVn": {
+        "_id": "miXKZkiZ9VuxRsVn",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Genie Spells",
+        "title": "Genie Spells",
+        "hint": "When you reach a Warlock level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPhantasmal",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cCVC4OXFb1sGo3FG": {
+        "_id": "cCVC4OXFb1sGo3FG",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Genie Spells",
+        "title": "Genie Spells",
+        "hint": "When you reach a Warlock level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCreation00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Iaa0SfCa5WANo4HA": {
+        "_id": "Iaa0SfCa5WANo4HA",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Genie Kind",
+        "title": "Genie Kind",
+        "hint": "Choose the kind of your noble genie: Dao, Djinni, Efreeti, or Marid.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bAlYPl3mtjmGxuNa"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SZwvJbkNUDqlIEvM"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.VYhPrXMYy8c1U1FH"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Wxp4l7FiOYYE7Scz"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "3F7h2YNiZpngD9RN": {
+        "_id": "3F7h2YNiZpngD9RN",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Genie Spells (Your Kind)",
+        "title": "Genie Spells (Your Kind)",
+        "hint": "Choose the spells of your genie kind (Dao, Djinni, Efreeti, or Marid column).",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbSanctuary0000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpikeGrowt"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplThunderwav"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGustofWind"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBurningHan"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScorchingR"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFogCloud00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBlur000000"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "N0WCDELktNu8UmxR": {
+        "_id": "N0WCDELktNu8UmxR",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Genie Spells (Your Kind)",
+        "title": "Genie Spells (Your Kind)",
+        "hint": "Choose the spells of your genie kind (Dao, Djinni, Efreeti, or Marid column).",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMeldintoSt"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWindWall00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireball00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSleetStorm"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "jiHKyirZVHbCvlrb": {
+        "_id": "jiHKyirZVHbCvlrb",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Genie Spells (Your Kind)",
+        "title": "Genie Spells (Your Kind)",
+        "hint": "Choose the spells of your genie kind (Dao, Djinni, Efreeti, or Marid column).",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplStoneShape"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGreaterInv"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplControlWat"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "4st1dHjQEZ2jj0HC": {
+        "_id": "4st1dHjQEZ2jj0HC",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Genie Spells (Your Kind)",
+        "title": "Genie Spells (Your Kind)",
+        "hint": "Choose the spells of your genie kind (Dao, Djinni, Efreeti, or Marid column).",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofSton"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSeeming000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameStrik"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplConeofCold"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "name": "Crown of Spellfire",
+  "type": "feat",
+  "_id": "vFTelyd50MToOsCw",
+  "img": "icons/magic/fire/flame-burning-skull-orange.webp",
+  "folder": "vcCFB51IlOTBjsKj",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>When you use Innate Sorcery, you can alter it and infuse yourself with the essence of spellfire, gaining the following benefits while this use of Innate Sorcery is active. Once you use this feature to alter Innate Sorcery, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p><p><strong>Burning Life Force.</strong> Once per turn when you are hit by an attack roll, you can expend a number of Hit Point Dice, up to your Charisma modifier (minimum of one). Roll the expended dice and reduce the damage of that attack by the total rolled.</p><p><strong>Flight.</strong> You gain a Fly Speed of 60 feet and can hover.</p><p><strong>Spell Avoidance.</strong> When you are subjected to a spell or magical effect that allows a saving throw to take only half damage, you instead take no damage if you succeed on the save and only half damage if you fail. You can't use this benefit if you have the Incapacitated condition.</p><section class=\"secret\" id=\"secret-OBxRVOpWMbVLp6tW\"><p><strong>Foundry Note</strong></p><p>Burning Life Force: spend and roll your Hit Point Dice yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Spellfire Sorcery 18",
+    "activities": {
+      "eznzD1zYgW2f1zHC": {
+        "type": "utility",
+        "_id": "eznzD1zYgW2f1zHC",
+        "sort": 100000,
+        "name": "Crown of Spellfire",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Innate Sorcery"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "eznzD1zYgW2f1zHC"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Np0Sp367BPPnlVS5": {
+        "type": "utility",
+        "_id": "Np0Sp367BPPnlVS5",
+        "sort": 200000,
+        "name": "Restore with Sorcery Points",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "No action required"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "feat:font-of-magic",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "crown-of-spellfire",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "eznzD1zYgW2f1zHC",
+      "name": "Crown of Spellfire",
+      "img": "icons/magic/fire/flame-burning-skull-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "60",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DUeW5rzmrwGelRQ4"
+          },
+          {
+            "key": "system.attributes.movement.hover",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "iNN9nr1CWw7bNy8p"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Burning Life Force, Flight (60 feet, hover), and Spell Avoidance while this Innate Sorcery is active.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "name": "Spell-Storing Item",
+  "type": "feat",
+  "_id": "9Bpx3ay9xclhLk19",
+  "img": "icons/weapons/wands/wand-gem-violet.webp",
+  "folder": "4RbdHSEXTHThnBoK",
+  "sort": 700000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you finish a Long Rest, you can touch one Simple or Martial weapon, or one item you can use as a Spellcasting Focus, and store a spell in it: a level 1, 2, or 3 Artificer spell that has a casting time of an action and doesn't require a Material component the spell consumes (you needn't have it prepared). While holding the object, a creature can take a Magic action to produce the spell's effect from it, using your spellcasting ability modifier; if the spell requires Concentration, the creature must concentrate. Once a creature has used the object this way, it can't be used again until the start of that creature's next turn. The spell stays in the object until it has been used a number of times equal to twice your Intelligence modifier (minimum of twice), or until you use this feature again.</p><section class=\"secret\" id=\"secret-LmwytcEhsugpdOm1\"><p><strong>Foundry Note</strong></p><p>The uses of this feature count the uses of the stored spell. Cast the stored spell from your sheet (with your spellcasting modifier) when a creature uses the object.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(2, 2 * @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artificer 11",
+    "activities": {
+      "VXHLcad5xlebUeYd": {
+        "type": "utility",
+        "_id": "VXHLcad5xlebUeYd",
+        "sort": 100000,
+        "name": "Stored Spell",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "A creature holding the object produces the spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "spell-storing-item",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

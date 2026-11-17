@@ -1,0 +1,158 @@
+{
+  "_id": "3h8XIQ2kDKptrOi6",
+  "name": "Boon of Siberys",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "PG3hVxuo5HkxbjGc": {
+        "_id": "PG3hVxuo5HkxbjGc",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "YkwQbWZeAEI2IHFC": {
+        "_id": "YkwQbWZeAEI2IHFC",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Aberrant Magic",
+        "title": "Aberrant Magic",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAnimalShap"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplControlWea"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDemiplane0"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHeroesFeas"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMaze000000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMindBlank0"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPlaneShift"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplProjectIma"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRegenerate"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "available",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "sr",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+, Eberron Campaign)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Aberrant Magic.</strong> Choose a spell of level 8 or lower from the Sorcerer spell list, or a spell from the Siberys Dragonmark Spells table (which suggests a dragonmark for each, if you want to tie the spell to one of the marks). You always have that spell prepared. You can cast it once without a spell slot or components, regaining that use when you finish a Short or Long Rest; you can also cast it with any spell slots of the appropriate level you have. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (chosen when you gain this feat).</p><h4>Siberys Dragonmark Spells</h4><table><thead><tr><th>Spell</th><th>Suggested Dragonmark</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAnimalShap]{Animal Shapes}</td><td>Handling</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplControlWea]{Control Weather}</td><td>Storm</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDemiplane0]{Demiplane}</td><td>Making</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHeroesFeas]{Heroes' Feast}</td><td>Hospitality</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMaze000000]{Maze}</td><td>Warding</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindBlank0]{Mind Blank}</td><td>Sentinel</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPlaneShift]{Plane Shift}</td><td>Passage</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplProjectIma]{Project Image}</td><td>Shadow</td></tr><tr><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRegenerate]{Regenerate}</td><td>Healing</td></tr></tbody></table><section class=\"secret\" id=\"secret-rbcNKKuHsLZ7B9z2\"><p><strong>Foundry Note</strong></p><p>Pick a spell of the table, or drop a Sorcerer spell of level 8 or lower.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-siberys",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

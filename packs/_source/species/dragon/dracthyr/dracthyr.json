@@ -1,0 +1,138 @@
+{
+  "name": "Dracthyr",
+  "type": "race",
+  "_id": "UFAU7fQxGc0NT1FJ",
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "folder": "rPaAbLBYoZWAQMu5",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Ages ago, Neltharion the Earth-Warder foresaw a war that would shake the world and created soldiers for it: the dracthyr, blending the essence of dragons with the adaptability of mortal peoples. Bound to him by a titan relic, the Oathbinder, they trained on the Forbidden Reach of the Dragon Isles until its destruction made Neltharion fear their rebellion; with the blue Aspect Malygos, he sealed them in magical stasis for nearly twenty thousand years.</p><p>Awakened by the return of the primal dragon Raszageth, the five weyrns chose new paths. The Adamant Vigil was nearly wiped out on waking; the Dark Talons joined the Horde; the Ebon Scales rebelled against the dragons; the Healing Wings stayed on the Dragon Isles; and the Obsidian Warders joined the Alliance.</p><p><strong>Renown.</strong> Choose a weyrn: the Dark Talons, the Ebon Scales, the Healing Wings, or the Obsidian Warders. With the Dark Talons (Horde) or the Obsidian Warders (Alliance), your Renown Score with that faction begins at 3; otherwise, your Renown Score with the Valdrakken Accord begins at 3.</p><h3>Dracthyr Traits</h3><p><strong>Creature Type:</strong> Dragon</p><p><strong>Size:</strong> Medium (about 7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.ypf3bJeiC43geepO]{Gliding Wings}.</strong> While you're in your natural form and don't have the Incapacitated condition, when you fall, you subtract up to 100 feet from the distance fallen when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.vrBRqv73rLzUAcy0]{Natural Weaponry}.</strong> In your natural form, your wings and tail are powerful weapons. As a Bonus Action, you can use them to make an Unarmed Strike to Shove a creature.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.Za7xiAkJzNFUgR9i]{Visage}.</strong> As a Magic action, you can shape-shift into a humanoid form called your visage, or back into your natural form. You choose your visage's appearance when you select this species, including its coloration, height and weight, hair length, and sex. This change doesn't alter your clothing, equipment, or game statistics.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.bajChIzauLBIEQM6]{Draconic Flight} (character level 5).</strong> Starting at character level 5, you can use the wings of your natural form to fly short distances. As a Bonus Action, you leap into the air and gain a Fly Speed equal to your Speed for 10 minutes. Once you use this trait, you can't use it again until you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "dracthyr",
+    "type": {
+      "value": "dragon",
+      "custom": "",
+      "subtype": "Dracthyr"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "mYFintaFj4B3ExeN": {
+        "_id": "mYFintaFj4B3ExeN",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 7 feet tall)",
+        "flags": {}
+      },
+      "AXBQNVPJ5XvGpsqj": {
+        "_id": "AXBQNVPJ5XvGpsqj",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Dracthyr Traits",
+        "title": "Dracthyr Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.ypf3bJeiC43geepO",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.vrBRqv73rLzUAcy0",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.Za7xiAkJzNFUgR9i",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "E2PQSCzxWCwnxOUt": {
+        "_id": "E2PQSCzxWCwnxOUt",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Dracthyr Traits",
+        "title": "Dracthyr Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.bajChIzauLBIEQM6",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

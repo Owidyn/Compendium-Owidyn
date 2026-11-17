@@ -1,0 +1,237 @@
+{
+  "name": "Rimekin",
+  "type": "race",
+  "_id": "VMqkbQGh5Z4wbkGZ",
+  "img": "icons/magic/water/barrier-ice-shield.webp",
+  "folder": "iW3CgCxu808a2jY0",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Rimekin come from both Lorwyn and Shadowmoor. The first of them were flamekin who, during the Phyrexian invasion, met their troubles with cold logic and rejected rash reactions; the magical flames covering their bodies turned frigid, and they became rimekin.</p><p>Like flamekin, rimekin have innate magic, but the flames they conjure burn icy blue and give off a biting cold instead of heat. The chill even spreads, harmlessly, to what they touch: their armor and weapons become covered in a spiky layer of frost.</p><h3>Rimekin Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.qabXmj1TZ7x0P1VT]{Cold Fire Magic}.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofFrost]{Ray of Frost} cantrip. At character levels 3 and 5, you learn @UUID[Compendium.dnd5e.spells24.Item.phbsplIceKnife00]{Ice Knife} and @UUID[Compendium.dnd5e.spells24.Item.phbsplFlameBlade]{Flame Blade}, respectively. You always have these spells prepared, and you can cast each once without a spell slot, regaining that use when you finish a Long Rest; you can also cast them with any spell slots of the appropriate level you have. When you cast Flame Blade with this trait, it deals Cold damage instead of Fire damage. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.A65HVHaBXMdaM9wp]{Cold Resistance}.</strong> You have Resistance to Cold damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "rimekin",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Rimekin"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "QRV76HV4cQJlUHlK": {
+        "_id": "QRV76HV4cQJlUHlK",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "5GbD6bmBvu8106k0": {
+        "_id": "5GbD6bmBvu8106k0",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Rimekin Traits",
+        "title": "Rimekin Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.qabXmj1TZ7x0P1VT",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.A65HVHaBXMdaM9wp",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EAtm6hajY4V2Rv1f": {
+        "_id": "EAtm6hajY4V2Rv1f",
+        "type": "Trait",
+        "level": 0,
+        "name": "Cold Resistance",
+        "title": "Cold Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:cold"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "Ix71hqkPehKixo66": {
+        "_id": "Ix71hqkPehKixo66",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Cold Fire Magic",
+        "title": "Cold Fire Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRayofFrost",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "jdPz9KqZHsFnuIHd": {
+        "_id": "jdPz9KqZHsFnuIHd",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Cold Fire Magic (Level 3)",
+        "title": "Cold Fire Magic (Level 3)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplIceKnife00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "kOjtRhQax0ZOGHvr": {
+        "_id": "kOjtRhQax0ZOGHvr",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Cold Fire Magic (Level 5)",
+        "title": "Cold Fire Magic (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameBlade",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

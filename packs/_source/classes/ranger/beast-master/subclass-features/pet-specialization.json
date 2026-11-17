@@ -1,0 +1,360 @@
+{
+  "name": "Pet Specialization",
+  "type": "feat",
+  "_id": "SHzgxmLfIL52nwGr",
+  "img": "icons/creatures/abilities/paw-print-orange.webp",
+  "folder": "ueoCKHVUfp0HaoX8",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p><em>Variant feature (World of Warcraft), replaces the Ranger's Roving feature.</em> While the beast of your Primal Companion feature is within 60 feet of you, you gain one of the following benefits, depending on the specialization of its pet family (see Hunter Pets).</p><p><strong>Cunning.</strong> Your Speed and all of your beast's speeds increase by 10 feet. In addition, your beast can take its action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplFreedomofM]{Freedom of Movement} without any spell components, affecting itself and you if you are within range. Once it does so, it can't do so again until you finish a Long Rest.</p><p><strong>Ferocity.</strong> When your beast is Bloodied and hits with its Beast's Strike, you and your beast each regain Hit Points equal to your Wisdom modifier. In addition, your beast can take its action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplHaste00000]{Haste} without any spell components, affecting itself and you if you are within range. Once it does so, it can't do so again until you finish a Long Rest.</p><p><strong>Tenacity.</strong> Your Hit Point maximum increases by 6, and by 1 more whenever you gain a Ranger level. Your beast's Hit Point maximum also increases by your Ranger level. In addition, your beast can take its action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneskin0]{Stoneskin} without any spell components, affecting itself and you if you are within range. Once it does so, it can't do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-LJooFrj9o4ErYf6S\"><p><strong>Foundry Note</strong></p><p>Turn on the effect of your beast's specialization only (Cunning, Ferocity, or Tenacity); this feature then replaces Roving. Add your Ranger level to your beast's Hit Point maximum yourself with Tenacity.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Beast Master 6",
+    "activities": {
+      "9ByPzZXlaaGwixBC": {
+        "type": "heal",
+        "_id": "9ByPzZXlaaGwixBC",
+        "sort": 100000,
+        "name": "Ferocity",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Your Bloodied beast hits with its Beast's Strike"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@abilities.wis.mod"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "gaZxlVKK83bhwWJr": {
+        "type": "utility",
+        "_id": "gaZxlVKK83bhwWJr",
+        "sort": 200000,
+        "name": "Beast's Spell",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Your beast takes its action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "pet-specialization",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "W2HipRErmePQ0eGu",
+      "name": "Pet Specialization: Cunning",
+      "img": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "RuoambYfX9jeK4Uc"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Speed +10 feet (your beast too).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9ByPzZXlaaGwixBC",
+      "name": "Pet Specialization: Ferocity",
+      "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You and your beast heal when it hits while Bloodied.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "t6I8lXphsNExP7RV",
+      "name": "Pet Specialization: Tenacity",
+      "img": "icons/commodities/claws/claws-bear-brown-white.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.hp.bonuses.overall",
+            "value": "@classes.ranger.levels",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "1Ig8u47tcqwardq0"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Hit Point maximum + your Ranger level.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

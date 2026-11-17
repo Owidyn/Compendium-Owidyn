@@ -1,0 +1,202 @@
+{
+  "name": "Flaming Fist Mercenary",
+  "type": "background",
+  "_id": "BbODgS39u2hodXJM",
+  "img": "icons/magic/fire/flame-burning-fist-strike.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The Flaming Fist, a burly mercenary company led by the grand duke, is the main law enforcement force of Baldur's Gate. You once served in its ranks, where you learned to head off trouble with an intimidating glare and, when needed, to shrug off deadly blows. Active or retired, the Fists are known as some of the toughest, most resilient warriors on the Sword Coast, and you mean to keep that reputation.</p><p><strong>Ability Scores:</strong> Strength, Constitution, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.LUeMriAibyVJHhaW]{Tough}</p><p><strong>Skill Proficiencies:</strong> Intimidation and Perception</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulSmithsTool]{Smith's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulSmithsTool]{Smith's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRamPortable]{Portable Ram}, 4 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "flaming-fist-mercenary",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "PpVM2qnjuBcXiUkd": {
+        "_id": "PpVM2qnjuBcXiUkd",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Constitution, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "scaxxKc8QJrQOCwJ": {
+        "_id": "scaxxKc8QJrQOCwJ",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Intimidation and Perception. It also grants you proficiency in Smith's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:itm",
+            "skills:prc",
+            "tool:art:smith"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "OYtssweHtGbUUm3v": {
+        "_id": "OYtssweHtGbUUm3v",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Tough feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.LUeMriAibyVJHhaW",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "UOhEoTR6vugDWCPq": {
+        "_id": "UOhEoTR6vugDWCPq",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "08K2rP6EFAeJjChf",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepMace000000",
+        "requiresProficiency": false,
+        "_id": "CzoZ3IsrHcoDUn63",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulSmithsTool",
+        "requiresProficiency": false,
+        "_id": "z4ICR0SF20KSiGam",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "PHDLdaC8srTuue6G",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagManacles000",
+        "requiresProficiency": false,
+        "_id": "NMcqJYx4xT68B4OB",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRamPortable",
+        "requiresProficiency": false,
+        "_id": "TPdvWcSQtn62pwxc",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 600000
+      },
+      {
+        "count": 4,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "g8Vk3De5nRXszt6u",
+        "group": "08K2rP6EFAeJjChf",
+        "sort": 700000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

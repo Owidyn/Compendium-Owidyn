@@ -1,0 +1,295 @@
+{
+  "name": "Haunted One",
+  "type": "background",
+  "_id": "QC6g09zQ3sV5aJJl",
+  "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
+  "folder": "TyqnGDdRjkNl091a",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The events of your past haunt you. Whether it was a single terrible incident or a slow accumulation of painful moments, you carry the unshakable weight of what happened. You have tried to bury it and to flee from it, in vain: no sword can slay it and no magic can banish it. Still, you endure.</p><p><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.oBBdGnHRtzJkr2sB]{Survivor} or a Dark Gift feat of your choice</p><p><strong>Skill Proficiencies:</strong> Arcana and Survival</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHolyWater00]{Holy Water} (1 flask), @UUID[Compendium.dnd5e.equipment24.Item.phbagMirror00000]{Mirror}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (2 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagSignalWhist]{Signal Whistle}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 5 @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 14 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "haunted-one",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "7FnP3PFor5qjcfIe": {
+        "_id": "7FnP3PFor5qjcfIe",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "Nut0BIc76gWFBhQS": {
+        "_id": "Nut0BIc76gWFBhQS",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Arcana and Survival. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:arc",
+            "skills:sur"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "8PuJifYTjkdtNRtR": {
+        "_id": "8PuJifYTjkdtNRtR",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Choose Survivor or a Dark Gift feat.",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.oBBdGnHRtzJkr2sB"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.GK7VmFMPLApUJGBk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.WjBUrOR3GLXBdZJw"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.9UNJXujWE0F0ekYU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.Frn4SkTajMgthVFI"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.8hKS95aCSXFbSlo6"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.hiLE4tEqkX9PPJOZ"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.3lVV4sKAcFFbGCrD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.wLUYd568oDelEk3d"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.A9a38VrTMWKbJ6vv"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ZDxwDvyjJC47fj77": {
+        "_id": "ZDxwDvyjJC47fj77",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "bzJKcJSyK2T8LHoo",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "KZHjksQeFVpDObG0",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCrowbar0000",
+        "requiresProficiency": false,
+        "_id": "cu9dPS4ZliE5mdcM",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 300000
+      },
+      {
+        "count": 1,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHolyWater00",
+        "requiresProficiency": false,
+        "_id": "YVWMCToNOuReBPum",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagMirror00000",
+        "requiresProficiency": false,
+        "_id": "VYs24U8wZFjEMxir",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 500000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "FKiFj4i1r7MePfaW",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagSignalWhist",
+        "requiresProficiency": false,
+        "_id": "OtVPoBZAExP7BdB5",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "ImYLDZEwwgdF7n3d",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "g1ciDCgckju3rREj",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 900000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTorch000000",
+        "requiresProficiency": false,
+        "_id": "oUNGcsYl3qQoFrHe",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 1000000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "9G9A2EOsUq5W757w",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 1100000
+      },
+      {
+        "count": 14,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "2BanHg2WHWdP0qbJ",
+        "group": "bzJKcJSyK2T8LHoo",
+        "sort": 1200000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

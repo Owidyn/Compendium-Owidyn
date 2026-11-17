@@ -1,0 +1,154 @@
+{
+  "name": "Group Recovery",
+  "type": "feat",
+  "_id": "SvzwdPwCBHHSNPUO",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "folder": "3KubVEbwiFGLdeaO",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>When you use your Second Wind to regain Hit Points, you can choose allies in a 30-foot Emanation originating from you, up to a number equal to your Charisma modifier (minimum of one). Each of them regains Hit Points equal to 1d4 plus your Fighter level. Once you use this ability, you can't use it again until you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-QHXwPDsB98a5KC19\"><p><strong>Foundry Note</strong></p><p>From level 18 (Bolstered Rally), the Emanation is 60 feet.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Banneret 3",
+    "activities": {
+      "slwOM8sTCJLqXVDW": {
+        "type": "heal",
+        "_id": "slwOM8sTCJLqXVDW",
+        "sort": 100000,
+        "name": "Group Recovery",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use your Second Wind"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "max(1, @abilities.cha.mod)",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d4 + @classes.fighter.levels"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "group-recovery",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

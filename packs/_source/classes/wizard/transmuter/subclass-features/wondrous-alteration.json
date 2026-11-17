@@ -1,0 +1,323 @@
+{
+  "name": "Wondrous Alteration",
+  "type": "feat",
+  "_id": "94PSwwbbeTYp2KpO",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "bnw4XXFLHLQPjypM",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You always have the @UUID[Compendium.dnd5e.spells24.Item.phbsplAlterSelf0]{Alter Self} spell prepared and can cast it once without expending a spell slot; you regain the ability to cast it this way when you finish a Long Rest. While under the effects of Alter Self, you gain an additional benefit for each of its options.</p><p><strong>Aquatic Adaptation.</strong> While underwater, you can take the Dash action as a Bonus Action.</p><p><strong>Change Appearance.</strong> You have Advantage on Charisma (Deception) checks.</p><p><strong>Natural Weapons.</strong> The damage of your new growth increases to 2d6 of the type associated with the growth. You also have Advantage on Constitution saving throws to maintain Concentration.</p><section class=\"secret\" id=\"secret-OYDGRuqkFqQEPvsk\"><p><strong>Foundry Note</strong></p><p>Apply the effect of the Alter Self option you chose.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Transmuter 3",
+    "activities": {
+      "bQjdkRulS2tE2kZV": {
+        "type": "utility",
+        "_id": "bQjdkRulS2tE2kZV",
+        "sort": 100000,
+        "name": "Wondrous Alteration",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Alter Self"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "mmItl873RCfoEtGX"
+          },
+          {
+            "_id": "jIIlceu2eD5KEy77"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "VWjCT8J2c6TIQijJ": {
+        "type": "damage",
+        "_id": "VWjCT8J2c6TIQijJ",
+        "sort": 200000,
+        "name": "Natural Weapons (2d6)",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 6,
+              "bonus": "@mod",
+              "types": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "wondrous-alteration",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "mmItl873RCfoEtGX",
+      "name": "Wondrous Alteration (Change Appearance)",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.dec.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "YaCoNCgzxhEdESse"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Charisma (Deception) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "jIIlceu2eD5KEy77",
+      "name": "Wondrous Alteration (Natural Weapons)",
+      "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.concentration.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "B7olCx571lVJ4ibt"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Natural weapons deal 2d6; Advantage on Concentration saves.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

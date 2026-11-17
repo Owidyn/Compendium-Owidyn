@@ -1,0 +1,532 @@
+{
+  "name": "Diviner",
+  "type": "subclass",
+  "_id": "nm8BrvnyOtMo7kWN",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp",
+  "folder": "4dvtDSDEp86GB4bA",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Learn the Secrets of the Multiverse</p></blockquote><p>The counsel of a Diviner is sought by those who want a clearer understanding of the past, present, and future. As a Diviner, you strive to part the veils of space, time, and consciousness, mastering spells of discernment, remote viewing, supernatural knowledge, and foresight.</p><h3>Diviner Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.029Ri0RqNG2FNcpT]{Divination Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.AmufWZjJH6HSBgws]{Portent}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HBTOOfga5H36Jpy8]{Expert Divination}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.TLITpCUid8RY8rdf]{The Third Eye}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.2MmoJNwJrDlgBWmB]{Greater Portent}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "diviner",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "ZuajeHSv9rQb9Xt5": {
+        "_id": "ZuajeHSv9rQb9Xt5",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.029Ri0RqNG2FNcpT",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.AmufWZjJH6HSBgws",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DevGL1eofSoqM74M": {
+        "_id": "DevGL1eofSoqM74M",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HBTOOfga5H36Jpy8",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "mCChTwVSxTL0bGpK": {
+        "_id": "mCChTwVSxTL0bGpK",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.TLITpCUid8RY8rdf",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FET2cf8CjPdcmjoB": {
+        "_id": "FET2cf8CjPdcmjoB",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.2MmoJNwJrDlgBWmB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1eWfJ3X98JcKz0Fe": {
+        "_id": "1eWfJ3X98JcKz0Fe",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add two Wizard spells of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "AS0XvpmQWQzszsgj": {
+        "_id": "AS0XvpmQWQzszsgj",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "g91gelm1c2Emd83d": {
+        "_id": "g91gelm1c2Emd83d",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "8HpZ3jCDdcIH8QI3": {
+        "_id": "8HpZ3jCDdcIH8QI3",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "HUpSZQsZiXIflQPn": {
+        "_id": "HUpSZQsZiXIflQPn",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "mr2FX9lhM4NgxAUy": {
+        "_id": "mr2FX9lhM4NgxAUy",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "0mz36D7Orl70pu8H": {
+        "_id": "0mz36D7Orl70pu8H",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "pXCx4oCeloUT56OK": {
+        "_id": "pXCx4oCeloUT56OK",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Divination Savant",
+        "title": "Divination Savant",
+        "hint": "Add one Wizard spell of the Divination school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "div"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "v8IQyhxS3Buk4Io9": {
+        "_id": "v8IQyhxS3Buk4Io9",
+        "type": "ScaleValue",
+        "name": "Portent Dice",
+        "title": "Portent Dice",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "portent",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "14": {
+              "value": 3
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

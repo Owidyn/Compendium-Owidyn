@@ -1,0 +1,187 @@
+{
+  "name": "Awakened Astral Self",
+  "type": "feat",
+  "_id": "ydyqXCkeGYZcBzLK",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "Y7kYjWahYCHclGWR",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>Your connection to your astral self is complete. As a Bonus Action, you can expend 5 Focus Points to summon the arms, visage, and body of your astral self and awaken it for 10 minutes. The awakening ends early if you have the Incapacitated condition or die. While your astral self is awakened, you gain the following benefits.</p><p><strong>Armor of the Spirit.</strong> You gain a +2 bonus to Armor Class.</p><p><strong>Astral Barrage.</strong> Whenever you use your Extra Attack to attack twice, you can instead attack three times if all the attacks are made with your astral arms.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of the Astral Self 17",
+    "activities": {
+      "9JNibBeVhVkcKpqL": {
+        "type": "utility",
+        "_id": "9JNibBeVhVkcKpqL",
+        "sort": 100000,
+        "name": "Awakened Astral Self",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "feat:monks-focus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "39AuxrzHof6mdtv4"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "awakened-astral-self",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "39AuxrzHof6mdtv4",
+      "name": "Awakened Astral Self",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+2",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "CFoB8GRD6WiyZHPr"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+2 AC; Astral Barrage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "_id": "0VEcdrtcJq5ZwPZ0",
+  "name": "Arcane Warrior",
+  "type": "feat",
+  "img": "icons/magic/fire/dagger-rune-enchant-teal-purple.webp",
+  "folder": "wQo2sovs7D6oiySl",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "Rqf6oB6MFuIwsmw4": {
+        "_id": "Rqf6oB6MFuIwsmw4",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Wizard Cantrips",
+        "title": "Wizard Cantrips",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Fighting Style Feat (Prerequisite: Fighting Style Feature)</em></p><p>You learn two Wizard cantrips of your choice; Mage Hand and Ray of Frost are recommended. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you select this feat). Whenever you gain a level, you can replace one of these cantrips with another Wizard cantrip.</p>",
+      "chat": ""
+    },
+    "identifier": "arcane-warrior",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "fighting-style"
+      ],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Fighting Style Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

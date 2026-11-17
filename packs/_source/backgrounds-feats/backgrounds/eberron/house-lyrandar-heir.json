@@ -1,0 +1,175 @@
+{
+  "name": "House Lyrandar Heir",
+  "type": "background",
+  "_id": "IJlc8i9yEPKlFrVx",
+  "img": "icons/magic/air/wind-tornado-spiral-blue-gray.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>As an heir of House Lyrandar, the wind is your ally, and the sea and sky are your domain. Despite the ravages of the Last War, your house is rising, lifted by its mastery of the new airships. You may have begun your career at sea as a sailor or navigator, as a shipwright, or in the Raincallers' Guild, shaping the weather for irrigation and similar public works. Or you were among the first of your house to take to the skies with an airship crew. Serving the house might lead you to hunt pirates on the Lhazaar Sea, search ancient ruins for the magic that binds elemental forces, or salvage a wrecked airship in the Mournland.</p><p><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.IpBWHhssqHDCkiSC]{Mark of Storm}</p><p><strong>Skill Proficiencies:</strong> Acrobatics and Nature</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulNavigators]{Navigator's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulNavigators]{Navigator's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, 10 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-lyrandar-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "SyFUiu0NTrgXOa12": {
+        "_id": "SyFUiu0NTrgXOa12",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Dexterity, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "MjvHdfeS5ZKU4ecl": {
+        "_id": "MjvHdfeS5ZKU4ecl",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Acrobatics and Nature. It also grants you proficiency in Navigator's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:acr",
+            "skills:nat",
+            "tool:navg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ixkoHu4TjMiv2lge": {
+        "_id": "ixkoHu4TjMiv2lge",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Storm feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.IpBWHhssqHDCkiSC",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "pdsUoANUaC5pzHrl": {
+        "_id": "pdsUoANUaC5pzHrl",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "nHRgJkGrY5cxH7N2",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulNavigators",
+        "requiresProficiency": false,
+        "_id": "TkcKEhbnoQ1bK3i7",
+        "group": "nHRgJkGrY5cxH7N2",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "k1tsBFwG54kjyg1Y",
+        "group": "nHRgJkGrY5cxH7N2",
+        "sort": 300000
+      },
+      {
+        "count": 10,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "Z2AzELQUwXoSkCfG",
+        "group": "nHRgJkGrY5cxH7N2",
+        "sort": 400000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

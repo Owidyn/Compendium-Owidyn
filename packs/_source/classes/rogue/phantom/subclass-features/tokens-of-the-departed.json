@@ -1,0 +1,379 @@
+{
+  "name": "Tokens of the Departed",
+  "type": "feat",
+  "_id": "iWSOy8eJoKsjfuTV",
+  "img": "icons/commodities/treasure/trinket-totem-bone-green.webp",
+  "folder": "AzTXOtdCemKgb5nG",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>The spirits of the dead are drawn to you, and echoes of their past lives manifest as strange curios with resonant power. You gain two soul trinkets. A soul trinket is a Tiny object; the DM determines its form or has you roll on the Trinkets table of the Player's Handbook. If you move more than 30 feet from a trinket, it immediately teleports to you, somewhere on your person.</p><p><strong>Using Soul Trinkets.</strong> You can use soul trinkets in the following ways.</p><p><strong>Death's Knell.</strong> When you deal Sneak Attack damage on your turn, you can destroy one soul trinket to immediately use Wails from the Grave without expending a use of that feature.</p><p><strong>Life Essence.</strong> While you have at least one soul trinket, you have Advantage on Death Saving Throws and Constitution saving throws.</p><p><strong>Spirit Query.</strong> You can take a Magic action to destroy one soul trinket and immediately cast @UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}, requiring no spell components and using Constitution as the spellcasting modifier. If you know the creature the trinket is associated with, you can instead ask its spirit one question; the spirit appears and answers as concisely as possible, in a language it knew in life.</p><p><strong>Gaining Additional Soul Trinkets.</strong> When a creature you can see within 30 feet of you dies, you can take a Reaction to gain another soul trinket, claiming a sliver of that creature's departing spirit; the new trinket appears somewhere on your person. You can have at most two soul trinkets at a time; if you gain one while at your maximum, one of your existing trinkets is destroyed and replaced by the new one. Your maximum increases at Rogue levels 13 (three trinkets) and 17 (four trinkets). Whenever you finish a Long Rest with fewer than two soul trinkets, you gain trinkets until you have two.</p><section class=\"secret\" id=\"secret-v7pNl8TmbTzQ8ueY\"><p><strong>Foundry Note</strong></p><p>The uses are your soul trinkets (a Long Rest restores them up to your maximum rather than two). Turn off Life Essence while you have none. Spirit Query uses Constitution: set the ability of the Augury spell on your sheet.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.phantom.trinkets",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Phantom 9",
+    "activities": {
+      "SAf4XjQXMHNnj4PI": {
+        "type": "damage",
+        "_id": "SAf4XjQXMHNnj4PI",
+        "sort": 100000,
+        "name": "Death's Knell",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You deal Sneak Attack damage on your turn"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(ceil(@scale.rogue.sneak-attack.number / 2))d6"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "fTHrTr2VqhTCEaDs": {
+        "type": "cast",
+        "_id": "fTHrTr2VqhTCEaDs",
+        "sort": 200000,
+        "name": "Spirit Query",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplAugury0000",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "M6FFXK9la4sZvCcf": {
+        "type": "utility",
+        "_id": "M6FFXK9la4sZvCcf",
+        "sort": 300000,
+        "name": "Gain a Soul Trinket",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature you can see within 30 feet of you dies"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "tokens-of-the-departed",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "w0MgoFHy2SmMjqSe",
+      "name": "Life Essence",
+      "img": "icons/magic/life/heart-glowing-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.death.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "kANRAgUA8BTXBLzk"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "AqstBcR9c2DWUQgm"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Death Saving Throws and Constitution saving throws while you have at least one soul trinket.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

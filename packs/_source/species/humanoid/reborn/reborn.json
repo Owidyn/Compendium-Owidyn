@@ -1,0 +1,174 @@
+{
+  "name": "Reborn",
+  "type": "race",
+  "_id": "yt9aq2UjToiyoBU0",
+  "img": "icons/magic/life/ankh-gold-blue.webp",
+  "folder": "LYirHBqXIG9VlO4J",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The reborn died, yet somehow still live. Some bear the scars of their deaths—ashen flesh or bloodless veins that show they escaped the grave. Others are marvels of magic or science, stitched together from different beings or carrying a mysterious mind in a manufactured body. Whatever their origin, the reborn have a new life and seek experiences and answers of their own.</p><h3>Reborn Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.whHGSn0VPreUVTHP]{Escaped Death}.</strong> You have Advantage on Death Saving Throws.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.gBlfa05RSpe44sLI]{Everlasting}.</strong> You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend them in an inactive, motionless state, during which you remain conscious.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.0tLA3DwYeEC3GMAn]{Knowledge from a Past Life}.</strong> You gain proficiency in one skill of your choice. In addition, you can glimpse your past to help you in the present: when you fail an ability check, you can roll 1d6 and add the number rolled to the d20, possibly turning the failure into a success. You can do this a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.mwRKiNvN8D2zAWoA]{Strange Endurance}.</strong> You have Resistance to one of the following damage types of your choice: Cold, Necrotic, or Poison.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "reborn",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Reborn"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "A3SbGvVBhQDymoSA": {
+        "_id": "A3SbGvVBhQDymoSA",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "DeAbWOcjtV7Ntp9g": {
+        "_id": "DeAbWOcjtV7Ntp9g",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Reborn Traits",
+        "title": "Reborn Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.whHGSn0VPreUVTHP",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.gBlfa05RSpe44sLI",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.0tLA3DwYeEC3GMAn",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.mwRKiNvN8D2zAWoA",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "07f5oiNwLLGGjQME": {
+        "_id": "07f5oiNwLLGGjQME",
+        "type": "Trait",
+        "level": 0,
+        "name": "Knowledge from a Past Life",
+        "title": "Knowledge from a Past Life",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ocxYskemrLeIoFT0": {
+        "_id": "ocxYskemrLeIoFT0",
+        "type": "Trait",
+        "level": 0,
+        "name": "Strange Endurance",
+        "title": "Strange Endurance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "dr:cold",
+                "dr:necrotic",
+                "dr:poison"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

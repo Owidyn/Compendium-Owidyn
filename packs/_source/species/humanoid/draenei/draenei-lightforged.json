@@ -1,0 +1,236 @@
+{
+  "name": "Draenei, Lightforged",
+  "type": "race",
+  "_id": "sVd7NaedMLCgf5x6",
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+  "folder": "r7nYpbBYCQoRxMlV",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Long ago on the world of Argus, the magically gifted eredar caught the eye of Sargeras, the Destroyer of Worlds. Two of their leaders, Kil'jaeden and Archimonde, accepted his offer of power and became demons of the Burning Legion; the third, Velen, foresaw that doom, and the benevolent naaru helped him and his followers flee. These exiles, the draenei, embraced the Light and settled on a distant world they named Draenor, until the corrupted orcs slaughtered most of them. The survivors escaped to Azeroth aboard the dimensional ship Exodar and found allies in the Alliance.</p><p><strong>Krokul.</strong> Remnants of the original eredar who were neither saved by the naaru nor turned into demons, but corrupted by fel energy, on Argus, on the ruins of Draenor (Outland), or on Azeroth. <strong>Lightforged.</strong> Draenei of the Grand Army of the Light who took the fight to the Legion and were infused with the Holy Light, their eyes turned golden and their bodies marked with glowing tattoos. <strong>Man'ari.</strong> Eredar who followed Kil'jaeden and Archimonde into the Legion; a group of them, the Penitents, now seek to atone alongside their draenei kin.</p><p><strong>Renown.</strong> Your Renown Score with the Exodar (Alliance) begins at 3.</p><h3>Draenei Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (over 7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.i8rUZZZkjm5JB4EC]{Eredar Lineage}.</strong> Your lineage gives you a Resistance and a cantrip, then a spell at character levels 3 and 5, each cast once per Long Rest without a spell slot (Intelligence, Wisdom, or Charisma).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.CxwYCKl3u5IRIiBR]{Heroic Presence}.</strong> When you cast a spell granted by your Eredar Lineage and don't have Heroic Inspiration, you gain it. You can gain Heroic Inspiration this way once, and you regain that ability when you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "draenei-lightforged",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Draenei"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "j6L647L4dmAGvOjI": {
+        "_id": "j6L647L4dmAGvOjI",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (over 7 feet tall)",
+        "flags": {}
+      },
+      "bdD1fQkeh8el1ib7": {
+        "_id": "bdD1fQkeh8el1ib7",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Draenei Traits",
+        "title": "Draenei Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.i8rUZZZkjm5JB4EC",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.CxwYCKl3u5IRIiBR",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FdDix1r45MkFkbWt": {
+        "_id": "FdDix1r45MkFkbWt",
+        "type": "Trait",
+        "level": 0,
+        "name": "Lightforged Lineage",
+        "title": "Lightforged Lineage",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:radiant"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "0BEoGEjGTowrPmDb": {
+        "_id": "0BEoGEjGTowrPmDb",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Lightforged Lineage",
+        "title": "Lightforged Lineage",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSacredFlam",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "19m21puXGgw6xCuE": {
+        "_id": "19m21puXGgw6xCuE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Lightforged Lineage (Level 3)",
+        "title": "Lightforged Lineage (Level 3)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "uzFUoyCPO5yPBJMn": {
+        "_id": "uzFUoyCPO5yPBJMn",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Lightforged Lineage (Level 5)",
+        "title": "Lightforged Lineage (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAid0000000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

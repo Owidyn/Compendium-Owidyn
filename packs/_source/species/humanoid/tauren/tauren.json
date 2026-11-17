@@ -1,0 +1,164 @@
+{
+  "name": "Tauren",
+  "type": "race",
+  "_id": "kneh9MndFVmeGIWu",
+  "img": "icons/creatures/mammals/ox-buffalo-horned-green.webp",
+  "folder": "180FH0lprB1xKIjP",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The tauren descend from the yak-like yaungol, enslaved and changed by the mogu in the heart of ancient Kalimdor. Freed alongside the pandaren, some fled north to the Well of Eternity, where they relearned druidic ways from the Wild God Cenarius and were reshaped by the Well's magic into the tauren. For ages they roamed the Barrens, hunting kodos and honoring the Earth Mother, until Cairne Bloodhoof allied with Thrall to drive off the centaurs and claim Mulgore, building Thunder Bluff for all the tribes; his son Baine now leads them in the Horde.</p><p><strong>Highmountain tauren</strong> of the Broken Isles descend from the tauren of Huln Highmountain and bear the antlers Cenarius gave them as a sign of favor. <strong>Taunka</strong>, direct descendants of the yaungol, adapted to the harsh Storm Peaks of Northrend, where their shamans wrest power from hostile elements.</p><p><strong>Renown.</strong> Your Renown Score with Thunder Bluff (Horde) begins at 3.</p><h3>Tauren Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 8–9 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.XgE7EonMr22hKw62]{Horns}.</strong> Your horns are powerful natural weapons. When you hit with your Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.5c0aiWzD3IHNW68L]{Goring Rush}.</strong> Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one Unarmed Strike as a Bonus Action.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.TtQDUS8b6XNB7ySZ]{Hammering Horns}.</strong> Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can take a Bonus Action to Shove that target with an Unarmed Strike if it is within 5 feet of you. When you Shove it this way, you can push it up to 10 feet away instead of 5 feet.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.Gm162JurbwKTyUMW]{Tauren Lineage}.</strong> You choose a lineage: Mulgore Tauren (War Stomp), Highmountain Tauren (a charge that knocks creatures Prone), or Taunka (+1 AC and Resistance to Cold).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "tauren",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Tauren"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "OHV0PxkrS1byFiD6": {
+        "_id": "OHV0PxkrS1byFiD6",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 8–9 feet tall)",
+        "flags": {}
+      },
+      "bwEt6TgcexJaN48h": {
+        "_id": "bwEt6TgcexJaN48h",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Tauren Traits",
+        "title": "Tauren Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.XgE7EonMr22hKw62",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.5c0aiWzD3IHNW68L",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.TtQDUS8b6XNB7ySZ",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.Gm162JurbwKTyUMW",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "jAS7yl4aEQNiA63R": {
+        "_id": "jAS7yl4aEQNiA63R",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Tauren Lineage",
+        "title": "Tauren Lineage",
+        "hint": "Choose your lineage.",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.F24dyzY2fdJa7bKY"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.465scrvDzX29sVqy"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.zDJj1xsO0blYIwF5"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

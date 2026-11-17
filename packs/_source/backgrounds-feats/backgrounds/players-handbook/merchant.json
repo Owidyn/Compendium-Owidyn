@@ -1,0 +1,184 @@
+{
+  "name": "Merchant",
+  "type": "background",
+  "_id": "PDXdiXlqD37gQy6j",
+  "img": "icons/commodities/currency/coins-assorted-mix-copper-silver-gold.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You were apprenticed to a trader, a caravan master, or a shopkeeper and learned the basics of commerce. You traveled widely, making your living by buying and selling the raw materials artisans need or the finished works they produce. You may have hauled goods from place to place by ship, wagon, or caravan, or bought them from traveling traders to sell in your own shop.</p><p><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt]{Lucky}</p><p><strong>Skill Proficiencies:</strong> Animal Handling and Persuasion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulNavigators]{Navigator's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulNavigators]{Navigator's Tools}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 22 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "merchant",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "1wqOIxLVzaLVzY6H": {
+        "_id": "1wqOIxLVzaLVzY6H",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "PC5YVPElIfRbue3S": {
+        "_id": "PC5YVPElIfRbue3S",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Animal Handling and Persuasion. It also grants you proficiency in Navigator's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:per",
+            "tool:navg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "tm8jfYoXn41bR6MH": {
+        "_id": "tm8jfYoXn41bR6MH",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Lucky feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wENoGJcKxlKdNZkl": {
+        "_id": "wENoGJcKxlKdNZkl",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "k6avYRiFzitWwP3B",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulNavigators",
+        "requiresProficiency": false,
+        "_id": "PFfXnd8mPVwUTMQQ",
+        "group": "k6avYRiFzitWwP3B",
+        "sort": 200000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "4aQcnApyy9K0YevP",
+        "group": "k6avYRiFzitWwP3B",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "1UFAMDj4PABaZbCL",
+        "group": "k6avYRiFzitWwP3B",
+        "sort": 400000
+      },
+      {
+        "count": 22,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "4zEdym6sOXQIcNEW",
+        "group": "k6avYRiFzitWwP3B",
+        "sort": 500000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

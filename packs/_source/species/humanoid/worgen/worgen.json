@@ -1,0 +1,136 @@
+{
+  "name": "Worgen",
+  "type": "race",
+  "_id": "NH0dd4FtjThIeVdr",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "folder": "GFAIc1ixDdsJdLgq",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The worgen curse began over nine thousand years ago with the Druids of the Pack, night elves whose wolf form, inspired by the Wild God Goldrinn, drove them into feral rage. The Scythe of Elune, crafted to tame that rage, instead turned them into the first worgen, and Malfurion Stormrage banished them to the Emerald Dream. During the Third War, the archmage Arugal summoned them to defend Gilneas from the Scourge—and unleashed their curse upon the kingdom.</p><p>Feeling responsible, night elf druids taught the Gilnean worgen the Ritual of Balance, which lets them control their transformation and keep a clear mind in worgen form. That help, and their kinship with the humans of Stormwind, brought them into the Alliance.</p><p><strong>Renown.</strong> Your Renown Score with Gilneas (Alliance) begins at 3.</p><h3>Worgen Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.XH8ABGIcwTlvt2lM]{Darkflight}.</strong> As a Bonus Action, you can take on a more bestial form for 1 minute, or until you return to your normal form as a Bonus Action. When you do, you gain Temporary Hit Points equal to twice your Proficiency Bonus. You can enter this form a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. In your bestial form, you gain the following benefits: <strong>Increased Speed.</strong> Your Speed increases by 10 feet. <strong>Reactive Movement.</strong> You can take a Reaction to move up to 10 feet when a creature ends its turn within 5 feet of you. This movement doesn't provoke Opportunity Attacks.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.FGrX68JiWrYgupK4]{Necrotic Resistance}.</strong> You have Resistance to Necrotic damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.aCSKZ5u5VfDnn5dt]{Instinctual Shift}.</strong> When you roll Initiative while you have at least one use of your Darkflight trait left, you can immediately use it to change form (no action required).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "worgen",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Worgen"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "aO9ZNta5tgdHFgK2": {
+        "_id": "aO9ZNta5tgdHFgK2",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall)",
+        "flags": {}
+      },
+      "F5UtKfH0bGlfM9Uv": {
+        "_id": "F5UtKfH0bGlfM9Uv",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Worgen Traits",
+        "title": "Worgen Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.XH8ABGIcwTlvt2lM",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.FGrX68JiWrYgupK4",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.aCSKZ5u5VfDnn5dt",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "t9MMKF8RiRE1uoGm": {
+        "_id": "t9MMKF8RiRE1uoGm",
+        "type": "Trait",
+        "level": 0,
+        "name": "Necrotic Resistance",
+        "title": "Necrotic Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:necrotic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

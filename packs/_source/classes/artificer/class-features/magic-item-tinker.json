@@ -1,0 +1,283 @@
+{
+  "name": "Magic Item Tinker",
+  "type": "feat",
+  "_id": "lTGZZanCehoJePiS",
+  "img": "icons/magic/symbols/runes-star-orange.webp",
+  "folder": "4RbdHSEXTHThnBoK",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>Your Replicate Magic Item feature gains the following options.</p><p><strong>Charge Magic Item.</strong> As a Bonus Action, you can touch a magic item within 5 feet of you that you created with Replicate Magic Item and that uses charges. You expend a level 1+ spell slot and recharge the item: it regains a number of charges equal to the level of the slot.</p><p><strong>Drain Magic Item.</strong> As a Bonus Action, you can touch a magic item within 5 feet of you that you created with Replicate Magic Item and make it vanish, converting its magic into a spell slot: level 1 if the item is Common, or level 2 if it is Uncommon or Rare. Once you use this option, you can't do so again until you finish a Long Rest. A slot created this way vanishes when you finish a Long Rest.</p><p><strong>Transmute Magic Item.</strong> As a Magic action, you can touch one magic item within 5 feet of you that you created with Replicate Magic Item and transform it into a different magic item based on a plan you know. Once you use this option, you can't do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-coqT7P6xDFzm1k3D\"><p><strong>Foundry Note</strong></p><p>Charge Magic Item spends a spell slot (choose its level in the dialog) and the item regains that many charges. Drain Magic Item: add the level 1 or 2 slot to your spell slots yourself until your next Long Rest.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artificer 6",
+    "activities": {
+      "FS1yfZlxO470wy1S": {
+        "type": "utility",
+        "_id": "FS1yfZlxO470wy1S",
+        "sort": 100000,
+        "name": "Charge Magic Item",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "YDHQVGw4PkcMEMS7": {
+        "type": "utility",
+        "_id": "YDHQVGw4PkcMEMS7",
+        "sort": 200000,
+        "name": "Drain Magic Item",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "9YmHzX5LYKfpcqQk": {
+        "type": "utility",
+        "_id": "9YmHzX5LYKfpcqQk",
+        "sort": 300000,
+        "name": "Transmute Magic Item",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "magic-item-tinker",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

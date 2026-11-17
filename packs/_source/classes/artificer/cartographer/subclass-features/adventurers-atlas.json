@@ -1,0 +1,179 @@
+{
+  "name": "Adventurer's Atlas",
+  "type": "feat",
+  "_id": "pMzFIYKQML3ScYwI",
+  "img": "icons/tools/navigation/map-chart-tan.webp",
+  "folder": "BRpv0CXFJhvDsEIN",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you finish a Long Rest while holding Cartographer's Tools, you can use them to create a set of magical maps by touching at least two creatures (one of them can be you), up to a number of creatures equal to 1 plus your Intelligence modifier (minimum of two). Each target receives a magical map that constantly updates to show the relative positions of all the map holders and is illegible to anyone else. The maps last until you die or use this feature again, when the existing maps vanish. While carrying a map, a target gains the following benefits.</p><p><strong>Awareness.</strong> The target adds 1d4 to its Initiative rolls.</p><p><strong>Positioning.</strong> The target knows the location of all other map holders on the same plane of existence. When casting a spell or creating another effect that requires seeing its target, a map holder can target another map holder regardless of sight or cover, as long as that holder is within range.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Cartographer 3",
+    "activities": {
+      "sUqnH3kvDcDWpNGu": {
+        "type": "utility",
+        "_id": "sUqnH3kvDcDWpNGu",
+        "sort": 100000,
+        "name": "Adventurer's Atlas",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You finish a Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "RqmCeOuQAWAzjCVl"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "ally",
+            "special": "1 + your Intelligence modifier creatures (min. 2)"
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "adventurers-atlas",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "RqmCeOuQAWAzjCVl",
+      "name": "Adventurer's Atlas",
+      "img": "icons/tools/navigation/map-chart-tan.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "OAPA7HP8rSXBVhQd"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Initiative rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

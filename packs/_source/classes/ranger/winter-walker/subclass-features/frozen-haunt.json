@@ -1,0 +1,375 @@
+{
+  "name": "Frozen Haunt",
+  "type": "feat",
+  "_id": "MO5xePHoL5tSaJJU",
+  "img": "icons/magic/water/snowflake-ice-blue-white.webp",
+  "folder": "ckt37zU50BTCDxVF",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>When you cast Hunter's Mark, you can take on a ghostly, snowy form that lasts until the spell ends. While in this form, you gain the following benefits. Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a level 4+ spell slot (no action required).</p><p><strong>Frozen Soul.</strong> You have Immunity to Cold damage. When you take on the form and at the start of each of your later turns, each creature of your choice in a 15-foot Emanation originating from you takes 2d4 Cold damage.</p><p><strong>Partially Incorporeal.</strong> You have Immunity to the Grappled, Prone, and Restrained conditions. You can move through creatures and objects as if they were Difficult Terrain, but you take 1d10 Force damage if you end your turn inside one. If the form ends while you are inside a creature or an object, you are shunted to the nearest unoccupied space.</p><section class=\"secret\" id=\"secret-FAr6iulHHwxBAa4G\"><p><strong>Foundry Note</strong></p><p>End the effect when your Hunter's Mark ends. Restoring the use needs a level 4+ slot.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Winter Walker 15",
+    "activities": {
+      "ZLOXllHVryowMYXG": {
+        "type": "utility",
+        "_id": "ZLOXllHVryowMYXG",
+        "sort": 100000,
+        "name": "Frozen Haunt",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Hunter's Mark"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZLOXllHVryowMYXG"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "6FHTSvLxUhP3AOUK": {
+        "type": "damage",
+        "_id": "6FHTSvLxUhP3AOUK",
+        "sort": 200000,
+        "name": "Frozen Soul",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "When you take the form and at the start of your turns"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "15",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "enemy",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "Xs2DNroqmrMkRe5u": {
+        "type": "utility",
+        "_id": "Xs2DNroqmrMkRe5u",
+        "sort": 300000,
+        "name": "Restore Frozen Haunt",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "No action required"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "frozen-haunt",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "ZLOXllHVryowMYXG",
+      "name": "Frozen Haunt",
+      "img": "icons/magic/water/snowflake-ice-blue-white.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "vNu6D18jdI3rvMMD"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "grappled",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "8K3CDDJQmaGXfDNv"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "prone",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "EmSa77P80F2QjJmT"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "restrained",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "eafWFpOLlSxdm1ac"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Ghostly, snowy form until Hunter's Mark ends: Frozen Soul and Partially Incorporeal.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

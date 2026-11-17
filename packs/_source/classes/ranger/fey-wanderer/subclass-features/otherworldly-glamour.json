@@ -1,0 +1,110 @@
+{
+  "name": "Otherworldly Glamour",
+  "type": "feat",
+  "_id": "oKAc2PWNb5gCoMVL",
+  "img": "icons/magic/nature/leaf-glow-teal.webp",
+  "folder": "dzmrxsuNNclEaNKP",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you make a Charisma check, you gain a bonus to it equal to your Wisdom modifier (minimum of +1). You also gain proficiency in one of the following skills of your choice: Deception, Performance, or Persuasion.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Fey Wanderer 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "otherworldly-glamour",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "tj3MQIL5uHo12Bew",
+      "name": "Otherworldly Glamour",
+      "img": "icons/magic/nature/leaf-glow-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.bonus",
+            "value": "max(1, @abilities.wis.mod)",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "VwK1kjYTTlNgs2oJ"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Charisma checks + your Wisdom modifier (minimum +1).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

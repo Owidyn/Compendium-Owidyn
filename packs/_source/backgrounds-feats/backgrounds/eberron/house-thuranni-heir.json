@@ -1,0 +1,190 @@
+{
+  "name": "House Thuranni Heir",
+  "type": "background",
+  "_id": "G9aQHHfpmxoDVTR6",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Because House Thuranni is young and devoted to espionage, its leaders expect you to advance its interests at every chance. In these formative years as an independent house, your every move has been closely watched. Not every Thuranni heir must spy at the elders' command, but even the house's most reclusive artists and artisans must follow current politics and gather or pass on information when asked.</p><p><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0HHEsUor1RwXy2wh]{Mark of Shadow}</p><p><strong>Skill Proficiencies:</strong> Performance and Stealth</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Musical Instrument</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Musical Instrument (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagCostume0000]{Costume}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, 13 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-thuranni-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "FCAxzMRrXWU8TPOn": {
+        "_id": "FCAxzMRrXWU8TPOn",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "Lw5MvR1tugpRCyBB": {
+        "_id": "Lw5MvR1tugpRCyBB",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Performance and Stealth. It also grants you proficiency with one kind of Musical Instrument of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:prf",
+            "skills:ste"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:music:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "doSGJTBcoezFXWAj": {
+        "_id": "doSGJTBcoezFXWAj",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Shadow feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0HHEsUor1RwXy2wh",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cAwI574NxhHpEnYN": {
+        "_id": "cAwI574NxhHpEnYN",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "0ZSM6ZMZctXg13bs",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "music",
+        "requiresProficiency": false,
+        "_id": "HnQnqhHur4QnfUC9",
+        "group": "0ZSM6ZMZctXg13bs",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCostume0000",
+        "requiresProficiency": false,
+        "_id": "2s4GEQ3aceblGXeF",
+        "group": "0ZSM6ZMZctXg13bs",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "6wyKRvQB2akvUcIT",
+        "group": "0ZSM6ZMZctXg13bs",
+        "sort": 400000
+      },
+      {
+        "count": 13,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "NDj2qFUR3PR6Rsbt",
+        "group": "0ZSM6ZMZctXg13bs",
+        "sort": 500000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

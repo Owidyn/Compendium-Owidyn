@@ -1,0 +1,151 @@
+{
+  "_id": "vbEmhT1TQZSafiJe",
+  "name": "Fragment of Frozen Bone",
+  "type": "equipment",
+  "img": "icons/commodities/bones/bone-fragments-grey.webp",
+  "folder": "cqYRtq4xe05QQeCc",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>As a Magic action, you can speak a command word to turn this tiny piece of bone from the remains of Lord Marrowgar into a miniature replica of him named Boneshard. Boneshard is an Undead companion creature (see <em>Companions</em> in the module journal). It stays transformed until you use the command word to dismiss it, it takes any damage, or you summon another companion creature. From time to time it shouts \"BONE STORM!\" as it circles you on the ground.</p>",
+      "chat": ""
+    },
+    "identifier": "fragment-of-frozen-bone",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40000,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "nWvLB54xA9ANWuOA": {
+        "type": "utility",
+        "_id": "nWvLB54xA9ANWuOA",
+        "sort": 100000,
+        "name": "Call Boneshard",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

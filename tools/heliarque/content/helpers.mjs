@@ -29,8 +29,11 @@ export const icon = name => `modules/${MODULE_ID}/assets/heliarque/${name}.svg`;
 
 /** n Dés de Fusion of the Héliarque, e.g. DF(2) → "2d8". */
 export const DF = (n = 1, prefix = '') => `${n}@${prefix}scale.heliarque.fusion.die`;
-/** Scaled dice count × Dé de Fusion: "(@scale.heliarque.canon)d8". */
-export const scaledDF = (scale, prefix = '') => `(@${prefix}scale.heliarque.${scale})@${prefix}scale.heliarque.fusion.die`;
+/**
+ * Scaled dice count × Dé de Fusion: "(@scale.heliarque.canon)d8". The die is written as "d" + its faces: dnd5e validates
+ * a formula with every @reference read as 1, and "(1)1" (count then ".die") fails, so Foundry drops the whole formula.
+ */
+export const scaledDF = (scale, prefix = '') => `(@${prefix}scale.heliarque.${scale})d@${prefix}scale.heliarque.fusion.faces`;
 export const CHA = (prefix = '') => `@${prefix}abilities.cha.mod`;
 export const PB = (prefix = '') => `@${prefix}attributes.prof`;
 /** Prefix used by Form actors: their roll data exposes the summoner as @summoner. */

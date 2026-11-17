@@ -1,0 +1,171 @@
+{
+  "name": "Mechagnome",
+  "type": "race",
+  "_id": "7ja3L0FmpiLJsRp8",
+  "img": "icons/commodities/tech/cog-gear-steel-glass.webp",
+  "folder": "xize5VLxnBdy24aX",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The titans made the mechagnomes in the Forge of Wills to serve and tend the world. Most of them later fell to Yogg-Saron's curse of flesh and became gnomes, who built Gnomeregan and allied with the dwarves and the Alliance. Many mechagnomes escaped the curse and stayed mechanical; others, the gnomes of Mechagon Island, experimented for generations to reverse it and become living machines, finding at last the right balance between flesh and steel. Reunited with their gnome cousins, they bring their tenacity and ingenuity to the Alliance.</p><p><strong>Renown.</strong> Your Renown Score with Gnomeregan (Alliance) begins at 3.</p><h3>Mechagnome Traits</h3><p><strong>Creature Type:</strong> Construct</p><p><strong>Size:</strong> Small (about 4 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.KKMxHwMk3quOC1ZE]{Built for Success}.</strong> You can add 1d4 to one D20 Test you make, after rolling the die but before its effects are resolved. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.mh4ID7QvqlDiWqEj]{Emergency Fail-Safe}.</strong> When you become Bloodied, you can take a Reaction to spend one Hit Point Die, roll it, and regain Hit Points equal to the roll plus your Constitution modifier (minimum of 1). Once you use this trait, you can't use it again until you finish a Short or Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.xsEF2yxq5YamIq1X]{Mechanical Nature}.</strong> You have Resistance to Poison damage, and you have Advantage on saving throws to avoid or end the &amp;Reference[Paralyzed] or &amp;Reference[Poisoned] condition. You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.ytKYKADsGbD7aAiK]{Sentry's Rest}.</strong> You don't need to sleep. You can finish a Long Rest in 6 hours if you spend them in an inactive, motionless state, during which you remain conscious.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.LLylfKbFVuRqrAo9]{Specialized Design}.</strong> You gain proficiency with two tools of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "mechagnome",
+    "type": {
+      "value": "construct",
+      "custom": "",
+      "subtype": "Gnome"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "Bz1gykH5ol5vlZ46": {
+        "_id": "Bz1gykH5ol5vlZ46",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Small (about 4 feet tall)",
+        "flags": {}
+      },
+      "DU2tiRcUpLm3uy0s": {
+        "_id": "DU2tiRcUpLm3uy0s",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Mechagnome Traits",
+        "title": "Mechagnome Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.KKMxHwMk3quOC1ZE",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.mh4ID7QvqlDiWqEj",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.xsEF2yxq5YamIq1X",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.ytKYKADsGbD7aAiK",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.LLylfKbFVuRqrAo9",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Eimz8hSdAWbO9QHr": {
+        "_id": "Eimz8hSdAWbO9QHr",
+        "type": "Trait",
+        "level": 0,
+        "name": "Mechanical Nature",
+        "title": "Mechanical Nature",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "DpDsgENmxVSS8f1F": {
+        "_id": "DpDsgENmxVSS8f1F",
+        "type": "Trait",
+        "level": 0,
+        "name": "Specialized Design",
+        "title": "Specialized Design",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "tool:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

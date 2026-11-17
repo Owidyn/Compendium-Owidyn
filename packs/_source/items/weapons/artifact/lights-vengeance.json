@@ -1,0 +1,443 @@
+{
+  "_id": "jp0EIKxC9Ug9f1fj",
+  "name": "Light's Vengeance",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-double-steel-embossed.webp",
+  "folder": "k5SXmlVACc2CKVy0",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Arthas Menethil wielded this weapon as a paladin of the Order of the Silver Hand, before his corruption made him the Lich King. The enormous, heavy hammer has a silver head etched with runes of power and a haft wrapped in blue leather, and it carries the blessing of the Light. Arthas cast it aside when he took up Frostmourne.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this weapon, and it deals an extra 2d10 Radiant damage to Undead.</p><p><strong>Repel Undead.</strong> While holding the weapon, you can take the Magic action to make brilliant light burst around you in a 30-foot Emanation. Each Undead in it makes a DC 20 Wisdom saving throw. On a failure, a target takes 4d8 Radiant damage and has the Frightened and Incapacitated conditions for 1 minute; while Frightened this way, it must use its movement on each of its turns to move as far from you as it can. The effect ends early on a target that takes any damage.</p><p><strong>Random Properties.</strong> Though blessed by the Light and wielded by its champion, the weapon carries the stain of the Lich King's corruption. It has 2 minor beneficial properties, 1 major beneficial property, and 2 minor detrimental properties (see <em>Artifact Traits</em> in the module journal).</p><p><strong>Destroying the Weapon.</strong> Striking Light's Vengeance with Frostmourne destroys the maul.</p><section class=\"secret\" id=\"secret-4LSNGE9hK2ZtayfH\"><p><strong>Foundry Note</strong></p><p>Repel Undead affects only Undead: deselect the other targets.</p></section>",
+      "chat": ""
+    },
+    "identifier": "lights-vengeance",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "rkoopc6rt02RzGUa": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "_id": "rkoopc6rt02RzGUa",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "0iZM0HpeslWbQEE1": {
+        "type": "damage",
+        "_id": "0iZM0HpeslWbQEE1",
+        "sort": 200000,
+        "name": "Radiant vs Undead",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit an Undead"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "iW0L4uxZPJoaNDFY": {
+        "type": "save",
+        "_id": "iW0L4uxZPJoaNDFY",
+        "sort": 300000,
+        "name": "Repel Undead",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "zsFyXu0GaAWweccU",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 4,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "20"
+          }
+        }
+      }
+    },
+    "properties": [
+      "hvy",
+      "two",
+      "mgc"
+    ],
+    "type": {
+      "value": "martialM",
+      "baseItem": "maul"
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 2,
+        "denomination": 6,
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "topple",
+    "magicalBonus": 3,
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "ammunition": {},
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "zsFyXu0GaAWweccU",
+      "name": "Repel Undead",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Frightened and Incapacitated for 1 minute; it must use its movement to flee. Ends early if it takes damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened",
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

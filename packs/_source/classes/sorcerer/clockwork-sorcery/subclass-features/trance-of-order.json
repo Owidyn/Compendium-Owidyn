@@ -1,0 +1,357 @@
+{
+  "name": "Trance of Order",
+  "type": "feat",
+  "_id": "yEWPkgLt9qZ2SDvl",
+  "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+  "folder": "b4XY4e0FjHJQD5IM",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to align your consciousness with the endless calculations of Mechanus. As a Bonus Action, you can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from Advantage, and whenever you make a D20 Test, you can treat a roll of 9 or lower on the d20 as a 10.</p><p>Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p><section class=\"secret\" id=\"secret-Bk1un9j7sJ0wxChj\"><p><strong>Foundry Note</strong></p><p>The effect sets the minimum d20 of your ability checks and saving throws to 10; treat your attack rolls the same way yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Clockwork Sorcery 14",
+    "activities": {
+      "I4XF7s1iUzeVazio": {
+        "type": "utility",
+        "_id": "I4XF7s1iUzeVazio",
+        "sort": 100000,
+        "name": "Trance of Order",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "I4XF7s1iUzeVazio"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "FtqnVDKPZAVFz812": {
+        "type": "utility",
+        "_id": "FtqnVDKPZAVFz812",
+        "sort": 200000,
+        "name": "Restore with Sorcery Points",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "No action required"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "feat:font-of-magic",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "trance-of-order",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "I4XF7s1iUzeVazio",
+      "name": "Trance of Order",
+      "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "XilP76TUhEiICOKC"
+          },
+          {
+            "key": "system.abilities.dex.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "wEc9Vw0y4Wi8LkJ5"
+          },
+          {
+            "key": "system.abilities.con.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "sXuBhiPGIi4n8S95"
+          },
+          {
+            "key": "system.abilities.int.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "arx7juAzaxyvODdW"
+          },
+          {
+            "key": "system.abilities.wis.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "6UZlOzGzQEbgwdhv"
+          },
+          {
+            "key": "system.abilities.cha.check.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "o5JlNmM9SP9MYrlA"
+          },
+          {
+            "key": "system.abilities.str.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "G3inzVPmIjDCX8uU"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "L2qqL4KRgZX5Z48h"
+          },
+          {
+            "key": "system.abilities.con.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "tg8DGo7x8lcDNuH0"
+          },
+          {
+            "key": "system.abilities.int.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "xNBvqewNe4QWPBLJ"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "VTwHyoGupJ148Sf2"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.min",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "GuZwGOB2bWdYeGLl"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Attack rolls against you can't benefit from Advantage; D20 Tests treat a 9 or lower as a 10.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

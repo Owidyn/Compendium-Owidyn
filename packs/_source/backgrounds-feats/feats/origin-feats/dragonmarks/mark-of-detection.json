@@ -1,0 +1,194 @@
+{
+  "_id": "LsWDyaI243mchkXd",
+  "name": "Mark of Detection",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "VjZkYoUtGXbaAsE3": {
+        "_id": "VjZkYoUtGXbaAsE3",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Magical Detection",
+        "title": "Magical Detection",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectMagi",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectPois",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VvTHzC8tw9VSnYBE": {
+        "_id": "VvTHzC8tw9VSnYBE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Magical Detection (Level 3)",
+        "title": "Magical Detection (Level 3)",
+        "hint": "Choose the spellcasting ability you chose for the other spells of this feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSeeInvisib",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>The Mark of Detection of House Medani manifests on your skin. You gain the following benefits.</p><p><strong>Deductive Intuition.</strong> When you make an Intelligence (Investigation) or Wisdom (Insight) check, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Magical Detection.</strong> @UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect Magic} and @UUID[Compendium.dnd5e.spells24.Item.phbsplDetectPois]{Detect Poison and Disease} are always prepared for you. You can cast each of them once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast them with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat). From character level 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplSeeInvisib]{See Invisibility} is also always prepared for you, and you can cast it the same way.</p><p><strong>Spells of the Mark.</strong> If you have the Spellcasting or Pact Magic feature, the spells on the Mark of Detection Spells table are added to that feature's spell list.</p><h4>Mark of Detection Spells</h4><table><thead><tr><th>Spell Level</th><th>Spells</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good}, @UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect Thoughts}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFindTraps0]{Find Traps}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]{Clairvoyance}, @UUID[Compendium.dnd5e.spells24.Item.phbsplNondetecti]{Nondetection}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneEye0]{Arcane Eye}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDivination]{Divination}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLegendLore]{Legend Lore}</td></tr></tbody></table><section class=\"secret\" id=\"secret-uEN244i6OmQjLo8e\"><p><strong>Foundry Note</strong></p><p>The effect <em>Deductive Intuition</em> adds the 1d4 to the Investigation and Insight checks. The spells of character level 3 are granted when you reach that level: choose the same spellcasting ability as for the others. The Spells of the Mark are not added to your class spell list automatically: prepare them from the compendium if your class can.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mark-of-detection",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "YHGvPDsep7KNNPL4",
+      "name": "Deductive Intuition",
+      "img": "icons/magic/symbols/runes-star-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.inv.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "f2AgtabB3Oieo2LP"
+          },
+          {
+            "key": "system.skills.ins.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "xAs9Q8z3VQQI4r7G"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Intelligence (Investigation) or Wisdom (Insight) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

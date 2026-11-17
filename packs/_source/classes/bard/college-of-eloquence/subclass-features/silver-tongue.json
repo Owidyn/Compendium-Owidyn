@@ -1,0 +1,118 @@
+{
+  "name": "Silver Tongue",
+  "type": "feat",
+  "_id": "WqYRt606fBP6Qm6D",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "folder": "FrIsk3iHF6EuWu12",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You are a master at saying the right thing at the right time. When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a d20 roll of 9 or lower as a 10.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "College of Eloquence 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "silver-tongue",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "p7RxFDMtrxujLy1G",
+      "name": "Silver Tongue",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.per.roll.min",
+            "value": "10",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "HBz0YKfCY4vQunVl"
+          },
+          {
+            "key": "system.skills.dec.roll.min",
+            "value": "10",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "32BQvQFzah58AudY"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Persuasion and Deception: a d20 of 9 or lower counts as a 10.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

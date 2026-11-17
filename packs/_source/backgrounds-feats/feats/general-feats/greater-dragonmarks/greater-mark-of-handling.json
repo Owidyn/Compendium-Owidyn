@@ -1,0 +1,225 @@
+{
+  "_id": "rA2c038D6CoXG5i1",
+  "name": "Greater Mark of Handling",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-green.webp",
+  "folder": "K2FEiJR0BdVXKWt7",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "o2FBoPH2qidBdWDA": {
+        "type": "save",
+        "_id": "o2FBoPH2qidBdWDA",
+        "sort": 100000,
+        "name": "Subdue Animal",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "NXOcmoo2zPPmJ7PB",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "lGCq43CZbDHfD8X5": {
+        "_id": "lGCq43CZbDHfD8X5",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Mark of Handling Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Improved Intuition.</strong> When you use the Wild Intuition benefit of your Mark of Handling feat, you can roll 1d6 instead of 1d4.</p><p><strong>Improved Handling.</strong> While you are mounted, immediately after you hit a target within 5 feet of your mount with a melee attack roll, your mount can take a Reaction to move up to its Speed or to take the Attack action to make one attack only (your choice).</p><p><strong>Subdue Animal.</strong> As a Magic action, you exert command over one Beast or Monstrosity you can see within 30 feet of you. It must succeed on a Wisdom saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus) or have the Frightened condition until the start of your next turn. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-dPzWiCK9VNhNQO76\"><p><strong>Foundry Note</strong></p><p>Improved Intuition: change the bonus of the <em>Wild Intuition</em> effect of your Mark of Handling feat from 1d4 to 1d6.</p></section>",
+      "chat": ""
+    },
+    "identifier": "greater-mark-of-handling",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "mark-of-handling"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Mark of Handling Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "NXOcmoo2zPPmJ7PB",
+      "name": "Subdued",
+      "img": "icons/magic/symbols/rune-sigil-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Frightened until the start of the handler's next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "name": "Stormborn",
+  "type": "feat",
+  "_id": "AfsGiYc8qIUVk5LA",
+  "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+  "folder": "KIFUiWkctIrs1z0l",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>While your Wrath of the Sea is active, it grants you two more benefits.</p><p><strong>Flight.</strong> You gain a Fly Speed equal to your Speed.</p><p><strong>Resistance.</strong> You have Resistance to Cold, Lightning, and Thunder damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of the Sea 10",
+    "activities": {
+      "n57gkwKUOoefOaeU": {
+        "type": "utility",
+        "_id": "n57gkwKUOoefOaeU",
+        "sort": 100000,
+        "name": "Stormborn",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You manifest Wrath of the Sea"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "n57gkwKUOoefOaeU"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "stormborn",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "n57gkwKUOoefOaeU",
+      "name": "Stormborn",
+      "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "kuTX6MsFtAqq2396"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "1rBt6S4UqHUqrcdY"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "EmnWKEpCWeCGuBOW"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "GZ1P2smFt3mxRElx"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While Wrath of the Sea is active: Fly Speed equal to your Speed; Resistance to Cold, Lightning, and Thunder damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

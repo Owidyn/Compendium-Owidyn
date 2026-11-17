@@ -1,0 +1,116 @@
+{
+  "name": "Goblin",
+  "type": "race",
+  "_id": "rYGkaI47RJnNi041",
+  "img": "icons/creatures/magical/humanoid-silhouette-green.webp",
+  "folder": "fKTmnpcpI4643EcT",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Goblins were created eons ago from an unknown people by Keeper Mimiron's experiments with kaja'mite, a strange magical ore. Enslaved by the Zandalari trolls to mine it on the Isle of Kezan, they secretly built weapons, traps, and explosives and overthrew their masters—then turned on each other, forming rival cartels that grew into great trading powers selling technology to the highest bidder. When Deathwing's Cataclysm destroyed Kezan, the Bilgewater Cartel washed ashore with Thrall and joined the Horde; their capital, the underground city of Undermine, survived.</p><p><strong>Cartels.</strong> The Blackwater Cartel runs Booty Bay in Stranglethorn, dealing in shipping, trade, tourism, and some piracy. The Steamwheedle Cartel stays carefully neutral and sells to anyone from its capital, Gadgetzan. The Venture Company plunders natural resources without care for the consequences and deals in illegal arms and mercenaries.</p><p><strong>Renown.</strong> Choose a cartel: Bilgewater, Blackwater, Steamwheedle, or the Venture Company. With the Bilgewater Cartel (Horde) or the Steamwheedle Cartel, your Renown Score with that faction begins at 3; otherwise, you have no starting Renown Score.</p><h3>Goblin Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Small (about 4 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.dnd5e.origins24.Item.phbsptFeyAncestr]{Fey Ancestry}.</strong> You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.mREZKciMeLeI2xhZ]{Fury of the Small}.</strong> When you damage a creature with an attack or a spell and the creature is larger than you, you can make the attack or spell deal extra damage to it equal to your Proficiency Bonus, of the same type as the other damage dealt. You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest, and no more than once per turn.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.pQBgkoAiTwdt9sLL]{Nimble Escape}.</strong> You can take the Disengage or Hide action as a Bonus Action on each of your turns.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "goblin",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Goblin"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "cjyRGd4DehJWceTP": {
+        "_id": "cjyRGd4DehJWceTP",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Small (about 4 feet tall)",
+        "flags": {}
+      },
+      "W9syHdLFZrf2bnXl": {
+        "_id": "W9syHdLFZrf2bnXl",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Goblin Traits",
+        "title": "Goblin Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.origins24.Item.phbsptFeyAncestr",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.mREZKciMeLeI2xhZ",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.pQBgkoAiTwdt9sLL",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

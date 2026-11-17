@@ -1,0 +1,157 @@
+{
+  "name": "Warrior of the Gods",
+  "type": "feat",
+  "_id": "EF0Lo0GISZhelpgn",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "folder": "By0RaJomwVCvlcL8",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>A divine being helps you keep fighting. You have a pool of four d12s that you can spend to heal yourself: as a Bonus Action, you can expend dice from the pool, roll them, and regain Hit Points equal to the total. The pool regains all expended dice when you finish a Long Rest. Its maximum number of dice increases by one at Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p><section class=\"secret\" id=\"secret-5CWZAHvBiOumKCH1\"><p><strong>Foundry Note</strong></p><p>The uses are the d12s of the pool: choose how many to spend in the dialog.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.path-of-the-zealot.warrior-dice",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Zealot 3",
+    "activities": {
+      "iWBXP6hYcPUta7TL": {
+        "type": "heal",
+        "_id": "iWBXP6hYcPUta7TL",
+        "sort": 100000,
+        "name": "Warrior of the Gods",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "@scale.path-of-the-zealot.warrior-dice"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": 1,
+          "denomination": 12,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "whole",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "warrior-of-the-gods",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

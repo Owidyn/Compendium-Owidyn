@@ -1,0 +1,211 @@
+{
+  "name": "Superior Dread",
+  "type": "feat",
+  "_id": "E5ID8N8PY1nmbyLw",
+  "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+  "folder": "CkEfxbO45rkzB7pC",
+  "sort": 500000,
+  "system": {
+    "description": {
+      "value": "<p>Your Form of Dread improves, granting you the following benefits while you use it.</p><p><strong>Dread Resistance.</strong> You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p><p><strong>Ghostly Flight.</strong> You have a Fly Speed equal to your Speed and can hover. You can move through creatures and objects as if they were Difficult Terrain, but you take 1d10 Force damage if you end your turn inside a creature or an object.</p><p><strong>Profane Casting.</strong> Whenever you cast a Warlock spell of the Conjuration or Necromancy school, you cast it without any Verbal, Somatic, or Material components, except Material components that are costly or consumed.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Undead Patron 14",
+    "activities": {
+      "h4063eTYzhxeAMQt": {
+        "type": "utility",
+        "_id": "h4063eTYzhxeAMQt",
+        "sort": 100000,
+        "name": "Superior Dread",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Form of Dread"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "h4063eTYzhxeAMQt"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "superior-dread",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "h4063eTYzhxeAMQt",
+      "name": "Superior Dread",
+      "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "9jqSX6mIHBIYtATd"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "LUOLeFBTmQQDNQT3"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "uIWRnACGT5GVCSD5"
+          },
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "iRol8KBaBDNNABRQ"
+          },
+          {
+            "key": "system.attributes.movement.hover",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "aS5yt4awl2ZYMdMC"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While using Form of Dread: Resistance to Bludgeoning, Piercing, and Slashing; Fly Speed equal to your Speed (hover); incorporeal movement; Profane Casting.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

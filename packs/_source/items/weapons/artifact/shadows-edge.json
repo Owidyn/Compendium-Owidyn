@@ -1,0 +1,463 @@
+{
+  "_id": "3EcBUS97dRS2yHtq",
+  "name": "Shadow's Edge",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-black.webp",
+  "folder": "k5SXmlVACc2CKVy0",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Highlord Darion Mograine of the Knights of the Ebon Blade forged Shadow's Edge in his runeforge, combining the holy power of Light's Vengeance with primordial saronite—the blood of the Old God Yogg-Saron in mineral form—and the toxic venom of two of the Lich King's minions. The result is a mighty axe that might, in the end, destroy the Lich King.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this weapon.</p><p><strong>Drain Soul.</strong> Whenever you use Shadow's Edge to reduce a creature to 0 Hit Points, the axe slays it and devours its soul unless it is a Construct. Only a Wish spell can restore to life a creature whose soul was devoured. When the axe devours a soul, you gain Temporary Hit Points equal to half the slain creature's Hit Point maximum (round down).</p><p><strong>Random Properties.</strong> This Artifact has the following random properties (see <em>Artifact Traits</em> in the module journal): 1 minor beneficial property, 1 minor detrimental property.</p><p><strong>Unholy Infusion.</strong> Once infused with Professor Putricide's mutated slime, the axe gains 1 minor beneficial and 1 major detrimental property. In addition, when you hit a creature with it, you can take a Bonus Action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplBlight0000]{Blight} (save DC 19) on the target from the axe, once per dawn.</p><p><strong>Blood Infusion.</strong> Once infused with blood from Lana'thel's Blood Mirror, the axe gains 1 major beneficial and 1 minor detrimental property. In addition, when you hit a creature with it, you can take a Bonus Action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplEvardsBlac]{Evard's Black Tentacles} (save DC 19) from the axe with an area that includes the target, once per dawn.</p><p><strong>Frost Infusion.</strong> Once infused with frost from Sindragosa's breath, the axe gains 1 major beneficial and 1 major detrimental property. In addition, when you hit a creature with it, you can take a Bonus Action to cast @UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Cone of Cold} (save DC 19) from the axe with an area that includes the target, once per dawn.</p><p><strong>Destroying the Weapon.</strong> The axe is destroyed if melted down in Highlord Mograine's runeforge, where it was made; this frees the souls it devoured.</p><section class=\"secret\" id=\"secret-ybWHlnPqLZYKM8T1\"><p><strong>Foundry Note</strong></p><p>Each infusion's spell is available only once the axe has received that infusion; each has its own use per dawn.</p></section>",
+      "chat": ""
+    },
+    "identifier": "shadows-edge",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 7,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "B5I1rtpuT8Z9gu0g": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "_id": "B5I1rtpuT8Z9gu0g",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "5HoMEy77tPtfEKMf": {
+        "type": "cast",
+        "_id": "5HoMEy77tPtfEKMf",
+        "sort": 200000,
+        "name": "Unholy Infusion",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": "You hit a creature with the axe"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": true,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplBlight0000",
+          "challenge": {
+            "attack": null,
+            "save": 19,
+            "override": true
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "XwKWKlnVkDHPQAFv": {
+        "type": "cast",
+        "_id": "XwKWKlnVkDHPQAFv",
+        "sort": 300000,
+        "name": "Blood Infusion",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": "You hit a creature with the axe"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": true,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplEvardsBlac",
+          "challenge": {
+            "attack": null,
+            "save": 19,
+            "override": true
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      },
+      "7PE2fxo2gWVyfdpD": {
+        "type": "cast",
+        "_id": "7PE2fxo2gWVyfdpD",
+        "sort": 400000,
+        "name": "Frost Infusion",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": "You hit a creature with the axe"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "dawn",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": true,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplConeofCold",
+          "challenge": {
+            "attack": null,
+            "save": 19,
+            "override": true
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        }
+      }
+    },
+    "properties": [
+      "hvy",
+      "two",
+      "mgc"
+    ],
+    "type": {
+      "value": "martialM",
+      "baseItem": "greataxe"
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 12,
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "cleave",
+    "magicalBonus": 3,
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "ammunition": {},
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

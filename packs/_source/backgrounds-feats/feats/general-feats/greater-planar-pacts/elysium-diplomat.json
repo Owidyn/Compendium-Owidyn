@@ -1,0 +1,179 @@
+{
+  "_id": "0Hr3IuA3wvR1QGZa",
+  "name": "Elysium Diplomat",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "folder": "hZXEZhLBP1OnVB49",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "wCJWdzjrCVrermzj": {
+        "type": "utility",
+        "_id": "wCJWdzjrCVrermzj",
+        "sort": 100000,
+        "name": "Quick Retreat",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "An enemy ends its turn within 5 feet of you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "PGzPEPMdh723WNYP": {
+        "_id": "PGzPEPMdh723WNYP",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "RUT6u4xNW811EOpt": {
+        "_id": "RUT6u4xNW811EOpt",
+        "type": "Trait",
+        "level": 0,
+        "name": "Celestial Communicator",
+        "title": "Celestial Communicator",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Upper Planes Pact Feat)</em></p><p>The tranquility and serenity of Elysium grant you the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Celestial Communicator.</strong> You learn two additional languages of your choice from the Player's Handbook language tables.</p><p><strong>Divine Calm.</strong> A creature's Hostile attitude toward you doesn't impose Disadvantage on your Charisma (Persuasion) checks to influence it.</p><p><strong>Quick Retreat.</strong> When an enemy ends its turn within 5 feet of you, you can take a Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>",
+      "chat": ""
+    },
+    "identifier": "elysium-diplomat",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "upper-planes-pact"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Upper Planes Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

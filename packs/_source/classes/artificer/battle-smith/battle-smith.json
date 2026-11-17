@@ -1,0 +1,364 @@
+{
+  "name": "Battle Smith",
+  "type": "subclass",
+  "_id": "q5f4Hgk1tRqXuTiI",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "folder": "X1iOWPH8CLs8Op2m",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Command a Construct Guardian</p></blockquote><p>A Battle Smith combines protector and medic, an expert at defending others and repairing both gear and people, accompanied by a Steel Defender of their own creation.</p><h3>Battle Smith Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.labZWGSKjD4zZtEa]{Tools of the Trade}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HxEjpvcv0SeNrXI4]{Battle Ready}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Uerq9IrAioZP5Tl0]{Steel Defender}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.foxsusEMhAwtubBr]{Extra Attack}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.xBd0uxQIIVHZWlxw]{Arcane Jolt}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Cbbe4C6pz0WhSMXT]{Improved Defender}</td></tr></tbody></table><h3>Battle Smith Spells</h3><table><thead><tr><th>Artificer Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHeroism000]{Heroism}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Shining Smite}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWardingBon]{Warding Bond}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.ap9j32ixgVwRkURC]{Aura of Vitality}, @UUID[Compendium.compendium-owidyn.spells.Item.moNF3ZiGGKU264lO]{Conjure Barrage}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.gvBaLNakzHXPur9F]{Aura of Purity}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.VtfkGJ41XMGE8iWF]{Banishing Smite}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMassCureWo]{Mass Cure Wounds}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "battle-smith",
+    "classIdentifier": "artificer",
+    "advancement": {
+      "ClSKuvg8PHSdnalH": {
+        "_id": "ClSKuvg8PHSdnalH",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.labZWGSKjD4zZtEa",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HxEjpvcv0SeNrXI4",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Uerq9IrAioZP5Tl0",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "xDIbCJ2LAYTESFaD": {
+        "_id": "xDIbCJ2LAYTESFaD",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.foxsusEMhAwtubBr",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "TLF2D8CLzs06oSFy": {
+        "_id": "TLF2D8CLzs06oSFy",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xBd0uxQIIVHZWlxw",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "aDLFK4Fuv2yM0dzy": {
+        "_id": "aDLFK4Fuv2yM0dzy",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Cbbe4C6pz0WhSMXT",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "pZ7jD5bAOR6HjhbE": {
+        "_id": "pZ7jD5bAOR6HjhbE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Battle Smith Spells",
+        "title": "Battle Smith Spells",
+        "hint": "When you reach a Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHeroism000",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShield0000",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KkVHceEzyLH9uQEs": {
+        "_id": "KkVHceEzyLH9uQEs",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Battle Smith Spells",
+        "title": "Battle Smith Spells",
+        "hint": "When you reach a Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShiningSmi",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWardingBon",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PhH1wCNNNaRsjodc": {
+        "_id": "PhH1wCNNNaRsjodc",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Battle Smith Spells",
+        "title": "Battle Smith Spells",
+        "hint": "When you reach a Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.ap9j32ixgVwRkURC",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.moNF3ZiGGKU264lO",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RFRU450xUJXXuMa8": {
+        "_id": "RFRU450xUJXXuMa8",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Battle Smith Spells",
+        "title": "Battle Smith Spells",
+        "hint": "When you reach a Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.gvBaLNakzHXPur9F",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "BRcik86opuafSgst": {
+        "_id": "BRcik86opuafSgst",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Battle Smith Spells",
+        "title": "Battle Smith Spells",
+        "hint": "When you reach a Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.VtfkGJ41XMGE8iWF",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassCureWo",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "4whyba76QUBoAos3": {
+        "_id": "4whyba76QUBoAos3",
+        "type": "Trait",
+        "level": 3,
+        "name": "Tools of the Trade",
+        "title": "Tools of the Trade",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "tool:art:smith"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "jD6cKswBpA7dQLCT": {
+        "_id": "jD6cKswBpA7dQLCT",
+        "type": "Trait",
+        "level": 3,
+        "name": "Weapon Knowledge",
+        "title": "Weapon Knowledge",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:mar"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "name": "Path of the Wild Heart",
+  "type": "subclass",
+  "_id": "wb8BFELB5eSsRm5R",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "folder": "GegFg2h5FTeGLPxQ",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Walk in Community with the Animal World</p></blockquote><p>Barbarians who follow the Path of the Wild Heart see themselves as kin to animals. They learn magical ways to speak with animals, and their Rage strengthens that bond as it fills them with supernatural might.</p><h3>Path of the Wild Heart Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.MnEpFdo1kSvMucYN]{Animal Speaker}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qWCVhn4gbuA4FYnf]{Rage of the Wilds}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.WMpdFonpFAkA5Yzl]{Aspect of the Wilds}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.iBACbBA11h7bzE72]{Nature Speaker}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.7keD3j6WrmCHRacF]{Power of the Wilds}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "path-of-the-wild-heart",
+    "classIdentifier": "barbarian",
+    "advancement": {
+      "0o5fS66CHv7Q3Ojj": {
+        "_id": "0o5fS66CHv7Q3Ojj",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MnEpFdo1kSvMucYN",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qWCVhn4gbuA4FYnf",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KEVIEGWZwLyDDKBt": {
+        "_id": "KEVIEGWZwLyDDKBt",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.WMpdFonpFAkA5Yzl",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "nEfCd3pClfQZS119": {
+        "_id": "nEfCd3pClfQZS119",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.iBACbBA11h7bzE72",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ViFw1uO1auGxjNWc": {
+        "_id": "ViFw1uO1auGxjNWc",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.7keD3j6WrmCHRacF",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "a6YuZP4CMjmmgI5n": {
+        "_id": "a6YuZP4CMjmmgI5n",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Animal Speaker",
+        "title": "Animal Speaker",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpeakwithA",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "ritual",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "oxRA4LSCPKgDEbbL": {
+        "_id": "oxRA4LSCPKgDEbbL",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Nature Speaker",
+        "title": "Nature Speaker",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommunewit",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "ritual",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

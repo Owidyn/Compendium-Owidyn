@@ -1,0 +1,142 @@
+{
+  "_id": "qFaaAC4jOhTW8k8s",
+  "name": "Conjuration Adept",
+  "type": "feat",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "HA6Jx7OyfRfrkiEY": {
+        "_id": "HA6Jx7OyfRfrkiEY",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "yhs1ekDN04yjuZXE": {
+        "_id": "yhs1ekDN04yjuZXE",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Additional Spells",
+        "title": "Additional Spells",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEntangle00",
+              "optional": true,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMistyStep0",
+              "optional": true,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplConjureAni",
+              "optional": true,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDimensionD",
+              "optional": true,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplConjureEle",
+              "optional": true,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Additional Spells.</strong> Your mastery keeps certain spells always at the ready. Once you have spell slots of a level shown in the Conjuration Adept Spells table, you always have the spells of that level and lower prepared.</p><p><strong>Persistent Conjuration.</strong> While you maintain Concentration on a Conjuration spell, you gain a bonus to the Constitution saving throws you make to maintain that Concentration, equal to the modifier of the ability score increased by this feat.</p><h4>Conjuration Adept Spells</h4><table><thead><tr><th>Spell Slot Level</th><th>Spell</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplEntangle00]{Entangle}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty Step}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConjureAni]{Conjure Animals}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDimensionD]{Dimension Door}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConjureEle]{Conjure Elemental}</td></tr></tbody></table><section class=\"secret\" id=\"secret-PbLZWRYFRcBXUDem\"><p><strong>Foundry Note</strong></p><p>Choose the spells of the levels whose slots you have; add the others when you gain those slots.</p></section>",
+      "chat": ""
+    },
+    "identifier": "conjuration-adept",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

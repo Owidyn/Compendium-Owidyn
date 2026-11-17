@@ -1,0 +1,364 @@
+{
+  "name": "Armorer",
+  "type": "subclass",
+  "_id": "cfG6TI39HwChY0Cm",
+  "img": "icons/equipment/chest/breastplate-layered-steel.webp",
+  "folder": "yW2vcIbcvUf6RXxm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Craft Magic Armor to Enhance Your Abilities</p></blockquote><p>An Armorer modifies armor until it works almost like a second skin, honing its magic to unleash powerful attacks and raise a formidable defense.</p><h3>Armorer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.WLbaTbz88gUtEYH6]{Tools of the Trade}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bDGJXEeUMqZ8eVel]{Arcane Armor}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.4TLmfS5GwraJAxqD]{Armor Model}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.zMeqGKGECHHojc8a]{Extra Attack}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.4NTiI8Yzra6YqXBz]{Improved Armorer}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jypMZj7h3pleCZSk]{Perfected Armor}</td></tr></tbody></table><h3>Armorer Spells</h3><table><thead><tr><th>Artificer Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}, @UUID[Compendium.dnd5e.spells24.Item.phbsplThunderwav]{Thunderwave}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMirrorImag]{Mirror Image}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]{Shatter}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHypnoticPa]{Hypnotic Pattern}, @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}</td></tr><tr><td>13</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterInv]{Greater Invisibility}</td></tr><tr><td>17</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswall00]{Passwall}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Wall of Force}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "armorer",
+    "classIdentifier": "artificer",
+    "advancement": {
+      "1YLa1SNRVdXHbcrM": {
+        "_id": "1YLa1SNRVdXHbcrM",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.WLbaTbz88gUtEYH6",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bDGJXEeUMqZ8eVel",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.4TLmfS5GwraJAxqD",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "2gk3BL1rWUKxFkkG": {
+        "_id": "2gk3BL1rWUKxFkkG",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zMeqGKGECHHojc8a",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ImLZtjayj2EJneFL": {
+        "_id": "ImLZtjayj2EJneFL",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.4NTiI8Yzra6YqXBz",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "3nLDL1yFnWbN9wNr": {
+        "_id": "3nLDL1yFnWbN9wNr",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jypMZj7h3pleCZSk",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "5ggP3HtJ13CjoYC2": {
+        "_id": "5ggP3HtJ13CjoYC2",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Armorer Spells",
+        "title": "Armorer Spells",
+        "hint": "When you reach a Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicMissi",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplThunderwav",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ObQdAkNodVe2htxw": {
+        "_id": "ObQdAkNodVe2htxw",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Armorer Spells",
+        "title": "Armorer Spells",
+        "hint": "When you reach a Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMirrorImag",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShatter000",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "xttwUnde41DPEBRc": {
+        "_id": "xttwUnde41DPEBRc",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Armorer Spells",
+        "title": "Armorer Spells",
+        "hint": "When you reach a Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHypnoticPa",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLightningB",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "6BC0aUVjQA4rboXm": {
+        "_id": "6BC0aUVjQA4rboXm",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Armorer Spells",
+        "title": "Armorer Spells",
+        "hint": "When you reach a Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGreaterInv",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "LuUtFIjxXw4uh6OB": {
+        "_id": "LuUtFIjxXw4uh6OB",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Armorer Spells",
+        "title": "Armorer Spells",
+        "hint": "When you reach a Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPasswall00",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofForc",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8FR4m5VCKPTPLPnk": {
+        "_id": "8FR4m5VCKPTPLPnk",
+        "type": "Trait",
+        "level": 3,
+        "name": "Tools of the Trade",
+        "title": "Tools of the Trade",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "tool:art:smith"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "6FyGaRwU4b5IBU64": {
+        "_id": "6FyGaRwU4b5IBU64",
+        "type": "Trait",
+        "level": 3,
+        "name": "Armor Training",
+        "title": "Armor Training",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:hvy"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "name": "Soulknife",
+  "type": "subclass",
+  "_id": "31kmoFYGEhEtPiHs",
+  "img": "icons/weapons/daggers/dagger-curved-purple.webp",
+  "folder": "JApTfeF0w2UTRr5d",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Strike Foes with Psionic Blades</p></blockquote><p>A Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. Your psionic abilities might have haunted you since childhood, revealing their full potential only under the stress of adventure, or you might have sought out an order of psychic adepts and spent years learning to manifest your power.</p><h3>Soulknife Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.zzD2HsRl78kjlui5]{Psionic Power}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.RU0OzUMdaFUUYQAb]{Psychic Blades}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.fBP8wGwTtgqncdxV]{Soul Blades}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.mbXaHiYHKCdhr0NQ]{Psychic Veil}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.de1JfhwgdeWSwBDm]{Rend Mind}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "soulknife",
+    "classIdentifier": "rogue",
+    "advancement": {
+      "GXvlpwccVkOD2UcM": {
+        "_id": "GXvlpwccVkOD2UcM",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zzD2HsRl78kjlui5",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.RU0OzUMdaFUUYQAb",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "94UEvMmmkola8iiW": {
+        "_id": "94UEvMmmkola8iiW",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.fBP8wGwTtgqncdxV",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "UxEofX4an0pqAsCy": {
+        "_id": "UxEofX4an0pqAsCy",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.mbXaHiYHKCdhr0NQ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "XQdAwhvzRJ7cpPZI": {
+        "_id": "XQdAwhvzRJ7cpPZI",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.de1JfhwgdeWSwBDm",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KRj8wgDPyMvoLtPP": {
+        "_id": "KRj8wgDPyMvoLtPP",
+        "type": "ScaleValue",
+        "name": "Psionic Energy Die",
+        "title": "Psionic Energy Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "energy-die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "5": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "11": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "17": {
+              "number": 1,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "otcwSWoCitT6ksSy": {
+        "_id": "otcwSWoCitT6ksSy",
+        "type": "ScaleValue",
+        "name": "Psionic Energy Dice",
+        "title": "Psionic Energy Dice",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "energy-dice",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 4
+            },
+            "5": {
+              "value": 6
+            },
+            "9": {
+              "value": 8
+            },
+            "13": {
+              "value": 10
+            },
+            "17": {
+              "value": 12
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

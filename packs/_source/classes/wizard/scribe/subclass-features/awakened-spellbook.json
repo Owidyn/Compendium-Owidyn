@@ -1,0 +1,136 @@
+{
+  "name": "Awakened Spellbook",
+  "type": "feat",
+  "_id": "a7mCHcXZChV50cpz",
+  "img": "icons/sundries/books/book-eye-purple.webp",
+  "folder": "ghLCKXUvXMt4WBiM",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>With specially prepared inks and ancient incantations of your order, you have awakened an arcane sentience in your spellbook. While you hold it, it grants you the following benefits.</p><ul><li>You can use the book as a Spellcasting Focus for your Wizard spells.</li><li>When you cast a Wizard spell with a spell slot, you can temporarily replace its damage type with a type that appears in another spell in your spellbook of the same level as the slot expended.</li><li>When you cast a Wizard spell as a Ritual, you can use its normal casting time rather than adding 10 minutes to it. Once you use this benefit, you can't do so again until you finish a Long Rest.</li></ul><p>If necessary, you can replace the book over the course of a Short Rest by using your Wizardly Quill to write arcane sigils in a blank book or in a magic spellbook you are attuned to. At the end of the rest, your spellbook's consciousness is summoned into the new book, which becomes your spellbook with all its spells; if the previous book still exists, all the spells vanish from its pages.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Scribe 3",
+    "activities": {
+      "gETYcac4n24o0YkX": {
+        "type": "utility",
+        "_id": "gETYcac4n24o0YkX",
+        "sort": 100000,
+        "name": "Quick Ritual",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a Wizard spell as a Ritual"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "awakened-spellbook",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

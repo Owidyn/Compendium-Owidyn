@@ -1,0 +1,140 @@
+{
+  "_id": "ihxlnb5Ts6zegBVY",
+  "name": "Skulker",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "eIrb5rgzqiXMD8mv": {
+        "_id": "eIrb5rgzqiXMD8mv",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Dexterity 13+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity score by 1, to a maximum of 20.</p><p><strong>Blindsight.</strong> You have Blindsight with a range of 10 feet.</p><p><strong>Fog of War.</strong> You exploit the distractions of battle and have Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.</p><p><strong>Sniper.</strong> If you make an attack roll while hidden and it misses, making the attack roll doesn't reveal your location.</p>",
+      "chat": ""
+    },
+    "identifier": "skulker",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Dexterity 13+",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "lcKYX2TBM3rkWkHo",
+      "name": "Skulker",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.blindsight",
+            "value": "10",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "VQWTaQNReXbABxu9"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Blindsight 10 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

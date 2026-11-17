@@ -1,0 +1,137 @@
+{
+  "name": "Intoxicated Frenzy",
+  "type": "feat",
+  "_id": "tBaCMwaVpQvr7K27",
+  "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
+  "folder": "LAuZukhW8vR6DcwO",
+  "sort": 700000,
+  "system": {
+    "description": {
+      "value": "<p>Immediately after you use your Patient Defense, you can move up to your Speed. During this movement, whenever you enter a space within 5 feet of a creature, you can make an Unarmed Strike against it, and a creature you hit with such a strike must succeed on a Dexterity saving throw or have the Prone condition. A creature can be targeted by an Unarmed Strike of this feature only once per turn.</p><section class=\"secret\" id=\"secret-z4fCwLAUozQWq5xB\"><p><strong>Foundry Note</strong></p><p>The save DC uses your Monk DC (8 + Wisdom modifier + Proficiency Bonus).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of Mystic Brews 17",
+    "activities": {
+      "LdKb7wZ0gacICvKk": {
+        "type": "save",
+        "_id": "LdKb7wZ0gacICvKk",
+        "sort": 100000,
+        "name": "Intoxicated Frenzy",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit with an Unarmed Strike of this feature"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "intoxicated-frenzy",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

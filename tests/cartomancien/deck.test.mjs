@@ -142,7 +142,7 @@ async function harness() {
 
   const content = new vm.SyntheticModule([
     "CARTOMANCIEN_SPELLS", "TAROTS_DESCRIPTION", "ensureContent", "ensureTarots", "getAvailableCartomancienSpellSources", "importSpellToActor",
-    "syncActorContent", "isCartomancienSpell"
+    "syncActorContent", "isCartomancienSpell", "repairClassAdvancements"
   ], function () {
     this.setExport("CARTOMANCIEN_SPELLS", {});
     this.setExport("TAROTS_DESCRIPTION", "<p>Tarots</p>");
@@ -151,6 +151,7 @@ async function harness() {
     this.setExport("getAvailableCartomancienSpellSources", (...args) => spellSources.available(...args));
     this.setExport("importSpellToActor", (...args) => spellSources.import(...args));
     this.setExport("syncActorContent", async () => null);
+    this.setExport("repairClassAdvancements", async () => false);
     this.setExport("isCartomancienSpell", () => true);
   }, { context });
   const features = new vm.SyntheticModule(["registerFeatureAutomation"], function () {

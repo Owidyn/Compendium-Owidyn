@@ -1,0 +1,157 @@
+{
+  "_id": "NQ8J3VyzL1ZsAPCa",
+  "name": "Infernal Pact",
+  "type": "feat",
+  "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+  "folder": "CgeLHtyCXMpYAd5r",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "X0LFgGZLrduB9FrM": {
+        "_id": "X0LFgGZLrduB9FrM",
+        "type": "Trait",
+        "level": 0,
+        "name": "Infernal Resistance",
+        "title": "Infernal Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "dr:fire",
+                "dr:poison"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "lJm2fklwcHJZAx53": {
+        "_id": "lJm2fklwcHJZAx53",
+        "type": "Trait",
+        "level": 0,
+        "name": "Silver-Tongued",
+        "title": "Silver-Tongued",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:dec"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Can't Have Another Planar Pact Feat)</em></p><p>You struck a bargain with a power of the Lower Planes. You gain the following benefits.</p><p><strong>Infernal Resistance.</strong> You have Resistance to your choice of Fire or Poison damage.</p><p><strong>Infernal Sight.</strong> You gain Darkvision with a range of 30 feet. Magical Darkness doesn't impede this Darkvision.</p><p><strong>Silver-Tongued.</strong> You gain proficiency in the Deception skill.</p><section class=\"secret\" id=\"secret-GOvFUXZQFDRsMqH6\"><p><strong>Foundry Note</strong></p><p>The effect <em>Infernal Sight</em> gives the 30 feet of Darkvision (or keeps a longer one).</p></section>",
+      "chat": ""
+    },
+    "identifier": "infernal-pact",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Can't Have Another Planar Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "p3dWOgzna6RyOtnW",
+      "name": "Infernal Sight",
+      "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "30",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "A1kVRzUG1h8GY3e1"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Darkvision 30 ft, unimpeded by magical Darkness.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

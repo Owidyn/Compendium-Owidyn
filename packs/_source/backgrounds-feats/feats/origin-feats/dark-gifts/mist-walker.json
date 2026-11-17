@@ -1,0 +1,214 @@
+{
+  "_id": "8hKS95aCSXFbSlo6",
+  "name": "Mist Walker",
+  "type": "feat",
+  "img": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
+  "folder": "13Z2QY6ujzN3RLir",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "VCmCgtZojPXM731d": {
+        "type": "utility",
+        "_id": "VCmCgtZojPXM731d",
+        "sort": 100000,
+        "name": "Mist Walk",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You take damage or fail a saving throw to avoid or end the Grappled or Restrained condition"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "value": "15",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "j9vHYqYJeooqqiCC": {
+        "type": "save",
+        "_id": "j9vHYqYJeooqqiCC",
+        "sort": 200000,
+        "name": "Poisoned Roots",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You finish a Short Rest within 10 miles of where you finished your last Long Rest"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>(Prerequisite: Ravenloft Campaign)</em></p><p>You know how to slip through the grasp of the Mists, but that freedom has a price: stay too long in one place, and the Mists find you and drain your vitality. You gain the following features.</p><p><strong>Domain Traveler.</strong> When you enter the Mists intending to reach a specific domain, you are treated as if you had a Mist talisman attuned to that domain. You must know the name of the domain you want to reach, but you don't need to have visited it before. This feature doesn't let you cross domain borders that a Darklord has closed.</p><p><strong>Mist Walk.</strong> When you take damage or fail a saving throw to avoid or end the &amp;Reference[Grappled] or &amp;Reference[Restrained] condition, you can take a Reaction to teleport up to 15 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Poisoned Roots.</strong> When you finish a Long Rest, the land within 10 miles of you begins to siphon away your vitality. Whenever you finish a Short Rest in that area, make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failure, you gain no benefit from that rest.</p><section class=\"secret\" id=\"secret-PdLQ1EpF8NEb7rd0\"><p><strong>Foundry Note</strong></p><p><em>Mist Walk</em> spends a use of the feat; move your token yourself. <em>Poisoned Roots</em> is a Constitution saving throw against DC 13 + your Proficiency Bonus: on a failure, undo the benefits of the Short Rest.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mist-walker",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Ravenloft Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

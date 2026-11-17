@@ -1,0 +1,130 @@
+{
+  "name": "Enhanced Bond",
+  "type": "feat",
+  "_id": "fB4x9cDsmJ74UbK7",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "folder": "vTBFur23dCrO9Wgo",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Your bond with your wildfire spirit strengthens your destructive and restorative spells. Whenever you cast a spell that deals Fire damage or restores Hit Points while your spirit is summoned, roll a d8 and add the number rolled to one damage or healing roll of the spell. In addition, when you cast a spell with a range other than Self, it can originate from you or from your spirit.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of Wildfire 6",
+    "activities": {
+      "jzOwd6IdVa2WXCkb": {
+        "type": "utility",
+        "_id": "jzOwd6IdVa2WXCkb",
+        "sort": 100000,
+        "name": "Enhanced Bond",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a Fire or healing spell with your spirit summoned"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d8",
+          "name": "Bonus to one damage or healing roll",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "enhanced-bond",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

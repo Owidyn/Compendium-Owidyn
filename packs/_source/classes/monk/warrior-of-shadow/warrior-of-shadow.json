@@ -1,0 +1,200 @@
+{
+  "name": "Warrior of Shadow",
+  "type": "subclass",
+  "_id": "v8ewokfoHPgjDHyy",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "nSbkvq6rZCNwIu6F",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Harness Shadow Power for Stealth and Subterfuge</p></blockquote><p>Warriors of Shadow practice stealth and subterfuge, drawing on the power of the Shadowfell. At home in darkness, they can wrap themselves in gloom to hide, leap from shadow to shadow, and take on a wraithlike form.</p><h3>Warrior of Shadow Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.cinwTb73gph32JKu]{Shadow Arts}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.FXY8Jwsub1zoaA1c]{Shadow Step}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.xqEqPhGSXoRQP0vj]{Improved Shadow Step}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.ViwFSPxI25u4KbBP]{Cloak of Shadows}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "warrior-of-shadow",
+    "classIdentifier": "monk",
+    "advancement": {
+      "PdFUunYFFGY5WXTG": {
+        "_id": "PdFUunYFFGY5WXTG",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cinwTb73gph32JKu",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "2hLcAEf0pugtVCZP": {
+        "_id": "2hLcAEf0pugtVCZP",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.FXY8Jwsub1zoaA1c",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "kfmrU5ISyEuskKSo": {
+        "_id": "kfmrU5ISyEuskKSo",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xqEqPhGSXoRQP0vj",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "E4ZqDQWFngASVWdl": {
+        "_id": "E4ZqDQWFngASVWdl",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.ViwFSPxI25u4KbBP",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1f9blCOLzLPOXRop": {
+        "_id": "1f9blCOLzLPOXRop",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Shadowy Figments",
+        "title": "Shadowy Figments",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMinorIllus",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "atwill",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "K4SCyNxElwYuO0bQ": {
+        "_id": "K4SCyNxElwYuO0bQ",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Shadow Arts (Darkness)",
+        "title": "Shadow Arts (Darkness)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDarkness00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "innate",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

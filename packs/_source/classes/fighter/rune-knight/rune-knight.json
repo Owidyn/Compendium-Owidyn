@@ -1,0 +1,454 @@
+{
+  "name": "Rune Knight",
+  "type": "subclass",
+  "_id": "DIQxtm5km0fVkA8V",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "folder": "HP9aecH1smjNHa7g",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Empower Your Gear with the Runes of Giants</p></blockquote><p>Rune Knights enhance their martial prowess with the supernatural power of runes, an ancient practice that began with giants. Rune cutters can be found among every family of giants, and you likely learned your methods first- or secondhand from such a mystical artisan. Whether you found a giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned to apply magic runes to empower your equipment.</p><p><em>Subclass of Tasha's Cauldron of Everything, adapted to the 2024 rules by Owidyn.</em></p><h3>Rune Knight Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.VJKixqfWHjyR3eLC]{Bonus Proficiencies}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bB4HGYwkVWra6N0M]{Rune Carver}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.YVdIX4XknliIW4Mc]{Giant's Might}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.IpNDhq5KOb4f0uhN]{Runic Shield}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.0yF4zFynyjyqHrSG]{Great Stature}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jSgft4Ap2uEzBKam]{Master of Runes}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HZMtkL5BUIRZJ801]{Runic Juggernaut}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "rune-knight",
+    "classIdentifier": "fighter",
+    "advancement": {
+      "RCRV4pBvd7i39Aa0": {
+        "_id": "RCRV4pBvd7i39Aa0",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.VJKixqfWHjyR3eLC",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bB4HGYwkVWra6N0M",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.YVdIX4XknliIW4Mc",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "fhrPlbi5PeEA8rEU": {
+        "_id": "fhrPlbi5PeEA8rEU",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IpNDhq5KOb4f0uhN",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "7gxI8O1bVS1BT0QN": {
+        "_id": "7gxI8O1bVS1BT0QN",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.0yF4zFynyjyqHrSG",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CPaip8JgMKPkzSDb": {
+        "_id": "CPaip8JgMKPkzSDb",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jSgft4Ap2uEzBKam",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "9VgabfHNXf6kAaC3": {
+        "_id": "9VgabfHNXf6kAaC3",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HZMtkL5BUIRZJ801",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "qaAfCL6CrVTmP7Sa": {
+        "_id": "qaAfCL6CrVTmP7Sa",
+        "type": "Trait",
+        "level": 3,
+        "name": "Bonus Proficiencies",
+        "title": "Bonus Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:art:smith",
+            "languages:standard:giant"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "fgCAEFZXURs3NfOK": {
+        "_id": "fgCAEFZXURs3NfOK",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Rune Carver",
+        "title": "Rune Carver",
+        "hint": "Learn two runes (Hill and Storm runes need Fighter level 7).",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SKUPx8AJZbyOzQQq"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xVr5TZau1HOZRFyB"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Aj77HlVVYBuZfGPs"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Yh5G0BITj07ABCLv"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MUXmawyL3cd8768K"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.P2bDLf15BUQMMwE5"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "FzCFEFxLNdNEt22B": {
+        "_id": "FzCFEFxLNdNEt22B",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Rune Carver",
+        "title": "Rune Carver",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SKUPx8AJZbyOzQQq"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xVr5TZau1HOZRFyB"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Aj77HlVVYBuZfGPs"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Yh5G0BITj07ABCLv"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MUXmawyL3cd8768K"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.P2bDLf15BUQMMwE5"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "MlZ4m5j4iKIGAvSi": {
+        "_id": "MlZ4m5j4iKIGAvSi",
+        "type": "ItemChoice",
+        "level": 10,
+        "name": "Rune Carver",
+        "title": "Rune Carver",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "10": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SKUPx8AJZbyOzQQq"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xVr5TZau1HOZRFyB"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Aj77HlVVYBuZfGPs"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Yh5G0BITj07ABCLv"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MUXmawyL3cd8768K"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.P2bDLf15BUQMMwE5"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "COueTrDAt7qkKG1O": {
+        "_id": "COueTrDAt7qkKG1O",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Rune Carver",
+        "title": "Rune Carver",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SKUPx8AJZbyOzQQq"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.xVr5TZau1HOZRFyB"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Aj77HlVVYBuZfGPs"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Yh5G0BITj07ABCLv"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MUXmawyL3cd8768K"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.P2bDLf15BUQMMwE5"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "KP69r9LADFyOfCCR": {
+        "_id": "KP69r9LADFyOfCCR",
+        "type": "ScaleValue",
+        "name": "Giant's Might Die",
+        "title": "Giant's Might Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "might",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "10": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "18": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "qADwGZfekBZn8YCs": {
+        "_id": "qADwGZfekBZn8YCs",
+        "type": "ScaleValue",
+        "name": "Rune Uses",
+        "title": "Rune Uses",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "rune-uses",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 1
+            },
+            "15": {
+              "value": 2
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

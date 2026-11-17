@@ -11,6 +11,7 @@ import './owidyn/effets-formules.mjs';
 import './owidyn/familiar-friend.mjs';
 import './owidyn/sceau-de-confinement.mjs';
 import './owidyn/kitsune.mjs';
+import './owidyn/bastions.mjs';
 import './boutiques/boutiques.mjs';
 import './boutiques/shop-ui.mjs';
 import './cuisine/cuisine.mjs';

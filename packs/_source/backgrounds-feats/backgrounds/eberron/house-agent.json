@@ -1,0 +1,181 @@
+{
+  "name": "House Agent",
+  "type": "background",
+  "_id": "7RrNpGP7ZVA1e0Es",
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-brown-grey.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You are tied to one of the dragonmarked houses, but you haven't manifested a dragonmark (yet). You may belong to the family by birth or be an employee with no blood ties to it. You have earned your living doing the house's business, acting as the hands, feet, and eyes of its leaders out in the world. You likely have old friends, mentors, and rivals within the house you serve, as well as allies and enemies in other houses.</p><p><strong>Ability Scores:</strong> Strength, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt]{Lucky}</p><p><strong>Skill Proficiencies:</strong> Investigation and Persuasion</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Artisan's Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Artisan's Tools (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, 20 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-agent",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "LupBSeXqe8mYIrDX": {
+        "_id": "LupBSeXqe8mYIrDX",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "vGFWq4xqNnNONJej": {
+        "_id": "vGFWq4xqNnNONJej",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Investigation and Persuasion. It also grants you proficiency with one kind of Artisan's Tools of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:inv",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "VD9SH4KEUSpdh7p0": {
+        "_id": "VD9SH4KEUSpdh7p0",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Lucky feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "mQthcjZ14WhSk2de": {
+        "_id": "mQthcjZ14WhSk2de",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "WVnTYmC1suTrCw8O",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "art",
+        "requiresProficiency": false,
+        "_id": "TlJOZmse3eMsOyha",
+        "group": "WVnTYmC1suTrCw8O",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "HM7mnEXORpUAh93o",
+        "group": "WVnTYmC1suTrCw8O",
+        "sort": 300000
+      },
+      {
+        "count": 20,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "qw5Z2xOdYla6SFg5",
+        "group": "WVnTYmC1suTrCw8O",
+        "sort": 400000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

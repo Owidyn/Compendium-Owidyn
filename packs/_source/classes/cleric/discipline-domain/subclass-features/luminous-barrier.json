@@ -1,0 +1,149 @@
+{
+  "name": "Luminous Barrier",
+  "type": "feat",
+  "_id": "mUbWNKV6JOCklLC4",
+  "img": "icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp",
+  "folder": "SHUBDxXl85hB0bJp",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can expend a use of your Channel Divinity to place a ward of glowing light on each creature blessed by your Atonement. Each gains Temporary Hit Points equal to your Cleric level plus your Wisdom modifier, and while it has these Temporary Hit Points, it has Resistance to all damage.</p><section class=\"secret\" id=\"secret-1Vr0jsx8y2B0qThP\"><p><strong>Foundry Note</strong></p><p>Apply the Resistance to all damage yourself while the Temporary Hit Points last.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Discipline Domain 6",
+    "activities": {
+      "Zj59d5XxlqO5wDEI": {
+        "type": "heal",
+        "_id": "Zj59d5XxlqO5wDEI",
+        "sort": 100000,
+        "name": "Luminous Barrier",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:channel-divinity-cleric",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "ally",
+            "special": "Each creature blessed by your Atonement"
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@classes.cleric.levels + @abilities.wis.mod"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "luminous-barrier",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

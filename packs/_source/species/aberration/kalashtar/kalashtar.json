@@ -1,0 +1,141 @@
+{
+  "name": "Kalashtar",
+  "type": "race",
+  "_id": "BCj6DzQUPwul8oH4",
+  "img": "icons/magic/perception/third-eye-blue-red.webp",
+  "folder": "4vskqDwLMs6hq26N",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Kalashtar were born of the union of humanity with renegade spirits from the plane of dreams, the quori. They look human, but their spiritual bond marks them: their features are symmetrical and slightly angular, and their eyes often glow when they concentrate or feel strong emotions.</p><p>Kalashtar cannot speak directly with their quori spirits. Instead, they sense them as a source of instinct and inspiration, drawing on the spirits' memories while they sleep. This bond gives them minor psionic gifts and protects them from psionic attacks.</p><h3>Kalashtar Traits</h3><p><strong>Creature Type:</strong> Aberration</p><p><strong>Size:</strong> Medium (about 6–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.XKKXfjvjE8r43B2n]{Dual Mind}.</strong> You have Advantage on Wisdom and Charisma saving throws.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.y1zlRHKLpEMw4yZd]{Mental Discipline}.</strong> You have Resistance to Psychic damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.A2ukC21a4A2H3Bka]{Mind Link}.</strong> You have telepathy with a range in feet equal to 10 times your level. While you speak telepathically to a creature this way, you can take a Magic action to let it speak telepathically to you for 1 hour, or until you take another Magic action to end this effect.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.1bSQEWzoGkzHj5Pv]{Severed from Dreams}.</strong> You can't be the target of the @UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Dream} spell. In addition, when you finish a Long Rest, you gain proficiency in one skill of your choice, which lasts until you finish another Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "kalashtar",
+    "type": {
+      "value": "aberration",
+      "custom": "",
+      "subtype": "Kalashtar"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "VmtA7RgxS7Vgnfia": {
+        "_id": "VmtA7RgxS7Vgnfia",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 6–7 feet tall)",
+        "flags": {}
+      },
+      "Ct59CGYFdIlkA72H": {
+        "_id": "Ct59CGYFdIlkA72H",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Kalashtar Traits",
+        "title": "Kalashtar Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.XKKXfjvjE8r43B2n",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.y1zlRHKLpEMw4yZd",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.A2ukC21a4A2H3Bka",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.1bSQEWzoGkzHj5Pv",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "pYmmHKrdOdVYJJ10": {
+        "_id": "pYmmHKrdOdVYJJ10",
+        "type": "Trait",
+        "level": 0,
+        "name": "Mental Discipline",
+        "title": "Mental Discipline",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:psychic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

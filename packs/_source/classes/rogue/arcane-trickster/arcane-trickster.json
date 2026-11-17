@@ -1,0 +1,273 @@
+{
+  "name": "Arcane Trickster",
+  "type": "subclass",
+  "_id": "JXWyUab25juUQlU4",
+  "img": "icons/magic/control/debuff-energy-hold-teal-blue.webp",
+  "folder": "xNGuyjalC68tcJBf",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Enhance Stealth with Arcane Spells</p></blockquote><p>Some Rogues enhance their fine-honed skills of stealth and agility with spells, learning magical tricks to aid them in their trade. Some Arcane Tricksters use their talents as pickpockets and burglars, while others are pranksters.</p><h3>Arcane Trickster Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.IMOpjiUaxAl2xrQ6]{Spellcasting}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.pxQKEAh8LYI1DmTY]{Mage Hand Legerdemain}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.q9OAzfWkbXQTYofI]{Magical Ambush}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.IllEKUPCxlG9PUVu]{Versatile Trickster}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.mvPCKhLA5U4fCb7h]{Spell Thief}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "arcane-trickster",
+    "classIdentifier": "rogue",
+    "advancement": {
+      "g6LwKxwvixH7K8lo": {
+        "_id": "g6LwKxwvixH7K8lo",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IMOpjiUaxAl2xrQ6",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pxQKEAh8LYI1DmTY",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "rHkcEradHFZzHnK7": {
+        "_id": "rHkcEradHFZzHnK7",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.q9OAzfWkbXQTYofI",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hCUeOjqdVtaaYI5c": {
+        "_id": "hCUeOjqdVtaaYI5c",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IllEKUPCxlG9PUVu",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "gv7zxySLjdSfelyn": {
+        "_id": "gv7zxySLjdSfelyn",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.mvPCKhLA5U4fCb7h",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "vbbT53zPdLOmOIhy": {
+        "_id": "vbbT53zPdLOmOIhy",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Spellcasting (Mage Hand)",
+        "title": "Spellcasting (Mage Hand)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMageHand00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "OehiKT5bwH4XBCAC": {
+        "_id": "OehiKT5bwH4XBCAC",
+        "type": "ScaleValue",
+        "name": "Max Prepared Spells",
+        "title": "Max Prepared Spells",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "max-prepared",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 4
+            },
+            "6": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "8": {
+              "value": 6
+            },
+            "9": {
+              "value": 6
+            },
+            "10": {
+              "value": 7
+            },
+            "11": {
+              "value": 8
+            },
+            "12": {
+              "value": 8
+            },
+            "13": {
+              "value": 9
+            },
+            "14": {
+              "value": 10
+            },
+            "15": {
+              "value": 10
+            },
+            "16": {
+              "value": 11
+            },
+            "17": {
+              "value": 11
+            },
+            "18": {
+              "value": 11
+            },
+            "19": {
+              "value": 12
+            },
+            "20": {
+              "value": 13
+            }
+          }
+        }
+      },
+      "Ac5Mfpw7jGR8yxlQ": {
+        "_id": "Ac5Mfpw7jGR8yxlQ",
+        "type": "ScaleValue",
+        "name": "Cantrips Known",
+        "title": "Cantrips Known",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "cantrips-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 3
+            },
+            "10": {
+              "value": 4
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "third",
+      "ability": "int",
+      "preparation": {
+        "formula": "@scale.arcane-trickster.max-prepared"
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

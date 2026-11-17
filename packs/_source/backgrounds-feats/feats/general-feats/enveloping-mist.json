@@ -1,0 +1,153 @@
+{
+  "_id": "GwJ5820N5yEUy7RY",
+  "name": "Enveloping Mist",
+  "type": "feat",
+  "img": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "hqGT3S9JqX0FvtwJ": {
+        "type": "utility",
+        "_id": "hqGT3S9JqX0FvtwJ",
+        "sort": 100000,
+        "name": "Life Cocoon",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "The creature wrapped in your mist is hit by an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "bsMvysrBvMwjUJ8m": {
+        "_id": "bsMvysrBvMwjUJ8m",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "cha"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p><p><strong>Enveloping Mist.</strong> When you cast a spell or use a feature that restores Hit Points to a creature, a healing mist wraps around it. Roll one of the dice of the feature that healed it and note the number: it is the creature's Life Cocoon value.</p><p>If the creature is hit by an attack roll before the start of its next turn, you can take a Reaction to reduce the damage it takes from that attack by its Life Cocoon value; the mist then disappears. If the mist is still there at the start of the creature's next turn, the creature gains Temporary Hit Points equal to its Life Cocoon value.</p>",
+      "chat": ""
+    },
+    "identifier": "enveloping-mist",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Dexterity and Wisdom 13+",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

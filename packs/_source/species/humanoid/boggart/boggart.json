@@ -1,0 +1,121 @@
+{
+  "name": "Boggart",
+  "type": "race",
+  "_id": "bIwtctiQ6fASXkE9",
+  "img": "icons/creatures/mammals/rodent-rat-green.webp",
+  "folder": "2LszM8bah431ekcK",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Boggarts are small, stocky goblinoids of the realm of Lorwyn-Shadowmoor, with bestial features such as horns and animal snouts. Beyond that, they look nothing alike: one might resemble a hedgehog, with spiky fur and beady eyes, another a pig with a fleshy snout and ears. Boggarts love brewing potions and tend to specialize in particular fields.</p><p><strong>In Lorwyn.</strong> Lorwyn boggarts are born in communal warrens where laws and hierarchies are mere suggestions; the oldest and mightiest, the \"aunties,\" keep the peace. They love sharing knowledge and experiences with their community and will brave great dangers for something new, so many become adventurers. With their knack for magic, they often become druids, rangers (especially Fey Wanderers), or wizards (especially Diviners).</p><p><strong>In Shadowmoor.</strong> Shadowmoor boggarts have sharper features, extra sets of horns, and often body modifications such as armored plates riveted to their flesh. Their few communities are chaotic and scattered, often in isolated or dangerous places, and their aunties roam the land, greeting those they meet with strange tests, gifts, or even curses. Many become warlocks (often of an Archfey, perhaps Isilu) or Wild Magic sorcerers.</p><h3>Boggart Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Small (about 2–4 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.BwE72pJMmgaV4RFN]{Goblinoid}.</strong> You are a Humanoid, and you are also considered a goblinoid for any prerequisite or effect that requires you to be one.</p><p><strong>@UUID[Compendium.dnd5e.origins24.Item.phbsptFeyAncestr]{Fey Ancestry}.</strong> You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.znau6u0a0QfH2NO9]{Fury of the Small}.</strong> When you damage a creature with an attack or a spell and the creature is larger than you, you can make the attack or spell deal extra damage to it equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest, and no more than once per turn.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.pQBgkoAiTwdt9sLL]{Nimble Escape}.</strong> You can take the Disengage or Hide action as a Bonus Action on each of your turns.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "boggart",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Boggart"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "MMUVNcrCtkYfYV1G": {
+        "_id": "MMUVNcrCtkYfYV1G",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Small (about 2–4 feet tall)",
+        "flags": {}
+      },
+      "EZkjucNFfm2lgu9Y": {
+        "_id": "EZkjucNFfm2lgu9Y",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Boggart Traits",
+        "title": "Boggart Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.BwE72pJMmgaV4RFN",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.origins24.Item.phbsptFeyAncestr",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.znau6u0a0QfH2NO9",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.pQBgkoAiTwdt9sLL",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

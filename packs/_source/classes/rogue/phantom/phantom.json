@@ -1,0 +1,172 @@
+{
+  "name": "Phantom",
+  "type": "subclass",
+  "_id": "lW5F0eD48RTsGYY7",
+  "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+  "folder": "bfBoJVY5cUwDyjrz",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Embrace Death and Wield Ghostly Power</p></blockquote><p>Some Rogues walk the veil between life and death, guiding foes to the grave and slipping through the world as unseen as a spirit. Along the way, a Rogue might discover a mystical bond with death itself. Steeped in negative energy, such a Rogue infuses their strikes with deathly power and steals knowledge from the souls of the departed. Thieves' guilds prize these Rogues as superb information gatherers and spies.</p><h3>Phantom Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.X2k6RNsP0yTZ2Is6]{Wails from the Grave}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.XYSMnWwQzrnCribX]{Whispers of the Dead}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.iWSOy8eJoKsjfuTV]{Tokens of the Departed}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.3OuWamgjxlcSdG2Z]{Voice of Death}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jNaBHpC2HFsHWhFS]{Ghost Walk}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.C2ZJNEKbKj32ojIL]{Death's Friend}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "phantom",
+    "classIdentifier": "rogue",
+    "advancement": {
+      "SkA6VT7KK1MXHkAd": {
+        "_id": "SkA6VT7KK1MXHkAd",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.X2k6RNsP0yTZ2Is6",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.XYSMnWwQzrnCribX",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "XHMdDAWlxGEiebs7": {
+        "_id": "XHMdDAWlxGEiebs7",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.iWSOy8eJoKsjfuTV",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.3OuWamgjxlcSdG2Z",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "3KPBAc6SBGvV4N2q": {
+        "_id": "3KPBAc6SBGvV4N2q",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jNaBHpC2HFsHWhFS",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cVKTZFDe748a7WSY": {
+        "_id": "cVKTZFDe748a7WSY",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C2ZJNEKbKj32ojIL",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "4OstqKB2LrMHvE3R": {
+        "_id": "4OstqKB2LrMHvE3R",
+        "type": "ScaleValue",
+        "name": "Maximum Soul Trinkets",
+        "title": "Maximum Soul Trinkets",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "trinkets",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "9": {
+              "value": 2
+            },
+            "13": {
+              "value": 3
+            },
+            "17": {
+              "value": 4
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

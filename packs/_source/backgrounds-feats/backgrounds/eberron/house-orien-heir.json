@@ -1,0 +1,193 @@
+{
+  "name": "House Orien Heir",
+  "type": "background",
+  "_id": "1Fyl7iZ7fAIfihlg",
+  "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Before the Last War, House Orien's reach spanned Khorvaire, and its trade roads and lightning rails were the lifeblood of a thriving kingdom. The war severed those arteries, killing Galifar and leaving House Orien bloodied. Its couriers and shippers still keep goods moving on both sides of the continent, but restoring routes across the Mournland remains the house's highest priority. Meanwhile, Orien adventurers serve the house by looking into missing couriers, recovering goods stolen from caravans, and resolving disruptions on the lightning rail.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.aYCwwlhAPiZiaAQw]{Mark of Passage}</p><p><strong>Skill Proficiencies:</strong> Acrobatics and Athletics</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCartograph]{Cartographer's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCartograph]{Cartographer's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagMap00000000]{Map}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCaseMaporSc]{Map or Scroll Case}, 18 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-orien-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "gl1gZyoSbiE4Omd3": {
+        "_id": "gl1gZyoSbiE4Omd3",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Intelligence scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "oUnQR6jCykfRYK2D": {
+        "_id": "oUnQR6jCykfRYK2D",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Acrobatics and Athletics. It also grants you proficiency in Cartographer's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:acr",
+            "skills:ath",
+            "tool:art:cartographer"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "F7piKBnDHpaDpcm7": {
+        "_id": "F7piKBnDHpaDpcm7",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Passage feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.aYCwwlhAPiZiaAQw",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Gsmmn3DOxH3kr2Q5": {
+        "_id": "Gsmmn3DOxH3kr2Q5",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "akEXmzdXKhMs8fiR",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCartograph",
+        "requiresProficiency": false,
+        "_id": "gIifvp47FMECQczh",
+        "group": "akEXmzdXKhMs8fiR",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "00lMrrEtECAtnZTW",
+        "group": "akEXmzdXKhMs8fiR",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagMap00000000",
+        "requiresProficiency": false,
+        "_id": "FPp0YsBvzO2XjSFO",
+        "group": "akEXmzdXKhMs8fiR",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCaseMaporSc",
+        "requiresProficiency": false,
+        "_id": "IUnWlnlZQpLEqAoK",
+        "group": "akEXmzdXKhMs8fiR",
+        "sort": 500000
+      },
+      {
+        "count": 18,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "j6T801IauhovEf5Y",
+        "group": "akEXmzdXKhMs8fiR",
+        "sort": 600000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

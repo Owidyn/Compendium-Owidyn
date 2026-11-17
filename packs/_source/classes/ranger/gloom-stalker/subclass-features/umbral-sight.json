@@ -1,0 +1,110 @@
+{
+  "name": "Umbral Sight",
+  "type": "feat",
+  "_id": "0aIAs7xj2ZZyFrty",
+  "img": "icons/magic/perception/eye-slit-red-orange.webp",
+  "folder": "sRmkM4NPxm7tfBiy",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You gain Darkvision with a range of 60 feet; if you already have Darkvision when you gain this feature, its range increases by 60 feet. You are also adept at evading creatures that rely on Darkvision: while entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Gloom Stalker 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "umbral-sight",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "KCj8SAwXzpjnQEhQ",
+      "name": "Umbral Sight",
+      "img": "icons/magic/perception/eye-slit-red-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "60",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "8CCzeKdM0cEb4mET"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Darkvision +60 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

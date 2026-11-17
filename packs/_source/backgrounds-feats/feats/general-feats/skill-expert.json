@@ -1,0 +1,133 @@
+{
+  "_id": "ZH7hGpmzFMonFD0B",
+  "name": "Skill Expert",
+  "type": "feat",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "iXDVbiCEsmEAv9Us": {
+        "_id": "iXDVbiCEsmEAv9Us",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1
+        }
+      },
+      "xwVvunUhei4utBMG": {
+        "_id": "xwVvunUhei4utBMG",
+        "type": "Trait",
+        "level": 0,
+        "name": "Skill Proficiency",
+        "title": "Skill Proficiency",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "T7ALyA8qmWgr669E": {
+        "_id": "T7ALyA8qmWgr669E",
+        "type": "Trait",
+        "level": 0,
+        "name": "Expertise",
+        "title": "Expertise",
+        "hint": "",
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Skill Proficiency.</strong> You gain proficiency in one skill of your choice.</p><p><strong>Expertise.</strong> Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>",
+      "chat": ""
+    },
+    "identifier": "skill-expert",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

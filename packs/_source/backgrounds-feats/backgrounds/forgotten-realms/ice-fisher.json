@@ -1,0 +1,256 @@
+{
+  "name": "Ice Fisher",
+  "type": "background",
+  "_id": "XAA37V9km5el5D0p",
+  "img": "icons/tools/fishing/hook-multi-steel-grey.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You come from a proud family of ice fishers from Ten-Towns, in Icewind Dale. Catching knucklehead trout isn't the most glorious trade in the North, but it is honest work. You have trained your senses to feel the faintest tug on the line, hauled big trout out of frozen lakes, and gutted enough of them to feed your village many times over. That life has hardened your body and mind for adventure.</p><p><strong>Ability Scores:</strong> Strength, Dexterity, Constitution</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftAlert000000]{Alert}</p><p><strong>Skill Proficiencies:</strong> Animal Handling and Athletics</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulWoodcarver]{Woodcarver's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulWoodcarver]{Woodcarver's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBasket00000]{Basket}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBlockandTac]{Block and Tackle}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBucket00000]{Bucket}, @UUID[Compendium.dnd5e.equipment24.Item.phbagChain000000]{Chain}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap]{Hunting Trap}, @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Net}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPole0000000]{Pole}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRations0000]{Rations} (3 days' worth), @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 32 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "ice-fisher",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "aVwfr8Dm9RBeM3up": {
+        "_id": "aVwfr8Dm9RBeM3up",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Dexterity, and Constitution scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "IlFHdpnYAE2quEHO": {
+        "_id": "IlFHdpnYAE2quEHO",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Animal Handling and Athletics. It also grants you proficiency in Woodcarver's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:ath",
+            "tool:art:woodcarver"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "8d6SUxL9lmONwmYL": {
+        "_id": "8d6SUxL9lmONwmYL",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Alert feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftAlert000000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "7ubnNyzJrVXYXcir": {
+        "_id": "7ubnNyzJrVXYXcir",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "FPJVmRdYzt0snD2C",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulWoodcarver",
+        "requiresProficiency": false,
+        "_id": "YuSVVKcwNLVubPlH",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBasket00000",
+        "requiresProficiency": false,
+        "_id": "7A2bAlavazfZJBvS",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBlockandTac",
+        "requiresProficiency": false,
+        "_id": "O8F6wJ8pBuoYom0g",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBucket00000",
+        "requiresProficiency": false,
+        "_id": "IKpMks7gScmDSkMg",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagChain000000",
+        "requiresProficiency": false,
+        "_id": "sB9698AUUQm3d5qd",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHuntingTrap",
+        "requiresProficiency": false,
+        "_id": "kDOUl66RFxveM4I5",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagNet00000000",
+        "requiresProficiency": false,
+        "_id": "ojXLtzs0qSSUNV0K",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPole0000000",
+        "requiresProficiency": false,
+        "_id": "vGiCGbH6hRkAARaq",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 900000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRations0000",
+        "requiresProficiency": false,
+        "_id": "ovR1dRFCmVog7bob",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 1000000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRope0000000",
+        "requiresProficiency": false,
+        "_id": "tvIJyIL9Bdvw0NdP",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 1100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "D5IPVa4klMb4nXAS",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 1200000
+      },
+      {
+        "count": 32,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "DgBiTq4lgOasXRdb",
+        "group": "FPJVmRdYzt0snD2C",
+        "sort": 1300000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

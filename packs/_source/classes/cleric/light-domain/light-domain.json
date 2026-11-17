@@ -1,0 +1,276 @@
+{
+  "name": "Light Domain",
+  "type": "subclass",
+  "_id": "2khBfciRF2IhYfC2",
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+  "folder": "ZgYaIh7PE0gwZ7VU",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Bring Light to Banish Darkness</p></blockquote><p>The Light Domain is the divine power of blazing fire and revelation. Its Clerics are enlightened souls filled with radiance and with their gods' discerning sight, charged with driving out lies and burning away darkness.</p><p>Its gods are deities of truth, vigilance, beauty, insight, and renewal: some are the sun or charioteers who guide it across the sky, others are sentinels who see through deception, others are gods of beauty and art who teach that art elevates the soul.</p><h3>Light Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.0D3ysLTvnyyvtRVm]{Light Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.OLFwsuNq9ARswV37]{Radiance of the Dawn}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.8QwzbzascQXRjFnA]{Warding Flare}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.zJFx4oY9YBiWkCuB]{Improved Warding Flare}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Q6RH0DY4GBymFBXq]{Corona of Light}</td></tr></tbody></table><h3>Light Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning Hands}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}, @UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching Ray}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSeeInvisib]{See Invisibility}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneEye0]{Arcane Eye}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlameStrik]{Flame Strike}, @UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "light-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "9songBpWCzOFyYqF": {
+        "_id": "9songBpWCzOFyYqF",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.0D3ysLTvnyyvtRVm",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.OLFwsuNq9ARswV37",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8QwzbzascQXRjFnA",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FumvSELEEG1byc9e": {
+        "_id": "FumvSELEEG1byc9e",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zJFx4oY9YBiWkCuB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "P0dwbeoW5uYIeXxC": {
+        "_id": "P0dwbeoW5uYIeXxC",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Q6RH0DY4GBymFBXq",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "djdamX7i0kYriSaf": {
+        "_id": "djdamX7i0kYriSaf",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Light Domain Spells",
+        "title": "Light Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBurningHan",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFaerieFire",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScorchingR",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSeeInvisib",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "OGmzoDzSQSl4ntB8": {
+        "_id": "OGmzoDzSQSl4ntB8",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Light Domain Spells",
+        "title": "Light Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDaylight00",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireball00",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8HpXQiv91V9OTBxn": {
+        "_id": "8HpXQiv91V9OTBxn",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Light Domain Spells",
+        "title": "Light Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneEye0",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofFire",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "a0CGNsggEcB6Ouvc": {
+        "_id": "a0CGNsggEcB6Ouvc",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Light Domain Spells",
+        "title": "Light Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameStrik",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScrying000",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

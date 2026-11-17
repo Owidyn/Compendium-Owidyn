@@ -1,0 +1,295 @@
+{
+  "name": "Dispersion",
+  "type": "feat",
+  "_id": "tyRV2t3TysV4x8q1",
+  "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+  "folder": "vEONJQpfQjCkCw05",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>When an attack roll hits you, you can take a Reaction to disperse into shadowy energy. Until the end of your next turn, you have Resistance to all damage (including the triggering attack's), you can't take any action, Bonus Action, or Reaction, and you have a Fly Speed of 40 feet. When the effect ends, you can spend up to half your total Hit Point Dice, regaining Hit Points as if you had finished a Short Rest. Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Shadow Domain 6",
+    "activities": {
+      "oyhMdSwl1uwdNTZz": {
+        "type": "utility",
+        "_id": "oyhMdSwl1uwdNTZz",
+        "sort": 100000,
+        "name": "Dispersion",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "An attack roll hits you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "lVhF8NljddNPttxq"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "dispersion",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "lVhF8NljddNPttxq",
+      "name": "Dispersion",
+      "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "tKv4toRZaQWjer14"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "rVKEhzP0snFx2iIP"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Sak8HIgWEM3H9662"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DIEDDhvBzZ1krgEW"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "force",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "h1bG4g1Pg8Ln5Pps"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "xFtB8TJcrknEh7QC"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "K57lFLW8mXw0mx8c"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "8TGX2FieFErm1ead"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "uHMb4BmjEOhsb1PW"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "B7u1eisuGd7gUEsb"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "NAss1lVAl7RVTllS"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mt9eJpQtbnfvePyQ"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "rNAkSDiAVSJNC4q4"
+          },
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "40",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "qsGf6FzNq4bPxQWM"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceEnd",
+        "expired": false
+      },
+      "description": "<p>Resistance to all damage, Fly Speed 40 feet, no actions until the end of your next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

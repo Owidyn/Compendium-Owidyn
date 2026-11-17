@@ -1,0 +1,173 @@
+{
+  "name": "Fury of the Small",
+  "type": "feat",
+  "_id": "mREZKciMeLeI2xhZ",
+  "img": "icons/skills/melee/strike-dagger-white-orange.webp",
+  "folder": "ZCIeJ132huQ4XgFp",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>When you damage a creature with an attack or a spell and the creature is larger than you, you can make the attack or spell deal extra damage to it equal to your Proficiency Bonus, of the same type as the other damage dealt. You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest, and no more than once per turn.</p><section class=\"secret\" id=\"secret-40JJ9Fgy35GWdAub\"><p><strong>Foundry Note</strong></p><p>Choose the type of the attack or spell in the roll dialog.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Goblin",
+    "activities": {
+      "URr89wDUelHLbjAP": {
+        "type": "damage",
+        "_id": "URr89wDUelHLbjAP",
+        "sort": 100000,
+        "name": "Fury of the Small",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You damage a creature larger than you with an attack or a spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@prof"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "acid",
+                "bludgeoning",
+                "cold",
+                "fire",
+                "force",
+                "lightning",
+                "necrotic",
+                "piercing",
+                "poison",
+                "psychic",
+                "radiant",
+                "slashing",
+                "thunder"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "fury-of-the-small",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

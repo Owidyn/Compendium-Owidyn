@@ -1,0 +1,110 @@
+{
+  "name": "Improved Spectral Sight",
+  "type": "feat",
+  "_id": "Co59CSpcxIxBqBkD",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+  "folder": "43lHaixCR7Jsrr5m",
+  "sort": 1000000,
+  "system": {
+    "description": {
+      "value": "<p>This feature replaces the Ranger's Feral Senses feature. You have Truesight with a range of 30 feet.</p><section class=\"secret\" id=\"secret-zH2tUGnkCWWHgaUj\"><p><strong>Foundry Note</strong></p><p>Remove Feral Senses from your sheet.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Demon Hunter 18",
+    "activities": {},
+    "enchant": {},
+    "identifier": "improved-spectral-sight",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "QxMkilm2CP5oaLr8",
+      "name": "Improved Spectral Sight",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.truesight",
+            "value": "30",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "BaWx6Vvya9D7Vzfw"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Truesight 30 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

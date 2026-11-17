@@ -1,0 +1,263 @@
+{
+  "name": "Death Coil",
+  "type": "feat",
+  "_id": "pAGkBn67ukqHaUL9",
+  "img": "icons/magic/death/skull-energy-light-purple.webp",
+  "folder": "AGPvIxqqlfyMZtXh",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>This feature replaces the Lay On Hands feature of the Paladin class. Your creature type becomes Undead.</p><p>You can also manipulate negative energy, fueled by a pool of d8s whose number equals 1 plus your Charisma modifier (minimum of one die). As a Bonus Action, you can target a creature you can see within 60 feet of you and force it to make a Constitution saving throw, expending dice from the pool—at most a number equal to your Charisma modifier (minimum of one) at once. Roll the dice you expend: the target takes Necrotic damage equal to the total on a failure, or half as much on a success. If it is Undead, you can have it regain Hit Points equal to the total instead. The pool regains all expended dice when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-U3crQ82xYRBRGieQ\"><p><strong>Foundry Note</strong></p><p>Remove Lay on Hands from your sheet and set your creature type to Undead. The uses are the d8s of the pool: choose how many to spend in the dialog. Improved Death Coil (level 14) adds your Charisma modifier to the damage, or your Paladin level to the healing.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1 + max(0, @abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of the Ebon Blade 1",
+    "activities": {
+      "5MiEWbPaTFDD3Z3B": {
+        "type": "save",
+        "_id": "5MiEWbPaTFDD3Z3B",
+        "sort": 100000,
+        "name": "Death Coil",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "max(1, @abilities.cha.mod)"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      },
+      "SP4AzGQPMrWI0DTd": {
+        "type": "heal",
+        "_id": "SP4AzGQPMrWI0DTd",
+        "sort": 200000,
+        "name": "Death Coil (Undead)",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "The target is Undead"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "max(1, @abilities.cha.mod)"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "whole",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "death-coil",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

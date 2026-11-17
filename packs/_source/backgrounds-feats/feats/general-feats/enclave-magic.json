@@ -1,0 +1,124 @@
+{
+  "_id": "512KZi6js6Abbwfg",
+  "name": "Enclave Magic",
+  "type": "feat",
+  "img": "icons/magic/nature/plant-sproud-hands-dirt-green.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "F8oWYFyKhdBx8B3r": {
+        "_id": "F8oWYFyKhdBx8B3r",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "B7Y3ctVOxAhnisvA": {
+        "_id": "B7Y3ctVOxAhnisvA",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Two Hearts, One Mind",
+        "title": "Two Hearts, One Mind",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Emerald Enclave Fledgling Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Friend to Animals.</strong> You have Advantage on ability checks you make as part of the Influence action with Beasts.</p><p><strong>Two Hearts, One Mind.</strong> You always have @UUID[Compendium.compendium-owidyn.spells.Item.Aas6i0uCFP6uag7H]{Beast Sense} prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; cast this way, it doesn't require Concentration. You can also cast it with any spell slots of the appropriate level you have. Its spellcasting ability is the ability increased by this feat.</p><section class=\"secret\" id=\"secret-d0fDrd6aCMjtsXKC\"><p><strong>Foundry Note</strong></p><p>When you cast Beast Sense without a slot through this feat, end the Concentration it begins: it doesn't need it.</p></section>",
+      "chat": ""
+    },
+    "identifier": "enclave-magic",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "emerald-enclave-fledgling"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Emerald Enclave Fledgling Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

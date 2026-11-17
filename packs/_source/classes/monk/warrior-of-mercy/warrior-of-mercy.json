@@ -1,0 +1,166 @@
+{
+  "name": "Warrior of Mercy",
+  "type": "subclass",
+  "_id": "PxkP3H3xozSgP5YF",
+  "img": "icons/equipment/head/mask-carved-scream-tan.webp",
+  "folder": "HSrL4JGbUfQeqtli",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Manipulate Forces of Life and Death</p></blockquote><p>Warriors of Mercy manipulate the life force of others. These Monks are wandering physicians who nonetheless bring a swift end to their enemies, often wearing masks to present themselves as faceless bringers of life and death.</p><h3>Warrior of Mercy Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qoVrpjIZE2r2d5Sj]{Hand of Harm}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.5dopxV7nfuCmHgiB]{Hand of Healing}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.lfHGeKM34AfaEeIM]{Implements of Mercy}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.z53LIvu2BpR9kMhY]{Physician's Touch}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.kBvklIegsxCok9P1]{Flurry of Healing and Harm}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.XAr0Sj87HGDTmVpX]{Hand of Ultimate Mercy}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "warrior-of-mercy",
+    "classIdentifier": "monk",
+    "advancement": {
+      "DsLCKc605ZdB9Ehx": {
+        "_id": "DsLCKc605ZdB9Ehx",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qoVrpjIZE2r2d5Sj",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5dopxV7nfuCmHgiB",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lfHGeKM34AfaEeIM",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "IERtBRrvp4Mc3Ei9": {
+        "_id": "IERtBRrvp4Mc3Ei9",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.z53LIvu2BpR9kMhY",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "J0JnklRUuh0LKBLo": {
+        "_id": "J0JnklRUuh0LKBLo",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.kBvklIegsxCok9P1",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DmdXM8ilULoMK3Yw": {
+        "_id": "DmdXM8ilULoMK3Yw",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.XAr0Sj87HGDTmVpX",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "TrgPynRDEWxm6FVt": {
+        "_id": "TrgPynRDEWxm6FVt",
+        "type": "Trait",
+        "level": 3,
+        "name": "Implements of Mercy",
+        "title": "Implements of Mercy",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:med",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

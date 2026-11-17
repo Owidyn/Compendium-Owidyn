@@ -1,0 +1,287 @@
+{
+  "name": "Bladesong",
+  "type": "feat",
+  "_id": "lYnjYZwi5clEUK9v",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "folder": "cyP0hTntw7L2bCDw",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you invoke an elven magic called the Bladesong, provided you aren't wearing armor or using a Shield. The Bladesong lasts for 1 minute and ends early if you have the Incapacitated condition, if you don armor or a Shield, or if you use two hands to make an attack with a weapon. You can dismiss it at any time (no action required). You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest; you regain one expended use when you use Arcane Recovery.</p><p>While the Bladesong is active, you gain the following benefits.</p><p><strong>Agility.</strong> You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet. In addition, you have Advantage on Dexterity (Acrobatics) checks.</p><p><strong>Bladework.</strong> Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of Strength or Dexterity.</p><p><strong>Focus.</strong> When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.</p><section class=\"secret\" id=\"secret-BiddAtowCQNcshK5\"><p><strong>Foundry Note</strong></p><p>Bladework: set the attack ability of your weapon to Intelligence while the Bladesong is active.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Bladesinger 3",
+    "activities": {
+      "gQIt0nuH2KWWvT37": {
+        "type": "utility",
+        "_id": "gQIt0nuH2KWWvT37",
+        "sort": 100000,
+        "name": "Bladesong",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "gQIt0nuH2KWWvT37"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "cm8p13DPKDRVUIuj": {
+        "type": "utility",
+        "_id": "cm8p13DPKDRVUIuj",
+        "sort": 200000,
+        "name": "Arcane Recovery (Regain a Use)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Arcane Recovery"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "bladesong",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "gQIt0nuH2KWWvT37",
+      "name": "Bladesong",
+      "img": "icons/skills/melee/sword-twirl-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "max(1, @abilities.int.mod)",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "RaGDUQuBEexCgiDo"
+          },
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "10",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "uCXkm2pTBmrIQeaq"
+          },
+          {
+            "key": "system.skills.acr.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DOVBkZWeEBd63zKp"
+          },
+          {
+            "key": "system.attributes.concentration.roll.bonus",
+            "value": "@abilities.int.mod",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "cPaJAyVqgM44EKny"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Agility, Bladework, and Focus for 1 minute.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

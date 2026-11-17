@@ -1,0 +1,124 @@
+{
+  "name": "Wizardly Quill",
+  "type": "feat",
+  "_id": "KmMAq1Pt0ePIQbxE",
+  "img": "icons/skills/trades/academics-scribe-quill-gray.webp",
+  "folder": "ghLCKXUvXMt4WBiM",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can magically create a Tiny quill in your free hand. It has the following properties, and it disappears if you create another one or if you die.</p><ul><li>It doesn't require ink: when you write with it, it produces ink of a color of your choice.</li><li>The time you must spend to copy a spell into your spellbook equals 2 minutes per spell level if you use the quill.</li><li>You can erase anything you wrote with the quill by waving its feather over the text as a Bonus Action, provided the text is within 5 feet of you.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Scribe 3",
+    "activities": {
+      "7gArcbOiY7nOZuBr": {
+        "type": "utility",
+        "_id": "7gArcbOiY7nOZuBr",
+        "sort": 100000,
+        "name": "Wizardly Quill",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "wizardly-quill",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

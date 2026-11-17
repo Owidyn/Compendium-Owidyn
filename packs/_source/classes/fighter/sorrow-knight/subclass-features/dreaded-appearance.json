@@ -1,0 +1,168 @@
+{
+  "name": "Dreaded Appearance",
+  "type": "feat",
+  "_id": "IciGsC8D9b8gMBbS",
+  "img": "icons/magic/control/fear-fright-shadow-monster-purple.webp",
+  "folder": "DXuTDmkSX7nGAdBb",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>When you use Tactical Shift, you can teleport to an unoccupied space you can see within 30 feet of you instead of moving. Immediately after you reappear, you can briefly take on the appearance of creatures' fears, visible only to them: each creature of your choice in a 10-foot Emanation originating from you makes a Wisdom saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus). On a failure, it takes Psychic damage equal to a roll of your Despairing Strike die and has the Frightened condition until the end of your next turn; on a success, it takes only half as much damage. Once you take on this appearance, you can't do so again until you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Sorrow Knight 7",
+    "activities": {
+      "Ztlkt1BC8sC4ESQB": {
+        "type": "save",
+        "_id": "Ztlkt1BC8sC4ESQB",
+        "sort": 100000,
+        "name": "Dreaded Appearance",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Tactical Shift"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "enemy",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.sorrow-knight.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "dreaded-appearance",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

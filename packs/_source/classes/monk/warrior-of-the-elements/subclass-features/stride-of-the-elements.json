@@ -1,0 +1,118 @@
+{
+  "name": "Stride of the Elements",
+  "type": "feat",
+  "_id": "Wgk9dMtT79LeEURN",
+  "img": "icons/magic/air/wind-tornado-spiral-blue-gray.webp",
+  "folder": "QjtuVSfB6NKCxNC5",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-BEgpDqtQk8kjAZqH\"><p><strong>Foundry Note</strong></p><p>Turn on the effect while your Elemental Attunement is active.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of the Elements 11",
+    "activities": {},
+    "enchant": {},
+    "identifier": "stride-of-the-elements",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "FISoWBLNSoTcQUmO",
+      "name": "Stride of the Elements",
+      "img": "icons/magic/air/wind-tornado-spiral-blue-gray.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "o4SUoYNYeNjDKZYH"
+          },
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "@attributes.movement.speeds.walk",
+            "type": "owidyn-formula-override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Aahbs3RBtB7QpJrH"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While attuned: Fly and Swim Speed equal to your Speed.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

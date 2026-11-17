@@ -1,0 +1,199 @@
+{
+  "name": "College of Spirits",
+  "type": "subclass",
+  "_id": "ha6pLDNbEWFtbe77",
+  "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
+  "folder": "ElfFbKcKX5Z6R5Kf",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Call Forth Spirits from Beyond the Grave</p></blockquote><p>Bards of the College of Spirits conjure legendary spirits to change the world. But such beings are capricious, and what a Bard calls forth isn't always fully under their control.</p><h3>College of Spirits Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.LmbL0aSyP9vsGE1Q]{Channeler}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.CcHjGNEV3n9NvyuJ]{Spirits from Beyond}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qFwoTbzZjKNnnuB1]{Empowered Channeling}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.XhYPYjrfAXDfyJYt]{Mystical Connection}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "college-of-spirits",
+    "classIdentifier": "bard",
+    "advancement": {
+      "1NyqnaLqj96OAOWG": {
+        "_id": "1NyqnaLqj96OAOWG",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LmbL0aSyP9vsGE1Q",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CcHjGNEV3n9NvyuJ",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EhoeF2sZU8rppPi8": {
+        "_id": "EhoeF2sZU8rppPi8",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qFwoTbzZjKNnnuB1",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "GMqvDmQgtBRblRpX": {
+        "_id": "GMqvDmQgtBRblRpX",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.XhYPYjrfAXDfyJYt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "kfkfZlhspVsWiZP9": {
+        "_id": "kfkfZlhspVsWiZP9",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Guiding Whispers",
+        "title": "Guiding Whispers",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidance00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "mRxpX6qDOAS1G0XG": {
+        "_id": "mRxpX6qDOAS1G0XG",
+        "type": "Trait",
+        "level": 3,
+        "name": "Spiritual Focus",
+        "title": "Spiritual Focus",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:game:card"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "bg799wRporysWM5y": {
+        "_id": "bg799wRporysWM5y",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Spiritual Manifestation",
+        "title": "Spiritual Manifestation",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritGuar",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

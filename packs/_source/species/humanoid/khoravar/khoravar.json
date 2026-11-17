@@ -1,0 +1,183 @@
+{
+  "name": "Khoravar",
+  "type": "race",
+  "_id": "83sRgEF2WWDVFI9X",
+  "img": "icons/magic/nature/leaf-glow-triple-orange-purple.webp",
+  "folder": "Dy94t5hl2ltLQee8",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Over the centuries, the descendants of humans and elves have built their own communities and traditions in Khorvaire, strengthened by the rise of Houses Lyrandar and Medani. They call themselves Khoravar—\"children of Khorvaire\" in Elvish—and dislike the term \"half-elf.\"</p><p>Many Khoravar see themselves as \"the bridge between,\" called to help different cultures and peoples understand and work with each other; they often become bards, diplomats, mediators, or translators. Others, drawn to their distant fey heritage, seek to link the Material Plane with Thelanis, the Feywild, and often become druids or warlocks of archfey patrons.</p><h3>Khoravar Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–6 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.dnd5e.origins24.Item.phbsptFeyAncestr]{Fey Ancestry}.</strong> You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.Qg8dUnpPw2FBgCEz]{Fey Gift}.</strong> You know the @UUID[Compendium.compendium-owidyn.spells.Item.Ww5BR9eIXHDFRD61]{Friends} cantrip. Whenever you finish a Long Rest, you can replace it with another cantrip from the Cleric, Druid, or Wizard spell list. Your spellcasting ability for the cantrip of this trait is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.Xf09l7N9zEluv5hI]{Lethargy Resilience}.</strong> When you fail a saving throw to avoid or end the &amp;Reference[Unconscious] condition, you can succeed instead. Once you use this trait, you can't do so again until you finish 1d4 Long Rests.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.u1vy0TBDxrYCd5lh]{Skill Versatility}.</strong> You gain proficiency in one skill or with one tool of your choice. Whenever you finish a Long Rest, you can replace it with another skill or tool proficiency.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "khoravar",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Khoravar"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "wRIcK6BEzwzHspsZ": {
+        "_id": "wRIcK6BEzwzHspsZ",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–6 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "UYZ2fDk5vt9wBdCE": {
+        "_id": "UYZ2fDk5vt9wBdCE",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Khoravar Traits",
+        "title": "Khoravar Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.origins24.Item.phbsptFeyAncestr",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.Qg8dUnpPw2FBgCEz",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.Xf09l7N9zEluv5hI",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.u1vy0TBDxrYCd5lh",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "YNWIb8llrjTudinX": {
+        "_id": "YNWIb8llrjTudinX",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Fey Gift",
+        "title": "Fey Gift",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Ww5BR9eIXHDFRD61",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "urKYDEQgTc4BFrKL": {
+        "_id": "urKYDEQgTc4BFrKL",
+        "type": "Trait",
+        "level": 0,
+        "name": "Skill Versatility",
+        "title": "Skill Versatility",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*",
+                "tool:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

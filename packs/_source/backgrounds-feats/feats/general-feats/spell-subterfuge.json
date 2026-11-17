@@ -1,0 +1,164 @@
+{
+  "_id": "4UCl0jZIPEmDSMfu",
+  "name": "Spell Subterfuge",
+  "type": "feat",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "7MLrhqDt1Dg7NP8b": {
+        "type": "utility",
+        "_id": "7MLrhqDt1Dg7NP8b",
+        "sort": 100000,
+        "name": "Shrouding Spells",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": "After you cast an action spell with a spell slot"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "max(1, @abilities.int.mod, @abilities.wis.mod, @abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "9BbKPbclKSyHBARp": {
+        "_id": "9BbKPbclKSyHBARp",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Shrouding Spells.</strong> After you cast a spell that has a casting time of an action with a spell slot, you can take both the Dash and Hide actions as a Bonus Action. You can use this benefit a number of times equal to the modifier of the ability increased by this feat, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Sneaky Casting.</strong> If you have the Invisible condition from the Hide action, casting a spell with a Verbal component or making a spell attack doesn't end that condition if you end the turn behind Three-Quarters Cover or Total Cover.</p><section class=\"secret\" id=\"secret-FWekYzwqu16kCPSc\"><p><strong>Foundry Note</strong></p><p>The uses follow your highest mental modifier: change the formula if you increased another ability.</p></section>",
+      "chat": ""
+    },
+    "identifier": "spell-subterfuge",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

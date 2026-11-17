@@ -1,0 +1,172 @@
+{
+  "name": "Path of the Spiritual Guardian",
+  "type": "subclass",
+  "_id": "H1Md8lLy5SXZLjOX",
+  "img": "icons/magic/death/undead-ghost-strike-white.webp",
+  "folder": "JmIMtLJIZCBqaDRb",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Call on the Spirits for Combat Aid</p></blockquote><p>Barbarians of the Path of the Spiritual Guardian call on spirits—bestial spirits of nature, departed ancestors, or raw elemental powers—to guide and protect them. When they rage, they reach into the spirit realm for aid.</p><h3>Path of the Spiritual Guardian Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.XPJViP6TErs0xPoJ]{Spiritual Protectors}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.QXbAIZnIEJH02iid]{Spirit Shield}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.RKsFqotEan9RriXN]{Consult the Spirits}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.hPJvz8BDhC3nDVM6]{Spirits' Fury}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "path-of-the-spiritual-guardian",
+    "classIdentifier": "barbarian",
+    "advancement": {
+      "oSxHvJpjNdm3ic9M": {
+        "_id": "oSxHvJpjNdm3ic9M",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.XPJViP6TErs0xPoJ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VKZUZlQlkir8lTeI": {
+        "_id": "VKZUZlQlkir8lTeI",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QXbAIZnIEJH02iid",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "IUuhj1weeJUPEgPu": {
+        "_id": "IUuhj1weeJUPEgPu",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.RKsFqotEan9RriXN",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wO12EkD8YjnXswob": {
+        "_id": "wO12EkD8YjnXswob",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hPJvz8BDhC3nDVM6",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DxsrbZ9YFn1zXvRQ": {
+        "_id": "DxsrbZ9YFn1zXvRQ",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Consult the Spirits",
+        "title": "Consult the Spirits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAugury0000",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplClairvoyan",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "innate",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "sr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

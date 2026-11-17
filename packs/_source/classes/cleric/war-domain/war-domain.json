@@ -1,0 +1,298 @@
+{
+  "name": "War Domain",
+  "type": "subclass",
+  "_id": "hNftuVZr0wad98Se",
+  "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+  "folder": "11nLNqF6VygEBl9U",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Inspire Valor and Smite Foes</p></blockquote><p>War has many faces. It can make heroes of ordinary people, or be desperate and horrific, with cruelty and cowardice eclipsing courage. Clerics of the War Domain excel in battle, inspiring others to fight the good fight or offering violence as prayer.</p><p>War gods watch over warriors and reward their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage; others are neutral, promoting war in all its forms and supporting warriors in any situation.</p><h3>War Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.e073v0bCJCc4iyjP]{Guided Strike}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.C84CH24qPPDRMd8u]{War Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.V3Adn46l1RLblRlc]{War Priest}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.mj0ksBrySazY41OA]{War God's Blessing}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.pZZA7VW3LkWs2hXB]{Avatar of Battle}</td></tr></tbody></table><h3>War Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShieldofFa]{Shield of Faith}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.BT0KnautfGrqUokp]{Crusader's Mantle}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFreedomofM]{Freedom of Movement}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold Monster}, @UUID[Compendium.compendium-owidyn.spells.Item.YeiTWaNwrurgKm2A]{Steel Wind Strike}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "war-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "6KWA41d1qPnRH1jV": {
+        "_id": "6KWA41d1qPnRH1jV",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.e073v0bCJCc4iyjP",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.C84CH24qPPDRMd8u",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.V3Adn46l1RLblRlc",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "SuW4JkgFCzZYOlqn": {
+        "_id": "SuW4JkgFCzZYOlqn",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.mj0ksBrySazY41OA",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "lga4bsDDnH1jjkAW": {
+        "_id": "lga4bsDDnH1jjkAW",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pZZA7VW3LkWs2hXB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "rP20xJsJKiqkgAOg": {
+        "_id": "rP20xJsJKiqkgAOg",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "War Domain Spells",
+        "title": "War Domain Spells",
+        "hint": "When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShieldofFa",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritualW",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FHo32WfSaCnJqhnp": {
+        "_id": "FHo32WfSaCnJqhnp",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "War Domain Spells",
+        "title": "War Domain Spells",
+        "hint": "When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.BT0KnautfGrqUokp",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritGuar",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "L64trHO2jSfrlGen": {
+        "_id": "L64trHO2jSfrlGen",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "War Domain Spells",
+        "title": "War Domain Spells",
+        "hint": "When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFreedomofM",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Fs8SrgZ4dcHDuYJd": {
+        "_id": "Fs8SrgZ4dcHDuYJd",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "War Domain Spells",
+        "title": "War Domain Spells",
+        "hint": "When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHoldMonste",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.YeiTWaNwrurgKm2A",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "XJPwYgswxT1LuZJp": {
+        "_id": "XJPwYgswxT1LuZJp",
+        "type": "Trait",
+        "level": 17,
+        "name": "Avatar of Battle",
+        "title": "Avatar of Battle",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:bludgeoning",
+            "dr:piercing",
+            "dr:slashing"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "_id": "PuETwaL9pV0Y984Y",
+  "name": "Corps d'automate",
+  "type": "feat",
+  "img": "icons/commodities/tech/cog-gear-steel-glass.webp",
+  "folder": "n264u1taQCwy9pR0",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Votre corps de métal, de bois et de rouages ne connaît ni la faim, ni la soif, ni le sommeil.</p><p><strong>Résilience mécanique.</strong> Vous avez Advantage aux jets de sauvegarde contre les maladies et pour éviter ou terminer l'état Poisoned, et vous avez Resistance aux dégâts de poison.</p><p><strong>Corps sans besoins.</strong> Vous n'avez pas besoin de manger, de boire ni de respirer.</p><p><strong>Veille de l'automate.</strong> Vous n'avez pas besoin de dormir. Pendant un Long Rest, vous devez passer au moins quatre heures dans un état inactif et immobile, plutôt que de dormir. Dans cet état, vous restez à demi conscient et vous entendez normalement.</p><section class=\"secret\" id=\"secret-VdEb4MK0zmNMYAee\"><p><strong>Foundry Note</strong></p><p>La Resistance au poison est un effet passif. Lancez vous-même avec Advantage les jets de sauvegarde contre les maladies et contre l'état Poisoned : dnd5e ne sait pas cibler ces jets.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Automate cuisinier",
+    "activities": {},
+    "enchant": {},
+    "identifier": "corps-d-automate",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "m7gydlfXMm5efKs2",
+      "name": "Résilience mécanique",
+      "img": "icons/commodities/tech/cog-gear-steel-glass.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Y5wIahDuLXyvB3Ac"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance aux dégâts de poison.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

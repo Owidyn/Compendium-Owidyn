@@ -1,0 +1,225 @@
+{
+  "_id": "43IsmfKgoZ56tDyT",
+  "name": "Infernal Bulwark",
+  "type": "feat",
+  "img": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+  "folder": "hZXEZhLBP1OnVB49",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "ZOHsxKNvBnv7OJxS": {
+        "type": "damage",
+        "_id": "ZOHsxKNvBnv7OJxS",
+        "sort": 100000,
+        "name": "Vengeful Surge",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You succeed on a saving throw a creature within 60 feet forced on you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "JKjroKC71vGq7wLJ": {
+        "_id": "JKjroKC71vGq7wLJ",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 1
+        }
+      },
+      "FozsuQ31FPNyllMD": {
+        "_id": "FozsuQ31FPNyllMD",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Infernal Protection",
+        "title": "Infernal Protection",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.dONackhonb3p0E2U",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Infernal Pact Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Constitution or Charisma score by 1, to a maximum of 20.</p><p><strong>Devil's Flesh.</strong> Your skin thickens into scaled, leathery hide. While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity modifier plus the modifier of the ability increased by this feat.</p><p><strong>Infernal Protection.</strong> You always have @UUID[Compendium.compendium-owidyn.spells.Item.dONackhonb3p0E2U]{Armor of Agathys} prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; cast this way, it is its level 2 version and deals Fire damage instead of Cold damage. You can also cast it with any spell slots of the appropriate level you have. Charisma is your spellcasting ability for this spell.</p><p><strong>Vengeful Surge.</strong> Whenever a creature you can see within 60 feet of you forces you to make a saving throw and you succeed, you can take a Reaction to deal 1d10 Fire damage to it. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-JAyekxKnJlHvAxt2\"><p><strong>Foundry Note</strong></p><p>Devil's Flesh: set your armor calculation to a custom formula, 10 + @abilities.dex.mod + the modifier you increased. Armor of Agathys cast without a slot is level 2 and deals Fire damage: change them in the dialogs.</p></section>",
+      "chat": ""
+    },
+    "identifier": "infernal-bulwark",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "infernal-pact"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Infernal Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

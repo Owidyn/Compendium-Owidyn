@@ -1,0 +1,213 @@
+{
+  "name": "Magical Ammunition",
+  "type": "feat",
+  "_id": "iLdWOw9ooDurUh9N",
+  "img": "icons/weapons/ammunition/arrows-bodkin-yellow-red.webp",
+  "folder": "EUCK1CMB6VQSQvjt",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You learn to imbue your ammunition with magic. As a Magic action, you can give a piece of nonmagical ammunition one of the following properties and fire it at a solid surface you can see within the weapon's range. When it hits, its effect activates and it attaches to the surface for the duration; you can remove it as a Magic action to end the effect early. When the effect ends, the ammunition is destroyed. Once you use this feature, you can't do so again until you finish a Short or Long Rest, but you can restore it by expending a use of your Second Wind (no action required).</p><p><strong>Darkening Ammunition.</strong> Magical shadows fill a 15-foot Emanation originating from the ammunition for 1 minute. Nonmagical flames in it are extinguished, and creatures in it have a −5 penalty to Wisdom (Perception) checks and Passive Perception.</p><p><strong>Unlocking Ammunition.</strong> A burst of magic fills a 15-foot Emanation originating from the ammunition, which also makes a loud knocking sound audible 300 feet away. Any object in it held shut by a nonmagical lock, or stuck or barred, becomes unlocked, unstuck, or unbarred (only one lock of an object with several).</p><p><strong>Vine Ammunition.</strong> A 120-foot-long vine grows from the ammunition, which you and other creatures can climb. It withers after 10 minutes.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Arcane Archer 7",
+    "activities": {
+      "9artJEWGNL7uJWRp": {
+        "type": "utility",
+        "_id": "9artJEWGNL7uJWRp",
+        "sort": 100000,
+        "name": "Magical Ammunition",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Eju29GBL8DpwFGbE": {
+        "type": "utility",
+        "_id": "Eju29GBL8DpwFGbE",
+        "sort": 200000,
+        "name": "Restore with Second Wind",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:second-wind",
+              "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "magical-ammunition",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

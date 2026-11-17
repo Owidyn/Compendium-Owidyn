@@ -1,0 +1,237 @@
+{
+  "name": "Flamekin",
+  "type": "race",
+  "_id": "HfNYG0vSdMl2xqCo",
+  "img": "icons/magic/fire/elemental-fire-humanoid.webp",
+  "folder": "8hGePWv3QEF6eQDc",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Flamekin are made of two of the core elements of creation, fire and stone, and many feel a deep bond with the natural world. Their bodies give off harmless magical flames, and their innate magic lets them conjure real fire in many forms.</p><p>Flamekin hold self-discovery and self-expression as the noblest goals and believe that becoming one's true self is the most important thing a life can achieve—a lifelong quest they call the Path of Flame. They live in both Lorwyn and Shadowmoor, with little difference in body or culture between the two.</p><h3>Flamekin Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.7wZlYEPMGZxWEHRm]{Fire Resistance}.</strong> You have Resistance to Fire damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.zFfPUxc3FVOzFa2i]{Reach to the Blaze}.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplProduceFla]{Produce Flame} cantrip. Starting at character level 3, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning Hands} with this trait, and starting at character level 5, you can also cast @UUID[Compendium.dnd5e.spells24.Item.phbsplFlameBlade]{Flame Blade} with it, without a Material component. Once you cast either spell with this trait, you can't cast that spell this way again until you finish a Long Rest; you can also cast either of them with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "flamekin",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Flamekin"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "Hp4BmvlQfIrBfAjj": {
+        "_id": "Hp4BmvlQfIrBfAjj",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "CiG3nMZnIS2LiVGJ": {
+        "_id": "CiG3nMZnIS2LiVGJ",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Flamekin Traits",
+        "title": "Flamekin Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.7wZlYEPMGZxWEHRm",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.zFfPUxc3FVOzFa2i",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "AcXlVJy7sihu6E8z": {
+        "_id": "AcXlVJy7sihu6E8z",
+        "type": "Trait",
+        "level": 0,
+        "name": "Fire Resistance",
+        "title": "Fire Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:fire"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "GZd8RYdQuIEITs2M": {
+        "_id": "GZd8RYdQuIEITs2M",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Reach to the Blaze",
+        "title": "Reach to the Blaze",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplProduceFla",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "J07KJKnkEScfRGpq": {
+        "_id": "J07KJKnkEScfRGpq",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Reach to the Blaze (Level 3)",
+        "title": "Reach to the Blaze (Level 3)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBurningHan",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Vw5fzKlxknPHu7H5": {
+        "_id": "Vw5fzKlxknPHu7H5",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Reach to the Blaze (Level 5)",
+        "title": "Reach to the Blaze (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameBlade",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

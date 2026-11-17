@@ -1,0 +1,451 @@
+{
+  "name": "Eldritch Cannon",
+  "type": "feat",
+  "_id": "9Dn78cYN3hCIlxPF",
+  "img": "icons/weapons/guns/gun-blunderbuss-gold.webp",
+  "folder": "AZMsvdYPT0ubU3XS",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Using Smith's Tools or Woodcarver's Tools, you can take a Magic action to create a Small or Tiny Eldritch Cannon in an unoccupied space on a horizontal surface within 5 feet of you. You decide its appearance, including whether you carry it (or whether it has legs or wheels). It disappears if it is reduced to 0 Hit Points or after 1 hour, and you can dismiss it early as a Magic action.</p><p>Once you create a cannon, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one cannon at a time and can't create one while you already have one.</p><p><strong>Eldritch Cannon.</strong> Small or Tiny Object. AC 18. Hit Points 5 × your Artificer level (casting Mending on it restores 2d6 Hit Points). Immunities Poison, Psychic.</p><p><strong>Activate Cannon.</strong> While within 60 feet of the cannon, you can take a Bonus Action to order it to use one of the following options, and you can have it move up to 15 feet before or after.</p><p><strong>Flamethrower.</strong> The cannon exhales fire in a 15-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC, taking 2d8 Fire damage on a failure or half as much on a success. Flammable objects in the Cone that aren't worn or carried start burning.</p><p><strong>Force Ballista.</strong> Make a ranged spell attack originating from the cannon at one creature or object within 120 feet of it. On a hit, the target takes 2d8 Force damage, and a creature is pushed up to 5 feet away from the cannon.</p><p><strong>Protector.</strong> The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it Temporary Hit Points equal to 1d8 plus your Intelligence modifier (minimum of 1).</p><section class=\"secret\" id=\"secret-5hQv958D4jLbzr4j\"><p><strong>Foundry Note</strong></p><p>The cannon is an Eldritch Cannon summon; its options are activities of this feature (they originate from the cannon). Restore the use when you expend a spell slot to create another cannon.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artillerist 3",
+    "activities": {
+      "QyveCpDGRuFO5PuD": {
+        "type": "summon",
+        "_id": "QyveCpDGRuFO5PuD",
+        "sort": 100000,
+        "name": "Create Eldritch Cannon",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "ZdF4bqBWZdjFxSfg",
+            "count": "",
+            "name": "Eldritch Cannon",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.b0DKtxFgfxHhArX6"
+          }
+        ],
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "5 * @classes.artificer.levels - 5",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "int",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "tYc9QwvtH3FX56zP": {
+        "type": "save",
+        "_id": "tYc9QwvtH3FX56zP",
+        "sort": 200000,
+        "name": "Flamethrower",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "spec",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "cone",
+            "size": "15",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.artillerist.cannon"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      },
+      "MUONUKqvyPAzrGt3": {
+        "type": "attack",
+        "_id": "MUONUKqvyPAzrGt3",
+        "sort": 300000,
+        "name": "Force Ballista",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "120",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "ability": "spellcasting",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.artillerist.cannon"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "YvwDQXfSlZXU9LDO": {
+        "type": "heal",
+        "_id": "YvwDQXfSlZXU9LDO",
+        "sort": 400000,
+        "name": "Protector",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "10",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@scale.artillerist.protector + max(1, @abilities.int.mod)"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "eldritch-cannon",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "name": "House Deneith Heir",
+  "type": "background",
+  "_id": "GYgwC4oJmJMSIy6b",
+  "img": "icons/environment/people/infantry-armored.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>As an heir of House Deneith, you were trained for battle—not to seek it, but never to flee from it. You learned the value of duty and honor, and of the laws that keep society in order when duty and honor fail. While making a name for yourself in the house, you may have served as a minor dignitary's bodyguard, as a mercenary, or as a marshal hunting fugitives. Now you are ready to claim your rightful place in the mightiest of the dragonmarked houses.</p><p><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.UTLh8orHGmrTwMVy]{Mark of Sentinel}</p><p><strong>Skill Proficiencies:</strong> Insight and Perception</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoArrows0000]{Arrows}, Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, 1 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-deneith-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "ABj0zKc7AkddthIr": {
+        "_id": "ABj0zKc7AkddthIr",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "FMGu8KuVC19QIXyq": {
+        "_id": "FMGu8KuVC19QIXyq",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Insight and Perception. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:prc"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "yb7TIg86jQ5sBm0Q": {
+        "_id": "yb7TIg86jQ5sBm0Q",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Sentinel feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.UTLh8orHGmrTwMVy",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "otohsmwejGslgthk": {
+        "_id": "otohsmwejGslgthk",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "CDXK5W7rIIWEzbDu",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepSpear00000",
+        "requiresProficiency": false,
+        "_id": "36FKflvJwABnhrC8",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepShortbow00",
+        "requiresProficiency": false,
+        "_id": "pBMReSP82snHNAMB",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 300000
+      },
+      {
+        "count": 20,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbamoArrows0000",
+        "requiresProficiency": false,
+        "_id": "HYOAnDfFot8yuG66",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "jLso2ksQxAloEXLP",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "msitmgsFyB3GGowK",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHealersKit0",
+        "requiresProficiency": false,
+        "_id": "fEf0HlcVmT0NjuNR",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagQuiver00000",
+        "requiresProficiency": false,
+        "_id": "3GyLr8bPM8s53LJ1",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 800000
+      },
+      {
+        "count": 1,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "cpr1QewyPP8XDn8U",
+        "group": "CDXK5W7rIIWEzbDu",
+        "sort": 900000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

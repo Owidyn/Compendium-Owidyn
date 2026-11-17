@@ -1,0 +1,333 @@
+{
+  "_id": "9UNJXujWE0F0ekYU",
+  "name": "Gathered Whispers",
+  "type": "feat",
+  "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+  "folder": "13Z2QY6ujzN3RLir",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "6O6XsiCTEYp8U2Yb": {
+        "type": "utility",
+        "_id": "6O6XsiCTEYp8U2Yb",
+        "sort": 100000,
+        "name": "Unearthly Scream",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "An attack roll hits you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Otw8K3KLwtIby55W": {
+        "type": "save",
+        "_id": "Otw8K3KLwtIby55W",
+        "sort": 200000,
+        "name": "Voices from Beyond",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Immediately after you roll a 1 on the d20 of a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9uB51MIgPpXlHvC3",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "z4KApgoGyx72he3B": {
+        "_id": "z4KApgoGyx72he3B",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Spirit Whispers (Cantrip)",
+        "title": "Spirit Whispers (Cantrip)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMessage000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "tzS3sAa1oQRVVwgg": {
+        "_id": "tzS3sAa1oQRVVwgg",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Spirit Whispers",
+        "title": "Spirit Whispers",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAugury0000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Ravenloft Campaign)</em></p><p>A cacophony of whispering spirits haunts you, and only you can hear them. You gain the following features.</p><p><strong>Spirit Whispers.</strong> You learn the @UUID[Compendium.dnd5e.spells24.Item.phbsplMessage000]{Message} cantrip, and you can cast it without Material components. @UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury} is also always prepared for you: you can cast it without a spell slot or components, and you must finish a Long Rest before you can cast it this way again; you can also cast it with any spell slots you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><p><strong>Unearthly Scream.</strong> When an attack roll hits you, you can take a Reaction to channel your spirits into a protective, otherworldly scream: add your Proficiency Bonus to your AC against that attack, which can make it miss. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Voices from Beyond.</strong> Immediately after you roll a 1 on the d20 of a D20 Test, the whispers rise to a deafening roar. Make a Wisdom saving throw (DC 13 plus your Proficiency Bonus). On a failure, you have the &amp;Reference[Deafened] condition until the end of your next turn; while Deafened this way, you have Disadvantage on ability checks and attack rolls.</p><section class=\"secret\" id=\"secret-AoIPRmTLK3OSzn0E\"><p><strong>Foundry Note</strong></p><p>Message and Augury are added by the feat; leave out the components yourself when you cast them through it. <em>Unearthly Scream</em> spends a use of the feat. <em>Voices from Beyond</em> is a Wisdom saving throw against DC 13 + your Proficiency Bonus; on a failure, apply its effect (Deafened).</p></section>",
+      "chat": ""
+    },
+    "identifier": "gathered-whispers",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Ravenloft Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "9uB51MIgPpXlHvC3",
+      "name": "Voices from Beyond",
+      "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>Deafened until the end of your next turn, with Disadvantage on ability checks and attack rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "deafened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "name": "Shadow Domain",
+  "type": "subclass",
+  "_id": "9x3z4WisA0H2iJIi",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "folder": "1dslrMitoJi0KMj9",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Draw on the Debilitating Power of the Void</p></blockquote><p>The Shadow Domain deals with the powers of shadow and the Void, a sinister mirror of the life-giving Light. Clerics who embrace these powers can wither their enemies' flesh and cripple their minds.</p><h3>Shadow Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Za89UvKY41SEPD5I]{Shadow Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.iw2tS3c93Ph0aTRu]{Shadowform}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.GqmxwxHqEOUbUyU6]{Devouring Plague}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.tyRV2t3TysV4x8q1]{Dispersion}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bBAxJVL3FQv59FCX]{Vampiric Embrace}</td></tr></tbody></table><h3>Shadow Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.AYJBs5xqw7MrqMoD]{Crown of Madness}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDissonantW]{Dissonant Whispers}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind Spike}, @UUID[Compendium.compendium-owidyn.spells.Item.Ohh3dmiLrYL2YW3E]{Shadow Word: Pain}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.EX24QkNdCeUOAeeV]{Summon Undead}, @UUID[Compendium.dnd5e.spells24.Item.phbsplVampiricTo]{Vampiric Touch}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplEvardsBlac]{Evard's Black Tentacles}, @UUID[Compendium.compendium-owidyn.spells.Item.bEHmr7Vdm057Q7qg]{Psychic Horror}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDominatePe]{Dominate Person}, @UUID[Compendium.compendium-owidyn.spells.Item.5Gd6t7aiE75N5uJK]{Void Eruption}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "shadow-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "d3iFoPsGPqx8L6f4": {
+        "_id": "d3iFoPsGPqx8L6f4",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Za89UvKY41SEPD5I",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.iw2tS3c93Ph0aTRu",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.GqmxwxHqEOUbUyU6",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "aizTzx98WuI4LCNb": {
+        "_id": "aizTzx98WuI4LCNb",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.tyRV2t3TysV4x8q1",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DpIUsYVkwFBMsF4F": {
+        "_id": "DpIUsYVkwFBMsF4F",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bBAxJVL3FQv59FCX",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DBOEd4gUC3Bb8D4m": {
+        "_id": "DBOEd4gUC3Bb8D4m",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Shadow Domain Spells",
+        "title": "Shadow Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.AYJBs5xqw7MrqMoD",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDissonantW",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMindSpike0",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.Ohh3dmiLrYL2YW3E",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "FLXrWjhTZMPDW7rB": {
+        "_id": "FLXrWjhTZMPDW7rB",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Shadow Domain Spells",
+        "title": "Shadow Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.EX24QkNdCeUOAeeV",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplVampiricTo",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "N7jLN7nRz7Opf7a1": {
+        "_id": "N7jLN7nRz7Opf7a1",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Shadow Domain Spells",
+        "title": "Shadow Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEvardsBlac",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.bEHmr7Vdm057Q7qg",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "5MjuF4C6Q4GrEA5I": {
+        "_id": "5MjuF4C6Q4GrEA5I",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Shadow Domain Spells",
+        "title": "Shadow Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominatePe",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.5Gd6t7aiE75N5uJK",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

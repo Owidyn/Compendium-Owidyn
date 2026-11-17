@@ -1,0 +1,119 @@
+{
+  "_id": "1m42PTXtlv0ngMzi",
+  "name": "Boon of Revelry",
+  "type": "feat",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "ZxhoZMNdgQnqtpLq": {
+        "_id": "ZxhoZMNdgQnqtpLq",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "dOofx64W0r1TGSbj": {
+        "_id": "dOofx64W0r1TGSbj",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Inspire Dance",
+        "title": "Inspire Dance",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplOttosIrres",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</p><p><strong>Inspire Dance.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplOttosIrres]{Otto's Irresistible Dance} prepared. You can cast it once without a spell slot, regaining that use when you finish a Long Rest; you can also cast it with any spell slots of the appropriate level you have. When you cast it, it requires no components, and taking damage doesn't break your Concentration on it.</p><p><strong>Sing Out.</strong> While a creature that failed its saving throw against your Otto's Irresistible Dance has the Charmed condition from it, it can't cast spells with Verbal components, and it sings delightful nonsense if it can sing.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-revelry",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

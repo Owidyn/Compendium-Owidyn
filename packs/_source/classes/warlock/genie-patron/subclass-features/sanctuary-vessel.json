@@ -1,0 +1,125 @@
+{
+  "name": "Sanctuary Vessel",
+  "type": "feat",
+  "_id": "B7uCAAFz0Ef1dCHy",
+  "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
+  "folder": "IXjQAMm1beNuM1Ak",
+  "sort": 800000,
+  "system": {
+    "description": {
+      "value": "<p>When you enter your Genie's Vessel with Bottled Respite, you can choose up to five willing creatures you can see within 30 feet of you; they are drawn into the vessel with you. As a Bonus Action, you can eject any number of them, and everyone is ejected if you leave or die, or if the vessel is destroyed.</p><p>In addition, anyone who remains within the vessel for at least 10 minutes gains the benefit of finishing a Short Rest, and anyone who spends Hit Point Dice to regain Hit Points as part of that Short Rest adds your Proficiency Bonus to the Hit Points regained.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Genie Patron 10",
+    "activities": {
+      "cxq8ykmz3ob1R4Cb": {
+        "type": "utility",
+        "_id": "cxq8ykmz3ob1R4Cb",
+        "sort": 100000,
+        "name": "Sanctuary Vessel",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You use Bottled Respite"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "5",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "sanctuary-vessel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

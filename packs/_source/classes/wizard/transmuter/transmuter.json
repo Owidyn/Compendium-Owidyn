@@ -1,0 +1,579 @@
+{
+  "name": "Transmuter",
+  "type": "subclass",
+  "_id": "Save0qmGhIlom0Y1",
+  "img": "icons/commodities/gems/gem-rough-can-orange-red.webp",
+  "folder": "tCWKE5aCN34R6LDC",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Transform Energy and Matter</p></blockquote><p>You study spells that modify energy and matter; to you, the world is eminently mutable. With your magic, you become a smith at reality's forge. Some Transmuters are tinkerers and pranksters, while others seek the power to make and unmake worlds.</p><h3>Transmuter Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.JyQ8PPXx3vOVUYyQ]{Transmutation Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.gftOfV7i9Irjtgde]{Transmuter's Stone}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.94PSwwbbeTYp2KpO]{Wondrous Alteration}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.ekFrCG58uF56Vs8D]{Empowered Transmutation}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.nhjiHVW5vXGdPLDk]{Potent Stone}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.D6Ola68LYTeXFlVa]{Shape-Shifter}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.8LUP4qwPNAPK8JJd]{Master Transmuter}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "transmuter",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "SJS1Cr22pvkZsSHX": {
+        "_id": "SJS1Cr22pvkZsSHX",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.JyQ8PPXx3vOVUYyQ",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.gftOfV7i9Irjtgde",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.94PSwwbbeTYp2KpO",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "AO6lIt0YzfrmPwA2": {
+        "_id": "AO6lIt0YzfrmPwA2",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.ekFrCG58uF56Vs8D",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "0Qxi1rAmiEy8vz6F": {
+        "_id": "0Qxi1rAmiEy8vz6F",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.nhjiHVW5vXGdPLDk",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.D6Ola68LYTeXFlVa",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CmPLgEvWueyhBd4T": {
+        "_id": "CmPLgEvWueyhBd4T",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8LUP4qwPNAPK8JJd",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1j1Oi9Ccayo7ZTyc": {
+        "_id": "1j1Oi9Ccayo7ZTyc",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add two Wizard spells of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "yflmVtq70wwEFYv4": {
+        "_id": "yflmVtq70wwEFYv4",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "dmac19aOV7WO5vNQ": {
+        "_id": "dmac19aOV7WO5vNQ",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Nb6YGJeDnPoRAVFM": {
+        "_id": "Nb6YGJeDnPoRAVFM",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "dkEvbBFusRiUoErT": {
+        "_id": "dkEvbBFusRiUoErT",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "MI6omMbgBU6HztBl": {
+        "_id": "MI6omMbgBU6HztBl",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "FtZMAGcV6tNoRy8b": {
+        "_id": "FtZMAGcV6tNoRy8b",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "HU8hNZ5cHX9sZx89": {
+        "_id": "HU8hNZ5cHX9sZx89",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Transmutation Savant",
+        "title": "Transmutation Savant",
+        "hint": "Add one Wizard spell of the Transmutation school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "trs"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "v4nhf6BwZkRXRMfJ": {
+        "_id": "v4nhf6BwZkRXRMfJ",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Wondrous Alteration",
+        "title": "Wondrous Alteration",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAlterSelf0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "B9kO31BG9ICXnEFv": {
+        "_id": "B9kO31BG9ICXnEFv",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Shape-Shifter",
+        "title": "Shape-Shifter",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPolymorph0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

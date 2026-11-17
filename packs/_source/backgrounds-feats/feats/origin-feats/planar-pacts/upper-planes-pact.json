@@ -1,0 +1,166 @@
+{
+  "_id": "XBLCMoMamJqzJGg1",
+  "name": "Upper Planes Pact",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "folder": "CgeLHtyCXMpYAd5r",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "aNDPFclooJgB0gQm": {
+        "_id": "aNDPFclooJgB0gQm",
+        "type": "Trait",
+        "level": 0,
+        "name": "Celestial Lore",
+        "title": "Celestial Lore",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:rel"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "TU4YqecScBNMSkgJ": {
+        "_id": "TU4YqecScBNMSkgJ",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Detect Evil and Good",
+        "title": "Detect Evil and Good",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectEvil",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "sr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Can't Have Another Planar Pact Feat)</em></p><p>You struck a bargain with a power of the Upper Planes. You gain the following benefits.</p><p><strong>Celestial Lore.</strong> You gain proficiency in the Religion skill.</p><p><strong>Celestial Resistance.</strong> You have Resistance to Radiant damage.</p><p><strong>Detect Evil and Good.</strong> @UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good} is always prepared for you. You can cast it once without a spell slot, and you regain that use when you finish a Short or Long Rest; you can also cast it with any spell slots of the appropriate level you have. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><section class=\"secret\" id=\"secret-SJMJE3CLBHgC7Jq2\"><p><strong>Foundry Note</strong></p><p>The effect <em>Celestial Resistance</em> gives the Resistance.</p></section>",
+      "chat": ""
+    },
+    "identifier": "upper-planes-pact",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Can't Have Another Planar Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "xfC6vLi4LxcDAzbT",
+      "name": "Celestial Resistance",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "1EoB0rK9jRnLaTbL"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Radiant damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

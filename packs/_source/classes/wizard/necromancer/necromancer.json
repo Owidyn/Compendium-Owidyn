@@ -1,0 +1,574 @@
+{
+  "name": "Necromancer",
+  "type": "subclass",
+  "_id": "B5cjsvV9wqhtqfzZ",
+  "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+  "folder": "sppSZjxngJbcDxob",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Command the Powers of Death and Undeath</p></blockquote><p>You explore the forces of life, death, and undeath. As a Necromancer, you learn to manipulate the energy that animates all creatures, and you draw ever more power from the forbidden secrets of your spellbook. Though many see Necromancers as menacing or villainous, not all of them are evil.</p><h3>Necromancer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.3UQmWS8MZlX3CYDn]{Necromancy Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.sDkDUn8WqGzz01BH]{Necromancy Spellbook}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.AYRFc4JE3CmhRzQT]{Grave Power}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.RhB6dBBTEGQAYC8g]{Undead Thralls}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.VGetDJdjLpxRw2qQ]{Harvest Undead}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.66J9A14TfOMYtI6b]{Death's Master}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "necromancer",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "cxen7ScxASFjIbs1": {
+        "_id": "cxen7ScxASFjIbs1",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.3UQmWS8MZlX3CYDn",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.sDkDUn8WqGzz01BH",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Zn4nCUG4G3kNCbEb": {
+        "_id": "Zn4nCUG4G3kNCbEb",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.AYRFc4JE3CmhRzQT",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.RhB6dBBTEGQAYC8g",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "eHFkHbyHDaCYE4Md": {
+        "_id": "eHFkHbyHDaCYE4Md",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.VGetDJdjLpxRw2qQ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "7hj1HBzI1bP2lxH4": {
+        "_id": "7hj1HBzI1bP2lxH4",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.66J9A14TfOMYtI6b",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "vza2JZxW6ogpSnmK": {
+        "_id": "vza2JZxW6ogpSnmK",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add two Wizard spells of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ICD2LpzrSy6NsepF": {
+        "_id": "ICD2LpzrSy6NsepF",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Lxlka39WC3PhXbDR": {
+        "_id": "Lxlka39WC3PhXbDR",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "NQgS8fqMQFoi1Yan": {
+        "_id": "NQgS8fqMQFoi1Yan",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "CgdSFdFf6AozZLs5": {
+        "_id": "CgdSFdFf6AozZLs5",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "0GeEANa5QRiDPpBs": {
+        "_id": "0GeEANa5QRiDPpBs",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "jPjYWu2Q2KUMQ4wI": {
+        "_id": "jPjYWu2Q2KUMQ4wI",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "WDa9XN46wpNgHmbQ": {
+        "_id": "WDa9XN46wpNgHmbQ",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Necromancy Savant",
+        "title": "Necromancy Savant",
+        "hint": "Add one Wizard spell of the Necromancy school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "nec"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "5V1mQfnavGG0je8F": {
+        "_id": "5V1mQfnavGG0je8F",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Undead Familiar",
+        "title": "Undead Familiar",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFindFamili",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ZilH9G5X8So7h7KY": {
+        "_id": "ZilH9G5X8So7h7KY",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Undead Thralls",
+        "title": "Undead Thralls",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAnimateDea",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

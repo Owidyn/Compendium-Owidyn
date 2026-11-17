@@ -1,0 +1,181 @@
+{
+  "_id": "CJDDZw1KFFulkdmY",
+  "name": "Mark of Making",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "yAA6aGk3N4PwJ9W2": {
+        "_id": "yAA6aGk3N4PwJ9W2",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Cantrip",
+        "title": "Cantrip",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMending000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "NEhbKaw9Ja3H8tH7": {
+        "_id": "NEhbKaw9Ja3H8tH7",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Spellsmith",
+        "title": "Spellsmith",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>The Mark of Making of House Cannith manifests on your skin. You gain the following benefits.</p><p><strong>Artisan's Intuition.</strong> When you make an Intelligence (Arcana) check or an ability check using Artisan's Tools, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Spellsmith.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending} cantrip. @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicWeapo]{Magic Weapon} is also always prepared for you: you can cast it once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast it with any spell slots you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><p><strong>Spells of the Mark.</strong> If you have the Spellcasting or Pact Magic feature, the spells on the Mark of Making Spells table are added to that feature's spell list.</p><h4>Mark of Making Spells</h4><table><thead><tr><th>Spell Level</th><th>Spells</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}, @UUID[Compendium.dnd5e.spells24.Item.phbsplTensersFlo]{Tenser's Floating Disk}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplContinualF]{Continual Flame}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.moNF3ZiGGKU264lO]{Conjure Barrage}, @UUID[Compendium.compendium-owidyn.spells.Item.rer0jFEkHKQc2GNX]{Elemental Weapon}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFabricate0]{Fabricate}, @UUID[Compendium.dnd5e.spells24.Item.phbsplStoneShape]{Stone Shape}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCreation00]{Creation}</td></tr></tbody></table><section class=\"secret\" id=\"secret-Gn33HyQgQFjx8DGQ\"><p><strong>Foundry Note</strong></p><p>The effect <em>Artisan's Intuition</em> adds the 1d4 to the Arcana checks; add it yourself to the checks using Artisan's Tools. The Spells of the Mark are not added to your class spell list automatically: prepare them from the compendium if your class can.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mark-of-making",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "igEcif7Br3wUbMnk",
+      "name": "Artisan's Intuition",
+      "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.arc.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "FCdLn1BkySANlAuD"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Intelligence (Arcana) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

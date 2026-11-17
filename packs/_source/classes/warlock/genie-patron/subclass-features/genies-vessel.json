@@ -1,0 +1,271 @@
+{
+  "name": "Genie's Vessel",
+  "type": "feat",
+  "_id": "V2PNUGfMUh5MlqfS",
+  "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
+  "folder": "IXjQAMm1beNuM1Ak",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object that you can use as a Spellcasting Focus for your Warlock spells. You decide what it is, or you roll on the Genie's Vessel table.</p><table><thead><tr><th>1d6</th><th>Vessel</th></tr></thead><tbody><tr><td>1</td><td>Oil lamp</td></tr><tr><td>2</td><td>Urn</td></tr><tr><td>3</td><td>Ring with a compartment</td></tr><tr><td>4</td><td>Stoppered bottle</td></tr><tr><td>5</td><td>Hollow statuette</td></tr><tr><td>6</td><td>Ornate lantern</td></tr></tbody></table><p>The vessel's AC equals your spell save DC. Its Hit Points equal your Warlock level plus your Proficiency Bonus, and it has Immunity to Poison and Psychic damage. If the vessel is destroyed or lost, you can perform a 1-hour ceremony, which can be part of a Short or Long Rest, to receive a replacement from your patron; the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die.</p><p>While you are touching the vessel, you can use it in the following ways.</p><p><strong>Bottled Respite.</strong> As a Magic action, you magically vanish and enter your vessel, which remains in the space you left. Its interior is an extradimensional space shaped like a 20-foot-radius cylinder, 20 feet high, that resembles your vessel; it is furnished with cushions and low tables and has a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside for a number of hours equal to twice your Proficiency Bonus, and you leave early if you take a Bonus Action to exit, if you die, or if the vessel is destroyed. When you exit, you appear in the unoccupied space closest to the vessel. Objects left inside remain there until carried out; if the vessel is destroyed, they harmlessly appear in the unoccupied spaces closest to its former space. Once you enter the vessel, you can't enter again until you finish a Long Rest.</p><p><strong>Genie's Wrath.</strong> Once on each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your Proficiency Bonus. The damage type depends on your patron: Bludgeoning (dao), Thunder (djinni), Fire (efreeti), or Cold (marid).</p><section class=\"secret\" id=\"secret-gxqNujltPMvzXe97\"><p><strong>Foundry Note</strong></p><p>Genie's Wrath is an activity of your Genie Kind feature, with its damage type.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Genie Patron 3",
+    "activities": {
+      "HIFARGsLsHWsJDFu": {
+        "type": "utility",
+        "_id": "HIFARGsLsHWsJDFu",
+        "sort": 100000,
+        "name": "Genie's Vessel",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Genie's Vessel",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "V6XBCqrKPznF1p3H": {
+        "type": "utility",
+        "_id": "V6XBCqrKPznF1p3H",
+        "sort": 200000,
+        "name": "Bottled Respite",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "2 * @prof",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Xsdwk9xzGmQrt5mI": {
+        "type": "utility",
+        "_id": "Xsdwk9xzGmQrt5mI",
+        "sort": 300000,
+        "name": "Leave the Vessel",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "genies-vessel",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

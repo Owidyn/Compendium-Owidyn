@@ -1,0 +1,526 @@
+{
+  "name": "Arcana Domain",
+  "type": "subclass",
+  "_id": "Z3vLTTuImJcc9hHh",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "folder": "JIbjwKJMmOUVAEJw",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Amplify Your Magical Power</p></blockquote><p>Magic fills the multiverse and fuels both destruction and creation. Clerics of the Arcana Domain see magical knowledge not as power for personal ends but as a gift they are responsible for sharing.</p><p>The gods of this domain know the secrets and potential of magic intimately; they are often tied to knowledge, secrecy, or power.</p><h3>Arcana Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qdgkw6Ozfx8YttP7]{Arcana Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.htfLlLESCUHbDRHF]{Modify Magic}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.eQXAC2HCOtrNwHru]{Student of Arcana}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.1YQ8R6UJLHD578Ld]{Dispelling Recovery}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.R7tUvyu0X6ZvrlsZ]{Magical Mastery}</td></tr></tbody></table><h3>Arcana Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect Magic}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd5e.spells24.Item.phbsplNystulsMag]{Nystul's Magic Aura}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel Magic}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneEye0]{Arcane Eye}, @UUID[Compendium.dnd5e.spells24.Item.phbsplLeomundsSe]{Leomund's Secret Chest}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBigbysHand]{Bigby's Hand}, @UUID[Compendium.dnd5e.spells24.Item.phbsplTeleportat]{Teleportation Circle}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "arcana-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "gg70EIzzqITEsVey": {
+        "_id": "gg70EIzzqITEsVey",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qdgkw6Ozfx8YttP7",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.htfLlLESCUHbDRHF",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.eQXAC2HCOtrNwHru",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DW36EUFAAKfLEvP2": {
+        "_id": "DW36EUFAAKfLEvP2",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1YQ8R6UJLHD578Ld",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "lGhYj7MyEh3b0XaA": {
+        "_id": "lGhYj7MyEh3b0XaA",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.R7tUvyu0X6ZvrlsZ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hyHQQmmIoabh11iJ": {
+        "_id": "hyHQQmmIoabh11iJ",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Arcana Domain Spells",
+        "title": "Arcana Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Arcana Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectMagi",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicMissi",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplNystulsMag",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "9gw4UzVnQRJmQCb5": {
+        "_id": "9gw4UzVnQRJmQCb5",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Arcana Domain Spells",
+        "title": "Arcana Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Arcana Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCounterspe",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelMagi",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ydYlqEzEqdCGZXAW": {
+        "_id": "ydYlqEzEqdCGZXAW",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Arcana Domain Spells",
+        "title": "Arcana Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Arcana Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneEye0",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLeomundsSe",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "u13dt1vxgBorpCqf": {
+        "_id": "u13dt1vxgBorpCqf",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Arcana Domain Spells",
+        "title": "Arcana Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Arcana Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBigbysHand",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplTeleportat",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "MYTcKg1xpyRbptZJ": {
+        "_id": "MYTcKg1xpyRbptZJ",
+        "type": "Trait",
+        "level": 3,
+        "name": "Magical Knowledge",
+        "title": "Magical Knowledge",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:arc",
+                "skills:his",
+                "skills:ins",
+                "skills:med",
+                "skills:per",
+                "skills:rel"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "cfTIR7Q1TUdjBtVs": {
+        "_id": "cfTIR7Q1TUdjBtVs",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Student of Arcana (Cantrips)",
+        "title": "Student of Arcana (Cantrips)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "k1vuzBbgte2UyUdU": {
+        "_id": "k1vuzBbgte2UyUdU",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Magical Mastery (Level 6)",
+        "title": "Magical Mastery (Level 6)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "6",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "CdoPDCR3iUqegQVo": {
+        "_id": "CdoPDCR3iUqegQVo",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Magical Mastery (Level 7)",
+        "title": "Magical Mastery (Level 7)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "7",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "HWJ5EcqjNLymKZZJ": {
+        "_id": "HWJ5EcqjNLymKZZJ",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Magical Mastery (Level 8)",
+        "title": "Magical Mastery (Level 8)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "8",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "jXZENI90JVWDhxi9": {
+        "_id": "jXZENI90JVWDhxi9",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Magical Mastery (Level 9)",
+        "title": "Magical Mastery (Level 9)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "9",
+            "list": [
+              "class:wizard"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "name": "Scion of the Three",
+  "type": "subclass",
+  "_id": "QEDLX0zZ53O68z6G",
+  "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+  "folder": "g8laQA11q1CpgkGO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Become a Gruesome Agent of Malice</p></blockquote><p>A Scion of the Three draws power from a group of malevolent gods known in Baldur's Gate as the Dead Three: Bane, god of tyranny; Bhaal, god of violence and murder; and Myrkul, god of death. Some Rogues of this subclass pledge themselves fervently to these macabre gods, while others are thrust on this path by a curse. Either way, the power of a scion manifests as occult gifts and an uncanny talent for striking and terrifying foes.</p><p>Scions of the Three are most common in Baldur's Gate, where the Dead Three lived as mortals before ascending to godhood. Hidden cults of Bane, Bhaal, and Myrkul often count scions among their most useful agents. Beyond Baldur's Gate, secular thieves' guilds such as the Shadow Thieves of Amn or the Xanathar Guild of Waterdeep might hire a scion for an especially violent contract.</p><h3>Scion of the Three Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.uzr8mzAfycilIaWG]{Bloodthirst}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.beOFnVrPeHJJSq0E]{Dread Allegiance}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.SALiECyK4e3JBIIw]{Strike Fear}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.AImGxEveOwu01Xqm]{Aura of Malevolence}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.cvggPEZfPV5fJ8Ac]{Dread Incarnate}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "scion-of-the-three",
+    "classIdentifier": "rogue",
+    "advancement": {
+      "WNTn4B0XQcBIFH3s": {
+        "_id": "WNTn4B0XQcBIFH3s",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.uzr8mzAfycilIaWG",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.beOFnVrPeHJJSq0E",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cXJYdFtCsDNxR7vB": {
+        "_id": "cXJYdFtCsDNxR7vB",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SALiECyK4e3JBIIw",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "dSraqj9N88ZkGfTv": {
+        "_id": "dSraqj9N88ZkGfTv",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.AImGxEveOwu01Xqm",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8tqkzDIbhRlcnPbo": {
+        "_id": "8tqkzDIbhRlcnPbo",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cvggPEZfPV5fJ8Ac",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "B3iv6MfdiZLRYpMQ": {
+        "_id": "B3iv6MfdiZLRYpMQ",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Dread Allegiance (Cantrip)",
+        "title": "Dread Allegiance (Cantrip)",
+        "hint": "Take the cantrip of the god you choose.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMinorIllus"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.52K6rs5zHagiRUsB"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplChillTouch"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

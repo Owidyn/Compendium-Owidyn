@@ -1,0 +1,228 @@
+{
+  "_id": "mF8YAoDK21rETSER",
+  "name": "Boon of Desperate Resilience",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "u4pvitlzi7rjqTAr": {
+        "_id": "u4pvitlzi7rjqTAr",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Constitution score by 1, to a maximum of 30.</p><p><strong>Defense of Body and Mind.</strong> While you are Bloodied, you have Resistance to every damage type except Force.</p><section class=\"secret\" id=\"secret-fRW5OayvzTZzL6L5\"><p><strong>Foundry Note</strong></p><p>Turn on the effect while you are Bloodied.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-desperate-resilience",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [
+    {
+      "_id": "obR3oyEhNEsn2qJ9",
+      "name": "Defense of Body and Mind",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "DSL5s0WFrrvvLQ4O"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "m0Etqlkua4sGRu8U"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "2NpBXE3NuyPpTz5w"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "zfUdjJhMLNSPXu73"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "f9Ft9vH7oVHVDWEX"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "ihRrTNXJfkBsrDDe"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "70bIU1dJACWY1qe8"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "rLdZCmdyt2zPUuDb"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "6XvxHdKatJsjK8Ig"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "IiBCDDhPO96jEJJm"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "ZrUCUnv9Gl2eevIs"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "reMvwJlHyA787IOM"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While Bloodied: Resistance to every damage type except Force.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

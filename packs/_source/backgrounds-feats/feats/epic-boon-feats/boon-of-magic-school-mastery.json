@@ -1,0 +1,172 @@
+{
+  "_id": "oxXytnBURoerHiCF",
+  "name": "Boon of Magic School Mastery",
+  "type": "feat",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "MeCzXlVlorfgFMXZ": {
+        "_id": "MeCzXlVlorfgFMXZ",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      },
+      "LXgdiySVBCgemRBO": {
+        "_id": "LXgdiySVBCgemRBO",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Rote Casting",
+        "title": "Rote Casting",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "1",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "7CQHLiWWMyzhEOwc": {
+        "_id": "7CQHLiWWMyzhEOwc",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Signature Arcanum",
+        "title": "Signature Arcanum",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "available",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</p><p><strong>Mastered School.</strong> Choose one of the eight schools of magic: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, or Transmutation. Your choice grants you the following features.</p><p><strong>Rote Casting.</strong> Choose a level 1 spell of the chosen school from the spell list of your class. You always have it prepared and can cast it without a spell slot or components.</p><p><strong>Signature Arcanum.</strong> Choose a spell of level 7 or lower from the chosen school. You always have it prepared, and you can cast it once without a spell slot, regaining that use when you finish a Long Rest.</p><p>You can also cast these prepared spells with any spell slots of the appropriate level you have.</p><p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different school of magic each time.</p><section class=\"secret\" id=\"secret-0uwVOTRR96i7DOtA\"><p><strong>Foundry Note</strong></p><p>Pick both spells from the school you chose (level 7 or lower for the Signature Arcanum). The Rote Casting spell is cast without a slot at will.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-magic-school-mastery",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": true,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

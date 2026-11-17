@@ -1,0 +1,537 @@
+{
+  "name": "Conjurer",
+  "type": "subclass",
+  "_id": "BCCJwjEOxczEwYgf",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "folder": "PAxlQEpYr1FP177y",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Step Across Space and Call Creatures from Thin Air</p></blockquote><p>A Conjurer treats distance and matter as flexible guidelines rather than physical laws. Conjurers master magic that moves creatures instantly through space and summons creatures to fight on their behalf.</p><h3>Conjurer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.jhfPCJvqDjLx5foq]{Benign Transposition}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bS6KmJUvMGTgpE0e]{Conjuration Savant}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.EhrhlB5iLsA7RkRV]{Distant Transposition}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.EQWb7LHLovsjHU13]{Durable Summons}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.gHIC0HampaJsKq4E]{Focused Conjuration}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.V1iOX5rtXVvWIHbY]{Splintered Summons}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "conjurer",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "po2nOZDAkDNvXnY6": {
+        "_id": "po2nOZDAkDNvXnY6",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.jhfPCJvqDjLx5foq",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bS6KmJUvMGTgpE0e",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "7hN8M4XKfq4bp27s": {
+        "_id": "7hN8M4XKfq4bp27s",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.EhrhlB5iLsA7RkRV",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.EQWb7LHLovsjHU13",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "SCz8G3B8Ew2cugzN": {
+        "_id": "SCz8G3B8Ew2cugzN",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.gHIC0HampaJsKq4E",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "LOuiy8TxnIISAbFs": {
+        "_id": "LOuiy8TxnIISAbFs",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.V1iOX5rtXVvWIHbY",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PO3w3hKiCoBshZKv": {
+        "_id": "PO3w3hKiCoBshZKv",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add two Wizard spells of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "4rdDAYhgTKeDUMe5": {
+        "_id": "4rdDAYhgTKeDUMe5",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "gO68QIMPKhIfMJap": {
+        "_id": "gO68QIMPKhIfMJap",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "QO4e9cILNbQxoSVH": {
+        "_id": "QO4e9cILNbQxoSVH",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "K5ml8tKQV0rAmxnI": {
+        "_id": "K5ml8tKQV0rAmxnI",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "vnn6XGawOulYNOXV": {
+        "_id": "vnn6XGawOulYNOXV",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Nhy5KgVFuEVWVGET": {
+        "_id": "Nhy5KgVFuEVWVGET",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "nqvuIKW3QTV2BQlD": {
+        "_id": "nqvuIKW3QTV2BQlD",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Conjuration Savant",
+        "title": "Conjuration Savant",
+        "hint": "Add one Wizard spell of the Conjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "con"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "iCA4Wx0UTaIR4rN9": {
+        "_id": "iCA4Wx0UTaIR4rN9",
+        "type": "ScaleValue",
+        "name": "Benign Transposition Range",
+        "title": "Benign Transposition Range",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "transposition",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 30
+            },
+            "6": {
+              "value": 60
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

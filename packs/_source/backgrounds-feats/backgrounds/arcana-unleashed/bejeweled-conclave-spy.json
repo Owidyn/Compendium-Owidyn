@@ -1,0 +1,184 @@
+{
+  "name": "Bejeweled Conclave Spy",
+  "type": "background",
+  "_id": "gb185auQn99cGdzV",
+  "img": "icons/commodities/gems/gem-cut-faceted-square-purple.webp",
+  "folder": "pIA0XJ0HUfMM0WRE",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>In public, you are a courtier, a mediator, or an entertainer. Behind that glamorous facade lies a mind trained to gather secrets. Taught by the enchanters of the Bejeweled Conclave, you know how to use your charm, your wit, and a little magic to infiltrate organizations, uncover information, and broker deals.</p><p><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.3zef3lYcVqgEVCPP]{Arcane Eloquence}</p><p><strong>Skill Proficiencies:</strong> Deception and Perception</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPerfume0000]{Perfume}, 5 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "bejeweled-conclave-spy",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "QCXGhp92ds3kpW55": {
+        "_id": "QCXGhp92ds3kpW55",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "v1HGlM0ypZXK38Ow": {
+        "_id": "v1HGlM0ypZXK38Ow",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Deception and Perception. It also grants you proficiency in Disguise Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:dec",
+            "skills:prc",
+            "tool:disg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "EeNmJGUYXua1YwVN": {
+        "_id": "EeNmJGUYXua1YwVN",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Arcane Eloquence feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.3zef3lYcVqgEVCPP",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "GV37Ij7QSjFv5xBf": {
+        "_id": "GV37Ij7QSjFv5xBf",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "9tvUc21kBqcnQmef",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi",
+        "requiresProficiency": false,
+        "_id": "ssBqiocYzjCg3kiX",
+        "group": "9tvUc21kBqcnQmef",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "7zOLBek59eMD3aZT",
+        "group": "9tvUc21kBqcnQmef",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPerfume0000",
+        "requiresProficiency": false,
+        "_id": "Tk9FbO0NUwAO3Sbt",
+        "group": "9tvUc21kBqcnQmef",
+        "sort": 400000
+      },
+      {
+        "count": 5,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "Z2af0htAstZoHc9i",
+        "group": "9tvUc21kBqcnQmef",
+        "sort": 500000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

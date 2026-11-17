@@ -1,0 +1,149 @@
+{
+  "name": "Genie Kind: Efreeti",
+  "type": "feat",
+  "_id": "VYhPrXMYy8c1U1FH",
+  "img": "icons/magic/fire/flame-burning-creature-skeleton.webp",
+  "folder": "IXjQAMm1beNuM1Ak",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Your patron is a noble efreeti of the Elemental Plane of Fire. Efreet are the noble genies of the Elemental Plane of Fire: cruel, scheming tyrants of the City of Brass who prize power and obedience.</p><p><strong>Genie's Wrath.</strong> The extra damage of your Genie's Wrath is Fire damage.</p><p><strong>Elemental Gift.</strong> At Warlock level 6, your Elemental Gift grants you Resistance to Fire damage.</p><p><strong>Genie Spells.</strong> Your kind adds the following spells to your Genie Spells: @UUID[Compendium.dnd5e.spells24.Item.phbsplBurningHan]{Burning Hands}, @UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching Ray} (level 3); @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball} (level 5); @UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield} (level 7); @UUID[Compendium.dnd5e.spells24.Item.phbsplFlameStrik]{Flame Strike} (level 9).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Genie Patron 3",
+    "activities": {
+      "UJhvH585Q9UWzNmq": {
+        "type": "damage",
+        "_id": "UJhvH585Q9UWzNmq",
+        "sort": 100000,
+        "name": "Genie's Wrath",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once on each of your turns, you hit with an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@prof"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "efreeti",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

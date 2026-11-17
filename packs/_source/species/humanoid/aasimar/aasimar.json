@@ -1,0 +1,193 @@
+{
+  "name": "Aasimar",
+  "type": "race",
+  "_id": "0laBQ9sY27bF2us2",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "folder": "buwcwxvn4bGQ6F42",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Aasimar are mortals whose souls hold a spark of the Upper Planes. Descended from an angel or touched by celestial power, they can kindle that spark into light, healing, and heavenly wrath. Aasimar can be born to any people and look like their parents, but they live up to 160 years and bear signs of their heritage—metallic freckles, glowing eyes, a halo, or the silver, opalescent green, or coppery red skin of an angel. These signs are faint at first and become plain once the aasimar learns to reveal their celestial nature.</p><h3>Aasimar Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.b4AmVPWjgXvgUpOM]{Celestial Resistance}.</strong> You have Resistance to Necrotic damage and Radiant damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.xTEPjuZUIF5ZhkCj]{Healing Hands}.</strong> As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains Hit Points equal to the total. Once you use this trait, you can't use it again until you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.8p0SeJT16IS2SSGt]{Light Bearer}.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light} cantrip. Charisma is your spellcasting ability for it.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.6znqdmQCKulUtFpm]{Celestial Revelation} (character level 3).</strong> From character level 3, once per Long Rest, you transform for 1 minute as a Bonus Action (Heavenly Wings, Inner Radiance, or Necrotic Shroud) and deal extra damage equal to your Proficiency Bonus once per turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "aasimar",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Aasimar"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "mYvmRlUCJk77p0mg": {
+        "_id": "mYvmRlUCJk77p0mg",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "XDtchWc1o0lMuRX2": {
+        "_id": "XDtchWc1o0lMuRX2",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Aasimar Traits",
+        "title": "Aasimar Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.b4AmVPWjgXvgUpOM",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.xTEPjuZUIF5ZhkCj",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.8p0SeJT16IS2SSGt",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hsDhtsDsH51mh8t1": {
+        "_id": "hsDhtsDsH51mh8t1",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Aasimar Traits",
+        "title": "Aasimar Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.6znqdmQCKulUtFpm",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "dinwIu6hfLakcQ9A": {
+        "_id": "dinwIu6hfLakcQ9A",
+        "type": "Trait",
+        "level": 0,
+        "name": "Celestial Resistance",
+        "title": "Celestial Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:necrotic",
+            "dr:radiant"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "jHzWNChVEkm6az8i": {
+        "_id": "jHzWNChVEkm6az8i",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Light Bearer",
+        "title": "Light Bearer",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLight00000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

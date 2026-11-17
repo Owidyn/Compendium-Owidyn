@@ -1,0 +1,219 @@
+{
+  "_id": "NlS9kfuz63qCEX2l",
+  "name": "Divination Adept",
+  "type": "feat",
+  "img": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "eZyLIp4NLV5f7G8m": {
+        "type": "utility",
+        "_id": "eZyLIp4NLV5f7G8m",
+        "sort": 100000,
+        "name": "Prescient Intervention",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature you can see within 60 feet makes a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "hVlUixr3qaMVEt52": {
+        "_id": "hVlUixr3qaMVEt52",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "FY8CHxbL5oh2BZcm": {
+        "_id": "FY8CHxbL5oh2BZcm",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Additional Spells",
+        "title": "Additional Spells",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectEvil",
+              "optional": true,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMindSpike0",
+              "optional": true,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplClairvoyan",
+              "optional": true,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDivination",
+              "optional": true,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScrying000",
+              "optional": true,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Additional Spells.</strong> Your mastery keeps certain spells always at the ready. Once you have spell slots of a level shown in the Divination Adept Spells table, you always have the spells of that level and lower prepared.</p><p><strong>Prescient Intervention.</strong> When a creature you can see within 60 feet of you makes a D20 Test, you can take a Reaction to give it Advantage or Disadvantage (your choice) on that roll. Once you use this benefit, you can't do so again until you finish a Long Rest, or until you cast a Divination spell with a spell slot.</p><h4>Divination Adept Spells</h4><table><thead><tr><th>Spell Slot Level</th><th>Spell</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind Spike}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]{Clairvoyance}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDivination]{Divination}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</td></tr></tbody></table><section class=\"secret\" id=\"secret-YJqHHlj1evhmJByW\"><p><strong>Foundry Note</strong></p><p>Choose the spells of the levels whose slots you have; add the others when you gain those slots. Restore the use yourself when you cast a Divination spell with a spell slot.</p></section>",
+      "chat": ""
+    },
+    "identifier": "divination-adept",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "name": "Haranir",
+  "type": "race",
+  "_id": "cdDo26tRDrDsdF1W",
+  "img": "icons/magic/nature/root-vine-entwined-thorns.webp",
+  "folder": "t7GTfP7Azbk6C2me",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The haranir are a secretive people of the magical forests of Harandar, an underground realm where the roots of the World Trees grow together. Their ancient druidic traditions bind them to the earth and teach them to guard the roots that reach into their deep home. They rarely deal with the surface world and long hid their very existence, staying out of sight and erasing their traces.</p><p>Haranir look a little like both night elves and trolls, with tusks smaller than a troll's, bat-like ears, and grayish-purple skin with patches of fur or sharp quills. They favor clothing made of leaves and thorns.</p><p><strong>Renown.</strong> You have no starting Renown Score.</p><h3>Haranir Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 7–8 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 120 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.gRt2H2q4QIDQZDG3]{Gift of the World Trees}.</strong> Your supernatural bond with the World Trees gives you proficiency in the Nature and Survival skills.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.beB0YZBlrKPF2r69]{Haranir Magic}.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidcraft} and @UUID[Compendium.compendium-owidyn.spells.Item.KcEe4zuU2v4jHZZ5]{Thorn Whip} cantrips. At character level 3, you learn @UUID[Compendium.dnd5e.spells24.Item.phbsplEntangle00]{Entangle}, and at character level 5, @UUID[Compendium.dnd5e.spells24.Item.phbsplSpikeGrowt]{Spike Growth}. You always have these spells prepared, and you can cast each once without a spell slot, regaining that use when you finish a Long Rest; you can also cast them with any spell slots of the appropriate level you have. Your spellcasting ability for the spells of this trait is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "haranir",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Haranir"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 120,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "EJfPJtEWVorFdTdU": {
+        "_id": "EJfPJtEWVorFdTdU",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 7–8 feet tall)",
+        "flags": {}
+      },
+      "CaCEtkiAC3HMzxIL": {
+        "_id": "CaCEtkiAC3HMzxIL",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Haranir Traits",
+        "title": "Haranir Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.gRt2H2q4QIDQZDG3",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.beB0YZBlrKPF2r69",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Vm03GfFOJVQ24JHh": {
+        "_id": "Vm03GfFOJVQ24JHh",
+        "type": "Trait",
+        "level": 0,
+        "name": "Gift of the World Trees",
+        "title": "Gift of the World Trees",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:nat",
+            "skills:sur"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "04q2qfvwENslJJHP": {
+        "_id": "04q2qfvwENslJJHP",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Haranir Magic",
+        "title": "Haranir Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDruidcraft",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.KcEe4zuU2v4jHZZ5",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "r57qEzICq1bpxecx": {
+        "_id": "r57qEzICq1bpxecx",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Haranir Magic (Level 3)",
+        "title": "Haranir Magic (Level 3)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEntangle00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "BpeDow005sxzual2": {
+        "_id": "BpeDow005sxzual2",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Haranir Magic (Level 5)",
+        "title": "Haranir Magic (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpikeGrowt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

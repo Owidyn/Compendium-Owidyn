@@ -1,0 +1,238 @@
+{
+  "name": "Despairing Strikes",
+  "type": "feat",
+  "_id": "jxQG2yxWipzBOE8w",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "folder": "DXuTDmkSX7nGAdBb",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>Every sorrow knight bears an emotional wound like a deep scar, through which they channel despair against their enemies, fueled by Despairing Strike Dice. The Despairing Strike Dice table shows their size and number at each Fighter level; a die is expended when you use it, and you regain all expended dice when you finish a Short or Long Rest.</p><table><thead><tr><th>Fighter Level</th><th>Die Size</th><th>Number</th></tr></thead><tbody><tr><td>3</td><td>d8</td><td>3</td></tr><tr><td>10</td><td>d10</td><td>4</td></tr><tr><td>15</td><td>d12</td><td>5</td></tr></tbody></table><p>When you hit a creature with an attack roll using a weapon, you can expend a Despairing Strike Die and roll it: you deal extra Psychic damage equal to the roll and can also add one of the following effects. You can't expend more than one die per attack. If an effect requires a saving throw, its DC equals 8 plus your Wisdom modifier and Proficiency Bonus.</p><p><strong>Abandoned.</strong> The target must succeed on an Intelligence saving throw or have the Deafened condition until the end of your next turn; while Deafened this way, it regards all creatures it can see as enemies.</p><p><strong>Dread.</strong> The target has Disadvantage on the next saving throw it makes before the start of your next turn.</p><section class=\"secret\" id=\"secret-gKDlTsfLGWtCJQXj\"><p><strong>Foundry Note</strong></p><p>The uses are your Despairing Strike Dice. Level 10 adds the Apathetic, Lost, and Weary effects (Unsettled Strikes).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.sorrow-knight.dice",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Sorrow Knight 3",
+    "activities": {
+      "HJbAROdWC6NLzuqP": {
+        "type": "damage",
+        "_id": "HJbAROdWC6NLzuqP",
+        "sort": 100000,
+        "name": "Despairing Strike",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit a creature with a weapon attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.sorrow-knight.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "YXHefZhDOL5hkhjt": {
+        "type": "save",
+        "_id": "YXHefZhDOL5hkhjt",
+        "sort": 200000,
+        "name": "Abandoned",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "With a Despairing Strike"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "despairing-strikes",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

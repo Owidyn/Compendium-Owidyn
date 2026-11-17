@@ -1,0 +1,130 @@
+{
+  "name": "Fey Wanderer Spells",
+  "type": "feat",
+  "_id": "GxVLC3dtbT22A0mo",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "folder": "dzmrxsuNNclEaNKP",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.</p><p>You also possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.</p><h4>Feywild Gifts</h4><table><thead><tr><th>1d6</th><th>Gift</th></tr></thead><tbody><tr><td>1</td><td>Illusory butterflies flutter around you while you take a Short or Long Rest.</td></tr><tr><td>2</td><td>Flowers bloom from your hair each dawn.</td></tr><tr><td>3</td><td>You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.</td></tr><tr><td>4</td><td>Your shadow dances while no one is looking directly at it.</td></tr><tr><td>5</td><td>Horns or antlers sprout from your head.</td></tr><tr><td>6</td><td>Your skin and hair change color each dawn.</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Fey Wanderer 3",
+    "activities": {
+      "GAztmY0gbAJjbPP5": {
+        "type": "utility",
+        "_id": "GAztmY0gbAJjbPP5",
+        "sort": 100000,
+        "name": "Feywild Gift",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Feywild Gift",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "fey-wanderer-spells",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

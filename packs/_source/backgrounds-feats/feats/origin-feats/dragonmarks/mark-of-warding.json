@@ -1,0 +1,186 @@
+{
+  "_id": "JCuG08AYUlhGAxjZ",
+  "name": "Mark of Warding",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "CigXbHKoRKOlLRSq": {
+        "_id": "CigXbHKoRKOlLRSq",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Wards and Seals",
+        "title": "Wards and Seals",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAlarm00000",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMageArmor0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Iosp3juvAXuo2909": {
+        "_id": "Iosp3juvAXuo2909",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Wards and Seals (Level 3)",
+        "title": "Wards and Seals (Level 3)",
+        "hint": "Choose the spellcasting ability you chose for the other spells of this feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneLock",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>The Mark of Warding of House Kundarak manifests on your skin. You gain the following benefits.</p><p><strong>Warder's Intuition.</strong> When you make an Intelligence (Investigation) check or an ability check using Thieves' Tools, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Wards and Seals.</strong> @UUID[Compendium.dnd5e.spells24.Item.phbsplAlarm00000]{Alarm} and @UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Mage Armor} are always prepared for you. You can cast each of them once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast them with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat). From character level 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplArcaneLock]{Arcane Lock} is also always prepared for you, and you can cast it the same way.</p><p><strong>Spells of the Mark.</strong> If you have the Spellcasting or Pact Magic feature, the spells on the Mark of Warding Spells table are added to that feature's spell list.</p><h4>Mark of Warding Spells</h4><table><thead><tr><th>Spell Level</th><th>Spells</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.dONackhonb3p0E2U]{Armor of Agathys}, @UUID[Compendium.dnd5e.spells24.Item.phbSanctuary0000]{Sanctuary}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplKnock00000]{Knock}, @UUID[Compendium.dnd5e.spells24.Item.phbsplNystulsMag]{Nystul's Magic Aura}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGlyphofWar]{Glyph of Warding}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMagicCircl]{Magic Circle}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLeomundsSe]{Leomund's Secret Chest}, @UUID[Compendium.dnd5e.spells24.Item.phbFaithfulHound]{Mordenkainen's Faithful Hound}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplAntilifeSh]{Antilife Shell}</td></tr></tbody></table><section class=\"secret\" id=\"secret-t327ij7fEIfcpIYm\"><p><strong>Foundry Note</strong></p><p>The effect <em>Warder's Intuition</em> adds the 1d4 to the Investigation checks; add it yourself to the checks using Thieves' Tools. The spells of character level 3 are granted when you reach that level: choose the same spellcasting ability as for the others. The Spells of the Mark are not added to your class spell list automatically: prepare them from the compendium if your class can.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mark-of-warding",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "gECpo4rMbEdDRZy8",
+      "name": "Warder's Intuition",
+      "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.inv.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "9TYItCl2WBh0gB23"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Intelligence (Investigation) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

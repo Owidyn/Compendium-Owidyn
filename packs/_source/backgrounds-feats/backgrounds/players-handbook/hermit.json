@@ -1,0 +1,220 @@
+{
+  "name": "Hermit",
+  "type": "background",
+  "_id": "V6E9J1ws3hVidVPL",
+  "img": "icons/environment/settlement/house-shelter-stone.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You spent your early years alone in a hut or a monastery far beyond the edge of the nearest settlement. Your only company was the creatures of the forest and the rare visitors who came with supplies and news of the world. That solitude gave you long hours to ponder the mysteries of creation.</p><p><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.1M64ZpNOx4YSXXDu]{Healer}</p><p><strong>Skill Proficiencies:</strong> Medicine and Religion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBook0000000]{Book} (philosophy), @UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 16 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "hermit",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "fF7famsSVfC7CaVH": {
+        "_id": "fF7famsSVfC7CaVH",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Constitution, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "Z5HURHDempKeBqES": {
+        "_id": "Z5HURHDempKeBqES",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Medicine and Religion. It also grants you proficiency in Herbalism Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:med",
+            "skills:rel",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "A20nwGLJqPromRc7": {
+        "_id": "A20nwGLJqPromRc7",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Healer feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.1M64ZpNOx4YSXXDu",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8mrVdQizSZPKdXOX": {
+        "_id": "8mrVdQizSZPKdXOX",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "dROw9JLkpniDo7G6",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepQuartersta",
+        "requiresProficiency": false,
+        "_id": "tk2c82RDSAhghwcd",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulHerbalismK",
+        "requiresProficiency": false,
+        "_id": "6qFPbUvVxLv1yEuT",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "FDQBVQF0ADN6ZMDk",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBook0000000",
+        "requiresProficiency": false,
+        "_id": "TNE4GFqQIPY69rhe",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLamp0000000",
+        "requiresProficiency": false,
+        "_id": "SutuWmqZw83VYnWa",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 600000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "168yANLPdHUpl5hQ",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "wGddwi9pY26Yus1y",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 800000
+      },
+      {
+        "count": 16,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "PhUPUmWdOZ5OUlIJ",
+        "group": "dROw9JLkpniDo7G6",
+        "sort": 900000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

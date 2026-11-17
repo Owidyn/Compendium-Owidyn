@@ -1,0 +1,136 @@
+{
+  "name": "Vulpera",
+  "type": "race",
+  "_id": "tbjNUVVsV3I9Nn8V",
+  "img": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+  "folder": "bKssB12SX9vGpS3O",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Vulpera are small, fox-like people of the deserts of Vol'dun. They travel in close-knit caravans of alpaca-drawn wagons, looking out for each other as they scavenge across the dunes. Small as they are, they are fierce and cunning fighters who bring down any foe foolish enough to underestimate them. Long terrorized by the serpentine sethrak, they struck a decisive blow against them with the Horde's help during the Fourth War and earned their place in it.</p><p>Vulpera stand under 5 feet tall and look like upright foxes with slender muzzles, large ears, and bushy tails. Their fur ranges from gold or orange to white or dark gray, usually lighter on the front.</p><p><strong>Renown.</strong> Your Renown Score with Orgrimmar (Horde) begins at 3.</p><h3>Vulpera Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Small (about 4–5 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.7wZlYEPMGZxWEHRm]{Fire Resistance}.</strong> You have Resistance to Fire damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.iJqxIOlkC9iIctbg]{Nose for Trouble}.</strong> The first time you take damage after you roll Initiative, you reduce that damage by your level (to a minimum of 0).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.X3vNQHsLE66Ehavv]{Vulpera Nimbleness}.</strong> You can move through the space of any creature that is at least one size larger than you, but you can't stop in the same space.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "vulpera",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Vulpera"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "F1zRM9x2Pr7XQiN5": {
+        "_id": "F1zRM9x2Pr7XQiN5",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Small (about 4–5 feet tall)",
+        "flags": {}
+      },
+      "wPRIZVLBi9OPBq4X": {
+        "_id": "wPRIZVLBi9OPBq4X",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Vulpera Traits",
+        "title": "Vulpera Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.7wZlYEPMGZxWEHRm",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.iJqxIOlkC9iIctbg",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.X3vNQHsLE66Ehavv",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "OB6pCNX8b5dpZA4S": {
+        "_id": "OB6pCNX8b5dpZA4S",
+        "type": "Trait",
+        "level": 0,
+        "name": "Fire Resistance",
+        "title": "Fire Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:fire"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

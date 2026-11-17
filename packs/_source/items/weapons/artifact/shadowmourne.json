@@ -1,0 +1,475 @@
+{
+  "_id": "jsry9SFQVXUY0auF",
+  "name": "Shadowmourne",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-engraved-runes.webp",
+  "folder": "k5SXmlVACc2CKVy0",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Highlord Darion Mograine turned Shadow's Edge into Shadowmourne once the axe had been infused with unholy power, blood magic, and undying frost, along with shadowfrost shards from the Frozen Throne.</p><p><strong>Magic Weapon.</strong> You gain a +3 bonus to attack rolls and damage rolls made with this weapon.</p><p><strong>Soul Fragments.</strong> When you hit a creature with a melee attack roll using Shadowmourne, it takes an extra 1d12 Necrotic damage, and you gain Temporary Hit Points equal to the Necrotic damage it takes.</p><p><strong>Drain Soul.</strong> Whenever you use Shadowmourne to reduce a creature to 0 Hit Points, the axe slays it and devours its soul unless it is a Construct. Only a Wish spell can restore to life a creature whose soul was devoured. When Shadowmourne devours a soul, you gain Temporary Hit Points equal to the slain creature's Hit Point maximum.</p><p><strong>Chaos Bane.</strong> If you have at least 12 Temporary Hit Points, you can take a Bonus Action to sacrifice all of them. Each creature of your choice in a 15-foot Emanation originating from you makes a DC 21 Constitution saving throw, taking damage equal to the Temporary Hit Points sacrificed on a failure or half as much on a success. Until the end of your next turn, you have Advantage on attack rolls and saving throws.</p><p><strong>Random Properties.</strong> This Artifact has the following random properties (see <em>Artifact Traits</em> in the module journal): 2 minor beneficial properties, 2 major beneficial properties, 2 minor detrimental properties, 2 major detrimental properties.</p><p><strong>Destroying the Weapon.</strong> The axe is destroyed if immersed in a pool of fresh blood of an Old God, which frees the souls it devoured.</p><section class=\"secret\" id=\"secret-evWWvhz8zFC5BWjH\"><p><strong>Foundry Note</strong></p><p>Soul Fragments: enter the Necrotic damage rolled as Temporary Hit Points. Chaos Bane deals damage equal to the Temporary Hit Points you sacrifice (set them to 0 afterward).</p></section>",
+      "chat": ""
+    },
+    "identifier": "shadowmourne",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 7,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "DisldRrgsevz6ycE": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "_id": "DisldRrgsevz6ycE",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "GmZgdPuDgGhlP8OU": {
+        "type": "damage",
+        "_id": "GmZgdPuDgGhlP8OU",
+        "sort": 200000,
+        "name": "Soul Fragments",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit with a melee attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 12,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "tMS45i3OsZMPDXZn": {
+        "type": "heal",
+        "_id": "tMS45i3OsZMPDXZn",
+        "sort": 300000,
+        "name": "Soul Fragments (Temporary Hit Points)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "1d12"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "VK6Ln7cAE5I4COhQ": {
+        "type": "save",
+        "_id": "VK6Ln7cAE5I4COhQ",
+        "sort": 400000,
+        "name": "Chaos Bane",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "15",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "enemy",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@attributes.hp.temp"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "21"
+          }
+        }
+      }
+    },
+    "properties": [
+      "hvy",
+      "two",
+      "mgc"
+    ],
+    "type": {
+      "value": "martialM",
+      "baseItem": "greataxe"
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 12,
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "mastery": "cleave",
+    "magicalBonus": 3,
+    "armor": {
+      "value": null
+    },
+    "proficient": null,
+    "ammunition": {},
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "name": "Path of the Zealot",
+  "type": "subclass",
+  "_id": "67CKtFhtBzP0LVV2",
+  "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
+  "folder": "6PODxGxR9Ir7z3re",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Rage in Ecstatic Union with a God</p></blockquote><p>Barbarians who walk the Path of the Zealot receive gifts from a god or a pantheon. They experience their Rage as an ecstatic union with the divine that fills them with power, and they are often allies of their god's priests and followers.</p><h3>Path of the Zealot Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.hL5p4s7HrXT3RJZO]{Divine Fury}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.EF0Lo0GISZhelpgn]{Warrior of the Gods}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.KZdBRJpeDfFqTrmC]{Fanatical Focus}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.PkwcDd4tfLZizAES]{Zealous Presence}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.H1X4absfUebBFHXS]{Rage of the Gods}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "path-of-the-zealot",
+    "classIdentifier": "barbarian",
+    "advancement": {
+      "oaSviTgbQlwA2iOL": {
+        "_id": "oaSviTgbQlwA2iOL",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hL5p4s7HrXT3RJZO",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.EF0Lo0GISZhelpgn",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "JICCE86Cy6foNEtX": {
+        "_id": "JICCE86Cy6foNEtX",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KZdBRJpeDfFqTrmC",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "qfkr1bJIWrYP3iyA": {
+        "_id": "qfkr1bJIWrYP3iyA",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.PkwcDd4tfLZizAES",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "bRfqxfebtPOhOP8t": {
+        "_id": "bRfqxfebtPOhOP8t",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.H1X4absfUebBFHXS",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KdE7Yqp8tvfmNhsK": {
+        "_id": "KdE7Yqp8tvfmNhsK",
+        "type": "ScaleValue",
+        "name": "Warrior of the Gods",
+        "title": "Warrior of the Gods",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "warrior-dice",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 4
+            },
+            "6": {
+              "value": 5
+            },
+            "12": {
+              "value": 6
+            },
+            "17": {
+              "value": 7
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

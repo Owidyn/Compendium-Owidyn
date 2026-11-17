@@ -1,0 +1,136 @@
+{
+  "name": "Heroic Presence",
+  "type": "feat",
+  "_id": "CxwYCKl3u5IRIiBR",
+  "img": "icons/magic/holy/saint-glass-portrait-halo.webp",
+  "folder": "USxBDe3DYIJm0IyU",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>When you cast a spell granted by your Eredar Lineage and don't have Heroic Inspiration, you gain it. You can gain Heroic Inspiration this way once, and you regain that ability when you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-OMFFaQyZLft6vUKs\"><p><strong>Foundry Note</strong></p><p>The activity spends the use; check Heroic Inspiration on your sheet.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Draenei",
+    "activities": {
+      "Y0Rg2oa8UE2Wxt8L": {
+        "type": "utility",
+        "_id": "Y0Rg2oa8UE2Wxt8L",
+        "sort": 100000,
+        "name": "Heroic Presence",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a spell of your Eredar Lineage without Heroic Inspiration"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "heroic-presence",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

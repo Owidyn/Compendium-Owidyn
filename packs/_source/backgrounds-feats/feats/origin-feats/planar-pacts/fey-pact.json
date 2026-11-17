@@ -1,0 +1,260 @@
+{
+  "_id": "dMEa1ECciSyFQq1X",
+  "name": "Fey Pact",
+  "type": "feat",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "folder": "CgeLHtyCXMpYAd5r",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "bwwdEB9V66dyWxee": {
+        "type": "check",
+        "_id": "bwwdEB9V66dyWxee",
+        "sort": 100000,
+        "name": "Honeyed Words",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You fail a Charisma (Deception or Persuasion) check"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "check": {
+          "ability": "cha",
+          "associated": [
+            "dec",
+            "per"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "W71CkbPR1UvJEcPl": {
+        "_id": "W71CkbPR1UvJEcPl",
+        "type": "Trait",
+        "level": 0,
+        "name": "Fey Bond (Language)",
+        "title": "Fey Bond (Language)",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "languages:exotic:sylvan"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "MdFV5jr7tH1TUSkG": {
+        "_id": "MdFV5jr7tH1TUSkG",
+        "type": "Trait",
+        "level": 0,
+        "name": "Fey Bond",
+        "title": "Fey Bond",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:nat"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "3xDbMaFHKENFCp9h": {
+        "_id": "3xDbMaFHKENFCp9h",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Fey Cantrips",
+        "title": "Fey Cantrips",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDruidcraft",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "0fXUJIcRdDMt1eCB": {
+        "_id": "0fXUJIcRdDMt1eCB",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Fey Cantrip",
+        "title": "Fey Cantrip",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [],
+            "school": [
+              "div",
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Can't Have Another Planar Pact Feat)</em></p><p>You struck a bargain with a power of the Feywild. You gain the following benefits.</p><p><strong>Fey Bond.</strong> You know Sylvan; if you already know it when you take this feat, you learn another language of your choice from the Player's Handbook language tables instead. You also gain proficiency in the Nature skill.</p><p><strong>Fey Cantrips.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidcraft} cantrip and one other cantrip of your choice from the Divination or Enchantment school. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><p><strong>Honeyed Words.</strong> When you fail a Charisma (Deception or Persuasion) check, you can reroll it, and you must use the new roll. Once this benefit turns a failure into a success, you can't use it again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-uELkVdfsHVbUZ9zG\"><p><strong>Foundry Note</strong></p><p><em>Honeyed Words</em> rolls the new check. Its limit applies only once a reroll succeeds: keep track of it until your next Long Rest.</p></section>",
+      "chat": ""
+    },
+    "identifier": "fey-pact",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Can't Have Another Planar Pact Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "_id": "IpBWHhssqHDCkiSC",
+  "name": "Mark of Storm",
+  "type": "feat",
+  "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "OGsKLSoWHfcXen2Z": {
+        "_id": "OGsKLSoWHfcXen2Z",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Cantrip",
+        "title": "Cantrip",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.klxpZKnseduoTKqh",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1p1TBLKmxMYrhAn2": {
+        "_id": "1p1TBLKmxMYrhAn2",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Storm Magic (Level 3)",
+        "title": "Storm Magic (Level 3)",
+        "hint": "Choose the spellcasting ability you chose for the other spells of this feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGustofWind",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>The Mark of Storm of House Lyrandar manifests on your skin. You gain the following benefits.</p><p><strong>Windwright's Intuition.</strong> When you make a Dexterity (Acrobatics) check or an ability check using Navigator's Tools, you can roll 1d4 and add the number rolled to the check.</p><p><strong>Storm's Boon.</strong> You have Resistance to Lightning damage.</p><p><strong>Storm Magic.</strong> You know the @UUID[Compendium.compendium-owidyn.spells.Item.klxpZKnseduoTKqh]{Thunderclap} cantrip. From character level 3, @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind} is also always prepared for you: you can cast it once without a spell slot, and you regain that use when you finish a Long Rest; you can also cast it with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you take this feat).</p><p><strong>Spells of the Mark.</strong> If you have the Spellcasting or Pact Magic feature, the spells on the Mark of Storm Spells table are added to that feature's spell list.</p><h4>Mark of Storm Spells</h4><table><thead><tr><th>Spell Level</th><th>Spells</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFeatherFal]{Feather Fall}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]{Fog Cloud}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLevitate00]{Levitate}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]{Shatter}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSleetStorm]{Sleet Storm}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]{Wind Wall}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConjureMin]{Conjure Minor Elementals}, @UUID[Compendium.dnd5e.spells24.Item.phbsplControlWat]{Control Water}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplConjureEle]{Conjure Elemental}</td></tr></tbody></table><section class=\"secret\" id=\"secret-Xsv1C58LqESHdJPz\"><p><strong>Foundry Note</strong></p><p>The effect <em>Windwright's Intuition</em> adds the 1d4 to the Acrobatics checks; add it yourself to the checks using Navigator's Tools. The spells of character level 3 are granted when you reach that level: choose the same spellcasting ability as for the others. The Spells of the Mark are not added to your class spell list automatically: prepare them from the compendium if your class can. The effect <em>Storm's Boon</em> gives the Resistance.</p></section>",
+      "chat": ""
+    },
+    "identifier": "mark-of-storm",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "gUNfrO2IR1daMC5q",
+      "name": "Windwright's Intuition",
+      "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.acr.roll.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "8FadGYzbUmtQLH1n"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>+1d4 to Dexterity (Acrobatics) checks.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9F2nEX4fqJ0WsCl2",
+      "name": "Storm's Boon",
+      "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "jrEFS2q5uxQQqLlZ"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Lightning damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

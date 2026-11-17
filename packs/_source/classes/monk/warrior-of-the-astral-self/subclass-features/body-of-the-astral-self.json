@@ -1,0 +1,219 @@
+{
+  "name": "Body of the Astral Self",
+  "type": "feat",
+  "_id": "MMWYn6fOAmI8l76i",
+  "img": "icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp",
+  "folder": "Y7kYjWahYCHclGWR",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>When you have both your astral arms and visage summoned, you can make the body of your astral self appear (no action required). This spectral body covers you like a suit of armor, joining the arms and visage, with an appearance you choose. While it is present, you gain the following benefits.</p><p><strong>Deflect Energy.</strong> When you take Acid, Cold, Fire, Force, Lightning, or Thunder damage, you can take a Reaction to deflect it: the damage is reduced by 1d10 plus your Wisdom modifier (minimum reduction of 1).</p><p><strong>Empowered Arms.</strong> Once on each of your turns when you hit a target with the Arms of the Astral Self, you can deal extra damage to it equal to your Martial Arts die.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of the Astral Self 11",
+    "activities": {
+      "S2ATbHVJ0RAbGxNg": {
+        "type": "utility",
+        "_id": "S2ATbHVJ0RAbGxNg",
+        "sort": 100000,
+        "name": "Deflect Energy",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You take Acid, Cold, Fire, Force, Lightning, or Thunder damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d10 + max(1, @abilities.wis.mod)",
+          "name": "Damage reduced",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "YzCbljTyiSYjU6FK": {
+        "type": "damage",
+        "_id": "YzCbljTyiSYjU6FK",
+        "sort": 200000,
+        "name": "Empowered Arms",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, you hit with the astral arms"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.monk.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "body-of-the-astral-self",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

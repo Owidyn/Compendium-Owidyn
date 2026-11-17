@@ -1,0 +1,178 @@
+{
+  "name": "Warforged",
+  "type": "race",
+  "_id": "87mXBXfaXiKKE23g",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "folder": "JrCjJvpdWsA0B56r",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Warforged are mechanical beings built as weapons for the Last War. An unexpected breakthrough made them sentient: though made of wood and metal, they feel pain and emotion.</p><p>Warforged combine organic and inorganic materials. Root-like cords soaked in alchemical fluids serve as muscles, wrapped around a frame of steel, darkwood, or stone, and armored plates form a protective shell and reinforce the joints. The more a warforged develops a personality of its own, the more likely it is to have an artificer customize its face, limbs, and plating.</p><h3>Warforged Traits</h3><p><strong>Creature Type:</strong> Construct</p><p><strong>Size:</strong> Medium (about 6–8 feet tall) or Small (about 3–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.AvJXWEGvpeRPqzRZ]{Construct Resilience}.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws to avoid or end the &amp;Reference[Poisoned] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.dBAnTYbEtzQiTPEK]{Integrated Protection}.</strong> You gain a +1 bonus to your Armor Class. In addition, armor you have donned can't be removed against your will while you're alive.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.ZxrJaMNMS2qSeXaI]{Sentry's Rest}.</strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 6 hours if you spend them in an inactive, motionless state; during this time, you appear inert but remain conscious.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.YE6NRSL2ST1dMB6w]{Specialized Design}.</strong> You gain one skill proficiency and one tool proficiency of your choice.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.acBEgRglBRC6iHRi]{Tireless}.</strong> You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "warforged",
+    "type": {
+      "value": "construct",
+      "custom": "",
+      "subtype": "Warforged"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": null,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "NDSdS6c4luFfe8Fs": {
+        "_id": "NDSdS6c4luFfe8Fs",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 6–8 feet tall) or Small (about 3–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "cFc1NXDdcXwAFA4C": {
+        "_id": "cFc1NXDdcXwAFA4C",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Warforged Traits",
+        "title": "Warforged Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.AvJXWEGvpeRPqzRZ",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.dBAnTYbEtzQiTPEK",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.ZxrJaMNMS2qSeXaI",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.YE6NRSL2ST1dMB6w",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.acBEgRglBRC6iHRi",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "D11hSV8LGPLA5CFi": {
+        "_id": "D11hSV8LGPLA5CFi",
+        "type": "Trait",
+        "level": 0,
+        "name": "Construct Resilience",
+        "title": "Construct Resilience",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ifJJuOyaddE1m7Qk": {
+        "_id": "ifJJuOyaddE1m7Qk",
+        "type": "Trait",
+        "level": 0,
+        "name": "Specialized Design",
+        "title": "Specialized Design",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "tool:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "name": "House Phiarlan Heir",
+  "type": "background",
+  "_id": "mB1GWwthy6nbHwCk",
+  "img": "icons/commodities/treasure/mask-wood-tan.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>As a child of House Phiarlan, you have known wealth, fame, and beauty, yet you hold knowledge—and the power it brings—to be the greatest treasure of all. You might seek that power as an artist or performer, always listening for secrets while you dazzle the world with stories, songs, acrobatics, or art. Or you might cultivate ties with the Serpentine Table, the secretive espionage arm of your house.</p><p><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0HHEsUor1RwXy2wh]{Mark of Shadow}</p><p><strong>Skill Proficiencies:</strong> Deception and Stealth</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, 10 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-phiarlan-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "2FiVKURORkMgaW6L": {
+        "_id": "2FiVKURORkMgaW6L",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "9DEw9BWosrKlJF29": {
+        "_id": "9DEw9BWosrKlJF29",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Deception and Stealth. It also grants you proficiency in Disguise Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:dec",
+            "skills:ste",
+            "tool:disg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "Gw0guMexsbvoXHGR": {
+        "_id": "Gw0guMexsbvoXHGR",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Shadow feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0HHEsUor1RwXy2wh",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "7hLj2YezKKEMyc5w": {
+        "_id": "7hLj2YezKKEMyc5w",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "vhV6Z9BHSSF9Da7I",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi",
+        "requiresProficiency": false,
+        "_id": "zwBimd2LzJFoKlQk",
+        "group": "vhV6Z9BHSSF9Da7I",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "HU6gEClBYtPBFS28",
+        "group": "vhV6Z9BHSSF9Da7I",
+        "sort": 300000
+      },
+      {
+        "count": 10,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "PtkLCFALnbmjURrM",
+        "group": "vhV6Z9BHSSF9Da7I",
+        "sort": 400000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Storm Rune",
+  "type": "feat",
+  "_id": "P2bDLf15BUQMMwE5",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "folder": "Q0eCd0d4MXww9RUn",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p><em>Requires Fighter level 7.</em></p><p>This rune lets you glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with it, you have Advantage on Intelligence (Arcana) checks, and you can't be surprised as long as you don't have the Incapacitated condition. In addition, you can invoke the rune as a Bonus Action to enter a prophetic state for 1 minute or until you have the Incapacitated condition. Until the state ends, when you or another creature you can see within 60 feet of you makes an attack roll, a saving throw, or an ability check, you can take a Reaction to give the roll Advantage or Disadvantage.</p><p>Once you invoke this rune, you can't do so again until you finish a Short or Long Rest (twice per rest with Master of Runes). If the rune requires a saving throw, your Rune Magic save DC equals 8 plus your Constitution modifier and Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.rune-knight.rune-uses",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Rune Knight 7",
+    "activities": {
+      "SmIhvNzNsIM3Hr5T": {
+        "type": "utility",
+        "_id": "SmIhvNzNsIM3Hr5T",
+        "sort": 100000,
+        "name": "Invoke Storm Rune",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "onEbQQj9JR5Hjrp0"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "storm-rune",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "oPtNxOyfRev7ADGn",
+      "name": "Storm Rune (Inscribed)",
+      "img": "icons/magic/lightning/bolt-strike-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.arc.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "OoByLS4QCmA7Fvy7"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Storm Rune: passive benefits while you carry the inscribed object.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "onEbQQj9JR5Hjrp0",
+      "name": "Storm Rune (Invoked)",
+      "img": "icons/magic/lightning/bolt-strike-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Storm Rune invoked.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

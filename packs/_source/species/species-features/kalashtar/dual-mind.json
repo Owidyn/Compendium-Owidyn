@@ -1,0 +1,118 @@
+{
+  "name": "Dual Mind",
+  "type": "feat",
+  "_id": "XKKXfjvjE8r43B2n",
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "folder": "00jTaHUPhAovhVYU",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You have Advantage on Wisdom and Charisma saving throws.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Kalashtar",
+    "activities": {},
+    "enchant": {},
+    "identifier": "dual-mind",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "DXTsAXkDuL3c9yvz",
+      "name": "Dual Mind",
+      "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "yimx4oiXJG7FeRKm"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "HXNn3Z9ng7MtnTfi"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Wisdom and Charisma saving throws.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "War God's Blessing",
+  "type": "feat",
+  "_id": "mj0ksBrySazY41OA",
+  "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
+  "folder": "OWoXdlMBil9Y4gqF",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You can expend a use of your Channel Divinity to cast Shield of Faith or Spiritual Weapon instead of expending a spell slot. Cast this way, the spell doesn't require Concentration; instead it lasts 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.</p><section class=\"secret\" id=\"secret-80UB5IfBJE4s6HEZ\"><p><strong>Foundry Note</strong></p><p>Cast the spell from your sheet without a slot and end the Concentration it begins.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "War Domain 6",
+    "activities": {
+      "zgInTt3Qw5rAHHbt": {
+        "type": "utility",
+        "_id": "zgInTt3Qw5rAHHbt",
+        "sort": 100000,
+        "name": "War God's Blessing",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:channel-divinity-cleric",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "war-gods-blessing",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

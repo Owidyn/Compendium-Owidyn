@@ -1,0 +1,336 @@
+{
+  "name": "Master Transmuter",
+  "type": "feat",
+  "_id": "8LUP4qwPNAPK8JJd",
+  "img": "icons/commodities/gems/gem-rough-can-orange-red.webp",
+  "folder": "bnw4XXFLHLQPjypM",
+  "sort": 700000,
+  "system": {
+    "description": {
+      "value": "<p>While you carry your Transmuter's Stone, you can take a Magic action to consume the reserve of transmutation magic stored inside it and choose one of the following benefits. The stone then crumbles to dust, unless you expend a level 7+ spell slot as part of that Magic action to preserve it.</p><p><strong>Major Transformation.</strong> You transmute one nonmagical object—no larger than a 10-foot Cube or eight connected 5-foot Cubes—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.</p><p><strong>Panacea.</strong> You touch a creature as part of this Magic action. It regains Hit Points equal to half its Hit Point maximum (round down), it is cured of all magical contagions, and any curses affecting it are lifted, including its Attunement to a cursed item. If it has the Poisoned or Petrified condition, those conditions end.</p><p><strong>Restore Life.</strong> You cast @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]{Raise Dead} without expending a spell slot, using the stone in place of the required Material components.</p><p><strong>Restore Youth.</strong> You touch one willing creature as part of this Magic action. Its Exhaustion level, if any, decreases to 0, and it permanently appears 3d10 years younger, to a minimum of young adulthood.</p><section class=\"secret\" id=\"secret-BUOwj3ooeWiPsPf4\"><p><strong>Foundry Note</strong></p><p>Panacea: the creature regains half its own Hit Point maximum; apply it yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Transmuter 14",
+    "activities": {
+      "5f15CNGy4RC2y7ZG": {
+        "type": "utility",
+        "_id": "5f15CNGy4RC2y7ZG",
+        "sort": 100000,
+        "name": "Master Transmuter",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "eIWzfEGdedFWxxSP": {
+        "type": "cast",
+        "_id": "eIWzfEGdedFWxxSP",
+        "sort": 200000,
+        "name": "Restore Life",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplRaiseDead0",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "material"
+          ],
+          "spellbook": false,
+          "ability": ""
+        }
+      },
+      "Ft9vtj1NJEVAdAsj": {
+        "type": "utility",
+        "_id": "Ft9vtj1NJEVAdAsj",
+        "sort": 300000,
+        "name": "Restore Youth",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "3d10",
+          "name": "Years younger",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "WSPgS6k6HVUbix6Y": {
+        "type": "utility",
+        "_id": "WSPgS6k6HVUbix6Y",
+        "sort": 400000,
+        "name": "Preserve the Stone (Level 7+ Slot)",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Part of the Magic action"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "master-transmuter",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

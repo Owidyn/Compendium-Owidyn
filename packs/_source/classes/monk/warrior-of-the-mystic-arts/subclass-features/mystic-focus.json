@@ -1,0 +1,143 @@
+{
+  "name": "Mystic Focus",
+  "type": "feat",
+  "_id": "NoppBAfGZlGAnIo2",
+  "img": "icons/magic/symbols/circle-ouroboros.webp",
+  "folder": "KPMSABEbs9yOzP38",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You keep your magical power and martial focus in perfect balance, converting spell slots into Focus Points or Focus Points into spell slots.</p><p><strong>Converting Spell Slots to Focus Points.</strong> You can expend a spell slot to regain expended Focus Points equal to the slot's level (no action required).</p><p><strong>Recovering Spell Slots.</strong> When you finish a Short Rest or use Uncanny Metabolism, you can transform unexpended Focus Points to recover one expended spell slot, of level 4 or lower, at the cost shown on the Recovering Spell Slots table (which also gives the minimum Monk level).</p><table><thead><tr><th>Spell Slot Level</th><th>Focus Point Cost</th><th>Min. Monk Level</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>6</td></tr><tr><td>2</td><td>3</td><td>7</td></tr><tr><td>3</td><td>5</td><td>13</td></tr><tr><td>4</td><td>6</td><td>19</td></tr></tbody></table><section class=\"secret\" id=\"secret-HCNirWVlbHYClB0j\"><p><strong>Foundry Note</strong></p><p>Slot to Focus spends a spell slot and restores Focus Points equal to its level (choose the level in the dialog). Recovering slots with Focus Points is done by hand.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of the Mystic Arts 6",
+    "activities": {
+      "brm4adZ9pGGDfQki": {
+        "type": "utility",
+        "_id": "brm4adZ9pGGDfQki",
+        "sort": 100000,
+        "name": "Slot to Focus",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "4"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "1",
+              "scaling": {
+                "mode": "level",
+                "formula": ""
+              }
+            },
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "feat:monks-focus",
+              "scaling": {
+                "mode": "amount",
+                "formula": "-1"
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "mystic-focus",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

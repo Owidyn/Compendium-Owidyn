@@ -1,0 +1,193 @@
+{
+  "name": "Aberrant Heir",
+  "type": "background",
+  "_id": "X1E4bi3JJHvgVzlS",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Life has been hard since your aberrant dragonmark appeared. Perhaps you hid it for most of your life or simply escaped notice. Or perhaps you met suspicion and fear, even open hostility from one or more of the dragonmarked houses. You might have joined House Tarkanan, the criminal organization named after one of the most infamous leaders of the aberrant-marked during the War of the Mark twenty-five centuries ago. Or you might be trying to find your own way, relying on your wits and the power of your mark.</p><p><strong>Ability Scores:</strong> Strength, Constitution, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.in0q7hagrXuI8byd]{Aberrant Dragonmark}</p><p><strong>Skill Proficiencies:</strong> History and Intimidation</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi]{Disguise Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCostume0000]{Costume}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 16 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "aberrant-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "bKkzsniig2EixFds": {
+        "_id": "bKkzsniig2EixFds",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Constitution, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "tRK7lHk7XEz6vXIw": {
+        "_id": "tRK7lHk7XEz6vXIw",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in History and Intimidation. It also grants you proficiency in Disguise Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:his",
+            "skills:itm",
+            "tool:disg"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "kE9HFZ32pkM8MXFB": {
+        "_id": "kE9HFZ32pkM8MXFB",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Aberrant Dragonmark feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.in0q7hagrXuI8byd",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CZecu8IQQHB8fyAa": {
+        "_id": "CZecu8IQQHB8fyAa",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "alxRzXSUtbV8PKsZ",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "CmMfw9lCFpjXvQ6e",
+        "group": "alxRzXSUtbV8PKsZ",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi",
+        "requiresProficiency": false,
+        "_id": "KWKZOVB3j7vzDmyi",
+        "group": "alxRzXSUtbV8PKsZ",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCostume0000",
+        "requiresProficiency": false,
+        "_id": "DLtaZG9JXMMPUfOb",
+        "group": "alxRzXSUtbV8PKsZ",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "pwGiqz7UCl4t64Gp",
+        "group": "alxRzXSUtbV8PKsZ",
+        "sort": 500000
+      },
+      {
+        "count": 16,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "1Hts9nyP6aZXe7Hb",
+        "group": "alxRzXSUtbV8PKsZ",
+        "sort": 600000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

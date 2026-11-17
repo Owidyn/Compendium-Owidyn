@@ -1,0 +1,210 @@
+{
+  "name": "Dread Allegiance",
+  "type": "feat",
+  "_id": "beOFnVrPeHJJSq0E",
+  "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+  "folder": "21cqKZyTgMgDpjk8",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>Choose one of the Dead Three: Bane, Bhaal, or Myrkul. You gain Resistance to one damage type and the ability to cast a cantrip, as shown in the table below; Intelligence is your spellcasting ability for this cantrip. When you finish a Long Rest, you can change your choice.</p><table><thead><tr><th>God</th><th>Damage Resistance</th><th>Cantrip</th></tr></thead><tbody><tr><td>Bane</td><td>Psychic</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Minor Illusion}</td></tr><tr><td>Bhaal</td><td>Poison</td><td>@UUID[Compendium.compendium-owidyn.spells.Item.52K6rs5zHagiRUsB]{Blade Ward}</td></tr><tr><td>Myrkul</td><td>Necrotic</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Chill Touch}</td></tr></tbody></table><section class=\"secret\" id=\"secret-Z4Mo4zbKHJfObARn\"><p><strong>Foundry Note</strong></p><p>Turn on the effect of your god only. If you change your god, replace the cantrip too.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Scion of the Three 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "dread-allegiance",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "J4L6HVwehqRXw3Fy",
+      "name": "Dread Allegiance (Bane)",
+      "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "FIAY9T1jSja7J8kD"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to psychic damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "pBCgYOpqZvfF5tRY",
+      "name": "Dread Allegiance (Bhaal)",
+      "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "bLzrHhBBC9AvYjRo"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to poison damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "AN1RZoXJpnbrCXEk",
+      "name": "Dread Allegiance (Myrkul)",
+      "img": "icons/magic/unholy/hand-claw-fire-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "oWCc0iALVoEl5GNT"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to necrotic damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

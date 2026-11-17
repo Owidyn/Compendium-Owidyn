@@ -1,0 +1,142 @@
+{
+  "name": "Forsaken",
+  "type": "race",
+  "_id": "c1JF2imyPDrrEFhv",
+  "img": "icons/magic/death/undead-skeleton-rags-fire-green.webp",
+  "folder": "kB2D64gPAgOf9g7B",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The undead armies of the Scourge, made by the Burning Legion to prepare Azeroth for invasion, swept across Northrend and Lordaeron under the dread Lich King. When his will faltered after the Third War, many broke free; led by the banshee Sylvanas Windrunner, these renegades named themselves the Forsaken and built the Undercity beneath the ruins of Lordaeron's capital, allying uneasily with the Horde. Abandoned by Sylvanas after the Fourth War, they are now led by a Desolate Council.</p><p>Like the Scourge, the Forsaken are undead whose souls are imperfectly bound to their bodies by magic. They feel little pain, but the Holy Light burns them. Most were human once, yet they see themselves as one people; some are pale and stiff but whole enough to pass for living, others thoroughly rotted or mummified.</p><p><strong>Renown.</strong> Your Renown Score with Undercity (Horde) begins at 3.</p><h3>Forsaken Traits</h3><p><strong>Creature Type:</strong> Undead</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.i0TLwvRYzKAkRvo6]{Deathly Endurance}.</strong> You have Resistance to Necrotic damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.gBlfa05RSpe44sLI]{Everlasting}.</strong> You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend them in an inactive, motionless state, during which you remain conscious.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.n4FBCkAdAlyxC29x]{Touch of the Grave}.</strong> When you deal damage to a creature, you can roll a number of d4s equal to your Proficiency Bonus. You deal extra Necrotic damage to it equal to the total, and you regain Hit Points equal to the extra damage dealt. Once you use this benefit, you can't use it again until you finish a Long Rest.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.H9zV0mqIg7GZhDz1]{Will of the Forsaken}.</strong> You have Advantage on saving throws to avoid or end the &amp;Reference[Charmed] or &amp;Reference[Frightened] condition.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "forsaken",
+    "type": {
+      "value": "undead",
+      "custom": "",
+      "subtype": "Forsaken"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "6oDbXEfAU2VgARmB": {
+        "_id": "6oDbXEfAU2VgARmB",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "SLWpawEHOEjdZKCP": {
+        "_id": "SLWpawEHOEjdZKCP",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Forsaken Traits",
+        "title": "Forsaken Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.i0TLwvRYzKAkRvo6",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.gBlfa05RSpe44sLI",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.n4FBCkAdAlyxC29x",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.H9zV0mqIg7GZhDz1",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cppyCuAv0I0wvwEx": {
+        "_id": "cppyCuAv0I0wvwEx",
+        "type": "Trait",
+        "level": 0,
+        "name": "Deathly Endurance",
+        "title": "Deathly Endurance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:necrotic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

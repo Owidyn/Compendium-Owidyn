@@ -1,0 +1,157 @@
+{
+  "name": "Healing Light",
+  "type": "feat",
+  "_id": "D5jgEotRW65iKG3C",
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "folder": "t1F3sXICZWqwC5lW",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You can channel celestial energy to heal wounds. You have a pool of d6s to fuel this healing, whose number equals 1 plus your Warlock level. As a Bonus Action, you can heal yourself or one creature you can see within 60 feet of you, expending dice from the pool—at most a number equal to your Charisma modifier (minimum of one die) at once. Roll the dice you expend and restore Hit Points equal to the total. Your pool regains all expended dice when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-NpAgNg7Jmf11CZ49\"><p><strong>Foundry Note</strong></p><p>The uses are the d6s of the pool: choose how many to expend in the dialog.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1 + @classes.warlock.levels",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Celestial Patron 3",
+    "activities": {
+      "KYZ7inwBTkMD8SAj": {
+        "type": "heal",
+        "_id": "KYZ7inwBTkMD8SAj",
+        "sort": 100000,
+        "name": "Healing Light",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "max(1, @abilities.cha.mod)"
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "60",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "whole",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "healing-light",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

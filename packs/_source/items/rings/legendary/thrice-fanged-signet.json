@@ -1,0 +1,157 @@
+{
+  "_id": "m9kzr7dSJrCSPUsY",
+  "name": "Thrice Fanged Signet",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-band-engraved-silver-teal.webp",
+  "folder": "m1DFhwfJdcKsdcHC",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>This silver ring is topped by a pyramid crowned with a glowing blue crystal; three fangs jut from beneath the pyramid and pierce the wearer's finger.</p><p>When you cast a spell while wearing this ring, you can let the ring drink your blood to empower the spell. If you do, your current and maximum Hit Points are reduced by 3d6, and the spell's effects are determined as if you had cast it with a spell slot one level higher than the slot you used (maximum level 9).</p><section class=\"secret\" id=\"secret-ERqPlGi09ckfpB8B\"><p><strong>Foundry Note</strong></p><p>Reduce your Hit Points and Hit Point maximum by the roll yourself, and cast the spell one level higher.</p></section>",
+      "chat": ""
+    },
+    "identifier": "thrice-fanged-signet",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "RNC4qmMw7VBULrF7": {
+        "type": "utility",
+        "_id": "RNC4qmMw7VBULrF7",
+        "sort": 100000,
+        "name": "Blood Price",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "3d6",
+          "name": "Hit Points and Hit Point maximum lost",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

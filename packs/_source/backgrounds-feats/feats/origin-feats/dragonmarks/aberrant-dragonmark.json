@@ -1,0 +1,312 @@
+{
+  "_id": "in0q7hagrXuI8byd",
+  "name": "Aberrant Dragonmark",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "folder": "NhevSBB5nI0GH1DZ",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "hnWsWnlBivMJTizn": {
+        "type": "utility",
+        "_id": "hnWsWnlBivMJTizn",
+        "sort": 100000,
+        "name": "Aberrant Fortitude",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You fail a Constitution saving throw"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Bonus to the save",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "RlGIaoWU8745JAai": {
+        "type": "utility",
+        "_id": "RlGIaoWU8745JAai",
+        "sort": 200000,
+        "name": "Aberrant Surge",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast this feat's level 1 spell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "hitDice",
+              "value": "1",
+              "target": "largest",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d@attributes.hd.largestFace",
+          "name": "Hit Point Die",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "ia3iynqjgqDPVCqJ": {
+        "_id": "ia3iynqjgqDPVCqJ",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Aberrant Cantrip",
+        "title": "Aberrant Cantrip",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:sorcerer"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "con"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "stGg6hJkTckPwTT0": {
+        "_id": "stGg6hJkTckPwTT0",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Aberrant Spell",
+        "title": "Aberrant Spell",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "1",
+            "list": [
+              "class:sorcerer"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "con"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "sr",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Eberron Campaign, Can't Have Another Dragonmark Feat)</em></p><p>A dragonmark that belongs to no house twists across your skin. You gain the following benefits.</p><p><strong>Aberrant Fortitude.</strong> When you fail a Constitution saving throw, you can take a Reaction to roll 1d4 and add the number rolled to the save, which can turn the failure into a success. Once you use this benefit, you can't do so again until you finish a Long Rest.</p><p><strong>Aberrant Magic.</strong> You know one cantrip of your choice from the Sorcerer spell list. Choose also a level 1 spell from that list: it is always prepared for you. You can cast it once without a spell slot, and you regain that use when you finish a Short or Long Rest; you can also cast it with any spell slots you have. Constitution is your spellcasting ability for these spells.</p><p><strong>Aberrant Surge.</strong> When you cast this feat's level 1 spell, you can expend one of your Hit Point Dice and roll it. On an even number, you gain that many Temporary Hit Points. On an odd number, one creature of your choice within 30 feet of you (other than you) takes that much Force damage; if no other creature is within range, you take the damage yourself.</p><section class=\"secret\" id=\"secret-CGjkeUUItoc6pDU8\"><p><strong>Foundry Note</strong></p><p><em>Aberrant Fortitude</em> rolls the 1d4 to add to the save, once per Long Rest. <em>Aberrant Surge</em> rolls the Hit Point Die you choose and spends it; give the Temporary Hit Points or deal the Force damage according to the result.</p></section>",
+      "chat": ""
+    },
+    "identifier": "aberrant-dragonmark",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Eberron Campaign, Can't Have Another Dragonmark Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

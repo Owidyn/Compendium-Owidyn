@@ -1,0 +1,200 @@
+{
+  "name": "Shifting",
+  "type": "feat",
+  "_id": "vKj3KB3UlTovQFS6",
+  "img": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+  "folder": "Ddz8G0CjKtz87DG4",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can shift into a more bestial appearance for 1 minute, or until you return to your normal appearance as a Bonus Action. When you shift, you gain Temporary Hit Points equal to twice your Proficiency Bonus. You can shift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p>Whenever you shift, you also gain the benefit of one of the following options, chosen when you select this species: Beasthide, Longtooth, Swiftstride, or Wildhunt.</p><p><strong>Beasthide.</strong> You gain 1d6 additional Temporary Hit Points. While shifted, you have a +1 bonus to your Armor Class.</p><p><strong>Longtooth.</strong> When you shift, and as a Bonus Action on your other turns while shifted, you can make an Unarmed Strike with your elongated fangs. If you hit and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p><p><strong>Swiftstride.</strong> While shifted, your Speed increases by 10 feet. In addition, you can move up to 10 feet as a Reaction when a creature ends its turn within 5 feet of you; this movement doesn't provoke Opportunity Attacks.</p><p><strong>Wildhunt.</strong> While shifted, you have Advantage on Wisdom checks, and no creature within 30 feet of you can have Advantage on an attack roll against you unless you have the Incapacitated condition.</p><section class=\"secret\" id=\"secret-3pxoM578PZTWVjD4\"><p><strong>Foundry Note</strong></p><p>Shift spends a use and gives the Temporary Hit Points; with Beasthide, use its activity instead, which gives the 1d6 more. Then use the activity of your option.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Shifter",
+    "activities": {
+      "SgXxgFRvoGDJgi0j": {
+        "type": "heal",
+        "_id": "SgXxgFRvoGDJgi0j",
+        "sort": 100000,
+        "name": "Shift",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Oq5nVMBNRHOCQ3bD"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "2 * @prof"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "temphp"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "shifting",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "Oq5nVMBNRHOCQ3bD",
+      "name": "Shifted",
+      "img": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Bestial appearance for 1 minute.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

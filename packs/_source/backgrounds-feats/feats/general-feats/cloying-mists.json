@@ -1,0 +1,122 @@
+{
+  "_id": "lnqPRbSi1YqhWnzF",
+  "name": "Cloying Mists",
+  "type": "feat",
+  "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "uLd8VxD1CwjerexB": {
+        "_id": "uLd8VxD1CwjerexB",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "55hLJtbtcxTAyiyL": {
+        "_id": "55hLJtbtcxTAyiyL",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Arise, Fog",
+        "title": "Arise, Fog",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFogCloud00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Arise, Fog.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]{Fog Cloud} prepared. You can cast it without a spell slot, and you must finish a Long Rest before you can cast it this way again; you can also cast it with spell slots of the appropriate level you have. Its spellcasting ability is the ability increased by this feat.</p><p><strong>Grasping Mist.</strong> Whenever you cast Fog Cloud, nonmagical flames in the spell's Sphere are extinguished, and creatures other than you and your allies have their Speed reduced by 5 feet while in the Sphere.</p>",
+      "chat": ""
+    },
+    "identifier": "cloying-mists",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

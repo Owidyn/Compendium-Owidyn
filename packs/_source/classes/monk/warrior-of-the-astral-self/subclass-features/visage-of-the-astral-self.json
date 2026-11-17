@@ -1,0 +1,195 @@
+{
+  "name": "Visage of the Astral Self",
+  "type": "feat",
+  "_id": "lQTCbiHJjfrLG3gg",
+  "img": "icons/equipment/head/mask-carved-scream-tan.webp",
+  "folder": "Y7kYjWahYCHclGWR",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, or as part of the Bonus Action you take to activate Arms of the Astral Self, you can expend 1 Focus Point to summon the visage of your astral self for 10 minutes. It vanishes early if you have the Incapacitated condition or die. The spectral visage covers your face like a helmet or mask, with an appearance you choose. While it is present, you gain the following benefits.</p><p><strong>Astral Sight.</strong> You can see normally in Darkness, both magical and nonmagical, to a distance of 120 feet.</p><p><strong>Wisdom of the Spirit.</strong> You have Advantage on Wisdom (Insight) and Charisma (Intimidation) checks.</p><p><strong>Word of the Spirit.</strong> When you speak, you can direct your words to a creature of your choice you can see within 60 feet of you, so that only it can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of the Astral Self 6",
+    "activities": {
+      "xofRE1iWHTzEAAUS": {
+        "type": "utility",
+        "_id": "xofRE1iWHTzEAAUS",
+        "sort": 100000,
+        "name": "Visage of the Astral Self",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:monks-focus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "xofRE1iWHTzEAAUS"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "visage-of-the-astral-self",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "xofRE1iWHTzEAAUS",
+      "name": "Visage of the Astral Self",
+      "img": "icons/equipment/head/mask-carved-scream-tan.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ins.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "JoSyvbmjRSKN8DfE"
+          },
+          {
+            "key": "system.skills.itm.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mpmvkBNbrcSKnJPs"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You see normally in Darkness (magical or not) to 120 feet; Advantage on Insight and Intimidation; Word of the Spirit.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

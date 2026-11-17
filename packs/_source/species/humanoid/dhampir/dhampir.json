@@ -1,0 +1,137 @@
+{
+  "name": "Dhampir",
+  "type": "race",
+  "_id": "tC5s2jpWAeV7Ds3Y",
+  "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
+  "folder": "Z4KX7rBdPthuBIZb",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Dhampirs are living people with vampiric gifts, cursed with a macabre hunger. Most crave blood, but some feed on dreams, life energy, or other vital forces, and each must choose whether to master that hunger or give in to predatory urges.</p><p>Dhampirs often result from encounters with vampires: some descend from a powerful vampire, others were partly transformed by a vampire's bite. All kinds of grim bargains and necromantic forces can also create a dhampir. Whatever their origin, their vampiric nature shows in many ways, including uncanny speed and a life-draining bite.</p><h3>Dhampir Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 35 feet, Climb 35 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.22EV7IPxrgEcVIgf]{Spider Climb}.</strong> You have a Climb Speed equal to your Speed. Starting at character level 3, you can move up, down, and across vertical surfaces and along ceilings while leaving your hands free.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.281gCY1AIRo71FHO]{Trace of Undeath}.</strong> You have Resistance to Necrotic damage.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.BevRWiXv0tbdAHiP]{Vampiric Bite}.</strong> When you use your Unarmed Strike and deal damage, you can bite with your fangs instead, dealing Piercing damage equal to 1d4 plus your Constitution modifier instead of the normal damage of an Unarmed Strike. When you deal this damage to a creature that isn't a Construct or an Undead, you can also empower yourself in one of the following ways: <strong>Drain.</strong> You regain Hit Points equal to the Piercing damage dealt. <strong>Strengthen.</strong> You gain a bonus to the next ability check or attack roll you make within the next minute; the bonus equals the Piercing damage dealt. You can empower yourself this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "dhampir",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Dhampir"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "35",
+        "burrow": "",
+        "climb": "35",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "jyPcD0fMCXAN7jdD": {
+        "_id": "jyPcD0fMCXAN7jdD",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+        "flags": {}
+      },
+      "GrEspNuymQOal2CG": {
+        "_id": "GrEspNuymQOal2CG",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Dhampir Traits",
+        "title": "Dhampir Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.22EV7IPxrgEcVIgf",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.281gCY1AIRo71FHO",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.BevRWiXv0tbdAHiP",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VD0sBwV2DCQFHMB5": {
+        "_id": "VD0sBwV2DCQFHMB5",
+        "type": "Trait",
+        "level": 0,
+        "name": "Trace of Undeath",
+        "title": "Trace of Undeath",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:necrotic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

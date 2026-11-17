@@ -1,0 +1,224 @@
+{
+  "name": "College of the Moon",
+  "type": "subclass",
+  "_id": "uh7CvvHTo296VcTm",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "folder": "pYMQhk9hjKWrv7Dy",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Inspire Allies with Primal Tales</p></blockquote><p>The College of the Moon traces its origins to the ancient druidic circles of the Moonshae Isles, which entrusted the first Bards of this tradition with chronicling the stories of the islands and their people. These Bards draw on the isles' fey magic and the primal power of the moonwells to strengthen their allies, protect the natural world, and inspire their work.</p><h3>College of the Moon Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.EHp30dZpXHxqFBVJ]{Moon's Inspiration}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.IueLbetv581Jw39F]{Primal Lore}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.JvgK9xNfTn03tEun]{Blessing of Moonlight}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.lstobH0hRbSK18vD]{Eventide's Splendor}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "college-of-the-moon",
+    "classIdentifier": "bard",
+    "advancement": {
+      "o0uf3vAkMTjY1j6R": {
+        "_id": "o0uf3vAkMTjY1j6R",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.EHp30dZpXHxqFBVJ",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IueLbetv581Jw39F",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "vftGRYjpFDfevG5H": {
+        "_id": "vftGRYjpFDfevG5H",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.JvgK9xNfTn03tEun",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KFJYPo5RFqiQwIlg": {
+        "_id": "KFJYPo5RFqiQwIlg",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lstobH0hRbSK18vD",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "x5LKv7VLaKTIPuBU": {
+        "_id": "x5LKv7VLaKTIPuBU",
+        "type": "Trait",
+        "level": 3,
+        "name": "Primal Lore",
+        "title": "Primal Lore",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:exotic:druidic"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ani",
+                "skills:ins",
+                "skills:med",
+                "skills:nat",
+                "skills:prc",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "YwS8NZBGY6sSfX4B": {
+        "_id": "YwS8NZBGY6sSfX4B",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Primal Lore (Cantrip)",
+        "title": "Primal Lore (Cantrip)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:druid"
+            ],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "F85cY3cx4jDhRFMV": {
+        "_id": "F85cY3cx4jDhRFMV",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Blessing of Moonlight",
+        "title": "Blessing of Moonlight",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMoonbeam00",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

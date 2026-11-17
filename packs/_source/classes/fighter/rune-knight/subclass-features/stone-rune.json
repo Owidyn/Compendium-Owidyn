@@ -1,0 +1,299 @@
+{
+  "name": "Stone Rune",
+  "type": "feat",
+  "_id": "Yh5G0BITj07ABCLv",
+  "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+  "folder": "Q0eCd0d4MXww9RUn",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>This rune channels the judiciousness of stone giants. While wearing or carrying an object inscribed with it, you have Advantage on Wisdom (Insight) checks and Darkvision with a range of 120 feet. In addition, when a creature you can see ends its turn within 30 feet of you, you can take a Reaction to invoke the rune and force it to make a Wisdom saving throw. Unless it succeeds, it has the Charmed condition for 1 minute; while Charmed this way, it has a Speed of 0 and the Incapacitated condition, sinking into a dreamy stupor. It repeats the save at the end of each of its turns, ending the effect on a success.</p><p>Once you invoke this rune, you can't do so again until you finish a Short or Long Rest (twice per rest with Master of Runes). If the rune requires a saving throw, your Rune Magic save DC equals 8 plus your Constitution modifier and Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.rune-knight.rune-uses",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Rune Knight 3",
+    "activities": {
+      "wUPXpOEBCFE7ABRE": {
+        "type": "save",
+        "_id": "wUPXpOEBCFE7ABRE",
+        "sort": 100000,
+        "name": "Invoke Stone Rune",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature ends its turn within 30 feet of you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "2TjCY3wUFTxaRvZc",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "stone-rune",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "HMzhRqfbNBHIG5z3",
+      "name": "Stone Rune (Inscribed)",
+      "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.ins.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "922G5t0IJJGgIAV2"
+          },
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "120",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "v2QmdyV8FK7aeTPl"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Stone Rune: passive benefits while you carry the inscribed object.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "2TjCY3wUFTxaRvZc",
+      "name": "Stone Rune",
+      "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "PbqfsfOWAfXMkqQX"
+          },
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "yyBzldU5IxkZkRQ3"
+          },
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "xQIbRIGiGDdGWVpf"
+          },
+          {
+            "key": "system.attributes.movement.speeds.climb",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "XszbuXdEHhvTjFaM"
+          },
+          {
+            "key": "system.attributes.movement.speeds.burrow",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "FcrV1SJz93xU0mdC"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Charmed and Incapacitated with a Speed of 0 for 1 minute. Repeat the save at the end of each turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "charmed",
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

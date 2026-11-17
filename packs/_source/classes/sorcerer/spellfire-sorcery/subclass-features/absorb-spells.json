@@ -1,0 +1,130 @@
+{
+  "name": "Absorb Spells",
+  "type": "feat",
+  "_id": "VWNfGihG1j6XM2Ir",
+  "img": "icons/magic/control/energy-stream-link-blue.webp",
+  "folder": "vcCFB51IlOTBjsKj",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell} prepared. In addition, whenever a target fails the saving throw against a Counterspell you cast, you regain 1d4 Sorcery Points.</p><section class=\"secret\" id=\"secret-kpFyH93ZEm1YLEQt\"><p><strong>Foundry Note</strong></p><p>Add the rolled Sorcery Points to your Font of Magic yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Spellfire Sorcery 6",
+    "activities": {
+      "S7RowHHndpEo1gQi": {
+        "type": "utility",
+        "_id": "S7RowHHndpEo1gQi",
+        "sort": 100000,
+        "name": "Absorb Spells",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "A target fails its save against your Counterspell"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Sorcery Points regained",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "absorb-spells",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

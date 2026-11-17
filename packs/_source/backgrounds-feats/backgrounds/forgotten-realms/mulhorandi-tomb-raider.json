@@ -1,0 +1,292 @@
+{
+  "name": "Mulhorandi Tomb Raider",
+  "type": "background",
+  "_id": "UIbc0q8J4clrltbp",
+  "img": "icons/environment/settlement/pyramid.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You grew up in a land of living god-kings, raised on countless tales of ancient empires and buried cities. In those stories, Mulhorand overflowed with forgotten riches—priceless treasures waiting for anyone clever and brave enough to find them. You have made it your mission to explore the crypts, tombs, and pyramids of your homeland and reclaim the relics of your people.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt]{Lucky}</p><p><strong>Skill Proficiencies:</strong> Investigation and Religion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulMasonsTool]{Mason's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLightHamme]{Light Hammer}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulMasonsTool]{Mason's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLadder00000]{Ladder}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPole0000000]{Pole}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd5e.equipment24.Item.phbagString00000]{String}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, 5 @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torches}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 26 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "mulhorandi-tomb-raider",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "R4qITCgkRBnmy6H2": {
+        "_id": "R4qITCgkRBnmy6H2",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Intelligence scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "uxuBiOj6ARPOTRMa": {
+        "_id": "uxuBiOj6ARPOTRMa",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Investigation and Religion. It also grants you proficiency in Mason's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:inv",
+            "skills:rel",
+            "tool:art:mason"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "uX4ZA93HBVvrQulP": {
+        "_id": "uX4ZA93HBVvrQulP",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Lucky feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.0FdfMi10b60fl9Wt",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DKsLiDbnD7cMjED3": {
+        "_id": "DKsLiDbnD7cMjED3",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "CHy2zYBoNyQ88ctP",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "jVwRd39eXM7esZ6m",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepLightHamme",
+        "requiresProficiency": false,
+        "_id": "9XsJsg428Pb8lewx",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulMasonsTool",
+        "requiresProficiency": false,
+        "_id": "lEQyxxmz1cq8va5i",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBackpack000",
+        "requiresProficiency": false,
+        "_id": "JXCW7S5MNsSw7eeF",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBedroll0000",
+        "requiresProficiency": false,
+        "_id": "vDMxmjammfbJHE0v",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCrowbar0000",
+        "requiresProficiency": false,
+        "_id": "yJDPv4zfeoDAF8cq",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLadder00000",
+        "requiresProficiency": false,
+        "_id": "NUV6PGwGnQJUzxlz",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPole0000000",
+        "requiresProficiency": false,
+        "_id": "oHWak2z6chZpbzZl",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 900000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "PzhT1yrgXOr2Z73r",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1000000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRope0000000",
+        "requiresProficiency": false,
+        "_id": "GWJsysEcrA6zuvM9",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagString00000",
+        "requiresProficiency": false,
+        "_id": "5KinoOrblMQr3PVl",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "PICaximxOwysuewi",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1300000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTorch000000",
+        "requiresProficiency": false,
+        "_id": "U64Va6duwVIKqGvV",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "DAfXQMe2ZEJtvUQI",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "jHtilv8gcePsrlA1",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1600000
+      },
+      {
+        "count": 26,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "5yJignPCllHdTEbS",
+        "group": "CHy2zYBoNyQ88ctP",
+        "sort": 1700000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

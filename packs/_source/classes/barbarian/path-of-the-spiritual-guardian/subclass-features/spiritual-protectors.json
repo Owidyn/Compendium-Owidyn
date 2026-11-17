@@ -1,0 +1,151 @@
+{
+  "name": "Spiritual Protectors",
+  "type": "feat",
+  "_id": "XPJViP6TErs0xPoJ",
+  "img": "icons/magic/death/undead-ghost-strike-white.webp",
+  "folder": "YWjvMIwGUnWKjKht",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>Your Rage summons spectral warriors to your aid. While your Rage is active, when you hit a creature with a weapon or an Unarmed Strike, it becomes a target of the spirits, which cause one of the following effects of your choice.</p><p><strong>Distract.</strong> Until the start of your next turn, the target has Disadvantage on attack rolls against targets other than you or another Barbarian with this feature.</p><p><strong>Hinder.</strong> You can use the Slow mastery property in addition to a different mastery property you are using with that weapon.</p><p><strong>Strike.</strong> The target takes an extra 1d4 Cold, Fire, or Lightning damage (your choice).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Spiritual Guardian 3",
+    "activities": {
+      "azsZEWucMpg3Ewt7": {
+        "type": "damage",
+        "_id": "azsZEWucMpg3Ewt7",
+        "sort": 100000,
+        "name": "Spirit Strike",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "While raging, you hit with a weapon or an Unarmed Strike"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "cold",
+                "fire",
+                "lightning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "spiritual-protectors",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

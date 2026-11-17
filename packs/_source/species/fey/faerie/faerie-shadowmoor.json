@@ -1,0 +1,216 @@
+{
+  "name": "Faerie, Shadowmoor",
+  "type": "race",
+  "_id": "OA4DGmAWG2x4n9By",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "folder": "uH3dxToSfX8z6Kpf",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Faeries are mischievous fey that look like insects with humanoid features. Their size and shape vary, but all have antennae, black eyes, chitinous skin, and insect legs and wings. Every faerie is born from a flower and has innate magic, which many use for pranks.</p><p>Some Lorwyn faeries serve Queen Oura, who has proclaimed herself their ruler, though not all accept her authority. In Shadowmoor, faeries may instead revere Queen Maralen, the elf who overthrew the former faerie queen and who, some say, brought about the collision of Lorwyn and Shadowmoor.</p><p>Unlike their Lorwyn kin, Shadowmoor faeries have Darkvision with a range of 120 feet.</p><h3>Faerie Traits</h3><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Small (about 2–4 feet tall)</p><p><strong>Speed:</strong> 30 feet, Fly 30 feet</p><p><strong>Darkvision:</strong> 120 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.RnSD6C5oG2nUfqAK]{Faerie Magic}.</strong> You know the @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidcraft} cantrip. Starting at character level 3, you can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire} with this trait, and starting at character level 5, you can also cast @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} with it. Once you cast either spell with this trait, you can't cast that spell this way again until you finish a Long Rest; you can also cast either of them with any spell slots of the appropriate level you have. Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (chosen when you select this species).</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.25gc7yzgusA07aLE]{Flight}.</strong> Thanks to your wings, you have a Fly Speed equal to your Speed. You can't use this Fly Speed while wearing Medium or Heavy armor.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "faerie-shadowmoor",
+    "type": {
+      "value": "fey",
+      "custom": "",
+      "subtype": "Faerie"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "30",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 120,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "fXEOXeGUg8k0mumw": {
+        "_id": "fXEOXeGUg8k0mumw",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Small (about 2–4 feet tall)",
+        "flags": {}
+      },
+      "NB65yqPB2GGtnyup": {
+        "_id": "NB65yqPB2GGtnyup",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Faerie Traits",
+        "title": "Faerie Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.RnSD6C5oG2nUfqAK",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.25gc7yzgusA07aLE",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "4N6mskZfrZb0at2R": {
+        "_id": "4N6mskZfrZb0at2R",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Faerie Magic",
+        "title": "Faerie Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDruidcraft",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EDaKUrCHFqWtoDEE": {
+        "_id": "EDaKUrCHFqWtoDEE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Faerie Magic (Level 3)",
+        "title": "Faerie Magic (Level 3)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFaerieFire",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "yUc1Gp663PNwubJ0": {
+        "_id": "yUc1Gp663PNwubJ0",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Faerie Magic (Level 5)",
+        "title": "Faerie Magic (Level 5)",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEnlargeRed",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

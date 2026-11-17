@@ -1,0 +1,282 @@
+{
+  "name": "Psi Warrior",
+  "type": "subclass",
+  "_id": "3wOqMvzdHxidLAk2",
+  "img": "icons/magic/control/debuff-energy-hold-pink.webp",
+  "folder": "1qN5S1jNH1BkawXp",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Augment Physical Might with Psionic Power</p></blockquote><p>Psi Warriors awaken the power of their minds to augment their physical might, infusing their weapon strikes with psionic power, lashing out with telekinetic energy, and raising barriers of mental force.</p><h3>Psi Warrior Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.khClJFQwVxfeJyL4]{Psionic Power}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.6c34YN9gQaWts9tc]{Telekinetic Adept}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.o9mhJXXLeXgJ2Ep0]{Guarded Mind}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.gd84HBAAxZfHPLpZ]{Bulwark of Force}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.p9zsCUSzSgzeRXr8]{Telekinetic Master}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "psi-warrior",
+    "classIdentifier": "fighter",
+    "advancement": {
+      "09Q0tKMNPSorQZdV": {
+        "_id": "09Q0tKMNPSorQZdV",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.khClJFQwVxfeJyL4",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KJcRHHqlJoTVAODl": {
+        "_id": "KJcRHHqlJoTVAODl",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.6c34YN9gQaWts9tc",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Uimmr7R0EYap8N6v": {
+        "_id": "Uimmr7R0EYap8N6v",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.o9mhJXXLeXgJ2Ep0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "5C5ZahOxOSDDuezY": {
+        "_id": "5C5ZahOxOSDDuezY",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.gd84HBAAxZfHPLpZ",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EAIVEjomBtf4CYzO": {
+        "_id": "EAIVEjomBtf4CYzO",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.p9zsCUSzSgzeRXr8",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "W6m4vLtlQEKhJynB": {
+        "_id": "W6m4vLtlQEKhJynB",
+        "type": "Trait",
+        "level": 10,
+        "name": "Guarded Mind",
+        "title": "Guarded Mind",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:psychic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "rJFxnkaCAVnRzjNH": {
+        "_id": "rJFxnkaCAVnRzjNH",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Telekinetic Master",
+        "title": "Telekinetic Master",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplTelekinesi",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "method": "innate",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VbgmZHMoCT3wfcMj": {
+        "_id": "VbgmZHMoCT3wfcMj",
+        "type": "ScaleValue",
+        "name": "Psionic Energy Die",
+        "title": "Psionic Energy Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            },
+            "5": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "11": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "17": {
+              "number": 1,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "j4sJeRBFpd92LlJB": {
+        "_id": "j4sJeRBFpd92LlJB",
+        "type": "ScaleValue",
+        "name": "Psionic Energy Dice",
+        "title": "Psionic Energy Dice",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "dice",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 4
+            },
+            "5": {
+              "value": 6
+            },
+            "9": {
+              "value": 8
+            },
+            "13": {
+              "value": 10
+            },
+            "17": {
+              "value": 12
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "name": "Mythalkeeper",
+  "type": "background",
+  "_id": "G5cXteByvQovZN6Q",
+  "img": "icons/magic/symbols/runes-star-orange-purple.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Mythals are sources of immense magic that can alter the Weave or even reality itself. Most were built in ancient times, and many have since been damaged or fallen dormant. As a mythalkeeper from the Dalelands, you likely first encountered a mythal in the ruins of Myth Drannor. You now travel Faerûn seeking other ruined places of power, hoping to learn more about the history and powers of mythals—or even to repair a failing one.</p><p><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.Kj7f6WGfP8GVfmt1]{Crafter}</p><p><strong>Skill Proficiencies:</strong> Arcana and History</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulJewelersTo]{Jeweler's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulJewelersTo]{Jeweler's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPerfume0000]{Perfume}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000]{Shovel}, @UUID[Compendium.dnd5e.equipment24.Item.phbagString00000]{String}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 16 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "mythalkeeper",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "OkgQAWaKydcDWCwo": {
+        "_id": "OkgQAWaKydcDWCwo",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Intelligence, Wisdom, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "4BzRXJEgG5wYmIdU": {
+        "_id": "4BzRXJEgG5wYmIdU",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Arcana and History. It also grants you proficiency in Jeweler's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:arc",
+            "skills:his",
+            "tool:art:jeweler"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "CeM6vsHgBzaJNLwn": {
+        "_id": "CeM6vsHgBzaJNLwn",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Crafter feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.Kj7f6WGfP8GVfmt1",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "bEp24cBzeiStskiY": {
+        "_id": "bEp24cBzeiStskiY",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "vpNrERmdQnbrBrHt",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepQuartersta",
+        "requiresProficiency": false,
+        "_id": "SGkKBDVZDmTHdU85",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulJewelersTo",
+        "requiresProficiency": false,
+        "_id": "1MieZzS9bZ0pBJZL",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPerfume0000",
+        "requiresProficiency": false,
+        "_id": "i1rEIylK0AHUL7OQ",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "WLoO9R8j0RTv4EWc",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagRobe0000000",
+        "requiresProficiency": false,
+        "_id": "CpkKLApqiUh1QyTd",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagShovel00000",
+        "requiresProficiency": false,
+        "_id": "sgNxakRFHBRGPYDp",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagString00000",
+        "requiresProficiency": false,
+        "_id": "cBCTtzCxV35PhPLJ",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "lU30T0Diqlj6eZ7l",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 900000
+      },
+      {
+        "count": 16,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "KUNLUOBm6Lljw3Ah",
+        "group": "vpNrERmdQnbrBrHt",
+        "sort": 1000000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

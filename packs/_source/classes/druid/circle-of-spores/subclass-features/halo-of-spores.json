@@ -1,0 +1,156 @@
+{
+  "name": "Halo of Spores",
+  "type": "feat",
+  "_id": "6rIWTDwGwGF4uFSJ",
+  "img": "icons/consumables/mushrooms/alien-spotted-blue.webp",
+  "folder": "e4qAu10I9kjDT1zK",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You are surrounded by invisible necrotic spores that are harmless until you unleash them. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can take a Reaction to deal 1d4 Necrotic damage to it unless it succeeds on a Constitution saving throw against your spell save DC. The damage increases to 1d6 at Druid level 6, 1d8 at level 10, and 1d10 at level 14.</p><section class=\"secret\" id=\"secret-58Jben6EGDqQwUgq\"><p><strong>Foundry Note</strong></p><p>With Symbiotic Entity, roll the die twice (add the second die yourself).</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Circle of Spores 3",
+    "activities": {
+      "LbgDYuvjBAISMbFm": {
+        "type": "save",
+        "_id": "LbgDYuvjBAISMbFm",
+        "sort": 100000,
+        "name": "Halo of Spores",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A creature moves within 10 feet of you or starts its turn there"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "10",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.circle-of-spores.halo"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "halo-of-spores",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

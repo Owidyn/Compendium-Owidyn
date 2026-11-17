@@ -1,0 +1,686 @@
+{
+  "name": "Battle Master",
+  "type": "subclass",
+  "_id": "aEGiBuxI3ZMPtoIL",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "folder": "mDeU1CHGDBpvtQlO",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Master Sophisticated Battle Maneuvers</p></blockquote><p>Battle Masters are students of the art of battle, learning martial techniques passed down through generations. The most accomplished are well-rounded figures who combine carefully honed combat skills with academic study of history, theory, and the arts.</p><h3>Battle Master Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.NAMkw4rRNMT46vWa]{Combat Superiority}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.wZFfLDI4l4zZFARn]{Student of War}</td></tr><tr><td>7</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.do1EnRbgJMccGWfS]{Know Your Enemy}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.pLH1nZXcIAnxGswy]{Improved Combat Superiority}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.LEC0tHBp8clVdeeu]{Relentless}</td></tr><tr><td>18</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.j1PXnjHDxwutrBzW]{Ultimate Combat Superiority}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "battle-master",
+    "classIdentifier": "fighter",
+    "advancement": {
+      "3uMxF8XDeOwvh1uj": {
+        "_id": "3uMxF8XDeOwvh1uj",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.NAMkw4rRNMT46vWa",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.wZFfLDI4l4zZFARn",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PMkvl8uYrSbg3bds": {
+        "_id": "PMkvl8uYrSbg3bds",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.do1EnRbgJMccGWfS",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EHM8dBdy2c781D9M": {
+        "_id": "EHM8dBdy2c781D9M",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pLH1nZXcIAnxGswy",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PG4Ka42dqMkVWkJK": {
+        "_id": "PG4Ka42dqMkVWkJK",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LEC0tHBp8clVdeeu",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KmyjXmkjPXqGbpXd": {
+        "_id": "KmyjXmkjPXqGbpXd",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.j1PXnjHDxwutrBzW",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "amZ1suxkAzucydoP": {
+        "_id": "amZ1suxkAzucydoP",
+        "type": "Trait",
+        "level": 3,
+        "name": "Student of War",
+        "title": "Student of War",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "skills:acr",
+                "skills:ani",
+                "skills:ath",
+                "skills:his",
+                "skills:ins",
+                "skills:itm",
+                "skills:per",
+                "skills:prc",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "fRpFRXHSVrWYplAm": {
+        "_id": "fRpFRXHSVrWYplAm",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Maneuvers",
+        "title": "Maneuvers",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 3,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HDv9BcFZ8kS2fjOV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.DDoZa1CUlsUiwak5"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hb94qYUB3oM4nlLx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cXbZ78oHlsDxfyTV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.nSFBIocD098JcufF"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IPBf1mhRRL2bkGvk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QQNkr8k7P5zuho9W"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8AuaQLWccMjMuXx3"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.v3CPJyTEOo0lpQYT"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pjb3xAIZPPsAqFXx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.a2DQ1I1mFE4TqVXD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.J4jPAWIvbWvHoLgH"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LGLtejlRpvXbUXez"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UhzAsQWqB1SxbCVC"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lECgrmPwf5mfPuRu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5CPFd2aujkjCGMmu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1gwi0dES39DimdqU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UweHSHQ1uo99cZDu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.BI6IByjkWV8ZUyUN"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CJVgkJxOY5JH6XYp"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9cwTrFCLMi7eLgpj"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zTW8f61Ao1RKZQzo"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lIGPsGnpIhpcqf6Y"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Up6EBiQHPh3Hak91"
+            }
+          ],
+          "restriction": {
+            "type": "class",
+            "subtype": "maneuver",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ddXOfQdClgnqqZQq": {
+        "_id": "ddXOfQdClgnqqZQq",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Maneuvers",
+        "title": "Maneuvers",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HDv9BcFZ8kS2fjOV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.DDoZa1CUlsUiwak5"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hb94qYUB3oM4nlLx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cXbZ78oHlsDxfyTV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.nSFBIocD098JcufF"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IPBf1mhRRL2bkGvk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QQNkr8k7P5zuho9W"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8AuaQLWccMjMuXx3"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.v3CPJyTEOo0lpQYT"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pjb3xAIZPPsAqFXx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.a2DQ1I1mFE4TqVXD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.J4jPAWIvbWvHoLgH"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LGLtejlRpvXbUXez"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UhzAsQWqB1SxbCVC"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lECgrmPwf5mfPuRu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5CPFd2aujkjCGMmu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1gwi0dES39DimdqU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UweHSHQ1uo99cZDu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.BI6IByjkWV8ZUyUN"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CJVgkJxOY5JH6XYp"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9cwTrFCLMi7eLgpj"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zTW8f61Ao1RKZQzo"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lIGPsGnpIhpcqf6Y"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Up6EBiQHPh3Hak91"
+            }
+          ],
+          "restriction": {
+            "type": "class",
+            "subtype": "maneuver",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "LaVEGfudFyORek4V": {
+        "_id": "LaVEGfudFyORek4V",
+        "type": "ItemChoice",
+        "level": 10,
+        "name": "Maneuvers",
+        "title": "Maneuvers",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "10": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HDv9BcFZ8kS2fjOV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.DDoZa1CUlsUiwak5"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hb94qYUB3oM4nlLx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cXbZ78oHlsDxfyTV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.nSFBIocD098JcufF"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IPBf1mhRRL2bkGvk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QQNkr8k7P5zuho9W"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8AuaQLWccMjMuXx3"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.v3CPJyTEOo0lpQYT"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pjb3xAIZPPsAqFXx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.a2DQ1I1mFE4TqVXD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.J4jPAWIvbWvHoLgH"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LGLtejlRpvXbUXez"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UhzAsQWqB1SxbCVC"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lECgrmPwf5mfPuRu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5CPFd2aujkjCGMmu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1gwi0dES39DimdqU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UweHSHQ1uo99cZDu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.BI6IByjkWV8ZUyUN"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CJVgkJxOY5JH6XYp"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9cwTrFCLMi7eLgpj"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zTW8f61Ao1RKZQzo"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lIGPsGnpIhpcqf6Y"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Up6EBiQHPh3Hak91"
+            }
+          ],
+          "restriction": {
+            "type": "class",
+            "subtype": "maneuver",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ny3yIai8jeuIdE2Z": {
+        "_id": "ny3yIai8jeuIdE2Z",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Maneuvers",
+        "title": "Maneuvers",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HDv9BcFZ8kS2fjOV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.DDoZa1CUlsUiwak5"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hb94qYUB3oM4nlLx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cXbZ78oHlsDxfyTV"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.nSFBIocD098JcufF"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.IPBf1mhRRL2bkGvk"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QQNkr8k7P5zuho9W"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.8AuaQLWccMjMuXx3"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.v3CPJyTEOo0lpQYT"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pjb3xAIZPPsAqFXx"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.a2DQ1I1mFE4TqVXD"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.J4jPAWIvbWvHoLgH"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LGLtejlRpvXbUXez"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UhzAsQWqB1SxbCVC"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lECgrmPwf5mfPuRu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5CPFd2aujkjCGMmu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1gwi0dES39DimdqU"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.UweHSHQ1uo99cZDu"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.BI6IByjkWV8ZUyUN"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CJVgkJxOY5JH6XYp"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9cwTrFCLMi7eLgpj"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.zTW8f61Ao1RKZQzo"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lIGPsGnpIhpcqf6Y"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Up6EBiQHPh3Hak91"
+            }
+          ],
+          "restriction": {
+            "type": "class",
+            "subtype": "maneuver",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": null,
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "l407cZIMkCRJdTvd": {
+        "_id": "l407cZIMkCRJdTvd",
+        "type": "ScaleValue",
+        "name": "Superiority Die",
+        "title": "Superiority Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "10": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "18": {
+              "number": 1,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "WO4sOhCaEju0SpZH": {
+        "_id": "WO4sOhCaEju0SpZH",
+        "type": "ScaleValue",
+        "name": "Superiority Dice",
+        "title": "Superiority Dice",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "dice",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "15": {
+              "value": 6
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

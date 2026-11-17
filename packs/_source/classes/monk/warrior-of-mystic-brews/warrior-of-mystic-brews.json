@@ -1,0 +1,170 @@
+{
+  "name": "Warrior of Mystic Brews",
+  "type": "subclass",
+  "_id": "CQOLHlsMiHrBOPJm",
+  "img": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp",
+  "folder": "ygHdvc9E72jK0J7J",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Drink Mystic Brews to Overwhelm and Confound Foes</p></blockquote><p>Warriors of Mystic Brews move with the jerky, unpredictable motions of someone who is drunk, yet their apparently erratic stumbles hide a carefully executed dance of blocks, parries, advances, attacks, and retreats. They frequent bars and taverns to gather information or spy on threats, and they drink magical concoctions that enhance their martial arts.</p><p>They often play the fool to bring joy to the downtrodden or humility to the arrogant, but in battle they are maddening, masterful foes.</p><h3>Warrior of Mystic Brews Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.KKcZsvlX7ujEtKAG]{Bonus Proficiencies}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.cv3PKV5U03Ofey6K]{Drunken Technique}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.HqLglfIJTH028zlG]{Tipsy Sway}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.5g9I5fOs73RAJGOa]{Mystic Brew}</td></tr><tr><td>11</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.WcksPvU3S87nNoIY]{Wizened Brewer}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Qw2gKTdRsqS3DyS4]{Master Brewer}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.tBaCMwaVpQvr7K27]{Intoxicated Frenzy}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "warrior-of-mystic-brews",
+    "classIdentifier": "monk",
+    "advancement": {
+      "91UpKpIEYgBjqrrA": {
+        "_id": "91UpKpIEYgBjqrrA",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.KKcZsvlX7ujEtKAG",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.cv3PKV5U03Ofey6K",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "gV3Dr5Um085YhLid": {
+        "_id": "gV3Dr5Um085YhLid",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.HqLglfIJTH028zlG",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5g9I5fOs73RAJGOa",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "eEHxf9uZeFSlUpDZ": {
+        "_id": "eEHxf9uZeFSlUpDZ",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.WcksPvU3S87nNoIY",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "jyFkfeDOc6vF97NQ": {
+        "_id": "jyFkfeDOc6vF97NQ",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Qw2gKTdRsqS3DyS4",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.tBaCMwaVpQvr7K27",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RV6xYV6GKRPF4QhD": {
+        "_id": "RV6xYV6GKRPF4QhD",
+        "type": "Trait",
+        "level": 3,
+        "name": "Bonus Proficiencies",
+        "title": "Bonus Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "skills:prf",
+            "tool:art:brewer"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

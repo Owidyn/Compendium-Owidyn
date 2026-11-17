@@ -1,0 +1,543 @@
+{
+  "name": "Abjurer",
+  "type": "subclass",
+  "_id": "OuDd71MuLYEJB6A0",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "folder": "an5lQgy96IEQbRmc",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Shield Companions and Banish Foes</p></blockquote><p>Your study of magic focuses on spells that block, banish, or protect—ending harmful effects, banishing evil influences, and protecting the weak. Abjurers are sought out when baleful spirits require exorcism, when places must be guarded against magical spying, and when portals to other planes must be closed. Adventuring parties value Abjurers for the protection they offer against all kinds of hostile magic and other attacks.</p><h3>Abjurer Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.1tdyaJAKcqKBLYnA]{Abjuration Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.MiHMVV2iaR1GEqZJ]{Arcane Ward}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.gjWWWqkqoXfQI6Jd]{Projected Ward}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qI6rjsfmKc6C8KZr]{Spell Breaker}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bXxR7i2NQx9SEWTv]{Spell Resistance}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "abjurer",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "PlYMoGCteL3fMHS1": {
+        "_id": "PlYMoGCteL3fMHS1",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.1tdyaJAKcqKBLYnA",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MiHMVV2iaR1GEqZJ",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "pF3Wb5MKhMgUNKRC": {
+        "_id": "pF3Wb5MKhMgUNKRC",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.gjWWWqkqoXfQI6Jd",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "KpfV2Qmxjoc5xExj": {
+        "_id": "KpfV2Qmxjoc5xExj",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qI6rjsfmKc6C8KZr",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "YJBqF8pqoHx1nmC4": {
+        "_id": "YJBqF8pqoHx1nmC4",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bXxR7i2NQx9SEWTv",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DNS8Q7q0nGgvWiBu": {
+        "_id": "DNS8Q7q0nGgvWiBu",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add two Wizard spells of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "2KlD8VXmXC7wzb6Z": {
+        "_id": "2KlD8VXmXC7wzb6Z",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "uaNlij3GbAdaFzts": {
+        "_id": "uaNlij3GbAdaFzts",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "UttCpL8YtTnYZA1n": {
+        "_id": "UttCpL8YtTnYZA1n",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "uBNcBlMDyIHmecin": {
+        "_id": "uBNcBlMDyIHmecin",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Sz8KvRHaAzaSnQDA": {
+        "_id": "Sz8KvRHaAzaSnQDA",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "sQBLlswwYuVDGrEG": {
+        "_id": "sQBLlswwYuVDGrEG",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "f33fYL8Oij2aMhxm": {
+        "_id": "f33fYL8Oij2aMhxm",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Abjuration Savant",
+        "title": "Abjuration Savant",
+        "hint": "Add one Wizard spell of the Abjuration school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "abj"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "WQ8ils26dFN4IlF4": {
+        "_id": "WQ8ils26dFN4IlF4",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Spell Breaker",
+        "title": "Spell Breaker",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCounterspe",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelMagi",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "name": "Empowered Channeling",
+  "type": "feat",
+  "_id": "qFwoTbzZjKNnnuB1",
+  "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
+  "folder": "WAvLaXb3LGEGkvRL",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Your ability to channel spirits improves. You gain the following benefits.</p><p><strong>Power from Beyond.</strong> Once per turn, when you cast a Bard spell with a spell slot that deals damage or restores Hit Points, roll 1d6: you gain a bonus equal to the number rolled to one of the spell's damage rolls or to the total Hit Points it restores.</p><p><strong>Spiritual Manifestation.</strong> You always have @UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritGuar]{Spirit Guardians} prepared, and you can cast it once without a spell slot, regaining that use when you finish a Long Rest. Whenever you cast it, you can modify it so that the spirits also guard against worldly threats: you and your allies in its Emanation have Half Cover. Once you modify the spell this way, you can't do so again until you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "College of Spirits 6",
+    "activities": {
+      "Dc3tY38JjfStXFOQ": {
+        "type": "utility",
+        "_id": "Dc3tY38JjfStXFOQ",
+        "sort": 100000,
+        "name": "Power from Beyond",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Bonus to a damage roll or healing",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "OJrAgFBIWoVYAlqk": {
+        "type": "utility",
+        "_id": "OJrAgFBIWoVYAlqk",
+        "sort": 200000,
+        "name": "Guardian Cover",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Spirit Guardians"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "empowered-channeling",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

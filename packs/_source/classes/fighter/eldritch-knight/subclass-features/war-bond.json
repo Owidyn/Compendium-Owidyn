@@ -1,0 +1,124 @@
+{
+  "name": "War Bond",
+  "type": "feat",
+  "_id": "jzALEZw6oT4Uhm2M",
+  "img": "icons/weapons/swords/sword-runed-glowing.webp",
+  "folder": "OqdgVLBSlJ2FdtpW",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You learn a ritual that creates a magical bond between yourself and one weapon. You perform it over 1 hour, which can be during a Short Rest; the weapon must be within your reach throughout, and at the end you touch it and forge the bond. The bond fails if another Fighter is bonded to the weapon or if it is a magic item someone else is attuned to.</p><p>Once bonded, you can't be disarmed of that weapon unless you have the Incapacitated condition, and if it is on the same plane of existence, you can summon it as a Bonus Action, teleporting it instantly to your hand. You can have up to two bonded weapons but summon only one at a time with a Bonus Action; to bond a third, you must break the bond with one of the other two.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Eldritch Knight 3",
+    "activities": {
+      "8z2AIP3EQWvIfYWj": {
+        "type": "utility",
+        "_id": "8z2AIP3EQWvIfYWj",
+        "sort": 100000,
+        "name": "Summon Bonded Weapon",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "war-bond",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

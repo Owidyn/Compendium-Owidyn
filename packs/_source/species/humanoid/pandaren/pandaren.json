@@ -1,0 +1,116 @@
+{
+  "name": "Pandaren",
+  "type": "race",
+  "_id": "ELYJstp5FVuNAT6g",
+  "img": "icons/commodities/treasure/figurine-bear.webp",
+  "folder": "isciwRxHOwpwTUKo",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The pandaren settled around the Vale of Eternal Blossoms millennia before the Great Sundering and, guided by the four August Celestials, built a rich tradition of philosophy, art, farming, and medicine. Enslaved for ages by the mogu, they kept their culture alive through their monks, who taught them to fight without weapons, and overthrew their masters to found an empire. When the Burning Legion first invaded, their emperor sacrificed himself to hide Pandaria in mists that lasted ten thousand years. Long before they lifted, the adventurous Liu Lang set out on the back of the giant turtle Shen-zin Su, the Wandering Isle, whose people share his love of adventure.</p><p><strong>Philosophies.</strong> When the mists vanished after the Cataclysm, the two philosophies of the Wandering Isle each joined a side: the Huojin, who teach swift and decisive action against injustice, joined the Horde; the Tushui, who value meditation, discernment, and a principled life, joined the Alliance.</p><p><strong>Renown.</strong> Choose the Huojin (Horde) or the Tushui (Alliance) philosophy: your Renown Score with that faction begins at 3.</p><h3>Pandaren Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 6–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.upJJajaIJKlRNoOb]{Bouncy}.</strong> You have Resistance to Bludgeoning damage from falling.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.hZFS802QpxvbfYoD]{Inner Peace}.</strong> When you spend Hit Point Dice to regain Hit Points at the end of a Short Rest, you regain 1 additional Hit Point per Hit Point Die you spend.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.hNk6apx5Pcv7Q8hm]{Quaking Palm}.</strong> When you hit a creature with a melee attack on your turn, your movement doesn't provoke Opportunity Attacks from that creature until the end of your turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "pandaren",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Pandaren"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "WxwDTJMla1k2e56X": {
+        "_id": "WxwDTJMla1k2e56X",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 6–7 feet tall)",
+        "flags": {}
+      },
+      "Fv4xoB7aor1cdW9A": {
+        "_id": "Fv4xoB7aor1cdW9A",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Pandaren Traits",
+        "title": "Pandaren Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.upJJajaIJKlRNoOb",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.hZFS802QpxvbfYoD",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.hNk6apx5Pcv7Q8hm",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

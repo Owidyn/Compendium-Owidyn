@@ -1,0 +1,204 @@
+{
+  "name": "Circle of the Stars",
+  "type": "subclass",
+  "_id": "5Vx28xBWfjN5ER19",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
+  "folder": "psD2pZGqoZ5u4mtV",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Harness Secrets Hidden in Constellations</p></blockquote><p>The Circle of the Stars has tracked heavenly patterns since time immemorial, uncovering secrets hidden in the constellations. Its Druids seek to harness the powers of the cosmos through that knowledge.</p><h3>Circle of the Stars Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.RaDiEx3MZ2Jjegxt]{Star Map}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.wX40MZSodC6FBVNN]{Starry Form}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.vp8WDNriEU0eFPeo]{Cosmic Omen}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.Yb4BYP5RDH79NCQc]{Twinkling Constellations}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.X71f3GlAkNHC8AGo]{Full of Stars}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "circle-of-the-stars",
+    "classIdentifier": "druid",
+    "advancement": {
+      "W0HiJYc2z0ZSIqwe": {
+        "_id": "W0HiJYc2z0ZSIqwe",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.RaDiEx3MZ2Jjegxt",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.wX40MZSodC6FBVNN",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "q9DcMMz4rj9ltGl0": {
+        "_id": "q9DcMMz4rj9ltGl0",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.vp8WDNriEU0eFPeo",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "gRa5oi4aC31UolCl": {
+        "_id": "gRa5oi4aC31UolCl",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.Yb4BYP5RDH79NCQc",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wqeHYZJNQlCi5gBL": {
+        "_id": "wqeHYZJNQlCi5gBL",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.X71f3GlAkNHC8AGo",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Kib5Tdj2ZWfKbeMl": {
+        "_id": "Kib5Tdj2ZWfKbeMl",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Star Map",
+        "title": "Star Map",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidance00",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "max(1, @abilities.wis.mod)",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "fO8BPlWl1juFxpSD": {
+        "_id": "fO8BPlWl1juFxpSD",
+        "type": "ScaleValue",
+        "name": "Constellation Die",
+        "title": "Constellation Die",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "constellation",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "10": {
+              "number": 2,
+              "faces": 8,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

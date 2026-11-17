@@ -1,0 +1,235 @@
+{
+  "name": "Guard",
+  "type": "background",
+  "_id": "dTZ0u2FgQyB1jdaq",
+  "img": "icons/equipment/shield/heater-steel-gray.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Your feet still ache at the memory of the endless hours you stood watch in the tower. You were trained to keep one eye beyond the wall, on the lookout for raiders charging out of the nearby forest, and the other inside it, searching for pickpockets and troublemakers.</p><p><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftAlert000000]{Alert}</p><p><strong>Skill Proficiencies:</strong> Athletics and Perception</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepLightCross]{Light Crossbow}, 20 @UUID[Compendium.dnd5e.equipment24.Item.phbamoBolts00000]{Bolts}, Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagLanternHood]{Hooded Lantern}, @UUID[Compendium.dnd5e.equipment24.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 12 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "guard",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "mK31VgN7BC2Hd6BU": {
+        "_id": "mK31VgN7BC2Hd6BU",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Intelligence, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "076J0AX7YIpEnNLt": {
+        "_id": "076J0AX7YIpEnNLt",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Athletics and Perception. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:prc"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "B5LSEivsm3zIbKCz": {
+        "_id": "B5LSEivsm3zIbKCz",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Alert feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftAlert000000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "iihlICMvCWK6hTqf": {
+        "_id": "iihlICMvCWK6hTqf",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "YwCTVILkXXj4tcqU",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepSpear00000",
+        "requiresProficiency": false,
+        "_id": "EZ4mLdDV871LPQCA",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepLightCross",
+        "requiresProficiency": false,
+        "_id": "xWRJ3FFZOkPgXae7",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 300000
+      },
+      {
+        "count": 20,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbamoBolts00000",
+        "requiresProficiency": false,
+        "_id": "rj16zPJc5ouSnJLS",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "zjr5oNHPTghHFJ5o",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLanternHood",
+        "requiresProficiency": false,
+        "_id": "V2QhcOj1ObwmTLbE",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagManacles000",
+        "requiresProficiency": false,
+        "_id": "mLoPJ05Ic3BzIYVM",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagQuiver00000",
+        "requiresProficiency": false,
+        "_id": "yIOI5eCCHjlq8L6k",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "Of1V6Ao7KXbDao1C",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 900000
+      },
+      {
+        "count": 12,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "afSMfqSSXcsWZn4A",
+        "group": "YwCTVILkXXj4tcqU",
+        "sort": 1000000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

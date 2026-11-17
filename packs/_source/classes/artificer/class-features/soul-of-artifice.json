@@ -1,0 +1,130 @@
+{
+  "name": "Soul of Artifice",
+  "type": "feat",
+  "_id": "hARU5EsR9SpMegRr",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "folder": "4RbdHSEXTHThnBoK",
+  "sort": 1000000,
+  "system": {
+    "description": {
+      "value": "<p>You have developed a mystical bond with your magic items and can draw on it for help. You gain the following benefits.</p><p><strong>Cheat Death.</strong> If you're reduced to 0 Hit Points but not killed outright, you can disintegrate any number of Uncommon or Rare magic items created by your Replicate Magic Item feature. If you do, your Hit Points instead change to 20 times the number of items disintegrated.</p><p><strong>Magical Guidance.</strong> When you finish a Short Rest, you regain all expended uses of your Flash of Genius if you are attuned to at least one magic item.</p><section class=\"secret\" id=\"secret-iLsKHbBARaO9o10Y\"><p><strong>Foundry Note</strong></p><p>Cheat Death: set your Hit Points to 20 times the number of items you disintegrate. Magical Guidance: after a Short Rest, restore the uses of Flash of Genius yourself while attuned to an item.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Artificer 20",
+    "activities": {
+      "bMjQl654MpfbipWs": {
+        "type": "utility",
+        "_id": "bMjQl654MpfbipWs",
+        "sort": 100000,
+        "name": "Cheat Death",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You're reduced to 0 Hit Points but not killed outright"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "20 * 1",
+          "name": "Hit Points (20 per item disintegrated)",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "soul-of-artifice",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

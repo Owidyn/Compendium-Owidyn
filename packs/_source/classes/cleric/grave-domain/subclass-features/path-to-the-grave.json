@@ -1,0 +1,317 @@
+{
+  "name": "Path to the Grave",
+  "type": "feat",
+  "_id": "y63LohGcEa41Z7JA",
+  "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+  "folder": "8b4s1IZReQCm6H1J",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of you until the start of your next turn. While cursed, it has Disadvantage on attack rolls and saving throws. When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra Necrotic or Radiant damage (your choice) equal to your Cleric level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Grave Domain 3",
+    "activities": {
+      "wmWGdwQpAVpGR8Al": {
+        "type": "utility",
+        "_id": "wmWGdwQpAVpGR8Al",
+        "sort": 100000,
+        "name": "Path to the Grave",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:channel-divinity-cleric",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "wmWGdwQpAVpGR8Al"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "mxVF2UIrbVOcJLW8": {
+        "type": "damage",
+        "_id": "mxVF2UIrbVOcJLW8",
+        "sort": 200000,
+        "name": "End the Curse",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You or an ally hit the cursed target"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@classes.cleric.levels"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic",
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "path-to-the-grave",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "wmWGdwQpAVpGR8Al",
+      "name": "Path to the Grave",
+      "img": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "oqVv5Zm9HRwCSx1Y"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "EhMlohGMZlWHKwhU"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "7OeUJUjAbgYmn6Rj"
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "kDmli4phT911gZpk"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "j5fLlNtGDTM4SWjW"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "2k9z86YRxRp3cDOO"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "description": "<p>Disadvantage on attack rolls and saving throws until the start of the cleric's next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

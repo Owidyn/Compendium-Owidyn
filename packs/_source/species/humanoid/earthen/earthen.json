@@ -1,0 +1,180 @@
+{
+  "name": "Earthen",
+  "type": "race",
+  "_id": "A4Cx3YAQlqxntyNK",
+  "img": "icons/magic/earth/strike-fist-stone-gray.webp",
+  "folder": "8nrxJvwNlhDSpD0Q",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>The titans made the earthen in the Forge of Wills to help shape Azeroth so its Worldsoul could flourish, and the earthen carved out the caverns beneath the world. Many became dwarves under Yogg-Saron's curse of flesh, but earthen remain in Uldaman, Ulduar, Khaz Algar, and Deepholm. In Khaz Algar, the Awakening Machine—restored by Magni Bronzebeard with the power of Azeroth—now lets newly awakened earthen choose their own fate, and many leave to explore the world and join the Alliance or the Horde.</p><p>Earthen look like dwarves made of living stone and infused with Azerite, the lifeblood of Azeroth, with large crystals jutting from their bodies and fine mineral growths like hair and beards. They don't need to eat, but consuming certain minerals can benefit them—even changing the growth of their mineral \"hair.\"</p><p><strong>Renown.</strong> You have no starting Renown Score.</p><h3>Earthen Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–5 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p><strong>Darkvision:</strong> 120 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.jboSfOKdIsGfEHCo]{Azerite Surge}.</strong> When you take the Attack action on your turn, you can replace one of the attacks with a blast of Azerite energy in a 15-foot Cone. Each creature of your choice in the Cone regains 1d10 Hit Points; each other creature in it makes a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus), taking 1d10 Radiant damage on a failure or half as much on a success. Both the healing and the damage increase by 1d10 at character levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>@UUID[Compendium.dnd5e.origins24.Item.phbsptDwarvenRes]{Earthen Resilience}.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the &amp;Reference[Poisoned] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.cqEPAAHu882SC66O]{Ingest Minerals}.</strong> You don't gain Exhaustion levels from malnutrition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.B3mhYrt3X34IEyMp]{Quiet Contemplation}.</strong> When you spend Hit Point Dice at the end of a Short Rest, you regain 1 additional Hit Point per Hit Point Die you spend.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "earthen",
+    "type": {
+      "value": "humanoid",
+      "custom": "",
+      "subtype": "Earthen"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 120,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "HEwc1ld9yLpHzshl": {
+        "_id": "HEwc1ld9yLpHzshl",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 4–5 feet tall)",
+        "flags": {}
+      },
+      "aNla6VtI7DwYVUil": {
+        "_id": "aNla6VtI7DwYVUil",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Earthen Traits",
+        "title": "Earthen Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.jboSfOKdIsGfEHCo",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.origins24.Item.phbsptDwarvenRes",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.cqEPAAHu882SC66O",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.B3mhYrt3X34IEyMp",
+              "optional": false,
+              "sort": 3
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "1oahYOYWbmXGyzRE": {
+        "_id": "1oahYOYWbmXGyzRE",
+        "type": "Trait",
+        "level": 0,
+        "name": "Earthen Resilience",
+        "title": "Earthen Resilience",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "WGvS4KGncP0D0KtC": {
+        "_id": "WGvS4KGncP0D0KtC",
+        "type": "ScaleValue",
+        "name": "Azerite Surge",
+        "title": "Azerite Surge",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "azerite-surge",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "number": 1,
+              "faces": 10,
+              "modifiers": []
+            },
+            "5": {
+              "number": 2,
+              "faces": 10,
+              "modifiers": []
+            },
+            "11": {
+              "number": 3,
+              "faces": 10,
+              "modifiers": []
+            },
+            "17": {
+              "number": 4,
+              "faces": 10,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

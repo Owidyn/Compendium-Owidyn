@@ -1,0 +1,274 @@
+{
+  "_id": "UxkidIJHBT37UEIO",
+  "name": "Fairy Trickster",
+  "type": "feat",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "AhfZtY5Dxb6UOqO2": {
+        "type": "save",
+        "_id": "AhfZtY5Dxb6UOqO2",
+        "sort": 100000,
+        "name": "Flustering Strike",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You hit a creature with an attack roll"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "F6ltwJSCUdWv1VGD",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "gDNqxXQA0K3CGU3q": {
+        "_id": "gDNqxXQA0K3CGU3q",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "wis"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity or Charisma score by 1, to a maximum of 20.</p><p><strong>Faerie Trod Trotter.</strong> When you take the Disengage action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.</p><p><strong>Flustering Strike.</strong> When you hit a creature with an attack roll, you can try to fluster it: it must succeed on a Wisdom saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have Disadvantage on saving throws until the end of your next turn. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-Fq9uohOEJc7SpmpJ\"><p><strong>Foundry Note</strong></p><p>The save DC uses Charisma: change it to Dexterity in the activity if you increased Dexterity.</p></section>",
+      "chat": ""
+    },
+    "identifier": "fairy-trickster",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "_id": "F6ltwJSCUdWv1VGD",
+      "name": "Flustered",
+      "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "mFCwyq9kA2VFoeXn"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "gvysgERTrH7E5lVS"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "4P0ac27CjxbUID6r"
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "fUwWf4MpERCCPmbc"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "lEfQbe6NT62Yedrz"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "PpViZesxplYboqgh"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "sourceEnd",
+        "expired": false
+      },
+      "description": "<p>Disadvantage on saving throws until the end of the trickster's next turn.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

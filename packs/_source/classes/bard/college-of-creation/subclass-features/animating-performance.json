@@ -1,0 +1,242 @@
+{
+  "name": "Animating Performance",
+  "type": "feat",
+  "_id": "F5HKZKi6G5HCLDgH",
+  "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+  "folder": "DAG7Y53qWjX6OzXK",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>As a Magic action, you can animate one Large or smaller nonmagical item within 30 feet of you that isn't being worn or carried. It uses the @UUID[Compendium.compendium-owidyn.summons.Actor.aIfO8hzDxdQ7L00F]{Dancing Item} stat block, is Friendly to you and your allies, and obeys your commands. It lives for 1 hour, until it drops to 0 Hit Points, or until you die.</p><p>In combat, the item acts immediately after you on your Initiative count. It can move and use its Reaction on its own, but the only action it takes is the Dodge action, unless you take a Bonus Action to command it to take another action. If you have the Incapacitated condition, the item can take any action of its choice. When you use your Bardic Inspiration, you can command the item as part of the same Bonus Action.</p><p>Once you animate an item with this feature, you can't do so again until you finish a Long Rest, unless you expend a level 3+ spell slot to use it again. You can have only one item animated by this feature at a time; animating another makes the first one inanimate.</p><section class=\"secret\" id=\"secret-PtykyXFcSTBA4Kgu\"><p><strong>Foundry Note</strong></p><p>The Dancing Item gets ten plus five times your Bard level Hit Points; its slam adds your Proficiency Bonus.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "College of Creation 6",
+    "activities": {
+      "uK40RGAFzvwASiID": {
+        "type": "summon",
+        "_id": "uK40RGAFzvwASiID",
+        "sort": 100000,
+        "name": "Animate a Dancing Item",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "_id": "0juCXdxXCpGqoRI8",
+            "count": "",
+            "name": "Dancing Item",
+            "types": [],
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": "Compendium.compendium-owidyn.summons.Actor.aIfO8hzDxdQ7L00F"
+          }
+        ],
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "5 * @classes.bard.levels",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": "cha",
+          "disposition": true
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        }
+      },
+      "GswUdZ2qAPYIzKcD": {
+        "type": "utility",
+        "_id": "GswUdZ2qAPYIzKcD",
+        "sort": 200000,
+        "name": "Restore with a Level 3+ Slot",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "No action required"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "animating-performance",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

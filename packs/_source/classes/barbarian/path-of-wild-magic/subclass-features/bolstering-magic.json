@@ -1,0 +1,302 @@
+{
+  "name": "Bolstering Magic",
+  "type": "feat",
+  "_id": "zQBfEq4Q3d9pLa1r",
+  "img": "icons/magic/life/heart-glowing-red.webp",
+  "folder": "adzKKFTzdKoFqR1k",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>You can harness your wild magic to bolster yourself or a companion. As a Magic action, you can touch one creature (which can be yourself) and give it one of the following benefits of your choice.</p><ul><li>For 10 minutes, the creature can roll a d3 whenever it makes an attack roll or an ability check and add the number rolled to the d20 roll.</li><li>Roll a d3. The creature regains one expended spell slot of a level equal to the number rolled or lower (its choice). Once a creature receives this benefit, it can't receive it again until after a Long Rest.</li></ul><p>You can take this action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of Wild Magic 6",
+    "activities": {
+      "w4FBNwsG19Utv5mi": {
+        "type": "utility",
+        "_id": "w4FBNwsG19Utv5mi",
+        "sort": 100000,
+        "name": "Bolstering Magic (d3)",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "E8qDAJE9QR0IHUCM"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "yB1GYMsyUJHTd5mI": {
+        "type": "utility",
+        "_id": "yB1GYMsyUJHTd5mI",
+        "sort": 200000,
+        "name": "Bolstering Magic (Spell Slot)",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "touch",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d3",
+          "name": "Spell slot level",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "bolstering-magic",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "E8qDAJE9QR0IHUCM",
+      "name": "Bolstering Magic",
+      "img": "icons/magic/life/heart-glowing-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.attack.mwak.bonus",
+            "value": "1d3",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "BoPs51e7yOyo6Xmt"
+          },
+          {
+            "key": "system.rolls.attack.rwak.bonus",
+            "value": "1d3",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "cLrwQUGKUB04f6GB"
+          },
+          {
+            "key": "system.rolls.attack.msak.bonus",
+            "value": "1d3",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "2fMLBTmMX4CpIFrU"
+          },
+          {
+            "key": "system.rolls.attack.rsak.bonus",
+            "value": "1d3",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "QAuVHnVO5vh5MvhA"
+          },
+          {
+            "key": "system.rolls.ability.check.bonus",
+            "value": "1d3",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "RlMnsDTI7BrwbhDA"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Adds 1d3 to attack rolls and ability checks for 10 minutes.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

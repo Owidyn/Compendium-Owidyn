@@ -1,0 +1,171 @@
+{
+  "_id": "q1yzeKoMAnBScT61",
+  "name": "Fey Touched",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-glow-teal.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "WqvIEd8V37qaDLHX": {
+        "_id": "WqvIEd8V37qaDLHX",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "c32hKvUD8WFZ8UPb": {
+        "_id": "c32hKvUD8WFZ8UPb",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Fey Magic",
+        "title": "Fey Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMistyStep0",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "YVMNH0RePlhhM6bS": {
+        "_id": "YVMNH0RePlhhM6bS",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Fey Magic (Level 1 Spell)",
+        "title": "Fey Magic (Level 1 Spell)",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "1",
+            "list": [],
+            "school": [
+              "div",
+              "enc"
+            ]
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+)</em></p><p>Contact with the magic of the Feywild gives you the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Fey Magic.</strong> Choose one level 1 spell from the Divination or Enchantment school. You always have that spell and @UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty Step} prepared, and you can cast each of them once without a spell slot, regaining that use when you finish a Long Rest; you can also cast them with spell slots of the appropriate level you have. Their spellcasting ability is the ability increased by this feat.</p><section class=\"secret\" id=\"secret-5fVH5a4HSa9Wn4Z8\"><p><strong>Foundry Note</strong></p><p>Choose for both spells the ability you increased with this feat.</p></section>",
+      "chat": ""
+    },
+    "identifier": "fey-touched",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

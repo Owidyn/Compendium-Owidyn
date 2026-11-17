@@ -1,0 +1,130 @@
+{
+  "name": "Clockwork Spells",
+  "type": "feat",
+  "_id": "FhEodhzsOIhacHUQ",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "folder": "b4XY4e0FjHJQD5IM",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>When you reach a Sorcerer level specified in the Clockwork Spells table, you thereafter always have the listed spells prepared.</p><p>In addition, choose or randomly determine from the Manifestations of Order table how your connection to order manifests while you cast any of your Sorcerer spells.</p><h4>Manifestations of Order</h4><table><thead><tr><th>1d6</th><th>Manifestation</th></tr></thead><tbody><tr><td>1</td><td>Spectral cogwheels hover behind you.</td></tr><tr><td>2</td><td>The hands of a clock spin in your eyes.</td></tr><tr><td>3</td><td>Your skin glows with a brassy sheen.</td></tr><tr><td>4</td><td>Floating equations and geometric shapes overlay your body.</td></tr><tr><td>5</td><td>Your Spellcasting Focus briefly takes the form of a Tiny clockwork mechanism.</td></tr><tr><td>6</td><td>You and those affected by your magic hear gears ticking or a clock chiming.</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Clockwork Sorcery 3",
+    "activities": {
+      "PasL9WkM4cOFFagp": {
+        "type": "utility",
+        "_id": "PasL9WkM4cOFFagp",
+        "sort": 100000,
+        "name": "Manifestation of Order",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Manifestation of Order",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "clockwork-spells",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

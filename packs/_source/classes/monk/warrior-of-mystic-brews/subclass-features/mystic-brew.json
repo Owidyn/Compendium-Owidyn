@@ -1,0 +1,419 @@
+{
+  "name": "Mystic Brew",
+  "type": "feat",
+  "_id": "5g9I5fOs73RAJGOa",
+  "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+  "folder": "LAuZukhW8vR6DcwO",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>Whenever you finish a Short or Long Rest while holding Brewer's Supplies, you can use them to magically produce one magical beverage, chosen from the options below. A pint of it appears in a bottle or flask you are holding or carrying; otherwise, it spills on the ground and vanishes. Any beverage left when you finish a Short or Long Rest vanishes.</p><p><strong>Drinking a Magical Beverage.</strong> Only you can gain its benefits, and only after drinking the full pint, which takes 1 minute. You then gain its benefits for 1 hour or until you drink another magical beverage.</p><p><strong>Cinnamon Dragon.</strong> You can take a Magic action to exhale toxic flames in a 30-foot Cone. Each creature in it makes a Dexterity saving throw (DC 8 plus your Wisdom modifier and Proficiency Bonus), taking Fire damage equal to four rolls of your Martial Arts die and having the Poisoned condition until the end of its next turn on a failure, or taking half as much damage only on a success.</p><p><strong>Heavenly Spirit.</strong> You gain Resistance to two of the following damage types of your choice: Cold, Necrotic, Psychic, or Radiant.</p><p><strong>Refreshing Dip.</strong> You have a pool of dice of the same type as your Martial Arts die, with a maximum number equal to your Wisdom modifier plus half your Monk level (round down). Whenever you regain Hit Points, you can expend and roll one die from the pool to regain that many extra Hit Points.</p><p><strong>Enhancing a Magical Beverage.</strong> When you create a magical beverage, you can expend 1 Focus Point to extend its benefits to 8 hours.</p><section class=\"secret\" id=\"secret-guFEbdC9Xa0TdIFB\"><p><strong>Foundry Note</strong></p><p>Heavenly Spirit: add your two Resistances to the effect. Refreshing Dip: track its pool of dice (Wisdom modifier + half your Monk level) yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Warrior of Mystic Brews 6",
+    "activities": {
+      "PyUaG9rSmBwwjkF4": {
+        "type": "save",
+        "_id": "PyUaG9rSmBwwjkF4",
+        "sort": 100000,
+        "name": "Cinnamon Dragon",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "cone",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "4 * @scale.monk.die"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      },
+      "uZsKlp6455iNJJWp": {
+        "type": "utility",
+        "_id": "uZsKlp6455iNJJWp",
+        "sort": 200000,
+        "name": "Heavenly Spirit",
+        "img": null,
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "uZsKlp6455iNJJWp"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "MVK2HQIOF8GjkYLV": {
+        "type": "heal",
+        "_id": "MVK2HQIOF8GjkYLV",
+        "sort": 300000,
+        "name": "Refreshing Dip",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You regain Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "@scale.monk.die"
+          },
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": 1,
+            "formula": ""
+          }
+        }
+      },
+      "oCKsljeuNDJBYYN3": {
+        "type": "utility",
+        "_id": "oCKsljeuNDJBYYN3",
+        "sort": 400000,
+        "name": "Enhance the Beverage",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:monks-focus",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "mystic-brew",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "uZsKlp6455iNJJWp",
+      "name": "Heavenly Spirit",
+      "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to two damage types among Cold, Necrotic, Psychic, and Radiant.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

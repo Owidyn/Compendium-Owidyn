@@ -1,0 +1,126 @@
+{
+  "name": "Telepathic Speech",
+  "type": "feat",
+  "_id": "OS7c0mOj1rIftDcx",
+  "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+  "folder": "ynPvfi7UdjAGk9y5",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You can form a telepathic connection between your mind and another's. As a Bonus Action, choose one creature you can see within 30 feet of you. You and that creature can communicate telepathically while within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile); to understand each other, you each must mentally use a language the other knows. The connection lasts for a number of minutes equal to your Sorcerer level, and it ends early if you use this ability to form a connection with a different creature.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Aberrant Sorcery 3",
+    "activities": {
+      "iD1sBDEAe3wI0XYy": {
+        "type": "utility",
+        "_id": "iD1sBDEAe3wI0XYy",
+        "sort": 100000,
+        "name": "Telepathic Speech",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "@classes.sorcerer.levels",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "telepathic-speech",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

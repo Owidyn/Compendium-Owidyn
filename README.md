@@ -1,6 +1,6 @@
-# Compendium Owidyn 2.5.0
+# Compendium Owidyn 2.6.0
 
-Contenu homebrew d'Owidyn pour **Foundry VTT 14** et **D&D5e 6.0.6** : les classes **Cartomancien** et **Héliarque** avec leurs automatisations, des sous-classes, espèces, historiques, dons, sorts, objets et créatures, la **cuisine d'Aldraine** et des **boutiques** où les joueurs achètent eux-mêmes.
+Contenu homebrew d'Owidyn pour **Foundry VTT 14** et **D&D5e 6.0.6** : les classes **Cartomancien**, **Héliarque** et **Artificer** avec leurs automatisations, les sous-classes 2024 absentes de dnd5e, espèces, historiques, dons, sorts, objets et créatures, la **cuisine d'Aldraine** et des **boutiques** où les joueurs achètent eux-mêmes.
 
 Depuis la 2.0.0, ce module remplace les anciens modules **Héliarque — Soothing Star** (`Heliarque`) et **Cartomancien — Deck de Tarot** (`cartomancien-deck`), avec toutes leurs automatisations.
 
@@ -37,15 +37,15 @@ Un contenu que dnd5e a déjà à l'identique n'est pas recopié : on utilise cel
 
 | Compendium | Type | Contenu |
 | --- | --- | --- |
-| **Classes** | Objets | Cartomancien › Deck du Parieur ; Héliarque › Soothing Star ; Monk › La Voie de l'Aiguille |
-| **Items** | Objets | Objets magiques et équipement absents de dnd5e ou corrigés, par catégorie puis par rareté ; ingrédients, recettes et livres de cuisine dans *Cuisine* |
-| **Species** | Objets | *Kitsune, Air*, *Primordian, Salamander* et *Thri-kreen*, avec leurs aptitudes |
+| **Classes** | Objets | Artificer (Eberron: Forge of the Artificer) et ses 6 sous-classes ; les sous-classes 2024 absentes de dnd5e, dans le dossier de leur classe (Barbarian à Wizard), et les 16 sous-classes de Tasha's Cauldron of Everything adaptées aux règles 2024 (dont le Genie Patron) ; Warlock › Eldritch Invocations (invocations de World of Warcraft) ; Cartomancien › Deck du Parieur ; Héliarque › Soothing Star ; Monk › La Voie de l'Aiguille |
+| **Items** | Objets | Objets magiques et équipement absents de dnd5e ou corrigés, par catégorie puis par rareté ; installations de Bastion (*Bastion Facilities*, par niveau) ; ingrédients, recettes et livres de cuisine dans *Cuisine* |
+| **Species** | Objets | Les species 2024 absentes de dnd5e (Aasimar, Eberron, Lorwyn, Ravenloft, World of Warcraft…), *Kitsune, Air*, *Primordian, Salamander* et *Thri-kreen*, avec leurs aptitudes |
 | **Creatures** | Acteurs | Créatures absentes de dnd5e ou corrigées, par type (voir le [Bestiaire](#bestiaire)), dont les Formes orbitales de l'Héliarque et des véhicules |
 | **Creature Features** | Objets | Aptitudes de créatures à glisser sur un profil, comme les Monster Features de dnd5e, mais seulement celles qu'elles n'ont pas : chacune une seule fois, avec un texte qui nomme la créature qui la reçoit |
-| **Backgrounds & Feats** | Objets | Historiques (Guide, Scribe, Sujet de Confinement Runique), dons d'origine et dons généraux, dont Cuisinier et Master Chef |
+| **Backgrounds & Feats** | Objets | Les historiques 2024 absents de dnd5e (Player's Handbook, Eberron, Forgotten Realms, Ravenloft, Arcana Unleashed, Project Lamordia…) Sujet de Confinement Runique et Automate cuisinier ; dons d'origine (dont Dragonmarks, Planar Pacts et Dark Gifts) et dons généraux (dont Cuisinier et Master Chef) |
 | **Spells** | Objets | Sorts absents de dnd5e, par niveau |
-| **Summons** | Acteurs | Créatures des sorts d'invocation (Bestial Spirit, Fey Spirit, Undead Spirit…), un dossier par sort |
-| **Journals** | Journaux | Listes de sorts, une classe par dossier : les sorts Owidyn de chaque classe (et des sous-classes et espèces qui en ont), que dnd5e fusionne avec ses listes, et la liste du Cartomancien |
+| **Summons** | Acteurs | Créatures des sorts d'invocation (Bestial Spirit, Fey Spirit, Undead Spirit…), un dossier par sort, et compagnons des sous-classes (Steel Defender, Eldritch Cannon, Reanimated Companion, Primal Companion, Vestige Companion) |
+| **Journals** | Journaux | *Compendium Owidyn*, le guide du module (présentation de tout le contenu et Changelog) ; *Règles optionnelles* (Bastions, Renown, magie de cercle, professions, compagnons, objets évolutifs, artefacts, fabrication) ; listes de sorts, une classe par dossier : les sorts Owidyn de chaque classe (et des sous-classes et espèces qui en ont), que dnd5e fusionne avec ses listes, et la liste du Cartomancien |
 
 ### Owidyn's Source Compendium Legacy
 
@@ -72,6 +72,12 @@ Dans chaque compendium, le contenu est rangé en dossiers, comme dans dnd5e : un
 ```
 Owidyn's Source Compendium 5.5
 ├─ Classes
+│  ├─ Artificer                    classe Artificer
+│  │  ├─ Class Features
+│  │  └─ Alchemist … Reanimator     6 sous-classes, chacune avec ses Subclass Features
+│  ├─ Barbarian, Bard, Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard
+│  │  ├─ une sous-classe par dossier (Path of the Wild Heart, Rune Knight, Genie Patron…), avec ses Subclass Features
+│  │  └─ Warlock › Eldritch Invocations
 │  ├─ Cartomancien                 classe Le Cartomancien
 │  │  ├─ Class Features
 │  │  └─ Deck du Parieur           sous-classe
@@ -82,26 +88,40 @@ Owidyn's Source Compendium 5.5
 │  │  └─ Soothing Star             sous-classe
 │  │     └─ Subclass Features
 │  └─ Monk
-│     └─ La Voie de l'Aiguille     sous-classe
-│        └─ Subclass Features
+│     ├─ La Voie de l'Aiguille     sous-classe
+│     │  └─ Subclass Features
+│     └─ Warrior of Mercy … Warrior of the Mystic Arts   5 sous-classes 2024
 ├─ Items
-│  ├─ Armor, Potions, Rings, Rods, Staffs, Wands, Weapons, Wondrous Items,
+│  ├─ Armor, Potions, Rings, Rods, Scrolls, Staffs, Wands, Weapons, Wondrous Items,
 │  │  Adventuring Gear, Explosives, Tools, Mounts and Vehicles
 │  │  └─ une rareté par dossier : Common … Artifact, Varies (rareté variable), Mundane (non magique)
+│  ├─ Bastion Facilities › Basic Facilities, Level 5, Level 9, Level 13, Level 17
 │  └─ Cuisine › Ingrédients (par famille), Recettes (par origine), Plats spéciaux, Livres de recettes
 ├─ Species
+│  ├─ Aberration › Kalashtar
+│  ├─ Celestial › Bariaur
+│  ├─ Construct › Mechagnome, Warforged
+│  ├─ Dragon › Dracthyr
 │  ├─ Elemental › Primordian       Primordian, Salamander
-│  ├─ Humanoid › Kitsune           Kitsune, Air
+│  ├─ Fey › Changeling (et Changeling, Lorwyn), Duskling, Faerie (Lorwyn, Shadowmoor), Hexblood
+│  ├─ Humanoid › Aasimar, Azeroth Elf (5 lignées), Boggart, Dhampir, Draenei (4 lignées), Earthen, Flamekin,
+│  │             Goblin, Haranir, Khoravar, Kitsune (Kitsune, Air), Lupin, Pandaren, Reborn, Rimekin, Shifter,
+│  │             Tauren, Troll, Vulpera, Worgen
 │  ├─ Monstrosity › Thri-kreen     Thri-kreen
-│  └─ Species Features › Kitsune (aptitudes, queues, cantrips Éclat), Primordian, Thri-kreen
+│  ├─ Undead › Forsaken
+│  └─ Species Features › un dossier par species (Kitsune : aptitudes, queues, cantrips Éclat)
 ├─ Creatures › Aberration … Undead, Vehicles   (les Formes orbitales dans Construct)
 ├─ Creature Features › Traits, Actions, Attacks
 ├─ Backgrounds & Feats
-│  ├─ Backgrounds
-│  └─ Feats › General Feats, Origin Feats
+│  ├─ Backgrounds › Player's Handbook, Eberron, Forgotten Realms, Ravenloft, Arcana Unleashed, Other Settings,
+│  │                Project Lamordia
+│  └─ Feats › General Feats (› Greater Dragonmarks, Greater Planar Pacts), Origin Feats (› Dragonmarks, Planar Pacts,
+│            Dark Gifts), Fighting Style Feats, Epic Boon Feats
 ├─ Spells › Cantrips, 1st Level … 9th Level
-├─ Summons › un dossier par sort (Summon Beast, Summon Fey…)
+├─ Summons › un dossier par sort (Summon Beast, Summon Fey…) ou par compagnon (Steel Defender, Primal Companion…)
 └─ Journals
+   ├─ Compendium Owidyn             le guide du module, avec sa page Changelog
+   ├─ Règles optionnelles           Bastions, Renown, magie de cercle, professions, compagnons…
    └─ Spell Lists › Artificer, Bard, Cartomancien, Cleric, Druid, Paladin, Ranger, Sorcerer, Species, Warlock, Wizard
 
 Owidyn's Source Compendium Legacy
@@ -415,8 +435,8 @@ Les données des personnages sont rangées sous `flags.compendium-owidyn.heliarq
 
 ### Publier une version
 
-1. Fermez Foundry (les compendiums ne doivent pas être ouverts), montez `version` dans `module.json` (par exemple `2.4.0` → `2.5.0`) et ajoutez la version au [CHANGELOG](CHANGELOG.md).
+1. Fermez Foundry (les compendiums ne doivent pas être ouverts), montez `version` dans `module.json` (par exemple `2.5.0` → `2.6.0`) et ajoutez la version au [CHANGELOG](CHANGELOG.md).
 2. Envoyez les changements : `git add -A`, `git commit -m "…"`, `git push`.
-3. Sur GitHub, **Releases › Draft a new release**, tag = la version (`2.5.0`), puis **Publish release**.
+3. Sur GitHub, **Releases › Draft a new release**, tag = la version (`2.6.0`), puis **Publish release**.
 
 La GitHub Action [release.yml](.github/workflows/release.yml) écrit la version et l'adresse du zip dans `module.json`, construit `compendium-owidyn.zip` (sans les sources, outils et tests) et joint les deux fichiers à la Release : les installations existantes voient alors la mise à jour.

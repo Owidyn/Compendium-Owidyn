@@ -1,0 +1,211 @@
+{
+  "name": "Lords' Alliance Vassal",
+  "type": "background",
+  "_id": "vrdsorzSCQHfYXK6",
+  "img": "icons/sundries/flags/banner-symbol-sun-gold-red.webp",
+  "folder": "kchAYt2tpYtQMqEm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You have sworn loyalty to one of the cities of the Lords' Alliance. As an agent of the Alliance, you must uphold its principles and work to make the Sword Coast safer and more prosperous. You are sworn to bring honor and glory to your lord's house, whether that means securing the trade roads for a merchant-lord of Waterdeep or slaying monsters upriver from Daggerford. You have trained in both swordplay and statecraft and are as skilled with a blade as with a quill.</p><p><strong>Ability Scores:</strong> Strength, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.UVjoQSakHP9e2QnV]{Lords' Alliance Agent}</p><p><strong>Skill Proficiencies:</strong> Insight and Persuasion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepJavelin000]{Javelins}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph]{Calligrapher's Supplies}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagInk00000000]{Ink}, 5 @UUID[Compendium.dnd5e.equipment24.Item.phbagInkPen00000]{Ink Pens}, @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (9 sheets), 13 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "lords-alliance-vassal",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "Lw0eVcmqfH5U32hZ": {
+        "_id": "Lw0eVcmqfH5U32hZ",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "7CijgH9H4tEh6SIA": {
+        "_id": "7CijgH9H4tEh6SIA",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Insight and Persuasion. It also grants you proficiency in Calligrapher's Supplies.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:per",
+            "tool:art:calligrapher"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "PvWVOIW5kHzeZzQf": {
+        "_id": "PvWVOIW5kHzeZzQf",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Lords' Alliance Agent feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.UVjoQSakHP9e2QnV",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "lZiTudCZ6SBJTU7p": {
+        "_id": "lZiTudCZ6SBJTU7p",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "0zamz9OxFefRFPqo",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": 2,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepJavelin000",
+        "requiresProficiency": false,
+        "_id": "36SefAE2BIOPumPv",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCalligraph",
+        "requiresProficiency": false,
+        "_id": "WB2avKwKRnIO7qwl",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "cfYmDfNInR3xsw65",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagInk00000000",
+        "requiresProficiency": false,
+        "_id": "jKD2efuqoJjp367J",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 500000
+      },
+      {
+        "count": 5,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagInkPen00000",
+        "requiresProficiency": false,
+        "_id": "3ZsxjC5xiiFWM7cq",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 600000
+      },
+      {
+        "count": 9,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagParchment00",
+        "requiresProficiency": false,
+        "_id": "NRWfYBsOm4gzOH1H",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 700000
+      },
+      {
+        "count": 13,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "FcEf993T7yYSq9Co",
+        "group": "0zamz9OxFefRFPqo",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

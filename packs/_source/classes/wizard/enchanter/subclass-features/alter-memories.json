@@ -1,0 +1,138 @@
+{
+  "name": "Alter Memories",
+  "type": "feat",
+  "_id": "7QF4nhQ28hwmIwbl",
+  "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+  "folder": "JHBNSAO9IHci6XgH",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>You can make a creature unaware of your magical influence. When you cast an Enchantment spell that imposes the Charmed condition using a spell slot, you can choose one creature targeted by the spell; it remains unaware of being Charmed by you. In addition, once before the spell ends, you can take a Magic action to force that creature to make an Intelligence saving throw against your spell save DC. On a failure, you can make it lose a number of hours of its memories equal to 1 plus your Intelligence modifier (minimum of 1 hour). You can make it forget less time, and the amount can't exceed the duration of your Enchantment spell.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Enchanter 14",
+    "activities": {
+      "LfRTiD9iJECFxpHs": {
+        "type": "save",
+        "_id": "LfRTiD9iJECFxpHs",
+        "sort": 100000,
+        "name": "Alter Memories",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "spec",
+          "value": "",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "alter-memories",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

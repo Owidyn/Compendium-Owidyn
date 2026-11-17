@@ -1,0 +1,221 @@
+{
+  "name": "Perfected Armor",
+  "type": "feat",
+  "_id": "jypMZj7h3pleCZSk",
+  "img": "icons/equipment/chest/breastplate-layered-gilded-black.webp",
+  "folder": "nToP5r4nIXNeP27o",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>Your Arcane Armor gains additional benefits based on its model.</p><p><strong>Dreadnaught.</strong> The damage of your Force Demolisher increases to 2d6 Force damage. In addition, when you use Giant Stature, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you have Advantage on Strength checks and Strength saving throws for the duration.</p><p><strong>Guardian.</strong> The damage of your Thunder Pulse increases to 1d10 Thunder damage. In addition, when a Huge or smaller creature you can see ends its turn within 30 feet of you, you can take a Reaction to force it to make a Strength saving throw against your spell save DC. On a failure, you pull it up to 25 feet directly toward you to an unoccupied space; if you pull it within 5 feet of you, you can make a melee weapon attack against it as part of this Reaction. You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p><p><strong>Infiltrator.</strong> The damage of your Lightning Launcher increases to 2d6 Lightning damage. Any creature that takes Lightning damage from it glimmers with magical light until the start of your next turn: it sheds Dim Light in a 5-foot radius and has Disadvantage on attack rolls against you. In addition, as a Bonus Action, you can gain a Fly Speed equal to twice your Speed until the end of the current turn, a number of times equal to your Intelligence modifier (minimum of once); you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Armorer 15",
+    "activities": {
+      "dkgzKUh1X5oFdQR1": {
+        "type": "save",
+        "_id": "dkgzKUh1X5oFdQR1",
+        "sort": 100000,
+        "name": "Guardian Pull",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "A Huge or smaller creature ends its turn within 30 feet of you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      },
+      "e6UU6NR66TgvVVDM": {
+        "type": "utility",
+        "_id": "e6UU6NR66TgvVVDM",
+        "sort": 200000,
+        "name": "Infiltrator Flight",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "perfected-armor",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

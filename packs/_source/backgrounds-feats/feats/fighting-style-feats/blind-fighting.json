@@ -1,0 +1,112 @@
+{
+  "_id": "LyOS7n2CxCMFsx3t",
+  "name": "Blind Fighting",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-slit-orange.webp",
+  "folder": "wQo2sovs7D6oiySl",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {},
+    "description": {
+      "value": "<p><em>Fighting Style Feat (Prerequisite: Fighting Style Feature)</em></p><p>You have Blindsight with a range of 10 feet.</p>",
+      "chat": ""
+    },
+    "identifier": "blind-fighting",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "fighting-style"
+      ],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Fighting Style Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    }
+  },
+  "effects": [
+    {
+      "_id": "jXEceSXEW6H1p9IY",
+      "name": "Blind Fighting",
+      "img": "icons/magic/perception/eye-slit-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.blindsight",
+            "value": "10",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null,
+            "_id": "n2poFMjlSDH8DBAd"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Blindsight 10 feet.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "name": "Vestige Patron",
+  "type": "subclass",
+  "_id": "EQzSNVFsjXSZrXvj",
+  "img": "icons/magic/unholy/orb-glowing-purple.webp",
+  "folder": "tP7nQkCYvQgHn2yi",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Wield the Remnants of a Dying God's Power</p></blockquote><p>Your pact draws on the power of a dying god, a being once worshiped by countless followers but now abandoned and forgotten. This dying god, called a vestige, might have been benevolent, evil, or strange and unknowable, but now it is driven to regain its former power. The vestige needs your help, and it is willing to share what strength remains to it.</p><h3>Vestige Patron Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.5ZkSLFMCpEZGb9vA]{Vestige Companion}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.MZuepa1V5HLaLHJi]{Vestige Spells}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.A3oZI7wIYP3pemUs]{Vestige Power}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.pwpomwzq9LXN6wE1]{Vestige Recovery}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.fzE9dHahgcRD4bZL]{Semblance of Life}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "vestige-patron",
+    "classIdentifier": "warlock",
+    "advancement": {
+      "LXTI0kyj41pjZExW": {
+        "_id": "LXTI0kyj41pjZExW",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.5ZkSLFMCpEZGb9vA",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.MZuepa1V5HLaLHJi",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "qjWwuawhOiB6wCSn": {
+        "_id": "qjWwuawhOiB6wCSn",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.A3oZI7wIYP3pemUs",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ZUK1j2UX43sRO7BE": {
+        "_id": "ZUK1j2UX43sRO7BE",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.pwpomwzq9LXN6wE1",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "En8gOEKBYtNqEReq": {
+        "_id": "En8gOEKBYtNqEReq",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.fzE9dHahgcRD4bZL",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "9NAC7BPiHoO7AmXJ": {
+        "_id": "9NAC7BPiHoO7AmXJ",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Vestige Spells (Your Domain)",
+        "title": "Vestige Spells (Your Domain)",
+        "hint": "Choose the spells of the Cleric domain you chose (Life, Light, Trickery, or War); always take the same domain.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 4,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAid0000000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBless00000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCureWounds"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLesserRest"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBurningHan"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFaerieFire"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScorchingR"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSeeInvisib"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCharmPerso"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDisguiseSe"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplInvisibili"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPasswithou"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuidingBol"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMagicWeapo"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplShieldofFa"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritualW"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "Gge54L0aMPRen6gy": {
+        "_id": "Gge54L0aMPRen6gy",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Vestige Spells (Your Domain)",
+        "title": "Vestige Spells (Your Domain)",
+        "hint": "Choose the spells of the Cleric domain you chose (Life, Light, Trickery, or War); always take the same domain.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassHealin"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRevivify00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDaylight00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireball00"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHypnoticPa"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplNondetecti"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.BT0KnautfGrqUokp"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritGuar"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "7hcKrTefqblOrpSJ": {
+        "_id": "7hcKrTefqblOrpSJ",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Vestige Spells (Your Domain)",
+        "title": "Vestige Spells (Your Domain)",
+        "hint": "Choose the spells of the Cleric domain you chose (Life, Light, Trickery, or War); always take the same domain.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAuraofLife"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDeathWard0"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneEye0"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofFire"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplConfusion0"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDimensionD"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFireShield"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFreedomofM"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "xL1WYDSFuschIAqW": {
+        "_id": "xL1WYDSFuschIAqW",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Vestige Spells (Your Domain)",
+        "title": "Vestige Spells (Your Domain)",
+        "hint": "Choose the spells of the Cleric domain you chose (Life, Light, Trickery, or War); always take the same domain.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGreaterRes"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassCureWo"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameStrik"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplScrying000"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominatePe"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplModifyMemo"
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHoldMonste"
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.YeiTWaNwrurgKm2A"
+            }
+          ],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

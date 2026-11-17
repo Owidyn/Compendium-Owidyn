@@ -1,0 +1,149 @@
+{
+  "name": "Circle of Mortality",
+  "type": "feat",
+  "_id": "DBQf2V4CeuXEpBZ2",
+  "img": "icons/magic/death/skull-humanoid-white-blue.webp",
+  "folder": "8b4s1IZReQCm6H1J",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You can tip the balance between life and death, gaining the following benefits.</p><p><strong>Pull of Death.</strong> Once per turn, when you deal damage to a creature that is missing any Hit Points with a spell or an attack roll, it takes an extra 1d4 Necrotic damage, which increases to 1d6 at Cleric level 11.</p><p><strong>Return to Life.</strong> You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplSparetheDy]{Spare the Dying} as a Bonus Action. In addition, when you would roll dice to restore Hit Points to a creature at 0 Hit Points with a spell or Channel Divinity, you use the highest number possible for each die instead of rolling (for example, 8 Hit Points instead of 2d4).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Grave Domain 3",
+    "activities": {
+      "eGHFIX20hsvMZjUg": {
+        "type": "damage",
+        "_id": "eGHFIX20hsvMZjUg",
+        "sort": 100000,
+        "name": "Pull of Death",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Once per turn, you damage a creature missing Hit Points"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.grave-domain.pull"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "circle-of-mortality",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

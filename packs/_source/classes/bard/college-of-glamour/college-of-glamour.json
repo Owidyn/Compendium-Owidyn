@@ -1,0 +1,184 @@
+{
+  "name": "College of Glamour",
+  "type": "subclass",
+  "_id": "s2hiG8OpYiBjvheM",
+  "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+  "folder": "lV9XssFCyRQKoioM",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Weave Beguiling Fey Magic</p></blockquote><p>The College of Glamour traces its origins to the beguiling magic of the Feywild. Its Bards weave beauty and terror into their songs and stories, and the mightiest can wrap themselves in otherworldly majesty. Their performances awaken longing for forgotten innocence, stir buried fears, and move even the hardest hearts.</p><h3>College of Glamour Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.o17ikEOIbEpeWGAd]{Beguiling Magic}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.YSj28gjfw81mHBEY]{Mantle of Inspiration}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.PbQf91I9m9yHtwex]{Mantle of Majesty}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.4k1MzjE0KYchIkm9]{Unbreakable Majesty}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "college-of-glamour",
+    "classIdentifier": "bard",
+    "advancement": {
+      "KHGcxQ7bZzU4iixX": {
+        "_id": "KHGcxQ7bZzU4iixX",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.o17ikEOIbEpeWGAd",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.YSj28gjfw81mHBEY",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "zQt81I1zE7ebIVBH": {
+        "_id": "zQt81I1zE7ebIVBH",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.PbQf91I9m9yHtwex",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "WU7VGlGUCtSj0pBC": {
+        "_id": "WU7VGlGUCtSj0pBC",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.4k1MzjE0KYchIkm9",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "yozBHAsH55iPWPY9": {
+        "_id": "yozBHAsH55iPWPY9",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Beguiling Magic",
+        "title": "Beguiling Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCharmPerso",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMirrorImag",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "NIFWRzVwFxhqGgCM": {
+        "_id": "NIFWRzVwFxhqGgCM",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Mantle of Majesty",
+        "title": "Mantle of Majesty",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommand000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

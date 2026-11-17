@@ -1,0 +1,247 @@
+{
+  "name": "Vampire Survivor",
+  "type": "background",
+  "_id": "lkyXYLBwL3MjU8xJ",
+  "img": "icons/sundries/survival/stake-rough-simple-brown.webp",
+  "folder": "yPb7DAZUVx2Ey6GP",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You witnessed or lived through a vampire attack. Perhaps you fought in it, or perhaps you were frozen in terror by what you saw. Either way, you stay alert for monsters and pride yourself on being prepared for anything: no vampire will catch you or your companions off guard again.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.pF0gQV6no5QeWlZH]{Vampire Hunter}</p><p><strong>Skill Proficiencies:</strong> Insight and Religion</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulWoodcarver]{Woodcarver's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulWoodcarver]{Woodcarver's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLanternHood]{Hooded Lantern}, @UUID[Compendium.dnd5e.equipment24.Item.phbhsyReliquaryh]{Holy Symbol} (reliquary), @UUID[Compendium.dnd5e.equipment24.Item.phbagHolyWater00]{Holy Water}, @UUID[Compendium.dnd5e.equipment24.Item.phbagMirror00000]{Mirror}, @UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagWaterskin00]{Waterskin}, 4 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "vampire-survivor",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "vGVujo6o8tbWSCAG": {
+        "_id": "vGVujo6o8tbWSCAG",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "uowwo2RlEzUgQHjC": {
+        "_id": "uowwo2RlEzUgQHjC",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Insight and Religion. It also grants you proficiency in Woodcarver's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ins",
+            "skills:rel",
+            "tool:art:woodcarver"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "CfXDQuO9hiuTv2Do": {
+        "_id": "CfXDQuO9hiuTv2Do",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Vampire Hunter feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.pF0gQV6no5QeWlZH",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "YeBjDX9M7X8Oq76K": {
+        "_id": "YeBjDX9M7X8Oq76K",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "5IUMfUFOs3G4zPYe",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulWoodcarver",
+        "requiresProficiency": false,
+        "_id": "4l4iE7T6IDVQ9LJj",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagCrowbar0000",
+        "requiresProficiency": false,
+        "_id": "b5RKbWEg0cluudy5",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagLanternHood",
+        "requiresProficiency": false,
+        "_id": "rC9U1ODjjXC8Tkq6",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbhsyReliquaryh",
+        "requiresProficiency": false,
+        "_id": "LY64MwM1JuXBGO5F",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHolyWater00",
+        "requiresProficiency": false,
+        "_id": "e8r9u51Ynts3YVDa",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagMirror00000",
+        "requiresProficiency": false,
+        "_id": "HOEnFMQkCkg13lAO",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 700000
+      },
+      {
+        "count": 3,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagOil00000000",
+        "requiresProficiency": false,
+        "_id": "Hc8VjltX6ECJgKlX",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "wqIZilrt0VuVFs0c",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 900000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "LTOYGd6n94Gyjit8",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 1000000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagWaterskin00",
+        "requiresProficiency": false,
+        "_id": "gR9M6BVQMmi8swWr",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 1100000
+      },
+      {
+        "count": 4,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "OE7grmt3Z28ze0vc",
+        "group": "5IUMfUFOs3G4zPYe",
+        "sort": 1200000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

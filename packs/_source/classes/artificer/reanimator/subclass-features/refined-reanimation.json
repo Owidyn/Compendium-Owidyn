@@ -1,0 +1,200 @@
+{
+  "name": "Refined Reanimation",
+  "type": "feat",
+  "_id": "BZEalDf2KFECqhE7",
+  "img": "icons/magic/life/ankh-gold-blue.webp",
+  "folder": "MnPXC7hi7pxE8O9l",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>You have mastered the science of revivification.</p><p><strong>Facilitated Revival.</strong> You can cast @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]{Raise Dead} once without expending a spell slot or Material components, as long as you use Tinker's Tools or another type of Artisan's Tools you are proficient with as the Spellcasting Focus. Once you use this benefit, you can't use it again until you finish a Long Rest.</p><p><strong>Life Transfer.</strong> When you or your companion takes damage, you can take a Reaction to gain Hit Points equal to your companion's current Hit Points. The companion then immediately drops to 0 Hit Points and dies (triggering its Death Burst).</p><p><strong>Superior Modifications.</strong> Whenever you create a Reanimated Companion, it now gains three Strange Modifications options.</p><section class=\"secret\" id=\"secret-DbaDrA1noBw8R5Xe\"><p><strong>Foundry Note</strong></p><p>Life Transfer: give yourself Hit Points equal to the companion's current Hit Points, then reduce it to 0.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Reanimator 15",
+    "activities": {
+      "1Z0zDyakNCl2GMhD": {
+        "type": "utility",
+        "_id": "1Z0zDyakNCl2GMhD",
+        "sort": 100000,
+        "name": "Facilitated Revival",
+        "img": null,
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "Wnb0B04bbuGnxA1C": {
+        "type": "utility",
+        "_id": "Wnb0B04bbuGnxA1C",
+        "sort": 200000,
+        "name": "Life Transfer",
+        "img": null,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": "You or your companion takes damage"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "refined-reanimation",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

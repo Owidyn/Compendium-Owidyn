@@ -1,0 +1,211 @@
+{
+  "name": "Farmer",
+  "type": "background",
+  "_id": "8DryJl3KHcfgjtM9",
+  "img": "icons/commodities/flowers/wheat-bundle.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You grew up close to the land. Years spent caring for animals and working the soil gave you patience and robust health. You value the gifts of nature, and you have a healthy respect for its fury.</p><p><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.LUeMriAibyVJHhaW]{Tough}</p><p><strong>Skill Proficiencies:</strong> Animal Handling and Nature</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulCarpenters]{Carpenter's Tools}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSickle0000]{Sickle}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulCarpenters]{Carpenter's Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPotIron0000]{Iron Pot}, @UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000]{Shovel}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler's Clothes}, 30 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "farmer",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "Km5oir0JydBkEtBC": {
+        "_id": "Km5oir0JydBkEtBC",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "Ro7TzfFmEH1t7rfw": {
+        "_id": "Ro7TzfFmEH1t7rfw",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Animal Handling and Nature. It also grants you proficiency in Carpenter's Tools.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:nat",
+            "tool:art:carpenter"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "LMGJRnD29ibvrEd8": {
+        "_id": "LMGJRnD29ibvrEd8",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Tough feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.LUeMriAibyVJHhaW",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "oREJV55lc5FMSNDt": {
+        "_id": "oREJV55lc5FMSNDt",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "90k9zWT7udTINYwO",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepSickle0000",
+        "requiresProficiency": false,
+        "_id": "UWuWeMsak5yOiR3i",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulCarpenters",
+        "requiresProficiency": false,
+        "_id": "rIzKQM0S9wrTSW6z",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHealersKit0",
+        "requiresProficiency": false,
+        "_id": "wXXJysiFOLPP9W3Z",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPotIron0000",
+        "requiresProficiency": false,
+        "_id": "ELO49JeMwZXSFFCp",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagShovel00000",
+        "requiresProficiency": false,
+        "_id": "dzmFlALLJPMtCypk",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+        "requiresProficiency": false,
+        "_id": "3r5FiDEtPxmKn763",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 700000
+      },
+      {
+        "count": 30,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "6ftZGSSsp38KdoW3",
+        "group": "90k9zWT7udTINYwO",
+        "sort": 800000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

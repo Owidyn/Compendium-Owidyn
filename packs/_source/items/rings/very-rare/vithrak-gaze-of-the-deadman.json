@@ -1,0 +1,165 @@
+{
+  "_id": "0fCpS0Ifcc7tD5NE",
+  "name": "Vithrak, Gaze of the Deadman",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-ball-silver.webp",
+  "folder": "HJ9lckVkN431xIQi",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>This ring has 3 charges and regains 1d3 expended charges daily at dawn. While wearing it, you can take a Magic action and expend 1 charge to learn the Resistances, Vulnerabilities, and Immunities, if any, of a creature you can see within 120 feet of you. When you do, your eyes briefly turn into glassy gray husks.</p>",
+      "chat": ""
+    },
+    "identifier": "vithrak-gaze-of-the-deadman",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "name": "",
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40000,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d3"
+        }
+      ]
+    },
+    "activities": {
+      "WdSoqdYlL0EW1ELS": {
+        "type": "utility",
+        "_id": "WdSoqdYlL0EW1ELS",
+        "sort": 100000,
+        "name": "Gaze of the Deadman",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "120",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "properties": [
+      "mgc"
+    ],
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": null,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

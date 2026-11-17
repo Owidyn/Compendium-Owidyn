@@ -1,0 +1,192 @@
+{
+  "name": "Living Legend",
+  "type": "feat",
+  "_id": "NTGrIGdBuL9iqYnR",
+  "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
+  "folder": "QG5CK3rGvf877J6D",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>You can empower yourself with the legends—true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 10 minutes.</p><p><strong>Charismatic.</strong> You have an otherworldly presence and Advantage on all Charisma checks.</p><p><strong>Saving Throw Reroll.</strong> If you fail a saving throw, you can take a Reaction to reroll it, and you must use the new roll.</p><p><strong>Unerring Strike.</strong> Once on each of your turns, when you make an attack roll with a weapon and miss, you can make that attack hit instead.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest, but you can restore it by expending a level 5 spell slot (no action required).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Oath of Glory 20",
+    "activities": {
+      "FJRthuok9mLJj5MK": {
+        "type": "utility",
+        "_id": "FJRthuok9mLJj5MK",
+        "sort": 100000,
+        "name": "Living Legend",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "NA8fiY3eaB6awEEU"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "living-legend",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "NA8fiY3eaB6awEEU",
+      "name": "Living Legend",
+      "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "0SlE4fkYmv85R636"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Advantage on Charisma checks, saving throw reroll, unerring strike.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

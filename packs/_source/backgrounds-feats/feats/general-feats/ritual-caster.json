@@ -1,0 +1,210 @@
+{
+  "_id": "Id2BNQDZ8Lctk9xW",
+  "name": "Ritual Caster",
+  "type": "feat",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "wnr5d1CTy90OSSwl": {
+        "type": "utility",
+        "_id": "wnr5d1CTy90OSSwl",
+        "sort": 100000,
+        "name": "Quick Ritual",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast a prepared Ritual spell with its regular casting time"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "AfFIMT0DSAkBawQo": {
+        "_id": "AfFIMT0DSAkBawQo",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "9x1B7nH9QtEFCzC2": {
+        "_id": "9x1B7nH9QtEFCzC2",
+        "type": "ItemChoice",
+        "level": 0,
+        "name": "Ritual Spells",
+        "title": "Ritual Spells",
+        "hint": "",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "1",
+            "list": [],
+            "school": []
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Intelligence, Wisdom, or Charisma 13+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Ritual Spells.</strong> Choose a number of level 1 spells with the Ritual tag equal to your Proficiency Bonus. You always have them prepared, and you can cast them with any spell slots you have. Their spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases afterward, you can add another level 1 Ritual spell to the spells this feature keeps prepared.</p><p><strong>Quick Ritual.</strong> With this benefit, you can cast a Ritual spell you have prepared using its regular casting time instead of the extended time of a Ritual, without a spell slot. Once you cast a spell this way, you can't use this benefit again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-8vsHUzKRLPT4wRkM\"><p><strong>Foundry Note</strong></p><p>The feat offers two Ritual spells (your Proficiency Bonus at level 4); pick spells with the Ritual tag, and add one more each time your Proficiency Bonus increases.</p></section>",
+      "chat": ""
+    },
+    "identifier": "ritual-caster",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Intelligence, Wisdom, or Charisma 13+",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

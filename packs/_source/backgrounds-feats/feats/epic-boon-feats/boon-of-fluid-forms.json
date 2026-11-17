@@ -1,0 +1,203 @@
+{
+  "_id": "QormRt4WM0MVF4z2",
+  "name": "Boon of Fluid Forms",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "WF3yQRVO8yYEEDGb",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "4rzUrDGj8jehPNDF": {
+        "type": "transform",
+        "_id": "4rzUrDGj8jehPNDF",
+        "sort": 100000,
+        "name": "Shapechanger",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [],
+        "settings": {
+          "preset": null,
+          "effects": [
+            "origin",
+            "otherOrigin",
+            "background",
+            "class",
+            "feat",
+            "spell"
+          ],
+          "keep": [
+            "bio",
+            "class",
+            "feats",
+            "hp",
+            "languages",
+            "mental",
+            "spells",
+            "type"
+          ],
+          "merge": [
+            "saves",
+            "skills"
+          ],
+          "other": [],
+          "spellLists": [],
+          "transformTokens": true,
+          "minimumAC": "",
+          "tempFormula": ""
+        },
+        "transform": {
+          "customize": true,
+          "formless": false,
+          "mode": "cr",
+          "preset": ""
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "VDitODQbUJRVtVaR": {
+        "_id": "VDitODQbUJRVtVaR",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1,
+          "max": 30
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>Epic Boon Feat (Prerequisite: Level 19+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</p><p><strong>Shapechanger.</strong> You can take a Magic action to shape-shift into a Beast, Humanoid, or Monstrosity with a Challenge Rating of 10 or lower. When you do, you gain Temporary Hit Points equal to the Hit Points of the form. The shape-shift lasts 1 hour, and it ends early if you have no Temporary Hit Points left or if you take a Magic action to return to your true form.</p><p>Your game statistics are replaced by the stat block of the form, but you keep your creature type; alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit Points; Hit Point Dice; proficiencies; and ability to communicate. If you have the Spellcasting or Pact Magic feature, you keep it too. When you shape-shift, you decide whether your equipment falls to the ground or changes size and shape to fit the new form while you are in it. Once you use this benefit, you can't do so again until you finish a Long Rest.</p><p><strong>Hardy Transformation.</strong> When you gain Temporary Hit Points from shape-shifting, increase them by 20.</p><section class=\"secret\" id=\"secret-f6HVloVZ2UPkHFXj\"><p><strong>Foundry Note</strong></p><p>The transformation keeps your Hit Points, mental scores, class, feats, spells, and proficiencies: drop the form on the card. Give yourself Temporary Hit Points equal to the Hit Points of the form plus 20.</p></section>",
+      "chat": ""
+    },
+    "identifier": "boon-of-fluid-forms",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

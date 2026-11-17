@@ -1,0 +1,235 @@
+{
+  "name": "Carouser",
+  "type": "background",
+  "_id": "ARBC4VMxr5e7mE4s",
+  "img": "icons/consumables/drinks/wine-bottle-glass-white.webp",
+  "folder": "yPb7DAZUVx2Ey6GP",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You came of age in the beating heart of a great city such as Baldur's Gate. You spent countless nights in taverns, theaters, salons, and gambling dens, enjoying everything the city had to offer. You have a natural gift for drawing secrets out of people, whether over a high-stakes game or at an elegant soirée. You may have been thrown out of an establishment or ten, but only by people who don't know how to have a good time.</p><p><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.8AAspyuQktrLqNUH]{Tireless Reveler}</p><p><strong>Skill Proficiencies:</strong> Deception and Persuasion</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dagger}, Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagBottleGlass]{Glass Bottle}, @UUID[Compendium.dnd5e.equipment24.Item.phbagMirror00000]{Mirror}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPerfume0000]{Perfume}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}, 19 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "carouser",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "l6Nn2aQNeoxmzLL8": {
+        "_id": "l6Nn2aQNeoxmzLL8",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "HzaBgib3Szkskqdi": {
+        "_id": "HzaBgib3Szkskqdi",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Deception and Persuasion. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:dec",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "wBYRfk3kzBSvrzYZ": {
+        "_id": "wBYRfk3kzBSvrzYZ",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Tireless Reveler feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.8AAspyuQktrLqNUH",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ONnFGuK0gKcg12Hi": {
+        "_id": "ONnFGuK0gKcg12Hi",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "sxEbGLeEKbRah5su",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "requiresProficiency": false,
+        "_id": "qPkye9jgheTdGqv8",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "nHEXePEF7Km7UrOP",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "fHh3lBIOcNYE6zH7",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 400000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagBottleGlass",
+        "requiresProficiency": false,
+        "_id": "lf4zcA7NAhTULWYb",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 500000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagMirror00000",
+        "requiresProficiency": false,
+        "_id": "3BHrS0wrrJSexjzD",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 600000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPerfume0000",
+        "requiresProficiency": false,
+        "_id": "BbWjedPVHJf9gGZx",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 700000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+        "requiresProficiency": false,
+        "_id": "MCSPIeZSMdArtLiZ",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 800000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagTinderbox00",
+        "requiresProficiency": false,
+        "_id": "fRX3UlyRithwsAaG",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 900000
+      },
+      {
+        "count": 19,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "318SSao1DbTZaZm4",
+        "group": "sxEbGLeEKbRah5su",
+        "sort": 1000000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

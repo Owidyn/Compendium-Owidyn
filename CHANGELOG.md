@@ -2,6 +2,130 @@
 
 Évolutions de **Compendium Owidyn** pour Foundry VTT 14 et D&D5e 6.0.6.
 
+## 2.6.0
+
+### Nouvelles species
+
+**Species** reçoit les species 2024 de la liste du wiki que dnd5e n'a pas : 38 species rangées par type de créature (nouveaux dossiers *Aberration*, *Celestial*, *Construct*, *Dragon*, *Fey* et *Undead*), leurs 100 aptitudes dans *Species Features*.
+
+- **Player's Handbook** : Aasimar.
+- **Eberron** : Changeling, Kalashtar, Khoravar, Shifter (Beasthide, Longtooth, Swiftstride ou Wildhunt au choix), Warforged.
+- **Lorwyn** : Boggart, Faerie (Lorwyn ou Shadowmoor, celle-ci avec Darkvision 120 ft), Flamekin, Changeling, Lorwyn, Rimekin.
+- **Ravenloft et Astarion's Book of Hungers** : Dhampir, Hexblood, Lupin, Reborn.
+- **D&D Beyond Drops** : Bariaur, Duskling.
+- **World of Warcraft** : Dracthyr, Draenei (Draenei, Krokul, Lightforged, Man'ari), Earthen, Azeroth Elf (Blood, High, Night, Nightborne, Void), Forsaken, Mechagnome, Goblin, Haranir, Pandaren, Tauren (lignée Mulgore, Highmountain ou Taunka), Troll (Amani, Darkspear ou Zandalari), Vulpera, Worgen. Le Dwarf, le Gnome, le Human et l'Orc de World of Warcraft sont ceux du Player's Handbook, déjà dans dnd5e ; la Renown de départ est dans la description.
+
+Comme les species de dnd5e, chaque lignée à sorts est une species à part, et les aptitudes identiques à celles de dnd5e (Fey Ancestry, Keen Senses, Trance, Dwarven Resilience) sont les siennes. Résistances, maîtrises et sorts s'ajoutent par avancement ; utilisations, transformations (Shifting, Darkflight, Celestial Revelation), jets de sauvegarde, soins, attaques à mains nues et bonus (CA, vitesse, vol, télépathie, avantages) sont automatisés, avec une note Foundry pour le reste.
+
+### Nouveaux backgrounds
+
+**Backgrounds & Feats** reçoit les 69 backgrounds de la liste du wiki que dnd5e et le module n'ont pas (dnd5e a Acolyte, Criminal, Sage et Soldier, le module Guide et Scribe), rangés par source dans *Backgrounds* :
+
+- **Player's Handbook** : Artisan, Charlatan, Entertainer, Farmer, Guard, Hermit, Merchant, Noble, Sailor, Wayfarer.
+- **Eberron** : Aberrant Heir, Archaeologist, House Agent, Inquisitive et les douze héritiers des maisons (House Cannith Heir… House Vadalis Heir), chacun avec la marque de sa maison.
+- **Forgotten Realms** : Chondathan Freebooter, Dead Magic Dweller, Dragon Cultist, Emerald Enclave Caretaker, Flaming Fist Mercenary, Genie Touched, Harper, Ice Fisher, Knight of the Gauntlet, Lords' Alliance Vassal, Moonwell Pilgrim, Mulhorandi Tomb Raider, Mythalkeeper, Purple Dragon Squire, Rashemi Wanderer, Shadowmasters Exile, Spellfire Initiate, Zhentarim Mercenary.
+- **Ravenloft** : Haunted One, Investigator, Mist Wanderer, Spirit Medium (un Dark Gift au choix, ou Survivor / Sharp Eye).
+- **Arcana Unleashed** : Agent of the Ninth Quill, Bejeweled Conclave Spy, Cosmic Dawn Experiment, Covenant of the Grave Recruit, Crucible Storm Chaser, Familiar Trainer, Horizon Weaver Initiate, Phantasmic Circus Trouper, Seer Apprentice, Ward of the Sheltering Hands.
+- **Other Settings** : Carouser, Vampire Devotee, Vampire Survivor (Astarion's Book of Hungers), Lorwyn Expert, Shadowmoor Expert (Lorwyn: First Light), Pact Seeker (un Planar Pact au choix).
+- **Project Lamordia** : Discredited Neural Tuner, Fabricated Mind, Mutated Commuter, Reconstructed Runaway (leur Dark Gift ou un autre au choix).
+
+Chacun est construit comme ceux de dnd5e : augmentation de caractéristiques, maîtrises (outil au choix quand il le faut), don (ou choix de don), Common et deux langues standard, équipement de départ (A) relié aux objets de dnd5e, ou 50 GP (B).
+
+### Nouveaux dons
+
+**Backgrounds & Feats** reçoit les 26 dons d'origine que demandent ces backgrounds, rangés dans *Feats › Origin Feats* en trois sous-dossiers :
+
+- **Dragonmarks** (Eberron: Forge of the Artificer) : Aberrant Dragonmark et les douze marques des maisons (Detection, Finding, Handling, Healing, Hospitality, Making, Passage, Scribing, Sentinel, Shadow, Storm, Warding). Le 1d4 de leur Intuition s'ajoute aux tests de compétence (pas aux outils, à ajouter à la main) ; leurs sorts se lancent une fois par Long Rest sans emplacement, ceux du niveau 3 s'ajoutent à ce niveau ; la table *Spells of the Mark* renvoie aux sorts sans les ajouter à la liste de classe.
+- **Planar Pacts** (D&D Beyond Drops) : Fey Pact, Infernal Pact, Shadow Pact (Darkvision 60 ft, ou +30 ft si vous l'avez déjà), Upper Planes Pact.
+- **Dark Gifts** (Ravenloft: The Horrors Within) : Aberrant Anatomy, Echoing Soul, Gathered Whispers, Living Shadow, Mist Walker, Second Skin, Symbiotic Being, Touch of Death, Watchers. Leur contrepartie (sur un 1 au d20) est un jet de sauvegarde DD 13 + bonus de maîtrise qui applique son état ; leurs tables (Shadow's Will, Change Catalyst) se tirent depuis le don.
+
+Puis les 143 autres dons de la liste du wiki que dnd5e n'a pas :
+
+- **General Feats** (87) : ceux du Player's Handbook (Actor, Athlete… Weapon Master), les *Adept* d'école et les familiers d'Arcana Unleashed, ceux de World of Warcraft (Clearcasting, Elusive Brawler, Enveloping Mist, Fingers of Frost, Fists of Fury, Hot Streak, Stagger and Sway…), de Heroes of Faerûn (Cold Caster… Zhentarim Tactics) et d'Astarion's Book of Hungers (Bloodlust… Vampire Touched).
+- **General Feats › Greater Dragonmarks** (14) et **Greater Planar Pacts** (8), pour les personnages qui ont la marque ou le pacte.
+- **Fighting Style Feats** (9) : Arcane Warrior, Blind Fighting, Dueling, Interception, Pack Fighting, Prone Fighting, Protection, Thrown Weapon Fighting, Unarmed Fighting (Archery, Defense, Great Weapon Fighting et Two-Weapon Fighting sont dans dnd5e).
+- **Epic Boon Feats** (25) : les huit du Player's Handbook absents du SRD, ceux d'Arcana Unleashed, d'Eberron (Boon of Siberys), de Heroes of Faerûn et d'Astarion's Book of Hungers.
+
+### Nouvelle classe : Artificer
+
+**Classes** reçoit l'**Artificer** (Eberron: Forge of the Artificer), rangé comme les classes de dnd5e (*Artificer › Class Features*, une sous-classe par dossier) : dé de vie d8, jets de sauvegarde de Constitution et d'Intelligence, Thieves' Tools, Tinker's Tools et un outil d'artisan, équipement de départ (A) relié aux objets de dnd5e ou 150 GP (B), demi-lanceur de sorts en Intelligence dès le niveau 1. Ses tables (sorts préparés, cantrips, plans connus, objets magiques) sont des valeurs d'échelle, ses dons de caractéristiques tombent aux niveaux 4, 8, 12, 16 et 19, et ses aptitudes vont de *Tinker's Magic* et *Replicate Magic Item* (avec les tables de plans) à *Soul of Artifice*. Sa liste de sorts (*Journals › Spell Lists › Artificer*) est complète.
+
+### Nouvelles sous-classes
+
+**Classes** reçoit les 74 sous-classes 2024 de la liste du wiki que dnd5e n'a pas, chacune dans le dossier de sa classe avec ses *Subclass Features* :
+
+- **Artificer** (6) : Alchemist, Armorer, Artillerist, Battle Smith, Cartographer (Forge of the Artificer), Reanimator (Ravenloft).
+- **Barbarian** (5) : Path of the Wild Heart, of the World Tree, of the Zealot (Player's Handbook), of the Elements, of the Spiritual Guardian (World of Warcraft).
+- **Bard** (5) : College of Dance, of Glamour, of Valor (Player's Handbook), of Spirits (Ravenloft), of the Moon (Heroes of Faerûn).
+- **Cleric** (8) : Light, Trickery, War Domain (Player's Handbook), Arcana (Arcana Unleashed), Discipline, Shadow (World of Warcraft), Grave (Ravenloft), Knowledge (Heroes of Faerûn).
+- **Druid** (3) : Circle of the Moon, of the Sea, of the Stars.
+- **Fighter** (6) : Battle Master (24 manœuvres), Eldritch Knight, Psi Warrior (Player's Handbook), Arcane Archer (8 Arcane Shots, Arcana Unleashed), Banneret (Heroes of Faerûn), Sorrow Knight (D&D Beyond Drops).
+- **Monk** (5) : Warrior of Mercy, of Shadow, of the Elements (Player's Handbook), of Mystic Brews (World of Warcraft), of the Mystic Arts (Arcana Unleashed).
+- **Paladin** (6) : Oath of Glory, of the Ancients, of Vengeance (Player's Handbook), of the Ebon Blade (Death Coil, runes), of the Holy (World of Warcraft), of the Noble Genies (Heroes of Faerûn).
+- **Ranger** (6) : Beast Master (avec les Hunter Pets et la Pet Specialization de World of Warcraft), Fey Wanderer, Gloom Stalker (Player's Handbook), Demon Hunter (World of Warcraft), Hollow Warden (Ravenloft), Winter Walker (Heroes of Faerûn).
+- **Rogue** (6) : Arcane Trickster, Assassin, Soulknife (Player's Handbook), Phantom (Ravenloft), Scion of the Three (Heroes of Faerûn), Swashbuckler (World of Warcraft).
+- **Sorcerer** (5) : Aberrant, Clockwork, Wild Magic Sorcery (Player's Handbook), Shadow (Ravenloft), Spellfire (Heroes of Faerûn).
+- **Warlock** (5 + 1) : Archfey, Celestial, Great Old One Patron (Player's Handbook), Undead (Ravenloft), Vestige (Arcana Unleashed), et le **Genie Patron** ci-dessous.
+- **Wizard** (8) : Abjurer, Diviner, Illusionist (Player's Handbook), Bladesinger (Heroes of Faerûn), Conjurer, Enchanter, Necromancer, Transmuter (Arcana Unleashed).
+
+Les sorts de sous-classe s'ajoutent toujours préparés à leur niveau (sorts de pacte pour le Warlock), et ceux qu'on choisit dans une colonne (runes de l'Ebon Blade, Demon Hunter, domaine du Vestige Patron) par un choix à chaque palier. Les *Savant* du Wizard proposent les sorts de leur école à chaque nouveau niveau d'emplacement. Les aptitudes qui dépensent une ressource de la classe (Rage, Bardic Inspiration, Channel Divinity, Wild Shape, Focus Points, Sorcery Points, Favored Enemy, Second Wind…) la consomment sur la fiche ; dés et bonus qui montent avec le niveau sont des valeurs d'échelle ; effets, jets de sauvegarde, soins, attaques et invocations sont automatisés, avec une note Foundry pour le reste. Les 12 sous-classes du SRD (Berserker, Lore, Life, Land, Champion, Open Hand, Devotion, Hunter, Thief, Draconic, Fiend, Evoker) sont celles de dnd5e.
+
+### Genie Patron (2024)
+
+Le patron Génie de Tasha's Cauldron of Everything, celui du Djinni de l'Occultiste d'Aldraine, adapté aux règles 2024 (*Warlock › Genie Patron*) :
+
+- **Niveau 3** : choix du genre du génie (**Dao**, **Djinni**, **Efreeti** ou **Marid**), *Genie Spells* toujours préparés aux niveaux 3, 5, 7 et 9 (ceux du génie et ceux de son genre ; Wish peut devenir l'arcane mystique de niveau 9), *Genie's Vessel* (Bottled Respite une fois par Long Rest, Genie's Wrath du type de dégâts du genre).
+- **Niveau 6** : *Elemental Gift* (résistance du genre, vol de 30 ft en Bonus Action autant de fois que le bonus de maîtrise).
+- **Niveau 10** : *Sanctuary Vessel* (jusqu'à cinq créatures dans le vase, Short Rest en 10 minutes).
+- **Niveau 14** : *Limited Wish* (un sort de niveau 6 ou moins, puis 1d4 Long Rests).
+
+### Nouvelles invocations
+
+**Summons** reçoit les compagnons des sous-classes : Steel Defender, Eldritch Cannon, Reanimated Companion (Artificer), Beast of the Land, of the Sea et of the Sky (Beast Master) et le Vestige Companion céleste, fiélon ou mort-vivant (Vestige Patron). L'aptitude qui les invoque ajoute ce qui monte avec le niveau (CA, points de vie, dégâts) et reprend le bonus de maîtrise, les attaques et les DD de l'invocateur ; leur lien (*Steel Bond*, *Primal Bond*, *Pact Bond*) ajoute le bonus de maîtrise à leurs tests et sauvegardes.
+
+### Sous-classes de Tasha's Cauldron of Everything
+
+Les 15 sous-classes de Tasha's absentes de la liste du wiki rejoignent **Classes**, adaptées aux règles 2024 comme le Genie Patron : sous-classe au niveau 3, niveaux d'aptitudes de la classe 2024, sorts toujours préparés (sorts de pacte pour le Warlock), Focus Points au lieu du Ki, Magic actions. Le Divine Strike des domaines de Cleric laisse la place au Blessed Strikes de la classe 2024.
+
+- **Barbarian** : Path of the Beast (armes naturelles, Bestial Soul, Infectious Fury, Call the Hunt), Path of Wild Magic (table Wild Surge et ses effets).
+- **Bard** : College of Creation (Mote of Potential, Dancing Item), College of Eloquence (Silver Tongue, Unsettling Words).
+- **Cleric** : Order Domain, Peace Domain (Emboldening Bond), Twilight Domain (Twilight Sanctuary, Steps of Night).
+- **Druid** : Circle of Spores (Halo of Spores, Symbiotic Entity), Circle of Wildfire (Wildfire Spirit).
+- **Fighter** : Rune Knight, avec ses six runes (Cloud, Fire, Frost, Stone, Hill, Storm) à choisir et Giant's Might.
+- **Monk** : Warrior of the Astral Self. **Paladin** : Oath of the Watchers. **Ranger** : Swarmkeeper. **Warlock** : Fathomless Patron. **Wizard** : Scribe.
+
+**Summons** reçoit leurs créatures : Dancing Item (College of Creation) et Wildfire Spirit (Circle of Wildfire).
+
+### Nouveau background : Automate cuisinier
+
+Un construct fabriqué pour servir en cuisine (*Backgrounds*, à côté du Sujet de Confinement Runique) : Constitution, Wisdom ou Dexterity, Perception et Survival, Tinker's Tools, don **Cuisinier**, Common et deux langues standard, Tinker's Tools, Cook's Utensils, Iron Pot et Traveler's Clothes, ou 50 GP. Son trait **Corps d'automate** donne la Resistance au poison (effet passif) et l'Advantage contre les maladies et l'état Poisoned ; il n'a besoin ni de manger, ni de boire, ni de respirer, ni de dormir, et passe 4 heures inactif, à demi conscient, pendant un Long Rest.
+
+### Objets et invocations manquants
+
+- **Items** reçoit les 22 objets magiques du wiki que dnd5e et le module n'avaient pas (37 fiches) : les cinq **Ashen Bands** (Courage, Destruction, Might, Vengeance, Wisdom) en leurs quatre paliers de rareté, Bauble of True Blood, Bloodvenom Blade, Fragment of Frozen Bone, Invincible's Reins, Light's Vengeance, Repulsion Shield, Ring of Maddening Whispers, Scroll of Protection, Scroll of Titan Summoning, Shadowfang, Shadowmourne, Shadow's Edge, Sundial of Eternal Dusk, Thrice Fanged Signet, Tiny Abomination in a Jar, Twin Blades of Azzinoth et Vithrak, Gaze of the Deadman. Nouveaux dossiers *Rings › Rare*, *Rings › Very Rare* et *Scrolls*.
+- **Classes** reçoit, dans *Warlock › Eldritch Invocations*, les 7 invocations de World of Warcraft : Pact of the Legion, Call of the Void, Curse of Corruption, Expendable Minions, Health Funnel, Legion Summoning, Master Demonologist.
+
+### Bastions
+
+**Items** reçoit les installations de Bastion (*Bastion Facilities*, objets « facility » de dnd5e, à glisser sur l'onglet Bastion de la fiche) : les 6 installations de base et les 29 installations spéciales du Dungeon Master's Guide, et les 35 de Heroes of Faerûn, Forge of the Artificer, Ravenloft et Arcana Unleashed, rangées par niveau (5, 9, 13, 17), avec leur prérequis, leur espace, leurs employés et leur ordre. Le module ajoute à dnd5e les sous-types de ces nouvelles installations.
+
+### Règles optionnelles
+
+**Journals** reçoit *Règles optionnelles*, en français : Bastions (tours, ordres, événements, hantises), Renown (et la liste des factions), magie de cercle, professions et compagnons de World of Warcraft, objets magiques évolutifs, traits d'artefact et fabrication d'objets magiques.
+
+### Journal du module
+
+**Journals** reçoit *Compendium Owidyn*, un guide du module à la manière d'un livre de règles : présentation, classes et sous-classes, origines, sorts et objets, créatures, systèmes (Boutiques, Cuisine, Cartomancien, Héliarque), règles optionnelles, et une page *Changelog* qui reprend ces notes de version.
+
+### Corrections
+
+- **Héliarque** : les dégâts du Canon stellaire, du Projectile terminal, de l'Onde de pression, de l'Éruption coronaire et de la Singularité des Formes orbitales, ceux des Commandes incarnées du Corps orbital et la réduction de l'Implosion n'avaient plus de formule (dnd5e 6 rejetait `(@scale…)@scale…die` et l'effaçait) : ils lancent de nouveau leurs dés, par exemple `(3)d8 + 3`.
+- **Cartomancien** : la classe avait deux Ability Score Improvements aux niveaux 4, 8, 12 et 16 (d'anciens identifiants de 15 caractères à côté des nouveaux). Le contenu passe en 0.4.1 : le compendium est corrigé, et au chargement par le MJ, chaque Cartomancien du monde perd ses ASI en double (un choix déjà fait est toujours gardé).
+
+### Mise à jour
+
+Aucune migration n'est nécessaire : les nouvelles species apparaissent dans **Species**, les backgrounds et dons dans **Backgrounds & Feats**, l'Artificer et les sous-classes dans **Classes** (prenez la sous-classe depuis le niveau 3 de la classe), les compagnons dans **Summons**, les installations de Bastion dans **Items**. Au premier chargement par le MJ, le contenu du Cartomancien est mis à jour et ses ASI en double retirés.
+
 ## 2.5.0
 
 ### Nouvel équipement

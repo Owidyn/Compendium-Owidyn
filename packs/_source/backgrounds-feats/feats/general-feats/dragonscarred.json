@@ -1,0 +1,119 @@
+{
+  "_id": "Hkh17Q5wU1zN6TO1",
+  "name": "Dragonscarred",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/dragon-winged-blue.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "7ydELmPhifgX9LRN": {
+        "_id": "7ydELmPhifgX9LRN",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 1
+        }
+      },
+      "4ZfOgRHkNr9J5GpL": {
+        "_id": "4ZfOgRHkNr9J5GpL",
+        "type": "Trait",
+        "level": 0,
+        "name": "Damage Resistance",
+        "title": "Damage Resistance",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "dr:acid",
+                "dr:cold",
+                "dr:fire",
+                "dr:lightning",
+                "dr:poison"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Cult of the Dragon Initiate Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Constitution or Charisma score by 1, to a maximum of 20.</p><p><strong>Damage Resistance.</strong> When you gain this feat, choose Acid, Cold, Fire, Lightning, or Poison. You have Resistance to that damage type.</p><p><strong>Fearsome Power.</strong> When you deal damage to a creature as part of the Attack or Magic action on your turn, you can use the Dragon's Terror benefit of your Cult of the Dragon Initiate feat as a Bonus Action this turn.</p>",
+      "chat": ""
+    },
+    "identifier": "dragonscarred",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "cult-of-the-dragon-initiate"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Cult of the Dragon Initiate Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "_id": "WjBUrOR3GLXBdZJw",
+  "name": "Echoing Soul",
+  "type": "feat",
+  "img": "icons/magic/symbols/circle-ouroboros.webp",
+  "folder": "13Z2QY6ujzN3RLir",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "J2kWjaBiNNZNXYVB": {
+        "type": "save",
+        "_id": "J2kWjaBiNNZNXYVB",
+        "sort": 100000,
+        "name": "Intrusive Echoes",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "Immediately after you roll a 1 on the d20 of a D20 Test"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "CH5JiArfkYuw4LWN",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13 + @prof"
+          }
+        }
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "iPjcjApDK6L1ojHO": {
+        "_id": "iPjcjApDK6L1ojHO",
+        "type": "Trait",
+        "level": 0,
+        "name": "Channeled Prowess",
+        "title": "Channeled Prowess",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ZrY01vfbAkrtHSZD": {
+        "_id": "ZrY01vfbAkrtHSZD",
+        "type": "Trait",
+        "level": 0,
+        "name": "Channeled Prowess (Expertise)",
+        "title": "Channeled Prowess (Expertise)",
+        "hint": "",
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "mPGbdE2qpHVakN9J": {
+        "_id": "mPGbdE2qpHVakN9J",
+        "type": "Trait",
+        "level": 0,
+        "name": "Inherent Tongues",
+        "title": "Inherent Tongues",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>(Prerequisite: Ravenloft Campaign)</em></p><p>Memories from a past or alternate life echo through you. You gain the following features.</p><p><strong>Channeled Prowess.</strong> You gain proficiency in two skills of your choice. In addition, choose one skill in which you have proficiency: you have Expertise in that skill. Whenever you finish a Long Rest, you can change the skill you chose for this Expertise.</p><p><strong>Inherent Tongues.</strong> You know one additional language of your choice from the Player's Handbook language tables.</p><p><strong>Intrusive Echoes.</strong> Immediately after you roll a 1 on the d20 of a D20 Test, the memories and sensations of your soul's other life threaten to overwhelm you. Make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failure, you have the &amp;Reference[Incapacitated] condition until the end of your next turn, and your Speed is halved while you're Incapacitated this way.</p><section class=\"secret\" id=\"secret-oA8JGr2S08D7gpTa\"><p><strong>Foundry Note</strong></p><p>To change the Expertise after a Long Rest, edit the skills on your sheet. <em>Intrusive Echoes</em> is a Constitution saving throw against DC 13 + your Proficiency Bonus; on a failure, apply its effect (Incapacitated, Speed halved).</p></section>",
+      "chat": ""
+    },
+    "identifier": "echoing-soul",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Ravenloft Campaign",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    }
+  },
+  "effects": [
+    {
+      "_id": "CH5JiArfkYuw4LWN",
+      "name": "Intrusive Echoes",
+      "img": "icons/magic/symbols/circle-ouroboros.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "0.5",
+            "type": "multiply",
+            "phase": "final",
+            "priority": null,
+            "_id": "oSTGuoLlA1VeFlLO"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "rounds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>Incapacitated until the end of your next turn, and your Speed is halved.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

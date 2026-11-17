@@ -1,0 +1,184 @@
+{
+  "name": "House Jorasco Heir",
+  "type": "background",
+  "_id": "fbOIR5dPQAWJ8BnL",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "folder": "3Asrpus4OoaqEjZG",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>House Jorasco teaches that sickness and injury haunt the living like ghosts, stealing their health and their years. You were taught to fight these scourges with both magic and medicine, and to use that skill in the service of others—while making sure you are always properly paid for it, so that House Jorasco itself stays healthy and long-lived. You might be a gentle healer with no stomach for fighting, or a cold specialist who knows exactly where to strike to disable or kill a foe.</p><p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.compendium-owidyn.backgrounds-feats.Item.uAuEkkYCFK09c4rg]{Mark of Healing}</p><p><strong>Skill Proficiencies:</strong> Medicine and Stealth</p><p><strong>Tool Proficiency:</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit}, 25 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "house-jorasco-heir",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "T8tiFHdjIg59j8WF": {
+        "_id": "T8tiFHdjIg59j8WF",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Dexterity, Constitution, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "EZDMOGD0GRWrpdLl": {
+        "_id": "EZDMOGD0GRWrpdLl",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in Medicine and Stealth. It also grants you proficiency in Herbalism Kit.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:med",
+            "skills:ste",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "rBRrCuET8X2J5KZL": {
+        "_id": "rBRrCuET8X2J5KZL",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Mark of Healing feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.backgrounds-feats.Item.uAuEkkYCFK09c4rg",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ZLs0Vdr9W7GgCjE8": {
+        "_id": "ZLs0Vdr9W7GgCjE8",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "XDCS7mdNLq5H2MG4",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulHerbalismK",
+        "requiresProficiency": false,
+        "_id": "ueW13JrU9pwvzJ0Q",
+        "group": "XDCS7mdNLq5H2MG4",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "7l4PTApCcehlMD6A",
+        "group": "XDCS7mdNLq5H2MG4",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagHealersKit0",
+        "requiresProficiency": false,
+        "_id": "ADHub3TsCpEE0jhO",
+        "group": "XDCS7mdNLq5H2MG4",
+        "sort": 400000
+      },
+      {
+        "count": 25,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "d3mX7fIbDfHInvaa",
+        "group": "XDCS7mdNLq5H2MG4",
+        "sort": 500000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

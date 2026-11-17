@@ -1,0 +1,190 @@
+{
+  "name": "Noble",
+  "type": "background",
+  "_id": "JAEc1qFrafMqCcxb",
+  "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
+  "folder": "VNIPkDaBFojZ7e01",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>You grew up in a castle amid wealth, power, and privilege. Your family of minor aristocrats made sure you received an excellent education, parts of which you enjoyed and parts of which you resented. The time you spent in the castle, and especially the long hours watching your family at court, also taught you much about leadership.</p><p><strong>Ability Scores:</strong> Strength, Intelligence, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled}</p><p><strong>Skill Proficiencies:</strong> History and Persuasion</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> Gaming Set</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Gaming Set (same as above), @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPerfume0000]{Perfume}, 29 GP; or (B) 50 GP</p>",
+      "chat": ""
+    },
+    "identifier": "noble",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "advancement": {
+      "evywcFGDXjGu8sS5": {
+        "_id": "evywcFGDXjGu8sS5",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "Background Ability Score Improvement",
+        "flags": {},
+        "value": {},
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "wis"
+          ],
+          "points": 3
+        },
+        "hint": "Your background allows you to increase your Strength, Intelligence, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      "VzGAFW7c0FIoUR3O": {
+        "_id": "VzGAFW7c0FIoUR3O",
+        "type": "Trait",
+        "level": 0,
+        "name": "Background Proficiencies",
+        "title": "Background Proficiencies",
+        "hint": "Your background grants you proficiency in History and Persuasion. It also grants you proficiency with one kind of Gaming Set of your choice.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:his",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "FuO7wEQWRSjBKyqi": {
+        "_id": "FuO7wEQWRSjBKyqi",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Background Feat",
+        "title": "Background Feat",
+        "hint": "Your background grants you the Skilled feat.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.feats24.Item.phbftSkilled0000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "l7ijuiVPqO3Ei6e2": {
+        "_id": "l7ijuiVPqO3Ei6e2",
+        "type": "Trait",
+        "level": 0,
+        "name": "Choose Languages",
+        "title": "Choose Languages",
+        "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "requiresProficiency": false,
+        "_id": "CQGrEdEG0MELGRhz",
+        "group": "",
+        "sort": 100000
+      },
+      {
+        "count": null,
+        "type": "tool",
+        "key": "game",
+        "requiresProficiency": false,
+        "_id": "OGnyXOXlCWuuEair",
+        "group": "CQGrEdEG0MELGRhz",
+        "sort": 200000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagClothesFine",
+        "requiresProficiency": false,
+        "_id": "Haz9ppijASexSlcc",
+        "group": "CQGrEdEG0MELGRhz",
+        "sort": 300000
+      },
+      {
+        "count": null,
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagPerfume0000",
+        "requiresProficiency": false,
+        "_id": "emElgYfrhvezd9G3",
+        "group": "CQGrEdEG0MELGRhz",
+        "sort": 400000
+      },
+      {
+        "count": 29,
+        "type": "currency",
+        "key": "gp",
+        "requiresProficiency": false,
+        "_id": "wH5OsOrfC3oxTUGO",
+        "group": "CQGrEdEG0MELGRhz",
+        "sort": 500000
+      }
+    ],
+    "wealth": "50"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

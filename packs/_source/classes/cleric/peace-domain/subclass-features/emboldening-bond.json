@@ -1,0 +1,233 @@
+{
+  "name": "Emboldening Bond",
+  "type": "feat",
+  "_id": "cCCrzNyVxnfXngJ0",
+  "img": "icons/magic/life/heart-cross-blue.webp",
+  "folder": "p2DWY4TEqLgZT1k5",
+  "sort": 200000,
+  "system": {
+    "description": {
+      "value": "<p>You can forge an empowering bond among people at peace with one another. As a Magic action, choose a number of willing creatures within 30 feet of you (which can include yourself) equal to your Proficiency Bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, it can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes, no more than once per turn. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-d6jfVBHGNVL4NteF\"><p><strong>Foundry Note</strong></p><p>The effect adds 1d4 to every attack roll, check, and save: turn it off for rolls beyond the first each turn, or when no bonded creature is near.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Peace Domain 3",
+    "activities": {
+      "ZdQUiRttdrhK9sr8": {
+        "type": "utility",
+        "_id": "ZdQUiRttdrhK9sr8",
+        "sort": 100000,
+        "name": "Emboldening Bond",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "10",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZdQUiRttdrhK9sr8"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "@prof",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "emboldening-bond",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "ZdQUiRttdrhK9sr8",
+      "name": "Emboldening Bond",
+      "img": "icons/magic/life/heart-cross-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.attack.mwak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "HIcb4MW4wcbP4DuF"
+          },
+          {
+            "key": "system.rolls.attack.rwak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "kWpns2IA27brQHLS"
+          },
+          {
+            "key": "system.rolls.attack.msak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Hq2CcJasLrrBfPx6"
+          },
+          {
+            "key": "system.rolls.attack.rsak.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "i0D8TdvHb5FwErDP"
+          },
+          {
+            "key": "system.rolls.ability.check.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Xahml4ACc9PWAwa0"
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
+            "value": "1d4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "5TAcowOVpPw23ZkN"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Once per turn, add 1d4 to an attack roll, ability check, or saving throw while within 30 feet (60 at Cleric 17) of another bonded creature.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

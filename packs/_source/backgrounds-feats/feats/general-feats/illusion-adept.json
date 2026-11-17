@@ -1,0 +1,142 @@
+{
+  "_id": "QwahuoEre0apIzdi",
+  "name": "Illusion Adept",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {},
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "MuD4YSxuSB3FmAUB": {
+        "_id": "MuD4YSxuSB3FmAUB",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 1
+        }
+      },
+      "ZFHPbFlh7r5wZese": {
+        "_id": "ZFHPbFlh7r5wZese",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Additional Spells",
+        "title": "Additional Spells",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSilentImag",
+              "optional": true,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbPhantasmalFor",
+              "optional": true,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMajorImage",
+              "optional": true,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHallucinat",
+              "optional": true,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSeeming000",
+              "optional": true,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": true
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Additional Spells.</strong> Your mastery keeps certain spells always at the ready. Once you have spell slots of a level shown in the Illusion Adept Spells table, you always have the spells of that level and lower prepared.</p><p><strong>Masterful Illusions.</strong> When you cast an Illusion spell with a spell slot, you can cast it without Verbal, Somatic, or Material components, except Material components that the spell consumes or that have a cost. In addition, creatures have Disadvantage on Intelligence (Investigation) checks made to discern the true nature of the illusions your spells create.</p><h4>Illusion Adept Spells</h4><table><thead><tr><th>Spell Slot Level</th><th>Spell</th></tr></thead><tbody><tr><td>1</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSilentImag]{Silent Image}</td></tr><tr><td>2</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantasmal Force}</td></tr><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMajorImage]{Major Image}</td></tr><tr><td>4</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHallucinat]{Hallucinatory Terrain}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplSeeming000]{Seeming}</td></tr></tbody></table><section class=\"secret\" id=\"secret-9uYZj12JZRv915yT\"><p><strong>Foundry Note</strong></p><p>Choose the spells of the levels whose slots you have; add the others when you gain those slots.</p></section>",
+      "chat": ""
+    },
+    "identifier": "illusion-adept",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Spellcasting or Pact Magic Feature",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

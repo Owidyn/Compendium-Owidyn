@@ -1,0 +1,461 @@
+{
+  "name": "Alchemist",
+  "type": "subclass",
+  "_id": "4NpR1kBVHa4jT9aQ",
+  "img": "icons/consumables/potions/bottle-round-corked-orange.webp",
+  "folder": "MxD7aq3UjKHoJFxH",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Craft Magic Elixirs and Potions</p></blockquote><p>An Alchemist is an expert at combining reagents to produce magical effects, using these creations to give life and to drain it away.</p><h3>Alchemist Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.9n6zX1Rc7yCSAjXE]{Tools of the Trade}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.gipp6i2SwxyssGeb]{Experimental Elixir}</td></tr><tr><td>5</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.TcEKxTR79nhBNlaP]{Alchemical Savant}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.FIVybqjmv90Hx47C]{Restorative Reagents}</td></tr><tr><td>15</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.tVW9xNPmK2TDwWcn]{Chemical Mastery}</td></tr></tbody></table><h3>Alchemist Spells</h3><table><thead><tr><th>Artificer Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing Word}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]{Ray of Sickness}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlamingSph]{Flaming Sphere}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA]{Melf's Acid Arrow}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplGaseousFor]{Gaseous Form}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMassHealin]{Mass Healing Word}</td></tr><tr><td>13</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0]{Death Ward}, @UUID[Compendium.dnd5e.spells24.Item.phbsplVitriolicS]{Vitriolic Sphere}</td></tr><tr><td>17</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplCloudkill0]{Cloudkill}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]{Raise Dead}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "alchemist",
+    "classIdentifier": "artificer",
+    "advancement": {
+      "LSzXqYoqBNGl4jRB": {
+        "_id": "LSzXqYoqBNGl4jRB",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9n6zX1Rc7yCSAjXE",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.gipp6i2SwxyssGeb",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "x3AoMHQmVn9BDd9E": {
+        "_id": "x3AoMHQmVn9BDd9E",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.TcEKxTR79nhBNlaP",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Z65YgRD5u5zRH4fY": {
+        "_id": "Z65YgRD5u5zRH4fY",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.FIVybqjmv90Hx47C",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wwW5l1kDkilaM2av": {
+        "_id": "wwW5l1kDkilaM2av",
+        "type": "ItemGrant",
+        "level": 15,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.tVW9xNPmK2TDwWcn",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hunkBqIx2isSj3m3": {
+        "_id": "hunkBqIx2isSj3m3",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Alchemist Spells",
+        "title": "Alchemist Spells",
+        "hint": "When you reach a Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHealingWor",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRayofSickn",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "tCcTnN9RlhD2Tccy": {
+        "_id": "tCcTnN9RlhD2Tccy",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Alchemist Spells",
+        "title": "Alchemist Spells",
+        "hint": "When you reach a Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlamingSph",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "Y3v2tB4iI2Be7FmA": {
+        "_id": "Y3v2tB4iI2Be7FmA",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Alchemist Spells",
+        "title": "Alchemist Spells",
+        "hint": "When you reach a Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGaseousFor",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassHealin",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "jLbJpF3qAfa98c1N": {
+        "_id": "jLbJpF3qAfa98c1N",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Alchemist Spells",
+        "title": "Alchemist Spells",
+        "hint": "When you reach a Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDeathWard0",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplVitriolicS",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "m2Lk8Xk2suFX7RVO": {
+        "_id": "m2Lk8Xk2suFX7RVO",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Alchemist Spells",
+        "title": "Alchemist Spells",
+        "hint": "When you reach a Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCloudkill0",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRaiseDead0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "CxA4aeboGDu3hCK7": {
+        "_id": "CxA4aeboGDu3hCK7",
+        "type": "Trait",
+        "level": 3,
+        "name": "Tools of the Trade",
+        "title": "Tools of the Trade",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "tool:art:alchemist",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "OjGTaWNCapdB8R6U": {
+        "_id": "OjGTaWNCapdB8R6U",
+        "type": "ScaleValue",
+        "name": "Experimental Elixirs",
+        "title": "Experimental Elixirs",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "elixirs",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "5": {
+              "value": 3
+            },
+            "9": {
+              "value": 4
+            },
+            "15": {
+              "value": 5
+            }
+          }
+        }
+      },
+      "JUkAe2pRnx8h60Oq": {
+        "_id": "JUkAe2pRnx8h60Oq",
+        "type": "ScaleValue",
+        "name": "Elixir Healing",
+        "title": "Elixir Healing",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "elixir-healing",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 2,
+              "faces": 8,
+              "modifiers": []
+            },
+            "9": {
+              "number": 3,
+              "faces": 8,
+              "modifiers": []
+            },
+            "15": {
+              "number": 4,
+              "faces": 8,
+              "modifiers": []
+            }
+          }
+        }
+      },
+      "ShS2q5GT5uxwdL3V": {
+        "_id": "ShS2q5GT5uxwdL3V",
+        "type": "ScaleValue",
+        "name": "Elixir Speed",
+        "title": "Elixir Speed",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "elixir-speed",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 10
+            },
+            "9": {
+              "value": 15
+            },
+            "15": {
+              "value": 20
+            }
+          }
+        }
+      },
+      "LHm7mmv9qIRXKl71": {
+        "_id": "LHm7mmv9qIRXKl71",
+        "type": "ScaleValue",
+        "name": "Elixir Fly Speed",
+        "title": "Elixir Fly Speed",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "elixir-fly",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 10
+            },
+            "9": {
+              "value": 20
+            },
+            "15": {
+              "value": 30
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

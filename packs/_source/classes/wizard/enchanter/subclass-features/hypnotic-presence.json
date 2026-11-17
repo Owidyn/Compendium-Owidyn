@@ -1,0 +1,241 @@
+{
+  "name": "Hypnotic Presence",
+  "type": "feat",
+  "_id": "b6EaJkMY1Gy99WXv",
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "folder": "JHBNSAO9IHci6XgH",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>Your charming words and enchanting gaze can enthrall another creature. As a Magic action, choose one creature you can see within 10 feet of you. If it can see or hear you, it must succeed on a Wisdom saving throw against your spell save DC or have the Charmed condition for 1 minute, or until it is more than 10 feet away from you, can neither see nor hear you, or takes damage. While Charmed this way, the target has the Incapacitated condition and a Speed of 0. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Enchanter 3",
+    "activities": {
+      "1KoVCFMz8e2Bnenp": {
+        "type": "save",
+        "_id": "1KoVCFMz8e2Bnenp",
+        "sort": 100000,
+        "name": "Hypnotic Presence",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "uqyFmBz5D8XqHGqA",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "value": "10",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "hypnotic-presence",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "uqyFmBz5D8XqHGqA",
+      "name": "Hypnotic Presence",
+      "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "rMAQ4Th0tCbNXRBN"
+          },
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "Wr4w4rsvSGaOnTrA"
+          },
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "liBcFkDE8Ap9OBjL"
+          },
+          {
+            "key": "system.attributes.movement.speeds.climb",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "E7VwCUtlm4lHdVZX"
+          },
+          {
+            "key": "system.attributes.movement.speeds.burrow",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null,
+            "_id": "CgZB9iCmO8pF86TN"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Charmed and Incapacitated with a Speed of 0 for 1 minute, or until it is more than 10 feet away from the enchanter, can neither see nor hear them, or takes damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "charmed",
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "name": "Grave Domain",
+  "type": "subclass",
+  "_id": "RiNI6qABlJH6YKxA",
+  "img": "icons/magic/death/skull-humanoid-white-blue.webp",
+  "folder": "VQIqGdWxwUoHv2Zh",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Embody Deific Forces of Death</p></blockquote><p>The Grave Domain watches over the boundary between life and death. For those who draw on it, death is a natural and inevitable part of the multiverse; these Clerics destroy undead and guide spirits on.</p><p>Its magic also lets them hold death off for a while—a delay, never a denial, for the grave always claims its due.</p><h3>Grave Domain Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.ufPluhN2ElVmVcz2]{Grave Domain Spells}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.DBQf2V4CeuXEpBZ2]{Circle of Mortality}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.y63LohGcEa41Z7JA]{Path to the Grave}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.eVMFclBC7C8nQPOF]{Sentinel at Death's Door}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.wYiK2yzN5fTEAKvU]{Divine Reaper}</td></tr></tbody></table><h3>Grave Domain Spells</h3><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil and Good}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False Life}, @UUID[Compendium.dnd5e.spells24.Item.phbsplGentleRepo]{Gentle Repose}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray of Enfeeblement}, @UUID[Compendium.dnd5e.spells24.Item.phbsplSparetheDy]{Spare the Dying}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRevivify00]{Revivify}, @UUID[Compendium.dnd5e.spells24.Item.phbsplVampiricTo]{Vampiric Touch}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplBlight0000]{Blight}, @UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0]{Death Ward}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelEvil]{Dispel Evil and Good}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]{Raise Dead}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "grave-domain",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "F3nuiOrZaw72RBUR": {
+        "_id": "F3nuiOrZaw72RBUR",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.ufPluhN2ElVmVcz2",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.DBQf2V4CeuXEpBZ2",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.y63LohGcEa41Z7JA",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "TF346FYTpugtAjv5": {
+        "_id": "TF346FYTpugtAjv5",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.eVMFclBC7C8nQPOF",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "ZPjyYjEBLO4JiNkQ": {
+        "_id": "ZPjyYjEBLO4JiNkQ",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.wYiK2yzN5fTEAKvU",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "PMw6XqvvhQSMfnJF": {
+        "_id": "PMw6XqvvhQSMfnJF",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Grave Domain Spells",
+        "title": "Grave Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectEvil",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFalseLife0",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGentleRepo",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRayofEnfee",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSparetheDy",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "97sP2CLkVn4FDira": {
+        "_id": "97sP2CLkVn4FDira",
+        "type": "ItemGrant",
+        "level": 5,
+        "name": "Grave Domain Spells",
+        "title": "Grave Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRevivify00",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplVampiricTo",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "hEgMaIXkvusot0Ig": {
+        "_id": "hEgMaIXkvusot0Ig",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Grave Domain Spells",
+        "title": "Grave Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBlight0000",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDeathWard0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "A3l9jbTmvhsTSdNW": {
+        "_id": "A3l9jbTmvhsTSdNW",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Grave Domain Spells",
+        "title": "Grave Domain Spells",
+        "hint": "When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelEvil",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRaiseDead0",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "cLIlJDkx9gMIIL5x": {
+        "_id": "cLIlJDkx9gMIIL5x",
+        "type": "ScaleValue",
+        "name": "Pull of Death",
+        "title": "Pull of Death",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "pull",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 4,
+              "modifiers": []
+            },
+            "11": {
+              "number": 1,
+              "faces": 6,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

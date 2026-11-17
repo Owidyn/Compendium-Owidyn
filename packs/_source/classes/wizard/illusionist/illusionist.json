@@ -1,0 +1,574 @@
+{
+  "name": "Illusionist",
+  "type": "subclass",
+  "_id": "NymAAkYWYpFlS9aj",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "folder": "lG0gYurkQLMqnBvm",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Weave Subtle Spells of Deception</p></blockquote><p>You specialize in magic that dazzles the senses and tricks the mind, and the illusions you craft make the impossible seem real.</p><h3>Illusionist Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.XvZhH5d3LE0qL2SV]{Illusion Savant}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.qictRkWGhzNBjFIy]{Improved Illusions}</td></tr><tr><td>6</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.x9CGFeVfdjZTsUEB]{Phantasmal Creatures}</td></tr><tr><td>10</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.GyKSj60znbjSKpjb]{Illusory Self}</td></tr><tr><td>14</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.bczoT1GJHYSqegAA]{Illusory Reality}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "illusionist",
+    "classIdentifier": "wizard",
+    "advancement": {
+      "zCgaXth1nUhUazDJ": {
+        "_id": "zCgaXth1nUhUazDJ",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.XvZhH5d3LE0qL2SV",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.qictRkWGhzNBjFIy",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EHSGAn4nUevQ2i4m": {
+        "_id": "EHSGAn4nUevQ2i4m",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.x9CGFeVfdjZTsUEB",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "vDr7pjv9dR2uHFdi": {
+        "_id": "vDr7pjv9dR2uHFdi",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.GyKSj60znbjSKpjb",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RLMjsCG1dgfUwJUY": {
+        "_id": "RLMjsCG1dgfUwJUY",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.bczoT1GJHYSqegAA",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "x2mYRUZa2FEhWkwf": {
+        "_id": "x2mYRUZa2FEhWkwf",
+        "type": "ItemChoice",
+        "level": 3,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add two Wizard spells of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "6FzCyqOKzSgHcITP": {
+        "_id": "6FzCyqOKzSgHcITP",
+        "type": "ItemChoice",
+        "level": 5,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "GIlDAzsE8PhDGjqM": {
+        "_id": "GIlDAzsE8PhDGjqM",
+        "type": "ItemChoice",
+        "level": 7,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "7": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "ljOwtf5a0GvTvqRB": {
+        "_id": "ljOwtf5a0GvTvqRB",
+        "type": "ItemChoice",
+        "level": 9,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "zMbadDohGYIQ4569": {
+        "_id": "zMbadDohGYIQ4569",
+        "type": "ItemChoice",
+        "level": 11,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "J8tZ9k3FwkHbVkDm": {
+        "_id": "J8tZ9k3FwkHbVkDm",
+        "type": "ItemChoice",
+        "level": 13,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "VR8bPsLlDn8Sgmav": {
+        "_id": "VR8bPsLlDn8Sgmav",
+        "type": "ItemChoice",
+        "level": 15,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "LCo1j1ee7nLSntvB": {
+        "_id": "LCo1j1ee7nLSntvB",
+        "type": "ItemChoice",
+        "level": 17,
+        "name": "Illusion Savant",
+        "title": "Illusion Savant",
+        "hint": "Add one Wizard spell of the Illusion school, of a level for which you have spell slots, to your spellbook for free.",
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ],
+            "school": [
+              "ill"
+            ]
+          },
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {}
+      },
+      "xv0PZfFH2hFzeCGE": {
+        "_id": "xv0PZfFH2hFzeCGE",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Improved Illusions",
+        "title": "Improved Illusions",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMinorIllus",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "8Fvaz73YuLf7B1mu": {
+        "_id": "8Fvaz73YuLf7B1mu",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Phantasmal Creatures",
+        "title": "Phantasmal Creatures",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.6RTnNWs5mJgj9f3K",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.spells.Item.qFaKFBbHNtVhJcL9",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

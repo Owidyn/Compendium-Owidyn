@@ -1,0 +1,136 @@
+{
+  "name": "Shape-Shifter",
+  "type": "feat",
+  "_id": "D6Ola68LYTeXFlVa",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "folder": "bnw4XXFLHLQPjypM",
+  "sort": 600000,
+  "system": {
+    "description": {
+      "value": "<p>You always have the @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph} spell prepared and can cast it once without expending a spell slot; you regain the ability to cast it this way when you finish a Long Rest.</p><p>In addition, when you target yourself with the spell, you can modify it to gain the following benefits. Once you modify the spell this way, you can't do so again until you finish a Long Rest.</p><p><strong>Game Statistics.</strong> In addition to the features the spell lets you keep, you retain your memories and ability to communicate, as well as your Intelligence, Wisdom, and Charisma scores, proficiencies, class features, and feats.</p><p><strong>Transmute Spells.</strong> While shape-shifted, you can cast spells, but only Transmutation spells that don't have a Material component with a specified cost or one consumed by the spell.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Transmuter 10",
+    "activities": {
+      "4XGGotE3LyVAAq9W": {
+        "type": "utility",
+        "_id": "4XGGotE3LyVAAq9W",
+        "sort": 100000,
+        "name": "Shape-Shifter",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Polymorph on yourself"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "shape-shifter",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

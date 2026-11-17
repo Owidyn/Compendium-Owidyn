@@ -1,0 +1,144 @@
+{
+  "name": "Bariaur",
+  "type": "race",
+  "_id": "LyyXxn1DkgQSojub",
+  "img": "icons/creatures/mammals/goat-horned-blue.webp",
+  "folder": "2vduhfbDdexfLmdX",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Bariaurs are born in Ysgard or descend from celestial ancestors who came from there. Above the waist, a bariaur looks like a humanoid such as a human, an elf, or a dwarf; below it, they have the body of a ram.</p><p>Driven by wanderlust, bariaurs seek adventure, treasure, and a good celebration. Like many natives of Ysgard, they never shy away from a fight against evil and injustice, and some even carve small notches in their horns to count the glorious battles they have survived.</p><h3>Bariaur Traits</h3><p><strong>Creature Type:</strong> Celestial</p><p><strong>Size:</strong> Medium (about 5–7 feet tall)</p><p><strong>Speed:</strong> 35 feet</p><p><strong>Darkvision:</strong> 60 feet</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.ensl6N7l6AqMwFPA]{Ram}.</strong> When you move at least 10 feet straight toward a creature and hit it with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Shove options. You can use this benefit only once per turn.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.myNL4dfM2kO17Ohm]{Stable Stance}.</strong> You have Advantage on saving throws to avoid the &amp;Reference[Prone] condition.</p><p><strong>@UUID[Compendium.compendium-owidyn.species.Item.aXXW5ipE9GfnXRO8]{Wanderer's Instincts}.</strong> You have proficiency in the Animal Handling, Arcana, Nature, or Survival skill.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "bariaur",
+    "type": {
+      "value": "celestial",
+      "custom": "",
+      "subtype": "Bariaur"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "35",
+        "burrow": "",
+        "climb": "",
+        "fly": "",
+        "jump": "",
+        "swim": ""
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "senses": {
+      "ranges": {
+        "blindsight": null,
+        "darkvision": 60,
+        "tremorsense": null,
+        "truesight": null
+      },
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": {
+      "tjFs6faJ4P7OHglU": {
+        "_id": "tjFs6faJ4P7OHglU",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {},
+        "level": 0,
+        "name": "Size",
+        "title": "Size",
+        "hint": "Medium (about 5–7 feet tall)",
+        "flags": {}
+      },
+      "40aKfEDmb1aHdut5": {
+        "_id": "40aKfEDmb1aHdut5",
+        "type": "ItemGrant",
+        "level": 0,
+        "name": "Bariaur Traits",
+        "title": "Bariaur Traits",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.ensl6N7l6AqMwFPA",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.myNL4dfM2kO17Ohm",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.species.Item.aXXW5ipE9GfnXRO8",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "wWKzVldo2D3RARgt": {
+        "_id": "wWKzVldo2D3RARgt",
+        "type": "Trait",
+        "level": 0,
+        "name": "Wanderer's Instincts",
+        "title": "Wanderer's Instincts",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ani",
+                "skills:arc",
+                "skills:nat",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      }
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

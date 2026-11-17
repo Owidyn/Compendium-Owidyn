@@ -1,0 +1,223 @@
+{
+  "_id": "iYfEMIgnANzkZ9Nf",
+  "name": "Stagger and Sway",
+  "type": "feat",
+  "img": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp",
+  "folder": "43OXV6uwJRLqFUZU",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "4cphW54qGsMCN9OD": {
+        "type": "utility",
+        "_id": "4cphW54qGsMCN9OD",
+        "sort": 100000,
+        "name": "Delayed Reaction",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "End of your turn: roll the dice of your pool"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Force damage (one die per hit)",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "1UhWlH9XqCU3R8kn": {
+        "type": "utility",
+        "_id": "1UhWlH9XqCU3R8kn",
+        "sort": 200000,
+        "name": "Purify",
+        "img": null,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "20",
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": {
+      "zOagge7LcxkWWVEH": {
+        "_id": "zOagge7LcxkWWVEH",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "cha"
+          ],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Dexterity and Wisdom 13+)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</p><p><strong>Defer Damage.</strong> When you take damage, reduce that damage by your Dexterity modifier (minimum of 1), then add a d6 to your Delayed Reaction pool. At the end of your turn, remove all the dice from the pool and roll them: you take Force damage equal to the total.</p><p><strong>Purify.</strong> As a Bonus Action, you can remove a number of dice equal to your Wisdom modifier from your Delayed Reaction pool.</p><section class=\"secret\" id=\"secret-QgiAsYGCDZTEZ6D8\"><p><strong>Foundry Note</strong></p><p>Count the dice of your Delayed Reaction pool with the spent uses of this feat; at the end of your turn, roll that many d6 (change the number of dice in the dialog) and reset the uses.</p></section>",
+      "chat": ""
+    },
+    "identifier": "stagger-and-sway",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Dexterity and Wisdom 13+",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

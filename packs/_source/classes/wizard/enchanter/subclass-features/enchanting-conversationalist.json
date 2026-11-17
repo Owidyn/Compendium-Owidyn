@@ -1,0 +1,210 @@
+{
+  "name": "Enchanting Conversationalist",
+  "type": "feat",
+  "_id": "VrUfAZg4m3uTGQEo",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "folder": "JHBNSAO9IHci6XgH",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in one of the following skills of your choice: Deception, Intimidation, or Persuasion. In addition, when you make an ability check with the chosen skill, you gain a bonus to the check equal to your Intelligence modifier (minimum of +1).</p><section class=\"secret\" id=\"secret-TcWfxNQTozvV7Cxo\"><p><strong>Foundry Note</strong></p><p>Turn on the effect of the chosen skill only.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Enchanter 3",
+    "activities": {},
+    "enchant": {},
+    "identifier": "enchanting-conversationalist",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "HDGJ5uv88Tj6fO0R",
+      "name": "Enchanting Conversationalist (Deception)",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.dec.roll.bonus",
+            "value": "max(1, @abilities.int.mod)",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "AaFJfnvWnJR1kmuw"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Deception checks + your Intelligence modifier (minimum +1).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "BBQMh4r96CU4tilg",
+      "name": "Enchanting Conversationalist (Intimidation)",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.itm.roll.bonus",
+            "value": "max(1, @abilities.int.mod)",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "EXgeax22pjnypA3a"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Intimidation checks + your Intelligence modifier (minimum +1).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "R4ZFC6ZjackZ6ERf",
+      "name": "Enchanting Conversationalist (Persuasion)",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.per.roll.bonus",
+            "value": "max(1, @abilities.int.mod)",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "iWCne9ZkUietIigu"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Persuasion checks + your Intelligence modifier (minimum +1).</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

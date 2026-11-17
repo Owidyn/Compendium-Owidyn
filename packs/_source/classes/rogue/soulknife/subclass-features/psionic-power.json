@@ -1,0 +1,281 @@
+{
+  "name": "Psionic Power",
+  "type": "feat",
+  "_id": "zzD2HsRl78kjlui5",
+  "img": "icons/magic/perception/third-eye-blue-red.webp",
+  "folder": "v11BOsDUDH8YrHQg",
+  "sort": 100000,
+  "system": {
+    "description": {
+      "value": "<p>You harbor a wellspring of psionic energy, represented by your Psionic Energy Dice, which fuel certain powers of this subclass. The Soulknife Energy Dice table shows the size and number of these dice at the Rogue levels indicated.</p><table><thead><tr><th>Rogue Level</th><th>Die Size</th><th>Number</th></tr></thead><tbody><tr><td>3</td><td>D6</td><td>4</td></tr><tr><td>5</td><td>D8</td><td>6</td></tr><tr><td>9</td><td>D8</td><td>8</td></tr><tr><td>11</td><td>D10</td><td>8</td></tr><tr><td>13</td><td>D10</td><td>10</td></tr><tr><td>17</td><td>D12</td><td>12</td></tr></tbody></table><p>Features of this subclass that use a Psionic Energy Die use only the dice of this subclass. Some of your powers expend a Psionic Energy Die, as their descriptions say, and you can't use such a power if all your dice are expended. You regain one expended Psionic Energy Die when you finish a Short Rest, and all of them when you finish a Long Rest.</p><p><strong>Psi-Bolstered Knack.</strong> If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.</p><p><strong>Psychic Whispers.</strong> You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number equal to your Proficiency Bonus, and roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the connection at any time (no action required).</p><section class=\"secret\" id=\"secret-mTOrAZ1jEr3bf3D0\"><p><strong>Foundry Note</strong></p><p>Psi-Bolstered Knack: roll the die, then expend it only if the check succeeds.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "@scale.soulknife.energy-dice",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "sr",
+          "type": "formula",
+          "formula": "1"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Soulknife 3",
+    "activities": {
+      "B5wAstZAnSpQAiiD": {
+        "type": "utility",
+        "_id": "B5wAstZAnSpQAiiD",
+        "sort": 100000,
+        "name": "Psi-Bolstered Knack",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You fail an ability check with a proficient skill or tool"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "@scale.soulknife.energy-die",
+          "name": "Psi-Bolstered Knack",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "56w38PEiTHGzOacR": {
+        "type": "utility",
+        "_id": "56w38PEiTHGzOacR",
+        "sort": 200000,
+        "name": "Expend a Die",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "The check succeeds"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "wksStFEA0TQHi9Fi": {
+        "type": "utility",
+        "_id": "wksStFEA0TQHi9Fi",
+        "sort": 300000,
+        "name": "Psychic Whispers",
+        "img": null,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "count": "@prof",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "formula": "@scale.soulknife.energy-die",
+          "name": "Hours",
+          "prompt": false,
+          "visible": true
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "psionic-power",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

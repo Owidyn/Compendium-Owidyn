@@ -1,0 +1,162 @@
+{
+  "_id": "Jpb34xpWADtuzPlj",
+  "name": "Greater Mark of Scribing",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
+  "folder": "K2FEiJR0BdVXKWt7",
+  "sort": 0,
+  "system": {
+    "activities": {
+      "p3II3HdrDFC247oG": {
+        "type": "utility",
+        "_id": "p3II3HdrDFC247oG",
+        "sort": 100000,
+        "name": "Inspired Scribing",
+        "img": null,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "You cast Comprehend Languages"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      }
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": {
+      "suTFZjVWhO2xuOKT": {
+        "_id": "suTFZjVWhO2xuOKT",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1
+        }
+      }
+    },
+    "description": {
+      "value": "<p><em>General Feat (Prerequisite: Level 4+, Mark of Scribing Feat)</em></p><p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 20.</p><p><strong>Improved Intuition.</strong> When you use the Gifted Scribe benefit of your Mark of Scribing feat, you can roll 1d6 instead of 1d4.</p><p><strong>Inspired Scribing.</strong> When you cast Comprehend Languages, you can modify it to include up to three willing creatures you can see within 30 feet of you, which also gain its benefits for the duration. For that duration, you and those creatures can also communicate telepathically with each other while within 1 mile of each other. Once you modify the spell this way, you can't do so again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-oE6NzWWzDVKKpg02\"><p><strong>Foundry Note</strong></p><p>Improved Intuition: change the bonus of the <em>Gifted Scribe</em> effect of your Mark of Scribing feat from 1d4 to 1d6.</p></section>",
+      "chat": ""
+    },
+    "identifier": "greater-mark-of-scribing",
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [
+        "mark-of-scribing"
+      ],
+      "repeatable": false,
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Mark of Scribing Feat",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

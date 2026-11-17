@@ -1,0 +1,126 @@
+{
+  "name": "Primordial Bond",
+  "type": "feat",
+  "_id": "HjfiQVWBQt2RTuUh",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp",
+  "folder": "gG1H03rYYaINA3dz",
+  "sort": 300000,
+  "system": {
+    "description": {
+      "value": "<p>While your Rage is active, you have Resistance to Cold, Fire, and Lightning damage.</p><section class=\"secret\" id=\"secret-xZbvnvLfBCzHthfD\"><p><strong>Foundry Note</strong></p><p>Turn on the effect while you rage.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Path of the Elements 10",
+    "activities": {},
+    "enchant": {},
+    "identifier": "primordial-bond",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "rN1dzChBKLdhNJ6T",
+      "name": "Primordial Bond",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "CPUn844llVVHD0Xf"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "482Vz51EWbPm27US"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "qy1hRfJsSwpH5AAq"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>While raging: Resistance to Cold, Fire, and Lightning damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

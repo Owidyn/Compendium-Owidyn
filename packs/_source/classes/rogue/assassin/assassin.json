@@ -1,0 +1,187 @@
+{
+  "name": "Assassin",
+  "type": "subclass",
+  "_id": "QxaQek63xjAGDY2H",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "folder": "CFCWoLG3uWxfRb1X",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<blockquote><p>Practice the Grim Art of Death</p></blockquote><p>An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.</p><h3>Assassin Features</h3><table><thead><tr><th>Level</th><th>Feature</th></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.G5lASbCvNYjWBumg]{Assassinate}</td></tr><tr><td>3</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.LvodiUUFGEvZYFlX]{Assassin's Tools}</td></tr><tr><td>9</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.799dRbkAOgjm3WvV]{Infiltration Expertise}</td></tr><tr><td>13</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.16htwusUetBNy3n9]{Envenom Weapons}</td></tr><tr><td>17</td><td>@UUID[Compendium.compendium-owidyn.classes.Item.goMIRCuwEh5DZ3nq]{Death Strike}</td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "assassin",
+    "classIdentifier": "rogue",
+    "advancement": {
+      "XUUIBRJcI3GvOJKf": {
+        "_id": "XUUIBRJcI3GvOJKf",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.G5lASbCvNYjWBumg",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.LvodiUUFGEvZYFlX",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "O2BJ8Ef4LOXSpEJ8": {
+        "_id": "O2BJ8Ef4LOXSpEJ8",
+        "type": "ItemGrant",
+        "level": 9,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.799dRbkAOgjm3WvV",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "EVt5OUpWBNkdaXKX": {
+        "_id": "EVt5OUpWBNkdaXKX",
+        "type": "ItemGrant",
+        "level": 13,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.16htwusUetBNy3n9",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "4X5ditUqNAJRAXwd": {
+        "_id": "4X5ditUqNAJRAXwd",
+        "type": "ItemGrant",
+        "level": 17,
+        "name": "Subclass Features",
+        "title": "Subclass Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.goMIRCuwEh5DZ3nq",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DG1ufZYaDvGOkRZE": {
+        "_id": "DG1ufZYaDvGOkRZE",
+        "type": "Trait",
+        "level": 3,
+        "name": "Assassin's Tools",
+        "title": "Assassin's Tools",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:disg",
+            "tool:pois"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "Wh3Yz5pQ5rVCvnDY": {
+        "_id": "Wh3Yz5pQ5rVCvnDY",
+        "type": "ItemGrant",
+        "level": 3,
+        "name": "Assassin's Tools",
+        "title": "Assassin's Tools",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e.equipment24.Item.phbtulPoisonersK",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

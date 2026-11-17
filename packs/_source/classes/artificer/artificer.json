@@ -1,0 +1,780 @@
+{
+  "name": "Artificer",
+  "type": "class",
+  "_id": "nlIRB96w8m2LDBwm",
+  "img": "icons/tools/smithing/hammer-sledge-steel-grey.webp",
+  "folder": "cDiW0qH3tS3LAjCc",
+  "sort": 0,
+  "system": {
+    "description": {
+      "value": "<p>Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.</p><h3>Core Artificer Traits</h3><table><thead><tr><th>Trait</th><th></th></tr></thead><tbody><tr><td>Primary Ability</td><td>Intelligence</td></tr><tr><td>Hit Point Die</td><td>D8 per Artificer level</td></tr><tr><td>Saving Throw Proficiencies</td><td>Constitution and Intelligence</td></tr><tr><td>Skill Proficiencies</td><td>Choose 2: Arcana, History, Investigation, Medicine, Nature, Perception, or Sleight of Hand</td></tr><tr><td>Weapon Proficiencies</td><td>Simple weapons</td></tr><tr><td>Tool Proficiencies</td><td>Thieves' Tools, Tinker's Tools, and one type of Artisan's Tools of your choice</td></tr><tr><td>Armor Training</td><td>Light and Medium armor and Shields</td></tr><tr><td>Starting Equipment</td><td>Choose A or B: (A) Studded Leather Armor, Dagger, Thieves' Tools, Tinker's Tools, Dungeoneer's Pack, and 16 GP; or (B) 150 GP</td></tr></tbody></table><h3>Multiclassing</h3><p>As a multiclass character, you gain from the Core Artificer Traits table the Hit Point Die, proficiency with Tinker's Tools, proficiency in one skill of your choice from the Artificer's skill list, and training with Light and Medium armor and Shields. For your spell slots, add half your Artificer levels (round up).</p><h3>Artificer Features</h3><table><thead><tr><th>Level</th><th>Prof.</th><th>Features</th><th>Plans</th><th>Items</th><th>Cantrips</th><th>Prepared</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th></tr></thead><tbody><tr><td>1</td><td>+2</td><td>Spellcasting, Tinker's Magic</td><td>—</td><td>—</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>2</td><td>+2</td><td>Replicate Magic Item</td><td>4</td><td>2</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>3</td><td>+2</td><td>Artificer Subclass</td><td>4</td><td>2</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>4</td><td>+2</td><td>Ability Score Improvement</td><td>4</td><td>2</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>5</td><td>+3</td><td>Subclass Feature</td><td>4</td><td>2</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr><tr><td>6</td><td>+3</td><td>Magic Item Tinker</td><td>5</td><td>3</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr><tr><td>7</td><td>+3</td><td>Flash of Genius</td><td>5</td><td>3</td><td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>8</td><td>+3</td><td>Ability Score Improvement</td><td>5</td><td>3</td><td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>9</td><td>+4</td><td>Subclass Feature</td><td>5</td><td>3</td><td>2</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr><tr><td>10</td><td>+4</td><td>Magic Item Adept</td><td>6</td><td>4</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr><tr><td>11</td><td>+4</td><td>Spell-Storing Item</td><td>6</td><td>4</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr><tr><td>12</td><td>+4</td><td>Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr><tr><td>13</td><td>+5</td><td>—</td><td>6</td><td>4</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr><tr><td>14</td><td>+5</td><td>Advanced Artifice</td><td>7</td><td>5</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr><tr><td>15</td><td>+5</td><td>Subclass Feature</td><td>7</td><td>5</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr><tr><td>16</td><td>+5</td><td>Ability Score Improvement</td><td>7</td><td>5</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr><tr><td>17</td><td>+6</td><td>—</td><td>7</td><td>5</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>18</td><td>+6</td><td>Magic Item Master</td><td>8</td><td>6</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>19</td><td>+6</td><td>Epic Boon</td><td>8</td><td>6</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td>20</td><td>+6</td><td>Soul of Artifice</td><td>8</td><td>6</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr></tbody></table><h3>Artificer Subclasses</h3><p>@UUID[Compendium.compendium-owidyn.classes.Item.4NpR1kBVHa4jT9aQ]{Alchemist}, @UUID[Compendium.compendium-owidyn.classes.Item.cfG6TI39HwChY0Cm]{Armorer}, @UUID[Compendium.compendium-owidyn.classes.Item.SHzwi1axo3bnpw6S]{Artillerist}, @UUID[Compendium.compendium-owidyn.classes.Item.q5f4Hgk1tRqXuTiI]{Battle Smith}, @UUID[Compendium.compendium-owidyn.classes.Item.gv0Nj7nhbXKWQjnE]{Cartographer}, @UUID[Compendium.compendium-owidyn.classes.Item.DIPWfIAA3ONdVmzr]{Reanimator}.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "identifier": "artificer",
+    "levels": 1,
+    "hd": {
+      "denomination": "d8",
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "int"
+      ],
+      "all": true
+    },
+    "spellcasting": {
+      "progression": "artificer",
+      "ability": "int",
+      "preparation": {
+        "formula": "@scale.artificer.max-prepared"
+      }
+    },
+    "advancement": {
+      "VVsdMHXQampyB3M6": {
+        "_id": "VVsdMHXQampyB3M6",
+        "type": "HitPoints",
+        "level": 0,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "configuration": {},
+        "flags": {}
+      },
+      "Njs7vyuw3nsMw29p": {
+        "_id": "Njs7vyuw3nsMw29p",
+        "type": "ItemGrant",
+        "level": 1,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.knsm9RmKJQ8kHC1u",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.QdAcnSfr3FA2FbTX",
+              "optional": false,
+              "sort": 1
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "DQka0tNL5ICsJuK3": {
+        "_id": "DQka0tNL5ICsJuK3",
+        "type": "ItemGrant",
+        "level": 2,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.j1ix1clJC7b4k6BN",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "RVM377pt0HXfVQiC": {
+        "_id": "RVM377pt0HXfVQiC",
+        "type": "ItemGrant",
+        "level": 6,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.lTGZZanCehoJePiS",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "3vFqjz2sIIPSNima": {
+        "_id": "3vFqjz2sIIPSNima",
+        "type": "ItemGrant",
+        "level": 7,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.SGNQTuqWAYEY1295",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "5Yx0IaAidBE8GwHU": {
+        "_id": "5Yx0IaAidBE8GwHU",
+        "type": "ItemGrant",
+        "level": 10,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.OBfzyOtNJjJHFB10",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "t1jxMrQxpZ3a4t4S": {
+        "_id": "t1jxMrQxpZ3a4t4S",
+        "type": "ItemGrant",
+        "level": 11,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.9Bpx3ay9xclhLk19",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "n4brY4CgSMisi1BJ": {
+        "_id": "n4brY4CgSMisi1BJ",
+        "type": "ItemGrant",
+        "level": 14,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hz6xlaNy4sKHZcMp",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "VS4uk8UQZfrHGGfg": {
+        "_id": "VS4uk8UQZfrHGGfg",
+        "type": "ItemGrant",
+        "level": 18,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.CNA7oWcZb0sBhxcv",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "31Krd9xBdzjNxPxt": {
+        "_id": "31Krd9xBdzjNxPxt",
+        "type": "ItemGrant",
+        "level": 20,
+        "name": "Class Features",
+        "title": "Class Features",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.compendium-owidyn.classes.Item.hARU5EsR9SpMegRr",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "flags": {}
+      },
+      "aXEedjyk4WImjFfL": {
+        "_id": "aXEedjyk4WImjFfL",
+        "type": "ItemGrant",
+        "level": 1,
+        "name": "Tinker's Magic",
+        "title": "Tinker's Magic",
+        "hint": "",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMending000",
+              "optional": false,
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "method": "spell",
+            "prepared": 0,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          }
+        },
+        "value": {},
+        "flags": {}
+      },
+      "fxZqesXDjXeq0DD1": {
+        "_id": "fxZqesXDjXeq0DD1",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null,
+          "max": null
+        }
+      },
+      "Gg0ZFh8ImeaC0mE6": {
+        "_id": "Gg0ZFh8ImeaC0mE6",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null,
+          "max": null
+        }
+      },
+      "hpvA81z4FTPigJ0q": {
+        "_id": "hpvA81z4FTPigJ0q",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null,
+          "max": null
+        }
+      },
+      "ITzAYr856YvgrWBu": {
+        "_id": "ITzAYr856YvgrWBu",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null,
+          "max": null
+        }
+      },
+      "eG8F3ev58YqnVPxW": {
+        "_id": "eG8F3ev58YqnVPxW",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": "Compendium.compendium-owidyn.backgrounds-feats.Item.YjvhaGKWGF9DAYGk",
+          "max": null
+        }
+      },
+      "uQasjA1LGki7J6HK": {
+        "_id": "uQasjA1LGki7J6HK",
+        "type": "Subclass",
+        "level": 3,
+        "name": "",
+        "title": "",
+        "hint": "",
+        "value": {},
+        "configuration": {},
+        "flags": {}
+      },
+      "JHJp7HH98KNLffPb": {
+        "_id": "JHJp7HH98KNLffPb",
+        "type": "Trait",
+        "level": 1,
+        "name": "Saving Throw Proficiencies",
+        "title": "Saving Throw Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:con",
+            "saves:int"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "Do7r6zjXcvmPi6M7": {
+        "_id": "Do7r6zjXcvmPi6M7",
+        "type": "Trait",
+        "level": 1,
+        "name": "Skill Proficiencies",
+        "title": "Skill Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:arc",
+                "skills:his",
+                "skills:inv",
+                "skills:med",
+                "skills:nat",
+                "skills:prc",
+                "skills:slt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "6pGPsIf6Qhv1R4iN": {
+        "_id": "6pGPsIf6Qhv1R4iN",
+        "type": "Trait",
+        "level": 1,
+        "name": "Weapon Proficiencies",
+        "title": "Weapon Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "GOjo0BSznWfODcAS": {
+        "_id": "GOjo0BSznWfODcAS",
+        "type": "Trait",
+        "level": 1,
+        "name": "Armor Training",
+        "title": "Armor Training",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "6v0PZFgZP9S5WkPk": {
+        "_id": "6v0PZFgZP9S5WkPk",
+        "type": "Trait",
+        "level": 1,
+        "name": "Tool Proficiencies",
+        "title": "Tool Proficiencies",
+        "hint": "",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:thief",
+            "tool:art:tinker"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "flags": {}
+      },
+      "ftBcsoG5s7WK2RCW": {
+        "_id": "ftBcsoG5s7WK2RCW",
+        "type": "ScaleValue",
+        "name": "Max Prepared Spells",
+        "title": "Max Prepared Spells",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "max-prepared",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 2
+            },
+            "2": {
+              "value": 3
+            },
+            "3": {
+              "value": 4
+            },
+            "4": {
+              "value": 5
+            },
+            "5": {
+              "value": 6
+            },
+            "7": {
+              "value": 7
+            },
+            "9": {
+              "value": 9
+            },
+            "11": {
+              "value": 10
+            },
+            "13": {
+              "value": 11
+            },
+            "15": {
+              "value": 12
+            },
+            "17": {
+              "value": 14
+            },
+            "19": {
+              "value": 15
+            }
+          }
+        }
+      },
+      "t0y6lYfNYO4inDAi": {
+        "_id": "t0y6lYfNYO4inDAi",
+        "type": "ScaleValue",
+        "name": "Cantrips Known",
+        "title": "Cantrips Known",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "cantrips-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 2
+            },
+            "10": {
+              "value": 3
+            },
+            "14": {
+              "value": 4
+            }
+          }
+        }
+      },
+      "0VXhCvb3GlV5Gjpg": {
+        "_id": "0VXhCvb3GlV5Gjpg",
+        "type": "ScaleValue",
+        "name": "Plans Known",
+        "title": "Plans Known",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "plans-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 4
+            },
+            "6": {
+              "value": 5
+            },
+            "10": {
+              "value": 6
+            },
+            "14": {
+              "value": 7
+            },
+            "18": {
+              "value": 8
+            }
+          }
+        }
+      },
+      "MrmThNuRxYeOumHJ": {
+        "_id": "MrmThNuRxYeOumHJ",
+        "type": "ScaleValue",
+        "name": "Magic Items",
+        "title": "Magic Items",
+        "hint": "",
+        "level": 0,
+        "value": {},
+        "flags": {},
+        "configuration": {
+          "identifier": "magic-items",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "6": {
+              "value": 3
+            },
+            "10": {
+              "value": 4
+            },
+            "14": {
+              "value": 5
+            },
+            "18": {
+              "value": 6
+            }
+          }
+        }
+      }
+    },
+    "startingEquipment": [
+      {
+        "type": "AND",
+        "_id": "2u9fTQBR87fKG7XD",
+        "group": "",
+        "sort": 100000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbarmStuddedLea",
+        "count": null,
+        "_id": "OlWxeSrr3GdJHyFk",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 200000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+        "count": null,
+        "_id": "EJNDuC2pzv6VBBf9",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 300000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulThievesToo",
+        "count": null,
+        "_id": "2bSWKBGLOlBIKJ5k",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 400000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbtulTinkersToo",
+        "count": null,
+        "_id": "e2pnYERgXp4p1gWh",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 500000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "linked",
+        "key": "Compendium.dnd5e.equipment24.Item.phbagDungeoneers",
+        "count": null,
+        "_id": "2meDaDr2UacXcFrM",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 600000,
+        "requiresProficiency": false
+      },
+      {
+        "type": "currency",
+        "key": "gp",
+        "count": 16,
+        "_id": "G0wGyVoos0CoFZzy",
+        "group": "2u9fTQBR87fKG7XD",
+        "sort": 700000,
+        "requiresProficiency": false
+      }
+    ],
+    "wealth": "150"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

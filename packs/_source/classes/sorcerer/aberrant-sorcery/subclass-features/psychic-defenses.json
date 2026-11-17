@@ -1,0 +1,110 @@
+{
+  "name": "Psychic Defenses",
+  "type": "feat",
+  "_id": "ns5VjAnnHkaDdQRl",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+  "folder": "ynPvfi7UdjAGk9y5",
+  "sort": 400000,
+  "system": {
+    "description": {
+      "value": "<p>You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p><section class=\"secret\" id=\"secret-eRrF4VOUz9UrND0F\"><p><strong>Foundry Note</strong></p><p>Roll your saves against Charmed or Frightened with Advantage yourself.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "",
+      "book": "OSC",
+      "page": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "Aberrant Sorcery 6",
+    "activities": {},
+    "enchant": {},
+    "identifier": "psychic-defenses",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "gGWqIilOA2DyuygK",
+      "name": "Psychic Defenses",
+      "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "type": "add",
+            "phase": "initial",
+            "priority": null,
+            "_id": "i6cNO8bIDSHyYndE"
+          }
+        ],
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Resistance to Psychic damage.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794787200000,
+        "modifiedTime": 1794787200000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794787200000,
+    "modifiedTime": 1794787200000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
